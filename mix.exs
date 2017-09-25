@@ -21,7 +21,8 @@ defmodule Baiji.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 3.1.0"}
+      {:poison, "~> 3.1.0"},
+      {:httpoison, "~> 0.13.0"}
     ]
   end
 end
