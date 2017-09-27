@@ -5,43 +5,60 @@ defmodule Baiji.Auth do
   # Callback for auth providers. Populates the authentication
   # data for an operation
   #
-  @callback get(%Operation{}, atom()) :: %Operation{}
+  @callback populate(%Operation{}, atom()) :: %Operation{}
 
   @doc """
-  Get and access key and secret and populate the corresponding
-  fields in the given Operation struct based on the application
-  config.
+  Populate the authorization credentials of the given operation
   """
-  def get(%Operation{} = operation) do
-    operation
-    |> get_access_key_id
-    |> get_secret_access_key
-    |> get_security_token
+  def populate(%Operation{} = op) do
+    op
+    |> populate_access_key_id
+    |> populate_secret_access_key
+    |> populate_security_token
   end
 
-  def get(%Operation{^key: nil} = operation, _method, key) do
-    operation
+  @doc """
+  Try successive auth population methods until one of them successfully populates
+  the specified key in the given operation or we run out of methods
+  """
+  def populate(%Operation{} = op, methods, key) when is_list(methods) do
+    methods
+    |> Enum.reduce_while(op, fn(method, op) ->
+      case Map.get(op, key) do
+        nil -> {:cont, populate(op, method, key)}
+        _   -> {:halt, op}
+      end
+    end)
   end
-  def get(%Operation{} = operation, {:system, env_var}, key) do
-    Map.put(operation, key, System.get_env(env_var))
+  def populate(%Operation{} = op, {:system, env_var}, key) do
+    Map.put(op, key, System.get_env(env_var))
   end
-  def get(%Operation{} = operation, :instance_role, key) do
-    Baiji.Auth.InstanceMetadata.get(operation, key)
+  def populate(%Operation{} = op, :instance_role, key) do
+    Baiji.Auth.InstanceMetadata.populate(op, key)
   end
 
-  def get_access_key_id(%Operation{} = operation) do
-    Application.get_env(:baiji, :access_key_id, [])
-    |> get(operation, :access_key_id)
+  @doc """
+  Attempt to populate the access_key_id field of the given operation using
+  the methods defined in the application config
+  """
+  def populate_access_key_id(%Operation{} = op) do
+    populate(op, Application.get_env(:baiji, :access_key_id, []), :access_key_id)
   end
 
-  def get_secret_access_key(%Operation{} = operation) do
-    Application.get_env(:baiji, :secret_access_key, [])
-    |> get(operation, :secret_access_key)
+  @doc """
+  Attempt to populate the secret_access_key field of the given operation using
+  the methods defined in the application config
+  """
+  def populate_secret_access_key(%Operation{} = op) do
+    populate(op, Application.get_env(:baiji, :secret_access_key, []), :secret_access_key)
   end
 
-  def get_security_token(%Operation{} = operation) do
-    Application.get_env(:baiji, :security_token, [])
-    |> get(operation, :security_token)
+  @doc """
+  Attempt to populate the security_token field of the given operation using
+  the methods defined in the application config
+  """
+  def populate_security_token(%Operation{} = op) do
+    populate(op, Application.get_env(:baiji, :security_token, []), :security_token)
   end
 
   defmacro __using__(_) do

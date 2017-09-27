@@ -1,4 +1,4 @@
-defmodule Baiji.Cloudhsm do
+defmodule Baiji.CloudHSM do
   @moduledoc """
   AWS CloudHSM Service
   """

@@ -1,4 +1,4 @@
-defmodule Baiji.Cloudtrail do
+defmodule Baiji.CloudTrail do
   @moduledoc """
   AWS CloudTrail
 

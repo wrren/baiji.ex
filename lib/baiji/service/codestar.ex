@@ -1,4 +1,4 @@
-defmodule Baiji.Codestar do
+defmodule Baiji.CodeStar do
   @moduledoc """
   AWS CodeStar
 

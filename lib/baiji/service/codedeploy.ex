@@ -1,4 +1,4 @@
-defmodule Baiji.Codedeploy do
+defmodule Baiji.CodeDeploy do
   @moduledoc """
   AWS CodeDeploy
 

@@ -1,4 +1,4 @@
-defmodule Baiji.Codecommit do
+defmodule Baiji.CodeCommit do
   @moduledoc """
   AWS CodeCommit
 

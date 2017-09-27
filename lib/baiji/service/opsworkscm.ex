@@ -1,4 +1,4 @@
-defmodule Baiji.Opsworkscm do
+defmodule Baiji.OpsWorksCM do
   @moduledoc """
   AWS OpsWorks for Chef Automate
 

@@ -1,4 +1,4 @@
-defmodule Baiji.IOT do
+defmodule Baiji.Iot do
   @moduledoc """
   AWS IoT
 

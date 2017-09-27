@@ -1,4 +1,4 @@
-defmodule Baiji.Dynamodb do
+defmodule Baiji.DynamoDB do
   @moduledoc """
   Amazon DynamoDB
 

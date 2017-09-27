@@ -1,4 +1,4 @@
-defmodule Baiji.Codepipeline do
+defmodule Baiji.CodePipeline do
   @moduledoc """
   AWS CodePipeline
 

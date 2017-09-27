@@ -1,4 +1,4 @@
-defmodule Baiji.AWSGlue do
+defmodule Baiji.Glue do
   @moduledoc """
   Defines service operations used by the GlueFrontendService
   """

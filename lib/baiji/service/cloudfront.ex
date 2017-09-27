@@ -1,4 +1,4 @@
-defmodule Baiji.Cloudfront do
+defmodule Baiji.CloudFront do
   @moduledoc """
   Amazon CloudFront
 
