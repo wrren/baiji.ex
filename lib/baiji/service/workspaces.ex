@@ -11,11 +11,16 @@ defmodule Baiji.Workspaces do
   """
   def create_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTags",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTags",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -29,11 +34,16 @@ defmodule Baiji.Workspaces do
   """
   def create_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -42,11 +52,16 @@ defmodule Baiji.Workspaces do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTags",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTags",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -55,11 +70,16 @@ defmodule Baiji.Workspaces do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTags",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTags",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -77,11 +97,16 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspace_bundles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeWorkspaceBundles",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeWorkspaceBundles",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -97,11 +122,16 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspace_directories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeWorkspaceDirectories",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeWorkspaceDirectories",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -118,11 +148,16 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -131,11 +166,16 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspaces_connection_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeWorkspacesConnectionStatus",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeWorkspacesConnectionStatus",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -145,11 +185,16 @@ defmodule Baiji.Workspaces do
   """
   def modify_workspace_properties(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyWorkspaceProperties",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyWorkspaceProperties",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -166,11 +211,16 @@ defmodule Baiji.Workspaces do
   """
   def reboot_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RebootWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RebootWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -200,11 +250,16 @@ defmodule Baiji.Workspaces do
   """
   def rebuild_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RebuildWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RebuildWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -214,11 +269,16 @@ defmodule Baiji.Workspaces do
   """
   def start_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -228,11 +288,16 @@ defmodule Baiji.Workspaces do
   """
   def stop_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -253,11 +318,16 @@ defmodule Baiji.Workspaces do
   """
   def terminate_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TerminateWorkspaces",
-      type:     :json,
-      method:   :post
+      service:        "workspaces",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TerminateWorkspaces",
+      
+      target_prefix:  "WorkspacesService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

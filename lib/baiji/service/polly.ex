@@ -20,11 +20,14 @@ defmodule Baiji.Polly do
   """
   def delete_lexicon(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLexicon",
-      type:     :rest_json,
-      method:   :delete
+      service:        "polly",
+      endpoint:       "/v1/lexicons/{LexiconName}",
+      input:          input,
+      options:        options,
+      action:         "DeleteLexicon",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -52,11 +55,14 @@ defmodule Baiji.Polly do
   """
   def describe_voices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVoices",
-      type:     :rest_json,
-      method:   :get
+      service:        "polly",
+      endpoint:       "/v1/voices",
+      input:          input,
+      options:        options,
+      action:         "DescribeVoices",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -67,11 +73,14 @@ defmodule Baiji.Polly do
   """
   def get_lexicon(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetLexicon",
-      type:     :rest_json,
-      method:   :get
+      service:        "polly",
+      endpoint:       "/v1/lexicons/{LexiconName}",
+      input:          input,
+      options:        options,
+      action:         "GetLexicon",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -82,11 +91,14 @@ defmodule Baiji.Polly do
   """
   def list_lexicons(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListLexicons",
-      type:     :rest_json,
-      method:   :get
+      service:        "polly",
+      endpoint:       "/v1/lexicons",
+      input:          input,
+      options:        options,
+      action:         "ListLexicons",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -101,11 +113,14 @@ defmodule Baiji.Polly do
   """
   def put_lexicon(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutLexicon",
-      type:     :rest_json,
-      method:   :put
+      service:        "polly",
+      endpoint:       "/v1/lexicons/{LexiconName}",
+      input:          input,
+      options:        options,
+      action:         "PutLexicon",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -119,11 +134,14 @@ defmodule Baiji.Polly do
   """
   def synthesize_speech(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SynthesizeSpeech",
-      type:     :rest_json,
-      method:   :post
+      service:        "polly",
+      endpoint:       "/v1/speech",
+      input:          input,
+      options:        options,
+      action:         "SynthesizeSpeech",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   

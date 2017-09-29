@@ -22,11 +22,14 @@ defmodule Baiji.Cloudsearch do
   """
   def build_suggesters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BuildSuggesters",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BuildSuggesters",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -37,11 +40,14 @@ defmodule Baiji.Cloudsearch do
   """
   def create_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDomain",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDomain",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -54,11 +60,14 @@ defmodule Baiji.Cloudsearch do
   """
   def define_analysis_scheme(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DefineAnalysisScheme",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DefineAnalysisScheme",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -71,11 +80,14 @@ defmodule Baiji.Cloudsearch do
   """
   def define_expression(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DefineExpression",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DefineExpression",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -93,11 +105,14 @@ defmodule Baiji.Cloudsearch do
   """
   def define_index_field(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DefineIndexField",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DefineIndexField",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -112,11 +127,14 @@ defmodule Baiji.Cloudsearch do
   """
   def define_suggester(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DefineSuggester",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DefineSuggester",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -127,11 +145,14 @@ defmodule Baiji.Cloudsearch do
   """
   def delete_analysis_scheme(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAnalysisScheme",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAnalysisScheme",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -144,11 +165,14 @@ defmodule Baiji.Cloudsearch do
   """
   def delete_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDomain",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDomain",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -160,11 +184,14 @@ defmodule Baiji.Cloudsearch do
   """
   def delete_expression(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteExpression",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteExpression",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -176,11 +203,14 @@ defmodule Baiji.Cloudsearch do
   """
   def delete_index_field(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIndexField",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteIndexField",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -191,11 +221,14 @@ defmodule Baiji.Cloudsearch do
   """
   def delete_suggester(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSuggester",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSuggester",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -211,11 +244,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_analysis_schemes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAnalysisSchemes",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAnalysisSchemes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -229,11 +265,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_availability_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAvailabilityOptions",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAvailabilityOptions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -249,11 +288,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_domains(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDomains",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDomains",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -268,11 +310,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_expressions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeExpressions",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeExpressions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -287,11 +332,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_index_fields(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeIndexFields",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeIndexFields",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -304,11 +352,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_scaling_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScalingParameters",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScalingParameters",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -323,11 +374,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_service_access_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeServiceAccessPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeServiceAccessPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -343,11 +397,14 @@ defmodule Baiji.Cloudsearch do
   """
   def describe_suggesters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSuggesters",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSuggesters",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -358,11 +415,14 @@ defmodule Baiji.Cloudsearch do
   """
   def index_documents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "IndexDocuments",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "IndexDocuments",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -371,11 +431,14 @@ defmodule Baiji.Cloudsearch do
   """
   def list_domain_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDomainNames",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDomainNames",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -390,11 +453,14 @@ defmodule Baiji.Cloudsearch do
   """
   def update_availability_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAvailabilityOptions",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAvailabilityOptions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -411,11 +477,14 @@ defmodule Baiji.Cloudsearch do
   """
   def update_scaling_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateScalingParameters",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateScalingParameters",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -428,11 +497,14 @@ defmodule Baiji.Cloudsearch do
   """
   def update_service_access_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateServiceAccessPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "cloudsearch",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateServiceAccessPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

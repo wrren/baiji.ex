@@ -17,11 +17,16 @@ defmodule Baiji.Shield do
   """
   def create_protection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateProtection",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateProtection",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -30,11 +35,16 @@ defmodule Baiji.Shield do
   """
   def create_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSubscription",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSubscription",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -43,11 +53,16 @@ defmodule Baiji.Shield do
   """
   def delete_protection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteProtection",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteProtection",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -56,11 +71,16 @@ defmodule Baiji.Shield do
   """
   def delete_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSubscription",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSubscription",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -69,11 +89,16 @@ defmodule Baiji.Shield do
   """
   def describe_attack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAttack",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAttack",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -82,11 +107,16 @@ defmodule Baiji.Shield do
   """
   def describe_protection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProtection",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProtection",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -95,11 +125,16 @@ defmodule Baiji.Shield do
   """
   def describe_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSubscription",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSubscription",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -109,11 +144,16 @@ defmodule Baiji.Shield do
   """
   def list_attacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAttacks",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAttacks",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -122,11 +162,16 @@ defmodule Baiji.Shield do
   """
   def list_protections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListProtections",
-      type:     :json,
-      method:   :post
+      service:        "shield",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListProtections",
+      
+      target_prefix:  "AWSShield_20160616",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

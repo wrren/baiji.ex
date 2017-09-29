@@ -91,11 +91,16 @@ defmodule Baiji.KMS do
   """
   def get_key_rotation_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetKeyRotationStatus",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetKeyRotationStatus",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -114,11 +119,16 @@ defmodule Baiji.KMS do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TagResource",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TagResource",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -140,11 +150,16 @@ defmodule Baiji.KMS do
   """
   def re_encrypt(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReEncrypt",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReEncrypt",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -164,11 +179,16 @@ defmodule Baiji.KMS do
   """
   def delete_imported_key_material(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteImportedKeyMaterial",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteImportedKeyMaterial",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -178,11 +198,16 @@ defmodule Baiji.KMS do
   """
   def revoke_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RevokeGrant",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RevokeGrant",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -195,11 +220,16 @@ defmodule Baiji.KMS do
   """
   def list_retirable_grants(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRetirableGrants",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRetirableGrants",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -208,11 +238,16 @@ defmodule Baiji.KMS do
   """
   def enable_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableKey",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableKey",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -225,11 +260,16 @@ defmodule Baiji.KMS do
   """
   def put_key_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutKeyPolicy",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutKeyPolicy",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -249,11 +289,16 @@ defmodule Baiji.KMS do
   """
   def create_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAlias",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAlias",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -267,11 +312,16 @@ defmodule Baiji.KMS do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UntagResource",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UntagResource",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -285,11 +335,16 @@ defmodule Baiji.KMS do
   """
   def create_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateGrant",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateGrant",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -303,11 +358,16 @@ defmodule Baiji.KMS do
   """
   def disable_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableKey",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableKey",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -317,11 +377,16 @@ defmodule Baiji.KMS do
   """
   def delete_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAlias",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAlias",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -345,11 +410,16 @@ defmodule Baiji.KMS do
   """
   def generate_data_key_without_plaintext(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GenerateDataKeyWithoutPlaintext",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GenerateDataKeyWithoutPlaintext",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -375,11 +445,16 @@ defmodule Baiji.KMS do
   """
   def schedule_key_deletion(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ScheduleKeyDeletion",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ScheduleKeyDeletion",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -388,11 +463,16 @@ defmodule Baiji.KMS do
   """
   def list_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListKeys",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListKeys",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -406,11 +486,16 @@ defmodule Baiji.KMS do
   """
   def generate_random(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GenerateRandom",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GenerateRandom",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -432,11 +517,16 @@ defmodule Baiji.KMS do
   """
   def update_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAlias",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAlias",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -460,11 +550,16 @@ defmodule Baiji.KMS do
   """
   def retire_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RetireGrant",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RetireGrant",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -486,11 +581,16 @@ defmodule Baiji.KMS do
   """
   def create_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateKey",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateKey",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -516,11 +616,16 @@ defmodule Baiji.KMS do
   """
   def get_parameters_for_import(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetParametersForImport",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetParametersForImport",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -529,11 +634,16 @@ defmodule Baiji.KMS do
   """
   def describe_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeKey",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeKey",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -587,11 +697,16 @@ defmodule Baiji.KMS do
   """
   def generate_data_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GenerateDataKey",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GenerateDataKey",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -600,11 +715,16 @@ defmodule Baiji.KMS do
   """
   def list_aliases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAliases",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAliases",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -613,11 +733,16 @@ defmodule Baiji.KMS do
   """
   def disable_key_rotation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableKeyRotation",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableKeyRotation",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -626,11 +751,16 @@ defmodule Baiji.KMS do
   """
   def list_key_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListKeyPolicies",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListKeyPolicies",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -639,11 +769,16 @@ defmodule Baiji.KMS do
   """
   def enable_key_rotation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableKeyRotation",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableKeyRotation",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -652,11 +787,16 @@ defmodule Baiji.KMS do
   """
   def list_resource_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListResourceTags",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListResourceTags",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -665,11 +805,16 @@ defmodule Baiji.KMS do
   """
   def update_key_description(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateKeyDescription",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateKeyDescription",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -685,11 +830,16 @@ defmodule Baiji.KMS do
   """
   def cancel_key_deletion(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelKeyDeletion",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelKeyDeletion",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -720,11 +870,16 @@ defmodule Baiji.KMS do
   """
   def import_key_material(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportKeyMaterial",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportKeyMaterial",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -749,11 +904,16 @@ defmodule Baiji.KMS do
   """
   def decrypt(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Decrypt",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "Decrypt",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -762,11 +922,16 @@ defmodule Baiji.KMS do
   """
   def list_grants(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGrants",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListGrants",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -796,11 +961,16 @@ defmodule Baiji.KMS do
   """
   def encrypt(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Encrypt",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "Encrypt",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -809,11 +979,16 @@ defmodule Baiji.KMS do
   """
   def get_key_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetKeyPolicy",
-      type:     :json,
-      method:   :post
+      service:        "kms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetKeyPolicy",
+      
+      target_prefix:  "TrentService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

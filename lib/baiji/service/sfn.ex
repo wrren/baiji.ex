@@ -26,11 +26,16 @@ defmodule Baiji.SFN do
   """
   def create_activity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateActivity",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateActivity",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -39,11 +44,16 @@ defmodule Baiji.SFN do
   """
   def create_state_machine(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStateMachine",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateStateMachine",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -52,11 +62,16 @@ defmodule Baiji.SFN do
   """
   def delete_activity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteActivity",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteActivity",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -66,11 +81,16 @@ defmodule Baiji.SFN do
   """
   def delete_state_machine(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteStateMachine",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteStateMachine",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -79,11 +99,16 @@ defmodule Baiji.SFN do
   """
   def describe_activity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeActivity",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeActivity",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -92,11 +117,16 @@ defmodule Baiji.SFN do
   """
   def describe_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeExecution",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeExecution",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -105,11 +135,16 @@ defmodule Baiji.SFN do
   """
   def describe_state_machine(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeStateMachine",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeStateMachine",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -131,11 +166,16 @@ defmodule Baiji.SFN do
   """
   def get_activity_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetActivityTask",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetActivityTask",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -149,11 +189,16 @@ defmodule Baiji.SFN do
   """
   def get_execution_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetExecutionHistory",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetExecutionHistory",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -164,11 +209,16 @@ defmodule Baiji.SFN do
   """
   def list_activities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListActivities",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListActivities",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -179,11 +229,16 @@ defmodule Baiji.SFN do
   """
   def list_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListExecutions",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListExecutions",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -194,11 +249,16 @@ defmodule Baiji.SFN do
   """
   def list_state_machines(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListStateMachines",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListStateMachines",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -208,11 +268,16 @@ defmodule Baiji.SFN do
   """
   def send_task_failure(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendTaskFailure",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendTaskFailure",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -235,11 +300,16 @@ defmodule Baiji.SFN do
   """
   def send_task_heartbeat(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendTaskHeartbeat",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendTaskHeartbeat",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -249,11 +319,16 @@ defmodule Baiji.SFN do
   """
   def send_task_success(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendTaskSuccess",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendTaskSuccess",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -262,11 +337,16 @@ defmodule Baiji.SFN do
   """
   def start_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartExecution",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartExecution",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -275,11 +355,16 @@ defmodule Baiji.SFN do
   """
   def stop_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopExecution",
-      type:     :json,
-      method:   :post
+      service:        "states",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopExecution",
+      
+      target_prefix:  "AWSStepFunctions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

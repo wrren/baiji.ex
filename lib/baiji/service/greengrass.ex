@@ -13,11 +13,14 @@ defmodule Baiji.Greengrass do
   """
   def list_function_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListFunctionDefinitions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions",
+      input:          input,
+      options:        options,
+      action:         "ListFunctionDefinitions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -26,11 +29,14 @@ defmodule Baiji.Greengrass do
   """
   def list_core_definition_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListCoreDefinitionVersions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores/{CoreDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListCoreDefinitionVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -40,11 +46,14 @@ defmodule Baiji.Greengrass do
   """
   def create_subscription_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSubscriptionDefinitionVersion",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateSubscriptionDefinitionVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -53,11 +62,14 @@ defmodule Baiji.Greengrass do
   """
   def update_subscription_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSubscriptionDefinition",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateSubscriptionDefinition",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -67,11 +79,14 @@ defmodule Baiji.Greengrass do
   """
   def create_function_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFunctionDefinitionVersion",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions/{FunctionDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateFunctionDefinitionVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -80,11 +95,14 @@ defmodule Baiji.Greengrass do
   """
   def update_group_certificate_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGroupCertificateConfiguration",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/certificateauthorities/configuration/expiry",
+      input:          input,
+      options:        options,
+      action:         "UpdateGroupCertificateConfiguration",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -93,11 +111,14 @@ defmodule Baiji.Greengrass do
   """
   def disassociate_role_from_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateRoleFromGroup",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/role",
+      input:          input,
+      options:        options,
+      action:         "DisassociateRoleFromGroup",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -106,11 +127,14 @@ defmodule Baiji.Greengrass do
   """
   def get_device_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeviceDefinitionVersion",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices/{DeviceDefinitionId}/versions/{DeviceDefinitionVersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetDeviceDefinitionVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -119,11 +143,14 @@ defmodule Baiji.Greengrass do
   """
   def get_group_certificate_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGroupCertificateConfiguration",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/certificateauthorities/configuration/expiry",
+      input:          input,
+      options:        options,
+      action:         "GetGroupCertificateConfiguration",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -133,11 +160,14 @@ defmodule Baiji.Greengrass do
   """
   def delete_subscription_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSubscriptionDefinition",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteSubscriptionDefinition",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -146,11 +176,14 @@ defmodule Baiji.Greengrass do
   """
   def list_group_certificate_authorities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGroupCertificateAuthorities",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/certificateauthorities",
+      input:          input,
+      options:        options,
+      action:         "ListGroupCertificateAuthorities",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -159,11 +192,14 @@ defmodule Baiji.Greengrass do
   """
   def get_service_role_for_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetServiceRoleForAccount",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/servicerole",
+      input:          input,
+      options:        options,
+      action:         "GetServiceRoleForAccount",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -172,11 +208,14 @@ defmodule Baiji.Greengrass do
   """
   def create_device_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeviceDefinitionVersion",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices/{DeviceDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateDeviceDefinitionVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -188,11 +227,14 @@ defmodule Baiji.Greengrass do
   """
   def create_core_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCoreDefinition",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores",
+      input:          input,
+      options:        options,
+      action:         "CreateCoreDefinition",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -201,11 +243,14 @@ defmodule Baiji.Greengrass do
   """
   def list_group_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGroupVersions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListGroupVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -214,11 +259,14 @@ defmodule Baiji.Greengrass do
   """
   def list_logger_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListLoggerDefinitions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers",
+      input:          input,
+      options:        options,
+      action:         "ListLoggerDefinitions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -227,11 +275,14 @@ defmodule Baiji.Greengrass do
   """
   def delete_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteGroup",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteGroup",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -240,11 +291,14 @@ defmodule Baiji.Greengrass do
   """
   def update_function_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateFunctionDefinition",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions/{FunctionDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateFunctionDefinition",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -254,11 +308,14 @@ defmodule Baiji.Greengrass do
   """
   def delete_device_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDeviceDefinition",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices/{DeviceDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteDeviceDefinition",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -267,11 +324,14 @@ defmodule Baiji.Greengrass do
   """
   def get_device_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeviceDefinition",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices/{DeviceDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "GetDeviceDefinition",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -280,11 +340,14 @@ defmodule Baiji.Greengrass do
   """
   def create_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeployment",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/deployments",
+      input:          input,
+      options:        options,
+      action:         "CreateDeployment",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -293,11 +356,14 @@ defmodule Baiji.Greengrass do
   """
   def get_logger_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetLoggerDefinitionVersion",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers/{LoggerDefinitionId}/versions/{LoggerDefinitionVersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetLoggerDefinitionVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -306,11 +372,14 @@ defmodule Baiji.Greengrass do
   """
   def list_device_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeviceDefinitions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices",
+      input:          input,
+      options:        options,
+      action:         "ListDeviceDefinitions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -319,11 +388,14 @@ defmodule Baiji.Greengrass do
   """
   def get_core_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCoreDefinition",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores/{CoreDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "GetCoreDefinition",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -334,11 +406,14 @@ defmodule Baiji.Greengrass do
   """
   def create_logger_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLoggerDefinition",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers",
+      input:          input,
+      options:        options,
+      action:         "CreateLoggerDefinition",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -347,11 +422,14 @@ defmodule Baiji.Greengrass do
   """
   def list_core_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListCoreDefinitions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores",
+      input:          input,
+      options:        options,
+      action:         "ListCoreDefinitions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -360,11 +438,14 @@ defmodule Baiji.Greengrass do
   """
   def create_logger_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLoggerDefinitionVersion",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers/{LoggerDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateLoggerDefinitionVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -373,11 +454,14 @@ defmodule Baiji.Greengrass do
   """
   def get_group_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGroupVersion",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/versions/{GroupVersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetGroupVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -386,11 +470,14 @@ defmodule Baiji.Greengrass do
   """
   def get_deployment_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeploymentStatus",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/deployments/{DeploymentId}/status",
+      input:          input,
+      options:        options,
+      action:         "GetDeploymentStatus",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -399,11 +486,14 @@ defmodule Baiji.Greengrass do
   """
   def list_subscription_definition_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSubscriptionDefinitionVersions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListSubscriptionDefinitionVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -413,11 +503,14 @@ defmodule Baiji.Greengrass do
   """
   def create_group_certificate_authority(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateGroupCertificateAuthority",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/certificateauthorities",
+      input:          input,
+      options:        options,
+      action:         "CreateGroupCertificateAuthority",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -426,11 +519,14 @@ defmodule Baiji.Greengrass do
   """
   def get_subscription_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSubscriptionDefinitionVersion",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}/versions/{SubscriptionDefinitionVersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetSubscriptionDefinitionVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -439,11 +535,14 @@ defmodule Baiji.Greengrass do
   """
   def get_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGroup",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}",
+      input:          input,
+      options:        options,
+      action:         "GetGroup",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -452,11 +551,14 @@ defmodule Baiji.Greengrass do
   """
   def update_device_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDeviceDefinition",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices/{DeviceDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDeviceDefinition",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -465,11 +567,14 @@ defmodule Baiji.Greengrass do
   """
   def update_core_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateCoreDefinition",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores/{CoreDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateCoreDefinition",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -478,11 +583,14 @@ defmodule Baiji.Greengrass do
   """
   def get_connectivity_info(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetConnectivityInfo",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/things/{ThingName}/connectivityInfo",
+      input:          input,
+      options:        options,
+      action:         "GetConnectivityInfo",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -492,11 +600,14 @@ defmodule Baiji.Greengrass do
   """
   def get_function_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFunctionDefinition",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions/{FunctionDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "GetFunctionDefinition",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -505,11 +616,14 @@ defmodule Baiji.Greengrass do
   """
   def list_subscription_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSubscriptionDefinitions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions",
+      input:          input,
+      options:        options,
+      action:         "ListSubscriptionDefinitions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -520,11 +634,14 @@ defmodule Baiji.Greengrass do
   """
   def create_device_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeviceDefinition",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices",
+      input:          input,
+      options:        options,
+      action:         "CreateDeviceDefinition",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -533,11 +650,14 @@ defmodule Baiji.Greengrass do
   """
   def get_logger_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetLoggerDefinition",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers/{LoggerDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "GetLoggerDefinition",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -546,11 +666,14 @@ defmodule Baiji.Greengrass do
   """
   def get_associated_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAssociatedRole",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/role",
+      input:          input,
+      options:        options,
+      action:         "GetAssociatedRole",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -559,11 +682,14 @@ defmodule Baiji.Greengrass do
   """
   def create_group_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateGroupVersion",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateGroupVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -572,11 +698,14 @@ defmodule Baiji.Greengrass do
   """
   def list_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGroups",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups",
+      input:          input,
+      options:        options,
+      action:         "ListGroups",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -585,11 +714,14 @@ defmodule Baiji.Greengrass do
   """
   def get_group_certificate_authority(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGroupCertificateAuthority",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/certificateauthorities/{CertificateAuthorityId}",
+      input:          input,
+      options:        options,
+      action:         "GetGroupCertificateAuthority",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -598,11 +730,14 @@ defmodule Baiji.Greengrass do
   """
   def list_device_definition_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeviceDefinitionVersions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/devices/{DeviceDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListDeviceDefinitionVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -611,11 +746,14 @@ defmodule Baiji.Greengrass do
   """
   def get_subscription_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSubscriptionDefinition",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions/{SubscriptionDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "GetSubscriptionDefinition",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -625,11 +763,14 @@ defmodule Baiji.Greengrass do
   """
   def disassociate_service_role_from_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateServiceRoleFromAccount",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/servicerole",
+      input:          input,
+      options:        options,
+      action:         "DisassociateServiceRoleFromAccount",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -641,11 +782,14 @@ defmodule Baiji.Greengrass do
   """
   def associate_service_role_to_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateServiceRoleToAccount",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/servicerole",
+      input:          input,
+      options:        options,
+      action:         "AssociateServiceRoleToAccount",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -656,11 +800,14 @@ defmodule Baiji.Greengrass do
   """
   def get_function_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFunctionDefinitionVersion",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions/{FunctionDefinitionId}/versions/{FunctionDefinitionVersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetFunctionDefinitionVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -670,11 +817,14 @@ defmodule Baiji.Greengrass do
   """
   def create_core_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCoreDefinitionVersion",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores/{CoreDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateCoreDefinitionVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -684,11 +834,14 @@ defmodule Baiji.Greengrass do
   """
   def delete_logger_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLoggerDefinition",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers/{LoggerDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteLoggerDefinition",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -699,11 +852,14 @@ defmodule Baiji.Greengrass do
   """
   def create_subscription_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSubscriptionDefinition",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/subscriptions",
+      input:          input,
+      options:        options,
+      action:         "CreateSubscriptionDefinition",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -712,11 +868,14 @@ defmodule Baiji.Greengrass do
   """
   def get_core_definition_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCoreDefinitionVersion",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores/{CoreDefinitionId}/versions/{CoreDefinitionVersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetCoreDefinitionVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -725,11 +884,14 @@ defmodule Baiji.Greengrass do
   """
   def list_deployments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeployments",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/deployments",
+      input:          input,
+      options:        options,
+      action:         "ListDeployments",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -739,11 +901,14 @@ defmodule Baiji.Greengrass do
   """
   def delete_function_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFunctionDefinition",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions/{FunctionDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteFunctionDefinition",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -752,11 +917,14 @@ defmodule Baiji.Greengrass do
   """
   def update_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGroup",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateGroup",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -765,11 +933,14 @@ defmodule Baiji.Greengrass do
   """
   def list_logger_definition_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListLoggerDefinitionVersions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers/{LoggerDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListLoggerDefinitionVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -778,11 +949,14 @@ defmodule Baiji.Greengrass do
   """
   def update_logger_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateLoggerDefinition",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/loggers/{LoggerDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateLoggerDefinition",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -792,11 +966,14 @@ defmodule Baiji.Greengrass do
   """
   def create_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateGroup",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups",
+      input:          input,
+      options:        options,
+      action:         "CreateGroup",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -806,11 +983,14 @@ defmodule Baiji.Greengrass do
   """
   def delete_core_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCoreDefinition",
-      type:     :json,
-      method:   :delete
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/cores/{CoreDefinitionId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteCoreDefinition",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -819,11 +999,14 @@ defmodule Baiji.Greengrass do
   """
   def list_function_definition_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListFunctionDefinitionVersions",
-      type:     :json,
-      method:   :get
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions/{FunctionDefinitionId}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListFunctionDefinitionVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -834,11 +1017,14 @@ defmodule Baiji.Greengrass do
   """
   def update_connectivity_info(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateConnectivityInfo",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/things/{ThingName}/connectivityInfo",
+      input:          input,
+      options:        options,
+      action:         "UpdateConnectivityInfo",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -850,11 +1036,14 @@ defmodule Baiji.Greengrass do
   """
   def associate_role_to_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateRoleToGroup",
-      type:     :json,
-      method:   :put
+      service:        "greengrass",
+      endpoint:       "/greengrass/groups/{GroupId}/role",
+      input:          input,
+      options:        options,
+      action:         "AssociateRoleToGroup",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -867,11 +1056,14 @@ defmodule Baiji.Greengrass do
   """
   def create_function_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFunctionDefinition",
-      type:     :json,
-      method:   :post
+      service:        "greengrass",
+      endpoint:       "/greengrass/definition/functions",
+      input:          input,
+      options:        options,
+      action:         "CreateFunctionDefinition",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

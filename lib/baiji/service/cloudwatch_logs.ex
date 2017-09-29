@@ -41,11 +41,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def cancel_export_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelExportTask",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelExportTask",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -67,11 +72,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def create_export_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateExportTask",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateExportTask",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -94,11 +104,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def create_log_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLogGroup",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateLogGroup",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -120,11 +135,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def create_log_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLogStream",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateLogStream",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -135,11 +155,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_destination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDestination",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDestination",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -149,11 +174,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_log_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLogGroup",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteLogGroup",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -163,11 +193,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_log_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLogStream",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteLogStream",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -176,11 +211,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_metric_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteMetricFilter",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteMetricFilter",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -190,11 +230,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_resource_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteResourcePolicy",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteResourcePolicy",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -206,11 +251,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_retention_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRetentionPolicy",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRetentionPolicy",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -219,11 +269,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def delete_subscription_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSubscriptionFilter",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSubscriptionFilter",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -233,11 +288,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_destinations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDestinations",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDestinations",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -247,11 +307,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_export_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeExportTasks",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeExportTasks",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -261,11 +326,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_log_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLogGroups",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLogGroups",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -279,11 +349,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_log_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLogStreams",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLogStreams",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -294,11 +369,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_metric_filters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeMetricFilters",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeMetricFilters",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -307,11 +387,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_resource_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeResourcePolicies",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeResourcePolicies",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -322,11 +407,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def describe_subscription_filters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSubscriptionFilters",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSubscriptionFilters",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -343,11 +433,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def filter_log_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "FilterLogEvents",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "FilterLogEvents",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -361,11 +456,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def get_log_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetLogEvents",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetLogEvents",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -376,11 +476,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def list_tags_log_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsLogGroup",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagsLogGroup",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -399,11 +504,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_destination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutDestination",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutDestination",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -416,11 +526,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_destination_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutDestinationPolicy",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutDestinationPolicy",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -459,11 +574,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_log_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutLogEvents",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutLogEvents",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -477,11 +597,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_metric_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutMetricFilter",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutMetricFilter",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -492,11 +617,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_resource_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutResourcePolicy",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutResourcePolicy",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -507,11 +637,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_retention_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRetentionPolicy",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutRetentionPolicy",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -541,11 +676,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def put_subscription_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutSubscriptionFilter",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutSubscriptionFilter",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -561,11 +701,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def tag_log_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TagLogGroup",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TagLogGroup",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -576,11 +721,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def test_metric_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TestMetricFilter",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TestMetricFilter",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -592,11 +742,16 @@ defmodule Baiji.CloudwatchLogs do
   """
   def untag_log_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UntagLogGroup",
-      type:     :json,
-      method:   :post
+      service:        "logs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UntagLogGroup",
+      
+      target_prefix:  "Logs_20140328",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

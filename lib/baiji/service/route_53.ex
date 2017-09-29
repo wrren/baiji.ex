@@ -14,11 +14,14 @@ defmodule Baiji.Route53 do
   """
   def create_traffic_policy_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTrafficPolicyInstance",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstance",
+      input:          input,
+      options:        options,
+      action:         "CreateTrafficPolicyInstance",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -81,11 +84,14 @@ defmodule Baiji.Route53 do
   """
   def list_hosted_zones_by_name(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListHostedZonesByName",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzonesbyname",
+      input:          input,
+      options:        options,
+      action:         "ListHostedZonesByName",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -106,11 +112,14 @@ defmodule Baiji.Route53 do
   """
   def delete_health_check(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteHealthCheck",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck/{HealthCheckId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteHealthCheck",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -140,11 +149,14 @@ defmodule Baiji.Route53 do
   """
   def update_traffic_policy_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTrafficPolicyInstance",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstance/{Id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateTrafficPolicyInstance",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -166,11 +178,14 @@ defmodule Baiji.Route53 do
   """
   def associate_v_p_c_with_hosted_zone(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateVPCWithHostedZone",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/associatevpc",
+      input:          input,
+      options:        options,
+      action:         "AssociateVPCWithHostedZone",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -213,11 +228,14 @@ defmodule Baiji.Route53 do
   """
   def create_health_check(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateHealthCheck",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck",
+      input:          input,
+      options:        options,
+      action:         "CreateHealthCheck",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -228,11 +246,14 @@ defmodule Baiji.Route53 do
   """
   def list_traffic_policy_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTrafficPolicyVersions",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicies/{Id}/versions",
+      input:          input,
+      options:        options,
+      action:         "ListTrafficPolicyVersions",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -251,11 +272,14 @@ defmodule Baiji.Route53 do
   """
   def list_traffic_policy_instances_by_hosted_zone(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTrafficPolicyInstancesByHostedZone",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstances/hostedzone",
+      input:          input,
+      options:        options,
+      action:         "ListTrafficPolicyInstancesByHostedZone",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -269,11 +293,14 @@ defmodule Baiji.Route53 do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForResource",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/tags/{ResourceType}/{ResourceId}",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForResource",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -287,11 +314,14 @@ defmodule Baiji.Route53 do
   """
   def change_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ChangeTagsForResource",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/tags/{ResourceType}/{ResourceId}",
+      input:          input,
+      options:        options,
+      action:         "ChangeTagsForResource",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -336,11 +366,14 @@ defmodule Baiji.Route53 do
   """
   def create_hosted_zone(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateHostedZone",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone",
+      input:          input,
+      options:        options,
+      action:         "CreateHostedZone",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -454,11 +487,14 @@ defmodule Baiji.Route53 do
   """
   def create_query_logging_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateQueryLoggingConfig",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/queryloggingconfig",
+      input:          input,
+      options:        options,
+      action:         "CreateQueryLoggingConfig",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -475,11 +511,14 @@ defmodule Baiji.Route53 do
   """
   def list_query_logging_configs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListQueryLoggingConfigs",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/queryloggingconfig",
+      input:          input,
+      options:        options,
+      action:         "ListQueryLoggingConfigs",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -489,11 +528,14 @@ defmodule Baiji.Route53 do
   """
   def list_health_checks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListHealthChecks",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck",
+      input:          input,
+      options:        options,
+      action:         "ListHealthChecks",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -508,11 +550,14 @@ defmodule Baiji.Route53 do
   """
   def list_hosted_zones(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListHostedZones",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone",
+      input:          input,
+      options:        options,
+      action:         "ListHostedZones",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -526,11 +571,14 @@ defmodule Baiji.Route53 do
   """
   def list_geo_locations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGeoLocations",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/geolocations",
+      input:          input,
+      options:        options,
+      action:         "ListGeoLocations",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -539,11 +587,14 @@ defmodule Baiji.Route53 do
   """
   def update_traffic_policy_comment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTrafficPolicyComment",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicy/{Id}/{Version}",
+      input:          input,
+      options:        options,
+      action:         "UpdateTrafficPolicyComment",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -554,11 +605,14 @@ defmodule Baiji.Route53 do
   """
   def list_traffic_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTrafficPolicies",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicies",
+      input:          input,
+      options:        options,
+      action:         "ListTrafficPolicies",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -608,11 +662,14 @@ defmodule Baiji.Route53 do
   """
   def list_resource_record_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListResourceRecordSets",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/rrset",
+      input:          input,
+      options:        options,
+      action:         "ListResourceRecordSets",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -631,11 +688,14 @@ defmodule Baiji.Route53 do
   """
   def get_change(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetChange",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/change/{Id}",
+      input:          input,
+      options:        options,
+      action:         "GetChange",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -656,11 +716,14 @@ defmodule Baiji.Route53 do
   """
   def delete_v_p_c_association_authorization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVPCAssociationAuthorization",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/deauthorizevpcassociation",
+      input:          input,
+      options:        options,
+      action:         "DeleteVPCAssociationAuthorization",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -672,11 +735,14 @@ defmodule Baiji.Route53 do
   """
   def test_d_n_s_answer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TestDNSAnswer",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/testdnsanswer",
+      input:          input,
+      options:        options,
+      action:         "TestDNSAnswer",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -690,11 +756,14 @@ defmodule Baiji.Route53 do
   """
   def list_v_p_c_association_authorizations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListVPCAssociationAuthorizations",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/authorizevpcassociation",
+      input:          input,
+      options:        options,
+      action:         "ListVPCAssociationAuthorizations",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -710,11 +779,14 @@ defmodule Baiji.Route53 do
   """
   def delete_reusable_delegation_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteReusableDelegationSet",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "route53",
+      endpoint:       "/2013-04-01/delegationset/{Id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteReusableDelegationSet",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -723,11 +795,14 @@ defmodule Baiji.Route53 do
   """
   def update_hosted_zone_comment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateHostedZoneComment",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateHostedZoneComment",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -746,11 +821,14 @@ defmodule Baiji.Route53 do
   """
   def create_reusable_delegation_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateReusableDelegationSet",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/delegationset",
+      input:          input,
+      options:        options,
+      action:         "CreateReusableDelegationSet",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -771,11 +849,14 @@ defmodule Baiji.Route53 do
   """
   def create_v_p_c_association_authorization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVPCAssociationAuthorization",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/authorizevpcassociation",
+      input:          input,
+      options:        options,
+      action:         "CreateVPCAssociationAuthorization",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -794,11 +875,14 @@ defmodule Baiji.Route53 do
   """
   def list_traffic_policy_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTrafficPolicyInstances",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstances",
+      input:          input,
+      options:        options,
+      action:         "ListTrafficPolicyInstances",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -813,11 +897,14 @@ defmodule Baiji.Route53 do
   """
   def delete_traffic_policy_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTrafficPolicyInstance",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstance/{Id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteTrafficPolicyInstance",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -826,11 +913,14 @@ defmodule Baiji.Route53 do
   """
   def delete_traffic_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTrafficPolicy",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicy/{Id}/{Version}",
+      input:          input,
+      options:        options,
+      action:         "DeleteTrafficPolicy",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -839,11 +929,14 @@ defmodule Baiji.Route53 do
   """
   def get_traffic_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTrafficPolicy",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicy/{Id}/{Version}",
+      input:          input,
+      options:        options,
+      action:         "GetTrafficPolicy",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -857,11 +950,14 @@ defmodule Baiji.Route53 do
   """
   def list_tags_for_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForResources",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/tags/{ResourceType}",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForResources",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -870,11 +966,14 @@ defmodule Baiji.Route53 do
   """
   def get_health_check_last_failure_reason(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHealthCheckLastFailureReason",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck/{HealthCheckId}/lastfailurereason",
+      input:          input,
+      options:        options,
+      action:         "GetHealthCheckLastFailureReason",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -884,11 +983,14 @@ defmodule Baiji.Route53 do
   """
   def get_traffic_policy_instance_count(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTrafficPolicyInstanceCount",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstancecount",
+      input:          input,
+      options:        options,
+      action:         "GetTrafficPolicyInstanceCount",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -982,11 +1084,14 @@ defmodule Baiji.Route53 do
   """
   def change_resource_record_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ChangeResourceRecordSets",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/rrset/",
+      input:          input,
+      options:        options,
+      action:         "ChangeResourceRecordSets",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -995,11 +1100,14 @@ defmodule Baiji.Route53 do
   """
   def get_health_check(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHealthCheck",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck/{HealthCheckId}",
+      input:          input,
+      options:        options,
+      action:         "GetHealthCheck",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1009,11 +1117,14 @@ defmodule Baiji.Route53 do
   """
   def get_health_check_count(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHealthCheckCount",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheckcount",
+      input:          input,
+      options:        options,
+      action:         "GetHealthCheckCount",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1040,11 +1151,14 @@ defmodule Baiji.Route53 do
   """
   def get_geo_location(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGeoLocation",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/geolocation",
+      input:          input,
+      options:        options,
+      action:         "GetGeoLocation",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1060,11 +1174,14 @@ defmodule Baiji.Route53 do
   """
   def create_traffic_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTrafficPolicyVersion",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicy/{Id}",
+      input:          input,
+      options:        options,
+      action:         "CreateTrafficPolicyVersion",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -1078,11 +1195,14 @@ defmodule Baiji.Route53 do
   """
   def update_health_check(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateHealthCheck",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck/{HealthCheckId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateHealthCheck",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -1096,11 +1216,14 @@ defmodule Baiji.Route53 do
   """
   def delete_query_logging_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteQueryLoggingConfig",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "route53",
+      endpoint:       "/2013-04-01/queryloggingconfig/{Id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteQueryLoggingConfig",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -1113,11 +1236,14 @@ defmodule Baiji.Route53 do
   """
   def get_query_logging_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQueryLoggingConfig",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/queryloggingconfig/{Id}",
+      input:          input,
+      options:        options,
+      action:         "GetQueryLoggingConfig",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1127,11 +1253,14 @@ defmodule Baiji.Route53 do
   """
   def get_reusable_delegation_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetReusableDelegationSet",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/delegationset/{Id}",
+      input:          input,
+      options:        options,
+      action:         "GetReusableDelegationSet",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1148,11 +1277,14 @@ defmodule Baiji.Route53 do
   """
   def disassociate_v_p_c_from_hosted_zone(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateVPCFromHostedZone",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}/disassociatevpc",
+      input:          input,
+      options:        options,
+      action:         "DisassociateVPCFromHostedZone",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -1162,11 +1294,14 @@ defmodule Baiji.Route53 do
   """
   def get_hosted_zone(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHostedZone",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}",
+      input:          input,
+      options:        options,
+      action:         "GetHostedZone",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1185,11 +1320,14 @@ defmodule Baiji.Route53 do
   """
   def get_traffic_policy_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTrafficPolicyInstance",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstance/{Id}",
+      input:          input,
+      options:        options,
+      action:         "GetTrafficPolicyInstance",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1198,11 +1336,14 @@ defmodule Baiji.Route53 do
   """
   def get_health_check_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHealthCheckStatus",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/healthcheck/{HealthCheckId}/status",
+      input:          input,
+      options:        options,
+      action:         "GetHealthCheckStatus",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1243,11 +1384,14 @@ defmodule Baiji.Route53 do
   """
   def delete_hosted_zone(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteHostedZone",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzone/{Id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteHostedZone",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -1257,11 +1401,14 @@ defmodule Baiji.Route53 do
   """
   def list_reusable_delegation_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListReusableDelegationSets",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/delegationset",
+      input:          input,
+      options:        options,
+      action:         "ListReusableDelegationSets",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1272,11 +1419,14 @@ defmodule Baiji.Route53 do
   """
   def create_traffic_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTrafficPolicy",
-      type:     :rest_xml,
-      method:   :post
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicy",
+      input:          input,
+      options:        options,
+      action:         "CreateTrafficPolicy",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -1286,11 +1436,14 @@ defmodule Baiji.Route53 do
   """
   def get_hosted_zone_count(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHostedZoneCount",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/hostedzonecount",
+      input:          input,
+      options:        options,
+      action:         "GetHostedZoneCount",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1309,11 +1462,14 @@ defmodule Baiji.Route53 do
   """
   def list_traffic_policy_instances_by_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTrafficPolicyInstancesByPolicy",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/trafficpolicyinstances/trafficpolicy",
+      input:          input,
+      options:        options,
+      action:         "ListTrafficPolicyInstancesByPolicy",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -1326,11 +1482,14 @@ defmodule Baiji.Route53 do
   """
   def get_checker_ip_ranges(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCheckerIpRanges",
-      type:     :rest_xml,
-      method:   :get
+      service:        "route53",
+      endpoint:       "/2013-04-01/checkeripranges",
+      input:          input,
+      options:        options,
+      action:         "GetCheckerIpRanges",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   

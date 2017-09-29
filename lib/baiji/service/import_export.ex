@@ -16,11 +16,14 @@ defmodule Baiji.ImportExport do
   """
   def cancel_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelJob",
-      type:     :xml,
-      method:   :post
+      service:        "importexport",
+      endpoint:       "/?Operation=CancelJob",
+      input:          input,
+      options:        options,
+      action:         "CancelJob",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -33,11 +36,14 @@ defmodule Baiji.ImportExport do
   """
   def create_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateJob",
-      type:     :xml,
-      method:   :post
+      service:        "importexport",
+      endpoint:       "/?Operation=CreateJob",
+      input:          input,
+      options:        options,
+      action:         "CreateJob",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -47,11 +53,14 @@ defmodule Baiji.ImportExport do
   """
   def get_shipping_label(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetShippingLabel",
-      type:     :xml,
-      method:   :post
+      service:        "importexport",
+      endpoint:       "/?Operation=GetShippingLabel",
+      input:          input,
+      options:        options,
+      action:         "GetShippingLabel",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -63,11 +72,14 @@ defmodule Baiji.ImportExport do
   """
   def get_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetStatus",
-      type:     :xml,
-      method:   :post
+      service:        "importexport",
+      endpoint:       "/?Operation=GetStatus",
+      input:          input,
+      options:        options,
+      action:         "GetStatus",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -80,11 +92,14 @@ defmodule Baiji.ImportExport do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListJobs",
-      type:     :xml,
-      method:   :post
+      service:        "importexport",
+      endpoint:       "/?Operation=ListJobs",
+      input:          input,
+      options:        options,
+      action:         "ListJobs",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -97,11 +112,14 @@ defmodule Baiji.ImportExport do
   """
   def update_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateJob",
-      type:     :xml,
-      method:   :post
+      service:        "importexport",
+      endpoint:       "/?Operation=UpdateJob",
+      input:          input,
+      options:        options,
+      action:         "UpdateJob",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

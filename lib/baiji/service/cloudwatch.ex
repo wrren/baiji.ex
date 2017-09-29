@@ -24,11 +24,14 @@ defmodule Baiji.CloudWatch do
   """
   def delete_alarms(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAlarms",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAlarms",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -39,11 +42,14 @@ defmodule Baiji.CloudWatch do
   """
   def delete_dashboards(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDashboards",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDashboards",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -56,11 +62,14 @@ defmodule Baiji.CloudWatch do
   """
   def describe_alarm_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAlarmHistory",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAlarmHistory",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -71,11 +80,14 @@ defmodule Baiji.CloudWatch do
   """
   def describe_alarms(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAlarms",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAlarms",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -85,11 +97,14 @@ defmodule Baiji.CloudWatch do
   """
   def describe_alarms_for_metric(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAlarmsForMetric",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAlarmsForMetric",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -99,11 +114,14 @@ defmodule Baiji.CloudWatch do
   """
   def disable_alarm_actions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableAlarmActions",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableAlarmActions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -112,11 +130,14 @@ defmodule Baiji.CloudWatch do
   """
   def enable_alarm_actions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableAlarmActions",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableAlarmActions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -129,11 +150,14 @@ defmodule Baiji.CloudWatch do
   """
   def get_dashboard(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDashboard",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDashboard",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -195,11 +219,14 @@ defmodule Baiji.CloudWatch do
   """
   def get_metric_statistics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetMetricStatistics",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetMetricStatistics",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -210,11 +237,14 @@ defmodule Baiji.CloudWatch do
   """
   def list_dashboards(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDashboards",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDashboards",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -231,11 +261,14 @@ defmodule Baiji.CloudWatch do
   """
   def list_metrics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListMetrics",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListMetrics",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -264,11 +297,14 @@ defmodule Baiji.CloudWatch do
   """
   def put_dashboard(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutDashboard",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutDashboard",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -318,11 +354,14 @@ defmodule Baiji.CloudWatch do
   """
   def put_metric_alarm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutMetricAlarm",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutMetricAlarm",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -365,11 +404,14 @@ defmodule Baiji.CloudWatch do
   """
   def put_metric_data(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutMetricData",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutMetricData",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -385,11 +427,14 @@ defmodule Baiji.CloudWatch do
   """
   def set_alarm_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetAlarmState",
-      type:     :xml,
-      method:   :post
+      service:        "monitoring",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetAlarmState",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

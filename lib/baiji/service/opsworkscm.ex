@@ -74,11 +74,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def associate_node(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateNode",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateNode",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -101,11 +106,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def create_backup(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateBackup",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateBackup",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -136,11 +146,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def create_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateServer",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateServer",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -155,11 +170,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def delete_backup(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBackup",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteBackup",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -179,11 +199,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def delete_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteServer",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteServer",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -195,11 +220,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def describe_account_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAccountAttributes",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAccountAttributes",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -216,11 +246,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def describe_backups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeBackups",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeBackups",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -236,11 +271,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEvents",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEvents",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -255,11 +295,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def describe_node_association_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNodeAssociationStatus",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNodeAssociationStatus",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -276,11 +321,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def describe_servers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeServers",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeServers",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -298,11 +348,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def disassociate_node(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateNode",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateNode",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -322,11 +377,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def restore_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RestoreServer",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RestoreServer",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -344,11 +404,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def start_maintenance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartMaintenance",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartMaintenance",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -359,11 +424,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def update_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateServer",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateServer",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -383,11 +453,16 @@ defmodule Baiji.OpsWorksCM do
   """
   def update_server_engine_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateServerEngineAttributes",
-      type:     :json,
-      method:   :post
+      service:        "opsworkscm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateServerEngineAttributes",
+      
+      target_prefix:  "OpsWorksCM_V2016_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

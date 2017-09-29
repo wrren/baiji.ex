@@ -76,11 +76,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def associate_configuration_items_to_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateConfigurationItemsToApplication",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateConfigurationItemsToApplication",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -89,11 +94,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def create_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApplication",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateApplication",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -104,11 +114,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def create_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTags",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTags",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -118,11 +133,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def delete_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplications",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplications",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -132,11 +152,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTags",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTags",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -146,11 +171,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def describe_agents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAgents",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAgents",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -168,11 +198,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def describe_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigurations",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigurations",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -184,11 +219,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def describe_export_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeExportConfigurations",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeExportConfigurations",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -198,11 +238,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def describe_export_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeExportTasks",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeExportTasks",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -213,11 +258,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTags",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTags",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -226,11 +276,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def disassociate_configuration_items_from_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateConfigurationItemsFromApplication",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateConfigurationItemsFromApplication",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -246,11 +301,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def export_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ExportConfigurations",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ExportConfigurations",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -259,11 +319,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def get_discovery_summary(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDiscoverySummary",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDiscoverySummary",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -274,11 +339,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def list_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListConfigurations",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListConfigurations",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -288,11 +358,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def list_server_neighbors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListServerNeighbors",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListServerNeighbors",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -301,11 +376,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def start_data_collection_by_agent_ids(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartDataCollectionByAgentIds",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartDataCollectionByAgentIds",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -325,11 +405,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def start_export_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartExportTask",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartExportTask",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -338,11 +423,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def stop_data_collection_by_agent_ids(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopDataCollectionByAgentIds",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopDataCollectionByAgentIds",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -351,11 +441,16 @@ defmodule Baiji.ApplicationDiscoveryService do
   """
   def update_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplication",
-      type:     :json,
-      method:   :post
+      service:        "discovery",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplication",
+      
+      target_prefix:  "AWSPoseidonService_V2015_11_01",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

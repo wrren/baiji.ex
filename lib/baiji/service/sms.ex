@@ -12,11 +12,16 @@ defmodule Baiji.SMS do
   """
   def create_replication_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateReplicationJob",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateReplicationJob",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -28,11 +33,16 @@ defmodule Baiji.SMS do
   """
   def delete_replication_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteReplicationJob",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteReplicationJob",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -43,11 +53,16 @@ defmodule Baiji.SMS do
   """
   def delete_server_catalog(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteServerCatalog",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteServerCatalog",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -57,11 +72,16 @@ defmodule Baiji.SMS do
   """
   def disassociate_connector(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateConnector",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateConnector",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -71,11 +91,16 @@ defmodule Baiji.SMS do
   """
   def get_connectors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetConnectors",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetConnectors",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -86,11 +111,16 @@ defmodule Baiji.SMS do
   """
   def get_replication_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetReplicationJobs",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetReplicationJobs",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -102,11 +132,16 @@ defmodule Baiji.SMS do
   """
   def get_replication_runs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetReplicationRuns",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetReplicationRuns",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -117,11 +152,16 @@ defmodule Baiji.SMS do
   """
   def get_servers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetServers",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetServers",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -134,11 +174,16 @@ defmodule Baiji.SMS do
   """
   def import_server_catalog(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportServerCatalog",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportServerCatalog",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -151,11 +196,16 @@ defmodule Baiji.SMS do
   """
   def start_on_demand_replication_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartOnDemandReplicationRun",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartOnDemandReplicationRun",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -166,11 +216,16 @@ defmodule Baiji.SMS do
   """
   def update_replication_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateReplicationJob",
-      type:     :json,
-      method:   :post
+      service:        "sms",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateReplicationJob",
+      
+      target_prefix:  "AWSServerMigrationService_V2016_10_24",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

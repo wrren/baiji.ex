@@ -15,11 +15,16 @@ defmodule Baiji.Kinesis do
   """
   def add_tags_to_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddTagsToStream",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddTagsToStream",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -68,11 +73,16 @@ defmodule Baiji.Kinesis do
   """
   def create_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStream",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateStream",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -87,11 +97,16 @@ defmodule Baiji.Kinesis do
   """
   def decrease_stream_retention_period(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DecreaseStreamRetentionPeriod",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DecreaseStreamRetentionPeriod",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -119,11 +134,16 @@ defmodule Baiji.Kinesis do
   """
   def delete_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteStream",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteStream",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -137,11 +157,16 @@ defmodule Baiji.Kinesis do
   """
   def describe_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLimits",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLimits",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -169,11 +194,16 @@ defmodule Baiji.Kinesis do
   """
   def describe_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeStream",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeStream",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -182,11 +212,16 @@ defmodule Baiji.Kinesis do
   """
   def disable_enhanced_monitoring(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableEnhancedMonitoring",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableEnhancedMonitoring",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -195,11 +230,16 @@ defmodule Baiji.Kinesis do
   """
   def enable_enhanced_monitoring(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableEnhancedMonitoring",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableEnhancedMonitoring",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -265,11 +305,16 @@ defmodule Baiji.Kinesis do
   """
   def get_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRecords",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRecords",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -317,11 +362,16 @@ defmodule Baiji.Kinesis do
   """
   def get_shard_iterator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetShardIterator",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetShardIterator",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -340,11 +390,16 @@ defmodule Baiji.Kinesis do
   """
   def increase_stream_retention_period(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "IncreaseStreamRetentionPeriod",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "IncreaseStreamRetentionPeriod",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -369,11 +424,16 @@ defmodule Baiji.Kinesis do
   """
   def list_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListStreams",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListStreams",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -382,11 +442,16 @@ defmodule Baiji.Kinesis do
   """
   def list_tags_for_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForStream",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForStream",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -433,11 +498,16 @@ defmodule Baiji.Kinesis do
   """
   def merge_shards(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "MergeShards",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "MergeShards",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -489,11 +559,16 @@ defmodule Baiji.Kinesis do
   """
   def put_record(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRecord",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutRecord",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -566,11 +641,16 @@ defmodule Baiji.Kinesis do
   """
   def put_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRecords",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutRecords",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -583,11 +663,16 @@ defmodule Baiji.Kinesis do
   """
   def remove_tags_from_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveTagsFromStream",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveTagsFromStream",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -645,11 +730,16 @@ defmodule Baiji.Kinesis do
   """
   def split_shard(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SplitShard",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SplitShard",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -676,11 +766,16 @@ defmodule Baiji.Kinesis do
   """
   def start_stream_encryption(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartStreamEncryption",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartStreamEncryption",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -707,11 +802,16 @@ defmodule Baiji.Kinesis do
   """
   def stop_stream_encryption(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopStreamEncryption",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopStreamEncryption",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -756,11 +856,16 @@ defmodule Baiji.Kinesis do
   """
   def update_shard_count(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateShardCount",
-      type:     :json,
-      method:   :post
+      service:        "kinesis",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateShardCount",
+      
+      target_prefix:  "Kinesis_20131202",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

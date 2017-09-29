@@ -87,11 +87,16 @@ defmodule Baiji.CodeCommit do
   """
   def batch_get_repositories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetRepositories",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetRepositories",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -105,11 +110,16 @@ defmodule Baiji.CodeCommit do
   """
   def create_branch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateBranch",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateBranch",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -118,11 +128,16 @@ defmodule Baiji.CodeCommit do
   """
   def create_repository(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRepository",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateRepository",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -138,11 +153,16 @@ defmodule Baiji.CodeCommit do
   """
   def delete_repository(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRepository",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRepository",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -152,11 +172,16 @@ defmodule Baiji.CodeCommit do
   """
   def get_blob(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBlob",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetBlob",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -166,11 +191,16 @@ defmodule Baiji.CodeCommit do
   """
   def get_branch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBranch",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetBranch",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -180,11 +210,16 @@ defmodule Baiji.CodeCommit do
   """
   def get_commit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCommit",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCommit",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -195,11 +230,16 @@ defmodule Baiji.CodeCommit do
   """
   def get_differences(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDifferences",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDifferences",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -217,11 +257,16 @@ defmodule Baiji.CodeCommit do
   """
   def get_repository(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRepository",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRepository",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -230,11 +275,16 @@ defmodule Baiji.CodeCommit do
   """
   def get_repository_triggers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRepositoryTriggers",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRepositoryTriggers",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -243,11 +293,16 @@ defmodule Baiji.CodeCommit do
   """
   def list_branches(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBranches",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListBranches",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -256,11 +311,16 @@ defmodule Baiji.CodeCommit do
   """
   def list_repositories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRepositories",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRepositories",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -270,11 +330,16 @@ defmodule Baiji.CodeCommit do
   """
   def put_repository_triggers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRepositoryTriggers",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutRepositoryTriggers",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -286,11 +351,16 @@ defmodule Baiji.CodeCommit do
   """
   def test_repository_triggers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TestRepositoryTriggers",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TestRepositoryTriggers",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -305,11 +375,16 @@ defmodule Baiji.CodeCommit do
   """
   def update_default_branch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDefaultBranch",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDefaultBranch",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -327,11 +402,16 @@ defmodule Baiji.CodeCommit do
   """
   def update_repository_description(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateRepositoryDescription",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateRepositoryDescription",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -346,11 +426,16 @@ defmodule Baiji.CodeCommit do
   """
   def update_repository_name(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateRepositoryName",
-      type:     :json,
-      method:   :post
+      service:        "codecommit",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateRepositoryName",
+      
+      target_prefix:  "CodeCommit_20150413",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

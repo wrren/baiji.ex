@@ -8,11 +8,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_campaigns(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCampaigns",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns",
+      input:          input,
+      options:        options,
+      action:         "GetCampaigns",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -21,11 +24,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_segment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSegment",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments/{segment-id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateSegment",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -34,11 +40,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_campaign_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCampaignVersion",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns/{campaign-id}/versions/{version}",
+      input:          input,
+      options:        options,
+      action:         "GetCampaignVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -47,11 +56,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_application_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApplicationSettings",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/settings",
+      input:          input,
+      options:        options,
+      action:         "GetApplicationSettings",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -60,11 +72,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_campaign_activities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCampaignActivities",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns/{campaign-id}/activities",
+      input:          input,
+      options:        options,
+      action:         "GetCampaignActivities",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -73,11 +88,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_sms_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSmsChannel",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/sms",
+      input:          input,
+      options:        options,
+      action:         "UpdateSmsChannel",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -86,11 +104,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_sms_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSmsChannel",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/sms",
+      input:          input,
+      options:        options,
+      action:         "DeleteSmsChannel",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -99,11 +120,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_segment_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSegmentVersions",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments/{segment-id}/versions",
+      input:          input,
+      options:        options,
+      action:         "GetSegmentVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -112,11 +136,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_event_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetEventStream",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/eventstream",
+      input:          input,
+      options:        options,
+      action:         "GetEventStream",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -125,11 +152,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_gcm_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGcmChannel",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/gcm",
+      input:          input,
+      options:        options,
+      action:         "UpdateGcmChannel",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -138,11 +168,14 @@ defmodule Baiji.Pinpoint do
   """
   def create_app(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApp",
-      type:     :json,
-      method:   :post
+      service:        "pinpoint",
+      endpoint:       "/v1/apps",
+      input:          input,
+      options:        options,
+      action:         "CreateApp",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -151,11 +184,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_apps(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApps",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps",
+      input:          input,
+      options:        options,
+      action:         "GetApps",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -164,11 +200,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_segment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSegment",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments/{segment-id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteSegment",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -177,11 +216,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_apns_sandbox_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApnsSandboxChannel",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/apns_sandbox",
+      input:          input,
+      options:        options,
+      action:         "GetApnsSandboxChannel",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -190,11 +232,14 @@ defmodule Baiji.Pinpoint do
   """
   def put_event_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutEventStream",
-      type:     :json,
-      method:   :post
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/eventstream",
+      input:          input,
+      options:        options,
+      action:         "PutEventStream",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -203,11 +248,14 @@ defmodule Baiji.Pinpoint do
   """
   def send_messages(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendMessages",
-      type:     :json,
-      method:   :post
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/messages",
+      input:          input,
+      options:        options,
+      action:         "SendMessages",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -216,11 +264,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetEndpoint",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/endpoints/{endpoint-id}",
+      input:          input,
+      options:        options,
+      action:         "GetEndpoint",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -229,11 +280,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_import_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetImportJobs",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/jobs/import",
+      input:          input,
+      options:        options,
+      action:         "GetImportJobs",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -242,11 +296,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_apns_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApnsChannel",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/apns",
+      input:          input,
+      options:        options,
+      action:         "DeleteApnsChannel",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -255,11 +312,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_apns_sandbox_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApnsSandboxChannel",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/apns_sandbox",
+      input:          input,
+      options:        options,
+      action:         "DeleteApnsSandboxChannel",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -268,11 +328,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateEndpoint",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/endpoints/{endpoint-id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateEndpoint",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -281,11 +344,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_email_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetEmailChannel",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/email",
+      input:          input,
+      options:        options,
+      action:         "GetEmailChannel",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -294,11 +360,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_endpoints_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateEndpointsBatch",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/endpoints",
+      input:          input,
+      options:        options,
+      action:         "UpdateEndpointsBatch",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -307,11 +376,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_segments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSegments",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments",
+      input:          input,
+      options:        options,
+      action:         "GetSegments",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -320,11 +392,14 @@ defmodule Baiji.Pinpoint do
   """
   def create_segment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSegment",
-      type:     :json,
-      method:   :post
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments",
+      input:          input,
+      options:        options,
+      action:         "CreateSegment",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -333,11 +408,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_segment_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSegmentVersion",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments/{segment-id}/versions/{version}",
+      input:          input,
+      options:        options,
+      action:         "GetSegmentVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -346,11 +424,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_segment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSegment",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments/{segment-id}",
+      input:          input,
+      options:        options,
+      action:         "GetSegment",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -359,11 +440,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_campaign(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCampaign",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns/{campaign-id}",
+      input:          input,
+      options:        options,
+      action:         "GetCampaign",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -372,11 +456,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_import_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetImportJob",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/jobs/import/{job-id}",
+      input:          input,
+      options:        options,
+      action:         "GetImportJob",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -385,11 +472,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_application_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplicationSettings",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/settings",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplicationSettings",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -398,11 +488,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_segment_import_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSegmentImportJobs",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/segments/{segment-id}/jobs/import",
+      input:          input,
+      options:        options,
+      action:         "GetSegmentImportJobs",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -411,11 +504,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_email_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteEmailChannel",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/email",
+      input:          input,
+      options:        options,
+      action:         "DeleteEmailChannel",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -424,11 +520,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_campaign_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCampaignVersions",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns/{campaign-id}/versions",
+      input:          input,
+      options:        options,
+      action:         "GetCampaignVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -437,11 +536,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_event_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteEventStream",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/eventstream",
+      input:          input,
+      options:        options,
+      action:         "DeleteEventStream",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -450,11 +552,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_campaign(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateCampaign",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns/{campaign-id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateCampaign",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -463,11 +568,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_gcm_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGcmChannel",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/gcm",
+      input:          input,
+      options:        options,
+      action:         "GetGcmChannel",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -476,11 +584,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_email_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateEmailChannel",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/email",
+      input:          input,
+      options:        options,
+      action:         "UpdateEmailChannel",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -489,11 +600,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_campaign(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCampaign",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns/{campaign-id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteCampaign",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -502,11 +616,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_sms_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSmsChannel",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/sms",
+      input:          input,
+      options:        options,
+      action:         "GetSmsChannel",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -515,11 +632,14 @@ defmodule Baiji.Pinpoint do
   """
   def create_campaign(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCampaign",
-      type:     :json,
-      method:   :post
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/campaigns",
+      input:          input,
+      options:        options,
+      action:         "CreateCampaign",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -528,11 +648,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_apns_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApnsChannel",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/apns",
+      input:          input,
+      options:        options,
+      action:         "GetApnsChannel",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -541,11 +664,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_app(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApp",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteApp",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -554,11 +680,14 @@ defmodule Baiji.Pinpoint do
   """
   def get_app(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApp",
-      type:     :json,
-      method:   :get
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}",
+      input:          input,
+      options:        options,
+      action:         "GetApp",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -567,11 +696,14 @@ defmodule Baiji.Pinpoint do
   """
   def create_import_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateImportJob",
-      type:     :json,
-      method:   :post
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/jobs/import",
+      input:          input,
+      options:        options,
+      action:         "CreateImportJob",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -580,11 +712,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_apns_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApnsChannel",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/apns",
+      input:          input,
+      options:        options,
+      action:         "UpdateApnsChannel",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -593,11 +728,14 @@ defmodule Baiji.Pinpoint do
   """
   def delete_gcm_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteGcmChannel",
-      type:     :json,
-      method:   :delete
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/gcm",
+      input:          input,
+      options:        options,
+      action:         "DeleteGcmChannel",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -606,11 +744,14 @@ defmodule Baiji.Pinpoint do
   """
   def update_apns_sandbox_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApnsSandboxChannel",
-      type:     :json,
-      method:   :put
+      service:        "pinpoint",
+      endpoint:       "/v1/apps/{application-id}/channels/apns_sandbox",
+      input:          input,
+      options:        options,
+      action:         "UpdateApnsSandboxChannel",
+      
+      type:           :json,
+      method:         :put
     }
   end
   

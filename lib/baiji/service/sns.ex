@@ -25,11 +25,14 @@ defmodule Baiji.SNS do
   """
   def add_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddPermission",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddPermission",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -43,11 +46,14 @@ defmodule Baiji.SNS do
   """
   def check_if_phone_number_is_opted_out(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CheckIfPhoneNumberIsOptedOut",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CheckIfPhoneNumberIsOptedOut",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -60,11 +66,14 @@ defmodule Baiji.SNS do
   """
   def confirm_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ConfirmSubscription",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ConfirmSubscription",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -107,11 +116,14 @@ defmodule Baiji.SNS do
   """
   def create_platform_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePlatformApplication",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePlatformApplication",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -135,11 +147,14 @@ defmodule Baiji.SNS do
   """
   def create_platform_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePlatformEndpoint",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePlatformEndpoint",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -152,11 +167,14 @@ defmodule Baiji.SNS do
   """
   def create_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTopic",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTopic",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -171,11 +189,14 @@ defmodule Baiji.SNS do
   """
   def delete_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteEndpoint",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteEndpoint",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -187,11 +208,14 @@ defmodule Baiji.SNS do
   """
   def delete_platform_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePlatformApplication",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePlatformApplication",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -203,11 +227,14 @@ defmodule Baiji.SNS do
   """
   def delete_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTopic",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTopic",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -219,11 +246,14 @@ defmodule Baiji.SNS do
   """
   def get_endpoint_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetEndpointAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetEndpointAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -235,11 +265,14 @@ defmodule Baiji.SNS do
   """
   def get_platform_application_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPlatformApplicationAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPlatformApplicationAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -250,11 +283,14 @@ defmodule Baiji.SNS do
   """
   def get_s_m_s_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSMSAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSMSAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -263,11 +299,14 @@ defmodule Baiji.SNS do
   """
   def get_subscription_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSubscriptionAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSubscriptionAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -277,11 +316,14 @@ defmodule Baiji.SNS do
   """
   def get_topic_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTopicAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTopicAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -299,11 +341,14 @@ defmodule Baiji.SNS do
   """
   def list_endpoints_by_platform_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListEndpointsByPlatformApplication",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListEndpointsByPlatformApplication",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -320,11 +365,14 @@ defmodule Baiji.SNS do
   """
   def list_phone_numbers_opted_out(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPhoneNumbersOptedOut",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPhoneNumbersOptedOut",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -341,11 +389,14 @@ defmodule Baiji.SNS do
   """
   def list_platform_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPlatformApplications",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPlatformApplications",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -357,11 +408,14 @@ defmodule Baiji.SNS do
   """
   def list_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSubscriptions",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSubscriptions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -373,11 +427,14 @@ defmodule Baiji.SNS do
   """
   def list_subscriptions_by_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSubscriptionsByTopic",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSubscriptionsByTopic",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -389,11 +446,14 @@ defmodule Baiji.SNS do
   """
   def list_topics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTopics",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTopics",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -405,11 +465,14 @@ defmodule Baiji.SNS do
   """
   def opt_in_phone_number(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "OptInPhoneNumber",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "OptInPhoneNumber",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -431,11 +494,14 @@ defmodule Baiji.SNS do
   """
   def publish(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Publish",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "Publish",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -444,11 +510,14 @@ defmodule Baiji.SNS do
   """
   def remove_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemovePermission",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemovePermission",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -460,11 +529,14 @@ defmodule Baiji.SNS do
   """
   def set_endpoint_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetEndpointAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetEndpointAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -479,11 +551,14 @@ defmodule Baiji.SNS do
   """
   def set_platform_application_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetPlatformApplicationAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetPlatformApplicationAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -499,11 +574,14 @@ defmodule Baiji.SNS do
   """
   def set_s_m_s_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetSMSAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetSMSAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -513,11 +591,14 @@ defmodule Baiji.SNS do
   """
   def set_subscription_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetSubscriptionAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetSubscriptionAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -526,11 +607,14 @@ defmodule Baiji.SNS do
   """
   def set_topic_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetTopicAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetTopicAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -542,11 +626,14 @@ defmodule Baiji.SNS do
   """
   def subscribe(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Subscribe",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "Subscribe",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -561,11 +648,14 @@ defmodule Baiji.SNS do
   """
   def unsubscribe(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Unsubscribe",
-      type:     :xml,
-      method:   :post
+      service:        "sns",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "Unsubscribe",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

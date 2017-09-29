@@ -73,11 +73,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_chap_credentials(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteChapCredentials",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteChapCredentials",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -88,11 +93,16 @@ defmodule Baiji.StorageGateway do
   """
   def cancel_archival(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelArchival",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelArchival",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -116,11 +126,16 @@ defmodule Baiji.StorageGateway do
   """
   def reset_cache(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetCache",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetCache",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -133,11 +148,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_bandwidth_rate_limit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBandwidthRateLimit",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteBandwidthRateLimit",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -157,11 +177,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_tapes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTapes",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTapes",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -173,11 +198,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_snapshot_schedule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSnapshotSchedule",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSnapshotSchedule",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -190,11 +220,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_cache(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeCache",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeCache",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -206,11 +241,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_volume_initiators(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListVolumeInitiators",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListVolumeInitiators",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -237,11 +277,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_gateway_software_now(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGatewaySoftwareNow",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateGatewaySoftwareNow",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -252,11 +297,16 @@ defmodule Baiji.StorageGateway do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveTagsFromResource",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveTagsFromResource",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -275,11 +325,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_tape_with_barcode(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTapeWithBarcode",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTapeWithBarcode",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -290,11 +345,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_file_shares(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListFileShares",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListFileShares",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -305,11 +365,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForResource",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForResource",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -329,11 +394,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_volumes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListVolumes",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListVolumes",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -343,11 +413,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_tape_archive(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTapeArchive",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTapeArchive",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -363,11 +438,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_bandwidth_rate_limit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeBandwidthRateLimit",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeBandwidthRateLimit",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -392,11 +472,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_n_f_s_file_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNFSFileShare",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNFSFileShare",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -417,11 +502,16 @@ defmodule Baiji.StorageGateway do
   """
   def start_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartGateway",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartGateway",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -458,11 +548,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSnapshot",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -472,11 +567,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_n_f_s_file_shares(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNFSFileShares",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNFSFileShares",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -495,11 +595,16 @@ defmodule Baiji.StorageGateway do
   """
   def disable_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableGateway",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableGateway",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -519,11 +624,16 @@ defmodule Baiji.StorageGateway do
   """
   def retrieve_tape_recovery_point(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RetrieveTapeRecoveryPoint",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RetrieveTapeRecoveryPoint",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -544,11 +654,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_storedi_s_c_s_i_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStorediSCSIVolume",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateStorediSCSIVolume",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -579,11 +694,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_n_f_s_file_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateNFSFileShare",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateNFSFileShare",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -595,11 +715,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_gateway_information(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeGatewayInformation",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeGatewayInformation",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -626,11 +751,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteGateway",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteGateway",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -655,11 +785,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVolume",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVolume",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -673,11 +808,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_upload_buffer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeUploadBuffer",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeUploadBuffer",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -696,11 +836,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_working_storage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeWorkingStorage",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeWorkingStorage",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -716,11 +861,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_volume_recovery_points(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListVolumeRecoveryPoints",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListVolumeRecoveryPoints",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -732,11 +882,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_tapes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTapes",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTapes",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -762,11 +917,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_cachedi_s_c_s_i_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCachediSCSIVolume",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCachediSCSIVolume",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -784,11 +944,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_bandwidth_rate_limit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateBandwidthRateLimit",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateBandwidthRateLimit",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -819,11 +984,16 @@ defmodule Baiji.StorageGateway do
   """
   def shutdown_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ShutdownGateway",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ShutdownGateway",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -843,11 +1013,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGateways",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListGateways",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -867,11 +1042,16 @@ defmodule Baiji.StorageGateway do
   """
   def add_working_storage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddWorkingStorage",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddWorkingStorage",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -889,11 +1069,16 @@ defmodule Baiji.StorageGateway do
   """
   def retrieve_tape_archive(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RetrieveTapeArchive",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RetrieveTapeArchive",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -906,11 +1091,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_v_t_l_device_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateVTLDeviceType",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateVTLDeviceType",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -933,11 +1123,16 @@ defmodule Baiji.StorageGateway do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddTagsToResource",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddTagsToResource",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -951,11 +1146,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_tape_archives(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTapeArchives",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTapeArchives",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -967,11 +1167,16 @@ defmodule Baiji.StorageGateway do
   """
   def set_local_console_password(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetLocalConsolePassword",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetLocalConsolePassword",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -988,11 +1193,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_tapes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTapes",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTapes",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1013,11 +1223,16 @@ defmodule Baiji.StorageGateway do
   """
   def activate_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ActivateGateway",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ActivateGateway",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1034,11 +1249,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_chap_credentials(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateChapCredentials",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateChapCredentials",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1057,11 +1277,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_snapshot_schedule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSnapshotSchedule",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateSnapshotSchedule",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1075,11 +1300,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_cachedi_s_c_s_i_volumes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeCachediSCSIVolumes",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeCachediSCSIVolumes",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1107,11 +1337,16 @@ defmodule Baiji.StorageGateway do
   """
   def create_snapshot_from_volume_recovery_point(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSnapshotFromVolumeRecoveryPoint",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSnapshotFromVolumeRecoveryPoint",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1126,11 +1361,16 @@ defmodule Baiji.StorageGateway do
   """
   def add_upload_buffer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddUploadBuffer",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddUploadBuffer",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1143,11 +1383,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_storedi_s_c_s_i_volumes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeStorediSCSIVolumes",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeStorediSCSIVolumes",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1157,11 +1402,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_maintenance_start_time(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeMaintenanceStartTime",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeMaintenanceStartTime",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1179,11 +1429,16 @@ defmodule Baiji.StorageGateway do
   """
   def list_local_disks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListLocalDisks",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListLocalDisks",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1204,11 +1459,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_snapshot_schedule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSnapshotSchedule",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSnapshotSchedule",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1221,11 +1481,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_v_t_l_devices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVTLDevices",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVTLDevices",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1236,11 +1501,16 @@ defmodule Baiji.StorageGateway do
   """
   def cancel_retrieval(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelRetrieval",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelRetrieval",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1257,11 +1527,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_gateway_information(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGatewayInformation",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateGatewayInformation",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1272,11 +1547,16 @@ defmodule Baiji.StorageGateway do
   """
   def update_maintenance_start_time(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateMaintenanceStartTime",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateMaintenanceStartTime",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1287,11 +1567,16 @@ defmodule Baiji.StorageGateway do
   """
   def refresh_cache(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RefreshCache",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RefreshCache",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1301,11 +1586,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_file_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFileShare",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteFileShare",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1315,11 +1605,16 @@ defmodule Baiji.StorageGateway do
   """
   def delete_tape(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTape",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTape",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1330,11 +1625,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_chap_credentials(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeChapCredentials",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeChapCredentials",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1349,11 +1649,16 @@ defmodule Baiji.StorageGateway do
   """
   def describe_tape_recovery_points(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTapeRecoveryPoints",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTapeRecoveryPoints",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -1369,11 +1674,16 @@ defmodule Baiji.StorageGateway do
   """
   def add_cache(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddCache",
-      type:     :json,
-      method:   :post
+      service:        "storagegateway",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddCache",
+      
+      target_prefix:  "StorageGateway_20130630",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

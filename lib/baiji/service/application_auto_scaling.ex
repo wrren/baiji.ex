@@ -56,11 +56,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def delete_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteScalingPolicy",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteScalingPolicy",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -75,11 +80,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def deregister_scalable_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeregisterScalableTarget",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeregisterScalableTarget",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -96,11 +106,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def describe_scalable_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScalableTargets",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScalableTargets",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -118,11 +133,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def describe_scaling_activities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScalingActivities",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScalingActivities",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -139,11 +159,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def describe_scaling_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScalingPolicies",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScalingPolicies",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -166,11 +191,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def put_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutScalingPolicy",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutScalingPolicy",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -188,11 +218,16 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def register_scalable_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterScalableTarget",
-      type:     :json,
-      method:   :post
+      service:        "application-autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterScalableTarget",
+      
+      target_prefix:  "AnyScaleFrontendService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

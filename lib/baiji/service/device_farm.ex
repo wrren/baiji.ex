@@ -10,11 +10,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_test(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTest",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTest",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -29,11 +34,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_offering_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOfferingStatus",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOfferingStatus",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -42,11 +52,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_suites(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSuites",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSuites",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -55,11 +70,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListJobs",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListJobs",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -68,11 +88,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_remote_access_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRemoteAccessSession",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRemoteAccessSession",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -81,11 +106,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_network_profiles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListNetworkProfiles",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListNetworkProfiles",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -96,11 +126,16 @@ defmodule Baiji.DeviceFarm do
   """
   def update_device_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDevicePool",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDevicePool",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -109,11 +144,16 @@ defmodule Baiji.DeviceFarm do
   """
   def create_remote_access_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRemoteAccessSession",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateRemoteAccessSession",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -122,11 +162,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_tests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTests",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTests",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -135,11 +180,16 @@ defmodule Baiji.DeviceFarm do
   """
   def create_device_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDevicePool",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDevicePool",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -148,11 +198,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_artifacts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListArtifacts",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListArtifacts",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -161,11 +216,16 @@ defmodule Baiji.DeviceFarm do
   """
   def update_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateProject",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateProject",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -174,11 +234,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUpload",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetUpload",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -187,11 +252,16 @@ defmodule Baiji.DeviceFarm do
   """
   def create_network_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNetworkProfile",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNetworkProfile",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -200,11 +270,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetProject",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetProject",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -213,11 +288,16 @@ defmodule Baiji.DeviceFarm do
   """
   def stop_remote_access_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopRemoteAccessSession",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopRemoteAccessSession",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -226,11 +306,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_unique_problems(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListUniqueProblems",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListUniqueProblems",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -239,11 +324,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_network_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetNetworkProfile",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetNetworkProfile",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -252,11 +342,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_remote_access_sessions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRemoteAccessSessions",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRemoteAccessSessions",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -271,11 +366,16 @@ defmodule Baiji.DeviceFarm do
   """
   def stop_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopRun",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopRun",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -284,11 +384,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDevice",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDevice",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -297,11 +402,16 @@ defmodule Baiji.DeviceFarm do
   """
   def create_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateProject",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateProject",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -310,11 +420,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_devices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDevices",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDevices",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -325,11 +440,16 @@ defmodule Baiji.DeviceFarm do
   """
   def delete_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRun",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRun",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -338,11 +458,16 @@ defmodule Baiji.DeviceFarm do
   """
   def create_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUpload",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateUpload",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -351,11 +476,16 @@ defmodule Baiji.DeviceFarm do
   """
   def delete_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUpload",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteUpload",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -365,11 +495,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_account_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccountSettings",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAccountSettings",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -378,11 +513,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRun",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRun",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -391,11 +531,16 @@ defmodule Baiji.DeviceFarm do
   """
   def delete_network_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNetworkProfile",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNetworkProfile",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -404,11 +549,16 @@ defmodule Baiji.DeviceFarm do
   """
   def delete_remote_access_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRemoteAccessSession",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRemoteAccessSession",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -417,11 +567,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJob",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJob",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -436,11 +591,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_offering_transactions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListOfferingTransactions",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListOfferingTransactions",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -449,11 +609,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_device_pools(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDevicePools",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDevicePools",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -462,11 +627,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_device_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDevicePool",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDevicePool",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -475,11 +645,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_projects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListProjects",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListProjects",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -488,11 +663,16 @@ defmodule Baiji.DeviceFarm do
   """
   def update_network_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateNetworkProfile",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateNetworkProfile",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -506,11 +686,16 @@ defmodule Baiji.DeviceFarm do
   """
   def renew_offering(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RenewOffering",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RenewOffering",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -524,11 +709,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_offerings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListOfferings",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListOfferings",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -537,11 +727,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_samples(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSamples",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSamples",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -550,11 +745,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_uploads(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListUploads",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListUploads",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -563,11 +763,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_suite(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSuite",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSuite",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -578,11 +783,16 @@ defmodule Baiji.DeviceFarm do
   """
   def delete_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteProject",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteProject",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -593,11 +803,16 @@ defmodule Baiji.DeviceFarm do
   """
   def install_to_remote_access_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "InstallToRemoteAccessSession",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "InstallToRemoteAccessSession",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -606,11 +821,16 @@ defmodule Baiji.DeviceFarm do
   """
   def get_device_pool_compatibility(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDevicePoolCompatibility",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDevicePoolCompatibility",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -624,11 +844,16 @@ defmodule Baiji.DeviceFarm do
   """
   def purchase_offering(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PurchaseOffering",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PurchaseOffering",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -638,11 +863,16 @@ defmodule Baiji.DeviceFarm do
   """
   def delete_device_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDevicePool",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDevicePool",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -651,11 +881,16 @@ defmodule Baiji.DeviceFarm do
   """
   def schedule_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ScheduleRun",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ScheduleRun",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -664,11 +899,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_runs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRuns",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRuns",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -682,11 +922,16 @@ defmodule Baiji.DeviceFarm do
   """
   def list_offering_promotions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListOfferingPromotions",
-      type:     :json,
-      method:   :post
+      service:        "devicefarm",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListOfferingPromotions",
+      
+      target_prefix:  "DeviceFarm_20150623",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

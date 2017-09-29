@@ -9,11 +9,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_metrics_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketMetricsConfiguration",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?metrics",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketMetricsConfiguration",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -24,11 +27,14 @@ defmodule Baiji.S3 do
   """
   def list_objects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjects",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}",
+      input:          input,
+      options:        options,
+      action:         "ListObjects",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -37,11 +43,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketPolicy",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?policy",
+      input:          input,
+      options:        options,
+      action:         "GetBucketPolicy",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -50,11 +59,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_replication(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketReplication",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?replication",
+      input:          input,
+      options:        options,
+      action:         "GetBucketReplication",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -63,11 +75,14 @@ defmodule Baiji.S3 do
   """
   def list_bucket_analytics_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBucketAnalyticsConfigurations",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?analytics",
+      input:          input,
+      options:        options,
+      action:         "ListBucketAnalyticsConfigurations",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -76,11 +91,14 @@ defmodule Baiji.S3 do
   """
   def list_bucket_inventory_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBucketInventoryConfigurations",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?inventory",
+      input:          input,
+      options:        options,
+      action:         "ListBucketInventoryConfigurations",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -89,11 +107,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_acl(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketAcl",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?acl",
+      input:          input,
+      options:        options,
+      action:         "PutBucketAcl",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -102,11 +123,14 @@ defmodule Baiji.S3 do
   """
   def list_bucket_metrics_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBucketMetricsConfigurations",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?metrics",
+      input:          input,
+      options:        options,
+      action:         "ListBucketMetricsConfigurations",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -115,11 +139,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_tagging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketTagging",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?tagging",
+      input:          input,
+      options:        options,
+      action:         "GetBucketTagging",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -128,11 +155,14 @@ defmodule Baiji.S3 do
   """
   def restore_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RestoreObject",
-      type:     :rest_xml,
-      method:   :post
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?restore",
+      input:          input,
+      options:        options,
+      action:         "RestoreObject",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -141,11 +171,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketPolicy",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?policy",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketPolicy",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -160,11 +193,14 @@ defmodule Baiji.S3 do
   """
   def create_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateMultipartUpload",
-      type:     :rest_xml,
-      method:   :post
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?uploads",
+      input:          input,
+      options:        options,
+      action:         "CreateMultipartUpload",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -173,11 +209,14 @@ defmodule Baiji.S3 do
   """
   def get_object_tagging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetObjectTagging",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?tagging",
+      input:          input,
+      options:        options,
+      action:         "GetObjectTagging",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -187,11 +226,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_inventory_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketInventoryConfiguration",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?inventory",
+      input:          input,
+      options:        options,
+      action:         "PutBucketInventoryConfiguration",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -200,11 +242,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketNotification",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?notification",
+      input:          input,
+      options:        options,
+      action:         "PutBucketNotification",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -214,11 +259,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketPolicy",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?policy",
+      input:          input,
+      options:        options,
+      action:         "PutBucketPolicy",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -227,11 +275,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketNotification",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?notification",
+      input:          input,
+      options:        options,
+      action:         "GetBucketNotification",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -245,11 +296,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_request_payment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketRequestPayment",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?requestPayment",
+      input:          input,
+      options:        options,
+      action:         "PutBucketRequestPayment",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -259,11 +313,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_metrics_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketMetricsConfiguration",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?metrics",
+      input:          input,
+      options:        options,
+      action:         "GetBucketMetricsConfiguration",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -273,11 +330,14 @@ defmodule Baiji.S3 do
   """
   def put_object_acl(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutObjectAcl",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?acl",
+      input:          input,
+      options:        options,
+      action:         "PutObjectAcl",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -286,11 +346,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_versioning(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketVersioning",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?versioning",
+      input:          input,
+      options:        options,
+      action:         "GetBucketVersioning",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -300,11 +363,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_metrics_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketMetricsConfiguration",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?metrics",
+      input:          input,
+      options:        options,
+      action:         "PutBucketMetricsConfiguration",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -313,11 +379,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_website(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketWebsite",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?website",
+      input:          input,
+      options:        options,
+      action:         "GetBucketWebsite",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -326,11 +395,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_lifecycle(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketLifecycle",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?lifecycle",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketLifecycle",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -342,11 +414,14 @@ defmodule Baiji.S3 do
   """
   def list_objects_v2(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectsV2",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?list-type=2",
+      input:          input,
+      options:        options,
+      action:         "ListObjectsV2",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -356,11 +431,14 @@ defmodule Baiji.S3 do
   """
   def list_buckets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBuckets",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListBuckets",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -369,11 +447,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_location(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketLocation",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?location",
+      input:          input,
+      options:        options,
+      action:         "GetBucketLocation",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -382,11 +463,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_replication(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketReplication",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?replication",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketReplication",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -396,11 +480,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_logging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketLogging",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?logging",
+      input:          input,
+      options:        options,
+      action:         "GetBucketLogging",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -409,11 +496,14 @@ defmodule Baiji.S3 do
   """
   def complete_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CompleteMultipartUpload",
-      type:     :rest_xml,
-      method:   :post
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "CompleteMultipartUpload",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -422,11 +512,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_lifecycle_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketLifecycleConfiguration",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?lifecycle",
+      input:          input,
+      options:        options,
+      action:         "GetBucketLifecycleConfiguration",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -435,11 +528,14 @@ defmodule Baiji.S3 do
   """
   def put_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutObject",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "PutObject",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -448,11 +544,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_accelerate_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketAccelerateConfiguration",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?accelerate",
+      input:          input,
+      options:        options,
+      action:         "PutBucketAccelerateConfiguration",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -461,11 +560,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_lifecycle(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketLifecycle",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?lifecycle",
+      input:          input,
+      options:        options,
+      action:         "GetBucketLifecycle",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -474,11 +576,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_website(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketWebsite",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?website",
+      input:          input,
+      options:        options,
+      action:         "PutBucketWebsite",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -488,11 +593,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_versioning(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketVersioning",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?versioning",
+      input:          input,
+      options:        options,
+      action:         "PutBucketVersioning",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -503,11 +611,14 @@ defmodule Baiji.S3 do
   """
   def delete_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteObject",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "DeleteObject",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -517,11 +628,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_inventory_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketInventoryConfiguration",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?inventory",
+      input:          input,
+      options:        options,
+      action:         "GetBucketInventoryConfiguration",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -531,11 +645,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_analytics_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketAnalyticsConfiguration",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?analytics",
+      input:          input,
+      options:        options,
+      action:         "PutBucketAnalyticsConfiguration",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -548,11 +665,14 @@ defmodule Baiji.S3 do
   """
   def abort_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AbortMultipartUpload",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "AbortMultipartUpload",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -561,11 +681,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_tagging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketTagging",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?tagging",
+      input:          input,
+      options:        options,
+      action:         "PutBucketTagging",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -574,11 +697,14 @@ defmodule Baiji.S3 do
   """
   def list_object_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectVersions",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?versions",
+      input:          input,
+      options:        options,
+      action:         "ListObjectVersions",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -587,11 +713,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_accelerate_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketAccelerateConfiguration",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?accelerate",
+      input:          input,
+      options:        options,
+      action:         "GetBucketAccelerateConfiguration",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -602,11 +731,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucket",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucket",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -615,11 +747,14 @@ defmodule Baiji.S3 do
   """
   def get_object_torrent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetObjectTorrent",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?torrent",
+      input:          input,
+      options:        options,
+      action:         "GetObjectTorrent",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -630,11 +765,14 @@ defmodule Baiji.S3 do
   """
   def head_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "HeadObject",
-      type:     :rest_xml,
-      method:   :head
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "HeadObject",
+      
+      type:           :rest_xml,
+      method:         :head
     }
   end
   
@@ -644,11 +782,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_inventory_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketInventoryConfiguration",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?inventory",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketInventoryConfiguration",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -657,11 +798,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_cors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketCors",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?cors",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketCors",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -670,11 +814,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_cors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketCors",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?cors",
+      input:          input,
+      options:        options,
+      action:         "PutBucketCors",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -684,11 +831,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_analytics_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketAnalyticsConfiguration",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?analytics",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketAnalyticsConfiguration",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -697,11 +847,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_notification_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketNotificationConfiguration",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?notification",
+      input:          input,
+      options:        options,
+      action:         "GetBucketNotificationConfiguration",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -716,11 +869,14 @@ defmodule Baiji.S3 do
   """
   def upload_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UploadPart",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "UploadPart",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -730,11 +886,14 @@ defmodule Baiji.S3 do
   """
   def delete_objects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteObjects",
-      type:     :rest_xml,
-      method:   :post
+      service:        "s3",
+      endpoint:       "/{Bucket}?delete",
+      input:          input,
+      options:        options,
+      action:         "DeleteObjects",
+      
+      type:           :rest_xml,
+      method:         :post
     }
   end
   
@@ -743,11 +902,14 @@ defmodule Baiji.S3 do
   """
   def create_bucket(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateBucket",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}",
+      input:          input,
+      options:        options,
+      action:         "CreateBucket",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -756,11 +918,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_cors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketCors",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?cors",
+      input:          input,
+      options:        options,
+      action:         "GetBucketCors",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -770,11 +935,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_replication(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketReplication",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?replication",
+      input:          input,
+      options:        options,
+      action:         "PutBucketReplication",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -783,11 +951,14 @@ defmodule Baiji.S3 do
   """
   def put_object_tagging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutObjectTagging",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?tagging",
+      input:          input,
+      options:        options,
+      action:         "PutObjectTagging",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -796,11 +967,14 @@ defmodule Baiji.S3 do
   """
   def copy_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CopyObject",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "CopyObject",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -809,11 +983,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_notification_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketNotificationConfiguration",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?notification",
+      input:          input,
+      options:        options,
+      action:         "PutBucketNotificationConfiguration",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -823,11 +1000,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_analytics_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketAnalyticsConfiguration",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?analytics",
+      input:          input,
+      options:        options,
+      action:         "GetBucketAnalyticsConfiguration",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -836,11 +1016,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_request_payment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketRequestPayment",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?requestPayment",
+      input:          input,
+      options:        options,
+      action:         "GetBucketRequestPayment",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -849,11 +1032,14 @@ defmodule Baiji.S3 do
   """
   def delete_object_tagging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteObjectTagging",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?tagging",
+      input:          input,
+      options:        options,
+      action:         "DeleteObjectTagging",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -864,11 +1050,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_logging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketLogging",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?logging",
+      input:          input,
+      options:        options,
+      action:         "PutBucketLogging",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -878,11 +1067,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_lifecycle_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketLifecycleConfiguration",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?lifecycle",
+      input:          input,
+      options:        options,
+      action:         "PutBucketLifecycleConfiguration",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -891,11 +1083,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_tagging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketTagging",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?tagging",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketTagging",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -904,11 +1099,14 @@ defmodule Baiji.S3 do
   """
   def list_multipart_uploads(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListMultipartUploads",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?uploads",
+      input:          input,
+      options:        options,
+      action:         "ListMultipartUploads",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -917,11 +1115,14 @@ defmodule Baiji.S3 do
   """
   def get_object_acl(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetObjectAcl",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}?acl",
+      input:          input,
+      options:        options,
+      action:         "GetObjectAcl",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -930,11 +1131,14 @@ defmodule Baiji.S3 do
   """
   def list_parts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListParts",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "ListParts",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -943,11 +1147,14 @@ defmodule Baiji.S3 do
   """
   def put_bucket_lifecycle(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBucketLifecycle",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}?lifecycle",
+      input:          input,
+      options:        options,
+      action:         "PutBucketLifecycle",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -956,11 +1163,14 @@ defmodule Baiji.S3 do
   """
   def upload_part_copy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UploadPartCopy",
-      type:     :rest_xml,
-      method:   :put
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "UploadPartCopy",
+      
+      type:           :rest_xml,
+      method:         :put
     }
   end
   
@@ -969,11 +1179,14 @@ defmodule Baiji.S3 do
   """
   def get_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetObject",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}/{Key+}",
+      input:          input,
+      options:        options,
+      action:         "GetObject",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   
@@ -983,11 +1196,14 @@ defmodule Baiji.S3 do
   """
   def head_bucket(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "HeadBucket",
-      type:     :rest_xml,
-      method:   :head
+      service:        "s3",
+      endpoint:       "/{Bucket}",
+      input:          input,
+      options:        options,
+      action:         "HeadBucket",
+      
+      type:           :rest_xml,
+      method:         :head
     }
   end
   
@@ -996,11 +1212,14 @@ defmodule Baiji.S3 do
   """
   def delete_bucket_website(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBucketWebsite",
-      type:     :rest_xml,
-      method:   :delete
+      service:        "s3",
+      endpoint:       "/{Bucket}?website",
+      input:          input,
+      options:        options,
+      action:         "DeleteBucketWebsite",
+      
+      type:           :rest_xml,
+      method:         :delete
     }
   end
   
@@ -1009,11 +1228,14 @@ defmodule Baiji.S3 do
   """
   def get_bucket_acl(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBucketAcl",
-      type:     :rest_xml,
-      method:   :get
+      service:        "s3",
+      endpoint:       "/{Bucket}?acl",
+      input:          input,
+      options:        options,
+      action:         "GetBucketAcl",
+      
+      type:           :rest_xml,
+      method:         :get
     }
   end
   

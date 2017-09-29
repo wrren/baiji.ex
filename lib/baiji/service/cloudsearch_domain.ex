@@ -38,11 +38,14 @@ defmodule Baiji.CloudsearchDomain do
   """
   def search(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Search",
-      type:     :json,
-      method:   :get
+      service:        "cloudsearchdomain",
+      endpoint:       "/2013-01-01/search?format=sdk&pretty=true",
+      input:          input,
+      options:        options,
+      action:         "Search",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -68,11 +71,14 @@ defmodule Baiji.CloudsearchDomain do
   """
   def suggest(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Suggest",
-      type:     :json,
-      method:   :get
+      service:        "cloudsearchdomain",
+      endpoint:       "/2013-01-01/suggest?format=sdk&pretty=true",
+      input:          input,
+      options:        options,
+      action:         "Suggest",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -105,11 +111,14 @@ defmodule Baiji.CloudsearchDomain do
   """
   def upload_documents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UploadDocuments",
-      type:     :json,
-      method:   :post
+      service:        "cloudsearchdomain",
+      endpoint:       "/2013-01-01/documents/batch?format=sdk",
+      input:          input,
+      options:        options,
+      action:         "UploadDocuments",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

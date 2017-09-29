@@ -17,11 +17,14 @@ defmodule Baiji.EC2 do
   """
   def import_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportImage",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportImage",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -34,11 +37,14 @@ defmodule Baiji.EC2 do
   """
   def describe_network_acls(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNetworkAcls",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNetworkAcls",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -54,11 +60,14 @@ defmodule Baiji.EC2 do
   """
   def copy_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CopyImage",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CopyImage",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -72,11 +81,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpn_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpnConnections",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpnConnections",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -93,11 +105,14 @@ defmodule Baiji.EC2 do
   """
   def import_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportInstance",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportInstance",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -109,11 +124,14 @@ defmodule Baiji.EC2 do
   """
   def describe_spot_datafeed_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSpotDatafeedSubscription",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSpotDatafeedSubscription",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -153,11 +171,14 @@ defmodule Baiji.EC2 do
   """
   def stop_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -168,11 +189,14 @@ defmodule Baiji.EC2 do
   """
   def allocate_hosts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocateHosts",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocateHosts",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -181,11 +205,14 @@ defmodule Baiji.EC2 do
   """
   def delete_spot_datafeed_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSpotDatafeedSubscription",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSpotDatafeedSubscription",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -199,11 +226,14 @@ defmodule Baiji.EC2 do
   """
   def get_host_reservation_purchase_preview(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHostReservationPurchasePreview",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetHostReservationPurchasePreview",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -251,11 +281,14 @@ defmodule Baiji.EC2 do
   """
   def describe_volume_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVolumeStatus",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVolumeStatus",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -267,11 +300,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_export_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelExportTask",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelExportTask",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -280,11 +316,14 @@ defmodule Baiji.EC2 do
   """
   def delete_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteKeyPair",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteKeyPair",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -296,11 +335,14 @@ defmodule Baiji.EC2 do
   """
   def confirm_product_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ConfirmProductInstance",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ConfirmProductInstance",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -316,11 +358,14 @@ defmodule Baiji.EC2 do
   """
   def move_address_to_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "MoveAddressToVpc",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "MoveAddressToVpc",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -343,11 +388,14 @@ defmodule Baiji.EC2 do
   """
   def describe_id_format(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeIdFormat",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeIdFormat",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -362,11 +410,14 @@ defmodule Baiji.EC2 do
   """
   def create_nat_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNatGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNatGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -381,11 +432,14 @@ defmodule Baiji.EC2 do
   """
   def import_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportVolume",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportVolume",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -395,11 +449,14 @@ defmodule Baiji.EC2 do
   """
   def describe_host_reservations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeHostReservations",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeHostReservations",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -423,11 +480,14 @@ defmodule Baiji.EC2 do
   """
   def describe_volumes_modifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVolumesModifications",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVolumesModifications",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -443,11 +503,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_conversion_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelConversionTask",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelConversionTask",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -465,11 +528,14 @@ defmodule Baiji.EC2 do
   """
   def describe_scheduled_instance_availability(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScheduledInstanceAvailability",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScheduledInstanceAvailability",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -486,11 +552,14 @@ defmodule Baiji.EC2 do
   """
   def import_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportKeyPair",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportKeyPair",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -504,11 +573,14 @@ defmodule Baiji.EC2 do
   """
   def describe_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAddresses",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAddresses",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -538,11 +610,14 @@ defmodule Baiji.EC2 do
   """
   def create_route(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRoute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateRoute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -557,11 +632,14 @@ defmodule Baiji.EC2 do
   """
   def disassociate_vpc_cidr_block(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateVpcCidrBlock",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateVpcCidrBlock",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -580,11 +658,14 @@ defmodule Baiji.EC2 do
   """
   def modify_volume_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyVolumeAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyVolumeAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -597,11 +678,14 @@ defmodule Baiji.EC2 do
   """
   def create_network_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNetworkInterface",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNetworkInterface",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -616,11 +700,14 @@ defmodule Baiji.EC2 do
   """
   def describe_conversion_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConversionTasks",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConversionTasks",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -630,11 +717,14 @@ defmodule Baiji.EC2 do
   """
   def modify_network_interface_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyNetworkInterfaceAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyNetworkInterfaceAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -654,11 +744,14 @@ defmodule Baiji.EC2 do
   """
   def describe_volumes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVolumes",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVolumes",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -682,11 +775,14 @@ defmodule Baiji.EC2 do
   """
   def describe_spot_instance_requests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSpotInstanceRequests",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSpotInstanceRequests",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -699,11 +795,14 @@ defmodule Baiji.EC2 do
   """
   def describe_subnets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSubnets",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSubnets",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -714,11 +813,14 @@ defmodule Baiji.EC2 do
   """
   def get_reserved_instances_exchange_quote(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetReservedInstancesExchangeQuote",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetReservedInstancesExchangeQuote",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -730,11 +832,14 @@ defmodule Baiji.EC2 do
   """
   def delete_vpn_connection_route(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVpnConnectionRoute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVpnConnectionRoute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -747,11 +852,14 @@ defmodule Baiji.EC2 do
   """
   def delete_placement_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePlacementGroup",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePlacementGroup",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -763,11 +871,14 @@ defmodule Baiji.EC2 do
   """
   def describe_stale_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeStaleSecurityGroups",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeStaleSecurityGroups",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -796,11 +907,14 @@ defmodule Baiji.EC2 do
   """
   def create_vpn_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVpnConnection",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVpnConnection",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -830,11 +944,14 @@ defmodule Baiji.EC2 do
   """
   def modify_spot_fleet_request(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifySpotFleetRequest",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifySpotFleetRequest",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -844,11 +961,14 @@ defmodule Baiji.EC2 do
   """
   def reset_network_interface_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetNetworkInterfaceAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetNetworkInterfaceAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -860,11 +980,14 @@ defmodule Baiji.EC2 do
   """
   def delete_vpc_peering_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVpcPeeringConnection",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVpcPeeringConnection",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -882,11 +1005,14 @@ defmodule Baiji.EC2 do
   """
   def associate_route_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateRouteTable",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateRouteTable",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -906,11 +1032,14 @@ defmodule Baiji.EC2 do
   """
   def create_vpc_peering_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVpcPeeringConnection",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVpcPeeringConnection",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -937,11 +1066,14 @@ defmodule Baiji.EC2 do
   """
   def request_spot_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RequestSpotFleet",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RequestSpotFleet",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -977,11 +1109,14 @@ defmodule Baiji.EC2 do
   """
   def describe_instance_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInstanceStatus",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInstanceStatus",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -992,11 +1127,14 @@ defmodule Baiji.EC2 do
   """
   def describe_security_group_references(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSecurityGroupReferences",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSecurityGroupReferences",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1010,11 +1148,14 @@ defmodule Baiji.EC2 do
   """
   def describe_customer_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeCustomerGateways",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeCustomerGateways",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1032,11 +1173,14 @@ defmodule Baiji.EC2 do
   """
   def disassociate_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateAddress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateAddress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1045,11 +1189,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_bundle_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelBundleTask",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelBundleTask",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1059,11 +1206,14 @@ defmodule Baiji.EC2 do
   """
   def delete_network_acl_entry(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNetworkAclEntry",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNetworkAclEntry",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1074,11 +1224,14 @@ defmodule Baiji.EC2 do
   """
   def delete_route_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRouteTable",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRouteTable",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1095,11 +1248,14 @@ defmodule Baiji.EC2 do
   """
   def describe_images(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeImages",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeImages",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1109,11 +1265,14 @@ defmodule Baiji.EC2 do
   """
   def describe_import_image_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeImportImageTasks",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeImportImageTasks",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1122,11 +1281,14 @@ defmodule Baiji.EC2 do
   """
   def describe_egress_only_internet_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEgressOnlyInternetGateways",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEgressOnlyInternetGateways",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1140,11 +1302,14 @@ defmodule Baiji.EC2 do
   """
   def delete_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVpc",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVpc",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1162,11 +1327,14 @@ defmodule Baiji.EC2 do
   """
   def describe_spot_price_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSpotPriceHistory",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSpotPriceHistory",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1178,11 +1346,14 @@ defmodule Baiji.EC2 do
   """
   def unmonitor_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnmonitorInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnmonitorInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1200,11 +1371,14 @@ defmodule Baiji.EC2 do
   """
   def describe_route_tables(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeRouteTables",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeRouteTables",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1220,11 +1394,14 @@ defmodule Baiji.EC2 do
   """
   def associate_vpc_cidr_block(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateVpcCidrBlock",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateVpcCidrBlock",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1249,11 +1426,14 @@ defmodule Baiji.EC2 do
   """
   def modify_id_format(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyIdFormat",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyIdFormat",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1263,11 +1443,14 @@ defmodule Baiji.EC2 do
   """
   def delete_network_acl(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNetworkAcl",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNetworkAcl",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1295,11 +1478,14 @@ defmodule Baiji.EC2 do
   """
   def modify_instance_placement(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyInstancePlacement",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyInstancePlacement",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1314,11 +1500,14 @@ defmodule Baiji.EC2 do
   """
   def request_spot_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RequestSpotInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RequestSpotInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1327,11 +1516,14 @@ defmodule Baiji.EC2 do
   """
   def import_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportSnapshot",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportSnapshot",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1394,11 +1586,14 @@ defmodule Baiji.EC2 do
   """
   def run_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RunInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RunInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1410,11 +1605,14 @@ defmodule Baiji.EC2 do
   """
   def attach_internet_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachInternetGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachInternetGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1426,11 +1624,14 @@ defmodule Baiji.EC2 do
   """
   def describe_classic_link_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeClassicLinkInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeClassicLinkInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1445,11 +1646,14 @@ defmodule Baiji.EC2 do
   """
   def create_placement_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePlacementGroup",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePlacementGroup",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1480,11 +1684,14 @@ defmodule Baiji.EC2 do
   """
   def describe_reserved_instances_listings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReservedInstancesListings",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReservedInstancesListings",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1498,11 +1705,14 @@ defmodule Baiji.EC2 do
   """
   def describe_spot_fleet_request_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSpotFleetRequestHistory",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSpotFleetRequestHistory",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1511,11 +1721,14 @@ defmodule Baiji.EC2 do
   """
   def describe_scheduled_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScheduledInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScheduledInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1526,11 +1739,14 @@ defmodule Baiji.EC2 do
   """
   def detach_internet_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachInternetGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachInternetGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1549,11 +1765,14 @@ defmodule Baiji.EC2 do
   """
   def bundle_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BundleInstance",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BundleInstance",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1567,11 +1786,14 @@ defmodule Baiji.EC2 do
   """
   def create_route_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRouteTable",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateRouteTable",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1585,11 +1807,14 @@ defmodule Baiji.EC2 do
   """
   def disable_vpc_classic_link_dns_support(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableVpcClassicLinkDnsSupport",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableVpcClassicLinkDnsSupport",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1604,11 +1829,14 @@ defmodule Baiji.EC2 do
   """
   def modify_instance_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyInstanceAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyInstanceAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1634,11 +1862,14 @@ defmodule Baiji.EC2 do
   """
   def get_console_output(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetConsoleOutput",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetConsoleOutput",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1647,11 +1878,14 @@ defmodule Baiji.EC2 do
   """
   def describe_export_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeExportTasks",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeExportTasks",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1660,11 +1894,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpc_endpoints(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcEndpoints",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcEndpoints",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1702,11 +1939,14 @@ defmodule Baiji.EC2 do
   """
   def create_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSecurityGroup",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSecurityGroup",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1716,11 +1956,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpc_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1732,11 +1975,14 @@ defmodule Baiji.EC2 do
   """
   def accept_vpc_peering_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AcceptVpcPeeringConnection",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AcceptVpcPeeringConnection",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1748,11 +1994,14 @@ defmodule Baiji.EC2 do
   """
   def describe_regions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeRegions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeRegions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1768,11 +2017,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_spot_fleet_requests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelSpotFleetRequests",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelSpotFleetRequests",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1784,11 +2036,14 @@ defmodule Baiji.EC2 do
   """
   def delete_nat_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNatGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNatGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1802,11 +2057,14 @@ defmodule Baiji.EC2 do
   """
   def describe_hosts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeHosts",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeHosts",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1829,11 +2087,14 @@ defmodule Baiji.EC2 do
   """
   def get_password_data(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPasswordData",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPasswordData",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1847,11 +2108,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_reserved_instances_listing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelReservedInstancesListing",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelReservedInstancesListing",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1861,11 +2125,14 @@ defmodule Baiji.EC2 do
   """
   def unassign_private_ip_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnassignPrivateIpAddresses",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnassignPrivateIpAddresses",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1876,11 +2143,14 @@ defmodule Baiji.EC2 do
   """
   def modify_vpc_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyVpcEndpoint",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyVpcEndpoint",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1919,11 +2189,14 @@ defmodule Baiji.EC2 do
   """
   def create_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSnapshot",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSnapshot",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1933,11 +2206,14 @@ defmodule Baiji.EC2 do
   """
   def delete_internet_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteInternetGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteInternetGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -1988,11 +2264,14 @@ defmodule Baiji.EC2 do
   """
   def modify_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyVolume",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyVolume",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2001,11 +2280,14 @@ defmodule Baiji.EC2 do
   """
   def modify_subnet_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifySubnetAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifySubnetAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2023,11 +2305,14 @@ defmodule Baiji.EC2 do
   """
   def describe_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSecurityGroups",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSecurityGroups",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2042,11 +2327,14 @@ defmodule Baiji.EC2 do
   """
   def update_security_group_rule_descriptions_egress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSecurityGroupRuleDescriptionsEgress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateSecurityGroupRuleDescriptionsEgress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2059,11 +2347,14 @@ defmodule Baiji.EC2 do
   """
   def describe_dhcp_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDhcpOptions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDhcpOptions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2091,11 +2382,14 @@ defmodule Baiji.EC2 do
   """
   def authorize_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AuthorizeSecurityGroupIngress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AuthorizeSecurityGroupIngress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2107,11 +2401,14 @@ defmodule Baiji.EC2 do
   """
   def create_egress_only_internet_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateEgressOnlyInternetGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateEgressOnlyInternetGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2121,11 +2418,14 @@ defmodule Baiji.EC2 do
   """
   def enable_volume_i_o(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableVolumeIO",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableVolumeIO",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2139,11 +2439,14 @@ defmodule Baiji.EC2 do
   """
   def create_network_acl(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNetworkAcl",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNetworkAcl",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2156,11 +2459,14 @@ defmodule Baiji.EC2 do
   """
   def describe_prefix_lists(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribePrefixLists",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribePrefixLists",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2169,11 +2475,14 @@ defmodule Baiji.EC2 do
   """
   def describe_network_interface_permissions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNetworkInterfacePermissions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNetworkInterfacePermissions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2186,11 +2495,14 @@ defmodule Baiji.EC2 do
   """
   def replace_network_acl_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReplaceNetworkAclAssociation",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReplaceNetworkAclAssociation",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2226,11 +2538,14 @@ defmodule Baiji.EC2 do
   """
   def associate_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateAddress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateAddress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2244,11 +2559,14 @@ defmodule Baiji.EC2 do
   """
   def reject_vpc_peering_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RejectVpcPeeringConnection",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RejectVpcPeeringConnection",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2257,11 +2575,14 @@ defmodule Baiji.EC2 do
   """
   def attach_network_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachNetworkInterface",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachNetworkInterface",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2281,11 +2602,14 @@ defmodule Baiji.EC2 do
   """
   def run_scheduled_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RunScheduledInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RunScheduledInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2308,11 +2632,14 @@ defmodule Baiji.EC2 do
   """
   def detach_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachVolume",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachVolume",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2321,11 +2648,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpc_peering_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcPeeringConnections",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcPeeringConnections",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2342,11 +2672,14 @@ defmodule Baiji.EC2 do
   """
   def detach_vpn_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachVpnGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachVpnGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2369,11 +2702,14 @@ defmodule Baiji.EC2 do
   """
   def create_default_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDefaultVpc",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDefaultVpc",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2388,11 +2724,14 @@ defmodule Baiji.EC2 do
   """
   def create_vpc_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVpcEndpoint",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVpcEndpoint",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2404,11 +2743,14 @@ defmodule Baiji.EC2 do
   """
   def detach_classic_link_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachClassicLinkVpc",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachClassicLinkVpc",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2444,11 +2786,14 @@ defmodule Baiji.EC2 do
   """
   def terminate_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TerminateInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TerminateInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2460,11 +2805,14 @@ defmodule Baiji.EC2 do
   """
   def describe_spot_fleet_requests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSpotFleetRequests",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSpotFleetRequests",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2484,11 +2832,14 @@ defmodule Baiji.EC2 do
   """
   def create_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateImage",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateImage",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2506,11 +2857,14 @@ defmodule Baiji.EC2 do
   """
   def create_flow_logs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFlowLogs",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateFlowLogs",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2526,11 +2880,14 @@ defmodule Baiji.EC2 do
   """
   def enable_vpc_classic_link_dns_support(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableVpcClassicLinkDnsSupport",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableVpcClassicLinkDnsSupport",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2546,11 +2903,14 @@ defmodule Baiji.EC2 do
   """
   def delete_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVolume",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVolume",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2564,11 +2924,14 @@ defmodule Baiji.EC2 do
   """
   def describe_snapshot_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSnapshotAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSnapshotAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2579,11 +2942,14 @@ defmodule Baiji.EC2 do
   """
   def disassociate_iam_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateIamInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateIamInstanceProfile",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2595,11 +2961,14 @@ defmodule Baiji.EC2 do
   """
   def restore_address_to_classic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RestoreAddressToClassic",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RestoreAddressToClassic",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2612,11 +2981,14 @@ defmodule Baiji.EC2 do
   """
   def describe_key_pairs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeKeyPairs",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeKeyPairs",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2630,11 +3002,14 @@ defmodule Baiji.EC2 do
   """
   def replace_iam_instance_profile_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReplaceIamInstanceProfileAssociation",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReplaceIamInstanceProfileAssociation",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2654,11 +3029,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_spot_instance_requests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelSpotInstanceRequests",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelSpotInstanceRequests",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2690,11 +3068,14 @@ defmodule Baiji.EC2 do
   """
   def create_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVpc",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVpc",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2716,11 +3097,14 @@ defmodule Baiji.EC2 do
   """
   def modify_snapshot_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifySnapshotAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifySnapshotAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2729,11 +3113,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpcs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcs",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcs",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2749,11 +3136,14 @@ defmodule Baiji.EC2 do
   """
   def replace_route(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReplaceRoute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReplaceRoute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2762,11 +3152,14 @@ defmodule Baiji.EC2 do
   """
   def describe_nat_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNatGateways",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNatGateways",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2797,11 +3190,14 @@ defmodule Baiji.EC2 do
   """
   def copy_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CopySnapshot",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CopySnapshot",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2818,11 +3214,14 @@ defmodule Baiji.EC2 do
   """
   def enable_vpc_classic_link(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableVpcClassicLink",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableVpcClassicLink",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2831,11 +3230,14 @@ defmodule Baiji.EC2 do
   """
   def describe_internet_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInternetGateways",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInternetGateways",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2844,11 +3246,14 @@ defmodule Baiji.EC2 do
   """
   def describe_import_snapshot_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeImportSnapshotTasks",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeImportSnapshotTasks",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2859,11 +3264,14 @@ defmodule Baiji.EC2 do
   """
   def delete_vpc_endpoints(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVpcEndpoints",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVpcEndpoints",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2883,11 +3291,14 @@ defmodule Baiji.EC2 do
   """
   def attach_classic_link_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachClassicLinkVpc",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachClassicLinkVpc",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2909,11 +3320,14 @@ defmodule Baiji.EC2 do
   """
   def purchase_reserved_instances_offering(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PurchaseReservedInstancesOffering",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PurchaseReservedInstancesOffering",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2925,11 +3339,14 @@ defmodule Baiji.EC2 do
   """
   def replace_network_acl_entry(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReplaceNetworkAclEntry",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReplaceNetworkAclEntry",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2938,11 +3355,14 @@ defmodule Baiji.EC2 do
   """
   def describe_iam_instance_profile_associations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeIamInstanceProfileAssociations",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeIamInstanceProfileAssociations",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2962,11 +3382,14 @@ defmodule Baiji.EC2 do
   """
   def reboot_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RebootInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RebootInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2976,11 +3399,14 @@ defmodule Baiji.EC2 do
   """
   def associate_iam_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateIamInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateIamInstanceProfile",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -2992,11 +3418,14 @@ defmodule Baiji.EC2 do
   """
   def delete_network_interface_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNetworkInterfacePermission",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNetworkInterfacePermission",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3011,11 +3440,14 @@ defmodule Baiji.EC2 do
   """
   def attach_vpn_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachVpnGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachVpnGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3025,11 +3457,14 @@ defmodule Baiji.EC2 do
   """
   def delete_subnet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSubnet",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSubnet",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3043,11 +3478,14 @@ defmodule Baiji.EC2 do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTags",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTags",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3068,11 +3506,14 @@ defmodule Baiji.EC2 do
   """
   def describe_identity_id_format(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeIdentityIdFormat",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeIdentityIdFormat",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3082,11 +3523,14 @@ defmodule Baiji.EC2 do
   """
   def disable_vpc_classic_link(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableVpcClassicLink",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableVpcClassicLink",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3099,11 +3543,14 @@ defmodule Baiji.EC2 do
   """
   def describe_reserved_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReservedInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReservedInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3113,11 +3560,14 @@ defmodule Baiji.EC2 do
   """
   def delete_customer_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCustomerGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteCustomerGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3145,11 +3595,14 @@ defmodule Baiji.EC2 do
   """
   def authorize_security_group_egress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AuthorizeSecurityGroupEgress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AuthorizeSecurityGroupEgress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3186,11 +3639,14 @@ defmodule Baiji.EC2 do
   """
   def create_customer_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCustomerGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCustomerGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3206,11 +3662,14 @@ defmodule Baiji.EC2 do
   """
   def describe_bundle_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeBundleTasks",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeBundleTasks",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3220,11 +3679,14 @@ defmodule Baiji.EC2 do
   """
   def accept_reserved_instances_exchange_quote(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AcceptReservedInstancesExchangeQuote",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AcceptReservedInstancesExchangeQuote",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3246,11 +3708,14 @@ defmodule Baiji.EC2 do
   """
   def allocate_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocateAddress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocateAddress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3259,11 +3724,14 @@ defmodule Baiji.EC2 do
   """
   def delete_flow_logs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFlowLogs",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteFlowLogs",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3275,11 +3743,14 @@ defmodule Baiji.EC2 do
   """
   def purchase_host_reservation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PurchaseHostReservation",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PurchaseHostReservation",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3331,11 +3802,14 @@ defmodule Baiji.EC2 do
   """
   def create_dhcp_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDhcpOptions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDhcpOptions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3347,11 +3821,14 @@ defmodule Baiji.EC2 do
   """
   def describe_placement_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribePlacementGroups",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribePlacementGroups",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3378,11 +3855,14 @@ defmodule Baiji.EC2 do
   """
   def release_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReleaseAddress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReleaseAddress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3422,11 +3902,14 @@ defmodule Baiji.EC2 do
   """
   def register_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterImage",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterImage",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3444,11 +3927,14 @@ defmodule Baiji.EC2 do
   """
   def describe_host_reservation_offerings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeHostReservationOfferings",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeHostReservationOfferings",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3457,11 +3943,14 @@ defmodule Baiji.EC2 do
   """
   def detach_network_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachNetworkInterface",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachNetworkInterface",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3476,11 +3965,14 @@ defmodule Baiji.EC2 do
   """
   def disassociate_route_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateRouteTable",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateRouteTable",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3493,11 +3985,14 @@ defmodule Baiji.EC2 do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTags",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTags",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3509,11 +4004,14 @@ defmodule Baiji.EC2 do
   """
   def disassociate_subnet_cidr_block(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateSubnetCidrBlock",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateSubnetCidrBlock",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3527,11 +4025,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpn_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpnGateways",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpnGateways",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3547,11 +4048,14 @@ defmodule Baiji.EC2 do
   """
   def report_instance_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReportInstanceStatus",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReportInstanceStatus",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3562,11 +4066,14 @@ defmodule Baiji.EC2 do
   """
   def describe_flow_logs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeFlowLogs",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeFlowLogs",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3584,11 +4091,14 @@ defmodule Baiji.EC2 do
   """
   def delete_vpn_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVpnConnection",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVpnConnection",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3606,11 +4116,14 @@ defmodule Baiji.EC2 do
   """
   def create_fpga_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFpgaImage",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateFpgaImage",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3629,11 +4142,14 @@ defmodule Baiji.EC2 do
   """
   def purchase_scheduled_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PurchaseScheduledInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PurchaseScheduledInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3649,11 +4165,14 @@ defmodule Baiji.EC2 do
   """
   def modify_hosts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyHosts",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyHosts",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3667,11 +4186,14 @@ defmodule Baiji.EC2 do
   """
   def delete_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSecurityGroup",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSecurityGroup",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3697,11 +4219,14 @@ defmodule Baiji.EC2 do
   """
   def create_network_acl_entry(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNetworkAclEntry",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNetworkAclEntry",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3721,11 +4246,14 @@ defmodule Baiji.EC2 do
   """
   def release_hosts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReleaseHosts",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReleaseHosts",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3735,11 +4263,14 @@ defmodule Baiji.EC2 do
   """
   def disable_vgw_route_propagation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableVgwRoutePropagation",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableVgwRoutePropagation",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3748,11 +4279,14 @@ defmodule Baiji.EC2 do
   """
   def delete_egress_only_internet_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteEgressOnlyInternetGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteEgressOnlyInternetGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3765,11 +4299,14 @@ defmodule Baiji.EC2 do
   """
   def delete_vpn_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVpnGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVpnGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3788,11 +4325,14 @@ defmodule Baiji.EC2 do
   """
   def create_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTags",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTags",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3806,11 +4346,14 @@ defmodule Baiji.EC2 do
   """
   def describe_volume_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVolumeAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVolumeAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3821,11 +4364,14 @@ defmodule Baiji.EC2 do
   """
   def describe_elastic_gpus(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeElasticGpus",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeElasticGpus",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3841,11 +4387,14 @@ defmodule Baiji.EC2 do
   """
   def modify_reserved_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyReservedInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyReservedInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3858,11 +4407,14 @@ defmodule Baiji.EC2 do
   """
   def create_spot_datafeed_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSpotDatafeedSubscription",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSpotDatafeedSubscription",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3871,11 +4423,14 @@ defmodule Baiji.EC2 do
   """
   def delete_route(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRoute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRoute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3903,11 +4458,14 @@ defmodule Baiji.EC2 do
   """
   def start_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3920,11 +4478,14 @@ defmodule Baiji.EC2 do
   """
   def create_network_interface_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNetworkInterfacePermission",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNetworkInterfacePermission",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3945,11 +4506,14 @@ defmodule Baiji.EC2 do
   """
   def revoke_security_group_egress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RevokeSecurityGroupEgress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RevokeSecurityGroupEgress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3973,11 +4537,14 @@ defmodule Baiji.EC2 do
   """
   def delete_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSnapshot",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSnapshot",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -3994,11 +4561,14 @@ defmodule Baiji.EC2 do
   """
   def create_vpn_connection_route(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVpnConnectionRoute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVpnConnectionRoute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4019,11 +4589,14 @@ defmodule Baiji.EC2 do
   """
   def associate_dhcp_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateDhcpOptions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateDhcpOptions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4036,11 +4609,14 @@ defmodule Baiji.EC2 do
   """
   def reset_snapshot_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetSnapshotAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetSnapshotAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4049,11 +4625,14 @@ defmodule Baiji.EC2 do
   """
   def cancel_import_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelImportTask",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelImportTask",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4062,11 +4641,14 @@ defmodule Baiji.EC2 do
   """
   def unassign_ipv6_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnassignIpv6Addresses",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnassignIpv6Addresses",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4095,11 +4677,14 @@ defmodule Baiji.EC2 do
   """
   def modify_vpc_peering_connection_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyVpcPeeringConnectionOptions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyVpcPeeringConnectionOptions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4123,11 +4708,14 @@ defmodule Baiji.EC2 do
   """
   def describe_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4162,11 +4750,14 @@ defmodule Baiji.EC2 do
   """
   def create_reserved_instances_listing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateReservedInstancesListing",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateReservedInstancesListing",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4178,11 +4769,14 @@ defmodule Baiji.EC2 do
   """
   def get_console_screenshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetConsoleScreenshot",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetConsoleScreenshot",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4238,11 +4832,14 @@ defmodule Baiji.EC2 do
   """
   def describe_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSnapshots",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSnapshots",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4258,11 +4855,14 @@ defmodule Baiji.EC2 do
   """
   def describe_reserved_instances_modifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReservedInstancesModifications",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReservedInstancesModifications",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4283,11 +4883,14 @@ defmodule Baiji.EC2 do
   """
   def describe_reserved_instances_offerings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReservedInstancesOfferings",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReservedInstancesOfferings",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4297,11 +4900,14 @@ defmodule Baiji.EC2 do
   """
   def describe_network_interface_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNetworkInterfaceAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNetworkInterfaceAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4321,11 +4927,14 @@ defmodule Baiji.EC2 do
   """
   def modify_image_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyImageAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyImageAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4356,11 +4965,14 @@ defmodule Baiji.EC2 do
   """
   def create_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVolume",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVolume",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4369,11 +4981,14 @@ defmodule Baiji.EC2 do
   """
   def modify_vpc_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyVpcAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyVpcAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4383,11 +4998,14 @@ defmodule Baiji.EC2 do
   """
   def enable_vgw_route_propagation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableVgwRoutePropagation",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableVgwRoutePropagation",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4397,11 +5015,14 @@ defmodule Baiji.EC2 do
   """
   def describe_image_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeImageAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeImageAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4415,11 +5036,14 @@ defmodule Baiji.EC2 do
   """
   def describe_instance_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInstanceAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInstanceAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4437,11 +5061,14 @@ defmodule Baiji.EC2 do
   """
   def deregister_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeregisterImage",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeregisterImage",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4455,11 +5082,14 @@ defmodule Baiji.EC2 do
   """
   def create_internet_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInternetGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInternetGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4496,11 +5126,14 @@ defmodule Baiji.EC2 do
   """
   def create_subnet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSubnet",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSubnet",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4518,11 +5151,14 @@ defmodule Baiji.EC2 do
   """
   def reset_instance_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetInstanceAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetInstanceAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4538,11 +5174,14 @@ defmodule Baiji.EC2 do
   """
   def create_vpn_gateway(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVpnGateway",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVpnGateway",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4572,11 +5211,14 @@ defmodule Baiji.EC2 do
   """
   def describe_account_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAccountAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAccountAttributes",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4586,11 +5228,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpc_endpoint_services(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcEndpointServices",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcEndpointServices",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4601,11 +5246,14 @@ defmodule Baiji.EC2 do
   """
   def describe_fpga_images(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeFpgaImages",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeFpgaImages",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4620,11 +5268,14 @@ defmodule Baiji.EC2 do
   """
   def create_instance_export_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInstanceExportTask",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInstanceExportTask",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4636,11 +5287,14 @@ defmodule Baiji.EC2 do
   """
   def describe_moving_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeMovingAddresses",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeMovingAddresses",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4649,11 +5303,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpc_classic_link(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcClassicLink",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcClassicLink",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4670,11 +5327,14 @@ defmodule Baiji.EC2 do
   """
   def assign_ipv6_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssignIpv6Addresses",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssignIpv6Addresses",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4690,11 +5350,14 @@ defmodule Baiji.EC2 do
   """
   def describe_availability_zones(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAvailabilityZones",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAvailabilityZones",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4710,11 +5373,14 @@ defmodule Baiji.EC2 do
   """
   def describe_vpc_classic_link_dns_support(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVpcClassicLinkDnsSupport",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVpcClassicLinkDnsSupport",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4726,11 +5392,14 @@ defmodule Baiji.EC2 do
   """
   def delete_dhcp_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDhcpOptions",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDhcpOptions",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4754,11 +5423,14 @@ defmodule Baiji.EC2 do
   """
   def revoke_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RevokeSecurityGroupIngress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RevokeSecurityGroupIngress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4773,11 +5445,14 @@ defmodule Baiji.EC2 do
   """
   def monitor_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "MonitorInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "MonitorInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4787,11 +5462,14 @@ defmodule Baiji.EC2 do
   """
   def delete_network_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNetworkInterface",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNetworkInterface",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4802,11 +5480,14 @@ defmodule Baiji.EC2 do
   """
   def associate_subnet_cidr_block(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateSubnetCidrBlock",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateSubnetCidrBlock",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4821,11 +5502,14 @@ defmodule Baiji.EC2 do
   """
   def update_security_group_rule_descriptions_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSecurityGroupRuleDescriptionsIngress",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateSecurityGroupRuleDescriptionsIngress",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4848,11 +5532,14 @@ defmodule Baiji.EC2 do
   """
   def create_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateKeyPair",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateKeyPair",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4861,11 +5548,14 @@ defmodule Baiji.EC2 do
   """
   def describe_network_interfaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNetworkInterfaces",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNetworkInterfaces",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4907,11 +5597,14 @@ defmodule Baiji.EC2 do
   """
   def attach_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachVolume",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachVolume",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4932,11 +5625,14 @@ defmodule Baiji.EC2 do
   """
   def assign_private_ip_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssignPrivateIpAddresses",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssignPrivateIpAddresses",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4960,11 +5656,14 @@ defmodule Baiji.EC2 do
   """
   def modify_identity_id_format(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ModifyIdentityIdFormat",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ModifyIdentityIdFormat",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4973,11 +5672,14 @@ defmodule Baiji.EC2 do
   """
   def describe_spot_fleet_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSpotFleetInstances",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSpotFleetInstances",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -4994,11 +5696,14 @@ defmodule Baiji.EC2 do
   """
   def replace_route_table_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReplaceRouteTableAssociation",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReplaceRouteTableAssociation",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   
@@ -5011,11 +5716,14 @@ defmodule Baiji.EC2 do
   """
   def reset_image_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetImageAttribute",
-      type:     :xml,
-      method:   :post
+      service:        "ec2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetImageAttribute",
+      
+      type:           :ec2,
+      method:         :post
     }
   end
   

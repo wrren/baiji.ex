@@ -59,11 +59,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def create_identity_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateIdentityPool",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateIdentityPool",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -75,11 +80,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def delete_identities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIdentities",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteIdentities",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -91,11 +101,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def delete_identity_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIdentityPool",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteIdentityPool",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -107,11 +122,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def describe_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeIdentity",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeIdentity",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -123,11 +143,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def describe_identity_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeIdentityPool",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeIdentityPool",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -141,11 +166,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def get_credentials_for_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCredentialsForIdentity",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCredentialsForIdentity",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -157,11 +187,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def get_id(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetId",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetId",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -172,11 +207,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def get_identity_pool_roles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIdentityPoolRoles",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetIdentityPoolRoles",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -191,11 +231,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def get_open_id_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOpenIdToken",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOpenIdToken",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -219,11 +264,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def get_open_id_token_for_developer_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOpenIdTokenForDeveloperIdentity",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOpenIdTokenForDeveloperIdentity",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -234,11 +284,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def list_identities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIdentities",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListIdentities",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -249,11 +304,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def list_identity_pools(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIdentityPools",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListIdentityPools",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -272,11 +332,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def lookup_developer_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "LookupDeveloperIdentity",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "LookupDeveloperIdentity",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -294,11 +359,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def merge_developer_identities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "MergeDeveloperIdentities",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "MergeDeveloperIdentities",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -310,11 +380,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def set_identity_pool_roles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetIdentityPoolRoles",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetIdentityPoolRoles",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -329,11 +404,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def unlink_developer_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnlinkDeveloperIdentity",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnlinkDeveloperIdentity",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -346,11 +426,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def unlink_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnlinkIdentity",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnlinkIdentity",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -361,11 +446,16 @@ defmodule Baiji.CognitoIdentity do
   """
   def update_identity_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateIdentityPool",
-      type:     :json,
-      method:   :post
+      service:        "cognito-identity",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateIdentityPool",
+      
+      target_prefix:  "AWSCognitoIdentityService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

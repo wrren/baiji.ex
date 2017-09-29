@@ -34,11 +34,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def delete_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRule",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRule",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -50,11 +55,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def describe_event_bus(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEventBus",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEventBus",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -63,11 +73,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def describe_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeRule",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeRule",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -81,11 +96,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def disable_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableRule",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableRule",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -99,11 +119,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def enable_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableRule",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableRule",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -113,11 +138,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def list_rule_names_by_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRuleNamesByTarget",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRuleNamesByTarget",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -127,11 +157,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def list_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRules",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRules",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -140,11 +175,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def list_targets_by_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTargetsByRule",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTargetsByRule",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -154,11 +194,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def put_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutEvents",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutEvents",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -173,14 +218,21 @@ defmodule Baiji.CloudwatchEvents do
 
   To enable multiple AWS accounts to put events to your default event bus,
   run `PutPermission` once for each of these accounts.
+
+  The permission policy on the default event bus cannot exceed 10KB in size.
   """
   def put_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutPermission",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutPermission",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -206,11 +258,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def put_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRule",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutRule",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -234,9 +291,15 @@ defmodule Baiji.CloudwatchEvents do
 
   </li> <li> AWS Step Functions state machines
 
+  </li> <li> Pipelines in Amazon Code Pipeline
+
+  </li> <li> Amazon Inspector assessment templates
+
   </li> <li> Amazon SNS topics
 
   </li> <li> Amazon SQS queues
+
+  </li> <li> The default event bus of another AWS account
 
   </li> </ul> Note that creating rules with built-in targets is supported
   only in the AWS Management Console.
@@ -258,10 +321,16 @@ defmodule Baiji.CloudwatchEvents do
   in the *Amazon CloudWatch Events User Guide*.
 
   If another AWS account is in the same region and has granted you permission
-  (using `PutPermission`), you can set that account's event bus as a target
-  of the rules in your account. To send the matched events to the other
-  account, specify that account's event bus as the `Arn` when you run
-  `PutTargets`. For more information about enabling cross-account events, see
+  (using `PutPermission`), you can send events to that account by setting
+  that account's event bus as a target of the rules in your account. To send
+  the matched events to the other account, specify that account's event bus
+  as the `Arn` when you run `PutTargets`. If your account sends events to
+  another account, your account is charged for each sent event. Each event
+  sent to antoher account is charged as a custom event. The account receiving
+  the event is not charged. For more information on pricing, see [Amazon
+  CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
+
+  For more information about enabling cross-account events, see
   `PutPermission`.
 
   **Input**, **InputPath** and **InputTransformer** are mutually exclusive
@@ -299,11 +368,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def put_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutTargets",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutTargets",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -316,11 +390,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def remove_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemovePermission",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemovePermission",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -339,11 +418,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def remove_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveTargets",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveTargets",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -358,11 +442,16 @@ defmodule Baiji.CloudwatchEvents do
   """
   def test_event_pattern(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TestEventPattern",
-      type:     :json,
-      method:   :post
+      service:        "events",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TestEventPattern",
+      
+      target_prefix:  "AWSEvents",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

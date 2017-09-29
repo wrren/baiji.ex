@@ -47,11 +47,14 @@ defmodule Baiji.AutoScaling do
   """
   def put_lifecycle_hook(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutLifecycleHook",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutLifecycleHook",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -60,28 +63,35 @@ defmodule Baiji.AutoScaling do
   """
   def describe_auto_scaling_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAutoScalingInstances",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAutoScalingInstances",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
   @doc """
-  Moves the specified instances into `Standby` mode.
+  Moves the specified instances into the standby state.
 
-  For more information, see [Auto Scaling
-  Lifecycle](http://docs.aws.amazon.com/autoscaling/latest/userguide/AutoScalingGroupLifecycle.html)
+  For more information, see [Temporarily Removing Instances from Your Auto
+  Scaling
+  Group](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-enter-exit-standby.html)
   in the *Auto Scaling User Guide*.
   """
   def enter_standby(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnterStandby",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnterStandby",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -95,11 +105,14 @@ defmodule Baiji.AutoScaling do
   """
   def resume_processes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResumeProcesses",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResumeProcesses",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -112,11 +125,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_metric_collection_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeMetricCollectionTypes",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeMetricCollectionTypes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -126,11 +142,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_scaling_process_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScalingProcessTypes",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScalingProcessTypes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -139,11 +158,14 @@ defmodule Baiji.AutoScaling do
   """
   def delete_notification_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNotificationConfiguration",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNotificationConfiguration",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -161,11 +183,14 @@ defmodule Baiji.AutoScaling do
   """
   def put_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutScalingPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutScalingPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -176,11 +201,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_scheduled_actions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScheduledActions",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScheduledActions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -192,11 +220,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLoadBalancers",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLoadBalancers",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -230,19 +261,22 @@ defmodule Baiji.AutoScaling do
   """
   def complete_lifecycle_action(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CompleteLifecycleAction",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CompleteLifecycleAction",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
   @doc """
   Removes one or more instances from the specified Auto Scaling group.
 
-  After the instances are detached, you can manage them independently from
-  the rest of the Auto Scaling group.
+  After the instances are detached, you can manage them independent of the
+  Auto Scaling group.
 
   If you do not specify the option to decrement the desired capacity, Auto
   Scaling launches instances to replace the ones that are detached.
@@ -258,11 +292,14 @@ defmodule Baiji.AutoScaling do
   """
   def detach_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachInstances",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachInstances",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -271,11 +308,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_launch_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLaunchConfigurations",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLaunchConfigurations",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -284,11 +324,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_auto_scaling_notification_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAutoScalingNotificationTypes",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAutoScalingNotificationTypes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -305,26 +348,28 @@ defmodule Baiji.AutoScaling do
   """
   def attach_load_balancer_target_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachLoadBalancerTargetGroups",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachLoadBalancerTargetGroups",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
   @doc """
   Updates the configuration for the specified Auto Scaling group.
 
+  The new settings take effect on any scaling activities after this call
+  returns. Scaling activities that are currently in progress aren't affected.
+
   To update an Auto Scaling group with a launch configuration with
-  `InstanceMonitoring` set to `False`, you must first disable the collection
+  `InstanceMonitoring` set to `false`, you must first disable the collection
   of group metrics. Otherwise, you will get an error. If you have previously
   enabled the collection of group metrics, you can disable it using
   `DisableMetricsCollection`.
-
-  The new settings are registered upon the completion of this call. Any
-  launch configuration settings take effect on any triggers after this call
-  returns. Scaling activities that are currently in progress aren't affected.
 
   Note the following:
 
@@ -345,11 +390,14 @@ defmodule Baiji.AutoScaling do
   """
   def update_auto_scaling_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAutoScalingGroup",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAutoScalingGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -362,11 +410,14 @@ defmodule Baiji.AutoScaling do
   """
   def terminate_instance_in_auto_scaling_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TerminateInstanceInAutoScalingGroup",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TerminateInstanceInAutoScalingGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -383,11 +434,14 @@ defmodule Baiji.AutoScaling do
   """
   def create_launch_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLaunchConfiguration",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateLaunchConfiguration",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -405,11 +459,14 @@ defmodule Baiji.AutoScaling do
   """
   def put_notification_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutNotificationConfiguration",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutNotificationConfiguration",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -434,28 +491,35 @@ defmodule Baiji.AutoScaling do
   """
   def delete_auto_scaling_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAutoScalingGroup",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAutoScalingGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
   @doc """
-  Moves the specified instances out of `Standby` mode.
+  Moves the specified instances out of the standby state.
 
-  For more information, see [Auto Scaling
-  Lifecycle](http://docs.aws.amazon.com/autoscaling/latest/userguide/AutoScalingGroupLifecycle.html)
+  For more information, see [Temporarily Removing Instances from Your Auto
+  Scaling
+  Group](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-enter-exit-standby.html)
   in the *Auto Scaling User Guide*.
   """
   def exit_standby(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ExitStandby",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ExitStandby",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -464,11 +528,14 @@ defmodule Baiji.AutoScaling do
   """
   def execute_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ExecutePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ExecutePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -480,11 +547,14 @@ defmodule Baiji.AutoScaling do
   """
   def enable_metrics_collection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableMetricsCollection",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableMetricsCollection",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -494,11 +564,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_scaling_activities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeScalingActivities",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeScalingActivities",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -507,11 +580,14 @@ defmodule Baiji.AutoScaling do
   """
   def delete_scheduled_action(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteScheduledAction",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteScheduledAction",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -520,11 +596,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribePolicies",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribePolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -533,11 +612,14 @@ defmodule Baiji.AutoScaling do
   """
   def detach_load_balancer_target_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachLoadBalancerTargetGroups",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachLoadBalancerTargetGroups",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -546,11 +628,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_lifecycle_hooks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLifecycleHooks",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLifecycleHooks",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -559,11 +644,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_load_balancer_target_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLoadBalancerTargetGroups",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLoadBalancerTargetGroups",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -575,11 +663,14 @@ defmodule Baiji.AutoScaling do
   """
   def delete_lifecycle_hook(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLifecycleHook",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteLifecycleHook",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -592,11 +683,14 @@ defmodule Baiji.AutoScaling do
   """
   def set_instance_protection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetInstanceProtection",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetInstanceProtection",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -615,11 +709,14 @@ defmodule Baiji.AutoScaling do
   """
   def suspend_processes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SuspendProcesses",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SuspendProcesses",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -628,11 +725,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_auto_scaling_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAutoScalingGroups",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAutoScalingGroups",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -653,11 +753,14 @@ defmodule Baiji.AutoScaling do
   """
   def attach_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachLoadBalancers",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachLoadBalancers",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -666,11 +769,14 @@ defmodule Baiji.AutoScaling do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTags",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTags",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -679,11 +785,14 @@ defmodule Baiji.AutoScaling do
   """
   def disable_metrics_collection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableMetricsCollection",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableMetricsCollection",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -692,11 +801,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_lifecycle_hook_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLifecycleHookTypes",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLifecycleHookTypes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -714,11 +826,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTags",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTags",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -735,11 +850,14 @@ defmodule Baiji.AutoScaling do
   """
   def create_or_update_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateOrUpdateTags",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateOrUpdateTags",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -748,11 +866,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_adjustment_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAdjustmentTypes",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAdjustmentTypes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -764,11 +885,14 @@ defmodule Baiji.AutoScaling do
   """
   def delete_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -803,11 +927,14 @@ defmodule Baiji.AutoScaling do
   """
   def record_lifecycle_action_heartbeat(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RecordLifecycleActionHeartbeat",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RecordLifecycleActionHeartbeat",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -820,11 +947,14 @@ defmodule Baiji.AutoScaling do
   """
   def set_desired_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetDesiredCapacity",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetDesiredCapacity",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -842,11 +972,14 @@ defmodule Baiji.AutoScaling do
   """
   def detach_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachLoadBalancers",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachLoadBalancers",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -863,11 +996,14 @@ defmodule Baiji.AutoScaling do
   """
   def create_auto_scaling_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAutoScalingGroup",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAutoScalingGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -890,11 +1026,14 @@ defmodule Baiji.AutoScaling do
   """
   def attach_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachInstances",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachInstances",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -903,11 +1042,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_termination_policy_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTerminationPolicyTypes",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTerminationPolicyTypes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -920,11 +1062,14 @@ defmodule Baiji.AutoScaling do
   """
   def delete_launch_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLaunchConfiguration",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteLaunchConfiguration",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -934,11 +1079,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_notification_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNotificationConfigurations",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeNotificationConfigurations",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -951,11 +1099,14 @@ defmodule Baiji.AutoScaling do
   """
   def set_instance_health(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetInstanceHealth",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetInstanceHealth",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -969,11 +1120,14 @@ defmodule Baiji.AutoScaling do
   """
   def describe_account_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAccountLimits",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAccountLimits",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -988,11 +1142,14 @@ defmodule Baiji.AutoScaling do
   """
   def put_scheduled_update_group_action(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutScheduledUpdateGroupAction",
-      type:     :xml,
-      method:   :post
+      service:        "autoscaling",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutScheduledUpdateGroupAction",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

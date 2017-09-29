@@ -65,11 +65,16 @@ defmodule Baiji.CodeStar do
   """
   def associate_team_member(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateTeamMember",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateTeamMember",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -78,11 +83,16 @@ defmodule Baiji.CodeStar do
   """
   def create_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -95,11 +105,16 @@ defmodule Baiji.CodeStar do
   """
   def create_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUserProfile",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateUserProfile",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -110,11 +125,16 @@ defmodule Baiji.CodeStar do
   """
   def delete_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -126,11 +146,16 @@ defmodule Baiji.CodeStar do
   """
   def delete_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUserProfile",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteUserProfile",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -139,11 +164,16 @@ defmodule Baiji.CodeStar do
   """
   def describe_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -153,11 +183,16 @@ defmodule Baiji.CodeStar do
   """
   def describe_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeUserProfile",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeUserProfile",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -169,11 +204,16 @@ defmodule Baiji.CodeStar do
   """
   def disassociate_team_member(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateTeamMember",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateTeamMember",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -182,11 +222,16 @@ defmodule Baiji.CodeStar do
   """
   def list_projects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListProjects",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListProjects",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -195,11 +240,16 @@ defmodule Baiji.CodeStar do
   """
   def list_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListResources",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListResources",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -208,11 +258,16 @@ defmodule Baiji.CodeStar do
   """
   def list_tags_for_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -221,11 +276,16 @@ defmodule Baiji.CodeStar do
   """
   def list_team_members(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTeamMembers",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTeamMembers",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -235,11 +295,16 @@ defmodule Baiji.CodeStar do
   """
   def list_user_profiles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListUserProfiles",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListUserProfiles",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -248,11 +313,16 @@ defmodule Baiji.CodeStar do
   """
   def tag_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TagProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TagProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -261,11 +331,16 @@ defmodule Baiji.CodeStar do
   """
   def untag_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UntagProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UntagProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -274,11 +349,16 @@ defmodule Baiji.CodeStar do
   """
   def update_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateProject",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateProject",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -289,11 +369,16 @@ defmodule Baiji.CodeStar do
   """
   def update_team_member(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTeamMember",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateTeamMember",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -304,11 +389,16 @@ defmodule Baiji.CodeStar do
   """
   def update_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateUserProfile",
-      type:     :json,
-      method:   :post
+      service:        "codestar",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateUserProfile",
+      
+      target_prefix:  "CodeStar_20170419",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

@@ -23,11 +23,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_intent_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIntentVersions",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/intents/{name}/versions/",
+      input:          input,
+      options:        options,
+      action:         "GetIntentVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -36,11 +39,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_export(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetExport",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/exports/",
+      input:          input,
+      options:        options,
+      action:         "GetExport",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -52,11 +58,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBot",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{name}/versions/{versionoralias}",
+      input:          input,
+      options:        options,
+      action:         "GetBot",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -69,11 +78,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_slot_type_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSlotTypeVersion",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/slottypes/{name}/version/{version}",
+      input:          input,
+      options:        options,
+      action:         "DeleteSlotTypeVersion",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -95,11 +107,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def create_bot_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateBotVersion",
-      type:     :json,
-      method:   :post
+      service:        "lex-models",
+      endpoint:       "/bots/{name}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateBotVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -124,11 +139,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def put_bot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBot",
-      type:     :json,
-      method:   :put
+      service:        "lex-models",
+      endpoint:       "/bots/{name}/versions/$LATEST",
+      input:          input,
+      options:        options,
+      action:         "PutBot",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -146,11 +164,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_intents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIntents",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/intents/",
+      input:          input,
+      options:        options,
+      action:         "GetIntents",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -161,11 +182,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_builtin_intent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBuiltinIntent",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/builtins/intents/{signature}",
+      input:          input,
+      options:        options,
+      action:         "GetBuiltinIntent",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -189,11 +213,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_intent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIntent",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/intents/{name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteIntent",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -207,11 +234,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def put_bot_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutBotAlias",
-      type:     :json,
-      method:   :put
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/{name}",
+      input:          input,
+      options:        options,
+      action:         "PutBotAlias",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -223,11 +253,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bot_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBotAlias",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/{name}",
+      input:          input,
+      options:        options,
+      action:         "GetBotAlias",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -243,11 +276,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_builtin_slot_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBuiltinSlotTypes",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/builtins/slottypes/",
+      input:          input,
+      options:        options,
+      action:         "GetBuiltinSlotTypes",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -259,11 +295,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_intent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIntent",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/intents/{name}/versions/{version}",
+      input:          input,
+      options:        options,
+      action:         "GetIntent",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -286,11 +325,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def create_intent_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateIntentVersion",
-      type:     :json,
-      method:   :post
+      service:        "lex-models",
+      endpoint:       "/intents/{name}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateIntentVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -303,11 +345,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_intent_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIntentVersion",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/intents/{name}/versions/{version}",
+      input:          input,
+      options:        options,
+      action:         "DeleteIntentVersion",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -325,11 +370,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_slot_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSlotTypes",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/slottypes/",
+      input:          input,
+      options:        options,
+      action:         "GetSlotTypes",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -347,11 +395,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_bot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBot",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/bots/{name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteBot",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -363,11 +414,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_bot_channel_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBotChannelAssociation",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/{aliasName}/channels/{name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteBotChannelAssociation",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -386,11 +440,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bot_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBotVersions",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{name}/versions/",
+      input:          input,
+      options:        options,
+      action:         "GetBotVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -410,11 +467,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_utterances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUtterances",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/utterances/{userId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteUtterances",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -435,11 +495,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_slot_type_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSlotTypeVersions",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/slottypes/{name}/versions/",
+      input:          input,
+      options:        options,
+      action:         "GetSlotTypeVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -452,11 +515,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bot_channel_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBotChannelAssociation",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/{aliasName}/channels/{name}",
+      input:          input,
+      options:        options,
+      action:         "GetBotChannelAssociation",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -481,11 +547,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_slot_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSlotType",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/slottypes/{name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteSlotType",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -517,11 +586,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_utterances_view(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUtterancesView",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{botname}/utterances?view=aggregation",
+      input:          input,
+      options:        options,
+      action:         "GetUtterancesView",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -540,11 +612,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBots",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/",
+      input:          input,
+      options:        options,
+      action:         "GetBots",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -556,11 +631,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_bot_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBotVersion",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/bots/{name}/versions/{version}",
+      input:          input,
+      options:        options,
+      action:         "DeleteBotVersion",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -571,11 +649,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_builtin_intents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBuiltinIntents",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/builtins/intents/",
+      input:          input,
+      options:        options,
+      action:         "GetBuiltinIntents",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -592,11 +673,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def delete_bot_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBotAlias",
-      type:     :json,
-      method:   :delete
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/{name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteBotAlias",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -608,11 +692,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bot_channel_associations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBotChannelAssociations",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/{aliasName}/channels/",
+      input:          input,
+      options:        options,
+      action:         "GetBotChannelAssociations",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -623,11 +710,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_bot_aliases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBotAliases",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/bots/{botName}/aliases/",
+      input:          input,
+      options:        options,
+      action:         "GetBotAliases",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -682,11 +772,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def put_intent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutIntent",
-      type:     :json,
-      method:   :put
+      service:        "lex-models",
+      endpoint:       "/intents/{name}/versions/$LATEST",
+      input:          input,
+      options:        options,
+      action:         "PutIntent",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -698,11 +791,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def get_slot_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSlotType",
-      type:     :json,
-      method:   :get
+      service:        "lex-models",
+      endpoint:       "/slottypes/{name}/versions/{version}",
+      input:          input,
+      options:        options,
+      action:         "GetSlotType",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -725,11 +821,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def create_slot_type_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSlotTypeVersion",
-      type:     :json,
-      method:   :post
+      service:        "lex-models",
+      endpoint:       "/slottypes/{name}/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateSlotTypeVersion",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -749,11 +848,14 @@ defmodule Baiji.LexModelBuildingService do
   """
   def put_slot_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutSlotType",
-      type:     :json,
-      method:   :put
+      service:        "lex-models",
+      endpoint:       "/slottypes/{name}/versions/$LATEST",
+      input:          input,
+      options:        options,
+      action:         "PutSlotType",
+      
+      type:           :json,
+      method:         :put
     }
   end
   

@@ -14,11 +14,16 @@ defmodule Baiji.Inspector do
   """
   def subscribe_to_event(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SubscribeToEvent",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SubscribeToEvent",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -29,11 +34,16 @@ defmodule Baiji.Inspector do
   """
   def remove_attributes_from_findings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveAttributesFromFindings",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveAttributesFromFindings",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -43,11 +53,16 @@ defmodule Baiji.Inspector do
   """
   def update_assessment_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAssessmentTarget",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAssessmentTarget",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -57,11 +72,16 @@ defmodule Baiji.Inspector do
   """
   def unsubscribe_from_event(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnsubscribeFromEvent",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnsubscribeFromEvent",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -71,11 +91,16 @@ defmodule Baiji.Inspector do
   """
   def list_assessment_run_agents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssessmentRunAgents",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssessmentRunAgents",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -85,11 +110,16 @@ defmodule Baiji.Inspector do
   """
   def stop_assessment_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopAssessmentRun",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopAssessmentRun",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -100,11 +130,16 @@ defmodule Baiji.Inspector do
   """
   def register_cross_account_access_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterCrossAccountAccessRole",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterCrossAccountAccessRole",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -114,11 +149,16 @@ defmodule Baiji.Inspector do
   """
   def describe_assessment_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAssessmentTargets",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAssessmentTargets",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -127,11 +167,16 @@ defmodule Baiji.Inspector do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForResource",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForResource",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -140,11 +185,16 @@ defmodule Baiji.Inspector do
   """
   def describe_findings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeFindings",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeFindings",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -154,11 +204,16 @@ defmodule Baiji.Inspector do
   """
   def delete_assessment_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAssessmentRun",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAssessmentRun",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -168,11 +223,16 @@ defmodule Baiji.Inspector do
   """
   def describe_assessment_runs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAssessmentRuns",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAssessmentRuns",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -182,11 +242,16 @@ defmodule Baiji.Inspector do
   """
   def delete_assessment_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAssessmentTemplate",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAssessmentTemplate",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -196,11 +261,16 @@ defmodule Baiji.Inspector do
   """
   def preview_agents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PreviewAgents",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PreviewAgents",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -210,11 +280,16 @@ defmodule Baiji.Inspector do
   """
   def get_assessment_report(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAssessmentReport",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAssessmentReport",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -224,11 +299,16 @@ defmodule Baiji.Inspector do
   """
   def delete_assessment_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAssessmentTarget",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAssessmentTarget",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -238,11 +318,16 @@ defmodule Baiji.Inspector do
   """
   def describe_cross_account_access_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeCrossAccountAccessRole",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeCrossAccountAccessRole",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -252,11 +337,16 @@ defmodule Baiji.Inspector do
   """
   def describe_assessment_templates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAssessmentTemplates",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAssessmentTemplates",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -266,11 +356,16 @@ defmodule Baiji.Inspector do
   """
   def set_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetTagsForResource",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetTagsForResource",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -280,11 +375,16 @@ defmodule Baiji.Inspector do
   """
   def create_assessment_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAssessmentTemplate",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAssessmentTemplate",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -294,11 +394,16 @@ defmodule Baiji.Inspector do
   """
   def get_telemetry_metadata(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTelemetryMetadata",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTelemetryMetadata",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -308,11 +413,16 @@ defmodule Baiji.Inspector do
   """
   def add_attributes_to_findings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddAttributesToFindings",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddAttributesToFindings",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -323,11 +433,16 @@ defmodule Baiji.Inspector do
   """
   def list_assessment_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssessmentTargets",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssessmentTargets",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -338,11 +453,16 @@ defmodule Baiji.Inspector do
   """
   def list_event_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListEventSubscriptions",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListEventSubscriptions",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -352,11 +472,16 @@ defmodule Baiji.Inspector do
   """
   def describe_rules_packages(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeRulesPackages",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeRulesPackages",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -369,11 +494,16 @@ defmodule Baiji.Inspector do
   """
   def create_assessment_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAssessmentTarget",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAssessmentTarget",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -386,11 +516,16 @@ defmodule Baiji.Inspector do
   """
   def create_resource_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateResourceGroup",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateResourceGroup",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -400,11 +535,16 @@ defmodule Baiji.Inspector do
   """
   def list_assessment_templates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssessmentTemplates",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssessmentTemplates",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -414,11 +554,16 @@ defmodule Baiji.Inspector do
   """
   def list_findings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListFindings",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListFindings",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -427,11 +572,16 @@ defmodule Baiji.Inspector do
   """
   def list_rules_packages(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRulesPackages",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRulesPackages",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -442,11 +592,16 @@ defmodule Baiji.Inspector do
   """
   def start_assessment_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartAssessmentRun",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartAssessmentRun",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -456,11 +611,16 @@ defmodule Baiji.Inspector do
   """
   def list_assessment_runs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssessmentRuns",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssessmentRuns",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -470,11 +630,16 @@ defmodule Baiji.Inspector do
   """
   def describe_resource_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeResourceGroups",
-      type:     :json,
-      method:   :post
+      service:        "inspector",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeResourceGroups",
+      
+      target_prefix:  "InspectorService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

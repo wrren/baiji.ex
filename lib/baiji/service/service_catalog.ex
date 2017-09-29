@@ -28,11 +28,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_tag_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagOptions",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagOptions",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -49,11 +54,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def terminate_provisioned_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TerminateProvisionedProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TerminateProvisionedProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -62,11 +72,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_tag_option(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTagOption",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTagOption",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -75,11 +90,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def update_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -89,11 +109,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_portfolio_access(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPortfolioAccess",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPortfolioAccess",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -114,11 +139,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def provision_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ProvisionProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ProvisionProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -127,11 +157,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def disassociate_tag_option_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateTagOptionFromResource",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateTagOptionFromResource",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -140,11 +175,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def create_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -154,11 +194,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def scan_provisioned_products(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ScanProvisionedProducts",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ScanProvisionedProducts",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -167,11 +212,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def create_tag_option(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTagOption",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTagOption",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -181,11 +231,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_product_as_admin(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProductAsAdmin",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProductAsAdmin",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -194,11 +249,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def delete_portfolio_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePortfolioShare",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePortfolioShare",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -210,11 +270,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_product_view(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProductView",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProductView",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -223,11 +288,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def delete_constraint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConstraint",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConstraint",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -239,11 +309,41 @@ defmodule Baiji.ServiceCatalog do
   """
   def delete_provisioning_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteProvisioningArtifact",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteProvisioningArtifact",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
+    }
+  end
+  
+  @doc """
+  Copies the specified source product to the specified target product or a
+  new product.
+
+  You can copy the product to the same account or another account. You can
+  copy the product to the same region or another region.
+
+  This operation is performed asynchronously. To track the progress of the
+  operation, use `DescribeCopyProductStatus`.
+  """
+  def copy_product(input \\ %{}, options \\ []) do
+    %Baiji.Operation{
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CopyProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -252,11 +352,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_principals_for_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPrincipalsForPortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPrincipalsForPortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -265,11 +370,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def associate_principal_with_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociatePrincipalWithPortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociatePrincipalWithPortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -278,11 +388,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def disassociate_product_from_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateProductFromPortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateProductFromPortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -291,11 +406,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def create_portfolio_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePortfolioShare",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePortfolioShare",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -304,11 +424,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def associate_product_with_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateProductWithPortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateProductWithPortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -319,27 +444,35 @@ defmodule Baiji.ServiceCatalog do
   """
   def update_provisioning_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateProvisioningArtifact",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateProvisioningArtifact",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
   @doc """
   Create a new provisioning artifact for the specified product. This
   operation does not work with a product that has been shared with you.
-
-  See the bottom of this topic for an example JSON request.
   """
   def create_provisioning_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateProvisioningArtifact",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateProvisioningArtifact",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -348,11 +481,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def update_constraint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateConstraint",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateConstraint",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -361,11 +499,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def reject_portfolio_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RejectPortfolioShare",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RejectPortfolioShare",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -374,11 +517,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_provisioning_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProvisioningArtifact",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProvisioningArtifact",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -388,11 +536,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_constraints_for_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListConstraintsForPortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListConstraintsForPortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -408,11 +561,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def update_provisioned_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateProvisionedProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateProvisionedProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -425,11 +583,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def search_products(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SearchProducts",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SearchProducts",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -438,11 +601,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def create_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -451,11 +619,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_resources_for_tag_option(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListResourcesForTagOption",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListResourcesForTagOption",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -464,11 +637,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def accept_portfolio_share(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AcceptPortfolioShare",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AcceptPortfolioShare",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -478,11 +656,34 @@ defmodule Baiji.ServiceCatalog do
   """
   def update_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdatePortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdatePortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
+    }
+  end
+  
+  @doc """
+  Describes the status of the specified copy product operation.
+  """
+  def describe_copy_product_status(input \\ %{}, options \\ []) do
+    %Baiji.Operation{
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeCopyProductStatus",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -492,11 +693,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribePortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribePortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -505,11 +711,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_provisioned_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProvisionedProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProvisionedProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -518,11 +729,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def update_tag_option(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTagOption",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateTagOption",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -531,11 +747,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_constraint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConstraint",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConstraint",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -547,11 +768,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -562,11 +788,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def delete_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -575,11 +806,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_portfolios_for_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPortfoliosForProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPortfoliosForProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -588,11 +824,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_provisioning_artifacts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListProvisioningArtifacts",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListProvisioningArtifacts",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -603,11 +844,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_record(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeRecord",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeRecord",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -619,11 +865,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_launch_paths(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListLaunchPaths",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListLaunchPaths",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -635,11 +886,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def search_products_as_admin(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SearchProductsAsAdmin",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SearchProductsAsAdmin",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -649,11 +905,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def create_constraint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConstraint",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConstraint",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -663,11 +924,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_accepted_portfolio_shares(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAcceptedPortfolioShares",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAcceptedPortfolioShares",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -677,11 +943,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_record_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRecordHistory",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRecordHistory",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -691,11 +962,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def delete_product(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteProduct",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteProduct",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -705,11 +981,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def disassociate_principal_from_portfolio(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociatePrincipalFromPortfolio",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociatePrincipalFromPortfolio",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -731,11 +1012,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def describe_provisioning_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeProvisioningParameters",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeProvisioningParameters",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -744,11 +1030,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def list_portfolios(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPortfolios",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPortfolios",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -757,11 +1048,16 @@ defmodule Baiji.ServiceCatalog do
   """
   def associate_tag_option_with_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateTagOptionWithResource",
-      type:     :json,
-      method:   :post
+      service:        "servicecatalog",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateTagOptionWithResource",
+      
+      target_prefix:  "AWS242ServiceCatalogService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

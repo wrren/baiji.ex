@@ -26,11 +26,16 @@ defmodule Baiji.DynamodbStreams do
   """
   def describe_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeStream",
-      type:     :json,
-      method:   :post
+      service:        "streams.dynamodb",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeStream",
+      
+      target_prefix:  "DynamoDBStreams_20120810",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -51,11 +56,16 @@ defmodule Baiji.DynamodbStreams do
   """
   def get_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRecords",
-      type:     :json,
-      method:   :post
+      service:        "streams.dynamodb",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRecords",
+      
+      target_prefix:  "DynamoDBStreams_20120810",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -72,11 +82,16 @@ defmodule Baiji.DynamodbStreams do
   """
   def get_shard_iterator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetShardIterator",
-      type:     :json,
-      method:   :post
+      service:        "streams.dynamodb",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetShardIterator",
+      
+      target_prefix:  "DynamoDBStreams_20120810",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -91,11 +106,16 @@ defmodule Baiji.DynamodbStreams do
   """
   def list_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListStreams",
-      type:     :json,
-      method:   :post
+      service:        "streams.dynamodb",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListStreams",
+      
+      target_prefix:  "DynamoDBStreams_20120810",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

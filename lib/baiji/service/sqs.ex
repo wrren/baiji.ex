@@ -76,11 +76,14 @@ defmodule Baiji.SQS do
   """
   def add_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddPermission",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddPermission",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -129,11 +132,14 @@ defmodule Baiji.SQS do
   """
   def change_message_visibility(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ChangeMessageVisibility",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ChangeMessageVisibility",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -160,11 +166,14 @@ defmodule Baiji.SQS do
   """
   def change_message_visibility_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ChangeMessageVisibilityBatch",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ChangeMessageVisibilityBatch",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -216,11 +225,14 @@ defmodule Baiji.SQS do
   """
   def create_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateQueue",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateQueue",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -251,11 +263,14 @@ defmodule Baiji.SQS do
   """
   def delete_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteMessage",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteMessage",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -280,11 +295,14 @@ defmodule Baiji.SQS do
   """
   def delete_message_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteMessageBatch",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteMessageBatch",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -306,11 +324,14 @@ defmodule Baiji.SQS do
   """
   def delete_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteQueue",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteQueue",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -333,11 +354,14 @@ defmodule Baiji.SQS do
   """
   def get_queue_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQueueAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetQueueAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -355,11 +379,14 @@ defmodule Baiji.SQS do
   """
   def get_queue_url(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQueueUrl",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetQueueUrl",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -374,11 +401,14 @@ defmodule Baiji.SQS do
   """
   def list_dead_letter_source_queues(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeadLetterSourceQueues",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDeadLetterSourceQueues",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -390,11 +420,14 @@ defmodule Baiji.SQS do
   """
   def list_queues(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListQueues",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListQueues",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -413,11 +446,14 @@ defmodule Baiji.SQS do
   """
   def purge_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PurgeQueue",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PurgeQueue",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -478,11 +514,14 @@ defmodule Baiji.SQS do
   """
   def receive_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReceiveMessage",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReceiveMessage",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -492,11 +531,14 @@ defmodule Baiji.SQS do
   """
   def remove_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemovePermission",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemovePermission",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -517,11 +559,14 @@ defmodule Baiji.SQS do
   """
   def send_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendMessage",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendMessage",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -564,11 +609,14 @@ defmodule Baiji.SQS do
   """
   def send_message_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendMessageBatch",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendMessageBatch",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -586,11 +634,14 @@ defmodule Baiji.SQS do
   """
   def set_queue_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetQueueAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "sqs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetQueueAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

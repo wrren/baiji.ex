@@ -14,11 +14,14 @@ defmodule Baiji.ApiGateway do
   """
   def update_api_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApiKey",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/apikeys/{api_Key}",
+      input:          input,
+      options:        options,
+      action:         "UpdateApiKey",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -27,11 +30,14 @@ defmodule Baiji.ApiGateway do
   """
   def get_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetResources",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources",
+      input:          input,
+      options:        options,
+      action:         "GetResources",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -40,11 +46,14 @@ defmodule Baiji.ApiGateway do
   """
   def delete_domain_name(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDomainName",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteDomainName",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -53,11 +62,14 @@ defmodule Baiji.ApiGateway do
   """
   def get_deployments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeployments",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/deployments",
+      input:          input,
+      options:        options,
+      action:         "GetDeployments",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -66,11 +78,14 @@ No Documentation Availabale
   """
   def get_sdk_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSdkTypes",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/sdktypes",
+      input:          input,
+      options:        options,
+      action:         "GetSdkTypes",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -79,11 +94,14 @@ No Documentation Availabale
   """
   def update_usage_plan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateUsagePlan",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateUsagePlan",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -92,11 +110,14 @@ No Documentation Availabale
   """
   def get_export(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetExport",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}/exports/{export_type}",
+      input:          input,
+      options:        options,
+      action:         "GetExport",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -110,11 +131,14 @@ No Documentation Availabale
   """
   def test_invoke_authorizer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TestInvokeAuthorizer",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/authorizers/{authorizer_id}",
+      input:          input,
+      options:        options,
+      action:         "TestInvokeAuthorizer",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -123,11 +147,14 @@ No Documentation Availabale
   """
   def update_method(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateMethod",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}",
+      input:          input,
+      options:        options,
+      action:         "UpdateMethod",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -136,11 +163,14 @@ No Documentation Availabale
   """
   def get_sdk(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSdk",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}/sdks/{sdk_type}",
+      input:          input,
+      options:        options,
+      action:         "GetSdk",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -149,11 +179,14 @@ No Documentation Availabale
   """
   def delete_request_validator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRequestValidator",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/requestvalidators/{requestvalidator_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteRequestValidator",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -162,11 +195,14 @@ No Documentation Availabale
   """
   def get_integration_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIntegrationResponse",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "GetIntegrationResponse",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -175,11 +211,14 @@ No Documentation Availabale
   """
   def get_base_path_mappings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBasePathMappings",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}/basepathmappings",
+      input:          input,
+      options:        options,
+      action:         "GetBasePathMappings",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -188,11 +227,14 @@ No Documentation Availabale
   """
   def import_api_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportApiKeys",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/apikeys?mode=import",
+      input:          input,
+      options:        options,
+      action:         "ImportApiKeys",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -201,11 +243,14 @@ No Documentation Availabale
   """
   def get_stage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetStage",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}",
+      input:          input,
+      options:        options,
+      action:         "GetStage",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -214,11 +259,14 @@ No Documentation Availabale
   """
   def get_base_path_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBasePathMapping",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}/basepathmappings/{base_path}",
+      input:          input,
+      options:        options,
+      action:         "GetBasePathMapping",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -227,11 +275,14 @@ No Documentation Availabale
   """
   def import_documentation_parts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportDocumentationParts",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/parts",
+      input:          input,
+      options:        options,
+      action:         "ImportDocumentationParts",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -241,11 +292,14 @@ No Documentation Availabale
   """
   def delete_gateway_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteGatewayResponse",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/gatewayresponses/{response_type}",
+      input:          input,
+      options:        options,
+      action:         "DeleteGatewayResponse",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -257,11 +311,14 @@ No Documentation Availabale
   """
   def get_authorizers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAuthorizers",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/authorizers",
+      input:          input,
+      options:        options,
+      action:         "GetAuthorizers",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -270,11 +327,14 @@ No Documentation Availabale
   """
   def get_stages(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetStages",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages",
+      input:          input,
+      options:        options,
+      action:         "GetStages",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -283,11 +343,14 @@ No Documentation Availabale
   """
   def update_domain_name(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDomainName",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDomainName",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -296,11 +359,14 @@ No Documentation Availabale
   """
   def create_documentation_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDocumentationVersion",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/versions",
+      input:          input,
+      options:        options,
+      action:         "CreateDocumentationVersion",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -309,11 +375,14 @@ No Documentation Availabale
   """
   def get_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccount",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/account",
+      input:          input,
+      options:        options,
+      action:         "GetAccount",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -322,11 +391,14 @@ No Documentation Availabale
   """
   def get_rest_apis(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRestApis",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis",
+      input:          input,
+      options:        options,
+      action:         "GetRestApis",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -335,11 +407,14 @@ No Documentation Availabale
   """
   def put_integration_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutIntegrationResponse",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "PutIntegrationResponse",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -348,11 +423,14 @@ No Documentation Availabale
   """
   def update_client_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateClientCertificate",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/clientcertificates/{clientcertificate_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateClientCertificate",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -361,11 +439,14 @@ No Documentation Availabale
   """
   def get_request_validator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRequestValidator",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/requestvalidators/{requestvalidator_id}",
+      input:          input,
+      options:        options,
+      action:         "GetRequestValidator",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -374,11 +455,14 @@ No Documentation Availabale
   """
   def delete_client_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteClientCertificate",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/clientcertificates/{clientcertificate_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteClientCertificate",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -387,11 +471,14 @@ No Documentation Availabale
   """
   def update_integration_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateIntegrationResponse",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "UpdateIntegrationResponse",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -400,11 +487,14 @@ No Documentation Availabale
   """
   def delete_integration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIntegration",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration",
+      input:          input,
+      options:        options,
+      action:         "DeleteIntegration",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -413,11 +503,14 @@ No Documentation Availabale
   """
   def update_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAccount",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/account",
+      input:          input,
+      options:        options,
+      action:         "UpdateAccount",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -426,11 +519,14 @@ No Documentation Availabale
   """
   def update_documentation_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDocumentationPart",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/parts/{part_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDocumentationPart",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -439,11 +535,14 @@ No Documentation Availabale
   """
   def get_documentation_parts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocumentationParts",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/parts",
+      input:          input,
+      options:        options,
+      action:         "GetDocumentationParts",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -452,11 +551,14 @@ No Documentation Availabale
   """
   def flush_stage_authorizers_cache(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "FlushStageAuthorizersCache",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}/cache/authorizers",
+      input:          input,
+      options:        options,
+      action:         "FlushStageAuthorizersCache",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -465,11 +567,14 @@ No Documentation Availabale
   """
   def delete_documentation_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDocumentationVersion",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/versions/{doc_version}",
+      input:          input,
+      options:        options,
+      action:         "DeleteDocumentationVersion",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -478,11 +583,14 @@ No Documentation Availabale
   """
   def get_documentation_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocumentationVersions",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/versions",
+      input:          input,
+      options:        options,
+      action:         "GetDocumentationVersions",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -491,11 +599,14 @@ No Documentation Availabale
   """
   def update_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDeployment",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/deployments/{deployment_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDeployment",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -505,11 +616,14 @@ No Documentation Availabale
   """
   def create_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeployment",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/deployments",
+      input:          input,
+      options:        options,
+      action:         "CreateDeployment",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -518,11 +632,14 @@ No Documentation Availabale
   """
   def create_base_path_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateBasePathMapping",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}/basepathmappings",
+      input:          input,
+      options:        options,
+      action:         "CreateBasePathMapping",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -531,11 +648,14 @@ No Documentation Availabale
   """
   def get_documentation_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocumentationVersion",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/versions/{doc_version}",
+      input:          input,
+      options:        options,
+      action:         "GetDocumentationVersion",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -544,11 +664,14 @@ No Documentation Availabale
   """
   def update_request_validator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateRequestValidator",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/requestvalidators/{requestvalidator_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateRequestValidator",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -558,11 +681,14 @@ No Documentation Availabale
   """
   def update_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateUsage",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}/keys/{keyId}/usage",
+      input:          input,
+      options:        options,
+      action:         "UpdateUsage",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -571,11 +697,14 @@ No Documentation Availabale
   """
   def create_documentation_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDocumentationPart",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/parts",
+      input:          input,
+      options:        options,
+      action:         "CreateDocumentationPart",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -584,11 +713,14 @@ No Documentation Availabale
   """
   def get_usage_plan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUsagePlan",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}",
+      input:          input,
+      options:        options,
+      action:         "GetUsagePlan",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -600,11 +732,14 @@ No Documentation Availabale
   """
   def delete_authorizer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAuthorizer",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/authorizers/{authorizer_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteAuthorizer",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -613,11 +748,14 @@ No Documentation Availabale
   """
   def get_sdk_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSdkType",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/sdktypes/{sdktype_id}",
+      input:          input,
+      options:        options,
+      action:         "GetSdkType",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -627,11 +765,14 @@ No Documentation Availabale
   """
   def delete_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDeployment",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/deployments/{deployment_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteDeployment",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -640,11 +781,14 @@ No Documentation Availabale
   """
   def create_domain_name(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDomainName",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/domainnames",
+      input:          input,
+      options:        options,
+      action:         "CreateDomainName",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -653,11 +797,14 @@ No Documentation Availabale
   """
   def get_usage_plan_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUsagePlanKey",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}/keys/{keyId}",
+      input:          input,
+      options:        options,
+      action:         "GetUsagePlanKey",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -666,11 +813,14 @@ No Documentation Availabale
   """
   def update_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateResource",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateResource",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -679,11 +829,14 @@ No Documentation Availabale
   """
   def get_method(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetMethod",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}",
+      input:          input,
+      options:        options,
+      action:         "GetMethod",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -693,11 +846,14 @@ No Documentation Availabale
   """
   def delete_usage_plan_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUsagePlanKey",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}/keys/{keyId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteUsagePlanKey",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -706,11 +862,14 @@ No Documentation Availabale
   """
   def get_models(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetModels",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/models",
+      input:          input,
+      options:        options,
+      action:         "GetModels",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -719,11 +878,14 @@ No Documentation Availabale
   """
   def delete_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteResource",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteResource",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -732,11 +894,14 @@ No Documentation Availabale
   """
   def get_rest_api(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRestApi",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}",
+      input:          input,
+      options:        options,
+      action:         "GetRestApi",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -746,11 +911,14 @@ No Documentation Availabale
   """
   def put_gateway_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutGatewayResponse",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/gatewayresponses/{response_type}",
+      input:          input,
+      options:        options,
+      action:         "PutGatewayResponse",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -762,11 +930,14 @@ No Documentation Availabale
   """
   def create_authorizer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAuthorizer",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/authorizers",
+      input:          input,
+      options:        options,
+      action:         "CreateAuthorizer",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -775,11 +946,14 @@ No Documentation Availabale
   """
   def put_integration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutIntegration",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration",
+      input:          input,
+      options:        options,
+      action:         "PutIntegration",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -788,11 +962,14 @@ No Documentation Availabale
   """
   def delete_api_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApiKey",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/apikeys/{api_Key}",
+      input:          input,
+      options:        options,
+      action:         "DeleteApiKey",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -801,11 +978,14 @@ No Documentation Availabale
   """
   def update_stage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateStage",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}",
+      input:          input,
+      options:        options,
+      action:         "UpdateStage",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -815,11 +995,14 @@ No Documentation Availabale
   """
   def update_gateway_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGatewayResponse",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/gatewayresponses/{response_type}",
+      input:          input,
+      options:        options,
+      action:         "UpdateGatewayResponse",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -828,11 +1011,14 @@ No Documentation Availabale
   """
   def get_client_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetClientCertificate",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/clientcertificates/{clientcertificate_id}",
+      input:          input,
+      options:        options,
+      action:         "GetClientCertificate",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -844,11 +1030,14 @@ No Documentation Availabale
   """
   def update_authorizer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAuthorizer",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/authorizers/{authorizer_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateAuthorizer",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -857,11 +1046,14 @@ No Documentation Availabale
   """
   def delete_integration_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIntegrationResponse",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "DeleteIntegrationResponse",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -870,11 +1062,14 @@ No Documentation Availabale
   """
   def get_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetModel",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/models/{model_name}",
+      input:          input,
+      options:        options,
+      action:         "GetModel",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -883,11 +1078,14 @@ No Documentation Availabale
   """
   def get_method_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetMethodResponse",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "GetMethodResponse",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -899,11 +1097,14 @@ No Documentation Availabale
   """
   def get_gateway_responses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGatewayResponses",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/gatewayresponses",
+      input:          input,
+      options:        options,
+      action:         "GetGatewayResponses",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -912,11 +1113,14 @@ No Documentation Availabale
   """
   def get_request_validators(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRequestValidators",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/requestvalidators",
+      input:          input,
+      options:        options,
+      action:         "GetRequestValidators",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -925,11 +1129,14 @@ No Documentation Availabale
   """
   def get_api_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApiKey",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/apikeys/{api_Key}",
+      input:          input,
+      options:        options,
+      action:         "GetApiKey",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -938,11 +1145,14 @@ No Documentation Availabale
   """
   def create_rest_api(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRestApi",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis",
+      input:          input,
+      options:        options,
+      action:         "CreateRestApi",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -951,11 +1161,14 @@ No Documentation Availabale
   """
   def put_method_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutMethodResponse",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "PutMethodResponse",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -964,11 +1177,14 @@ No Documentation Availabale
   """
   def create_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateResource",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{parent_id}",
+      input:          input,
+      options:        options,
+      action:         "CreateResource",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -977,11 +1193,14 @@ No Documentation Availabale
   """
   def update_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateModel",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/models/{model_name}",
+      input:          input,
+      options:        options,
+      action:         "UpdateModel",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -990,11 +1209,14 @@ No Documentation Availabale
   """
   def update_integration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateIntegration",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration",
+      input:          input,
+      options:        options,
+      action:         "UpdateIntegration",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -1004,11 +1226,14 @@ No Documentation Availabale
   """
   def test_invoke_method(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TestInvokeMethod",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}",
+      input:          input,
+      options:        options,
+      action:         "TestInvokeMethod",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1018,11 +1243,14 @@ No Documentation Availabale
   """
   def get_gateway_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGatewayResponse",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/gatewayresponses/{response_type}",
+      input:          input,
+      options:        options,
+      action:         "GetGatewayResponse",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1034,11 +1262,14 @@ No Documentation Availabale
   """
   def put_rest_api(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRestApi",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}",
+      input:          input,
+      options:        options,
+      action:         "PutRestApi",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -1047,11 +1278,14 @@ No Documentation Availabale
   """
   def put_method(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutMethod",
-      type:     :rest_json,
-      method:   :put
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}",
+      input:          input,
+      options:        options,
+      action:         "PutMethod",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -1060,11 +1294,14 @@ No Documentation Availabale
   """
   def create_request_validator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRequestValidator",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/requestvalidators",
+      input:          input,
+      options:        options,
+      action:         "CreateRequestValidator",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1073,11 +1310,14 @@ No Documentation Availabale
   """
   def get_domain_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDomainNames",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/domainnames",
+      input:          input,
+      options:        options,
+      action:         "GetDomainNames",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1086,11 +1326,14 @@ No Documentation Availabale
   """
   def get_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetResource",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}",
+      input:          input,
+      options:        options,
+      action:         "GetResource",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1099,11 +1342,14 @@ No Documentation Availabale
   """
   def get_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeployment",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/deployments/{deployment_id}",
+      input:          input,
+      options:        options,
+      action:         "GetDeployment",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1112,11 +1358,14 @@ No Documentation Availabale
   """
   def delete_method_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteMethodResponse",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "DeleteMethodResponse",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1125,11 +1374,14 @@ No Documentation Availabale
   """
   def delete_stage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteStage",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteStage",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1138,11 +1390,14 @@ No Documentation Availabale
   """
   def get_client_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetClientCertificates",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/clientcertificates",
+      input:          input,
+      options:        options,
+      action:         "GetClientCertificates",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1152,11 +1407,14 @@ No Documentation Availabale
   """
   def create_stage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStage",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages",
+      input:          input,
+      options:        options,
+      action:         "CreateStage",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1165,11 +1423,14 @@ No Documentation Availabale
   """
   def update_documentation_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDocumentationVersion",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/versions/{doc_version}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDocumentationVersion",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -1179,11 +1440,14 @@ No Documentation Availabale
   """
   def create_usage_plan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUsagePlan",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/usageplans",
+      input:          input,
+      options:        options,
+      action:         "CreateUsagePlan",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1192,11 +1456,14 @@ No Documentation Availabale
   """
   def create_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateModel",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/models",
+      input:          input,
+      options:        options,
+      action:         "CreateModel",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1205,11 +1472,14 @@ No Documentation Availabale
   """
   def delete_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteModel",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/models/{model_name}",
+      input:          input,
+      options:        options,
+      action:         "DeleteModel",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1218,11 +1488,14 @@ No Documentation Availabale
   """
   def update_rest_api(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateRestApi",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}",
+      input:          input,
+      options:        options,
+      action:         "UpdateRestApi",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -1232,11 +1505,14 @@ No Documentation Availabale
   """
   def get_model_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetModelTemplate",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/models/{model_name}/default_template",
+      input:          input,
+      options:        options,
+      action:         "GetModelTemplate",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1246,11 +1522,14 @@ No Documentation Availabale
   """
   def get_usage_plan_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUsagePlanKeys",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}/keys",
+      input:          input,
+      options:        options,
+      action:         "GetUsagePlanKeys",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1259,11 +1538,14 @@ No Documentation Availabale
   """
   def generate_client_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GenerateClientCertificate",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/clientcertificates",
+      input:          input,
+      options:        options,
+      action:         "GenerateClientCertificate",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1272,11 +1554,14 @@ No Documentation Availabale
   """
   def get_api_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApiKeys",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/apikeys",
+      input:          input,
+      options:        options,
+      action:         "GetApiKeys",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1285,11 +1570,14 @@ No Documentation Availabale
   """
   def get_usage_plans(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUsagePlans",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/usageplans",
+      input:          input,
+      options:        options,
+      action:         "GetUsagePlans",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1298,11 +1586,14 @@ No Documentation Availabale
   """
   def delete_base_path_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBasePathMapping",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}/basepathmappings/{base_path}",
+      input:          input,
+      options:        options,
+      action:         "DeleteBasePathMapping",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1314,11 +1605,14 @@ No Documentation Availabale
   """
   def get_authorizer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAuthorizer",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/authorizers/{authorizer_id}",
+      input:          input,
+      options:        options,
+      action:         "GetAuthorizer",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1328,11 +1622,14 @@ No Documentation Availabale
   """
   def get_domain_name(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDomainName",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}",
+      input:          input,
+      options:        options,
+      action:         "GetDomainName",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1341,11 +1638,14 @@ No Documentation Availabale
   """
   def update_method_response(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateMethodResponse",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/responses/{status_code}",
+      input:          input,
+      options:        options,
+      action:         "UpdateMethodResponse",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -1354,11 +1654,14 @@ No Documentation Availabale
   """
   def update_base_path_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateBasePathMapping",
-      type:     :rest_json,
-      method:   :patch
+      service:        "apigateway",
+      endpoint:       "/domainnames/{domain_name}/basepathmappings/{base_path}",
+      input:          input,
+      options:        options,
+      action:         "UpdateBasePathMapping",
+      
+      type:           :rest_json,
+      method:         :patch
     }
   end
   
@@ -1370,11 +1673,14 @@ No Documentation Availabale
   """
   def create_api_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApiKey",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/apikeys",
+      input:          input,
+      options:        options,
+      action:         "CreateApiKey",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1383,11 +1689,14 @@ No Documentation Availabale
   """
   def get_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUsage",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}/usage",
+      input:          input,
+      options:        options,
+      action:         "GetUsage",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1396,11 +1705,14 @@ No Documentation Availabale
   """
   def delete_rest_api(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRestApi",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteRestApi",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1409,11 +1721,14 @@ No Documentation Availabale
   """
   def flush_stage_cache(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "FlushStageCache",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/stages/{stage_name}/cache/data",
+      input:          input,
+      options:        options,
+      action:         "FlushStageCache",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1422,11 +1737,14 @@ No Documentation Availabale
   """
   def get_integration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIntegration",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}/integration",
+      input:          input,
+      options:        options,
+      action:         "GetIntegration",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -1435,11 +1753,14 @@ No Documentation Availabale
   """
   def delete_usage_plan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUsagePlan",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteUsagePlan",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1448,11 +1769,14 @@ No Documentation Availabale
   """
   def delete_documentation_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDocumentationPart",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/parts/{part_id}",
+      input:          input,
+      options:        options,
+      action:         "DeleteDocumentationPart",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1461,11 +1785,14 @@ No Documentation Availabale
   """
   def create_usage_plan_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUsagePlanKey",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/usageplans/{usageplanId}/keys",
+      input:          input,
+      options:        options,
+      action:         "CreateUsagePlanKey",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1475,11 +1802,14 @@ No Documentation Availabale
   """
   def import_rest_api(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportRestApi",
-      type:     :rest_json,
-      method:   :post
+      service:        "apigateway",
+      endpoint:       "/restapis?mode=import",
+      input:          input,
+      options:        options,
+      action:         "ImportRestApi",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -1488,11 +1818,14 @@ No Documentation Availabale
   """
   def delete_method(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteMethod",
-      type:     :rest_json,
-      method:   :delete
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/resources/{resource_id}/methods/{http_method}",
+      input:          input,
+      options:        options,
+      action:         "DeleteMethod",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -1501,11 +1834,14 @@ No Documentation Availabale
   """
   def get_documentation_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocumentationPart",
-      type:     :rest_json,
-      method:   :get
+      service:        "apigateway",
+      endpoint:       "/restapis/{restapi_id}/documentation/parts/{part_id}",
+      input:          input,
+      options:        options,
+      action:         "GetDocumentationPart",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   

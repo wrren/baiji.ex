@@ -11,11 +11,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def add_application_cloud_watch_logging_option(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddApplicationCloudWatchLoggingOption",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddApplicationCloudWatchLoggingOption",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -37,11 +42,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def add_application_input(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddApplicationInput",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddApplicationInput",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -75,11 +85,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def add_application_output(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddApplicationOutput",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddApplicationOutput",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -103,11 +118,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def add_application_reference_data_source(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddApplicationReferenceDataSource",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddApplicationReferenceDataSource",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -144,11 +164,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def create_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApplication",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateApplication",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -163,11 +188,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def delete_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplication",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplication",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -179,11 +209,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def delete_application_cloud_watch_logging_option(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplicationCloudWatchLoggingOption",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplicationCloudWatchLoggingOption",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -197,11 +232,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def delete_application_output(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplicationOutput",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplicationOutput",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -218,11 +258,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def delete_application_reference_data_source(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplicationReferenceDataSource",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplicationReferenceDataSource",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -239,11 +284,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def describe_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeApplication",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeApplication",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -265,11 +315,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def discover_input_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DiscoverInputSchema",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DiscoverInputSchema",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -289,11 +344,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def list_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListApplications",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListApplications",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -317,11 +377,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def start_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartApplication",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartApplication",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -338,11 +403,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def stop_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopApplication",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopApplication",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -359,11 +429,16 @@ defmodule Baiji.KinesisAnalytics do
   """
   def update_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplication",
-      type:     :json,
-      method:   :post
+      service:        "kinesisanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplication",
+      
+      target_prefix:  "KinesisAnalytics_20150814",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

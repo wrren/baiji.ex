@@ -19,11 +19,16 @@ defmodule Baiji.MarketplaceCommerceAnalytics do
   """
   def generate_data_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GenerateDataSet",
-      type:     :json,
-      method:   :post
+      service:        "marketplacecommerceanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GenerateDataSet",
+      
+      target_prefix:  "MarketplaceCommerceAnalytics20150701",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -42,11 +47,16 @@ defmodule Baiji.MarketplaceCommerceAnalytics do
   """
   def start_support_data_export(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartSupportDataExport",
-      type:     :json,
-      method:   :post
+      service:        "marketplacecommerceanalytics",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartSupportDataExport",
+      
+      target_prefix:  "MarketplaceCommerceAnalytics20150701",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

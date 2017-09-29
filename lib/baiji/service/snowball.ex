@@ -18,11 +18,16 @@ defmodule Baiji.Snowball do
   """
   def cancel_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelCluster",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelCluster",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -34,11 +39,16 @@ defmodule Baiji.Snowball do
   """
   def cancel_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelJob",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelJob",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -50,11 +60,16 @@ defmodule Baiji.Snowball do
   """
   def create_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAddress",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAddress",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -65,11 +80,16 @@ defmodule Baiji.Snowball do
   """
   def create_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCluster",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCluster",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -82,11 +102,16 @@ defmodule Baiji.Snowball do
   """
   def create_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateJob",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateJob",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -96,11 +121,16 @@ defmodule Baiji.Snowball do
   """
   def describe_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAddress",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAddress",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -111,11 +141,16 @@ defmodule Baiji.Snowball do
   """
   def describe_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeAddresses",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeAddresses",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -125,11 +160,16 @@ defmodule Baiji.Snowball do
   """
   def describe_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeCluster",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeCluster",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -139,11 +179,16 @@ defmodule Baiji.Snowball do
   """
   def describe_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeJob",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeJob",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -169,11 +214,16 @@ defmodule Baiji.Snowball do
   """
   def get_job_manifest(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJobManifest",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJobManifest",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -194,11 +244,16 @@ defmodule Baiji.Snowball do
   """
   def get_job_unlock_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJobUnlockCode",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJobUnlockCode",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -212,11 +267,16 @@ defmodule Baiji.Snowball do
   """
   def get_snowball_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSnowballUsage",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSnowballUsage",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -227,11 +287,16 @@ defmodule Baiji.Snowball do
   """
   def list_cluster_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListClusterJobs",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListClusterJobs",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -242,11 +307,16 @@ defmodule Baiji.Snowball do
   """
   def list_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListClusters",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListClusters",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -259,11 +329,16 @@ defmodule Baiji.Snowball do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListJobs",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListJobs",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -275,11 +350,16 @@ defmodule Baiji.Snowball do
   """
   def update_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateCluster",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateCluster",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -291,11 +371,16 @@ defmodule Baiji.Snowball do
   """
   def update_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateJob",
-      type:     :json,
-      method:   :post
+      service:        "snowball",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateJob",
+      
+      target_prefix:  "AWSIESnowballJobManagementService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

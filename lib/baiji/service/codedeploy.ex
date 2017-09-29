@@ -74,11 +74,16 @@ defmodule Baiji.CodeDeploy do
   """
   def skip_wait_time_for_instance_termination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SkipWaitTimeForInstanceTermination",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SkipWaitTimeForInstanceTermination",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -87,11 +92,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_deployment_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeploymentGroup",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDeploymentGroup",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -100,11 +110,16 @@ defmodule Baiji.CodeDeploy do
   """
   def update_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplication",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplication",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -113,11 +128,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApplication",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetApplication",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -126,11 +146,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_on_premises_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOnPremisesInstance",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOnPremisesInstance",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -139,11 +164,16 @@ defmodule Baiji.CodeDeploy do
   """
   def batch_get_deployments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetDeployments",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetDeployments",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -152,11 +182,16 @@ defmodule Baiji.CodeDeploy do
   """
   def delete_deployment_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDeploymentGroup",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDeploymentGroup",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -165,11 +200,16 @@ defmodule Baiji.CodeDeploy do
   """
   def create_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApplication",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateApplication",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -179,11 +219,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_deployment_configs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeploymentConfigs",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDeploymentConfigs",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -192,11 +237,16 @@ defmodule Baiji.CodeDeploy do
   """
   def stop_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopDeployment",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopDeployment",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -206,11 +256,16 @@ defmodule Baiji.CodeDeploy do
   """
   def batch_get_deployment_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetDeploymentInstances",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetDeploymentInstances",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -220,11 +275,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListApplications",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListApplications",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -233,11 +293,16 @@ defmodule Baiji.CodeDeploy do
   """
   def add_tags_to_on_premises_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddTagsToOnPremisesInstances",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddTagsToOnPremisesInstances",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -246,11 +311,16 @@ defmodule Baiji.CodeDeploy do
   """
   def create_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeployment",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDeployment",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -263,11 +333,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_on_premises_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListOnPremisesInstances",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListOnPremisesInstances",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -276,11 +351,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_git_hub_account_token_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGitHubAccountTokenNames",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListGitHubAccountTokenNames",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -289,11 +369,16 @@ defmodule Baiji.CodeDeploy do
   """
   def batch_get_application_revisions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetApplicationRevisions",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetApplicationRevisions",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -302,11 +387,16 @@ defmodule Baiji.CodeDeploy do
   """
   def remove_tags_from_on_premises_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveTagsFromOnPremisesInstances",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveTagsFromOnPremisesInstances",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -315,11 +405,16 @@ defmodule Baiji.CodeDeploy do
   """
   def create_deployment_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeploymentConfig",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDeploymentConfig",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -328,11 +423,16 @@ defmodule Baiji.CodeDeploy do
   """
   def batch_get_on_premises_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetOnPremisesInstances",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetOnPremisesInstances",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -341,11 +441,16 @@ defmodule Baiji.CodeDeploy do
   """
   def register_application_revision(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterApplicationRevision",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterApplicationRevision",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -354,11 +459,16 @@ defmodule Baiji.CodeDeploy do
   """
   def batch_get_deployment_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetDeploymentGroups",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetDeploymentGroups",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -367,11 +477,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_application_revisions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListApplicationRevisions",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListApplicationRevisions",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -380,11 +495,16 @@ defmodule Baiji.CodeDeploy do
   """
   def batch_get_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetApplications",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetApplications",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -394,11 +514,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_deployment_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeploymentInstances",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDeploymentInstances",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -408,11 +533,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_deployment_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeploymentGroups",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDeploymentGroups",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -421,11 +551,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_application_revision(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetApplicationRevision",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetApplicationRevision",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -434,11 +569,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_deployment_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeploymentConfig",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDeploymentConfig",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -447,11 +587,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_deployment_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeploymentInstance",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDeploymentInstance",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -465,11 +610,16 @@ defmodule Baiji.CodeDeploy do
   """
   def continue_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ContinueDeployment",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ContinueDeployment",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -478,11 +628,16 @@ defmodule Baiji.CodeDeploy do
   """
   def update_deployment_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDeploymentGroup",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDeploymentGroup",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -491,11 +646,16 @@ defmodule Baiji.CodeDeploy do
   """
   def get_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDeployment",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDeployment",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -509,11 +669,16 @@ defmodule Baiji.CodeDeploy do
   """
   def register_on_premises_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterOnPremisesInstance",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterOnPremisesInstance",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -527,11 +692,16 @@ defmodule Baiji.CodeDeploy do
   """
   def delete_deployment_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDeploymentConfig",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDeploymentConfig",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -541,11 +711,16 @@ defmodule Baiji.CodeDeploy do
   """
   def list_deployments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDeployments",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDeployments",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -554,11 +729,16 @@ defmodule Baiji.CodeDeploy do
   """
   def create_deployment_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDeploymentGroup",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDeploymentGroup",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -567,11 +747,16 @@ defmodule Baiji.CodeDeploy do
   """
   def deregister_on_premises_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeregisterOnPremisesInstance",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeregisterOnPremisesInstance",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -580,11 +765,16 @@ defmodule Baiji.CodeDeploy do
   """
   def delete_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplication",
-      type:     :json,
-      method:   :post
+      service:        "codedeploy",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplication",
+      
+      target_prefix:  "CodeDeploy_20141006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

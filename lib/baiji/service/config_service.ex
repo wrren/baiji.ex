@@ -44,11 +44,16 @@ defmodule Baiji.ConfigService do
   """
   def delete_config_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConfigRule",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConfigRule",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -67,11 +72,16 @@ defmodule Baiji.ConfigService do
   """
   def delete_configuration_recorder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConfigurationRecorder",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConfigurationRecorder",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -83,11 +93,16 @@ defmodule Baiji.ConfigService do
   """
   def delete_delivery_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDeliveryChannel",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDeliveryChannel",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -99,11 +114,16 @@ defmodule Baiji.ConfigService do
   """
   def delete_evaluation_results(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteEvaluationResults",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteEvaluationResults",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -125,11 +145,16 @@ defmodule Baiji.ConfigService do
   """
   def deliver_config_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeliverConfigSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeliverConfigSnapshot",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -163,11 +188,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_compliance_by_config_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeComplianceByConfigRule",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeComplianceByConfigRule",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -202,11 +232,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_compliance_by_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeComplianceByResource",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeComplianceByResource",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -218,11 +253,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_config_rule_evaluation_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigRuleEvaluationStatus",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigRuleEvaluationStatus",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -231,11 +271,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_config_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigRules",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigRules",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -251,11 +296,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_configuration_recorder_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigurationRecorderStatus",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigurationRecorderStatus",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -271,11 +321,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_configuration_recorders(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigurationRecorders",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigurationRecorders",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -291,11 +346,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_delivery_channel_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDeliveryChannelStatus",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDeliveryChannelStatus",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -311,11 +371,16 @@ defmodule Baiji.ConfigService do
   """
   def describe_delivery_channels(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDeliveryChannels",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDeliveryChannels",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -327,11 +392,16 @@ defmodule Baiji.ConfigService do
   """
   def get_compliance_details_by_config_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetComplianceDetailsByConfigRule",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetComplianceDetailsByConfigRule",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -342,11 +412,16 @@ defmodule Baiji.ConfigService do
   """
   def get_compliance_details_by_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetComplianceDetailsByResource",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetComplianceDetailsByResource",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -356,11 +431,16 @@ defmodule Baiji.ConfigService do
   """
   def get_compliance_summary_by_config_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetComplianceSummaryByConfigRule",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetComplianceSummaryByConfigRule",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -371,11 +451,16 @@ defmodule Baiji.ConfigService do
   """
   def get_compliance_summary_by_resource_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetComplianceSummaryByResourceType",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetComplianceSummaryByResourceType",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -422,11 +507,16 @@ defmodule Baiji.ConfigService do
   """
   def get_discovered_resource_counts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDiscoveredResourceCounts",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDiscoveredResourceCounts",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -449,11 +539,16 @@ defmodule Baiji.ConfigService do
   """
   def get_resource_config_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetResourceConfigHistory",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetResourceConfigHistory",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -476,11 +571,16 @@ defmodule Baiji.ConfigService do
   """
   def list_discovered_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDiscoveredResources",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListDiscoveredResources",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -527,11 +627,16 @@ defmodule Baiji.ConfigService do
   """
   def put_config_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutConfigRule",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutConfigRule",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -553,11 +658,16 @@ defmodule Baiji.ConfigService do
   """
   def put_configuration_recorder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutConfigurationRecorder",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutConfigurationRecorder",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -581,11 +691,16 @@ defmodule Baiji.ConfigService do
   """
   def put_delivery_channel(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutDeliveryChannel",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutDeliveryChannel",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -596,11 +711,16 @@ defmodule Baiji.ConfigService do
   """
   def put_evaluations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutEvaluations",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutEvaluations",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -645,11 +765,16 @@ defmodule Baiji.ConfigService do
   """
   def start_config_rules_evaluation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartConfigRulesEvaluation",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartConfigRulesEvaluation",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -662,11 +787,16 @@ defmodule Baiji.ConfigService do
   """
   def start_configuration_recorder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartConfigurationRecorder",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartConfigurationRecorder",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -676,11 +806,16 @@ defmodule Baiji.ConfigService do
   """
   def stop_configuration_recorder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopConfigurationRecorder",
-      type:     :json,
-      method:   :post
+      service:        "config",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopConfigurationRecorder",
+      
+      target_prefix:  "StarlingDoveService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

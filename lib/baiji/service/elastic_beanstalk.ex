@@ -28,11 +28,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def list_platform_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPlatformVersions",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPlatformVersions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -43,11 +46,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def create_storage_location(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStorageLocation",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateStorageLocation",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -56,11 +62,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def swap_environment_c_n_a_m_es(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SwapEnvironmentCNAMEs",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SwapEnvironmentCNAMEs",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -81,11 +90,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def create_configuration_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConfigurationTemplate",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConfigurationTemplate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -95,11 +107,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def abort_environment_update(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AbortEnvironmentUpdate",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AbortEnvironmentUpdate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -115,11 +130,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def delete_configuration_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConfigurationTemplate",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConfigurationTemplate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -128,11 +146,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_environment_managed_actions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEnvironmentManagedActions",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEnvironmentManagedActions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -147,11 +168,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def update_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplication",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplication",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -166,11 +190,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEvents",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEvents",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -189,11 +216,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def update_configuration_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateConfigurationTemplate",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateConfigurationTemplate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -202,11 +232,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def delete_platform_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePlatformVersion",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePlatformVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -216,11 +249,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def create_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApplication",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateApplication",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -243,11 +279,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_configuration_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigurationSettings",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigurationSettings",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -273,11 +312,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def request_environment_info(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RequestEnvironmentInfo",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RequestEnvironmentInfo",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -286,11 +328,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def terminate_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TerminateEnvironment",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TerminateEnvironment",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -305,11 +350,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def retrieve_environment_info(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RetrieveEnvironmentInfo",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RetrieveEnvironmentInfo",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -318,11 +366,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_environment_managed_action_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEnvironmentManagedActionHistory",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEnvironmentManagedActionHistory",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -331,11 +382,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def update_application_resource_lifecycle(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplicationResourceLifecycle",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplicationResourceLifecycle",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -346,11 +400,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_instances_health(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInstancesHealth",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInstancesHealth",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -364,11 +421,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def delete_application_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplicationVersion",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplicationVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -384,11 +444,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def delete_environment_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteEnvironmentConfiguration",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteEnvironmentConfiguration",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -397,11 +460,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_environments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEnvironments",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEnvironments",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -410,11 +476,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def create_platform_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePlatformVersion",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePlatformVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -434,11 +503,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def update_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateEnvironment",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateEnvironment",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -448,11 +520,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def restart_app_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RestartAppServer",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RestartAppServer",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -465,11 +540,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def validate_configuration_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ValidateConfigurationSettings",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ValidateConfigurationSettings",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -478,11 +556,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def check_d_n_s_availability(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CheckDNSAvailability",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CheckDNSAvailability",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -492,11 +573,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def list_available_solution_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAvailableSolutionStacks",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAvailableSolutionStacks",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -509,11 +593,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_configuration_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigurationOptions",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigurationOptions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -529,11 +616,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def compose_environments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ComposeEnvironments",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ComposeEnvironments",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -562,11 +652,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def create_application_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateApplicationVersion",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateApplicationVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -575,11 +668,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeApplications",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeApplications",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -588,11 +684,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_environment_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEnvironmentResources",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEnvironmentResources",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -602,11 +701,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def create_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateEnvironment",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateEnvironment",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -615,11 +717,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_application_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeApplicationVersions",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeApplicationVersions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -630,11 +735,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_environment_health(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEnvironmentHealth",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEnvironmentHealth",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -648,11 +756,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def update_application_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateApplicationVersion",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateApplicationVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -663,11 +774,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def rebuild_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RebuildEnvironment",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RebuildEnvironment",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -676,11 +790,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def describe_platform_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribePlatformVersion",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribePlatformVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -695,11 +812,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def delete_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteApplication",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteApplication",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -710,11 +830,14 @@ defmodule Baiji.ElasticBeanstalk do
   """
   def apply_environment_managed_action(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ApplyEnvironmentManagedAction",
-      type:     :xml,
-      method:   :post
+      service:        "elasticbeanstalk",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ApplyEnvironmentManagedAction",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

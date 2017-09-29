@@ -93,11 +93,14 @@ defmodule Baiji.IAM do
   """
   def get_role_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRolePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRolePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -134,11 +137,14 @@ defmodule Baiji.IAM do
   """
   def simulate_principal_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SimulatePrincipalPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SimulatePrincipalPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -164,11 +170,14 @@ defmodule Baiji.IAM do
   """
   def get_user_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUserPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetUserPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -181,11 +190,14 @@ defmodule Baiji.IAM do
   """
   def get_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstanceProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -194,11 +206,14 @@ defmodule Baiji.IAM do
   """
   def delete_service_specific_credential(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteServiceSpecificCredential",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteServiceSpecificCredential",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -219,11 +234,14 @@ defmodule Baiji.IAM do
   """
   def list_attached_user_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAttachedUserPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAttachedUserPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -238,11 +256,14 @@ defmodule Baiji.IAM do
   """
   def resync_m_f_a_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResyncMFADevice",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResyncMFADevice",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -254,11 +275,14 @@ defmodule Baiji.IAM do
   """
   def delete_account_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAccountAlias",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAccountAlias",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -274,11 +298,14 @@ defmodule Baiji.IAM do
   """
   def attach_user_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachUserPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachUserPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -292,11 +319,14 @@ defmodule Baiji.IAM do
   """
   def list_roles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRoles",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRoles",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -319,11 +349,14 @@ defmodule Baiji.IAM do
   """
   def list_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -337,11 +370,14 @@ defmodule Baiji.IAM do
   """
   def get_account_summary(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccountSummary",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAccountSummary",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -356,11 +392,14 @@ defmodule Baiji.IAM do
   """
   def change_password(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ChangePassword",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ChangePassword",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -370,11 +409,14 @@ defmodule Baiji.IAM do
   """
   def list_open_i_d_connect_providers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListOpenIDConnectProviders",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListOpenIDConnectProviders",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -400,11 +442,14 @@ defmodule Baiji.IAM do
   """
   def get_context_keys_for_principal_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetContextKeysForPrincipalPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetContextKeysForPrincipalPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -425,11 +470,14 @@ defmodule Baiji.IAM do
   """
   def list_attached_role_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAttachedRolePolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAttachedRolePolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -450,11 +498,14 @@ defmodule Baiji.IAM do
   """
   def list_role_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListRolePolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListRolePolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -465,11 +516,14 @@ defmodule Baiji.IAM do
   """
   def list_groups_for_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGroupsForUser",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListGroupsForUser",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -484,11 +538,14 @@ defmodule Baiji.IAM do
   """
   def detach_user_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachUserPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachUserPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -500,11 +557,14 @@ defmodule Baiji.IAM do
   """
   def create_account_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAccountAlias",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAccountAlias",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -514,11 +574,14 @@ defmodule Baiji.IAM do
   """
   def get_open_i_d_connect_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOpenIDConnectProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOpenIDConnectProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -534,11 +597,14 @@ defmodule Baiji.IAM do
   """
   def list_policy_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPolicyVersions",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPolicyVersions",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -551,11 +617,14 @@ defmodule Baiji.IAM do
   """
   def get_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUser",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetUser",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -564,11 +633,14 @@ defmodule Baiji.IAM do
   """
   def update_role_description(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateRoleDescription",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateRoleDescription",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -595,11 +667,14 @@ defmodule Baiji.IAM do
   """
   def delete_server_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteServerCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteServerCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -632,11 +707,14 @@ defmodule Baiji.IAM do
   """
   def create_s_a_m_l_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSAMLProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSAMLProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -645,11 +723,14 @@ defmodule Baiji.IAM do
   """
   def add_user_to_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddUserToGroup",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddUserToGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -668,11 +749,14 @@ defmodule Baiji.IAM do
   """
   def delete_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePolicyVersion",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePolicyVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -697,11 +781,14 @@ defmodule Baiji.IAM do
   """
   def update_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateUser",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateUser",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -713,11 +800,14 @@ defmodule Baiji.IAM do
   """
   def update_service_specific_credential(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateServiceSpecificCredential",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateServiceSpecificCredential",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -745,11 +835,14 @@ defmodule Baiji.IAM do
   """
   def create_open_i_d_connect_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateOpenIDConnectProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateOpenIDConnectProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -771,11 +864,14 @@ defmodule Baiji.IAM do
   """
   def attach_role_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachRolePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachRolePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -790,11 +886,14 @@ defmodule Baiji.IAM do
   """
   def deactivate_m_f_a_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeactivateMFADevice",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeactivateMFADevice",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -810,11 +909,14 @@ defmodule Baiji.IAM do
   """
   def delete_open_i_d_connect_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteOpenIDConnectProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteOpenIDConnectProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -834,11 +936,14 @@ defmodule Baiji.IAM do
   """
   def list_s_s_h_public_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSSHPublicKeys",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSSHPublicKeys",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -853,11 +958,14 @@ defmodule Baiji.IAM do
   """
   def delete_virtual_m_f_a_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVirtualMFADevice",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVirtualMFADevice",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -867,11 +975,14 @@ defmodule Baiji.IAM do
   """
   def delete_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteGroup",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -885,11 +996,14 @@ defmodule Baiji.IAM do
   """
   def update_login_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateLoginProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateLoginProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -905,11 +1019,14 @@ defmodule Baiji.IAM do
   """
   def attach_group_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachGroupPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachGroupPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -921,11 +1038,14 @@ defmodule Baiji.IAM do
   """
   def generate_credential_report(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GenerateCredentialReport",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GenerateCredentialReport",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -957,11 +1077,14 @@ defmodule Baiji.IAM do
   """
   def update_server_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateServerCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateServerCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -979,11 +1102,14 @@ defmodule Baiji.IAM do
   """
   def add_role_to_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddRoleToInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddRoleToInstanceProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -995,11 +1121,14 @@ defmodule Baiji.IAM do
   """
   def reset_service_specific_credential(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetServiceSpecificCredential",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetServiceSpecificCredential",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1017,11 +1146,14 @@ defmodule Baiji.IAM do
   """
   def set_default_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetDefaultPolicyVersion",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetDefaultPolicyVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1036,11 +1168,14 @@ defmodule Baiji.IAM do
   """
   def update_s_a_m_l_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSAMLProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateSAMLProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1054,11 +1189,14 @@ defmodule Baiji.IAM do
   """
   def create_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUser",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateUser",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1073,11 +1211,14 @@ defmodule Baiji.IAM do
   """
   def get_s_a_m_l_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSAMLProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSAMLProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1093,11 +1234,14 @@ defmodule Baiji.IAM do
   """
   def delete_role_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRolePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRolePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1117,11 +1261,14 @@ defmodule Baiji.IAM do
   """
   def create_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1135,11 +1282,14 @@ defmodule Baiji.IAM do
   """
   def list_instance_profiles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListInstanceProfiles",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListInstanceProfiles",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1148,11 +1298,14 @@ defmodule Baiji.IAM do
   """
   def delete_account_password_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAccountPasswordPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAccountPasswordPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1168,11 +1321,14 @@ defmodule Baiji.IAM do
   """
   def delete_group_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteGroupPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteGroupPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1202,11 +1358,14 @@ defmodule Baiji.IAM do
   """
   def put_user_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutUserPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutUserPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1221,11 +1380,14 @@ defmodule Baiji.IAM do
   """
   def list_m_f_a_devices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListMFADevices",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListMFADevices",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1235,11 +1397,14 @@ defmodule Baiji.IAM do
   """
   def get_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGroup",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1250,11 +1415,14 @@ defmodule Baiji.IAM do
   """
   def get_login_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetLoginProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetLoginProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1265,11 +1433,14 @@ defmodule Baiji.IAM do
   """
   def get_account_password_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccountPasswordPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAccountPasswordPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1285,11 +1456,14 @@ defmodule Baiji.IAM do
   """
   def list_service_specific_credentials(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListServiceSpecificCredentials",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListServiceSpecificCredentials",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1311,11 +1485,14 @@ defmodule Baiji.IAM do
   """
   def create_service_linked_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateServiceLinkedRole",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateServiceLinkedRole",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1332,11 +1509,14 @@ defmodule Baiji.IAM do
   """
   def list_entities_for_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListEntitiesForPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListEntitiesForPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1370,11 +1550,14 @@ defmodule Baiji.IAM do
   """
   def get_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPolicyVersion",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPolicyVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1399,11 +1582,14 @@ defmodule Baiji.IAM do
   """
   def create_service_specific_credential(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateServiceSpecificCredential",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateServiceSpecificCredential",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1417,11 +1603,14 @@ defmodule Baiji.IAM do
   """
   def remove_client_i_d_from_open_i_d_connect_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveClientIDFromOpenIDConnectProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveClientIDFromOpenIDConnectProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1448,11 +1637,14 @@ defmodule Baiji.IAM do
   """
   def simulate_custom_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SimulateCustomPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SimulateCustomPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1467,11 +1659,14 @@ defmodule Baiji.IAM do
   """
   def detach_group_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachGroupPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachGroupPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1485,11 +1680,14 @@ defmodule Baiji.IAM do
   """
   def list_virtual_m_f_a_devices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListVirtualMFADevices",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListVirtualMFADevices",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1516,11 +1714,14 @@ defmodule Baiji.IAM do
   """
   def update_open_i_d_connect_provider_thumbprint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateOpenIDConnectProviderThumbprint",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateOpenIDConnectProviderThumbprint",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1538,11 +1739,14 @@ defmodule Baiji.IAM do
   """
   def delete_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteRole",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteRole",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1561,11 +1765,14 @@ defmodule Baiji.IAM do
   """
   def remove_role_from_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveRoleFromInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveRoleFromInstanceProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1583,11 +1790,14 @@ defmodule Baiji.IAM do
   """
   def list_server_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListServerCertificates",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListServerCertificates",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1601,11 +1811,14 @@ defmodule Baiji.IAM do
   """
   def list_s_a_m_l_providers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSAMLProviders",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSAMLProviders",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1642,11 +1855,14 @@ defmodule Baiji.IAM do
   """
   def put_role_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutRolePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutRolePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1656,11 +1872,14 @@ defmodule Baiji.IAM do
   """
   def delete_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUser",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteUser",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1676,11 +1895,14 @@ defmodule Baiji.IAM do
   """
   def upload_s_s_h_public_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UploadSSHPublicKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UploadSSHPublicKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1722,11 +1944,14 @@ defmodule Baiji.IAM do
   """
   def upload_server_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UploadServerCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UploadServerCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1747,11 +1972,14 @@ defmodule Baiji.IAM do
   """
   def get_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRole",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRole",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1764,11 +1992,14 @@ defmodule Baiji.IAM do
   """
   def list_users(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListUsers",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListUsers",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1782,11 +2013,14 @@ defmodule Baiji.IAM do
   """
   def delete_access_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAccessKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAccessKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1797,11 +2031,14 @@ defmodule Baiji.IAM do
   """
   def list_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGroups",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListGroups",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1813,11 +2050,14 @@ defmodule Baiji.IAM do
   """
   def get_credential_report(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCredentialReport",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCredentialReport",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1828,11 +2068,14 @@ defmodule Baiji.IAM do
   """
   def enable_m_f_a_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableMFADevice",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableMFADevice",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1841,11 +2084,14 @@ defmodule Baiji.IAM do
   """
   def remove_user_from_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveUserFromGroup",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveUserFromGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1860,11 +2106,14 @@ defmodule Baiji.IAM do
   """
   def create_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateRole",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateRole",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1885,11 +2134,14 @@ defmodule Baiji.IAM do
   """
   def update_access_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAccessKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAccessKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1908,11 +2160,14 @@ defmodule Baiji.IAM do
   """
   def delete_s_a_m_l_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSAMLProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSAMLProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1927,11 +2182,14 @@ defmodule Baiji.IAM do
   """
   def get_account_authorization_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccountAuthorizationDetails",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAccountAuthorizationDetails",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1957,11 +2215,14 @@ defmodule Baiji.IAM do
   """
   def get_group_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetGroupPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetGroupPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1981,11 +2242,14 @@ defmodule Baiji.IAM do
   """
   def list_user_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListUserPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListUserPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2004,11 +2268,14 @@ defmodule Baiji.IAM do
   """
   def update_account_password_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAccountPasswordPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAccountPasswordPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2024,11 +2291,14 @@ defmodule Baiji.IAM do
   """
   def create_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInstanceProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2044,11 +2314,14 @@ defmodule Baiji.IAM do
   """
   def delete_user_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUserPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteUserPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2067,11 +2340,14 @@ defmodule Baiji.IAM do
   """
   def delete_instance_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteInstanceProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteInstanceProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2092,11 +2368,14 @@ defmodule Baiji.IAM do
   """
   def list_group_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListGroupPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListGroupPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2112,11 +2391,14 @@ defmodule Baiji.IAM do
   """
   def get_s_s_h_public_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSSHPublicKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSSHPublicKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2129,11 +2411,14 @@ defmodule Baiji.IAM do
   """
   def update_assume_role_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateAssumeRolePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateAssumeRolePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2153,11 +2438,14 @@ defmodule Baiji.IAM do
   """
   def get_context_keys_for_custom_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetContextKeysForCustomPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetContextKeysForCustomPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2169,11 +2457,14 @@ defmodule Baiji.IAM do
   """
   def get_access_key_last_used(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccessKeyLastUsed",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAccessKeyLastUsed",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2186,11 +2477,14 @@ defmodule Baiji.IAM do
   """
   def list_account_aliases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAccountAliases",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAccountAliases",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2218,11 +2512,14 @@ defmodule Baiji.IAM do
   """
   def create_access_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAccessKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAccessKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2255,11 +2552,14 @@ defmodule Baiji.IAM do
   """
   def delete_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2282,11 +2582,14 @@ defmodule Baiji.IAM do
   """
   def update_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateGroup",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2307,11 +2610,14 @@ defmodule Baiji.IAM do
   """
   def list_attached_group_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAttachedGroupPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAttachedGroupPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2335,11 +2641,14 @@ defmodule Baiji.IAM do
   """
   def get_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2353,11 +2662,14 @@ defmodule Baiji.IAM do
   """
   def create_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateGroup",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateGroup",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2371,11 +2683,14 @@ defmodule Baiji.IAM do
   """
   def add_client_i_d_to_open_i_d_connect_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddClientIDToOpenIDConnectProvider",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddClientIDToOpenIDConnectProvider",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2396,11 +2711,14 @@ defmodule Baiji.IAM do
   """
   def create_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePolicyVersion",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePolicyVersion",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2418,11 +2736,14 @@ defmodule Baiji.IAM do
   """
   def delete_login_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLoginProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteLoginProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2439,11 +2760,14 @@ defmodule Baiji.IAM do
   """
   def update_signing_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSigningCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateSigningCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2458,11 +2782,14 @@ defmodule Baiji.IAM do
   """
   def delete_signing_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSigningCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSigningCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2492,11 +2819,14 @@ defmodule Baiji.IAM do
   """
   def put_group_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutGroupPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutGroupPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2520,11 +2850,14 @@ defmodule Baiji.IAM do
   """
   def list_access_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAccessKeys",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAccessKeys",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2538,11 +2871,14 @@ defmodule Baiji.IAM do
   """
   def list_instance_profiles_for_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListInstanceProfilesForRole",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListInstanceProfilesForRole",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2561,11 +2897,14 @@ defmodule Baiji.IAM do
   """
   def update_s_s_h_public_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSSHPublicKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateSSHPublicKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2592,11 +2931,14 @@ defmodule Baiji.IAM do
   """
   def create_virtual_m_f_a_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateVirtualMFADevice",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateVirtualMFADevice",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2611,11 +2953,14 @@ defmodule Baiji.IAM do
   """
   def detach_role_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachRolePolicy",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachRolePolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2630,11 +2975,14 @@ defmodule Baiji.IAM do
   """
   def get_server_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetServerCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetServerCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2654,11 +3002,14 @@ defmodule Baiji.IAM do
   """
   def list_signing_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSigningCertificates",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSigningCertificates",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2688,11 +3039,14 @@ defmodule Baiji.IAM do
   """
   def upload_signing_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UploadSigningCertificate",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UploadSigningCertificate",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2708,11 +3062,14 @@ defmodule Baiji.IAM do
   """
   def delete_s_s_h_public_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSSHPublicKey",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSSHPublicKey",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -2725,11 +3082,14 @@ defmodule Baiji.IAM do
   """
   def create_login_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLoginProfile",
-      type:     :xml,
-      method:   :post
+      service:        "iam",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateLoginProfile",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

@@ -19,11 +19,14 @@ defmodule Baiji.IotDataPlane do
   """
   def delete_thing_shadow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteThingShadow",
-      type:     :rest_json,
-      method:   :delete
+      service:        "iot-data",
+      endpoint:       "/things/{thingName}/shadow",
+      input:          input,
+      options:        options,
+      action:         "DeleteThingShadow",
+      
+      type:           :rest_json,
+      method:         :delete
     }
   end
   
@@ -36,11 +39,14 @@ defmodule Baiji.IotDataPlane do
   """
   def get_thing_shadow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetThingShadow",
-      type:     :rest_json,
-      method:   :get
+      service:        "iot-data",
+      endpoint:       "/things/{thingName}/shadow",
+      input:          input,
+      options:        options,
+      action:         "GetThingShadow",
+      
+      type:           :rest_json,
+      method:         :get
     }
   end
   
@@ -53,11 +59,14 @@ defmodule Baiji.IotDataPlane do
   """
   def publish(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "Publish",
-      type:     :rest_json,
-      method:   :post
+      service:        "iot-data",
+      endpoint:       "/topics/{topic}",
+      input:          input,
+      options:        options,
+      action:         "Publish",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -70,11 +79,14 @@ defmodule Baiji.IotDataPlane do
   """
   def update_thing_shadow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateThingShadow",
-      type:     :rest_json,
-      method:   :post
+      service:        "iot-data",
+      endpoint:       "/things/{thingName}/shadow",
+      input:          input,
+      options:        options,
+      action:         "UpdateThingShadow",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   

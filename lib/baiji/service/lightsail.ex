@@ -22,11 +22,16 @@ defmodule Baiji.Lightsail do
   """
   def create_instances_from_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInstancesFromSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInstancesFromSnapshot",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -35,11 +40,16 @@ defmodule Baiji.Lightsail do
   """
   def delete_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteInstance",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteInstance",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -48,11 +58,16 @@ defmodule Baiji.Lightsail do
   """
   def release_static_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReleaseStaticIp",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReleaseStaticIp",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -64,11 +79,16 @@ defmodule Baiji.Lightsail do
   """
   def reboot_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RebootInstance",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RebootInstance",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -77,11 +97,16 @@ defmodule Baiji.Lightsail do
   """
   def get_operations_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOperationsForResource",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOperationsForResource",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -90,11 +115,16 @@ defmodule Baiji.Lightsail do
   """
   def delete_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteKeyPair",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteKeyPair",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -105,11 +135,16 @@ defmodule Baiji.Lightsail do
   """
   def get_operation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOperation",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOperation",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -118,11 +153,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstanceSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstanceSnapshot",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -131,11 +171,16 @@ defmodule Baiji.Lightsail do
   """
   def import_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportKeyPair",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportKeyPair",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -144,11 +189,16 @@ defmodule Baiji.Lightsail do
   """
   def peer_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PeerVpc",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PeerVpc",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -157,11 +207,16 @@ defmodule Baiji.Lightsail do
   """
   def delete_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDomain",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDomain",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -171,11 +226,16 @@ defmodule Baiji.Lightsail do
   """
   def create_instance_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInstanceSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInstanceSnapshot",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -185,11 +245,16 @@ defmodule Baiji.Lightsail do
   """
   def create_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInstances",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInstances",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -199,11 +264,16 @@ defmodule Baiji.Lightsail do
   """
   def detach_static_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachStaticIp",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DetachStaticIp",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -216,11 +286,16 @@ defmodule Baiji.Lightsail do
   """
   def get_operations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetOperations",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetOperations",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -229,11 +304,16 @@ defmodule Baiji.Lightsail do
   """
   def get_active_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetActiveNames",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetActiveNames",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -242,11 +322,16 @@ defmodule Baiji.Lightsail do
   """
   def create_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDomain",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDomain",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -255,11 +340,16 @@ defmodule Baiji.Lightsail do
   """
   def delete_domain_entry(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDomainEntry",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDomainEntry",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -268,11 +358,16 @@ defmodule Baiji.Lightsail do
   """
   def get_static_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetStaticIp",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetStaticIp",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -281,11 +376,16 @@ defmodule Baiji.Lightsail do
   """
   def get_static_ips(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetStaticIps",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetStaticIps",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -294,11 +394,16 @@ defmodule Baiji.Lightsail do
   """
   def allocate_static_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocateStaticIp",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocateStaticIp",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -307,11 +412,16 @@ defmodule Baiji.Lightsail do
   """
   def get_key_pairs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetKeyPairs",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetKeyPairs",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -320,11 +430,16 @@ defmodule Baiji.Lightsail do
   """
   def get_domains(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDomains",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDomains",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -333,11 +448,16 @@ defmodule Baiji.Lightsail do
   """
   def is_vpc_peered(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "IsVpcPeered",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "IsVpcPeered",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -348,11 +468,16 @@ defmodule Baiji.Lightsail do
   """
   def get_regions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetRegions",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetRegions",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -361,11 +486,16 @@ defmodule Baiji.Lightsail do
   """
   def download_default_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DownloadDefaultKeyPair",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DownloadDefaultKeyPair",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -374,11 +504,16 @@ defmodule Baiji.Lightsail do
   """
   def open_instance_public_ports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "OpenInstancePublicPorts",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "OpenInstancePublicPorts",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -388,11 +523,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance_port_states(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstancePortStates",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstancePortStates",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -401,11 +541,16 @@ defmodule Baiji.Lightsail do
   """
   def unpeer_vpc(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UnpeerVpc",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UnpeerVpc",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -414,11 +559,16 @@ defmodule Baiji.Lightsail do
   """
   def stop_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopInstance",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopInstance",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -428,11 +578,16 @@ defmodule Baiji.Lightsail do
   """
   def put_instance_public_ports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutInstancePublicPorts",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutInstancePublicPorts",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -442,11 +597,16 @@ defmodule Baiji.Lightsail do
   """
   def create_domain_entry(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDomainEntry",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDomainEntry",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -456,11 +616,16 @@ defmodule Baiji.Lightsail do
   """
   def get_bundles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBundles",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetBundles",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -470,11 +635,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance_access_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstanceAccessDetails",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstanceAccessDetails",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -483,11 +653,16 @@ defmodule Baiji.Lightsail do
   """
   def close_instance_public_ports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CloseInstancePublicPorts",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CloseInstancePublicPorts",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -497,11 +672,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance_metric_data(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstanceMetricData",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstanceMetricData",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -510,11 +690,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstanceSnapshots",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstanceSnapshots",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -523,11 +708,16 @@ defmodule Baiji.Lightsail do
   """
   def update_domain_entry(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDomainEntry",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDomainEntry",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -536,11 +726,16 @@ defmodule Baiji.Lightsail do
   """
   def get_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetKeyPair",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetKeyPair",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -550,11 +745,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstance",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstance",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -564,11 +764,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstances",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstances",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -581,11 +786,16 @@ defmodule Baiji.Lightsail do
   """
   def get_blueprints(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetBlueprints",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetBlueprints",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -594,11 +804,16 @@ defmodule Baiji.Lightsail do
   """
   def get_instance_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetInstanceState",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetInstanceState",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -607,11 +822,16 @@ defmodule Baiji.Lightsail do
   """
   def get_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDomain",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDomain",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -621,11 +841,16 @@ defmodule Baiji.Lightsail do
   """
   def start_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartInstance",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartInstance",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -634,11 +859,16 @@ defmodule Baiji.Lightsail do
   """
   def delete_instance_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteInstanceSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteInstanceSnapshot",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -647,11 +877,16 @@ defmodule Baiji.Lightsail do
   """
   def create_key_pair(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateKeyPair",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateKeyPair",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -660,11 +895,16 @@ defmodule Baiji.Lightsail do
   """
   def attach_static_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachStaticIp",
-      type:     :json,
-      method:   :post
+      service:        "lightsail",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AttachStaticIp",
+      
+      target_prefix:  "Lightsail_20161128",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

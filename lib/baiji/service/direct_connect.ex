@@ -27,11 +27,16 @@ defmodule Baiji.DirectConnect do
   """
   def create_public_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePublicVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePublicVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -57,11 +62,16 @@ defmodule Baiji.DirectConnect do
   """
   def associate_connection_with_lag(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateConnectionWithLag",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateConnectionWithLag",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -78,11 +88,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_loa(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLoa",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLoa",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -103,11 +118,16 @@ defmodule Baiji.DirectConnect do
   """
   def associate_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -121,11 +141,16 @@ defmodule Baiji.DirectConnect do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TagResource",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TagResource",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -143,11 +168,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_interconnect_loa(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInterconnectLoa",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInterconnectLoa",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -158,11 +188,16 @@ defmodule Baiji.DirectConnect do
   """
   def delete_b_g_p_peer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteBGPPeer",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteBGPPeer",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -180,11 +215,16 @@ defmodule Baiji.DirectConnect do
   """
   def allocate_connection_on_interconnect(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocateConnectionOnInterconnect",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocateConnectionOnInterconnect",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -193,11 +233,16 @@ defmodule Baiji.DirectConnect do
   """
   def delete_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -207,11 +252,16 @@ defmodule Baiji.DirectConnect do
   """
   def delete_lag(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLag",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteLag",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -223,11 +273,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_lags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLags",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLags",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -241,11 +296,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_hosted_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeHostedConnections",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeHostedConnections",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -261,11 +321,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_connections_on_interconnect(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConnectionsOnInterconnect",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConnectionsOnInterconnect",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -274,11 +339,16 @@ defmodule Baiji.DirectConnect do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UntagResource",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UntagResource",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -295,11 +365,16 @@ defmodule Baiji.DirectConnect do
   """
   def associate_hosted_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateHostedConnection",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateHostedConnection",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -310,11 +385,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_locations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeLocations",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeLocations",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -338,11 +418,16 @@ defmodule Baiji.DirectConnect do
   """
   def create_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConnection",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConnection",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -376,11 +461,16 @@ defmodule Baiji.DirectConnect do
   """
   def create_lag(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLag",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateLag",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -401,11 +491,16 @@ defmodule Baiji.DirectConnect do
   """
   def disassociate_connection_from_lag(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateConnectionFromLag",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateConnectionFromLag",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -420,11 +515,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_virtual_gateways(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVirtualGateways",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVirtualGateways",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -436,11 +536,16 @@ defmodule Baiji.DirectConnect do
   """
   def confirm_public_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ConfirmPublicVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ConfirmPublicVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -453,11 +558,16 @@ defmodule Baiji.DirectConnect do
   """
   def delete_interconnect(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteInterconnect",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteInterconnect",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -469,11 +579,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConnections",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConnections",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -485,11 +600,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_interconnects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeInterconnects",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeInterconnects",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -503,11 +623,16 @@ defmodule Baiji.DirectConnect do
   """
   def delete_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConnection",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConnection",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -521,11 +646,16 @@ defmodule Baiji.DirectConnect do
   """
   def confirm_private_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ConfirmPrivateVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ConfirmPrivateVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -549,11 +679,16 @@ defmodule Baiji.DirectConnect do
   """
   def update_lag(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateLag",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateLag",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -575,11 +710,16 @@ defmodule Baiji.DirectConnect do
   """
   def allocate_public_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocatePublicVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocatePublicVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -588,11 +728,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTags",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTags",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -609,11 +754,16 @@ defmodule Baiji.DirectConnect do
   """
   def allocate_hosted_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocateHostedConnection",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocateHostedConnection",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -648,11 +798,16 @@ defmodule Baiji.DirectConnect do
   """
   def create_interconnect(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateInterconnect",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateInterconnect",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -666,11 +821,16 @@ defmodule Baiji.DirectConnect do
   """
   def allocate_private_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AllocatePrivateVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AllocatePrivateVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -683,11 +843,16 @@ defmodule Baiji.DirectConnect do
   """
   def confirm_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ConfirmConnection",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ConfirmConnection",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -705,11 +870,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_connection_loa(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConnectionLoa",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConnectionLoa",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -725,11 +895,16 @@ defmodule Baiji.DirectConnect do
   """
   def describe_virtual_interfaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeVirtualInterfaces",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeVirtualInterfaces",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -740,11 +915,16 @@ defmodule Baiji.DirectConnect do
   """
   def create_private_virtual_interface(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePrivateVirtualInterface",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePrivateVirtualInterface",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -765,11 +945,16 @@ defmodule Baiji.DirectConnect do
   """
   def create_b_g_p_peer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateBGPPeer",
-      type:     :json,
-      method:   :post
+      service:        "directconnect",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateBGPPeer",
+      
+      target_prefix:  "OvertureService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

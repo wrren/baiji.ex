@@ -29,11 +29,14 @@ defmodule Baiji.SES do
   """
   def delete_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -109,11 +112,14 @@ defmodule Baiji.SES do
   """
   def send_raw_email(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendRawEmail",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendRawEmail",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -129,11 +135,14 @@ defmodule Baiji.SES do
   """
   def describe_active_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeActiveReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeActiveReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -147,11 +156,14 @@ defmodule Baiji.SES do
   """
   def set_receipt_rule_position(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetReceiptRulePosition",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetReceiptRulePosition",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -166,11 +178,14 @@ defmodule Baiji.SES do
   """
   def describe_configuration_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConfigurationSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConfigurationSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -185,11 +200,14 @@ defmodule Baiji.SES do
   """
   def create_receipt_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateReceiptRule",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateReceiptRule",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -204,11 +222,14 @@ defmodule Baiji.SES do
   """
   def create_configuration_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConfigurationSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConfigurationSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -223,11 +244,14 @@ defmodule Baiji.SES do
   """
   def describe_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -241,11 +265,14 @@ defmodule Baiji.SES do
   """
   def delete_receipt_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteReceiptRule",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteReceiptRule",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -260,11 +287,14 @@ defmodule Baiji.SES do
   """
   def list_receipt_filters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListReceiptFilters",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListReceiptFilters",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -285,11 +315,14 @@ defmodule Baiji.SES do
   """
   def create_configuration_set_event_destination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConfigurationSetEventDestination",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConfigurationSetEventDestination",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -311,11 +344,14 @@ defmodule Baiji.SES do
   """
   def update_configuration_set_event_destination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateConfigurationSetEventDestination",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateConfigurationSetEventDestination",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -330,11 +366,14 @@ defmodule Baiji.SES do
   """
   def create_receipt_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateReceiptFilter",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateReceiptFilter",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -356,11 +395,14 @@ defmodule Baiji.SES do
   """
   def set_identity_notification_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetIdentityNotificationTopic",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetIdentityNotificationTopic",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -375,11 +417,14 @@ defmodule Baiji.SES do
   """
   def delete_configuration_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConfigurationSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConfigurationSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -394,11 +439,14 @@ defmodule Baiji.SES do
   """
   def describe_receipt_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReceiptRule",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReceiptRule",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -419,11 +467,14 @@ defmodule Baiji.SES do
   """
   def delete_identity_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIdentityPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteIdentityPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -439,11 +490,14 @@ defmodule Baiji.SES do
   """
   def list_verified_email_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListVerifiedEmailAddresses",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListVerifiedEmailAddresses",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -455,11 +509,14 @@ defmodule Baiji.SES do
   """
   def list_identities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIdentities",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListIdentities",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -476,11 +533,14 @@ defmodule Baiji.SES do
   """
   def get_identity_notification_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIdentityNotificationAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetIdentityNotificationAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -491,11 +551,14 @@ defmodule Baiji.SES do
   """
   def get_send_quota(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSendQuota",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSendQuota",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -517,11 +580,14 @@ defmodule Baiji.SES do
   """
   def list_identity_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIdentityPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListIdentityPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -534,11 +600,14 @@ defmodule Baiji.SES do
   """
   def get_identity_mail_from_domain_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIdentityMailFromDomainAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetIdentityMailFromDomainAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -554,11 +623,14 @@ defmodule Baiji.SES do
   """
   def clone_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CloneReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CloneReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -573,11 +645,14 @@ defmodule Baiji.SES do
   """
   def delete_receipt_filter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteReceiptFilter",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteReceiptFilter",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -594,11 +669,14 @@ defmodule Baiji.SES do
   """
   def set_identity_headers_in_notifications_enabled(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetIdentityHeadersInNotificationsEnabled",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetIdentityHeadersInNotificationsEnabled",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -612,11 +690,14 @@ defmodule Baiji.SES do
   """
   def get_send_statistics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSendStatistics",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSendStatistics",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -634,11 +715,14 @@ defmodule Baiji.SES do
   """
   def set_identity_mail_from_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetIdentityMailFromDomain",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetIdentityMailFromDomain",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -662,11 +746,14 @@ defmodule Baiji.SES do
   """
   def verify_domain_dkim(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "VerifyDomainDkim",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "VerifyDomainDkim",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -682,11 +769,14 @@ defmodule Baiji.SES do
   """
   def list_configuration_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListConfigurationSets",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListConfigurationSets",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -700,11 +790,14 @@ defmodule Baiji.SES do
   """
   def update_receipt_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateReceiptRule",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateReceiptRule",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -720,11 +813,14 @@ defmodule Baiji.SES do
   """
   def verify_email_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "VerifyEmailAddress",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "VerifyEmailAddress",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -740,11 +836,14 @@ defmodule Baiji.SES do
   """
   def delete_configuration_set_event_destination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConfigurationSetEventDestination",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConfigurationSetEventDestination",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -766,11 +865,14 @@ defmodule Baiji.SES do
   """
   def get_identity_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIdentityPolicies",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetIdentityPolicies",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -802,11 +904,14 @@ defmodule Baiji.SES do
   """
   def get_identity_dkim_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIdentityDkimAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetIdentityDkimAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -827,11 +932,14 @@ defmodule Baiji.SES do
   """
   def set_identity_feedback_forwarding_enabled(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetIdentityFeedbackForwardingEnabled",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetIdentityFeedbackForwardingEnabled",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -873,11 +981,14 @@ defmodule Baiji.SES do
   """
   def send_email(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendEmail",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendEmail",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -897,11 +1008,14 @@ defmodule Baiji.SES do
   """
   def send_bounce(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendBounce",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendBounce",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -919,11 +1033,14 @@ defmodule Baiji.SES do
   """
   def set_active_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetActiveReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetActiveReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -953,11 +1070,14 @@ defmodule Baiji.SES do
   """
   def get_identity_verification_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetIdentityVerificationAttributes",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetIdentityVerificationAttributes",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -972,11 +1092,14 @@ defmodule Baiji.SES do
   """
   def delete_verified_email_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteVerifiedEmailAddress",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteVerifiedEmailAddress",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -988,11 +1111,14 @@ defmodule Baiji.SES do
   """
   def delete_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteIdentity",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteIdentity",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1012,11 +1138,14 @@ defmodule Baiji.SES do
   """
   def put_identity_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutIdentityPolicy",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutIdentityPolicy",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1027,11 +1156,14 @@ defmodule Baiji.SES do
   """
   def verify_domain_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "VerifyDomainIdentity",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "VerifyDomainIdentity",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1050,11 +1182,14 @@ defmodule Baiji.SES do
   """
   def reorder_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReorderReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReorderReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1069,11 +1204,14 @@ defmodule Baiji.SES do
   """
   def create_receipt_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateReceiptRuleSet",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateReceiptRuleSet",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1100,11 +1238,14 @@ defmodule Baiji.SES do
   """
   def set_identity_dkim_enabled(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetIdentityDkimEnabled",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetIdentityDkimEnabled",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1116,11 +1257,14 @@ defmodule Baiji.SES do
   """
   def verify_email_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "VerifyEmailIdentity",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "VerifyEmailIdentity",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -1138,11 +1282,14 @@ defmodule Baiji.SES do
   """
   def list_receipt_rule_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListReceiptRuleSets",
-      type:     :xml,
-      method:   :post
+      service:        "email",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListReceiptRuleSets",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

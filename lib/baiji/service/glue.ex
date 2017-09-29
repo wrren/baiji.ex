@@ -8,11 +8,16 @@ defmodule Baiji.Glue do
   """
   def delete_trigger(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTrigger",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTrigger",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -21,11 +26,16 @@ defmodule Baiji.Glue do
   """
   def get_crawlers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCrawlers",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCrawlers",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -34,11 +44,16 @@ defmodule Baiji.Glue do
   """
   def get_user_defined_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUserDefinedFunction",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetUserDefinedFunction",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -47,11 +62,16 @@ defmodule Baiji.Glue do
   """
   def start_trigger(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartTrigger",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartTrigger",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -60,11 +80,16 @@ defmodule Baiji.Glue do
   """
   def stop_crawler(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopCrawler",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopCrawler",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -73,11 +98,16 @@ defmodule Baiji.Glue do
   """
   def create_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -86,11 +116,16 @@ defmodule Baiji.Glue do
   """
   def update_trigger(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTrigger",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateTrigger",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -99,11 +134,16 @@ defmodule Baiji.Glue do
   """
   def update_user_defined_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateUserDefinedFunction",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateUserDefinedFunction",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -112,11 +152,16 @@ defmodule Baiji.Glue do
   """
   def create_classifier(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateClassifier",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateClassifier",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -125,11 +170,16 @@ defmodule Baiji.Glue do
   """
   def batch_delete_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchDeleteTable",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchDeleteTable",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -138,11 +188,16 @@ defmodule Baiji.Glue do
   """
   def get_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetMapping",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetMapping",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -151,11 +206,16 @@ defmodule Baiji.Glue do
   """
   def batch_delete_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchDeleteConnection",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchDeleteConnection",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -166,11 +226,16 @@ defmodule Baiji.Glue do
   """
   def start_crawler_schedule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartCrawlerSchedule",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartCrawlerSchedule",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -179,11 +244,16 @@ defmodule Baiji.Glue do
   """
   def create_database(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDatabase",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDatabase",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -192,11 +262,16 @@ defmodule Baiji.Glue do
   """
   def delete_classifier(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteClassifier",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteClassifier",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -205,11 +280,16 @@ defmodule Baiji.Glue do
   """
   def get_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJobs",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJobs",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -218,11 +298,16 @@ defmodule Baiji.Glue do
   """
   def update_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateConnection",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateConnection",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -231,11 +316,16 @@ defmodule Baiji.Glue do
   """
   def batch_delete_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchDeletePartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchDeletePartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -244,11 +334,16 @@ defmodule Baiji.Glue do
   """
   def update_crawler_schedule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateCrawlerSchedule",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateCrawlerSchedule",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -257,11 +352,16 @@ defmodule Baiji.Glue do
   """
   def get_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -270,11 +370,16 @@ defmodule Baiji.Glue do
   """
   def delete_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTable",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTable",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -283,11 +388,16 @@ defmodule Baiji.Glue do
   """
   def update_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateJob",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateJob",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -296,11 +406,16 @@ defmodule Baiji.Glue do
   """
   def create_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateJob",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateJob",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -309,11 +424,16 @@ defmodule Baiji.Glue do
   """
   def delete_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteJob",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteJob",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -322,11 +442,16 @@ defmodule Baiji.Glue do
   """
   def get_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetConnections",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetConnections",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -335,11 +460,16 @@ defmodule Baiji.Glue do
   """
   def stop_trigger(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopTrigger",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopTrigger",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -348,11 +478,16 @@ defmodule Baiji.Glue do
   """
   def get_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTable",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTable",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -361,11 +496,16 @@ defmodule Baiji.Glue do
   """
   def get_classifiers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetClassifiers",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetClassifiers",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -374,11 +514,16 @@ defmodule Baiji.Glue do
   """
   def start_job_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartJobRun",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartJobRun",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -387,11 +532,16 @@ defmodule Baiji.Glue do
   """
   def create_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConnection",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConnection",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -400,11 +550,16 @@ defmodule Baiji.Glue do
   """
   def reset_job_bookmark(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResetJobBookmark",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResetJobBookmark",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -413,11 +568,16 @@ defmodule Baiji.Glue do
   """
   def import_catalog_to_glue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ImportCatalogToGlue",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ImportCatalogToGlue",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -426,11 +586,16 @@ defmodule Baiji.Glue do
   """
   def create_script(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateScript",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateScript",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -439,11 +604,16 @@ defmodule Baiji.Glue do
   """
   def update_classifier(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateClassifier",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateClassifier",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -452,11 +622,16 @@ defmodule Baiji.Glue do
   """
   def delete_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -465,11 +640,16 @@ defmodule Baiji.Glue do
   """
   def get_trigger(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTrigger",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTrigger",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -478,11 +658,16 @@ defmodule Baiji.Glue do
   """
   def get_user_defined_functions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetUserDefinedFunctions",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetUserDefinedFunctions",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -491,11 +676,16 @@ defmodule Baiji.Glue do
   """
   def get_triggers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTriggers",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTriggers",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -504,11 +694,16 @@ defmodule Baiji.Glue do
   """
   def delete_user_defined_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUserDefinedFunction",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteUserDefinedFunction",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -517,11 +712,16 @@ defmodule Baiji.Glue do
   """
   def update_database(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDatabase",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDatabase",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -530,11 +730,16 @@ defmodule Baiji.Glue do
   """
   def get_dev_endpoints(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDevEndpoints",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDevEndpoints",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -543,11 +748,16 @@ defmodule Baiji.Glue do
   """
   def get_dataflow_graph(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDataflowGraph",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDataflowGraph",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -556,11 +766,16 @@ defmodule Baiji.Glue do
   """
   def create_dev_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDevEndpoint",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDevEndpoint",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -569,11 +784,16 @@ defmodule Baiji.Glue do
   """
   def get_crawler_metrics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCrawlerMetrics",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCrawlerMetrics",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -582,11 +802,16 @@ defmodule Baiji.Glue do
   """
   def get_catalog_import_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCatalogImportStatus",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCatalogImportStatus",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -595,11 +820,16 @@ defmodule Baiji.Glue do
   """
   def delete_database(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDatabase",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDatabase",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -608,11 +838,16 @@ defmodule Baiji.Glue do
   """
   def delete_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConnection",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConnection",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -621,11 +856,16 @@ defmodule Baiji.Glue do
   """
   def get_plan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPlan",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPlan",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -634,11 +874,16 @@ defmodule Baiji.Glue do
   """
   def get_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJob",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJob",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -648,11 +893,16 @@ defmodule Baiji.Glue do
   """
   def stop_crawler_schedule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopCrawlerSchedule",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopCrawlerSchedule",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -661,11 +911,16 @@ defmodule Baiji.Glue do
   """
   def get_classifier(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetClassifier",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetClassifier",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -674,11 +929,16 @@ defmodule Baiji.Glue do
   """
   def get_job_runs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJobRuns",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJobRuns",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -689,11 +949,16 @@ defmodule Baiji.Glue do
   """
   def create_crawler(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCrawler",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCrawler",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -702,11 +967,16 @@ defmodule Baiji.Glue do
   """
   def get_partitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPartitions",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPartitions",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -715,11 +985,16 @@ defmodule Baiji.Glue do
   """
   def batch_get_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetPartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetPartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -728,11 +1003,16 @@ defmodule Baiji.Glue do
   """
   def get_database(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDatabase",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDatabase",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -742,11 +1022,16 @@ defmodule Baiji.Glue do
   """
   def get_tables(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTables",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTables",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -756,11 +1041,16 @@ defmodule Baiji.Glue do
   """
   def start_crawler(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartCrawler",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartCrawler",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -769,11 +1059,16 @@ defmodule Baiji.Glue do
   """
   def get_dev_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDevEndpoint",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDevEndpoint",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -782,11 +1077,16 @@ defmodule Baiji.Glue do
   """
   def update_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTable",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateTable",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -795,11 +1095,16 @@ defmodule Baiji.Glue do
   """
   def get_job_run(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJobRun",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJobRun",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -808,11 +1113,16 @@ defmodule Baiji.Glue do
   """
   def create_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTable",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTable",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -822,11 +1132,16 @@ defmodule Baiji.Glue do
   """
   def get_table_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTableVersions",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetTableVersions",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -836,11 +1151,16 @@ defmodule Baiji.Glue do
   """
   def update_crawler(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateCrawler",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateCrawler",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -849,11 +1169,16 @@ defmodule Baiji.Glue do
   """
   def delete_dev_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDevEndpoint",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDevEndpoint",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -862,11 +1187,16 @@ defmodule Baiji.Glue do
   """
   def update_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdatePartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdatePartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -875,11 +1205,16 @@ defmodule Baiji.Glue do
   """
   def update_dev_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDevEndpoint",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDevEndpoint",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -888,11 +1223,16 @@ defmodule Baiji.Glue do
   """
   def create_trigger(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTrigger",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTrigger",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -901,11 +1241,16 @@ defmodule Baiji.Glue do
   """
   def create_user_defined_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUserDefinedFunction",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateUserDefinedFunction",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -914,11 +1259,16 @@ defmodule Baiji.Glue do
   """
   def get_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetConnection",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetConnection",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -927,11 +1277,16 @@ defmodule Baiji.Glue do
   """
   def get_databases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDatabases",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDatabases",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -940,11 +1295,16 @@ defmodule Baiji.Glue do
   """
   def batch_create_partition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchCreatePartition",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchCreatePartition",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -953,11 +1313,16 @@ defmodule Baiji.Glue do
   """
   def get_crawler(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCrawler",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCrawler",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -967,11 +1332,16 @@ defmodule Baiji.Glue do
   """
   def delete_crawler(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCrawler",
-      type:     :json,
-      method:   :post
+      service:        "AWS Glue",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteCrawler",
+      
+      target_prefix:  "AWSGlue",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

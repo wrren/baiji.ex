@@ -36,11 +36,16 @@ defmodule Baiji.DataPipeline do
   """
   def activate_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ActivatePipeline",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ActivatePipeline",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -49,11 +54,16 @@ defmodule Baiji.DataPipeline do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddTags",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddTags",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -63,11 +73,16 @@ defmodule Baiji.DataPipeline do
   """
   def create_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePipeline",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePipeline",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -81,11 +96,16 @@ defmodule Baiji.DataPipeline do
   """
   def deactivate_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeactivatePipeline",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeactivatePipeline",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -101,11 +121,16 @@ defmodule Baiji.DataPipeline do
   """
   def delete_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePipeline",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePipeline",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -116,11 +141,16 @@ defmodule Baiji.DataPipeline do
   """
   def describe_objects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeObjects",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeObjects",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -137,11 +167,16 @@ defmodule Baiji.DataPipeline do
   """
   def describe_pipelines(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribePipelines",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribePipelines",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -152,11 +187,16 @@ defmodule Baiji.DataPipeline do
   """
   def evaluate_expression(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EvaluateExpression",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EvaluateExpression",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -167,11 +207,16 @@ defmodule Baiji.DataPipeline do
   """
   def get_pipeline_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPipelineDefinition",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPipelineDefinition",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -181,11 +226,16 @@ defmodule Baiji.DataPipeline do
   """
   def list_pipelines(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPipelines",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPipelines",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -208,11 +258,16 @@ defmodule Baiji.DataPipeline do
   """
   def poll_for_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PollForTask",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PollForTask",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -233,11 +288,16 @@ defmodule Baiji.DataPipeline do
   """
   def put_pipeline_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutPipelineDefinition",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutPipelineDefinition",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -247,11 +307,16 @@ defmodule Baiji.DataPipeline do
   """
   def query_objects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "QueryObjects",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "QueryObjects",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -260,11 +325,16 @@ defmodule Baiji.DataPipeline do
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveTags",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveTags",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -284,11 +354,16 @@ defmodule Baiji.DataPipeline do
   """
   def report_task_progress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReportTaskProgress",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReportTaskProgress",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -301,11 +376,16 @@ defmodule Baiji.DataPipeline do
   """
   def report_task_runner_heartbeat(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ReportTaskRunnerHeartbeat",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ReportTaskRunnerHeartbeat",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -319,11 +399,16 @@ defmodule Baiji.DataPipeline do
   """
   def set_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetStatus",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetStatus",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -336,11 +421,16 @@ defmodule Baiji.DataPipeline do
   """
   def set_task_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SetTaskStatus",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SetTaskStatus",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -350,11 +440,16 @@ defmodule Baiji.DataPipeline do
   """
   def validate_pipeline_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ValidatePipelineDefinition",
-      type:     :json,
-      method:   :post
+      service:        "datapipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ValidatePipelineDefinition",
+      
+      target_prefix:  "DataPipeline",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

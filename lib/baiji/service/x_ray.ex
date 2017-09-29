@@ -11,11 +11,14 @@ defmodule Baiji.XRay do
   """
   def batch_get_traces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetTraces",
-      type:     :rest_json,
-      method:   :post
+      service:        "xray",
+      endpoint:       "/Traces",
+      input:          input,
+      options:        options,
+      action:         "BatchGetTraces",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -28,11 +31,14 @@ defmodule Baiji.XRay do
   """
   def get_service_graph(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetServiceGraph",
-      type:     :rest_json,
-      method:   :post
+      service:        "xray",
+      endpoint:       "/ServiceGraph",
+      input:          input,
+      options:        options,
+      action:         "GetServiceGraph",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -41,11 +47,14 @@ defmodule Baiji.XRay do
   """
   def get_trace_graph(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTraceGraph",
-      type:     :rest_json,
-      method:   :post
+      service:        "xray",
+      endpoint:       "/TraceGraph",
+      input:          input,
+      options:        options,
+      action:         "GetTraceGraph",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -73,11 +82,14 @@ defmodule Baiji.XRay do
   """
   def get_trace_summaries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTraceSummaries",
-      type:     :rest_json,
-      method:   :post
+      service:        "xray",
+      endpoint:       "/TraceSummaries",
+      input:          input,
+      options:        options,
+      action:         "GetTraceSummaries",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -86,11 +98,14 @@ defmodule Baiji.XRay do
   """
   def put_telemetry_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutTelemetryRecords",
-      type:     :rest_json,
-      method:   :post
+      service:        "xray",
+      endpoint:       "/TelemetryRecords",
+      input:          input,
+      options:        options,
+      action:         "PutTelemetryRecords",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -148,11 +163,14 @@ defmodule Baiji.XRay do
   """
   def put_trace_segments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutTraceSegments",
-      type:     :rest_json,
-      method:   :post
+      service:        "xray",
+      endpoint:       "/TraceSegments",
+      input:          input,
+      options:        options,
+      action:         "PutTraceSegments",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   

@@ -39,11 +39,14 @@ defmodule Baiji.Workdocs do
   """
   def remove_all_resource_permissions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveAllResourcePermissions",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/permissions",
+      input:          input,
+      options:        options,
+      action:         "RemoveAllResourcePermissions",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -54,11 +57,14 @@ defmodule Baiji.Workdocs do
   """
   def add_resource_permissions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddResourcePermissions",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/permissions",
+      input:          input,
+      options:        options,
+      action:         "AddResourcePermissions",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -67,11 +73,14 @@ defmodule Baiji.Workdocs do
   """
   def create_folder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFolder",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders",
+      input:          input,
+      options:        options,
+      action:         "CreateFolder",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -85,11 +94,14 @@ defmodule Baiji.Workdocs do
   """
   def create_notification_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNotificationSubscription",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/organizations/{OrganizationId}/subscriptions",
+      input:          input,
+      options:        options,
+      action:         "CreateNotificationSubscription",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -98,11 +110,14 @@ defmodule Baiji.Workdocs do
   """
   def activate_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ActivateUser",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/users/{UserId}/activation",
+      input:          input,
+      options:        options,
+      action:         "ActivateUser",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -111,11 +126,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_labels(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteLabels",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/labels",
+      input:          input,
+      options:        options,
+      action:         "DeleteLabels",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -124,11 +142,14 @@ defmodule Baiji.Workdocs do
   """
   def get_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocument",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}",
+      input:          input,
+      options:        options,
+      action:         "GetDocument",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -137,11 +158,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_folder_contents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFolderContents",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders/{FolderId}/contents",
+      input:          input,
+      options:        options,
+      action:         "DeleteFolderContents",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -150,11 +174,14 @@ defmodule Baiji.Workdocs do
   """
   def create_comment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateComment",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions/{VersionId}/comment",
+      input:          input,
+      options:        options,
+      action:         "CreateComment",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -166,11 +193,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_root_folders(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeRootFolders",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/me/root",
+      input:          input,
+      options:        options,
+      action:         "DescribeRootFolders",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -179,11 +209,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_comment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteComment",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions/{VersionId}/comment/{CommentId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteComment",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -193,11 +226,14 @@ defmodule Baiji.Workdocs do
   """
   def update_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateUser",
-      type:     :json,
-      method:   :patch
+      service:        "workdocs",
+      endpoint:       "/api/v1/users/{UserId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateUser",
+      
+      type:           :json,
+      method:         :patch
     }
   end
   
@@ -206,11 +242,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_activities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeActivities",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/activities",
+      input:          input,
+      options:        options,
+      action:         "DescribeActivities",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -224,11 +263,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_users(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeUsers",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/users",
+      input:          input,
+      options:        options,
+      action:         "DescribeUsers",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -238,11 +280,14 @@ defmodule Baiji.Workdocs do
   """
   def update_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDocument",
-      type:     :json,
-      method:   :patch
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDocument",
+      
+      type:           :json,
+      method:         :patch
     }
   end
   
@@ -251,11 +296,14 @@ defmodule Baiji.Workdocs do
   """
   def get_document_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocumentVersion",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions/{VersionId}",
+      input:          input,
+      options:        options,
+      action:         "GetDocumentVersion",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -264,11 +312,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDocument",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteDocument",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -278,11 +329,14 @@ defmodule Baiji.Workdocs do
   """
   def remove_resource_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveResourcePermission",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/permissions/{PrincipalId}",
+      input:          input,
+      options:        options,
+      action:         "RemoveResourcePermission",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -292,11 +346,14 @@ defmodule Baiji.Workdocs do
   """
   def create_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateUser",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/users",
+      input:          input,
+      options:        options,
+      action:         "CreateUser",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -305,11 +362,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_resource_permissions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeResourcePermissions",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/permissions",
+      input:          input,
+      options:        options,
+      action:         "DescribeResourcePermissions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -326,11 +386,14 @@ defmodule Baiji.Workdocs do
   """
   def initiate_document_version_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "InitiateDocumentVersionUpload",
-      type:     :json,
-      method:   :post
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents",
+      input:          input,
+      options:        options,
+      action:         "InitiateDocumentVersionUpload",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -339,11 +402,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_comments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeComments",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions/{VersionId}/comments",
+      input:          input,
+      options:        options,
+      action:         "DescribeComments",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -355,11 +421,14 @@ defmodule Baiji.Workdocs do
   """
   def abort_document_version_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AbortDocumentVersionUpload",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions/{VersionId}",
+      input:          input,
+      options:        options,
+      action:         "AbortDocumentVersionUpload",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -374,11 +443,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_folder_contents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeFolderContents",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders/{FolderId}/contents",
+      input:          input,
+      options:        options,
+      action:         "DescribeFolderContents",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -387,11 +459,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_notification_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNotificationSubscription",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/organizations/{OrganizationId}/subscriptions/{SubscriptionId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteNotificationSubscription",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -406,11 +481,14 @@ defmodule Baiji.Workdocs do
   """
   def get_folder_path(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFolderPath",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders/{FolderId}/path",
+      input:          input,
+      options:        options,
+      action:         "GetFolderPath",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -419,11 +497,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteUser",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/users/{UserId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteUser",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -434,11 +515,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_document_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDocumentVersions",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions",
+      input:          input,
+      options:        options,
+      action:         "DescribeDocumentVersions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -447,11 +531,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_custom_metadata(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCustomMetadata",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/customMetadata",
+      input:          input,
+      options:        options,
+      action:         "DeleteCustomMetadata",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -460,11 +547,14 @@ defmodule Baiji.Workdocs do
   """
   def describe_notification_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeNotificationSubscriptions",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/organizations/{OrganizationId}/subscriptions",
+      input:          input,
+      options:        options,
+      action:         "DescribeNotificationSubscriptions",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -477,11 +567,14 @@ defmodule Baiji.Workdocs do
   """
   def update_document_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDocumentVersion",
-      type:     :json,
-      method:   :patch
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/versions/{VersionId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateDocumentVersion",
+      
+      type:           :json,
+      method:         :patch
     }
   end
   
@@ -491,11 +584,14 @@ defmodule Baiji.Workdocs do
   """
   def update_folder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateFolder",
-      type:     :json,
-      method:   :patch
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders/{FolderId}",
+      input:          input,
+      options:        options,
+      action:         "UpdateFolder",
+      
+      type:           :json,
+      method:         :patch
     }
   end
   
@@ -504,11 +600,14 @@ defmodule Baiji.Workdocs do
   """
   def delete_folder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFolder",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders/{FolderId}",
+      input:          input,
+      options:        options,
+      action:         "DeleteFolder",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -518,11 +617,14 @@ defmodule Baiji.Workdocs do
   """
   def deactivate_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeactivateUser",
-      type:     :json,
-      method:   :delete
+      service:        "workdocs",
+      endpoint:       "/api/v1/users/{UserId}/activation",
+      input:          input,
+      options:        options,
+      action:         "DeactivateUser",
+      
+      type:           :json,
+      method:         :delete
     }
   end
   
@@ -532,11 +634,14 @@ defmodule Baiji.Workdocs do
   """
   def create_labels(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateLabels",
-      type:     :json,
-      method:   :put
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/labels",
+      input:          input,
+      options:        options,
+      action:         "CreateLabels",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -546,11 +651,14 @@ defmodule Baiji.Workdocs do
   """
   def create_custom_metadata(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCustomMetadata",
-      type:     :json,
-      method:   :put
+      service:        "workdocs",
+      endpoint:       "/api/v1/resources/{ResourceId}/customMetadata",
+      input:          input,
+      options:        options,
+      action:         "CreateCustomMetadata",
+      
+      type:           :json,
+      method:         :put
     }
   end
   
@@ -561,11 +669,14 @@ defmodule Baiji.Workdocs do
   """
   def get_current_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCurrentUser",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/me",
+      input:          input,
+      options:        options,
+      action:         "GetCurrentUser",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -580,11 +691,14 @@ defmodule Baiji.Workdocs do
   """
   def get_document_path(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDocumentPath",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/documents/{DocumentId}/path",
+      input:          input,
+      options:        options,
+      action:         "GetDocumentPath",
+      
+      type:           :json,
+      method:         :get
     }
   end
   
@@ -593,11 +707,14 @@ defmodule Baiji.Workdocs do
   """
   def get_folder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFolder",
-      type:     :json,
-      method:   :get
+      service:        "workdocs",
+      endpoint:       "/api/v1/folders/{FolderId}",
+      input:          input,
+      options:        options,
+      action:         "GetFolder",
+      
+      type:           :json,
+      method:         :get
     }
   end
   

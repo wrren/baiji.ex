@@ -29,11 +29,16 @@ defmodule Baiji.MTurk do
   """
   def approve_assignment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ApproveAssignment",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ApproveAssignment",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -46,11 +51,16 @@ defmodule Baiji.MTurk do
   """
   def disassociate_qualification_from_worker(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateQualificationFromWorker",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateQualificationFromWorker",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -84,11 +94,16 @@ defmodule Baiji.MTurk do
   """
   def create_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -101,11 +116,16 @@ defmodule Baiji.MTurk do
   """
   def notify_workers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "NotifyWorkers",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "NotifyWorkers",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -117,11 +137,16 @@ defmodule Baiji.MTurk do
   """
   def list_qualification_requests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListQualificationRequests",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListQualificationRequests",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -133,11 +158,16 @@ defmodule Baiji.MTurk do
   """
   def list_qualification_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListQualificationTypes",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListQualificationTypes",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -163,11 +193,16 @@ defmodule Baiji.MTurk do
   """
   def create_h_i_t_with_h_i_t_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateHITWithHITType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateHITWithHITType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -192,11 +227,16 @@ defmodule Baiji.MTurk do
   """
   def associate_qualification_with_worker(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateQualificationWithWorker",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateQualificationWithWorker",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -206,11 +246,16 @@ defmodule Baiji.MTurk do
   """
   def get_account_balance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAccountBalance",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAccountBalance",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -220,11 +265,16 @@ defmodule Baiji.MTurk do
   """
   def list_worker_blocks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListWorkerBlocks",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListWorkerBlocks",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -234,11 +284,16 @@ defmodule Baiji.MTurk do
   """
   def list_workers_with_qualification_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListWorkersWithQualificationType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListWorkersWithQualificationType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -252,11 +307,16 @@ defmodule Baiji.MTurk do
   """
   def list_review_policy_results_for_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListReviewPolicyResultsForHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListReviewPolicyResultsForHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -265,11 +325,16 @@ defmodule Baiji.MTurk do
   """
   def get_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -288,11 +353,16 @@ defmodule Baiji.MTurk do
   """
   def reject_assignment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RejectAssignment",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RejectAssignment",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -302,11 +372,16 @@ defmodule Baiji.MTurk do
   """
   def list_bonus_payments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBonusPayments",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListBonusPayments",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -317,11 +392,16 @@ defmodule Baiji.MTurk do
   """
   def create_worker_block(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateWorkerBlock",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateWorkerBlock",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -351,11 +431,16 @@ defmodule Baiji.MTurk do
   """
   def delete_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -366,11 +451,16 @@ defmodule Baiji.MTurk do
   """
   def update_h_i_t_review_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateHITReviewStatus",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateHITReviewStatus",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -380,11 +470,16 @@ defmodule Baiji.MTurk do
   """
   def get_qualification_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQualificationType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetQualificationType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -394,11 +489,16 @@ defmodule Baiji.MTurk do
   """
   def get_assignment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetAssignment",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetAssignment",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -415,11 +515,16 @@ defmodule Baiji.MTurk do
   """
   def send_bonus(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendBonus",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendBonus",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -431,11 +536,16 @@ defmodule Baiji.MTurk do
   """
   def create_h_i_t_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateHITType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateHITType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -477,11 +587,16 @@ defmodule Baiji.MTurk do
   """
   def update_qualification_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateQualificationType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateQualificationType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -494,11 +609,16 @@ defmodule Baiji.MTurk do
   """
   def reject_qualification_request(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RejectQualificationRequest",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RejectQualificationRequest",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -515,11 +635,16 @@ defmodule Baiji.MTurk do
   """
   def get_qualification_score(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQualificationScore",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetQualificationScore",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -531,11 +656,16 @@ defmodule Baiji.MTurk do
   """
   def list_h_i_ts_for_qualification_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListHITsForQualificationType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListHITsForQualificationType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -560,11 +690,16 @@ defmodule Baiji.MTurk do
   """
   def create_additional_assignments_for_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAdditionalAssignmentsForHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAdditionalAssignmentsForHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -587,11 +722,16 @@ defmodule Baiji.MTurk do
   """
   def delete_qualification_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteQualificationType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteQualificationType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -605,11 +745,16 @@ defmodule Baiji.MTurk do
   """
   def delete_worker_block(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteWorkerBlock",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteWorkerBlock",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -620,11 +765,16 @@ defmodule Baiji.MTurk do
   """
   def list_h_i_ts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListHITs",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListHITs",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -653,11 +803,16 @@ defmodule Baiji.MTurk do
   """
   def list_assignments_for_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssignmentsForHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssignmentsForHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -673,11 +828,16 @@ defmodule Baiji.MTurk do
   """
   def accept_qualification_request(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AcceptQualificationRequest",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AcceptQualificationRequest",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -688,11 +848,16 @@ defmodule Baiji.MTurk do
   """
   def update_expiration_for_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateExpirationForHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateExpirationForHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -703,11 +868,16 @@ defmodule Baiji.MTurk do
   """
   def list_reviewable_h_i_ts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListReviewableHITs",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListReviewableHITs",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -722,11 +892,16 @@ defmodule Baiji.MTurk do
   """
   def get_file_upload_u_r_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFileUploadURL",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetFileUploadURL",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -745,11 +920,16 @@ defmodule Baiji.MTurk do
   """
   def update_notification_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateNotificationSettings",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateNotificationSettings",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -759,11 +939,16 @@ defmodule Baiji.MTurk do
   """
   def create_qualification_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateQualificationType",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateQualificationType",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -775,11 +960,16 @@ defmodule Baiji.MTurk do
   """
   def update_h_i_t_type_of_h_i_t(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateHITTypeOfHIT",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateHITTypeOfHIT",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -793,11 +983,16 @@ defmodule Baiji.MTurk do
   """
   def send_test_event_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SendTestEventNotification",
-      type:     :json,
-      method:   :post
+      service:        "mturk-requester",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SendTestEventNotification",
+      
+      target_prefix:  "MTurkRequesterServiceV20170117",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

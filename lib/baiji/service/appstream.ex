@@ -10,11 +10,16 @@ defmodule Baiji.Appstream do
   """
   def associate_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssociateFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssociateFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -23,11 +28,16 @@ defmodule Baiji.Appstream do
   """
   def create_directory_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDirectoryConfig",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDirectoryConfig",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -36,11 +46,16 @@ defmodule Baiji.Appstream do
   """
   def create_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -49,11 +64,16 @@ defmodule Baiji.Appstream do
   """
   def create_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStack",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateStack",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -64,11 +84,16 @@ defmodule Baiji.Appstream do
   """
   def create_streaming_u_r_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateStreamingURL",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateStreamingURL",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -77,11 +102,16 @@ defmodule Baiji.Appstream do
   """
   def delete_directory_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDirectoryConfig",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDirectoryConfig",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -90,11 +120,16 @@ defmodule Baiji.Appstream do
   """
   def delete_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -104,11 +139,16 @@ defmodule Baiji.Appstream do
   """
   def delete_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteStack",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteStack",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -117,11 +157,16 @@ defmodule Baiji.Appstream do
   """
   def describe_directory_configs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDirectoryConfigs",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDirectoryConfigs",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -131,11 +176,16 @@ defmodule Baiji.Appstream do
   """
   def describe_fleets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeFleets",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeFleets",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -146,11 +196,16 @@ defmodule Baiji.Appstream do
   """
   def describe_images(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeImages",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeImages",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -164,11 +219,16 @@ defmodule Baiji.Appstream do
   """
   def describe_sessions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSessions",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSessions",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -180,11 +240,16 @@ defmodule Baiji.Appstream do
   """
   def describe_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeStacks",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeStacks",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -193,11 +258,16 @@ defmodule Baiji.Appstream do
   """
   def disassociate_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisassociateFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisassociateFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -206,11 +276,16 @@ defmodule Baiji.Appstream do
   """
   def expire_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ExpireSession",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ExpireSession",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -219,11 +294,16 @@ defmodule Baiji.Appstream do
   """
   def list_associated_fleets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssociatedFleets",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssociatedFleets",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -232,11 +312,16 @@ defmodule Baiji.Appstream do
   """
   def list_associated_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAssociatedStacks",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAssociatedStacks",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -245,11 +330,16 @@ defmodule Baiji.Appstream do
   """
   def start_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -258,11 +348,16 @@ defmodule Baiji.Appstream do
   """
   def stop_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -271,11 +366,16 @@ defmodule Baiji.Appstream do
   """
   def update_directory_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateDirectoryConfig",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateDirectoryConfig",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -287,11 +387,16 @@ defmodule Baiji.Appstream do
   """
   def update_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateFleet",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateFleet",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -300,11 +405,16 @@ defmodule Baiji.Appstream do
   """
   def update_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateStack",
-      type:     :json,
-      method:   :post
+      service:        "appstream",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateStack",
+      
+      target_prefix:  "PhotonAdminProxyService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

@@ -59,11 +59,16 @@ defmodule Baiji.Codebuild do
   """
   def batch_delete_builds(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchDeleteBuilds",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchDeleteBuilds",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -72,11 +77,16 @@ defmodule Baiji.Codebuild do
   """
   def batch_get_builds(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetBuilds",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetBuilds",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -85,11 +95,16 @@ defmodule Baiji.Codebuild do
   """
   def batch_get_projects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetProjects",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetProjects",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -98,11 +113,16 @@ defmodule Baiji.Codebuild do
   """
   def create_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateProject",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateProject",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -111,11 +131,16 @@ defmodule Baiji.Codebuild do
   """
   def delete_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteProject",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteProject",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -124,11 +149,16 @@ defmodule Baiji.Codebuild do
   """
   def list_builds(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBuilds",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListBuilds",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -138,11 +168,16 @@ defmodule Baiji.Codebuild do
   """
   def list_builds_for_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListBuildsForProject",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListBuildsForProject",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -151,11 +186,16 @@ defmodule Baiji.Codebuild do
   """
   def list_curated_environment_images(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListCuratedEnvironmentImages",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListCuratedEnvironmentImages",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -165,11 +205,16 @@ defmodule Baiji.Codebuild do
   """
   def list_projects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListProjects",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListProjects",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -178,11 +223,16 @@ defmodule Baiji.Codebuild do
   """
   def start_build(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartBuild",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartBuild",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -191,11 +241,16 @@ defmodule Baiji.Codebuild do
   """
   def stop_build(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopBuild",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopBuild",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -204,11 +259,16 @@ defmodule Baiji.Codebuild do
   """
   def update_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateProject",
-      type:     :json,
-      method:   :post
+      service:        "codebuild",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateProject",
+      
+      target_prefix:  "CodeBuild_20161006",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

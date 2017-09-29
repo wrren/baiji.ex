@@ -70,11 +70,14 @@ defmodule Baiji.LexRuntimeService do
   """
   def post_content(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PostContent",
-      type:     :json,
-      method:   :post
+      service:        "runtime.lex",
+      endpoint:       "/bot/{botName}/alias/{botAlias}/user/{userId}/content",
+      input:          input,
+      options:        options,
+      action:         "PostContent",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -135,11 +138,14 @@ defmodule Baiji.LexRuntimeService do
   """
   def post_text(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PostText",
-      type:     :json,
-      method:   :post
+      service:        "runtime.lex",
+      endpoint:       "/bot/{botName}/alias/{botAlias}/user/{userId}/text",
+      input:          input,
+      options:        options,
+      action:         "PostText",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

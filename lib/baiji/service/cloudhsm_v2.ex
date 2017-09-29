@@ -10,11 +10,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def create_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCluster",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCluster",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -24,11 +29,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def create_hsm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateHsm",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateHsm",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -40,11 +50,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def delete_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCluster",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteCluster",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -56,11 +71,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def delete_hsm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteHsm",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteHsm",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -76,11 +96,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def describe_backups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeBackups",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeBackups",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -96,11 +121,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def describe_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeClusters",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeClusters",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -113,11 +143,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def initialize_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "InitializeCluster",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "InitializeCluster",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -133,11 +168,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def list_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTags",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTags",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -146,11 +186,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TagResource",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "TagResource",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -159,11 +204,16 @@ defmodule Baiji.CloudHSMV2 do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UntagResource",
-      type:     :json,
-      method:   :post
+      service:        "cloudhsmv2",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UntagResource",
+      
+      target_prefix:  "BaldrApiService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

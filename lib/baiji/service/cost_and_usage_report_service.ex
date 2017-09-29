@@ -8,11 +8,16 @@ defmodule Baiji.CostAndUsageReportService do
   """
   def delete_report_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteReportDefinition",
-      type:     :json,
-      method:   :post
+      service:        "cur",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteReportDefinition",
+      
+      target_prefix:  "AWSOrigamiServiceGatewayService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -21,11 +26,16 @@ defmodule Baiji.CostAndUsageReportService do
   """
   def describe_report_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeReportDefinitions",
-      type:     :json,
-      method:   :post
+      service:        "cur",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeReportDefinitions",
+      
+      target_prefix:  "AWSOrigamiServiceGatewayService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -34,11 +44,16 @@ defmodule Baiji.CostAndUsageReportService do
   """
   def put_report_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutReportDefinition",
-      type:     :json,
-      method:   :post
+      service:        "cur",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutReportDefinition",
+      
+      target_prefix:  "AWSOrigamiServiceGatewayService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

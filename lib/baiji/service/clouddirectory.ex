@@ -17,11 +17,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_facet_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListFacetAttributes",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/facet/attributes",
+      input:          input,
+      options:        options,
+      action:         "ListFacetAttributes",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -45,11 +48,14 @@ defmodule Baiji.Clouddirectory do
   """
   def create_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSchema",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/create",
+      input:          input,
+      options:        options,
+      action:         "CreateSchema",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -60,11 +66,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_typed_link_facet_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTypedLinkFacetAttributes",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/facet/attributes",
+      input:          input,
+      options:        options,
+      action:         "ListTypedLinkFacetAttributes",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -73,11 +82,14 @@ defmodule Baiji.Clouddirectory do
   """
   def batch_read(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchRead",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/batchread",
+      input:          input,
+      options:        options,
+      action:         "BatchRead",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -86,11 +98,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_policy_attachments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPolicyAttachments",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/policy/attachment",
+      input:          input,
+      options:        options,
+      action:         "ListPolicyAttachments",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -99,11 +114,14 @@ defmodule Baiji.Clouddirectory do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "TagResource",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/tags/add",
+      input:          input,
+      options:        options,
+      action:         "TagResource",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -113,11 +131,14 @@ defmodule Baiji.Clouddirectory do
   """
   def create_typed_link_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTypedLinkFacet",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/facet/create",
+      input:          input,
+      options:        options,
+      action:         "CreateTypedLinkFacet",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -127,11 +148,14 @@ defmodule Baiji.Clouddirectory do
   """
   def detach_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachObject",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/detach",
+      input:          input,
+      options:        options,
+      action:         "DetachObject",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -142,11 +166,14 @@ defmodule Baiji.Clouddirectory do
   """
   def detach_typed_link(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachTypedLink",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/detach",
+      input:          input,
+      options:        options,
+      action:         "DetachTypedLink",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -157,11 +184,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_typed_link_facet_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTypedLinkFacetNames",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/facet/list",
+      input:          input,
+      options:        options,
+      action:         "ListTypedLinkFacetNames",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -170,11 +200,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_object_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectPolicies",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/policy",
+      input:          input,
+      options:        options,
+      action:         "ListObjectPolicies",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -183,11 +216,14 @@ defmodule Baiji.Clouddirectory do
   """
   def get_object_information(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetObjectInformation",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/information",
+      input:          input,
+      options:        options,
+      action:         "GetObjectInformation",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -198,11 +234,14 @@ defmodule Baiji.Clouddirectory do
   """
   def get_typed_link_facet_information(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetTypedLinkFacetInformation",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/facet/get",
+      input:          input,
+      options:        options,
+      action:         "GetTypedLinkFacetInformation",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -213,11 +252,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForResource",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/tags",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForResource",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -234,11 +276,14 @@ defmodule Baiji.Clouddirectory do
   """
   def update_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateFacet",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/facet",
+      input:          input,
+      options:        options,
+      action:         "UpdateFacet",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -248,11 +293,14 @@ defmodule Baiji.Clouddirectory do
   """
   def create_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDirectory",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/directory/create",
+      input:          input,
+      options:        options,
+      action:         "CreateDirectory",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -262,11 +310,14 @@ defmodule Baiji.Clouddirectory do
   """
   def create_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateFacet",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/facet/create",
+      input:          input,
+      options:        options,
+      action:         "CreateFacet",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -275,11 +326,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_object_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectAttributes",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/attributes",
+      input:          input,
+      options:        options,
+      action:         "ListObjectAttributes",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -288,11 +342,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_facet_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListFacetNames",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/facet/list",
+      input:          input,
+      options:        options,
+      action:         "ListFacetNames",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -303,11 +360,14 @@ defmodule Baiji.Clouddirectory do
   """
   def disable_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableDirectory",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/directory/disable",
+      input:          input,
+      options:        options,
+      action:         "DisableDirectory",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -317,11 +377,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_object_parents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectParents",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/parent",
+      input:          input,
+      options:        options,
+      action:         "ListObjectParents",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -330,11 +393,14 @@ defmodule Baiji.Clouddirectory do
   """
   def update_object_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateObjectAttributes",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/update",
+      input:          input,
+      options:        options,
+      action:         "UpdateObjectAttributes",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -343,11 +409,14 @@ defmodule Baiji.Clouddirectory do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UntagResource",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/tags/remove",
+      input:          input,
+      options:        options,
+      action:         "UntagResource",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -356,11 +425,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_applied_schema_arns(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAppliedSchemaArns",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/applied",
+      input:          input,
+      options:        options,
+      action:         "ListAppliedSchemaArns",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -370,11 +442,14 @@ defmodule Baiji.Clouddirectory do
   """
   def apply_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ApplySchema",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/apply",
+      input:          input,
+      options:        options,
+      action:         "ApplySchema",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -385,11 +460,14 @@ defmodule Baiji.Clouddirectory do
   """
   def delete_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteFacet",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/facet/delete",
+      input:          input,
+      options:        options,
+      action:         "DeleteFacet",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -400,11 +478,14 @@ defmodule Baiji.Clouddirectory do
   """
   def delete_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDirectory",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/directory",
+      input:          input,
+      options:        options,
+      action:         "DeleteDirectory",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -413,11 +494,14 @@ defmodule Baiji.Clouddirectory do
   """
   def add_facet_to_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddFacetToObject",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/facets",
+      input:          input,
+      options:        options,
+      action:         "AddFacetToObject",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -426,11 +510,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_index(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIndex",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/index/targets",
+      input:          input,
+      options:        options,
+      action:         "ListIndex",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -441,11 +528,14 @@ defmodule Baiji.Clouddirectory do
   """
   def create_index(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateIndex",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/index",
+      input:          input,
+      options:        options,
+      action:         "CreateIndex",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -454,11 +544,14 @@ defmodule Baiji.Clouddirectory do
   """
   def detach_from_index(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachFromIndex",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/index/detach",
+      input:          input,
+      options:        options,
+      action:         "DetachFromIndex",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -468,11 +561,14 @@ defmodule Baiji.Clouddirectory do
   """
   def enable_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableDirectory",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/directory/enable",
+      input:          input,
+      options:        options,
+      action:         "EnableDirectory",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -481,11 +577,14 @@ defmodule Baiji.Clouddirectory do
   """
   def remove_facet_from_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveFacetFromObject",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/facets/delete",
+      input:          input,
+      options:        options,
+      action:         "RemoveFacetFromObject",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -497,11 +596,14 @@ defmodule Baiji.Clouddirectory do
   """
   def publish_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PublishSchema",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/publish",
+      input:          input,
+      options:        options,
+      action:         "PublishSchema",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -512,11 +614,14 @@ defmodule Baiji.Clouddirectory do
   """
   def get_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFacet",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/facet",
+      input:          input,
+      options:        options,
+      action:         "GetFacet",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -526,11 +631,14 @@ defmodule Baiji.Clouddirectory do
   """
   def delete_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteObject",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/delete",
+      input:          input,
+      options:        options,
+      action:         "DeleteObject",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -539,11 +647,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_attached_indices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAttachedIndices",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/indices",
+      input:          input,
+      options:        options,
+      action:         "ListAttachedIndices",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -559,11 +670,14 @@ defmodule Baiji.Clouddirectory do
   """
   def attach_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachObject",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/attach",
+      input:          input,
+      options:        options,
+      action:         "AttachObject",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -573,11 +687,14 @@ defmodule Baiji.Clouddirectory do
   """
   def update_typed_link_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateTypedLinkFacet",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/facet",
+      input:          input,
+      options:        options,
+      action:         "UpdateTypedLinkFacet",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -587,11 +704,14 @@ defmodule Baiji.Clouddirectory do
   """
   def update_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateSchema",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/update",
+      input:          input,
+      options:        options,
+      action:         "UpdateSchema",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -600,11 +720,14 @@ defmodule Baiji.Clouddirectory do
   """
   def detach_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DetachPolicy",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/policy/detach",
+      input:          input,
+      options:        options,
+      action:         "DetachPolicy",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -624,11 +747,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_object_parent_paths(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectParentPaths",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/parentpaths",
+      input:          input,
+      options:        options,
+      action:         "ListObjectParentPaths",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -639,11 +765,14 @@ defmodule Baiji.Clouddirectory do
   """
   def get_schema_as_json(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSchemaAsJson",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/json",
+      input:          input,
+      options:        options,
+      action:         "GetSchemaAsJson",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -655,11 +784,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_incoming_typed_links(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIncomingTypedLinks",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/incoming",
+      input:          input,
+      options:        options,
+      action:         "ListIncomingTypedLinks",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -672,11 +804,14 @@ defmodule Baiji.Clouddirectory do
   """
   def create_object(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateObject",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object",
+      input:          input,
+      options:        options,
+      action:         "CreateObject",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -685,11 +820,14 @@ defmodule Baiji.Clouddirectory do
   """
   def get_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDirectory",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/directory/get",
+      input:          input,
+      options:        options,
+      action:         "GetDirectory",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -699,11 +837,14 @@ defmodule Baiji.Clouddirectory do
   """
   def delete_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSchema",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema",
+      input:          input,
+      options:        options,
+      action:         "DeleteSchema",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -712,11 +853,14 @@ defmodule Baiji.Clouddirectory do
   """
   def attach_to_index(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachToIndex",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/index/attach",
+      input:          input,
+      options:        options,
+      action:         "AttachToIndex",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -726,11 +870,14 @@ defmodule Baiji.Clouddirectory do
   """
   def attach_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachPolicy",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/policy/attach",
+      input:          input,
+      options:        options,
+      action:         "AttachPolicy",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -741,11 +888,14 @@ defmodule Baiji.Clouddirectory do
   """
   def attach_typed_link(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AttachTypedLink",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/attach",
+      input:          input,
+      options:        options,
+      action:         "AttachTypedLink",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -755,11 +905,14 @@ defmodule Baiji.Clouddirectory do
   """
   def batch_write(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchWrite",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/batchwrite",
+      input:          input,
+      options:        options,
+      action:         "BatchWrite",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -769,11 +922,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_development_schema_arns(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDevelopmentSchemaArns",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/development",
+      input:          input,
+      options:        options,
+      action:         "ListDevelopmentSchemaArns",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -783,11 +939,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_object_children(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListObjectChildren",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/object/children",
+      input:          input,
+      options:        options,
+      action:         "ListObjectChildren",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -796,11 +955,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_directories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListDirectories",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/directory/list",
+      input:          input,
+      options:        options,
+      action:         "ListDirectories",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -812,11 +974,14 @@ defmodule Baiji.Clouddirectory do
   """
   def put_schema_from_json(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutSchemaFromJson",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/json",
+      input:          input,
+      options:        options,
+      action:         "PutSchemaFromJson",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -826,11 +991,14 @@ defmodule Baiji.Clouddirectory do
   """
   def delete_typed_link_facet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTypedLinkFacet",
-      type:     :rest_json,
-      method:   :put
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/facet/delete",
+      input:          input,
+      options:        options,
+      action:         "DeleteTypedLinkFacet",
+      
+      type:           :rest_json,
+      method:         :put
     }
   end
   
@@ -839,11 +1007,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_published_schema_arns(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPublishedSchemaArns",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/schema/published",
+      input:          input,
+      options:        options,
+      action:         "ListPublishedSchemaArns",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -855,11 +1026,14 @@ defmodule Baiji.Clouddirectory do
   """
   def list_outgoing_typed_links(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListOutgoingTypedLinks",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/typedlink/outgoing",
+      input:          input,
+      options:        options,
+      action:         "ListOutgoingTypedLinks",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   
@@ -875,11 +1049,14 @@ defmodule Baiji.Clouddirectory do
   """
   def lookup_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "LookupPolicy",
-      type:     :rest_json,
-      method:   :post
+      service:        "clouddirectory",
+      endpoint:       "/amazonclouddirectory/2017-01-11/policy/lookup",
+      input:          input,
+      options:        options,
+      action:         "LookupPolicy",
+      
+      type:           :rest_json,
+      method:         :post
     }
   end
   

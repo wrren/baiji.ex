@@ -156,11 +156,14 @@ defmodule Baiji.STS do
   """
   def assume_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssumeRole",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssumeRole",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -248,11 +251,14 @@ defmodule Baiji.STS do
   """
   def assume_role_with_s_a_m_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssumeRoleWithSAML",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssumeRoleWithSAML",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -363,11 +369,14 @@ defmodule Baiji.STS do
   """
   def assume_role_with_web_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AssumeRoleWithWebIdentity",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AssumeRoleWithWebIdentity",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -411,11 +420,14 @@ defmodule Baiji.STS do
   """
   def decode_authorization_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DecodeAuthorizationMessage",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DecodeAuthorizationMessage",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -425,11 +437,14 @@ defmodule Baiji.STS do
   """
   def get_caller_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetCallerIdentity",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetCallerIdentity",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -524,11 +539,14 @@ defmodule Baiji.STS do
   """
   def get_federation_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetFederationToken",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetFederationToken",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   
@@ -587,11 +605,14 @@ defmodule Baiji.STS do
   """
   def get_session_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSessionToken",
-      type:     :xml,
-      method:   :post
+      service:        "sts",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSessionToken",
+      
+      type:           :xml,
+      method:         :post
     }
   end
   

@@ -28,11 +28,16 @@ defmodule Baiji.DirectoryService do
   """
   def update_conditional_forwarder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateConditionalForwarder",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateConditionalForwarder",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -51,11 +56,16 @@ defmodule Baiji.DirectoryService do
   """
   def add_ip_routes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddIpRoutes",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddIpRoutes",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -69,11 +79,16 @@ defmodule Baiji.DirectoryService do
   """
   def register_event_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterEventTopic",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterEventTopic",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -82,11 +97,16 @@ defmodule Baiji.DirectoryService do
   """
   def describe_domain_controllers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDomainControllers",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDomainControllers",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -96,11 +116,16 @@ defmodule Baiji.DirectoryService do
   """
   def update_radius(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateRadius",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateRadius",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -109,11 +134,16 @@ defmodule Baiji.DirectoryService do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveTagsFromResource",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveTagsFromResource",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -122,11 +152,16 @@ defmodule Baiji.DirectoryService do
   """
   def list_ip_routes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListIpRoutes",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListIpRoutes",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -135,11 +170,16 @@ defmodule Baiji.DirectoryService do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTagsForResource",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTagsForResource",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -155,11 +195,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateDirectory",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateDirectory",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -175,11 +220,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_microsoft_a_d(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateMicrosoftAD",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateMicrosoftAD",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -188,11 +238,16 @@ defmodule Baiji.DirectoryService do
   """
   def deregister_event_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeregisterEventTopic",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeregisterEventTopic",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -205,11 +260,16 @@ defmodule Baiji.DirectoryService do
   """
   def cancel_schema_extension(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CancelSchemaExtension",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CancelSchemaExtension",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -225,11 +285,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateAlias",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateAlias",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -246,11 +311,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_trust(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateTrust",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateTrust",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -259,11 +329,16 @@ defmodule Baiji.DirectoryService do
   """
   def get_snapshot_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetSnapshotLimits",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetSnapshotLimits",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -273,11 +348,16 @@ defmodule Baiji.DirectoryService do
   """
   def delete_conditional_forwarder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteConditionalForwarder",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteConditionalForwarder",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -286,11 +366,16 @@ defmodule Baiji.DirectoryService do
   """
   def enable_sso(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableSso",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableSso",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -299,11 +384,16 @@ defmodule Baiji.DirectoryService do
   """
   def disable_sso(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableSso",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableSso",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -317,11 +407,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateSnapshot",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -337,11 +432,16 @@ defmodule Baiji.DirectoryService do
   """
   def delete_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteDirectory",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteDirectory",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -354,11 +454,16 @@ defmodule Baiji.DirectoryService do
   """
   def describe_event_topics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeEventTopics",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeEventTopics",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -372,11 +477,16 @@ defmodule Baiji.DirectoryService do
   """
   def update_number_of_domain_controllers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateNumberOfDomainControllers",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateNumberOfDomainControllers",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -386,11 +496,16 @@ defmodule Baiji.DirectoryService do
   """
   def enable_radius(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableRadius",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableRadius",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -412,11 +527,16 @@ defmodule Baiji.DirectoryService do
   """
   def describe_directories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeDirectories",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeDirectories",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -429,11 +549,16 @@ defmodule Baiji.DirectoryService do
   """
   def verify_trust(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "VerifyTrust",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "VerifyTrust",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -442,11 +567,16 @@ defmodule Baiji.DirectoryService do
   """
   def get_directory_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetDirectoryLimits",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetDirectoryLimits",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -456,11 +586,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_computer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateComputer",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateComputer",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -469,11 +604,16 @@ defmodule Baiji.DirectoryService do
   """
   def list_schema_extensions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListSchemaExtensions",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListSchemaExtensions",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -485,11 +625,16 @@ defmodule Baiji.DirectoryService do
   """
   def describe_conditional_forwarders(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeConditionalForwarders",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeConditionalForwarders",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -498,11 +643,16 @@ defmodule Baiji.DirectoryService do
   """
   def remove_ip_routes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RemoveIpRoutes",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RemoveIpRoutes",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -513,11 +663,16 @@ defmodule Baiji.DirectoryService do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AddTagsToResource",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AddTagsToResource",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -529,11 +684,16 @@ defmodule Baiji.DirectoryService do
   """
   def describe_trusts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTrusts",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTrusts",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -545,11 +705,16 @@ defmodule Baiji.DirectoryService do
   """
   def create_conditional_forwarder(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateConditionalForwarder",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateConditionalForwarder",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -559,11 +724,16 @@ defmodule Baiji.DirectoryService do
   """
   def delete_trust(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteTrust",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteTrust",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -572,11 +742,16 @@ defmodule Baiji.DirectoryService do
   """
   def delete_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteSnapshot",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -594,11 +769,16 @@ defmodule Baiji.DirectoryService do
   """
   def describe_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeSnapshots",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeSnapshots",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -616,11 +796,16 @@ defmodule Baiji.DirectoryService do
   """
   def restore_from_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RestoreFromSnapshot",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RestoreFromSnapshot",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -630,11 +815,16 @@ defmodule Baiji.DirectoryService do
   """
   def disable_radius(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableRadius",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableRadius",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -650,11 +840,16 @@ defmodule Baiji.DirectoryService do
   """
   def connect_directory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ConnectDirectory",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ConnectDirectory",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -663,11 +858,16 @@ defmodule Baiji.DirectoryService do
   """
   def start_schema_extension(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartSchemaExtension",
-      type:     :json,
-      method:   :post
+      service:        "ds",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartSchemaExtension",
+      
+      target_prefix:  "DirectoryService_20150416",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

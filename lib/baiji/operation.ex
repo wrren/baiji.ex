@@ -1,13 +1,19 @@
 defmodule Baiji.Operation do
-  defstruct input:              %{},        # Operation inputs (POST/PUT body, etc)
-            options:            [],         # Additional options applied to the operation
-            action:             nil,        # Action name "DescribeInstances", etc.
-            type:               :unknown,   # Action type (xml, json, rest-json, rest-xml, etc.)
-            method:             :unknown,   # HTTP Method
-            access_key_id:      nil,        # AWS access key ID
-            secret_access_key:  nil,        # AWS secret access key
-            security_token:     nil,        # AWS STS security token (optional)
-            assigns:            []
+  defstruct input:              %{},          # Operation inputs (POST/PUT body, etc)
+            options:            [],           # Additional options applied to the operation
+            action:             nil,          # Action name "DescribeInstances", etc.
+            service:            nil,          # AWS service name (ec2, apigateway, etc.)
+            type:               :unknown,     # Action type (xml, json, rest-json, rest-xml, etc.)
+            endpoint:           nil,          # API Endpoint to contact in order to execute the operation
+            target_prefix:      nil,          # API Target name prefix
+            method:             :unknown,     # HTTP Method
+            access_key_id:      nil,          # AWS access key ID
+            secret_access_key:  nil,          # AWS secret access key
+            security_token:     nil,          # AWS STS security token (optional)
+            region:             "us-east-1",  # Target AWS Region
+            assigns:            [],           # Variables assigned to the operation by intermediate stages
+            halted:             false,        # Indicates whether the operation has been halted due to an error
+            errors:             []            # Contains details of any errors that occurred while performing the operation
 
   @doc """
   Add a new key-value pair to the operation's assigns

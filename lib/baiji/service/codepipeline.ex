@@ -129,11 +129,16 @@ defmodule Baiji.CodePipeline do
   """
   def acknowledge_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AcknowledgeJob",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AcknowledgeJob",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -143,11 +148,16 @@ defmodule Baiji.CodePipeline do
   """
   def acknowledge_third_party_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "AcknowledgeThirdPartyJob",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "AcknowledgeThirdPartyJob",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -157,11 +167,16 @@ defmodule Baiji.CodePipeline do
   """
   def create_custom_action_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCustomActionType",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCustomActionType",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -170,11 +185,16 @@ defmodule Baiji.CodePipeline do
   """
   def create_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreatePipeline",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreatePipeline",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -189,11 +209,16 @@ defmodule Baiji.CodePipeline do
   """
   def delete_custom_action_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCustomActionType",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteCustomActionType",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -202,11 +227,16 @@ defmodule Baiji.CodePipeline do
   """
   def delete_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeletePipeline",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeletePipeline",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -216,11 +246,16 @@ defmodule Baiji.CodePipeline do
   """
   def disable_stage_transition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DisableStageTransition",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DisableStageTransition",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -229,11 +264,16 @@ defmodule Baiji.CodePipeline do
   """
   def enable_stage_transition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "EnableStageTransition",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "EnableStageTransition",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -250,11 +290,16 @@ defmodule Baiji.CodePipeline do
   """
   def get_job_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetJobDetails",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetJobDetails",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -266,11 +311,16 @@ defmodule Baiji.CodePipeline do
   """
   def get_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPipeline",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPipeline",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -281,11 +331,16 @@ defmodule Baiji.CodePipeline do
   """
   def get_pipeline_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPipelineExecution",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPipelineExecution",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -295,11 +350,16 @@ defmodule Baiji.CodePipeline do
   """
   def get_pipeline_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetPipelineState",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetPipelineState",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -317,11 +377,16 @@ defmodule Baiji.CodePipeline do
   """
   def get_third_party_job_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetThirdPartyJobDetails",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetThirdPartyJobDetails",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -331,11 +396,16 @@ defmodule Baiji.CodePipeline do
   """
   def list_action_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListActionTypes",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListActionTypes",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -344,11 +414,16 @@ defmodule Baiji.CodePipeline do
   """
   def list_pipeline_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPipelineExecutions",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPipelineExecutions",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -357,11 +432,16 @@ defmodule Baiji.CodePipeline do
   """
   def list_pipelines(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListPipelines",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListPipelines",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -378,11 +458,16 @@ defmodule Baiji.CodePipeline do
   """
   def poll_for_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PollForJobs",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PollForJobs",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -399,11 +484,16 @@ defmodule Baiji.CodePipeline do
   """
   def poll_for_third_party_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PollForThirdPartyJobs",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PollForThirdPartyJobs",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -412,11 +502,16 @@ defmodule Baiji.CodePipeline do
   """
   def put_action_revision(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutActionRevision",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutActionRevision",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -426,11 +521,16 @@ defmodule Baiji.CodePipeline do
   """
   def put_approval_result(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutApprovalResult",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutApprovalResult",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -440,11 +540,16 @@ defmodule Baiji.CodePipeline do
   """
   def put_job_failure_result(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutJobFailureResult",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutJobFailureResult",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -454,11 +559,16 @@ defmodule Baiji.CodePipeline do
   """
   def put_job_success_result(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutJobSuccessResult",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutJobSuccessResult",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -468,11 +578,16 @@ defmodule Baiji.CodePipeline do
   """
   def put_third_party_job_failure_result(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutThirdPartyJobFailureResult",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutThirdPartyJobFailureResult",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -482,11 +597,16 @@ defmodule Baiji.CodePipeline do
   """
   def put_third_party_job_success_result(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutThirdPartyJobSuccessResult",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutThirdPartyJobSuccessResult",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -496,11 +616,16 @@ defmodule Baiji.CodePipeline do
   """
   def retry_stage_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RetryStageExecution",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RetryStageExecution",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -510,11 +635,16 @@ defmodule Baiji.CodePipeline do
   """
   def start_pipeline_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartPipelineExecution",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartPipelineExecution",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -526,11 +656,16 @@ defmodule Baiji.CodePipeline do
   """
   def update_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdatePipeline",
-      type:     :json,
-      method:   :post
+      service:        "codepipeline",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdatePipeline",
+      
+      target_prefix:  "CodePipeline_20150709",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

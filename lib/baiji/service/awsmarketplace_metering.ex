@@ -43,11 +43,16 @@ defmodule Baiji.AwsmarketplaceMetering do
   """
   def batch_meter_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchMeterUsage",
-      type:     :json,
-      method:   :post
+      service:        "meteringmarketplace",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchMeterUsage",
+      
+      target_prefix:  "AWSMPMeteringService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -60,11 +65,16 @@ defmodule Baiji.AwsmarketplaceMetering do
   """
   def meter_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "MeterUsage",
-      type:     :json,
-      method:   :post
+      service:        "meteringmarketplace",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "MeterUsage",
+      
+      target_prefix:  "AWSMPMeteringService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -77,11 +87,16 @@ defmodule Baiji.AwsmarketplaceMetering do
   """
   def resolve_customer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ResolveCustomer",
-      type:     :json,
-      method:   :post
+      service:        "meteringmarketplace",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ResolveCustomer",
+      
+      target_prefix:  "AWSMPMeteringService",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

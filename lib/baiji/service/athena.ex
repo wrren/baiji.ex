@@ -27,11 +27,16 @@ defmodule Baiji.Athena do
   """
   def batch_get_named_query(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetNamedQuery",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetNamedQuery",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -44,11 +49,16 @@ defmodule Baiji.Athena do
   """
   def batch_get_query_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "BatchGetQueryExecution",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "BatchGetQueryExecution",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -61,11 +71,16 @@ defmodule Baiji.Athena do
   """
   def create_named_query(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateNamedQuery",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateNamedQuery",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -78,11 +93,16 @@ defmodule Baiji.Athena do
   """
   def delete_named_query(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteNamedQuery",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteNamedQuery",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -91,11 +111,16 @@ defmodule Baiji.Athena do
   """
   def get_named_query(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetNamedQuery",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetNamedQuery",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -105,11 +130,16 @@ defmodule Baiji.Athena do
   """
   def get_query_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQueryExecution",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetQueryExecution",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -120,11 +150,16 @@ defmodule Baiji.Athena do
   """
   def get_query_results(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "GetQueryResults",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "GetQueryResults",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -137,11 +172,16 @@ defmodule Baiji.Athena do
   """
   def list_named_queries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListNamedQueries",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListNamedQueries",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -154,11 +194,16 @@ defmodule Baiji.Athena do
   """
   def list_query_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListQueryExecutions",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListQueryExecutions",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -171,11 +216,16 @@ defmodule Baiji.Athena do
   """
   def start_query_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartQueryExecution",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartQueryExecution",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -188,11 +238,16 @@ defmodule Baiji.Athena do
   """
   def stop_query_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopQueryExecution",
-      type:     :json,
-      method:   :post
+      service:        "athena",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopQueryExecution",
+      
+      target_prefix:  "AmazonAthena",
+      
+      type:           :json,
+      method:         :post
     }
   end
   

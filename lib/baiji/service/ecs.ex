@@ -23,11 +23,16 @@ defmodule Baiji.ECS do
   """
   def create_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateCluster",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateCluster",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -100,11 +105,16 @@ defmodule Baiji.ECS do
   """
   def create_service(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "CreateService",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "CreateService",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -113,11 +123,16 @@ defmodule Baiji.ECS do
   """
   def delete_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteAttributes",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteAttributes",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -129,11 +144,16 @@ defmodule Baiji.ECS do
   """
   def delete_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteCluster",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteCluster",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -158,11 +178,16 @@ defmodule Baiji.ECS do
   """
   def delete_service(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeleteService",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeleteService",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -189,11 +214,16 @@ defmodule Baiji.ECS do
   """
   def deregister_container_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeregisterContainerInstance",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeregisterContainerInstance",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -220,11 +250,16 @@ defmodule Baiji.ECS do
   """
   def deregister_task_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DeregisterTaskDefinition",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DeregisterTaskDefinition",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -233,11 +268,16 @@ defmodule Baiji.ECS do
   """
   def describe_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeClusters",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeClusters",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -248,11 +288,16 @@ defmodule Baiji.ECS do
   """
   def describe_container_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeContainerInstances",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeContainerInstances",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -261,11 +306,16 @@ defmodule Baiji.ECS do
   """
   def describe_services(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeServices",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeServices",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -281,11 +331,16 @@ defmodule Baiji.ECS do
   """
   def describe_task_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTaskDefinition",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTaskDefinition",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -294,11 +349,16 @@ defmodule Baiji.ECS do
   """
   def describe_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DescribeTasks",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DescribeTasks",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -311,11 +371,16 @@ defmodule Baiji.ECS do
   """
   def discover_poll_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "DiscoverPollEndpoint",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "DiscoverPollEndpoint",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -331,11 +396,16 @@ defmodule Baiji.ECS do
   """
   def list_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListAttributes",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListAttributes",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -344,11 +414,16 @@ defmodule Baiji.ECS do
   """
   def list_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListClusters",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListClusters",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -362,11 +437,16 @@ defmodule Baiji.ECS do
   """
   def list_container_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListContainerInstances",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListContainerInstances",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -375,11 +455,16 @@ defmodule Baiji.ECS do
   """
   def list_services(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListServices",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListServices",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -395,11 +480,16 @@ defmodule Baiji.ECS do
   """
   def list_task_definition_families(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTaskDefinitionFamilies",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTaskDefinitionFamilies",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -410,11 +500,16 @@ defmodule Baiji.ECS do
   """
   def list_task_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTaskDefinitions",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTaskDefinitions",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -429,11 +524,16 @@ defmodule Baiji.ECS do
   """
   def list_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "ListTasks",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "ListTasks",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -447,11 +547,16 @@ defmodule Baiji.ECS do
   """
   def put_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "PutAttributes",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "PutAttributes",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -464,11 +569,16 @@ defmodule Baiji.ECS do
   """
   def register_container_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterContainerInstance",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterContainerInstance",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -496,11 +606,16 @@ defmodule Baiji.ECS do
   """
   def register_task_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RegisterTaskDefinition",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RegisterTaskDefinition",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -518,11 +633,16 @@ defmodule Baiji.ECS do
   """
   def run_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "RunTask",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "RunTask",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -537,11 +657,16 @@ defmodule Baiji.ECS do
   """
   def start_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StartTask",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StartTask",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -565,11 +690,16 @@ defmodule Baiji.ECS do
   """
   def stop_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "StopTask",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "StopTask",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -581,11 +711,16 @@ defmodule Baiji.ECS do
   """
   def submit_container_state_change(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SubmitContainerStateChange",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SubmitContainerStateChange",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -597,11 +732,16 @@ defmodule Baiji.ECS do
   """
   def submit_task_state_change(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "SubmitTaskStateChange",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "SubmitTaskStateChange",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -621,11 +761,16 @@ defmodule Baiji.ECS do
   """
   def update_container_agent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateContainerAgent",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateContainerAgent",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -678,11 +823,16 @@ defmodule Baiji.ECS do
   """
   def update_container_instances_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateContainerInstancesState",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateContainerInstancesState",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
@@ -764,11 +914,16 @@ defmodule Baiji.ECS do
   """
   def update_service(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      input:    input,
-      options:  options,
-      action:   "UpdateService",
-      type:     :json,
-      method:   :post
+      service:        "ecs",
+      endpoint:       "/",
+      input:          input,
+      options:        options,
+      action:         "UpdateService",
+      
+      target_prefix:  "AmazonEC2ContainerServiceV20141113",
+      
+      type:           :json,
+      method:         :post
     }
   end
   
