@@ -12,6 +12,13 @@ defmodule Baiji.Core.Utilities do
   end
 
   @doc """
+  Generate a SHA256 HMAC
+  """
+  def hmac_sha256(key, value) do
+    :crypto.hmac(:sha256, key, value)
+  end
+
+  @doc """
   Generate a hex digest with lower-case characters
   """
   def hexdigest(value) when is_binary(value) do 

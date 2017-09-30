@@ -6,13 +6,16 @@ defmodule Baiji.Request.Sign do
   alias Baiji.{
     Core.Utilities,
     Request,
-    Request.Sign,
-    Operation
+    Request.Sign
   }
 
   defstruct request:            nil,
             time:               nil,
-            canonical_request:  nil
+            signed_headers:     [],
+            canonical_request:  nil,
+            string_to_sign:     nil,
+            signing_key:        nil,
+            signature:          nil
 
   @doc """
   Add signing headers to the given request using the AWS Signature Version 4 protocol
@@ -22,34 +25,47 @@ defmodule Baiji.Request.Sign do
   end
 
   @doc """
-  Add signing headers to the given request using the AWS Signature Version 4 protocol
+  Add signing and authorization headers to the given request using the AWS Signature Version 4 protocol
   """
   def v4(%Request{} = request, time) do   
     %Sign{request: request, time: time}
     |> add_date_header
+    |> signed_headers
     |> canonical_request
+    |> string_to_sign
+    |> signing_key
+    |> signature
     |> add_security_token
+    |> add_authorization_header
+    |> Map.get(:request)
   end
 
   @doc """
   Add a formatted date header to the given request's header list
   """
   def add_date_header(%Sign{request: %Request{headers: headers} = req, time: time} = sign) do
-    %{sign | request: %{req | headers: [{"X-Amz-Date", Timex.format(time, "{YYYY}{0M}{0D}T{h24}{m}{s}Z")} | headers]}}
+    %{sign | request: %{req | headers: add_date_header(headers, time)}}
+  end
+  def add_date_header(headers, time) do
+    [{"X-Amz-Date", Timex.format!(time, "{YYYY}{0M}{0D}T{h24}{m}{s}Z")} | headers]
   end
 
   @doc """
   Add a security token header if a security token has been set on the operation struct
   """
-  def add_security_token(%Sign{request: %Request{operation: %Operation{security_token: nil}}} = sign), do: sign
-  def add_security_token(%Sign{request: %Request{headers: headers, operation: %Operation{security_token: token}} = req} = sign) do
-    %{sign | request: %{req | headers: [{"X-Amz-Security-Token", token} | headers]}}    
+  def add_security_token(%Sign{request: %Request{operation: op, headers: headers} = req} = sign) do
+    %{sign | request: %{req | headers: add_security_token(headers, op.security_token)}}        
   end
+  def add_security_token(headers, nil), do: headers
+  def add_security_token(headers, token), do: [{"X-Amz-Security-Token", token} | headers]
 
   @doc """
   Generate a string that contains information about the request in canonical format
   """
-  def canonical_request(%Sign{request: %Request{url: url, method: method, headers: headers, body: body}}) do
+  def canonical_request(%Sign{request: %Request{url: url, method: method, headers: headers, body: body}} = sign) do
+    %{sign | canonical_request: canonical_request(url, method, headers, body)}    
+  end
+  def canonical_request(url, method, headers, body) do
     method              = String.upcase(Atom.to_string(method))
     %URI{ path: path, 
           query: query} = URI.parse(url)
@@ -57,15 +73,31 @@ defmodule Baiji.Request.Sign do
     signed_headers      = signed_headers(headers)
     encoded_body        = encode_body(body)
 
-    [
+    Enum.join([
       method,
       path,
-      query,
+      canonical_query_string(query),
       canonical_headers,
       signed_headers,
       encoded_body
-    ]
-    |> Enum.join("\n")
+    ], "\n")
+  end
+
+  @doc """
+  Build a canonical query string
+  """
+  def canonical_query_string(nil), do: ""
+  def canonical_query_string(query) do
+    query
+    |> String.split("&")
+    |> Enum.sort
+    |> Enum.map(fn component ->
+      component
+      |> String.split("=")
+      |> Enum.map(&URI.encode/1)
+      |> Enum.join("=")
+    end)
+    |> Enum.join("&")
   end
 
   @doc """
@@ -91,13 +123,17 @@ defmodule Baiji.Request.Sign do
   Generate a signed headers string by extracting header names, converting them to lower-case and 
   joining them with semicolons.
   """
-  def signed_headers(headers) do
+  def signed_headers(%Sign{request: %Request{headers: headers}} = sign) do
+    %{sign | signed_headers: signed_headers(headers)}
+  end
+  def signed_headers(headers) when is_list(headers) do
     headers
     |> Enum.map(fn {name, _} -> 
       name 
       |> String.trim
       |> String.downcase
     end)
+    |> Enum.sort
     |> Enum.join(";")
   end
 
@@ -108,5 +144,79 @@ defmodule Baiji.Request.Sign do
     body
     |> Utilities.sha256
     |> Utilities.hexdigest
+  end
+
+  @doc """
+  Generate a string to sign
+  """
+  def string_to_sign(%Sign{canonical_request: req, time: time, request: %Request{operation: op}} = sign) do
+    %{sign | string_to_sign: string_to_sign(time, op.region, op.service, req)}
+  end
+  def string_to_sign(time, region, service, canonical_request) do      
+    Enum.join([
+      "AWS4-HMAC-SHA256\n",
+      Timex.format!(time, "{YYYY}{0M}{0D}T{h24}{m}{s}Z") <> "\n",
+      credential_scope(time, region, service),
+      Utilities.hexdigest(Utilities.sha256(canonical_request))
+    ])
+  end
+
+  @doc """
+  Generate a credential scope string
+  """
+  def credential_scope(time, region, service) do
+    Enum.join([
+      Timex.format!(time, "{YYYY}{0M}{0D}"),
+      region,
+      service,
+      "aws4_request\n"
+    ], "/")
+  end
+
+  @doc """
+  Generate a signing key using AWS credentials, the target service, time, etc.
+  """
+  def signing_key(%Sign{request: %Request{operation: op}, time: time} = sign) do
+    %{sign | signing_key: signing_key(op.secret_access_key, time, op.region, op.service)}
+  end
+  def signing_key(secret_access_key, time, region, service) do
+    "AWS4"
+    |> Kernel.<>(secret_access_key)
+    |> Utilities.hmac_sha256(Timex.format!(time, "{YYYY}{0M}{0D}"))
+    |> Utilities.hmac_sha256(region)
+    |> Utilities.hmac_sha256(service)
+    |> Utilities.hmac_sha256("aws4_request")
+  end
+
+  @doc """
+  Calculate the request signature
+  """
+  def signature(%Sign{signing_key: key, string_to_sign: string_to_sign} = sign) do
+    %{sign | signature: signature(key, string_to_sign)}
+  end
+  def signature(signing_key, string_to_sign) do
+    Utilities.hmac_sha256(signing_key, string_to_sign)
+    |> Utilities.hexdigest
+  end
+
+  @doc """
+  Add an Authorization header to the Request struct
+  """
+  def add_authorization_header(%Sign{request: %Request{operation: op} = req, time: time} = sign) do
+    %{sign | request: %{req | headers: add_authorization_header(
+      req.headers,
+      op.access_key_id,
+      credential_scope(time, op.region, op.service),
+      sign.signed_headers,
+      sign.signature
+    )}}
+  end
+  def add_authorization_header(headers, access_key_id, credential_scope, signed_headers, signature) do
+    [{"Authorization", Enum.join([
+      "AWS4-HMAC-SHA256",
+      "Credential=" <> Enum.join([access_key_id, credential_scope], "/") <> ",",
+      "SignedHeaders=" <> signed_headers <> ",",
+      "Signature=" <> signature
+    ], " ")} | headers]
   end
 end
