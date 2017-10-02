@@ -24,6 +24,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -82,6 +83,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -106,6 +108,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -143,6 +146,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -166,6 +170,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -203,6 +208,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -221,6 +227,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -239,6 +246,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -314,6 +322,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -371,6 +380,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -399,6 +409,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -433,6 +444,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -451,6 +463,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -507,6 +520,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -568,6 +582,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -650,6 +665,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -672,6 +688,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -739,6 +756,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -775,6 +793,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -811,6 +830,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end
@@ -865,6 +885,7 @@ defmodule Baiji.Kinesis do
       target_prefix:  "Kinesis_20131202",
       
       type:           :json,
+      version:        "2013-12-02",
       method:         :post
     }
   end

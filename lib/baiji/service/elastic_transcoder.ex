@@ -24,6 +24,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "CancelJob",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :delete
     }
   end
@@ -47,6 +48,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "CreateJob",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :post
     }
   end
@@ -64,6 +66,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "CreatePipeline",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :post
     }
   end
@@ -96,6 +99,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "CreatePreset",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :post
     }
   end
@@ -116,6 +120,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "DeletePipeline",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :delete
     }
   end
@@ -138,6 +143,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "DeletePreset",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :delete
     }
   end
@@ -159,6 +165,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ListJobsByPipeline",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -177,6 +184,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ListJobsByStatus",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -194,6 +202,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ListPipelines",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -211,6 +220,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ListPresets",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -227,6 +237,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ReadJob",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -243,6 +254,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ReadPipeline",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -259,6 +271,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "ReadPreset",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :get
     }
   end
@@ -281,6 +294,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "TestRole",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :post
     }
   end
@@ -304,6 +318,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "UpdatePipeline",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :put
     }
   end
@@ -324,6 +339,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "UpdatePipelineNotifications",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :post
     }
   end
@@ -347,6 +363,7 @@ defmodule Baiji.ElasticTranscoder do
       action:         "UpdatePipelineStatus",
       
       type:           :rest_json,
+      version:        "2012-09-25",
       method:         :post
     }
   end

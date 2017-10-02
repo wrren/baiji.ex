@@ -96,6 +96,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -119,6 +120,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -137,6 +139,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -162,6 +165,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -181,6 +185,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -200,6 +205,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -219,6 +225,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -239,6 +246,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -266,6 +274,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -284,6 +293,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -302,6 +312,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -320,6 +331,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -339,6 +351,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -360,6 +373,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -384,6 +398,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -411,6 +426,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end
@@ -435,6 +451,7 @@ defmodule Baiji.CodeCommit do
       target_prefix:  "CodeCommit_20150413",
       
       type:           :json,
+      version:        "2015-04-13",
       method:         :post
     }
   end

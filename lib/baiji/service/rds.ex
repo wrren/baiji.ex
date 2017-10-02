@@ -68,6 +68,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBParameters",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -84,6 +85,7 @@ defmodule Baiji.RDS do
       action:         "ModifyOptionGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -100,6 +102,7 @@ defmodule Baiji.RDS do
       action:         "DescribeOptionGroups",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -132,6 +135,7 @@ defmodule Baiji.RDS do
       action:         "RestoreDBClusterToPointInTime",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -153,6 +157,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBSubnetGroups",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -181,6 +186,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBSnapshotAttributes",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -198,6 +204,7 @@ defmodule Baiji.RDS do
       action:         "DescribeReservedDBInstances",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -215,6 +222,7 @@ defmodule Baiji.RDS do
       action:         "AddSourceIdentifierToSubscription",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -231,6 +239,7 @@ defmodule Baiji.RDS do
       action:         "DeleteOptionGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -257,6 +266,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -273,6 +283,7 @@ defmodule Baiji.RDS do
       action:         "DescribeReservedDBInstancesOfferings",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -289,6 +300,7 @@ defmodule Baiji.RDS do
       action:         "CreateOptionGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -305,6 +317,7 @@ defmodule Baiji.RDS do
       action:         "CopyDBParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -327,6 +340,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBClusterParameterGroups",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -343,6 +357,7 @@ defmodule Baiji.RDS do
       action:         "PromoteReadReplicaDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -363,6 +378,7 @@ defmodule Baiji.RDS do
       action:         "DescribeEvents",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -382,6 +398,7 @@ defmodule Baiji.RDS do
       action:         "RemoveTagsFromResource",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -405,6 +422,7 @@ defmodule Baiji.RDS do
       action:         "PromoteReadReplica",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -424,6 +442,7 @@ defmodule Baiji.RDS do
       action:         "ListTagsForResource",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -442,6 +461,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBSecurityGroups",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -463,6 +483,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -479,6 +500,7 @@ defmodule Baiji.RDS do
       action:         "DeleteEventSubscription",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -498,6 +520,7 @@ defmodule Baiji.RDS do
       action:         "RevokeDBSecurityGroupIngress",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -515,6 +538,7 @@ defmodule Baiji.RDS do
       action:         "RemoveSourceIdentifierFromSubscription",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -557,6 +581,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBClusterParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -576,6 +601,7 @@ defmodule Baiji.RDS do
       action:         "AddRoleToDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -608,6 +634,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBSnapshotAttribute",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -624,6 +651,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBEngineVersions",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -645,6 +673,7 @@ defmodule Baiji.RDS do
       action:         "DescribeEngineDefaultClusterParameters",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -681,6 +710,7 @@ defmodule Baiji.RDS do
       action:         "CreateEventSubscription",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -697,6 +727,7 @@ defmodule Baiji.RDS do
       action:         "DownloadDBLogFilePortion",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -721,6 +752,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBClusterSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -739,6 +771,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBParameterGroups",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -771,6 +804,7 @@ defmodule Baiji.RDS do
       action:         "RebootDBInstance",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -787,6 +821,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBInstance",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -808,6 +843,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBClusterSnapshots",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -829,6 +865,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -848,6 +885,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBClusterSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -871,6 +909,7 @@ defmodule Baiji.RDS do
       action:         "RestoreDBClusterFromSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -892,6 +931,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBClusterParameters",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -911,6 +951,7 @@ defmodule Baiji.RDS do
       action:         "StartDBInstance",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -931,6 +972,7 @@ defmodule Baiji.RDS do
       action:         "RestoreDBClusterFromS3",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -949,6 +991,7 @@ defmodule Baiji.RDS do
       action:         "DescribeSourceRegions",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -977,6 +1020,7 @@ defmodule Baiji.RDS do
       action:         "CopyDBSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1008,6 +1052,7 @@ defmodule Baiji.RDS do
       action:         "FailoverDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1038,6 +1083,7 @@ defmodule Baiji.RDS do
       action:         "ResetDBClusterParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1055,6 +1101,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1071,6 +1118,7 @@ defmodule Baiji.RDS do
       action:         "DescribeOrderableDBInstanceOptions",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1094,6 +1142,7 @@ defmodule Baiji.RDS do
       action:         "ResetDBParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1111,6 +1160,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBInstances",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1127,6 +1177,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBLogFiles",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1144,6 +1195,7 @@ defmodule Baiji.RDS do
       action:         "ApplyPendingMaintenanceAction",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1190,6 +1242,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBClusterParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1207,6 +1260,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBSubnetGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1294,6 +1348,7 @@ defmodule Baiji.RDS do
       action:         "CopyDBClusterSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1311,6 +1366,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBSecurityGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1338,6 +1394,7 @@ defmodule Baiji.RDS do
       action:         "RestoreDBInstanceToPointInTime",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1359,6 +1416,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBClusters",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1379,6 +1437,7 @@ defmodule Baiji.RDS do
       action:         "DescribeEventCategories",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1411,6 +1470,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBInstanceReadReplica",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1432,6 +1492,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBSecurityGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1466,6 +1527,7 @@ defmodule Baiji.RDS do
       action:         "RestoreDBInstanceFromDBSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1488,6 +1550,7 @@ defmodule Baiji.RDS do
       action:         "AddTagsToResource",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1505,6 +1568,7 @@ defmodule Baiji.RDS do
       action:         "DescribeCertificates",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1529,6 +1593,7 @@ defmodule Baiji.RDS do
       action:         "ModifyEventSubscription",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1562,6 +1627,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBClusterSnapshotAttribute",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1579,6 +1645,7 @@ defmodule Baiji.RDS do
       action:         "DescribeEngineDefaultParameters",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1621,6 +1688,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBInstance",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1642,6 +1710,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1660,6 +1729,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBInstance",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1679,6 +1749,7 @@ defmodule Baiji.RDS do
       action:         "RemoveRoleFromDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1695,6 +1766,7 @@ defmodule Baiji.RDS do
       action:         "PurchaseReservedDBInstancesOffering",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1723,6 +1795,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBClusterSnapshotAttributes",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1744,6 +1817,7 @@ defmodule Baiji.RDS do
       action:         "DescribeEventSubscriptions",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1781,6 +1855,7 @@ defmodule Baiji.RDS do
       action:         "ModifyDBParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1797,6 +1872,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBSnapshot",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1836,6 +1912,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1852,6 +1929,7 @@ defmodule Baiji.RDS do
       action:         "CopyDBClusterParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1868,6 +1946,7 @@ defmodule Baiji.RDS do
       action:         "CopyOptionGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1885,6 +1964,7 @@ defmodule Baiji.RDS do
       action:         "CreateDBSubnetGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1906,6 +1986,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBClusterParameterGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1926,6 +2007,7 @@ defmodule Baiji.RDS do
       action:         "StopDBInstance",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1947,6 +2029,7 @@ defmodule Baiji.RDS do
       action:         "DescribeAccountAttributes",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1968,6 +2051,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBSubnetGroup",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -1985,6 +2069,7 @@ defmodule Baiji.RDS do
       action:         "DescribeDBSnapshots",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -2002,6 +2087,7 @@ defmodule Baiji.RDS do
       action:         "DescribePendingMaintenanceActions",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -2018,6 +2104,7 @@ defmodule Baiji.RDS do
       action:         "DescribeOptionGroupOptions",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -2041,6 +2128,7 @@ defmodule Baiji.RDS do
       action:         "DeleteDBCluster",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end
@@ -2072,6 +2160,7 @@ defmodule Baiji.RDS do
       action:         "AuthorizeDBSecurityGroupIngress",
       
       type:           :xml,
+      version:        "2014-10-31",
       method:         :post
     }
   end

@@ -80,6 +80,7 @@ defmodule Baiji.Firehose do
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -110,6 +111,7 @@ defmodule Baiji.Firehose do
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -131,6 +133,7 @@ defmodule Baiji.Firehose do
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -149,6 +152,7 @@ No Documentation Availabale
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -176,6 +180,7 @@ No Documentation Availabale
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -228,6 +233,7 @@ No Documentation Availabale
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -307,6 +313,7 @@ No Documentation Availabale
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end
@@ -358,6 +365,7 @@ No Documentation Availabale
       target_prefix:  "Firehose_20150804",
       
       type:           :json,
+      version:        "2015-08-04",
       method:         :post
     }
   end

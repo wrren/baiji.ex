@@ -19,6 +19,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -38,6 +39,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -59,6 +61,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -80,6 +83,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -105,6 +109,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -130,6 +135,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -152,6 +158,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -177,6 +184,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -195,6 +203,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end
@@ -213,6 +222,7 @@ defmodule Baiji.CloudHSMV2 do
       target_prefix:  "BaldrApiService",
       
       type:           :json,
+      version:        "2017-04-28",
       method:         :post
     }
   end

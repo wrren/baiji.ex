@@ -24,6 +24,7 @@ defmodule Baiji.EC2 do
       action:         "ImportImage",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -44,6 +45,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeNetworkAcls",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -67,6 +69,7 @@ defmodule Baiji.EC2 do
       action:         "CopyImage",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -88,6 +91,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpnConnections",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -112,6 +116,7 @@ defmodule Baiji.EC2 do
       action:         "ImportInstance",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -131,6 +136,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSpotDatafeedSubscription",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -178,6 +184,7 @@ defmodule Baiji.EC2 do
       action:         "StopInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -196,6 +203,7 @@ defmodule Baiji.EC2 do
       action:         "AllocateHosts",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -212,6 +220,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteSpotDatafeedSubscription",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -233,6 +242,7 @@ defmodule Baiji.EC2 do
       action:         "GetHostReservationPurchasePreview",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -288,6 +298,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVolumeStatus",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -307,6 +318,7 @@ defmodule Baiji.EC2 do
       action:         "CancelExportTask",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -323,6 +335,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteKeyPair",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -342,6 +355,7 @@ defmodule Baiji.EC2 do
       action:         "ConfirmProductInstance",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -365,6 +379,7 @@ defmodule Baiji.EC2 do
       action:         "MoveAddressToVpc",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -395,6 +410,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeIdFormat",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -417,6 +433,7 @@ defmodule Baiji.EC2 do
       action:         "CreateNatGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -439,6 +456,7 @@ defmodule Baiji.EC2 do
       action:         "ImportVolume",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -456,6 +474,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeHostReservations",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -487,6 +506,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVolumesModifications",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -510,6 +530,7 @@ defmodule Baiji.EC2 do
       action:         "CancelConversionTask",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -535,6 +556,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeScheduledInstanceAvailability",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -559,6 +581,7 @@ defmodule Baiji.EC2 do
       action:         "ImportKeyPair",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -580,6 +603,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeAddresses",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -617,6 +641,7 @@ defmodule Baiji.EC2 do
       action:         "CreateRoute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -639,6 +664,7 @@ defmodule Baiji.EC2 do
       action:         "DisassociateVpcCidrBlock",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -665,6 +691,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyVolumeAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -685,6 +712,7 @@ defmodule Baiji.EC2 do
       action:         "CreateNetworkInterface",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -707,6 +735,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeConversionTasks",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -724,6 +753,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyNetworkInterfaceAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -751,6 +781,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVolumes",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -782,6 +813,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSpotInstanceRequests",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -802,6 +834,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSubnets",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -820,6 +853,7 @@ defmodule Baiji.EC2 do
       action:         "GetReservedInstancesExchangeQuote",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -839,6 +873,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVpnConnectionRoute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -859,6 +894,7 @@ defmodule Baiji.EC2 do
       action:         "DeletePlacementGroup",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -878,6 +914,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeStaleSecurityGroups",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -914,6 +951,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVpnConnection",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -951,6 +989,7 @@ defmodule Baiji.EC2 do
       action:         "ModifySpotFleetRequest",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -968,6 +1007,7 @@ defmodule Baiji.EC2 do
       action:         "ResetNetworkInterfaceAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -987,6 +1027,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVpcPeeringConnection",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1012,6 +1053,7 @@ defmodule Baiji.EC2 do
       action:         "AssociateRouteTable",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1039,6 +1081,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVpcPeeringConnection",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1073,6 +1116,7 @@ defmodule Baiji.EC2 do
       action:         "RequestSpotFleet",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1116,6 +1160,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeInstanceStatus",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1134,6 +1179,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSecurityGroupReferences",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1155,6 +1201,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeCustomerGateways",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1180,6 +1227,7 @@ defmodule Baiji.EC2 do
       action:         "DisassociateAddress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1196,6 +1244,7 @@ defmodule Baiji.EC2 do
       action:         "CancelBundleTask",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1213,6 +1262,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteNetworkAclEntry",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1231,6 +1281,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteRouteTable",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1255,6 +1306,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeImages",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1272,6 +1324,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeImportImageTasks",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1288,6 +1341,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeEgressOnlyInternetGateways",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1309,6 +1363,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVpc",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1334,6 +1389,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSpotPriceHistory",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1353,6 +1409,7 @@ defmodule Baiji.EC2 do
       action:         "UnmonitorInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1378,6 +1435,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeRouteTables",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1401,6 +1459,7 @@ defmodule Baiji.EC2 do
       action:         "AssociateVpcCidrBlock",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1433,6 +1492,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyIdFormat",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1450,6 +1510,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteNetworkAcl",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1485,6 +1546,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyInstancePlacement",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1507,6 +1569,7 @@ defmodule Baiji.EC2 do
       action:         "RequestSpotInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1523,6 +1586,7 @@ defmodule Baiji.EC2 do
       action:         "ImportSnapshot",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1593,6 +1657,7 @@ defmodule Baiji.EC2 do
       action:         "RunInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1612,6 +1677,7 @@ defmodule Baiji.EC2 do
       action:         "AttachInternetGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1631,6 +1697,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeClassicLinkInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1653,6 +1720,7 @@ defmodule Baiji.EC2 do
       action:         "CreatePlacementGroup",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1691,6 +1759,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeReservedInstancesListings",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1712,6 +1781,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSpotFleetRequestHistory",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1728,6 +1798,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeScheduledInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1746,6 +1817,7 @@ defmodule Baiji.EC2 do
       action:         "DetachInternetGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1772,6 +1844,7 @@ defmodule Baiji.EC2 do
       action:         "BundleInstance",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1793,6 +1866,7 @@ defmodule Baiji.EC2 do
       action:         "CreateRouteTable",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1814,6 +1888,7 @@ defmodule Baiji.EC2 do
       action:         "DisableVpcClassicLinkDnsSupport",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1836,6 +1911,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyInstanceAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1869,6 +1945,7 @@ defmodule Baiji.EC2 do
       action:         "GetConsoleOutput",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1885,6 +1962,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeExportTasks",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1901,6 +1979,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcEndpoints",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1946,6 +2025,7 @@ defmodule Baiji.EC2 do
       action:         "CreateSecurityGroup",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1963,6 +2043,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -1982,6 +2063,7 @@ defmodule Baiji.EC2 do
       action:         "AcceptVpcPeeringConnection",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2001,6 +2083,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeRegions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2024,6 +2107,7 @@ defmodule Baiji.EC2 do
       action:         "CancelSpotFleetRequests",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2043,6 +2127,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteNatGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2064,6 +2149,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeHosts",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2094,6 +2180,7 @@ defmodule Baiji.EC2 do
       action:         "GetPasswordData",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2115,6 +2202,7 @@ defmodule Baiji.EC2 do
       action:         "CancelReservedInstancesListing",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2132,6 +2220,7 @@ defmodule Baiji.EC2 do
       action:         "UnassignPrivateIpAddresses",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2150,6 +2239,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyVpcEndpoint",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2196,6 +2286,7 @@ defmodule Baiji.EC2 do
       action:         "CreateSnapshot",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2213,6 +2304,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteInternetGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2271,6 +2363,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyVolume",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2287,6 +2380,7 @@ defmodule Baiji.EC2 do
       action:         "ModifySubnetAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2312,6 +2406,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSecurityGroups",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2334,6 +2429,7 @@ defmodule Baiji.EC2 do
       action:         "UpdateSecurityGroupRuleDescriptionsEgress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2354,6 +2450,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeDhcpOptions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2389,6 +2486,7 @@ defmodule Baiji.EC2 do
       action:         "AuthorizeSecurityGroupIngress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2408,6 +2506,7 @@ defmodule Baiji.EC2 do
       action:         "CreateEgressOnlyInternetGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2425,6 +2524,7 @@ defmodule Baiji.EC2 do
       action:         "EnableVolumeIO",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2446,6 +2546,7 @@ defmodule Baiji.EC2 do
       action:         "CreateNetworkAcl",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2466,6 +2567,7 @@ defmodule Baiji.EC2 do
       action:         "DescribePrefixLists",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2482,6 +2584,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeNetworkInterfacePermissions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2502,6 +2605,7 @@ defmodule Baiji.EC2 do
       action:         "ReplaceNetworkAclAssociation",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2545,6 +2649,7 @@ defmodule Baiji.EC2 do
       action:         "AssociateAddress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2566,6 +2671,7 @@ defmodule Baiji.EC2 do
       action:         "RejectVpcPeeringConnection",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2582,6 +2688,7 @@ defmodule Baiji.EC2 do
       action:         "AttachNetworkInterface",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2609,6 +2716,7 @@ defmodule Baiji.EC2 do
       action:         "RunScheduledInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2639,6 +2747,7 @@ defmodule Baiji.EC2 do
       action:         "DetachVolume",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2655,6 +2764,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcPeeringConnections",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2679,6 +2789,7 @@ defmodule Baiji.EC2 do
       action:         "DetachVpnGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2709,6 +2820,7 @@ defmodule Baiji.EC2 do
       action:         "CreateDefaultVpc",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2731,6 +2843,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVpcEndpoint",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2750,6 +2863,7 @@ defmodule Baiji.EC2 do
       action:         "DetachClassicLinkVpc",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2793,6 +2907,7 @@ defmodule Baiji.EC2 do
       action:         "TerminateInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2812,6 +2927,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSpotFleetRequests",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2839,6 +2955,7 @@ defmodule Baiji.EC2 do
       action:         "CreateImage",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2864,6 +2981,7 @@ defmodule Baiji.EC2 do
       action:         "CreateFlowLogs",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2887,6 +3005,7 @@ defmodule Baiji.EC2 do
       action:         "EnableVpcClassicLinkDnsSupport",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2910,6 +3029,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVolume",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2931,6 +3051,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSnapshotAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2949,6 +3070,7 @@ defmodule Baiji.EC2 do
       action:         "DisassociateIamInstanceProfile",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2968,6 +3090,7 @@ defmodule Baiji.EC2 do
       action:         "RestoreAddressToClassic",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -2988,6 +3111,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeKeyPairs",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3009,6 +3133,7 @@ defmodule Baiji.EC2 do
       action:         "ReplaceIamInstanceProfileAssociation",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3036,6 +3161,7 @@ defmodule Baiji.EC2 do
       action:         "CancelSpotInstanceRequests",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3075,6 +3201,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVpc",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3104,6 +3231,7 @@ defmodule Baiji.EC2 do
       action:         "ModifySnapshotAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3120,6 +3248,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcs",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3143,6 +3272,7 @@ defmodule Baiji.EC2 do
       action:         "ReplaceRoute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3159,6 +3289,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeNatGateways",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3197,6 +3328,7 @@ defmodule Baiji.EC2 do
       action:         "CopySnapshot",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3221,6 +3353,7 @@ defmodule Baiji.EC2 do
       action:         "EnableVpcClassicLink",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3237,6 +3370,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeInternetGateways",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3253,6 +3387,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeImportSnapshotTasks",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3271,6 +3406,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVpcEndpoints",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3298,6 +3434,7 @@ defmodule Baiji.EC2 do
       action:         "AttachClassicLinkVpc",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3327,6 +3464,7 @@ defmodule Baiji.EC2 do
       action:         "PurchaseReservedInstancesOffering",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3346,6 +3484,7 @@ defmodule Baiji.EC2 do
       action:         "ReplaceNetworkAclEntry",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3362,6 +3501,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeIamInstanceProfileAssociations",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3389,6 +3529,7 @@ defmodule Baiji.EC2 do
       action:         "RebootInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3406,6 +3547,7 @@ defmodule Baiji.EC2 do
       action:         "AssociateIamInstanceProfile",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3425,6 +3567,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteNetworkInterfacePermission",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3447,6 +3590,7 @@ defmodule Baiji.EC2 do
       action:         "AttachVpnGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3464,6 +3608,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteSubnet",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3485,6 +3630,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteTags",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3513,6 +3659,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeIdentityIdFormat",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3530,6 +3677,7 @@ defmodule Baiji.EC2 do
       action:         "DisableVpcClassicLink",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3550,6 +3698,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeReservedInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3567,6 +3716,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteCustomerGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3602,6 +3752,7 @@ defmodule Baiji.EC2 do
       action:         "AuthorizeSecurityGroupEgress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3646,6 +3797,7 @@ defmodule Baiji.EC2 do
       action:         "CreateCustomerGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3669,6 +3821,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeBundleTasks",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3686,6 +3839,7 @@ defmodule Baiji.EC2 do
       action:         "AcceptReservedInstancesExchangeQuote",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3715,6 +3869,7 @@ defmodule Baiji.EC2 do
       action:         "AllocateAddress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3731,6 +3886,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteFlowLogs",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3750,6 +3906,7 @@ defmodule Baiji.EC2 do
       action:         "PurchaseHostReservation",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3809,6 +3966,7 @@ defmodule Baiji.EC2 do
       action:         "CreateDhcpOptions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3828,6 +3986,7 @@ defmodule Baiji.EC2 do
       action:         "DescribePlacementGroups",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3862,6 +4021,7 @@ defmodule Baiji.EC2 do
       action:         "ReleaseAddress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3909,6 +4069,7 @@ defmodule Baiji.EC2 do
       action:         "RegisterImage",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3934,6 +4095,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeHostReservationOfferings",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3950,6 +4112,7 @@ defmodule Baiji.EC2 do
       action:         "DetachNetworkInterface",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3972,6 +4135,7 @@ defmodule Baiji.EC2 do
       action:         "DisassociateRouteTable",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -3992,6 +4156,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeTags",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4011,6 +4176,7 @@ defmodule Baiji.EC2 do
       action:         "DisassociateSubnetCidrBlock",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4032,6 +4198,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpnGateways",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4055,6 +4222,7 @@ defmodule Baiji.EC2 do
       action:         "ReportInstanceStatus",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4073,6 +4241,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeFlowLogs",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4098,6 +4267,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVpnConnection",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4123,6 +4293,7 @@ defmodule Baiji.EC2 do
       action:         "CreateFpgaImage",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4149,6 +4320,7 @@ defmodule Baiji.EC2 do
       action:         "PurchaseScheduledInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4172,6 +4344,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyHosts",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4193,6 +4366,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteSecurityGroup",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4226,6 +4400,7 @@ defmodule Baiji.EC2 do
       action:         "CreateNetworkAclEntry",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4253,6 +4428,7 @@ defmodule Baiji.EC2 do
       action:         "ReleaseHosts",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4270,6 +4446,7 @@ defmodule Baiji.EC2 do
       action:         "DisableVgwRoutePropagation",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4286,6 +4463,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteEgressOnlyInternetGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4306,6 +4484,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteVpnGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4332,6 +4511,7 @@ defmodule Baiji.EC2 do
       action:         "CreateTags",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4353,6 +4533,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVolumeAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4371,6 +4552,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeElasticGpus",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4394,6 +4576,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyReservedInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4414,6 +4597,7 @@ defmodule Baiji.EC2 do
       action:         "CreateSpotDatafeedSubscription",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4430,6 +4614,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteRoute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4465,6 +4650,7 @@ defmodule Baiji.EC2 do
       action:         "StartInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4485,6 +4671,7 @@ defmodule Baiji.EC2 do
       action:         "CreateNetworkInterfacePermission",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4513,6 +4700,7 @@ defmodule Baiji.EC2 do
       action:         "RevokeSecurityGroupEgress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4544,6 +4732,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteSnapshot",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4568,6 +4757,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVpnConnectionRoute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4596,6 +4786,7 @@ defmodule Baiji.EC2 do
       action:         "AssociateDhcpOptions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4616,6 +4807,7 @@ defmodule Baiji.EC2 do
       action:         "ResetSnapshotAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4632,6 +4824,7 @@ defmodule Baiji.EC2 do
       action:         "CancelImportTask",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4648,6 +4841,7 @@ defmodule Baiji.EC2 do
       action:         "UnassignIpv6Addresses",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4684,6 +4878,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyVpcPeeringConnectionOptions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4715,6 +4910,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4757,6 +4953,7 @@ defmodule Baiji.EC2 do
       action:         "CreateReservedInstancesListing",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4776,6 +4973,7 @@ defmodule Baiji.EC2 do
       action:         "GetConsoleScreenshot",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4839,6 +5037,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSnapshots",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4862,6 +5061,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeReservedInstancesModifications",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4890,6 +5090,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeReservedInstancesOfferings",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4907,6 +5108,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeNetworkInterfaceAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4934,6 +5136,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyImageAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4972,6 +5175,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVolume",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -4988,6 +5192,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyVpcAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5005,6 +5210,7 @@ defmodule Baiji.EC2 do
       action:         "EnableVgwRoutePropagation",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5022,6 +5228,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeImageAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5043,6 +5250,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeInstanceAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5068,6 +5276,7 @@ defmodule Baiji.EC2 do
       action:         "DeregisterImage",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5089,6 +5298,7 @@ defmodule Baiji.EC2 do
       action:         "CreateInternetGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5133,6 +5343,7 @@ defmodule Baiji.EC2 do
       action:         "CreateSubnet",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5158,6 +5369,7 @@ defmodule Baiji.EC2 do
       action:         "ResetInstanceAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5181,6 +5393,7 @@ defmodule Baiji.EC2 do
       action:         "CreateVpnGateway",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5218,6 +5431,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeAccountAttributes",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5235,6 +5449,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcEndpointServices",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5253,6 +5468,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeFpgaImages",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5275,6 +5491,7 @@ defmodule Baiji.EC2 do
       action:         "CreateInstanceExportTask",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5294,6 +5511,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeMovingAddresses",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5310,6 +5528,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcClassicLink",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5334,6 +5553,7 @@ defmodule Baiji.EC2 do
       action:         "AssignIpv6Addresses",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5357,6 +5577,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeAvailabilityZones",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5380,6 +5601,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeVpcClassicLinkDnsSupport",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5399,6 +5621,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteDhcpOptions",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5430,6 +5653,7 @@ defmodule Baiji.EC2 do
       action:         "RevokeSecurityGroupIngress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5452,6 +5676,7 @@ defmodule Baiji.EC2 do
       action:         "MonitorInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5469,6 +5694,7 @@ defmodule Baiji.EC2 do
       action:         "DeleteNetworkInterface",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5487,6 +5713,7 @@ defmodule Baiji.EC2 do
       action:         "AssociateSubnetCidrBlock",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5509,6 +5736,7 @@ defmodule Baiji.EC2 do
       action:         "UpdateSecurityGroupRuleDescriptionsIngress",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5539,6 +5767,7 @@ defmodule Baiji.EC2 do
       action:         "CreateKeyPair",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5555,6 +5784,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeNetworkInterfaces",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5604,6 +5834,7 @@ defmodule Baiji.EC2 do
       action:         "AttachVolume",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5632,6 +5863,7 @@ defmodule Baiji.EC2 do
       action:         "AssignPrivateIpAddresses",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5663,6 +5895,7 @@ defmodule Baiji.EC2 do
       action:         "ModifyIdentityIdFormat",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5679,6 +5912,7 @@ defmodule Baiji.EC2 do
       action:         "DescribeSpotFleetInstances",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5703,6 +5937,7 @@ defmodule Baiji.EC2 do
       action:         "ReplaceRouteTableAssociation",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end
@@ -5723,6 +5958,7 @@ defmodule Baiji.EC2 do
       action:         "ResetImageAttribute",
       
       type:           :ec2,
+      version:        "2016-11-15",
       method:         :post
     }
   end

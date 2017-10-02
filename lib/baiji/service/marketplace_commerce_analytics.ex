@@ -28,6 +28,7 @@ defmodule Baiji.MarketplaceCommerceAnalytics do
       target_prefix:  "MarketplaceCommerceAnalytics20150701",
       
       type:           :json,
+      version:        "2015-07-01",
       method:         :post
     }
   end
@@ -56,6 +57,7 @@ defmodule Baiji.MarketplaceCommerceAnalytics do
       target_prefix:  "MarketplaceCommerceAnalytics20150701",
       
       type:           :json,
+      version:        "2015-07-01",
       method:         :post
     }
   end

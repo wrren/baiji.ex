@@ -100,6 +100,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -128,6 +129,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -159,6 +161,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -188,6 +191,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -207,6 +211,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -229,6 +234,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -247,6 +253,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -269,6 +276,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -298,6 +306,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -321,6 +330,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -344,6 +354,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -367,6 +378,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -386,6 +398,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -419,6 +432,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -454,6 +468,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -472,6 +487,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -495,6 +511,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -526,6 +543,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -559,6 +577,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -590,6 +609,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -625,6 +645,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -643,6 +664,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -706,6 +728,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -724,6 +747,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -742,6 +766,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -760,6 +785,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -778,6 +804,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -796,6 +823,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -814,6 +842,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -839,6 +868,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -879,6 +909,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -913,6 +944,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -931,6 +963,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -970,6 +1003,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end
@@ -988,6 +1022,7 @@ defmodule Baiji.KMS do
       target_prefix:  "TrentService",
       
       type:           :json,
+      version:        "2014-11-01",
       method:         :post
     }
   end

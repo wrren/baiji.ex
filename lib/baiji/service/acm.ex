@@ -41,6 +41,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -69,6 +70,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -87,6 +89,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -115,6 +118,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -163,6 +167,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -183,6 +188,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -204,6 +210,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -230,6 +237,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -255,6 +263,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end
@@ -284,6 +293,7 @@ defmodule Baiji.ACM do
       target_prefix:  "CertificateManager",
       
       type:           :json,
+      version:        "2015-12-08",
       method:         :post
     }
   end

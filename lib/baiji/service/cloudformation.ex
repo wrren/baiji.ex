@@ -43,6 +43,7 @@ defmodule Baiji.Cloudformation do
       action:         "CancelUpdateStack",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -65,6 +66,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStacks",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -86,6 +88,7 @@ defmodule Baiji.Cloudformation do
       action:         "SignalResource",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -102,6 +105,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListStackSetOperationResults",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -124,6 +128,7 @@ defmodule Baiji.Cloudformation do
       action:         "UpdateStackSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -142,6 +147,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListStackInstances",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -158,6 +164,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListStackSetOperations",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -182,6 +189,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListImports",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -201,6 +209,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStackResource",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -231,6 +240,7 @@ defmodule Baiji.Cloudformation do
       action:         "ContinueUpdateRollback",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -248,6 +258,7 @@ defmodule Baiji.Cloudformation do
       action:         "GetStackPolicy",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -264,6 +275,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStackSetOperation",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -284,6 +296,7 @@ defmodule Baiji.Cloudformation do
       action:         "DeleteChangeSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -302,6 +315,7 @@ defmodule Baiji.Cloudformation do
       action:         "DeleteStack",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -320,6 +334,7 @@ defmodule Baiji.Cloudformation do
       action:         "CreateStack",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -338,6 +353,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListChangeSets",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -358,6 +374,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeChangeSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -375,6 +392,7 @@ defmodule Baiji.Cloudformation do
       action:         "StopStackSetOperation",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -394,6 +412,7 @@ defmodule Baiji.Cloudformation do
       action:         "ValidateTemplate",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -413,6 +432,7 @@ defmodule Baiji.Cloudformation do
       action:         "CreateStackInstances",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -438,6 +458,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStackEvents",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -455,6 +476,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListStackSets",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -491,6 +513,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStackResources",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -509,6 +532,7 @@ defmodule Baiji.Cloudformation do
       action:         "EstimateTemplateCost",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -533,6 +557,7 @@ defmodule Baiji.Cloudformation do
       action:         "GetTemplate",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -549,6 +574,7 @@ defmodule Baiji.Cloudformation do
       action:         "CreateStackSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -569,6 +595,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStackInstance",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -585,6 +612,7 @@ defmodule Baiji.Cloudformation do
       action:         "SetStackPolicy",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -605,6 +633,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListStacks",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -621,6 +650,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeStackSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -646,6 +676,7 @@ defmodule Baiji.Cloudformation do
       action:         "UpdateStack",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -670,6 +701,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListExports",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -687,6 +719,7 @@ defmodule Baiji.Cloudformation do
       action:         "DeleteStackInstances",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -714,6 +747,7 @@ defmodule Baiji.Cloudformation do
       action:         "ExecuteChangeSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -733,6 +767,7 @@ defmodule Baiji.Cloudformation do
       action:         "ListStackResources",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -751,6 +786,7 @@ defmodule Baiji.Cloudformation do
       action:         "DeleteStackSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -778,6 +814,7 @@ defmodule Baiji.Cloudformation do
       action:         "GetTemplateSummary",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -795,6 +832,7 @@ defmodule Baiji.Cloudformation do
       action:         "DescribeAccountLimits",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end
@@ -831,6 +869,7 @@ defmodule Baiji.Cloudformation do
       action:         "CreateChangeSet",
       
       type:           :xml,
+      version:        "2010-05-15",
       method:         :post
     }
   end

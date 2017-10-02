@@ -36,6 +36,7 @@ defmodule Baiji.Batch do
       action:         "CancelJob",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -46,11 +47,11 @@ defmodule Baiji.Batch do
 
   In a managed compute environment, AWS Batch manages the compute resources
   within the environment, based on the compute resources that you specify.
-  Instances launched into a managed compute environment use a recent,
-  approved version of the Amazon ECS-optimized AMI. You can choose to use
-  Amazon EC2 On-Demand instances in your managed compute environment, or you
-  can use Amazon EC2 Spot instances that only launch when the Spot bid price
-  is below a specified percentage of the On-Demand price.
+  Instances launched into a managed compute environment use the latest Amazon
+  ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand instances in
+  your managed compute environment, or you can use Amazon EC2 Spot instances
+  that only launch when the Spot bid price is below a specified percentage of
+  the On-Demand price.
 
   In an unmanaged compute environment, you can manage your own compute
   resources. This provides more compute resource configuration options, such
@@ -76,6 +77,7 @@ defmodule Baiji.Batch do
       action:         "CreateComputeEnvironment",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -100,6 +102,7 @@ defmodule Baiji.Batch do
       action:         "CreateJobQueue",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -121,14 +124,15 @@ defmodule Baiji.Batch do
       action:         "DeleteComputeEnvironment",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
   
   @doc """
   Deletes the specified job queue. You must first disable submissions for a
-  queue with the `UpdateJobQueue` operation. All jobs in the queue are
-  terminated when you delete a job queue.
+  queue with the `UpdateJobQueue` operation and terminate any jobs that have
+  not completed with the `TerminateJob`.
 
   It is not necessary to disassociate compute environments from a queue
   before submitting a `DeleteJobQueue` request.
@@ -142,6 +146,7 @@ defmodule Baiji.Batch do
       action:         "DeleteJobQueue",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -158,6 +163,7 @@ defmodule Baiji.Batch do
       action:         "DeregisterJobDefinition",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -178,6 +184,7 @@ defmodule Baiji.Batch do
       action:         "DescribeComputeEnvironments",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -195,6 +202,7 @@ defmodule Baiji.Batch do
       action:         "DescribeJobDefinitions",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -211,6 +219,7 @@ defmodule Baiji.Batch do
       action:         "DescribeJobQueues",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -227,14 +236,14 @@ defmodule Baiji.Batch do
       action:         "DescribeJobs",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
   
   @doc """
   Returns a list of task jobs for a specified job queue. You can filter the
-  results by job status with the `jobStatus` parameter. If you do not specify
-  a status, only `RUNNING` jobs are returned.
+  results by job status with the `jobStatus` parameter.
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
@@ -245,6 +254,7 @@ defmodule Baiji.Batch do
       action:         "ListJobs",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -261,6 +271,7 @@ defmodule Baiji.Batch do
       action:         "RegisterJobDefinition",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -278,6 +289,7 @@ defmodule Baiji.Batch do
       action:         "SubmitJob",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -297,6 +309,7 @@ defmodule Baiji.Batch do
       action:         "TerminateJob",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -313,6 +326,7 @@ defmodule Baiji.Batch do
       action:         "UpdateComputeEnvironment",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end
@@ -329,6 +343,7 @@ defmodule Baiji.Batch do
       action:         "UpdateJobQueue",
       
       type:           :json,
+      version:        "2016-08-10",
       method:         :post
     }
   end

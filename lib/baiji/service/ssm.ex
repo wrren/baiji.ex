@@ -33,6 +33,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -52,6 +53,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -70,6 +72,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -88,6 +91,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -106,6 +110,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -125,6 +130,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -143,6 +149,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -165,6 +172,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -183,6 +191,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -203,6 +212,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -221,6 +231,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -239,6 +250,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -257,6 +269,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -294,6 +307,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -314,6 +328,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -332,6 +347,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -350,6 +366,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -368,6 +385,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -386,6 +404,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -404,6 +423,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -422,6 +442,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -442,6 +463,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -460,6 +482,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -478,6 +501,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -502,6 +526,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -522,6 +547,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -556,6 +582,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -574,6 +601,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -596,6 +624,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -615,6 +644,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -634,6 +664,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -652,6 +683,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -670,6 +702,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -688,6 +721,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -706,6 +740,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -726,6 +761,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -747,6 +783,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -770,6 +807,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -791,6 +829,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -809,6 +848,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -828,6 +868,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -846,6 +887,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -864,6 +906,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -884,6 +927,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -904,6 +948,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -922,6 +967,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -941,6 +987,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -959,6 +1006,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -978,6 +1026,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -997,6 +1046,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1015,6 +1065,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1036,6 +1087,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1054,6 +1106,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1073,6 +1126,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1092,6 +1146,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1111,6 +1166,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1129,6 +1185,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1155,6 +1212,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1173,6 +1231,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1192,6 +1251,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1210,6 +1270,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1229,6 +1290,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1259,6 +1321,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1297,6 +1360,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1321,6 +1385,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1349,6 +1414,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1368,6 +1434,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1391,6 +1458,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1412,6 +1480,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1430,6 +1499,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1451,6 +1521,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1471,6 +1542,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1489,6 +1561,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1509,6 +1582,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1528,6 +1602,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1546,6 +1621,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1564,6 +1640,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1583,6 +1660,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1611,6 +1689,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1629,6 +1708,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1648,6 +1728,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1674,6 +1755,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1692,6 +1774,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1718,6 +1801,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1736,6 +1820,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1754,6 +1839,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1775,6 +1861,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1795,6 +1882,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1813,6 +1901,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1831,6 +1920,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1849,6 +1939,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1867,6 +1958,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1885,6 +1977,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1903,6 +1996,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1924,6 +2018,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end
@@ -1943,6 +2038,7 @@ defmodule Baiji.SSM do
       target_prefix:  "AmazonSSM",
       
       type:           :json,
+      version:        "2014-11-06",
       method:         :post
     }
   end

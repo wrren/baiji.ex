@@ -65,6 +65,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end
@@ -89,6 +90,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end
@@ -115,6 +117,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end
@@ -142,6 +145,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end
@@ -168,6 +172,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end
@@ -200,6 +205,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end
@@ -227,6 +233,7 @@ defmodule Baiji.ApplicationAutoScaling do
       target_prefix:  "AnyScaleFrontendService",
       
       type:           :json,
+      version:        "2016-02-06",
       method:         :post
     }
   end

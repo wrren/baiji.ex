@@ -36,6 +36,7 @@ defmodule Baiji.SES do
       action:         "DeleteReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -119,6 +120,7 @@ defmodule Baiji.SES do
       action:         "SendRawEmail",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -142,6 +144,7 @@ defmodule Baiji.SES do
       action:         "DescribeActiveReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -163,6 +166,7 @@ defmodule Baiji.SES do
       action:         "SetReceiptRulePosition",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -185,6 +189,7 @@ defmodule Baiji.SES do
       action:         "DescribeConfigurationSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -207,6 +212,7 @@ defmodule Baiji.SES do
       action:         "CreateReceiptRule",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -229,6 +235,7 @@ defmodule Baiji.SES do
       action:         "CreateConfigurationSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -251,6 +258,7 @@ defmodule Baiji.SES do
       action:         "DescribeReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -272,6 +280,7 @@ defmodule Baiji.SES do
       action:         "DeleteReceiptRule",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -294,6 +303,7 @@ defmodule Baiji.SES do
       action:         "ListReceiptFilters",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -322,6 +332,7 @@ defmodule Baiji.SES do
       action:         "CreateConfigurationSetEventDestination",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -351,6 +362,7 @@ defmodule Baiji.SES do
       action:         "UpdateConfigurationSetEventDestination",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -373,6 +385,7 @@ defmodule Baiji.SES do
       action:         "CreateReceiptFilter",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -402,6 +415,7 @@ defmodule Baiji.SES do
       action:         "SetIdentityNotificationTopic",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -424,6 +438,7 @@ defmodule Baiji.SES do
       action:         "DeleteConfigurationSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -446,6 +461,7 @@ defmodule Baiji.SES do
       action:         "DescribeReceiptRule",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -474,6 +490,7 @@ defmodule Baiji.SES do
       action:         "DeleteIdentityPolicy",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -497,6 +514,7 @@ defmodule Baiji.SES do
       action:         "ListVerifiedEmailAddresses",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -516,6 +534,7 @@ defmodule Baiji.SES do
       action:         "ListIdentities",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -540,6 +559,7 @@ defmodule Baiji.SES do
       action:         "GetIdentityNotificationAttributes",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -558,6 +578,7 @@ defmodule Baiji.SES do
       action:         "GetSendQuota",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -587,6 +608,7 @@ defmodule Baiji.SES do
       action:         "ListIdentityPolicies",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -607,6 +629,7 @@ defmodule Baiji.SES do
       action:         "GetIdentityMailFromDomainAttributes",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -630,6 +653,7 @@ defmodule Baiji.SES do
       action:         "CloneReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -652,6 +676,7 @@ defmodule Baiji.SES do
       action:         "DeleteReceiptFilter",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -676,6 +701,7 @@ defmodule Baiji.SES do
       action:         "SetIdentityHeadersInNotificationsEnabled",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -697,6 +723,7 @@ defmodule Baiji.SES do
       action:         "GetSendStatistics",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -722,6 +749,7 @@ defmodule Baiji.SES do
       action:         "SetIdentityMailFromDomain",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -753,6 +781,7 @@ defmodule Baiji.SES do
       action:         "VerifyDomainDkim",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -776,6 +805,7 @@ defmodule Baiji.SES do
       action:         "ListConfigurationSets",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -797,6 +827,7 @@ defmodule Baiji.SES do
       action:         "UpdateReceiptRule",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -820,6 +851,7 @@ defmodule Baiji.SES do
       action:         "VerifyEmailAddress",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -843,6 +875,7 @@ defmodule Baiji.SES do
       action:         "DeleteConfigurationSetEventDestination",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -872,6 +905,7 @@ defmodule Baiji.SES do
       action:         "GetIdentityPolicies",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -911,6 +945,7 @@ defmodule Baiji.SES do
       action:         "GetIdentityDkimAttributes",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -939,6 +974,7 @@ defmodule Baiji.SES do
       action:         "SetIdentityFeedbackForwardingEnabled",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -988,6 +1024,7 @@ defmodule Baiji.SES do
       action:         "SendEmail",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1015,6 +1052,7 @@ defmodule Baiji.SES do
       action:         "SendBounce",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1040,6 +1078,7 @@ defmodule Baiji.SES do
       action:         "SetActiveReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1077,6 +1116,7 @@ defmodule Baiji.SES do
       action:         "GetIdentityVerificationAttributes",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1099,6 +1139,7 @@ defmodule Baiji.SES do
       action:         "DeleteVerifiedEmailAddress",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1118,6 +1159,7 @@ defmodule Baiji.SES do
       action:         "DeleteIdentity",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1145,6 +1187,7 @@ defmodule Baiji.SES do
       action:         "PutIdentityPolicy",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1163,6 +1206,7 @@ defmodule Baiji.SES do
       action:         "VerifyDomainIdentity",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1189,6 +1233,7 @@ defmodule Baiji.SES do
       action:         "ReorderReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1211,6 +1256,7 @@ defmodule Baiji.SES do
       action:         "CreateReceiptRuleSet",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1245,6 +1291,7 @@ defmodule Baiji.SES do
       action:         "SetIdentityDkimEnabled",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1264,6 +1311,7 @@ defmodule Baiji.SES do
       action:         "VerifyEmailIdentity",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -1289,6 +1337,7 @@ defmodule Baiji.SES do
       action:         "ListReceiptRuleSets",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end

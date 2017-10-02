@@ -68,6 +68,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -86,6 +87,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -104,6 +106,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -122,6 +125,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -140,6 +144,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -158,6 +163,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -177,6 +183,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -195,6 +202,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -214,6 +222,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -232,6 +241,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -250,6 +260,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end
@@ -268,6 +279,7 @@ defmodule Baiji.Codebuild do
       target_prefix:  "CodeBuild_20161006",
       
       type:           :json,
+      version:        "2016-10-06",
       method:         :post
     }
   end

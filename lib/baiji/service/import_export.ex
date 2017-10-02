@@ -23,6 +23,7 @@ defmodule Baiji.ImportExport do
       action:         "CancelJob",
       
       type:           :xml,
+      version:        "2010-06-01",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.ImportExport do
       action:         "CreateJob",
       
       type:           :xml,
+      version:        "2010-06-01",
       method:         :post
     }
   end
@@ -60,6 +62,7 @@ defmodule Baiji.ImportExport do
       action:         "GetShippingLabel",
       
       type:           :xml,
+      version:        "2010-06-01",
       method:         :post
     }
   end
@@ -79,6 +82,7 @@ defmodule Baiji.ImportExport do
       action:         "GetStatus",
       
       type:           :xml,
+      version:        "2010-06-01",
       method:         :post
     }
   end
@@ -99,6 +103,7 @@ defmodule Baiji.ImportExport do
       action:         "ListJobs",
       
       type:           :xml,
+      version:        "2010-06-01",
       method:         :post
     }
   end
@@ -119,6 +124,7 @@ defmodule Baiji.ImportExport do
       action:         "UpdateJob",
       
       type:           :xml,
+      version:        "2010-06-01",
       method:         :post
     }
   end

@@ -85,6 +85,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -103,6 +104,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -123,6 +125,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -142,6 +145,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -161,6 +165,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -180,6 +185,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -207,6 +213,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -228,6 +235,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -247,6 +255,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -267,6 +276,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -285,6 +295,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -310,6 +321,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -328,6 +340,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -348,6 +361,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -367,6 +381,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -385,6 +400,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -414,6 +430,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -432,6 +449,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end
@@ -450,6 +468,7 @@ defmodule Baiji.ApplicationDiscoveryService do
       target_prefix:  "AWSPoseidonService_V2015_11_01",
       
       type:           :json,
+      version:        "2015-11-01",
       method:         :post
     }
   end

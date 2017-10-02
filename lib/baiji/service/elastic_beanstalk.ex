@@ -35,6 +35,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "ListPlatformVersions",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -53,6 +54,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CreateStorageLocation",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -69,6 +71,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "SwapEnvironmentCNAMEs",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -97,6 +100,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CreateConfigurationTemplate",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -114,6 +118,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "AbortEnvironmentUpdate",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -137,6 +142,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DeleteConfigurationTemplate",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -153,6 +159,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeEnvironmentManagedActions",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -175,6 +182,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "UpdateApplication",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -197,6 +205,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeEvents",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -223,6 +232,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "UpdateConfigurationTemplate",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -239,6 +249,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DeletePlatformVersion",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -256,6 +267,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CreateApplication",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -286,6 +298,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeConfigurationSettings",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -319,6 +332,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "RequestEnvironmentInfo",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -335,6 +349,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "TerminateEnvironment",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -357,6 +372,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "RetrieveEnvironmentInfo",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -373,6 +389,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeEnvironmentManagedActionHistory",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -389,6 +406,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "UpdateApplicationResourceLifecycle",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -407,6 +425,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeInstancesHealth",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -428,6 +447,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DeleteApplicationVersion",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -451,6 +471,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DeleteEnvironmentConfiguration",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -467,6 +488,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeEnvironments",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -483,6 +505,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CreatePlatformVersion",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -510,6 +533,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "UpdateEnvironment",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -527,6 +551,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "RestartAppServer",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -547,6 +572,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "ValidateConfigurationSettings",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -563,6 +589,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CheckDNSAvailability",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -580,6 +607,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "ListAvailableSolutionStacks",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -600,6 +628,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeConfigurationOptions",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -623,6 +652,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "ComposeEnvironments",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -659,6 +689,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CreateApplicationVersion",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -675,6 +706,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeApplications",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -691,6 +723,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeEnvironmentResources",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -708,6 +741,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "CreateEnvironment",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -724,6 +758,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeApplicationVersions",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -742,6 +777,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribeEnvironmentHealth",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -763,6 +799,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "UpdateApplicationVersion",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -781,6 +818,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "RebuildEnvironment",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -797,6 +835,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DescribePlatformVersion",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -819,6 +858,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "DeleteApplication",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end
@@ -837,6 +877,7 @@ defmodule Baiji.ElasticBeanstalk do
       action:         "ApplyEnvironmentManagedAction",
       
       type:           :xml,
+      version:        "2010-12-01",
       method:         :post
     }
   end

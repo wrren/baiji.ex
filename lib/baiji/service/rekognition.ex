@@ -51,6 +51,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -82,6 +83,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -104,6 +106,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -126,6 +129,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -162,6 +166,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -226,6 +231,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -251,6 +257,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -275,6 +282,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -323,6 +331,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -348,6 +357,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -372,6 +382,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -415,6 +426,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -451,6 +463,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end
@@ -493,6 +506,7 @@ defmodule Baiji.Rekognition do
       target_prefix:  "RekognitionService",
       
       type:           :json,
+      version:        "2016-06-27",
       method:         :post
     }
   end

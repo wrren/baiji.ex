@@ -77,6 +77,7 @@ defmodule Baiji.LexRuntimeService do
       action:         "PostContent",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -145,6 +146,7 @@ defmodule Baiji.LexRuntimeService do
       action:         "PostText",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end

@@ -139,6 +139,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -172,12 +173,13 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
   
   @doc """
-  Disables an organizational control policy type in a root. A policy of a
+  Disables an organizational control policy type in a root. A poicy of a
   certain type can be attached to entities in a root only if that type is
   enabled in the root. After you perform this operation, you no longer can
   attach policies of the specified type to that root or to any OU or account
@@ -196,6 +198,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -221,6 +224,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -241,6 +245,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -287,6 +292,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -308,6 +314,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -329,6 +336,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -356,6 +364,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -395,6 +404,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -417,6 +427,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -457,6 +468,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -509,6 +521,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -536,6 +549,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -558,6 +572,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -578,6 +593,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -598,6 +614,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -625,6 +642,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -645,6 +663,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -667,6 +686,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -688,6 +708,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -709,6 +730,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -734,6 +756,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -762,6 +785,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -796,6 +820,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -823,6 +848,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -844,6 +870,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -864,6 +891,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -885,6 +913,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -905,6 +934,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -965,6 +995,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -991,6 +1022,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1042,6 +1074,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1064,6 +1097,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1085,6 +1119,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1107,6 +1142,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1128,6 +1164,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1151,6 +1188,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1215,6 +1253,7 @@ defmodule Baiji.Organizations do
       target_prefix:  "AWSOrganizationsV20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end

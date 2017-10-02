@@ -24,6 +24,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -42,6 +43,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -62,6 +64,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -80,6 +83,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -100,6 +104,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -120,6 +125,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -139,6 +145,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -158,6 +165,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -176,6 +184,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -194,6 +203,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -212,6 +222,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -230,6 +241,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -248,6 +260,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -266,6 +279,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -286,6 +300,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -306,6 +321,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -324,6 +340,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -342,6 +359,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -360,6 +378,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -380,6 +399,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -407,6 +427,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -427,6 +448,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -445,6 +467,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -463,6 +486,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -513,6 +537,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -533,6 +558,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -553,6 +579,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -574,6 +601,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -595,6 +623,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -614,6 +643,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -633,6 +663,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -653,6 +684,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -671,6 +703,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -696,6 +729,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -714,6 +748,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -732,6 +767,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -750,6 +786,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -768,6 +805,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -787,6 +825,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -805,6 +844,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -823,6 +863,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -841,6 +882,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -861,6 +903,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -892,6 +935,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -912,6 +956,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -932,6 +977,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -950,6 +996,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -968,6 +1015,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -986,6 +1034,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1004,6 +1053,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1022,6 +1072,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1042,6 +1093,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1060,6 +1112,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1078,6 +1131,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1096,6 +1150,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1114,6 +1169,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1132,6 +1188,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1152,6 +1209,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1171,6 +1229,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1189,6 +1248,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1207,6 +1267,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1238,6 +1299,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1258,6 +1320,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1276,6 +1339,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1316,6 +1380,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1334,6 +1399,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1354,6 +1420,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1373,6 +1440,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1392,6 +1460,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1410,6 +1479,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1429,6 +1499,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1450,6 +1521,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1468,6 +1540,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1486,6 +1559,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1506,6 +1580,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1525,6 +1600,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1543,6 +1619,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1563,6 +1640,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1581,6 +1659,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1607,6 +1686,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1627,6 +1707,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1647,6 +1728,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end
@@ -1669,6 +1751,7 @@ defmodule Baiji.CognitoIdentityProvider do
       target_prefix:  "AWSCognitoIdentityProviderService",
       
       type:           :json,
+      version:        "2016-04-18",
       method:         :post
     }
   end

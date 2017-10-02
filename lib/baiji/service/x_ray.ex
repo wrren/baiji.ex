@@ -18,6 +18,7 @@ defmodule Baiji.XRay do
       action:         "BatchGetTraces",
       
       type:           :rest_json,
+      version:        "2016-04-12",
       method:         :post
     }
   end
@@ -38,6 +39,7 @@ defmodule Baiji.XRay do
       action:         "GetServiceGraph",
       
       type:           :rest_json,
+      version:        "2016-04-12",
       method:         :post
     }
   end
@@ -54,6 +56,7 @@ defmodule Baiji.XRay do
       action:         "GetTraceGraph",
       
       type:           :rest_json,
+      version:        "2016-04-12",
       method:         :post
     }
   end
@@ -89,6 +92,7 @@ defmodule Baiji.XRay do
       action:         "GetTraceSummaries",
       
       type:           :rest_json,
+      version:        "2016-04-12",
       method:         :post
     }
   end
@@ -105,6 +109,7 @@ defmodule Baiji.XRay do
       action:         "PutTelemetryRecords",
       
       type:           :rest_json,
+      version:        "2016-04-12",
       method:         :post
     }
   end
@@ -170,6 +175,7 @@ defmodule Baiji.XRay do
       action:         "PutTraceSegments",
       
       type:           :rest_json,
+      version:        "2016-04-12",
       method:         :post
     }
   end

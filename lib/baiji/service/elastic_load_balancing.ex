@@ -55,6 +55,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "AddTags",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -77,6 +78,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "ApplySecurityGroupsToLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -100,6 +102,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "AttachLoadBalancerToSubnets",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -121,6 +124,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "ConfigureHealthCheck",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -153,6 +157,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "CreateAppCookieStickinessPolicy",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -187,6 +192,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "CreateLBCookieStickinessPolicy",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -218,6 +224,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "CreateLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -241,6 +248,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "CreateLoadBalancerListeners",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -262,6 +270,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "CreateLoadBalancerPolicy",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -287,6 +296,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DeleteLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -303,6 +313,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DeleteLoadBalancerListeners",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -320,6 +331,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DeleteLoadBalancerPolicy",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -345,6 +357,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DeregisterInstancesFromLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -366,6 +379,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeAccountLimits",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -387,6 +401,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeInstanceHealth",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -403,6 +418,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeLoadBalancerAttributes",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -427,6 +443,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeLoadBalancerPolicies",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -454,6 +471,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeLoadBalancerPolicyTypes",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -471,6 +489,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeLoadBalancers",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -487,6 +506,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DescribeTags",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -508,6 +528,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DetachLoadBalancerFromSubnets",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -535,6 +556,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "DisableAvailabilityZonesForLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -559,6 +581,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "EnableAvailabilityZonesForLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -598,6 +621,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "ModifyLoadBalancerAttributes",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -638,6 +662,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "RegisterInstancesWithLoadBalancer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -654,6 +679,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "RemoveTags",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -677,6 +703,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "SetLoadBalancerListenerSSLCertificate",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -712,6 +739,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "SetLoadBalancerPoliciesForBackendServer",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -741,6 +769,7 @@ defmodule Baiji.ElasticLoadBalancing do
       action:         "SetLoadBalancerPoliciesOfListener",
       
       type:           :xml,
+      version:        "2012-06-01",
       method:         :post
     }
   end

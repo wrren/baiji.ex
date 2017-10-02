@@ -29,6 +29,7 @@ defmodule Baiji.Cloudsearch do
       action:         "BuildSuggesters",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -47,6 +48,7 @@ defmodule Baiji.Cloudsearch do
       action:         "CreateDomain",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -67,6 +69,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DefineAnalysisScheme",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -87,6 +90,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DefineExpression",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -112,6 +116,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DefineIndexField",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -134,6 +139,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DefineSuggester",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -152,6 +158,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DeleteAnalysisScheme",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -172,6 +179,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DeleteDomain",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -191,6 +199,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DeleteExpression",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -210,6 +219,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DeleteIndexField",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -228,6 +238,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DeleteSuggester",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -251,6 +262,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeAnalysisSchemes",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -272,6 +284,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeAvailabilityOptions",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -295,6 +308,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeDomains",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -317,6 +331,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeExpressions",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -339,6 +354,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeIndexFields",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -359,6 +375,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeScalingParameters",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -381,6 +398,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeServiceAccessPolicies",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -404,6 +422,7 @@ defmodule Baiji.Cloudsearch do
       action:         "DescribeSuggesters",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -422,6 +441,7 @@ defmodule Baiji.Cloudsearch do
       action:         "IndexDocuments",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -438,6 +458,7 @@ defmodule Baiji.Cloudsearch do
       action:         "ListDomainNames",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -460,6 +481,7 @@ defmodule Baiji.Cloudsearch do
       action:         "UpdateAvailabilityOptions",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -484,6 +506,7 @@ defmodule Baiji.Cloudsearch do
       action:         "UpdateScalingParameters",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end
@@ -504,6 +527,7 @@ defmodule Baiji.Cloudsearch do
       action:         "UpdateServiceAccessPolicies",
       
       type:           :xml,
+      version:        "2013-01-01",
       method:         :post
     }
   end

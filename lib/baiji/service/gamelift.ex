@@ -344,6 +344,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -388,6 +389,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -426,6 +428,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -447,6 +450,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -499,6 +503,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -586,6 +591,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -625,6 +631,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -658,6 +665,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -731,6 +739,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -765,6 +774,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -804,6 +814,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -847,6 +858,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -890,6 +902,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -922,6 +935,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -980,6 +994,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1054,6 +1069,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1112,6 +1128,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1160,6 +1177,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1213,6 +1231,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1260,6 +1279,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1292,6 +1312,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1366,6 +1387,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1453,6 +1475,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1532,6 +1555,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1615,6 +1639,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1681,6 +1706,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1717,6 +1743,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1755,6 +1782,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1792,6 +1820,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1859,6 +1888,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1901,6 +1931,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1938,6 +1969,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -1980,6 +2012,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2072,6 +2105,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2142,6 +2176,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2217,6 +2252,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2251,6 +2287,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2317,6 +2354,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2357,6 +2395,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2417,6 +2456,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2455,6 +2495,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2535,6 +2576,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2571,6 +2613,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2606,6 +2649,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2658,6 +2702,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2712,6 +2757,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2761,6 +2807,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2876,6 +2923,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2945,6 +2993,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -2989,6 +3038,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3063,6 +3113,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3129,6 +3180,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3197,6 +3249,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3266,6 +3319,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3303,6 +3357,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3339,6 +3394,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3391,6 +3447,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3416,6 +3473,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3449,6 +3507,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3499,6 +3558,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3567,6 +3627,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3629,6 +3690,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3675,6 +3737,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end
@@ -3742,6 +3805,7 @@ defmodule Baiji.Gamelift do
       target_prefix:  "GameLift",
       
       type:           :json,
+      version:        "2015-10-01",
       method:         :post
     }
   end

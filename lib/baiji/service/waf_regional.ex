@@ -27,6 +27,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -60,6 +61,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -78,6 +80,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -97,6 +100,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -115,6 +119,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -151,6 +156,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -173,6 +179,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -192,6 +199,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -227,6 +235,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -261,6 +270,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -316,6 +326,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -335,6 +346,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -376,6 +388,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -459,6 +472,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -477,6 +491,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -495,6 +510,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -513,6 +529,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -543,6 +560,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -612,6 +630,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -630,6 +649,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -661,6 +681,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -679,6 +700,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -735,6 +757,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -793,6 +816,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -846,6 +870,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -886,6 +911,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -927,6 +953,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -982,6 +1009,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1021,6 +1049,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1039,6 +1068,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1096,6 +1126,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1114,6 +1145,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1164,6 +1196,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1226,6 +1259,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1244,6 +1278,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1279,6 +1314,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1297,6 +1333,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1367,6 +1404,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1385,6 +1423,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1403,6 +1442,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1421,6 +1461,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1457,6 +1498,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1475,6 +1517,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1504,6 +1547,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1522,6 +1566,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1554,6 +1599,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1594,6 +1640,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -1629,6 +1676,7 @@ defmodule Baiji.WAFRegional do
       target_prefix:  "AWSWAF_Regional_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end

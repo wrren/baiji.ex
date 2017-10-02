@@ -82,6 +82,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -109,6 +110,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -176,6 +178,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -198,6 +201,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -232,6 +236,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -261,6 +266,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -291,6 +297,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -311,6 +318,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -338,6 +346,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -378,6 +387,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -400,6 +410,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -421,6 +432,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -458,6 +470,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end
@@ -477,6 +490,7 @@ defmodule Baiji.Support do
       target_prefix:  "AWSSupport_20130415",
       
       type:           :json,
+      version:        "2013-04-15",
       method:         :post
     }
   end

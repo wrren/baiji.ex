@@ -36,6 +36,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -71,6 +72,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -97,6 +99,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -127,6 +130,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -150,6 +154,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -177,6 +182,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -197,6 +203,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -224,6 +231,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -242,6 +250,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -261,6 +270,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -282,6 +292,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -305,6 +316,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -330,6 +342,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -348,6 +361,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -374,6 +388,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -394,6 +409,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -427,6 +443,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -470,6 +487,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -500,6 +518,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -524,6 +543,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -545,6 +565,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -567,6 +588,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -588,6 +610,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -609,6 +632,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -632,6 +656,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -655,6 +680,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -688,6 +714,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -719,6 +746,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -737,6 +765,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -763,6 +792,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -807,6 +837,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -830,6 +861,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -852,6 +884,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -879,6 +912,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -904,6 +938,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -924,6 +959,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end
@@ -954,6 +990,7 @@ defmodule Baiji.DirectConnect do
       target_prefix:  "OvertureService",
       
       type:           :json,
+      version:        "2012-10-25",
       method:         :post
     }
   end

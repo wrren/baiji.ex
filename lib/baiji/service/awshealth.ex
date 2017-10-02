@@ -71,6 +71,7 @@ defmodule Baiji.AWSHealth do
       target_prefix:  "AWSHealth_20160804",
       
       type:           :json,
+      version:        "2016-08-04",
       method:         :post
     }
   end
@@ -91,6 +92,7 @@ defmodule Baiji.AWSHealth do
       target_prefix:  "AWSHealth_20160804",
       
       type:           :json,
+      version:        "2016-08-04",
       method:         :post
     }
   end
@@ -111,6 +113,7 @@ defmodule Baiji.AWSHealth do
       target_prefix:  "AWSHealth_20160804",
       
       type:           :json,
+      version:        "2016-08-04",
       method:         :post
     }
   end
@@ -137,6 +140,7 @@ defmodule Baiji.AWSHealth do
       target_prefix:  "AWSHealth_20160804",
       
       type:           :json,
+      version:        "2016-08-04",
       method:         :post
     }
   end
@@ -157,6 +161,7 @@ defmodule Baiji.AWSHealth do
       target_prefix:  "AWSHealth_20160804",
       
       type:           :json,
+      version:        "2016-08-04",
       method:         :post
     }
   end
@@ -182,6 +187,7 @@ defmodule Baiji.AWSHealth do
       target_prefix:  "AWSHealth_20160804",
       
       type:           :json,
+      version:        "2016-08-04",
       method:         :post
     }
   end

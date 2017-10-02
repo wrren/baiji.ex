@@ -35,6 +35,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -53,6 +54,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -71,6 +73,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -90,6 +93,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -108,6 +112,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -126,6 +131,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -144,6 +150,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -175,6 +182,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -198,6 +206,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -218,6 +227,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -238,6 +248,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -258,6 +269,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -277,6 +289,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -309,6 +322,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -328,6 +342,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -346,6 +361,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end
@@ -364,6 +380,7 @@ defmodule Baiji.SFN do
       target_prefix:  "AWSStepFunctions",
       
       type:           :json,
+      version:        "2016-11-23",
       method:         :post
     }
   end

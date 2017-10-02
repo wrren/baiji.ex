@@ -67,6 +67,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -120,6 +121,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -164,6 +166,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -208,6 +211,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -260,6 +264,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -308,6 +313,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -360,6 +366,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -408,6 +415,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -449,6 +457,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -493,6 +502,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -541,6 +551,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -586,6 +597,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -630,6 +642,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -685,6 +698,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -732,6 +746,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -787,6 +802,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -829,6 +845,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -882,6 +899,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -945,6 +963,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1014,6 +1033,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1066,6 +1086,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1107,6 +1128,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1162,6 +1184,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1214,6 +1237,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1270,6 +1294,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1326,6 +1351,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1376,6 +1402,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1412,6 +1439,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1462,6 +1490,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1523,6 +1552,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end
@@ -1578,6 +1608,7 @@ defmodule Baiji.SWF do
       target_prefix:  "SimpleWorkflowService",
       
       type:           :json,
+      version:        "2012-01-25",
       method:         :post
     }
   end

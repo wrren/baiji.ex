@@ -53,6 +53,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -81,6 +82,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -102,6 +104,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -123,6 +126,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -154,6 +158,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -197,6 +202,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -241,6 +247,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -262,6 +269,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -280,6 +288,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -305,6 +314,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -330,6 +340,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -355,6 +366,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -380,6 +392,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -401,6 +414,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -421,6 +435,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -440,6 +455,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -460,6 +476,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -516,6 +533,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -548,6 +566,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -580,6 +599,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -636,6 +656,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -667,6 +688,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -700,6 +722,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -720,6 +743,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -774,6 +798,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -796,6 +821,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end
@@ -815,6 +841,7 @@ defmodule Baiji.ConfigService do
       target_prefix:  "StarlingDoveService",
       
       type:           :json,
+      version:        "2014-11-12",
       method:         :post
     }
   end

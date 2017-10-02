@@ -50,6 +50,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -81,6 +82,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -113,6 +115,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -144,6 +147,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -164,6 +168,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -183,6 +188,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -202,6 +208,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -220,6 +227,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -239,6 +247,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -260,6 +269,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -278,6 +288,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -297,6 +308,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -316,6 +328,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -335,6 +348,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -358,6 +372,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -378,6 +393,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -396,6 +412,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -416,6 +433,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -442,6 +460,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -465,6 +484,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -485,6 +505,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -513,6 +534,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -535,6 +557,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -583,6 +606,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -606,6 +630,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -626,6 +651,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -646,6 +672,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -685,6 +712,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -710,6 +738,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -730,6 +759,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end
@@ -751,6 +781,7 @@ defmodule Baiji.CloudwatchLogs do
       target_prefix:  "Logs_20140328",
       
       type:           :json,
+      version:        "2014-03-28",
       method:         :post
     }
   end

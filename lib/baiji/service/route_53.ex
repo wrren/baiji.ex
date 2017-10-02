@@ -21,6 +21,7 @@ defmodule Baiji.Route53 do
       action:         "CreateTrafficPolicyInstance",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -91,6 +92,7 @@ defmodule Baiji.Route53 do
       action:         "ListHostedZonesByName",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -119,6 +121,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteHealthCheck",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :delete
     }
   end
@@ -156,6 +159,7 @@ defmodule Baiji.Route53 do
       action:         "UpdateTrafficPolicyInstance",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -185,6 +189,7 @@ defmodule Baiji.Route53 do
       action:         "AssociateVPCWithHostedZone",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -235,6 +240,7 @@ defmodule Baiji.Route53 do
       action:         "CreateHealthCheck",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -253,6 +259,7 @@ defmodule Baiji.Route53 do
       action:         "ListTrafficPolicyVersions",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -279,6 +286,7 @@ defmodule Baiji.Route53 do
       action:         "ListTrafficPolicyInstancesByHostedZone",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -300,6 +308,7 @@ defmodule Baiji.Route53 do
       action:         "ListTagsForResource",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -321,6 +330,7 @@ defmodule Baiji.Route53 do
       action:         "ChangeTagsForResource",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -373,6 +383,7 @@ defmodule Baiji.Route53 do
       action:         "CreateHostedZone",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -494,6 +505,7 @@ defmodule Baiji.Route53 do
       action:         "CreateQueryLoggingConfig",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -518,6 +530,7 @@ defmodule Baiji.Route53 do
       action:         "ListQueryLoggingConfigs",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -535,6 +548,7 @@ defmodule Baiji.Route53 do
       action:         "ListHealthChecks",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -557,6 +571,7 @@ defmodule Baiji.Route53 do
       action:         "ListHostedZones",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -578,6 +593,7 @@ defmodule Baiji.Route53 do
       action:         "ListGeoLocations",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -594,6 +610,7 @@ defmodule Baiji.Route53 do
       action:         "UpdateTrafficPolicyComment",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -612,6 +629,7 @@ defmodule Baiji.Route53 do
       action:         "ListTrafficPolicies",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -669,6 +687,7 @@ defmodule Baiji.Route53 do
       action:         "ListResourceRecordSets",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -695,6 +714,7 @@ defmodule Baiji.Route53 do
       action:         "GetChange",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -723,6 +743,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteVPCAssociationAuthorization",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -742,6 +763,7 @@ defmodule Baiji.Route53 do
       action:         "TestDNSAnswer",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -763,6 +785,7 @@ defmodule Baiji.Route53 do
       action:         "ListVPCAssociationAuthorizations",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -786,6 +809,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteReusableDelegationSet",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :delete
     }
   end
@@ -802,6 +826,7 @@ defmodule Baiji.Route53 do
       action:         "UpdateHostedZoneComment",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -828,6 +853,7 @@ defmodule Baiji.Route53 do
       action:         "CreateReusableDelegationSet",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -856,6 +882,7 @@ defmodule Baiji.Route53 do
       action:         "CreateVPCAssociationAuthorization",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -882,6 +909,7 @@ defmodule Baiji.Route53 do
       action:         "ListTrafficPolicyInstances",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -904,6 +932,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteTrafficPolicyInstance",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :delete
     }
   end
@@ -920,6 +949,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteTrafficPolicy",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :delete
     }
   end
@@ -936,6 +966,7 @@ defmodule Baiji.Route53 do
       action:         "GetTrafficPolicy",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -957,6 +988,7 @@ defmodule Baiji.Route53 do
       action:         "ListTagsForResources",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -973,6 +1005,7 @@ defmodule Baiji.Route53 do
       action:         "GetHealthCheckLastFailureReason",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -990,6 +1023,7 @@ defmodule Baiji.Route53 do
       action:         "GetTrafficPolicyInstanceCount",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1091,6 +1125,7 @@ defmodule Baiji.Route53 do
       action:         "ChangeResourceRecordSets",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -1107,6 +1142,7 @@ defmodule Baiji.Route53 do
       action:         "GetHealthCheck",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1124,6 +1160,7 @@ defmodule Baiji.Route53 do
       action:         "GetHealthCheckCount",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1158,6 +1195,7 @@ defmodule Baiji.Route53 do
       action:         "GetGeoLocation",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1181,6 +1219,7 @@ defmodule Baiji.Route53 do
       action:         "CreateTrafficPolicyVersion",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -1202,6 +1241,7 @@ defmodule Baiji.Route53 do
       action:         "UpdateHealthCheck",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -1223,6 +1263,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteQueryLoggingConfig",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :delete
     }
   end
@@ -1243,6 +1284,7 @@ defmodule Baiji.Route53 do
       action:         "GetQueryLoggingConfig",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1260,6 +1302,7 @@ defmodule Baiji.Route53 do
       action:         "GetReusableDelegationSet",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1284,6 +1327,7 @@ defmodule Baiji.Route53 do
       action:         "DisassociateVPCFromHostedZone",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -1301,6 +1345,7 @@ defmodule Baiji.Route53 do
       action:         "GetHostedZone",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1327,6 +1372,7 @@ defmodule Baiji.Route53 do
       action:         "GetTrafficPolicyInstance",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1343,6 +1389,7 @@ defmodule Baiji.Route53 do
       action:         "GetHealthCheckStatus",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1391,6 +1438,7 @@ defmodule Baiji.Route53 do
       action:         "DeleteHostedZone",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :delete
     }
   end
@@ -1408,6 +1456,7 @@ defmodule Baiji.Route53 do
       action:         "ListReusableDelegationSets",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1426,6 +1475,7 @@ defmodule Baiji.Route53 do
       action:         "CreateTrafficPolicy",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :post
     }
   end
@@ -1443,6 +1493,7 @@ defmodule Baiji.Route53 do
       action:         "GetHostedZoneCount",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1469,6 +1520,7 @@ defmodule Baiji.Route53 do
       action:         "ListTrafficPolicyInstancesByPolicy",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end
@@ -1489,6 +1541,7 @@ defmodule Baiji.Route53 do
       action:         "GetCheckerIpRanges",
       
       type:           :rest_xml,
+      version:        "2013-04-01",
       method:         :get
     }
   end

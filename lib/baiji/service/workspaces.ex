@@ -20,6 +20,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -61,6 +63,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -79,6 +82,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -106,6 +110,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -131,6 +136,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -157,6 +163,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -175,6 +182,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -194,6 +202,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -220,6 +229,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -259,6 +269,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -278,6 +289,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -297,6 +309,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end
@@ -327,6 +340,7 @@ defmodule Baiji.Workspaces do
       target_prefix:  "WorkspacesService",
       
       type:           :json,
+      version:        "2015-04-08",
       method:         :post
     }
   end

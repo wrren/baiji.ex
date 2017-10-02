@@ -17,6 +17,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -35,6 +36,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -53,6 +55,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -71,6 +74,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -89,6 +93,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -107,6 +112,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -125,6 +131,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -143,6 +150,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -161,6 +169,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -179,6 +188,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -197,6 +207,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -215,6 +226,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -235,6 +247,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -253,6 +266,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -271,6 +285,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -289,6 +304,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -307,6 +323,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -325,6 +342,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -343,6 +361,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -361,6 +380,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -379,6 +399,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -397,6 +418,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -415,6 +437,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -433,6 +456,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -451,6 +475,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -469,6 +494,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -487,6 +513,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -505,6 +532,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -523,6 +551,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -541,6 +570,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -559,6 +589,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -577,6 +608,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -595,6 +627,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -613,6 +646,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -631,6 +665,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -649,6 +684,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -667,6 +703,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -685,6 +722,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -703,6 +741,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -721,6 +760,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -739,6 +779,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -757,6 +798,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -775,6 +817,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -793,6 +836,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -811,6 +855,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -829,6 +874,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -847,6 +893,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -865,6 +912,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -883,6 +931,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -902,6 +951,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -920,6 +970,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -938,6 +989,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -958,6 +1010,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -976,6 +1029,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -994,6 +1048,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1012,6 +1067,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1031,6 +1087,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1050,6 +1107,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1068,6 +1126,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1086,6 +1145,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1104,6 +1164,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1122,6 +1183,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1141,6 +1203,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1160,6 +1223,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1178,6 +1242,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1196,6 +1261,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1214,6 +1280,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1232,6 +1299,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1250,6 +1318,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1268,6 +1337,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1286,6 +1356,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1304,6 +1375,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1322,6 +1394,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end
@@ -1341,6 +1414,7 @@ defmodule Baiji.Glue do
       target_prefix:  "AWSGlue",
       
       type:           :json,
+      version:        "2017-03-31",
       method:         :post
     }
   end

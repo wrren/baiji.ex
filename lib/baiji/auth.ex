@@ -26,7 +26,9 @@ defmodule Baiji.Auth do
     |> Enum.reduce_while(op, fn(method, op) ->
       case Map.get(op, key) do
         nil -> {:cont, populate(op, method, key)}
-        _   -> {:halt, op}
+        val -> 
+          Operation.debug(op, "Got #{val} for #{key}")
+          {:halt, op}
       end
     end)
   end

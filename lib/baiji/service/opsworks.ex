@@ -106,6 +106,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -132,6 +133,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -156,6 +158,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -184,6 +187,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -225,6 +229,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -251,6 +256,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -284,6 +290,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -310,6 +317,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -334,6 +342,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -364,6 +373,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -385,6 +395,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -408,6 +419,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -434,6 +446,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -455,6 +468,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -482,6 +496,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -507,6 +522,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -530,6 +546,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -554,6 +571,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -579,6 +597,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -605,6 +624,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -629,6 +649,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -653,6 +674,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -686,6 +708,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -704,6 +727,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -728,6 +752,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -754,6 +779,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -783,6 +809,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -809,6 +836,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -833,6 +861,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -860,6 +889,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -883,6 +913,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -910,6 +941,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -934,6 +966,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -959,6 +992,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -980,6 +1014,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1006,6 +1041,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1032,6 +1068,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1055,6 +1092,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1079,6 +1117,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1107,6 +1146,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1134,6 +1174,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1160,6 +1201,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1186,6 +1228,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1212,6 +1255,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1238,6 +1282,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1265,6 +1310,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1293,6 +1339,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1320,6 +1367,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1345,6 +1393,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1371,6 +1420,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1397,6 +1447,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1422,6 +1473,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1446,6 +1498,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1469,6 +1522,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1495,6 +1549,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1519,6 +1574,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1547,6 +1603,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1571,6 +1628,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1594,6 +1652,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1618,6 +1677,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1642,6 +1702,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1668,6 +1729,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1700,6 +1762,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1726,6 +1789,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1753,6 +1817,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1779,6 +1844,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1806,6 +1872,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1832,6 +1899,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1856,6 +1924,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1882,6 +1951,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1908,6 +1978,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1926,6 +1997,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end
@@ -1957,6 +2029,7 @@ defmodule Baiji.Opsworks do
       target_prefix:  "OpsWorks_20130218",
       
       type:           :json,
+      version:        "2013-02-18",
       method:         :post
     }
   end

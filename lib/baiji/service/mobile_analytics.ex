@@ -18,6 +18,7 @@ defmodule Baiji.MobileAnalytics do
       action:         "PutEvents",
       
       type:           :rest_json,
+      version:        "2014-06-05",
       method:         :post
     }
   end

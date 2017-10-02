@@ -45,6 +45,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -65,6 +66,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -86,6 +88,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -105,6 +108,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -137,6 +141,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -159,6 +164,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -186,6 +192,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -204,6 +211,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -250,6 +258,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -299,6 +308,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -317,6 +327,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -339,6 +350,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -364,6 +376,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end
@@ -387,6 +400,7 @@ defmodule Baiji.CloudTrail do
       target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
       type:           :json,
+      version:        "2013-11-01",
       method:         :post
     }
   end

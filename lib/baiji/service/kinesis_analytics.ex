@@ -20,6 +20,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -51,6 +52,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -94,6 +96,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -127,6 +130,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -173,6 +177,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -197,6 +202,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -218,6 +224,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -241,6 +248,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -267,6 +275,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -293,6 +302,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -324,6 +334,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -353,6 +364,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -386,6 +398,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -412,6 +425,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end
@@ -438,6 +452,7 @@ defmodule Baiji.KinesisAnalytics do
       target_prefix:  "KinesisAnalytics_20150814",
       
       type:           :json,
+      version:        "2015-08-14",
       method:         :post
     }
   end

@@ -52,6 +52,7 @@ defmodule Baiji.AwsmarketplaceMetering do
       target_prefix:  "AWSMPMeteringService",
       
       type:           :json,
+      version:        "2016-01-14",
       method:         :post
     }
   end
@@ -74,6 +75,7 @@ defmodule Baiji.AwsmarketplaceMetering do
       target_prefix:  "AWSMPMeteringService",
       
       type:           :json,
+      version:        "2016-01-14",
       method:         :post
     }
   end
@@ -96,6 +98,7 @@ defmodule Baiji.AwsmarketplaceMetering do
       target_prefix:  "AWSMPMeteringService",
       
       type:           :json,
+      version:        "2016-01-14",
       method:         :post
     }
   end

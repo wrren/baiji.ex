@@ -17,6 +17,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -35,6 +36,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -53,6 +55,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -71,6 +74,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -89,6 +93,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -107,6 +112,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -125,6 +131,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -143,6 +150,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -161,6 +169,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -179,6 +188,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -197,6 +207,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -215,6 +226,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end
@@ -233,6 +245,7 @@ defmodule Baiji.AWSBudgets do
       target_prefix:  "AWSBudgetServiceGateway",
       
       type:           :json,
+      version:        "2016-10-20",
       method:         :post
     }
   end

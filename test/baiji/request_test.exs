@@ -25,4 +25,12 @@ defmodule Baiji.RequestTest do
 
     assert host == "localhost"
   end
+
+  test "correctly forms query string from Operation struct" do
+    host = Baiji.EC2.describe_instances
+    |> Config.merge
+    |> Request.query
+
+    assert host == "?Action=DescribeInstances&Version=2016-11-15"
+  end
 end

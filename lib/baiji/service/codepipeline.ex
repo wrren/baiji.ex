@@ -138,6 +138,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -157,6 +158,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -176,6 +178,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -194,6 +197,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -218,6 +222,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -236,6 +241,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -255,6 +261,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -273,6 +280,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -299,6 +307,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -320,6 +329,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -340,6 +350,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -359,6 +370,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -386,6 +398,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -405,6 +418,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -423,6 +437,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -441,6 +456,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -467,6 +483,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -493,6 +510,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -511,6 +529,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -530,6 +549,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -549,6 +569,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -568,6 +589,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -587,6 +609,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -606,6 +629,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -625,6 +649,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -644,6 +669,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -665,6 +691,7 @@ defmodule Baiji.CodePipeline do
       target_prefix:  "CodePipeline_20150709",
       
       type:           :json,
+      version:        "2015-07-09",
       method:         :post
     }
   end

@@ -28,6 +28,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "AddTags",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :post
     }
   end
@@ -47,6 +48,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "CreateElasticsearchDomain",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :post
     }
   end
@@ -64,6 +66,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "DeleteElasticsearchDomain",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :delete
     }
   end
@@ -81,6 +84,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "DescribeElasticsearchDomain",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -99,6 +103,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "DescribeElasticsearchDomainConfig",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -116,6 +121,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "DescribeElasticsearchDomains",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :post
     }
   end
@@ -134,6 +140,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "DescribeElasticsearchInstanceTypeLimits",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -151,6 +158,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "ListDomainNames",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -168,6 +176,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "ListElasticsearchInstanceTypes",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -184,6 +193,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "ListElasticsearchVersions",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -200,6 +210,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "ListTags",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :get
     }
   end
@@ -216,6 +227,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "RemoveTags",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :post
     }
   end
@@ -233,6 +245,7 @@ defmodule Baiji.ElasticsearchService do
       action:         "UpdateElasticsearchDomainConfig",
       
       type:           :rest_json,
+      version:        "2015-01-01",
       method:         :post
     }
   end

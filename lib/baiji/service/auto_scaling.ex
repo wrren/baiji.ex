@@ -54,6 +54,7 @@ defmodule Baiji.AutoScaling do
       action:         "PutLifecycleHook",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -70,16 +71,16 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeAutoScalingInstances",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
   
   @doc """
-  Moves the specified instances into the standby state.
+  Moves the specified instances into `Standby` mode.
 
-  For more information, see [Temporarily Removing Instances from Your Auto
-  Scaling
-  Group](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-enter-exit-standby.html)
+  For more information, see [Auto Scaling
+  Lifecycle](http://docs.aws.amazon.com/autoscaling/latest/userguide/AutoScalingGroupLifecycle.html)
   in the *Auto Scaling User Guide*.
   """
   def enter_standby(input \\ %{}, options \\ []) do
@@ -91,6 +92,7 @@ defmodule Baiji.AutoScaling do
       action:         "EnterStandby",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -112,6 +114,7 @@ defmodule Baiji.AutoScaling do
       action:         "ResumeProcesses",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -132,6 +135,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeMetricCollectionTypes",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -149,6 +153,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeScalingProcessTypes",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -165,6 +170,7 @@ defmodule Baiji.AutoScaling do
       action:         "DeleteNotificationConfiguration",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -190,6 +196,7 @@ defmodule Baiji.AutoScaling do
       action:         "PutScalingPolicy",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -208,6 +215,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeScheduledActions",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -227,6 +235,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeLoadBalancers",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -268,6 +277,7 @@ defmodule Baiji.AutoScaling do
       action:         "CompleteLifecycleAction",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -275,8 +285,8 @@ defmodule Baiji.AutoScaling do
   @doc """
   Removes one or more instances from the specified Auto Scaling group.
 
-  After the instances are detached, you can manage them independent of the
-  Auto Scaling group.
+  After the instances are detached, you can manage them independently from
+  the rest of the Auto Scaling group.
 
   If you do not specify the option to decrement the desired capacity, Auto
   Scaling launches instances to replace the ones that are detached.
@@ -299,6 +309,7 @@ defmodule Baiji.AutoScaling do
       action:         "DetachInstances",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -315,6 +326,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeLaunchConfigurations",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -331,6 +343,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeAutoScalingNotificationTypes",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -355,6 +368,7 @@ defmodule Baiji.AutoScaling do
       action:         "AttachLoadBalancerTargetGroups",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -362,14 +376,15 @@ defmodule Baiji.AutoScaling do
   @doc """
   Updates the configuration for the specified Auto Scaling group.
 
-  The new settings take effect on any scaling activities after this call
-  returns. Scaling activities that are currently in progress aren't affected.
-
   To update an Auto Scaling group with a launch configuration with
-  `InstanceMonitoring` set to `false`, you must first disable the collection
+  `InstanceMonitoring` set to `False`, you must first disable the collection
   of group metrics. Otherwise, you will get an error. If you have previously
   enabled the collection of group metrics, you can disable it using
   `DisableMetricsCollection`.
+
+  The new settings are registered upon the completion of this call. Any
+  launch configuration settings take effect on any triggers after this call
+  returns. Scaling activities that are currently in progress aren't affected.
 
   Note the following:
 
@@ -397,6 +412,7 @@ defmodule Baiji.AutoScaling do
       action:         "UpdateAutoScalingGroup",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -417,6 +433,7 @@ defmodule Baiji.AutoScaling do
       action:         "TerminateInstanceInAutoScalingGroup",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -441,6 +458,7 @@ defmodule Baiji.AutoScaling do
       action:         "CreateLaunchConfiguration",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -466,6 +484,7 @@ defmodule Baiji.AutoScaling do
       action:         "PutNotificationConfiguration",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -498,16 +517,16 @@ defmodule Baiji.AutoScaling do
       action:         "DeleteAutoScalingGroup",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
   
   @doc """
-  Moves the specified instances out of the standby state.
+  Moves the specified instances out of `Standby` mode.
 
-  For more information, see [Temporarily Removing Instances from Your Auto
-  Scaling
-  Group](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-enter-exit-standby.html)
+  For more information, see [Auto Scaling
+  Lifecycle](http://docs.aws.amazon.com/autoscaling/latest/userguide/AutoScalingGroupLifecycle.html)
   in the *Auto Scaling User Guide*.
   """
   def exit_standby(input \\ %{}, options \\ []) do
@@ -519,6 +538,7 @@ defmodule Baiji.AutoScaling do
       action:         "ExitStandby",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -535,6 +555,7 @@ defmodule Baiji.AutoScaling do
       action:         "ExecutePolicy",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -554,6 +575,7 @@ defmodule Baiji.AutoScaling do
       action:         "EnableMetricsCollection",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -571,6 +593,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeScalingActivities",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -587,6 +610,7 @@ defmodule Baiji.AutoScaling do
       action:         "DeleteScheduledAction",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -603,6 +627,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribePolicies",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -619,6 +644,7 @@ defmodule Baiji.AutoScaling do
       action:         "DetachLoadBalancerTargetGroups",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -635,6 +661,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeLifecycleHooks",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -651,6 +678,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeLoadBalancerTargetGroups",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -670,6 +698,7 @@ defmodule Baiji.AutoScaling do
       action:         "DeleteLifecycleHook",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -690,6 +719,7 @@ defmodule Baiji.AutoScaling do
       action:         "SetInstanceProtection",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -716,6 +746,7 @@ defmodule Baiji.AutoScaling do
       action:         "SuspendProcesses",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -732,6 +763,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeAutoScalingGroups",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -760,6 +792,7 @@ defmodule Baiji.AutoScaling do
       action:         "AttachLoadBalancers",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -776,6 +809,7 @@ defmodule Baiji.AutoScaling do
       action:         "DeleteTags",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -792,6 +826,7 @@ defmodule Baiji.AutoScaling do
       action:         "DisableMetricsCollection",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -808,6 +843,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeLifecycleHookTypes",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -833,6 +869,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeTags",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -857,6 +894,7 @@ defmodule Baiji.AutoScaling do
       action:         "CreateOrUpdateTags",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -873,6 +911,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeAdjustmentTypes",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -892,6 +931,7 @@ defmodule Baiji.AutoScaling do
       action:         "DeletePolicy",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -934,6 +974,7 @@ defmodule Baiji.AutoScaling do
       action:         "RecordLifecycleActionHeartbeat",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -954,6 +995,7 @@ defmodule Baiji.AutoScaling do
       action:         "SetDesiredCapacity",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -979,6 +1021,7 @@ defmodule Baiji.AutoScaling do
       action:         "DetachLoadBalancers",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1003,6 +1046,7 @@ defmodule Baiji.AutoScaling do
       action:         "CreateAutoScalingGroup",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1033,6 +1077,7 @@ defmodule Baiji.AutoScaling do
       action:         "AttachInstances",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1049,6 +1094,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeTerminationPolicyTypes",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1069,6 +1115,7 @@ defmodule Baiji.AutoScaling do
       action:         "DeleteLaunchConfiguration",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1086,6 +1133,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeNotificationConfigurations",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1106,6 +1154,7 @@ defmodule Baiji.AutoScaling do
       action:         "SetInstanceHealth",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1127,6 +1176,7 @@ defmodule Baiji.AutoScaling do
       action:         "DescribeAccountLimits",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end
@@ -1149,6 +1199,7 @@ defmodule Baiji.AutoScaling do
       action:         "PutScheduledUpdateGroupAction",
       
       type:           :xml,
+      version:        "2011-01-01",
       method:         :post
     }
   end

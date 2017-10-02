@@ -26,6 +26,7 @@ defmodule Baiji.CloudFront do
       action:         "CreateCloudFrontOriginAccessIdentity",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.CloudFront do
       action:         "CreateDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -59,6 +61,7 @@ defmodule Baiji.CloudFront do
       action:         "CreateDistributionWithTags",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -75,6 +78,7 @@ defmodule Baiji.CloudFront do
       action:         "CreateInvalidation",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -121,6 +125,7 @@ defmodule Baiji.CloudFront do
       action:         "CreateStreamingDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -137,6 +142,7 @@ defmodule Baiji.CloudFront do
       action:         "CreateStreamingDistributionWithTags",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -153,6 +159,7 @@ defmodule Baiji.CloudFront do
       action:         "DeleteCloudFrontOriginAccessIdentity",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :delete
     }
   end
@@ -169,6 +176,7 @@ defmodule Baiji.CloudFront do
       action:         "DeleteDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :delete
     }
   end
@@ -224,6 +232,7 @@ defmodule Baiji.CloudFront do
       action:         "DeleteStreamingDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :delete
     }
   end
@@ -240,6 +249,7 @@ defmodule Baiji.CloudFront do
       action:         "GetCloudFrontOriginAccessIdentity",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -256,6 +266,7 @@ defmodule Baiji.CloudFront do
       action:         "GetCloudFrontOriginAccessIdentityConfig",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -272,6 +283,7 @@ defmodule Baiji.CloudFront do
       action:         "GetDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -288,6 +300,7 @@ defmodule Baiji.CloudFront do
       action:         "GetDistributionConfig",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -304,6 +317,7 @@ defmodule Baiji.CloudFront do
       action:         "GetInvalidation",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -321,6 +335,7 @@ defmodule Baiji.CloudFront do
       action:         "GetStreamingDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -337,6 +352,7 @@ defmodule Baiji.CloudFront do
       action:         "GetStreamingDistributionConfig",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -353,6 +369,7 @@ defmodule Baiji.CloudFront do
       action:         "ListCloudFrontOriginAccessIdentities",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -369,6 +386,7 @@ defmodule Baiji.CloudFront do
       action:         "ListDistributions",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -386,6 +404,7 @@ defmodule Baiji.CloudFront do
       action:         "ListDistributionsByWebACLId",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -402,6 +421,7 @@ defmodule Baiji.CloudFront do
       action:         "ListInvalidations",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -418,6 +438,7 @@ defmodule Baiji.CloudFront do
       action:         "ListStreamingDistributions",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -434,6 +455,7 @@ defmodule Baiji.CloudFront do
       action:         "ListTagsForResource",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :get
     }
   end
@@ -450,6 +472,7 @@ defmodule Baiji.CloudFront do
       action:         "TagResource",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -466,6 +489,7 @@ defmodule Baiji.CloudFront do
       action:         "UntagResource",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :post
     }
   end
@@ -482,6 +506,7 @@ defmodule Baiji.CloudFront do
       action:         "UpdateCloudFrontOriginAccessIdentity",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :put
     }
   end
@@ -556,6 +581,7 @@ defmodule Baiji.CloudFront do
       action:         "UpdateDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :put
     }
   end
@@ -572,6 +598,7 @@ defmodule Baiji.CloudFront do
       action:         "UpdateStreamingDistribution",
       
       type:           :rest_xml,
+      version:        "2017-03-25",
       method:         :put
     }
   end

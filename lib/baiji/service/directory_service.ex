@@ -37,6 +37,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -65,6 +66,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -88,6 +90,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -106,6 +109,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -125,6 +129,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -143,6 +148,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -161,6 +167,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -179,6 +186,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -204,6 +212,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -229,6 +238,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -247,6 +257,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -269,6 +280,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -294,6 +306,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -320,6 +333,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -338,6 +352,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -357,6 +372,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -375,6 +391,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -393,6 +410,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -416,6 +434,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -441,6 +460,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -463,6 +483,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -486,6 +507,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -505,6 +527,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -536,6 +559,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -558,6 +582,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -576,6 +601,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -595,6 +621,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -613,6 +640,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -634,6 +662,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -652,6 +681,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -672,6 +702,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -693,6 +724,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -714,6 +746,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -733,6 +766,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -751,6 +785,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -778,6 +813,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -805,6 +841,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -824,6 +861,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -849,6 +887,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end
@@ -867,6 +906,7 @@ defmodule Baiji.DirectoryService do
       target_prefix:  "DirectoryService_20150416",
       
       type:           :json,
+      version:        "2015-04-16",
       method:         :post
     }
   end

@@ -17,6 +17,7 @@ defmodule Baiji.CostAndUsageReportService do
       target_prefix:  "AWSOrigamiServiceGatewayService",
       
       type:           :json,
+      version:        "2017-01-06",
       method:         :post
     }
   end
@@ -35,6 +36,7 @@ defmodule Baiji.CostAndUsageReportService do
       target_prefix:  "AWSOrigamiServiceGatewayService",
       
       type:           :json,
+      version:        "2017-01-06",
       method:         :post
     }
   end
@@ -53,6 +55,7 @@ defmodule Baiji.CostAndUsageReportService do
       target_prefix:  "AWSOrigamiServiceGatewayService",
       
       type:           :json,
+      version:        "2017-01-06",
       method:         :post
     }
   end

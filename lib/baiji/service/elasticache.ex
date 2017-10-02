@@ -28,6 +28,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeReservedCacheNodesOfferings",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -51,6 +52,7 @@ defmodule Baiji.Elasticache do
       action:         "CreateCacheSecurityGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -68,6 +70,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeCacheSubnetGroups",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -85,6 +88,7 @@ defmodule Baiji.Elasticache do
       action:         "DeleteCacheParameterGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -103,6 +107,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeCacheSecurityGroups",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -127,6 +132,7 @@ defmodule Baiji.Elasticache do
       action:         "ModifyReplicationGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -149,6 +155,7 @@ defmodule Baiji.Elasticache do
       action:         "ListAllowedNodeTypeModifications",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -168,6 +175,7 @@ defmodule Baiji.Elasticache do
       action:         "CreateCacheSubnetGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -190,6 +198,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeEvents",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -206,6 +215,7 @@ defmodule Baiji.Elasticache do
       action:         "RemoveTagsFromResource",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -229,6 +239,7 @@ defmodule Baiji.Elasticache do
       action:         "ListTagsForResource",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -271,6 +282,7 @@ defmodule Baiji.Elasticache do
       action:         "CreateReplicationGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -305,6 +317,7 @@ defmodule Baiji.Elasticache do
       action:         "CreateCacheParameterGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -342,6 +355,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeCacheClusters",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -360,6 +374,7 @@ defmodule Baiji.Elasticache do
       action:         "ModifyCacheParameterGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -381,6 +396,7 @@ defmodule Baiji.Elasticache do
       action:         "CreateSnapshot",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -402,6 +418,7 @@ defmodule Baiji.Elasticache do
       action:         "DeleteCacheSubnetGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -423,6 +440,7 @@ defmodule Baiji.Elasticache do
       action:         "DeleteCacheSecurityGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -441,6 +459,7 @@ defmodule Baiji.Elasticache do
       action:         "ModifyCacheCluster",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -457,6 +476,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeCacheEngineVersions",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -475,6 +495,7 @@ defmodule Baiji.Elasticache do
       action:         "RevokeCacheSecurityGroupIngress",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -568,6 +589,7 @@ defmodule Baiji.Elasticache do
       action:         "CopySnapshot",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -593,6 +615,7 @@ defmodule Baiji.Elasticache do
       action:         "RebootCacheCluster",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -621,6 +644,7 @@ defmodule Baiji.Elasticache do
       action:         "DeleteReplicationGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -638,6 +662,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeReservedCacheNodes",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -654,6 +679,7 @@ defmodule Baiji.Elasticache do
       action:         "PurchaseReservedCacheNodesOffering",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -681,6 +707,7 @@ defmodule Baiji.Elasticache do
       action:         "AddTagsToResource",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -712,6 +739,7 @@ defmodule Baiji.Elasticache do
       action:         "DeleteCacheCluster",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -728,6 +756,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeCacheParameters",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -793,6 +822,7 @@ defmodule Baiji.Elasticache do
       action:         "TestFailover",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -810,6 +840,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeEngineDefaultParameters",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -828,6 +859,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeCacheParameterGroups",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -847,6 +879,7 @@ defmodule Baiji.Elasticache do
       action:         "ResetCacheParameterGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -869,6 +902,7 @@ defmodule Baiji.Elasticache do
       action:         "DeleteSnapshot",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -892,6 +926,7 @@ defmodule Baiji.Elasticache do
       action:         "AuthorizeCacheSecurityGroupIngress",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -915,6 +950,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeSnapshots",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -937,6 +973,7 @@ defmodule Baiji.Elasticache do
       action:         "DescribeReplicationGroups",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -953,6 +990,7 @@ defmodule Baiji.Elasticache do
       action:         "ModifyCacheSubnetGroup",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end
@@ -976,6 +1014,7 @@ defmodule Baiji.Elasticache do
       action:         "CreateCacheCluster",
       
       type:           :xml,
+      version:        "2015-02-02",
       method:         :post
     }
   end

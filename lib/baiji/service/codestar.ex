@@ -74,6 +74,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -92,6 +93,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -114,6 +116,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -134,6 +137,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -155,6 +159,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -173,6 +178,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -192,6 +198,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -213,6 +220,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -231,6 +239,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -249,6 +258,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -267,6 +277,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -285,6 +296,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -304,6 +316,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -322,6 +335,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -340,6 +354,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -358,6 +373,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -378,6 +394,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -398,6 +415,7 @@ defmodule Baiji.CodeStar do
       target_prefix:  "CodeStar_20170419",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end

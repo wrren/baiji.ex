@@ -29,6 +29,7 @@ defmodule Baiji.Iot do
       action:         "ListCertificates",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -45,6 +46,7 @@ defmodule Baiji.Iot do
       action:         "ListThingTypes",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -61,6 +63,7 @@ defmodule Baiji.Iot do
       action:         "ListPolicies",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -77,6 +80,7 @@ defmodule Baiji.Iot do
       action:         "DescribeThing",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -93,6 +97,7 @@ defmodule Baiji.Iot do
       action:         "ListThingPrincipals",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -109,6 +114,7 @@ defmodule Baiji.Iot do
       action:         "DescribeThingType",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -125,6 +131,7 @@ defmodule Baiji.Iot do
       action:         "DeleteCACertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -141,6 +148,7 @@ defmodule Baiji.Iot do
       action:         "GetRegistrationCode",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -158,6 +166,7 @@ defmodule Baiji.Iot do
       action:         "ListPolicyVersions",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -175,6 +184,7 @@ defmodule Baiji.Iot do
       action:         "DeprecateThingType",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -194,6 +204,7 @@ defmodule Baiji.Iot do
       action:         "DeletePolicyVersion",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -210,6 +221,7 @@ defmodule Baiji.Iot do
       action:         "DescribeCertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -226,6 +238,7 @@ defmodule Baiji.Iot do
       action:         "EnableTopicRule",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -245,6 +258,7 @@ defmodule Baiji.Iot do
       action:         "ReplaceTopicRule",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -269,6 +283,7 @@ defmodule Baiji.Iot do
       action:         "UpdateCertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :put
     }
   end
@@ -288,6 +303,7 @@ defmodule Baiji.Iot do
       action:         "SetDefaultPolicyVersion",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -310,6 +326,7 @@ defmodule Baiji.Iot do
       action:         "RegisterCACertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -328,6 +345,7 @@ defmodule Baiji.Iot do
       action:         "CreateTopicRule",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -344,6 +362,7 @@ defmodule Baiji.Iot do
       action:         "DetachPrincipalPolicy",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -360,6 +379,7 @@ defmodule Baiji.Iot do
       action:         "CreateThing",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -376,6 +396,7 @@ defmodule Baiji.Iot do
       action:         "DescribeCACertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -392,6 +413,7 @@ defmodule Baiji.Iot do
       action:         "DeleteThing",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -408,6 +430,7 @@ defmodule Baiji.Iot do
       action:         "DisableTopicRule",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -428,6 +451,7 @@ defmodule Baiji.Iot do
       action:         "CreatePolicy",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -447,6 +471,7 @@ defmodule Baiji.Iot do
       action:         "ListCACertificates",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -463,6 +488,7 @@ defmodule Baiji.Iot do
       action:         "ListPolicyPrincipals",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -479,6 +505,7 @@ defmodule Baiji.Iot do
       action:         "ListTopicRules",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -495,6 +522,7 @@ defmodule Baiji.Iot do
       action:         "GetPolicyVersion",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -511,6 +539,7 @@ defmodule Baiji.Iot do
       action:         "DeleteRegistrationCode",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -527,6 +556,7 @@ defmodule Baiji.Iot do
       action:         "ListOutgoingCertificates",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -548,6 +578,7 @@ defmodule Baiji.Iot do
       action:         "DeleteCertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -564,6 +595,7 @@ defmodule Baiji.Iot do
       action:         "ListPrincipalThings",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -580,6 +612,7 @@ defmodule Baiji.Iot do
       action:         "UpdateCACertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :put
     }
   end
@@ -596,6 +629,7 @@ defmodule Baiji.Iot do
       action:         "DeleteTopicRule",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -612,6 +646,7 @@ defmodule Baiji.Iot do
       action:         "GetLoggingOptions",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -630,6 +665,7 @@ defmodule Baiji.Iot do
       action:         "RegisterCertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -647,6 +683,7 @@ defmodule Baiji.Iot do
       action:         "AttachPrincipalPolicy",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :put
     }
   end
@@ -672,6 +709,7 @@ defmodule Baiji.Iot do
       action:         "CancelCertificateTransfer",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -688,6 +726,7 @@ defmodule Baiji.Iot do
       action:         "DetachThingPrincipal",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -704,6 +743,7 @@ defmodule Baiji.Iot do
       action:         "SetLoggingOptions",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -731,6 +771,7 @@ defmodule Baiji.Iot do
       action:         "TransferCertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -751,6 +792,7 @@ defmodule Baiji.Iot do
       action:         "DeleteThingType",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -771,6 +813,7 @@ defmodule Baiji.Iot do
       action:         "AcceptCertificateTransfer",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -787,6 +830,7 @@ defmodule Baiji.Iot do
       action:         "CreateThingType",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -803,6 +847,7 @@ defmodule Baiji.Iot do
       action:         "UpdateThing",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -830,6 +875,7 @@ defmodule Baiji.Iot do
       action:         "DeletePolicy",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -846,6 +892,7 @@ defmodule Baiji.Iot do
       action:         "ListCertificatesByCA",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -863,6 +910,7 @@ defmodule Baiji.Iot do
       action:         "GetPolicy",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -888,6 +936,7 @@ defmodule Baiji.Iot do
       action:         "RejectCertificateTransfer",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :patch
     }
   end
@@ -904,6 +953,7 @@ defmodule Baiji.Iot do
       action:         "AttachThingPrincipal",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :put
     }
   end
@@ -927,6 +977,7 @@ defmodule Baiji.Iot do
       action:         "CreatePolicyVersion",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -945,6 +996,7 @@ defmodule Baiji.Iot do
       action:         "ListPrincipalPolicies",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -961,6 +1013,7 @@ defmodule Baiji.Iot do
       action:         "DescribeEndpoint",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -981,6 +1034,7 @@ defmodule Baiji.Iot do
       action:         "CreateKeysAndCertificate",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -997,6 +1051,7 @@ defmodule Baiji.Iot do
       action:         "GetTopicRule",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -1016,6 +1071,7 @@ defmodule Baiji.Iot do
       action:         "ListThings",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -1076,6 +1132,7 @@ defmodule Baiji.Iot do
       action:         "CreateCertificateFromCsr",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end

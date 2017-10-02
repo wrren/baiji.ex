@@ -15,6 +15,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetCampaigns",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -31,6 +32,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateSegment",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -47,6 +49,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetCampaignVersion",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -63,6 +66,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetApplicationSettings",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -79,6 +83,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetCampaignActivities",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -95,6 +100,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateSmsChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -111,6 +117,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteSmsChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -127,6 +134,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetSegmentVersions",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -143,6 +151,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetEventStream",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -159,6 +168,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateGcmChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -175,6 +185,7 @@ defmodule Baiji.Pinpoint do
       action:         "CreateApp",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -191,6 +202,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetApps",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -207,6 +219,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteSegment",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -223,6 +236,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetApnsSandboxChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -239,6 +253,7 @@ defmodule Baiji.Pinpoint do
       action:         "PutEventStream",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -255,6 +270,7 @@ defmodule Baiji.Pinpoint do
       action:         "SendMessages",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -271,6 +287,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetEndpoint",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -287,6 +304,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetImportJobs",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -303,6 +321,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteApnsChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -319,6 +338,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteApnsSandboxChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -335,6 +355,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateEndpoint",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -351,6 +372,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetEmailChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -367,6 +389,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateEndpointsBatch",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -383,6 +406,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetSegments",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -399,6 +423,7 @@ defmodule Baiji.Pinpoint do
       action:         "CreateSegment",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -415,6 +440,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetSegmentVersion",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -431,6 +457,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetSegment",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -447,6 +474,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetCampaign",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -463,6 +491,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetImportJob",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -479,6 +508,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateApplicationSettings",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -495,6 +525,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetSegmentImportJobs",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -511,6 +542,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteEmailChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -527,6 +559,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetCampaignVersions",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -543,6 +576,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteEventStream",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -559,6 +593,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateCampaign",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -575,6 +610,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetGcmChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -591,6 +627,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateEmailChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -607,6 +644,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteCampaign",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -623,6 +661,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetSmsChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -639,6 +678,7 @@ defmodule Baiji.Pinpoint do
       action:         "CreateCampaign",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -655,6 +695,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetApnsChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -671,6 +712,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteApp",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -687,6 +729,7 @@ defmodule Baiji.Pinpoint do
       action:         "GetApp",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :get
     }
   end
@@ -703,6 +746,7 @@ defmodule Baiji.Pinpoint do
       action:         "CreateImportJob",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -719,6 +763,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateApnsChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end
@@ -735,6 +780,7 @@ defmodule Baiji.Pinpoint do
       action:         "DeleteGcmChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :delete
     }
   end
@@ -751,6 +797,7 @@ defmodule Baiji.Pinpoint do
       action:         "UpdateApnsSandboxChannel",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :put
     }
   end

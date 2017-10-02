@@ -77,6 +77,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "AddTags",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -108,6 +109,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "CreateListener",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -147,6 +149,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "CreateLoadBalancer",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -175,6 +178,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "CreateRule",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -208,6 +212,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "CreateTargetGroup",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -227,6 +232,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DeleteListener",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -253,6 +259,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DeleteLoadBalancer",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -269,6 +276,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DeleteRule",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -288,6 +296,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DeleteTargetGroup",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -306,6 +315,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DeregisterTargets",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -329,6 +339,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeAccountLimits",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -347,6 +358,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeListeners",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -364,6 +376,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeLoadBalancerAttributes",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -384,6 +397,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeLoadBalancers",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -401,6 +415,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeRules",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -421,6 +436,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeSSLPolicies",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -439,6 +455,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeTags",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -455,6 +472,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeTargetGroupAttributes",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -479,6 +497,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeTargetGroups",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -495,6 +514,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "DescribeTargetHealth",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -516,6 +536,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "ModifyListener",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -537,6 +558,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "ModifyLoadBalancerAttributes",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -557,6 +579,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "ModifyRule",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -576,6 +599,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "ModifyTargetGroup",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -592,6 +616,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "ModifyTargetGroupAttributes",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -622,6 +647,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "RegisterTargets",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -641,6 +667,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "RemoveTags",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -660,6 +687,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "SetIpAddressType",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -680,6 +708,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "SetRulePriorities",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -700,6 +729,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "SetSecurityGroups",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end
@@ -720,6 +750,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       action:         "SetSubnets",
       
       type:           :xml,
+      version:        "2015-12-01",
       method:         :post
     }
   end

@@ -20,6 +20,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -41,6 +42,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -60,6 +62,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -84,6 +87,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -112,6 +116,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -134,6 +139,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -158,6 +164,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -178,6 +185,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -198,6 +206,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -217,6 +226,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -236,6 +246,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -255,6 +266,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -277,6 +289,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -322,6 +335,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -348,6 +362,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -369,6 +384,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -388,6 +404,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -432,6 +449,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -457,6 +475,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -486,6 +505,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -511,6 +531,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -532,6 +553,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end
@@ -551,6 +573,7 @@ defmodule Baiji.Route53Domains do
       target_prefix:  "Route53Domains_v20140515",
       
       type:           :json,
+      version:        "2014-05-15",
       method:         :post
     }
   end

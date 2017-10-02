@@ -24,6 +24,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -61,6 +63,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -84,6 +87,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -105,6 +109,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -124,6 +129,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -147,6 +153,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -181,6 +188,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -200,6 +208,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -223,6 +232,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -242,6 +252,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -260,6 +271,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -279,6 +291,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -297,6 +310,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -316,6 +330,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -335,6 +350,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -354,6 +370,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -373,6 +390,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -393,6 +411,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -413,6 +432,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -431,6 +451,7 @@ defmodule Baiji.DAX do
       target_prefix:  "AmazonDAXV3",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end

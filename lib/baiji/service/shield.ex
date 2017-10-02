@@ -26,6 +26,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -44,6 +45,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -62,6 +64,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -80,6 +83,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -98,6 +102,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -116,6 +121,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -134,6 +140,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -153,6 +160,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end
@@ -171,6 +179,7 @@ defmodule Baiji.Shield do
       target_prefix:  "AWSShield_20160616",
       
       type:           :json,
+      version:        "2016-06-02",
       method:         :post
     }
   end

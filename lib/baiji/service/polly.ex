@@ -27,6 +27,7 @@ defmodule Baiji.Polly do
       action:         "DeleteLexicon",
       
       type:           :rest_json,
+      version:        "2016-06-10",
       method:         :delete
     }
   end
@@ -62,6 +63,7 @@ defmodule Baiji.Polly do
       action:         "DescribeVoices",
       
       type:           :rest_json,
+      version:        "2016-06-10",
       method:         :get
     }
   end
@@ -80,6 +82,7 @@ defmodule Baiji.Polly do
       action:         "GetLexicon",
       
       type:           :rest_json,
+      version:        "2016-06-10",
       method:         :get
     }
   end
@@ -98,6 +101,7 @@ defmodule Baiji.Polly do
       action:         "ListLexicons",
       
       type:           :rest_json,
+      version:        "2016-06-10",
       method:         :get
     }
   end
@@ -120,6 +124,7 @@ defmodule Baiji.Polly do
       action:         "PutLexicon",
       
       type:           :rest_json,
+      version:        "2016-06-10",
       method:         :put
     }
   end
@@ -141,6 +146,7 @@ defmodule Baiji.Polly do
       action:         "SynthesizeSpeech",
       
       type:           :rest_json,
+      version:        "2016-06-10",
       method:         :post
     }
   end

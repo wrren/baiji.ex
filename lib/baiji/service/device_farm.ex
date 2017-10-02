@@ -19,6 +19,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -61,6 +63,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -79,6 +82,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -97,6 +101,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -115,6 +120,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -135,6 +141,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -153,6 +160,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -171,6 +179,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -189,6 +198,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -207,6 +217,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -225,6 +236,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -243,6 +255,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -261,6 +274,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -279,6 +293,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -297,6 +312,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -315,6 +331,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -333,6 +350,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -351,6 +369,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -375,6 +394,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -393,6 +413,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -411,6 +432,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -429,6 +451,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -449,6 +472,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -467,6 +491,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -485,6 +510,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -504,6 +530,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -522,6 +549,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -540,6 +568,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -558,6 +587,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -576,6 +606,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -600,6 +631,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -618,6 +650,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -636,6 +669,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -654,6 +688,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -672,6 +707,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -695,6 +731,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -718,6 +755,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -736,6 +774,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -754,6 +793,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -772,6 +812,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -792,6 +833,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -812,6 +854,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -830,6 +873,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -853,6 +897,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -872,6 +917,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -890,6 +936,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -908,6 +955,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end
@@ -931,6 +979,7 @@ defmodule Baiji.DeviceFarm do
       target_prefix:  "DeviceFarm_20150623",
       
       type:           :json,
+      version:        "2015-06-23",
       method:         :post
     }
   end

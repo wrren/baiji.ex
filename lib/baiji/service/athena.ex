@@ -36,6 +36,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -58,6 +59,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -80,6 +82,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -102,6 +105,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -120,6 +124,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -139,6 +144,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -159,6 +165,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -181,6 +188,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -203,6 +211,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -225,6 +234,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end
@@ -247,6 +257,7 @@ defmodule Baiji.Athena do
       target_prefix:  "AmazonAthena",
       
       type:           :json,
+      version:        "2017-05-18",
       method:         :post
     }
   end

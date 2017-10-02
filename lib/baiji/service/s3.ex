@@ -16,6 +16,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketMetricsConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -34,6 +35,7 @@ defmodule Baiji.S3 do
       action:         "ListObjects",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -50,6 +52,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketPolicy",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -66,6 +69,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketReplication",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -82,6 +86,7 @@ defmodule Baiji.S3 do
       action:         "ListBucketAnalyticsConfigurations",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -98,6 +103,7 @@ defmodule Baiji.S3 do
       action:         "ListBucketInventoryConfigurations",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -114,6 +120,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketAcl",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -130,6 +137,7 @@ defmodule Baiji.S3 do
       action:         "ListBucketMetricsConfigurations",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -146,6 +154,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketTagging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -162,6 +171,7 @@ defmodule Baiji.S3 do
       action:         "RestoreObject",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :post
     }
   end
@@ -178,6 +188,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketPolicy",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -200,6 +211,7 @@ defmodule Baiji.S3 do
       action:         "CreateMultipartUpload",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :post
     }
   end
@@ -216,6 +228,7 @@ defmodule Baiji.S3 do
       action:         "GetObjectTagging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -233,6 +246,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketInventoryConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -249,6 +263,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketNotification",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -266,6 +281,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketPolicy",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -282,6 +298,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketNotification",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -303,6 +320,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketRequestPayment",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -320,6 +338,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketMetricsConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -337,6 +356,7 @@ defmodule Baiji.S3 do
       action:         "PutObjectAcl",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -353,6 +373,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketVersioning",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -370,6 +391,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketMetricsConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -386,6 +408,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketWebsite",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -402,6 +425,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketLifecycle",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -421,6 +445,7 @@ defmodule Baiji.S3 do
       action:         "ListObjectsV2",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -438,6 +463,7 @@ defmodule Baiji.S3 do
       action:         "ListBuckets",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -454,6 +480,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketLocation",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -470,6 +497,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketReplication",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -487,6 +515,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketLogging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -503,6 +532,7 @@ defmodule Baiji.S3 do
       action:         "CompleteMultipartUpload",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :post
     }
   end
@@ -519,6 +549,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketLifecycleConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -535,6 +566,7 @@ defmodule Baiji.S3 do
       action:         "PutObject",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -551,6 +583,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketAccelerateConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -567,6 +600,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketLifecycle",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -583,6 +617,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketWebsite",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -600,6 +635,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketVersioning",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -618,6 +654,7 @@ defmodule Baiji.S3 do
       action:         "DeleteObject",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -635,6 +672,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketInventoryConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -652,6 +690,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketAnalyticsConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -672,6 +711,7 @@ defmodule Baiji.S3 do
       action:         "AbortMultipartUpload",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -688,6 +728,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketTagging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -704,6 +745,7 @@ defmodule Baiji.S3 do
       action:         "ListObjectVersions",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -720,6 +762,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketAccelerateConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -738,6 +781,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucket",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -754,6 +798,7 @@ defmodule Baiji.S3 do
       action:         "GetObjectTorrent",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -772,6 +817,7 @@ defmodule Baiji.S3 do
       action:         "HeadObject",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :head
     }
   end
@@ -789,6 +835,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketInventoryConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -805,6 +852,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketCors",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -821,6 +869,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketCors",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -838,6 +887,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketAnalyticsConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -854,6 +904,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketNotificationConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -876,6 +927,7 @@ defmodule Baiji.S3 do
       action:         "UploadPart",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -893,6 +945,7 @@ defmodule Baiji.S3 do
       action:         "DeleteObjects",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :post
     }
   end
@@ -909,6 +962,7 @@ defmodule Baiji.S3 do
       action:         "CreateBucket",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -925,6 +979,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketCors",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -942,6 +997,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketReplication",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -958,6 +1014,7 @@ defmodule Baiji.S3 do
       action:         "PutObjectTagging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -974,6 +1031,7 @@ defmodule Baiji.S3 do
       action:         "CopyObject",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -990,6 +1048,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketNotificationConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -1007,6 +1066,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketAnalyticsConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -1023,6 +1083,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketRequestPayment",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -1039,6 +1100,7 @@ defmodule Baiji.S3 do
       action:         "DeleteObjectTagging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -1057,6 +1119,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketLogging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -1074,6 +1137,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketLifecycleConfiguration",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -1090,6 +1154,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketTagging",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -1106,6 +1171,7 @@ defmodule Baiji.S3 do
       action:         "ListMultipartUploads",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -1122,6 +1188,7 @@ defmodule Baiji.S3 do
       action:         "GetObjectAcl",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -1138,6 +1205,7 @@ defmodule Baiji.S3 do
       action:         "ListParts",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -1154,6 +1222,7 @@ defmodule Baiji.S3 do
       action:         "PutBucketLifecycle",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -1170,6 +1239,7 @@ defmodule Baiji.S3 do
       action:         "UploadPartCopy",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :put
     }
   end
@@ -1186,6 +1256,7 @@ defmodule Baiji.S3 do
       action:         "GetObject",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end
@@ -1203,6 +1274,7 @@ defmodule Baiji.S3 do
       action:         "HeadBucket",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :head
     }
   end
@@ -1219,6 +1291,7 @@ defmodule Baiji.S3 do
       action:         "DeleteBucketWebsite",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :delete
     }
   end
@@ -1235,6 +1308,7 @@ defmodule Baiji.S3 do
       action:         "GetBucketAcl",
       
       type:           :rest_xml,
+      version:        "2006-03-01",
       method:         :get
     }
   end

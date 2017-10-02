@@ -35,6 +35,7 @@ defmodule Baiji.DynamodbStreams do
       target_prefix:  "DynamoDBStreams_20120810",
       
       type:           :json,
+      version:        "2012-08-10",
       method:         :post
     }
   end
@@ -65,6 +66,7 @@ defmodule Baiji.DynamodbStreams do
       target_prefix:  "DynamoDBStreams_20120810",
       
       type:           :json,
+      version:        "2012-08-10",
       method:         :post
     }
   end
@@ -91,6 +93,7 @@ defmodule Baiji.DynamodbStreams do
       target_prefix:  "DynamoDBStreams_20120810",
       
       type:           :json,
+      version:        "2012-08-10",
       method:         :post
     }
   end
@@ -115,6 +118,7 @@ defmodule Baiji.DynamodbStreams do
       target_prefix:  "DynamoDBStreams_20120810",
       
       type:           :json,
+      version:        "2012-08-10",
       method:         :post
     }
   end

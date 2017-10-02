@@ -27,6 +27,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -48,6 +49,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -69,6 +71,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -89,6 +92,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -111,6 +115,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -130,6 +135,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -150,6 +156,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -169,6 +176,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -188,6 +196,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -223,6 +232,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -253,6 +263,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -276,6 +287,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -296,6 +308,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -316,6 +329,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -338,6 +352,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -359,6 +374,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end
@@ -380,6 +396,7 @@ defmodule Baiji.Snowball do
       target_prefix:  "AWSIESnowballJobManagementService",
       
       type:           :json,
+      version:        "2016-06-30",
       method:         :post
     }
   end

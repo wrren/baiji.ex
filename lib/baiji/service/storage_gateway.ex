@@ -82,6 +82,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -102,6 +103,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -135,6 +137,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -157,6 +160,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -186,6 +190,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -207,6 +212,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -229,6 +235,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -250,6 +257,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -286,6 +294,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -306,6 +315,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -334,6 +344,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -354,6 +365,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -374,6 +386,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -403,6 +416,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -422,6 +436,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -447,6 +462,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -481,6 +497,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -511,6 +528,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -557,6 +575,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -576,6 +595,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -604,6 +624,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -633,6 +654,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -663,6 +685,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -703,6 +726,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -724,6 +748,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -760,6 +785,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -794,6 +820,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -817,6 +844,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -845,6 +873,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -870,6 +899,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -891,6 +921,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -926,6 +957,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -953,6 +985,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -993,6 +1026,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1022,6 +1056,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1051,6 +1086,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1078,6 +1114,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1100,6 +1137,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1132,6 +1170,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1155,6 +1194,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1176,6 +1216,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1202,6 +1243,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1232,6 +1274,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1258,6 +1301,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1286,6 +1330,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1309,6 +1354,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1346,6 +1392,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1370,6 +1417,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1392,6 +1440,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1411,6 +1460,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1438,6 +1488,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1468,6 +1519,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1490,6 +1542,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1510,6 +1563,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1536,6 +1590,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1556,6 +1611,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1576,6 +1632,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1595,6 +1652,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1614,6 +1672,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1634,6 +1693,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1658,6 +1718,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end
@@ -1683,6 +1744,7 @@ defmodule Baiji.StorageGateway do
       target_prefix:  "StorageGateway_20130630",
       
       type:           :json,
+      version:        "2013-06-30",
       method:         :post
     }
   end

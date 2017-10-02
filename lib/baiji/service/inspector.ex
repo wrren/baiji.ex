@@ -23,6 +23,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -62,6 +64,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -81,6 +84,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -100,6 +104,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -119,6 +124,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -139,6 +145,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -158,6 +165,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -176,6 +184,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -194,6 +203,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -213,6 +223,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -232,6 +243,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -251,6 +263,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -270,6 +283,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -289,6 +303,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -308,6 +323,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -327,6 +343,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -346,6 +363,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -365,6 +383,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -384,6 +403,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -403,6 +423,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -422,6 +443,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -442,6 +464,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -462,6 +485,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -481,6 +505,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -503,6 +528,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -525,6 +551,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -544,6 +571,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -563,6 +591,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -581,6 +610,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -601,6 +631,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -620,6 +651,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end
@@ -639,6 +671,7 @@ defmodule Baiji.Inspector do
       target_prefix:  "InspectorService",
       
       type:           :json,
+      version:        "2016-02-16",
       method:         :post
     }
   end

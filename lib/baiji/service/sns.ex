@@ -32,6 +32,7 @@ defmodule Baiji.SNS do
       action:         "AddPermission",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -53,6 +54,7 @@ defmodule Baiji.SNS do
       action:         "CheckIfPhoneNumberIsOptedOut",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -73,6 +75,7 @@ defmodule Baiji.SNS do
       action:         "ConfirmSubscription",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -123,6 +126,7 @@ defmodule Baiji.SNS do
       action:         "CreatePlatformApplication",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -154,6 +158,7 @@ defmodule Baiji.SNS do
       action:         "CreatePlatformEndpoint",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -174,6 +179,7 @@ defmodule Baiji.SNS do
       action:         "CreateTopic",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -196,6 +202,7 @@ defmodule Baiji.SNS do
       action:         "DeleteEndpoint",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -215,6 +222,7 @@ defmodule Baiji.SNS do
       action:         "DeletePlatformApplication",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -234,6 +242,7 @@ defmodule Baiji.SNS do
       action:         "DeleteTopic",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -253,6 +262,7 @@ defmodule Baiji.SNS do
       action:         "GetEndpointAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -272,6 +282,7 @@ defmodule Baiji.SNS do
       action:         "GetPlatformApplicationAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -290,6 +301,7 @@ defmodule Baiji.SNS do
       action:         "GetSMSAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -306,6 +318,7 @@ defmodule Baiji.SNS do
       action:         "GetSubscriptionAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -323,6 +336,7 @@ defmodule Baiji.SNS do
       action:         "GetTopicAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -348,6 +362,7 @@ defmodule Baiji.SNS do
       action:         "ListEndpointsByPlatformApplication",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -372,6 +387,7 @@ defmodule Baiji.SNS do
       action:         "ListPhoneNumbersOptedOut",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -396,6 +412,7 @@ defmodule Baiji.SNS do
       action:         "ListPlatformApplications",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -415,6 +432,7 @@ defmodule Baiji.SNS do
       action:         "ListSubscriptions",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -434,6 +452,7 @@ defmodule Baiji.SNS do
       action:         "ListSubscriptionsByTopic",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -453,6 +472,7 @@ defmodule Baiji.SNS do
       action:         "ListTopics",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -472,6 +492,7 @@ defmodule Baiji.SNS do
       action:         "OptInPhoneNumber",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -501,6 +522,7 @@ defmodule Baiji.SNS do
       action:         "Publish",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -517,6 +539,7 @@ defmodule Baiji.SNS do
       action:         "RemovePermission",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -536,6 +559,7 @@ defmodule Baiji.SNS do
       action:         "SetEndpointAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -558,6 +582,7 @@ defmodule Baiji.SNS do
       action:         "SetPlatformApplicationAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -581,6 +606,7 @@ defmodule Baiji.SNS do
       action:         "SetSMSAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -598,6 +624,7 @@ defmodule Baiji.SNS do
       action:         "SetSubscriptionAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -614,6 +641,7 @@ defmodule Baiji.SNS do
       action:         "SetTopicAttributes",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -633,6 +661,7 @@ defmodule Baiji.SNS do
       action:         "Subscribe",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end
@@ -655,6 +684,7 @@ defmodule Baiji.SNS do
       action:         "Unsubscribe",
       
       type:           :xml,
+      version:        "2010-03-31",
       method:         :post
     }
   end

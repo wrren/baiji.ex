@@ -32,6 +32,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -114,6 +115,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -132,6 +134,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -153,6 +156,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -187,6 +191,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -223,6 +228,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -259,6 +265,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -277,6 +284,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -297,6 +305,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -315,6 +324,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -340,6 +350,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -358,6 +369,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -380,6 +392,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -405,6 +418,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -423,6 +437,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -446,6 +461,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -464,6 +480,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -489,6 +506,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -509,6 +527,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -533,6 +552,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -556,6 +576,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -578,6 +599,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -615,6 +637,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -642,6 +665,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -666,6 +690,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -699,6 +724,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -720,6 +746,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -741,6 +768,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -770,6 +798,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -832,6 +861,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end
@@ -923,6 +953,7 @@ defmodule Baiji.ECS do
       target_prefix:  "AmazonEC2ContainerServiceV20141113",
       
       type:           :json,
+      version:        "2014-11-13",
       method:         :post
     }
   end

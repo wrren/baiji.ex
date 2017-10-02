@@ -45,6 +45,7 @@ defmodule Baiji.CloudsearchDomain do
       action:         "Search",
       
       type:           :json,
+      version:        "2013-01-01",
       method:         :get
     }
   end
@@ -78,6 +79,7 @@ defmodule Baiji.CloudsearchDomain do
       action:         "Suggest",
       
       type:           :json,
+      version:        "2013-01-01",
       method:         :get
     }
   end
@@ -118,6 +120,7 @@ defmodule Baiji.CloudsearchDomain do
       action:         "UploadDocuments",
       
       type:           :json,
+      version:        "2013-01-01",
       method:         :post
     }
   end

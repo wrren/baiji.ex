@@ -40,6 +40,7 @@ defmodule Baiji.Lambda do
       action:         "AddPermission",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -61,6 +62,7 @@ defmodule Baiji.Lambda do
       action:         "CreateAlias",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -103,6 +105,7 @@ defmodule Baiji.Lambda do
       action:         "CreateEventSourceMapping",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -129,6 +132,7 @@ defmodule Baiji.Lambda do
       action:         "CreateFunction",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -149,6 +153,7 @@ defmodule Baiji.Lambda do
       action:         "DeleteAlias",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :delete
     }
   end
@@ -169,6 +174,7 @@ defmodule Baiji.Lambda do
       action:         "DeleteEventSourceMapping",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :delete
     }
   end
@@ -198,6 +204,7 @@ defmodule Baiji.Lambda do
       action:         "DeleteFunction",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :delete
     }
   end
@@ -221,6 +228,7 @@ defmodule Baiji.Lambda do
       action:         "GetAccountSettings",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -242,6 +250,7 @@ defmodule Baiji.Lambda do
       action:         "GetAlias",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -262,6 +271,7 @@ defmodule Baiji.Lambda do
       action:         "GetEventSourceMapping",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -291,6 +301,7 @@ defmodule Baiji.Lambda do
       action:         "GetFunction",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -320,6 +331,7 @@ defmodule Baiji.Lambda do
       action:         "GetFunctionConfiguration",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -344,6 +356,7 @@ defmodule Baiji.Lambda do
       action:         "GetPolicy",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -374,6 +387,7 @@ defmodule Baiji.Lambda do
       action:         "Invoke",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -398,6 +412,7 @@ defmodule Baiji.Lambda do
       action:         "InvokeAsync",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -420,6 +435,7 @@ defmodule Baiji.Lambda do
       action:         "ListAliases",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -449,6 +465,7 @@ defmodule Baiji.Lambda do
       action:         "ListEventSourceMappings",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -474,6 +491,7 @@ defmodule Baiji.Lambda do
       action:         "ListFunctions",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -491,6 +509,7 @@ defmodule Baiji.Lambda do
       action:         "ListTags",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -509,6 +528,7 @@ defmodule Baiji.Lambda do
       action:         "ListVersionsByFunction",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :get
     }
   end
@@ -530,6 +550,7 @@ defmodule Baiji.Lambda do
       action:         "PublishVersion",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -559,6 +580,7 @@ defmodule Baiji.Lambda do
       action:         "RemovePermission",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :delete
     }
   end
@@ -578,6 +600,7 @@ defmodule Baiji.Lambda do
       action:         "TagResource",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :post
     }
   end
@@ -595,6 +618,7 @@ defmodule Baiji.Lambda do
       action:         "UntagResource",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :delete
     }
   end
@@ -616,6 +640,7 @@ defmodule Baiji.Lambda do
       action:         "UpdateAlias",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :put
     }
   end
@@ -649,6 +674,7 @@ defmodule Baiji.Lambda do
       action:         "UpdateEventSourceMapping",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :put
     }
   end
@@ -675,6 +701,7 @@ defmodule Baiji.Lambda do
       action:         "UpdateFunctionCode",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :put
     }
   end
@@ -702,6 +729,7 @@ defmodule Baiji.Lambda do
       action:         "UpdateFunctionConfiguration",
       
       type:           :rest_json,
+      version:        "2015-03-31",
       method:         :put
     }
   end

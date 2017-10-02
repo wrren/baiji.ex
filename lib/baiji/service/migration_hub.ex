@@ -31,6 +31,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -50,6 +51,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -72,6 +74,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -115,6 +118,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -133,6 +137,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -152,6 +157,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -184,6 +190,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -203,6 +210,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -226,6 +234,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -255,6 +264,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -273,6 +283,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -301,6 +312,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -320,6 +332,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -341,6 +354,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -371,6 +385,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end
@@ -404,6 +419,7 @@ defmodule Baiji.MigrationHub do
       target_prefix:  "AWSMigrationHub",
       
       type:           :json,
+      version:        "2017-05-31",
       method:         :post
     }
   end

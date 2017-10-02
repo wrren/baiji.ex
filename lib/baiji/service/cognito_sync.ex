@@ -44,6 +44,7 @@ defmodule Baiji.CognitoSync do
       action:         "BulkPublish",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end
@@ -66,6 +67,7 @@ defmodule Baiji.CognitoSync do
       action:         "DeleteDataset",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :delete
     }
   end
@@ -89,6 +91,7 @@ defmodule Baiji.CognitoSync do
       action:         "DescribeDataset",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -109,6 +112,7 @@ defmodule Baiji.CognitoSync do
       action:         "DescribeIdentityPoolUsage",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -129,6 +133,7 @@ defmodule Baiji.CognitoSync do
       action:         "DescribeIdentityUsage",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -148,6 +153,7 @@ defmodule Baiji.CognitoSync do
       action:         "GetBulkPublishDetails",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end
@@ -168,6 +174,7 @@ defmodule Baiji.CognitoSync do
       action:         "GetCognitoEvents",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -187,6 +194,7 @@ defmodule Baiji.CognitoSync do
       action:         "GetIdentityPoolConfiguration",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -209,6 +217,7 @@ defmodule Baiji.CognitoSync do
       action:         "ListDatasets",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -229,6 +238,7 @@ defmodule Baiji.CognitoSync do
       action:         "ListIdentityPoolUsage",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -252,6 +262,7 @@ defmodule Baiji.CognitoSync do
       action:         "ListRecords",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :get
     }
   end
@@ -271,6 +282,7 @@ defmodule Baiji.CognitoSync do
       action:         "RegisterDevice",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end
@@ -293,6 +305,7 @@ defmodule Baiji.CognitoSync do
       action:         "SetCognitoEvents",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end
@@ -312,6 +325,7 @@ defmodule Baiji.CognitoSync do
       action:         "SetIdentityPoolConfiguration",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end
@@ -332,6 +346,7 @@ defmodule Baiji.CognitoSync do
       action:         "SubscribeToDataset",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end
@@ -352,6 +367,7 @@ defmodule Baiji.CognitoSync do
       action:         "UnsubscribeFromDataset",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :delete
     }
   end
@@ -385,6 +401,7 @@ defmodule Baiji.CognitoSync do
       action:         "UpdateRecords",
       
       type:           :json,
+      version:        "2014-06-30",
       method:         :post
     }
   end

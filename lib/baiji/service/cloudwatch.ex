@@ -31,6 +31,7 @@ defmodule Baiji.CloudWatch do
       action:         "DeleteAlarms",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -49,6 +50,7 @@ defmodule Baiji.CloudWatch do
       action:         "DeleteDashboards",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -69,6 +71,7 @@ defmodule Baiji.CloudWatch do
       action:         "DescribeAlarmHistory",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -87,6 +90,7 @@ defmodule Baiji.CloudWatch do
       action:         "DescribeAlarms",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -104,6 +108,7 @@ defmodule Baiji.CloudWatch do
       action:         "DescribeAlarmsForMetric",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -121,6 +126,7 @@ defmodule Baiji.CloudWatch do
       action:         "DisableAlarmActions",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -137,6 +143,7 @@ defmodule Baiji.CloudWatch do
       action:         "EnableAlarmActions",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -157,6 +164,7 @@ defmodule Baiji.CloudWatch do
       action:         "GetDashboard",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -226,6 +234,7 @@ defmodule Baiji.CloudWatch do
       action:         "GetMetricStatistics",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -244,6 +253,7 @@ defmodule Baiji.CloudWatch do
       action:         "ListDashboards",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -268,6 +278,7 @@ defmodule Baiji.CloudWatch do
       action:         "ListMetrics",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -304,6 +315,7 @@ defmodule Baiji.CloudWatch do
       action:         "PutDashboard",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -361,6 +373,7 @@ defmodule Baiji.CloudWatch do
       action:         "PutMetricAlarm",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -411,6 +424,7 @@ defmodule Baiji.CloudWatch do
       action:         "PutMetricData",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end
@@ -434,6 +448,7 @@ defmodule Baiji.CloudWatch do
       action:         "SetAlarmState",
       
       type:           :xml,
+      version:        "2010-08-01",
       method:         :post
     }
   end

@@ -19,6 +19,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -50,6 +51,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -83,6 +85,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -139,6 +142,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -187,6 +191,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -221,6 +226,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -256,6 +262,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -276,6 +283,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -301,6 +309,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -326,6 +335,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -353,6 +363,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -376,6 +387,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -394,6 +406,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -415,6 +428,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -434,6 +448,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -453,6 +468,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -472,6 +488,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -490,6 +507,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -508,6 +526,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -527,6 +546,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -550,6 +570,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -569,6 +590,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -590,6 +612,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -614,6 +637,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -635,6 +659,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -656,6 +681,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -677,6 +703,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end
@@ -698,6 +725,7 @@ defmodule Baiji.MachineLearning do
       target_prefix:  "AmazonML_20141212",
       
       type:           :json,
+      version:        "2014-12-12",
       method:         :post
     }
   end

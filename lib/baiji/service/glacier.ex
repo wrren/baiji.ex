@@ -59,6 +59,7 @@ defmodule Baiji.Glacier do
       action:         "DeleteVaultAccessPolicy",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :delete
     }
   end
@@ -115,6 +116,7 @@ defmodule Baiji.Glacier do
       action:         "UploadArchive",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -146,6 +148,7 @@ defmodule Baiji.Glacier do
       action:         "CompleteVaultLock",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -202,6 +205,7 @@ defmodule Baiji.Glacier do
       action:         "ListJobs",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -244,6 +248,7 @@ defmodule Baiji.Glacier do
       action:         "CreateVault",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :put
     }
   end
@@ -278,6 +283,7 @@ defmodule Baiji.Glacier do
       action:         "AbortVaultLock",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :delete
     }
   end
@@ -318,6 +324,7 @@ defmodule Baiji.Glacier do
       action:         "ListVaults",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -341,6 +348,7 @@ defmodule Baiji.Glacier do
       action:         "SetVaultAccessPolicy",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :put
     }
   end
@@ -381,6 +389,7 @@ defmodule Baiji.Glacier do
       action:         "GetVaultLock",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -421,6 +430,7 @@ defmodule Baiji.Glacier do
       action:         "DescribeVault",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -437,6 +447,7 @@ defmodule Baiji.Glacier do
       action:         "PurchaseProvisionedCapacity",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -456,6 +467,7 @@ defmodule Baiji.Glacier do
       action:         "ListTagsForVault",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -478,6 +490,7 @@ defmodule Baiji.Glacier do
       action:         "AddTagsToVault",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -541,6 +554,7 @@ defmodule Baiji.Glacier do
       action:         "CompleteMultipartUpload",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -565,6 +579,7 @@ defmodule Baiji.Glacier do
       action:         "SetDataRetrievalPolicy",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :put
     }
   end
@@ -607,6 +622,7 @@ defmodule Baiji.Glacier do
       action:         "DeleteVault",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :delete
     }
   end
@@ -646,6 +662,7 @@ defmodule Baiji.Glacier do
       action:         "AbortMultipartUpload",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :delete
     }
   end
@@ -686,6 +703,7 @@ defmodule Baiji.Glacier do
       action:         "DescribeJob",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -730,6 +748,7 @@ defmodule Baiji.Glacier do
       action:         "DeleteArchive",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :delete
     }
   end
@@ -764,6 +783,7 @@ defmodule Baiji.Glacier do
       action:         "DeleteVaultNotifications",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :delete
     }
   end
@@ -787,6 +807,7 @@ defmodule Baiji.Glacier do
       action:         "GetVaultAccessPolicy",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -951,6 +972,7 @@ defmodule Baiji.Glacier do
       action:         "InitiateJob",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -968,6 +990,7 @@ defmodule Baiji.Glacier do
       action:         "ListProvisionedCapacity",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -988,6 +1011,7 @@ defmodule Baiji.Glacier do
       action:         "RemoveTagsFromVault",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -1052,6 +1076,7 @@ defmodule Baiji.Glacier do
       action:         "GetJobOutput",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -1105,6 +1130,7 @@ defmodule Baiji.Glacier do
       action:         "SetVaultNotifications",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :put
     }
   end
@@ -1153,6 +1179,7 @@ defmodule Baiji.Glacier do
       action:         "InitiateVaultLock",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -1190,6 +1217,7 @@ defmodule Baiji.Glacier do
       action:         "GetVaultNotifications",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -1209,6 +1237,7 @@ defmodule Baiji.Glacier do
       action:         "GetDataRetrievalPolicy",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -1263,6 +1292,7 @@ defmodule Baiji.Glacier do
       action:         "InitiateMultipartUpload",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :post
     }
   end
@@ -1312,6 +1342,7 @@ defmodule Baiji.Glacier do
       action:         "ListMultipartUploads",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -1356,6 +1387,7 @@ defmodule Baiji.Glacier do
       action:         "ListParts",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :get
     }
   end
@@ -1420,6 +1452,7 @@ defmodule Baiji.Glacier do
       action:         "UploadMultipartPart",
       
       type:           :rest_json,
+      version:        "2012-06-01",
       method:         :put
     }
   end

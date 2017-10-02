@@ -31,6 +31,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -49,6 +50,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -67,6 +69,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -88,6 +91,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -106,6 +110,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -124,6 +129,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -144,6 +150,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -162,6 +169,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -180,6 +188,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -198,6 +207,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -216,6 +226,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -235,6 +246,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -254,6 +266,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -273,6 +286,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -295,6 +309,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -313,6 +328,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -331,6 +347,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -349,6 +366,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -367,6 +385,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -385,6 +404,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -403,6 +423,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -421,6 +442,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -439,6 +461,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -457,6 +480,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -477,6 +501,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -495,6 +520,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -513,6 +539,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -532,6 +559,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -550,6 +578,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -568,6 +597,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -587,6 +617,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -606,6 +637,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -625,6 +657,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -644,6 +677,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -662,6 +696,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -681,6 +716,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -699,6 +735,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -717,6 +754,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -735,6 +773,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -754,6 +793,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -773,6 +813,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -795,6 +836,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -813,6 +855,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -831,6 +874,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -850,6 +894,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -868,6 +913,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -886,6 +932,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end
@@ -904,6 +951,7 @@ defmodule Baiji.Lightsail do
       target_prefix:  "Lightsail_20161128",
       
       type:           :json,
+      version:        "2016-11-28",
       method:         :post
     }
   end

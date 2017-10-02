@@ -30,6 +30,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetIntentVersions",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -46,6 +47,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetExport",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -65,6 +67,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBot",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -85,6 +88,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteSlotTypeVersion",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -114,6 +118,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "CreateBotVersion",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -146,6 +151,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "PutBot",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :put
     }
   end
@@ -171,6 +177,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetIntents",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -189,6 +196,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBuiltinIntent",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -220,6 +228,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteIntent",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -241,6 +250,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "PutBotAlias",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :put
     }
   end
@@ -260,6 +270,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBotAlias",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -283,6 +294,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBuiltinSlotTypes",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -302,6 +314,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetIntent",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -332,6 +345,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "CreateIntentVersion",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -352,6 +366,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteIntentVersion",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -377,6 +392,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetSlotTypes",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -402,6 +418,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteBot",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -421,6 +438,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteBotChannelAssociation",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -447,6 +465,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBotVersions",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -474,6 +493,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteUtterances",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -502,6 +522,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetSlotTypeVersions",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -522,6 +543,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBotChannelAssociation",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -554,6 +576,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteSlotType",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -593,6 +616,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetUtterancesView",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -619,6 +643,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBots",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -638,6 +663,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteBotVersion",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -656,6 +682,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBuiltinIntents",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -680,6 +707,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "DeleteBotAlias",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :delete
     }
   end
@@ -699,6 +727,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBotChannelAssociations",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -717,6 +746,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetBotAliases",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -779,6 +809,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "PutIntent",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :put
     }
   end
@@ -798,6 +829,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "GetSlotType",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :get
     }
   end
@@ -828,6 +860,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "CreateSlotTypeVersion",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :post
     }
   end
@@ -855,6 +888,7 @@ defmodule Baiji.LexModelBuildingService do
       action:         "PutSlotType",
       
       type:           :json,
+      version:        "2017-04-19",
       method:         :put
     }
   end

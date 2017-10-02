@@ -8,7 +8,9 @@ defmodule Baiji.Response do
   Parse, decode and return the response to a request made with the given operation
   """
   def parse({:error, error}, _), do: {:error, error}
-  def parse({:ok, response}, %Operation{type: type} = op) do
-    
+  def parse({:ok, response}, %Operation{parser: parser} = op) do
+    parser.(response, op)
+  end
+  def parse(response, %Operation{type: type}) do
   end
 end

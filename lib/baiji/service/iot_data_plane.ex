@@ -26,6 +26,7 @@ defmodule Baiji.IotDataPlane do
       action:         "DeleteThingShadow",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :delete
     }
   end
@@ -46,6 +47,7 @@ defmodule Baiji.IotDataPlane do
       action:         "GetThingShadow",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :get
     }
   end
@@ -66,6 +68,7 @@ defmodule Baiji.IotDataPlane do
       action:         "Publish",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end
@@ -86,6 +89,7 @@ defmodule Baiji.IotDataPlane do
       action:         "UpdateThingShadow",
       
       type:           :rest_json,
+      version:        "2015-05-28",
       method:         :post
     }
   end

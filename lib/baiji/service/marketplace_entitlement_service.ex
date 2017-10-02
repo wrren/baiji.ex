@@ -34,6 +34,7 @@ defmodule Baiji.MarketplaceEntitlementService do
       target_prefix:  "AWSMPEntitlementService",
       
       type:           :json,
+      version:        "2017-01-11",
       method:         :post
     }
   end

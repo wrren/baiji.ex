@@ -20,6 +20,7 @@ defmodule Baiji.Greengrass do
       action:         "ListFunctionDefinitions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -36,6 +37,7 @@ defmodule Baiji.Greengrass do
       action:         "ListCoreDefinitionVersions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -53,6 +55,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateSubscriptionDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -69,6 +72,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateSubscriptionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -86,6 +90,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateFunctionDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -102,6 +107,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateGroupCertificateConfiguration",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -118,6 +124,7 @@ defmodule Baiji.Greengrass do
       action:         "DisassociateRoleFromGroup",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -134,6 +141,7 @@ defmodule Baiji.Greengrass do
       action:         "GetDeviceDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -150,6 +158,7 @@ defmodule Baiji.Greengrass do
       action:         "GetGroupCertificateConfiguration",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -167,6 +176,7 @@ defmodule Baiji.Greengrass do
       action:         "DeleteSubscriptionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -183,6 +193,7 @@ defmodule Baiji.Greengrass do
       action:         "ListGroupCertificateAuthorities",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -199,6 +210,7 @@ defmodule Baiji.Greengrass do
       action:         "GetServiceRoleForAccount",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -215,6 +227,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateDeviceDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -234,6 +247,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateCoreDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -250,6 +264,7 @@ defmodule Baiji.Greengrass do
       action:         "ListGroupVersions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -266,6 +281,7 @@ defmodule Baiji.Greengrass do
       action:         "ListLoggerDefinitions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -282,6 +298,7 @@ defmodule Baiji.Greengrass do
       action:         "DeleteGroup",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -298,6 +315,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateFunctionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -315,6 +333,7 @@ defmodule Baiji.Greengrass do
       action:         "DeleteDeviceDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -331,6 +350,7 @@ defmodule Baiji.Greengrass do
       action:         "GetDeviceDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -347,6 +367,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateDeployment",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -363,6 +384,7 @@ defmodule Baiji.Greengrass do
       action:         "GetLoggerDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -379,6 +401,7 @@ defmodule Baiji.Greengrass do
       action:         "ListDeviceDefinitions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -395,6 +418,7 @@ defmodule Baiji.Greengrass do
       action:         "GetCoreDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -413,6 +437,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateLoggerDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -429,6 +454,7 @@ defmodule Baiji.Greengrass do
       action:         "ListCoreDefinitions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -445,6 +471,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateLoggerDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -461,6 +488,7 @@ defmodule Baiji.Greengrass do
       action:         "GetGroupVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -477,6 +505,7 @@ defmodule Baiji.Greengrass do
       action:         "GetDeploymentStatus",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -493,6 +522,7 @@ defmodule Baiji.Greengrass do
       action:         "ListSubscriptionDefinitionVersions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -510,6 +540,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateGroupCertificateAuthority",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -526,6 +557,7 @@ defmodule Baiji.Greengrass do
       action:         "GetSubscriptionDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -542,6 +574,7 @@ defmodule Baiji.Greengrass do
       action:         "GetGroup",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -558,6 +591,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateDeviceDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -574,6 +608,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateCoreDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -590,6 +625,7 @@ defmodule Baiji.Greengrass do
       action:         "GetConnectivityInfo",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -607,6 +643,7 @@ defmodule Baiji.Greengrass do
       action:         "GetFunctionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -623,6 +660,7 @@ defmodule Baiji.Greengrass do
       action:         "ListSubscriptionDefinitions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -641,6 +679,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateDeviceDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -657,6 +696,7 @@ defmodule Baiji.Greengrass do
       action:         "GetLoggerDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -673,6 +713,7 @@ defmodule Baiji.Greengrass do
       action:         "GetAssociatedRole",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -689,6 +730,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateGroupVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -705,6 +747,7 @@ defmodule Baiji.Greengrass do
       action:         "ListGroups",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -721,6 +764,7 @@ defmodule Baiji.Greengrass do
       action:         "GetGroupCertificateAuthority",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -737,6 +781,7 @@ defmodule Baiji.Greengrass do
       action:         "ListDeviceDefinitionVersions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -753,6 +798,7 @@ defmodule Baiji.Greengrass do
       action:         "GetSubscriptionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -770,6 +816,7 @@ defmodule Baiji.Greengrass do
       action:         "DisassociateServiceRoleFromAccount",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -789,6 +836,7 @@ defmodule Baiji.Greengrass do
       action:         "AssociateServiceRoleToAccount",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -807,6 +855,7 @@ defmodule Baiji.Greengrass do
       action:         "GetFunctionDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -824,6 +873,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateCoreDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -841,6 +891,7 @@ defmodule Baiji.Greengrass do
       action:         "DeleteLoggerDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -859,6 +910,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateSubscriptionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -875,6 +927,7 @@ defmodule Baiji.Greengrass do
       action:         "GetCoreDefinitionVersion",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -891,6 +944,7 @@ defmodule Baiji.Greengrass do
       action:         "ListDeployments",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -908,6 +962,7 @@ defmodule Baiji.Greengrass do
       action:         "DeleteFunctionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -924,6 +979,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateGroup",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -940,6 +996,7 @@ defmodule Baiji.Greengrass do
       action:         "ListLoggerDefinitionVersions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -956,6 +1013,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateLoggerDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -973,6 +1031,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateGroup",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end
@@ -990,6 +1049,7 @@ defmodule Baiji.Greengrass do
       action:         "DeleteCoreDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :delete
     }
   end
@@ -1006,6 +1066,7 @@ defmodule Baiji.Greengrass do
       action:         "ListFunctionDefinitionVersions",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :get
     }
   end
@@ -1024,6 +1085,7 @@ defmodule Baiji.Greengrass do
       action:         "UpdateConnectivityInfo",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -1043,6 +1105,7 @@ defmodule Baiji.Greengrass do
       action:         "AssociateRoleToGroup",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :put
     }
   end
@@ -1063,6 +1126,7 @@ defmodule Baiji.Greengrass do
       action:         "CreateFunctionDefinition",
       
       type:           :json,
+      version:        "2017-06-07",
       method:         :post
     }
   end

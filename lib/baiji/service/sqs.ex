@@ -83,6 +83,7 @@ defmodule Baiji.SQS do
       action:         "AddPermission",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -139,6 +140,7 @@ defmodule Baiji.SQS do
       action:         "ChangeMessageVisibility",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -173,6 +175,7 @@ defmodule Baiji.SQS do
       action:         "ChangeMessageVisibilityBatch",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -232,6 +235,7 @@ defmodule Baiji.SQS do
       action:         "CreateQueue",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -270,6 +274,7 @@ defmodule Baiji.SQS do
       action:         "DeleteMessage",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -302,6 +307,7 @@ defmodule Baiji.SQS do
       action:         "DeleteMessageBatch",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -331,6 +337,7 @@ defmodule Baiji.SQS do
       action:         "DeleteQueue",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -361,6 +368,7 @@ defmodule Baiji.SQS do
       action:         "GetQueueAttributes",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -386,6 +394,7 @@ defmodule Baiji.SQS do
       action:         "GetQueueUrl",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -408,6 +417,7 @@ defmodule Baiji.SQS do
       action:         "ListDeadLetterSourceQueues",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -427,6 +437,7 @@ defmodule Baiji.SQS do
       action:         "ListQueues",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -453,6 +464,7 @@ defmodule Baiji.SQS do
       action:         "PurgeQueue",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -521,6 +533,7 @@ defmodule Baiji.SQS do
       action:         "ReceiveMessage",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -538,6 +551,7 @@ defmodule Baiji.SQS do
       action:         "RemovePermission",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -566,6 +580,7 @@ defmodule Baiji.SQS do
       action:         "SendMessage",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -616,6 +631,7 @@ defmodule Baiji.SQS do
       action:         "SendMessageBatch",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end
@@ -641,6 +657,7 @@ defmodule Baiji.SQS do
       action:         "SetQueueAttributes",
       
       type:           :xml,
+      version:        "2012-11-05",
       method:         :post
     }
   end

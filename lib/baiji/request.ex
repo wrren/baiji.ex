@@ -49,9 +49,16 @@ defmodule Baiji.Request do
   def host(%Operation{region: region, service: service}), do: "#{service}.#{region}.amazonaws.com"
 
   @doc """
+  Generate a Query string for the given operation
+  """
+  def query(%Operation{action: action, version: version}) do
+    "?Action=#{action}&Version=#{version}"
+  end
+
+  @doc """
   Determine the full URL to which the request should be sent
   """
-  def url(%Operation{endpoint: endpoint, action: action} = op), do: "https://#{host(op)}#{endpoint}?Action=#{action}"
+  def url(%Operation{endpoint: endpoint} = op), do: "https://#{host(op)}#{endpoint}#{query(op)}"
 
   @doc """
   Add the appropriate headers to the given request on the operation type, version and host
@@ -100,7 +107,8 @@ defmodule Baiji.Request do
   @doc """
   Execute a Request and generate a Response struct
   """
-  def execute(%Request{url: url, method: method, headers: headers, body: body}) do
+  def execute(%Request{url: url, method: method, headers: headers, body: body, operation: op}) do
+    Operation.debug(op, "Making #{method} request to #{url} with body #{body}...")
     case HTTPoison.request(method, url, body, headers) do
       {:ok, %{status_code: code} = response} when code >= 200 and code <= 300 ->
         {:ok, response}      

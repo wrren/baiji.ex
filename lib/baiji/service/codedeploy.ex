@@ -83,6 +83,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -101,6 +102,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -119,6 +121,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -137,6 +140,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -155,6 +159,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -173,6 +178,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -191,6 +197,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -209,6 +216,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -228,6 +236,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -246,6 +255,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -265,6 +275,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -284,6 +295,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -302,6 +314,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -320,6 +333,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -342,6 +356,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -360,6 +375,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -378,6 +394,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -396,6 +413,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -414,6 +432,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -432,6 +451,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -450,6 +470,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -468,6 +489,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -486,6 +508,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -504,6 +527,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -523,6 +547,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -542,6 +567,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -560,6 +586,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -578,6 +605,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -596,6 +624,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -619,6 +648,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -637,6 +667,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -655,6 +686,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -678,6 +710,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -701,6 +734,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -720,6 +754,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -738,6 +773,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -756,6 +792,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end
@@ -774,6 +811,7 @@ defmodule Baiji.CodeDeploy do
       target_prefix:  "CodeDeploy_20141006",
       
       type:           :json,
+      version:        "2014-10-06",
       method:         :post
     }
   end

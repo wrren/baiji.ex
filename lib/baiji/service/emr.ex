@@ -25,6 +25,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -85,6 +87,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -107,6 +110,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -130,6 +134,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -149,6 +154,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -167,6 +173,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -187,6 +194,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -224,6 +232,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -243,6 +252,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -261,6 +271,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -279,6 +290,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -301,6 +313,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -324,6 +337,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -342,6 +356,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -363,6 +378,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -384,6 +400,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -403,6 +420,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -428,6 +446,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -449,6 +468,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -470,6 +490,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -489,6 +510,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -513,6 +535,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -563,6 +586,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -600,6 +624,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -623,6 +648,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end
@@ -650,6 +676,7 @@ defmodule Baiji.EMR do
       target_prefix:  "ElasticMapReduce",
       
       type:           :json,
+      version:        "2009-03-31",
       method:         :post
     }
   end

@@ -24,6 +24,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListFacetAttributes",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -55,6 +56,7 @@ defmodule Baiji.Clouddirectory do
       action:         "CreateSchema",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -73,6 +75,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListTypedLinkFacetAttributes",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -89,6 +92,7 @@ defmodule Baiji.Clouddirectory do
       action:         "BatchRead",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -105,6 +109,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListPolicyAttachments",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -121,6 +126,7 @@ defmodule Baiji.Clouddirectory do
       action:         "TagResource",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -138,6 +144,7 @@ defmodule Baiji.Clouddirectory do
       action:         "CreateTypedLinkFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -155,6 +162,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DetachObject",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -173,6 +181,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DetachTypedLink",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -191,6 +200,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListTypedLinkFacetNames",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -207,6 +217,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListObjectPolicies",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -223,6 +234,7 @@ defmodule Baiji.Clouddirectory do
       action:         "GetObjectInformation",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -241,6 +253,7 @@ defmodule Baiji.Clouddirectory do
       action:         "GetTypedLinkFacetInformation",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -259,6 +272,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListTagsForResource",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -283,6 +297,7 @@ defmodule Baiji.Clouddirectory do
       action:         "UpdateFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -300,6 +315,7 @@ defmodule Baiji.Clouddirectory do
       action:         "CreateDirectory",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -317,6 +333,7 @@ defmodule Baiji.Clouddirectory do
       action:         "CreateFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -333,6 +350,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListObjectAttributes",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -349,6 +367,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListFacetNames",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -367,6 +386,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DisableDirectory",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -384,6 +404,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListObjectParents",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -400,6 +421,7 @@ defmodule Baiji.Clouddirectory do
       action:         "UpdateObjectAttributes",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -416,6 +438,7 @@ defmodule Baiji.Clouddirectory do
       action:         "UntagResource",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -432,6 +455,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListAppliedSchemaArns",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -449,6 +473,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ApplySchema",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -467,6 +492,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DeleteFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -485,6 +511,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DeleteDirectory",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -501,6 +528,7 @@ defmodule Baiji.Clouddirectory do
       action:         "AddFacetToObject",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -517,6 +545,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListIndex",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -535,6 +564,7 @@ defmodule Baiji.Clouddirectory do
       action:         "CreateIndex",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -551,6 +581,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DetachFromIndex",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -568,6 +599,7 @@ defmodule Baiji.Clouddirectory do
       action:         "EnableDirectory",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -584,6 +616,7 @@ defmodule Baiji.Clouddirectory do
       action:         "RemoveFacetFromObject",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -603,6 +636,7 @@ defmodule Baiji.Clouddirectory do
       action:         "PublishSchema",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -621,6 +655,7 @@ defmodule Baiji.Clouddirectory do
       action:         "GetFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -638,6 +673,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DeleteObject",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -654,6 +690,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListAttachedIndices",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -677,6 +714,7 @@ defmodule Baiji.Clouddirectory do
       action:         "AttachObject",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -694,6 +732,7 @@ defmodule Baiji.Clouddirectory do
       action:         "UpdateTypedLinkFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -711,6 +750,7 @@ defmodule Baiji.Clouddirectory do
       action:         "UpdateSchema",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -727,6 +767,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DetachPolicy",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -754,6 +795,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListObjectParentPaths",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -772,6 +814,7 @@ defmodule Baiji.Clouddirectory do
       action:         "GetSchemaAsJson",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -791,6 +834,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListIncomingTypedLinks",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -811,6 +855,7 @@ defmodule Baiji.Clouddirectory do
       action:         "CreateObject",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -827,6 +872,7 @@ defmodule Baiji.Clouddirectory do
       action:         "GetDirectory",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -844,6 +890,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DeleteSchema",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -860,6 +907,7 @@ defmodule Baiji.Clouddirectory do
       action:         "AttachToIndex",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -877,6 +925,7 @@ defmodule Baiji.Clouddirectory do
       action:         "AttachPolicy",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -895,6 +944,7 @@ defmodule Baiji.Clouddirectory do
       action:         "AttachTypedLink",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -912,6 +962,7 @@ defmodule Baiji.Clouddirectory do
       action:         "BatchWrite",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -929,6 +980,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListDevelopmentSchemaArns",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -946,6 +998,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListObjectChildren",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -962,6 +1015,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListDirectories",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -981,6 +1035,7 @@ defmodule Baiji.Clouddirectory do
       action:         "PutSchemaFromJson",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -998,6 +1053,7 @@ defmodule Baiji.Clouddirectory do
       action:         "DeleteTypedLinkFacet",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :put
     }
   end
@@ -1014,6 +1070,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListPublishedSchemaArns",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -1033,6 +1090,7 @@ defmodule Baiji.Clouddirectory do
       action:         "ListOutgoingTypedLinks",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end
@@ -1056,6 +1114,7 @@ defmodule Baiji.Clouddirectory do
       action:         "LookupPolicy",
       
       type:           :rest_json,
+      version:        "2016-05-10",
       method:         :post
     }
   end

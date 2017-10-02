@@ -46,6 +46,7 @@ defmodule Baiji.Workdocs do
       action:         "RemoveAllResourcePermissions",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -64,6 +65,7 @@ defmodule Baiji.Workdocs do
       action:         "AddResourcePermissions",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -80,6 +82,7 @@ defmodule Baiji.Workdocs do
       action:         "CreateFolder",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -101,6 +104,7 @@ defmodule Baiji.Workdocs do
       action:         "CreateNotificationSubscription",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -117,6 +121,7 @@ defmodule Baiji.Workdocs do
       action:         "ActivateUser",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -133,6 +138,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteLabels",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -149,6 +155,7 @@ defmodule Baiji.Workdocs do
       action:         "GetDocument",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -165,6 +172,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteFolderContents",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -181,6 +189,7 @@ defmodule Baiji.Workdocs do
       action:         "CreateComment",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -200,6 +209,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeRootFolders",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -216,6 +226,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteComment",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -233,6 +244,7 @@ defmodule Baiji.Workdocs do
       action:         "UpdateUser",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :patch
     }
   end
@@ -249,6 +261,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeActivities",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -270,6 +283,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeUsers",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -287,6 +301,7 @@ defmodule Baiji.Workdocs do
       action:         "UpdateDocument",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :patch
     }
   end
@@ -303,6 +318,7 @@ defmodule Baiji.Workdocs do
       action:         "GetDocumentVersion",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -319,6 +335,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteDocument",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -336,6 +353,7 @@ defmodule Baiji.Workdocs do
       action:         "RemoveResourcePermission",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -353,6 +371,7 @@ defmodule Baiji.Workdocs do
       action:         "CreateUser",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -369,6 +388,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeResourcePermissions",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -393,6 +413,7 @@ defmodule Baiji.Workdocs do
       action:         "InitiateDocumentVersionUpload",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :post
     }
   end
@@ -409,6 +430,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeComments",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -428,6 +450,7 @@ defmodule Baiji.Workdocs do
       action:         "AbortDocumentVersionUpload",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -450,6 +473,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeFolderContents",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -466,6 +490,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteNotificationSubscription",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -488,6 +513,7 @@ defmodule Baiji.Workdocs do
       action:         "GetFolderPath",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -504,6 +530,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteUser",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -522,6 +549,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeDocumentVersions",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -538,6 +566,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteCustomMetadata",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -554,6 +583,7 @@ defmodule Baiji.Workdocs do
       action:         "DescribeNotificationSubscriptions",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -574,6 +604,7 @@ defmodule Baiji.Workdocs do
       action:         "UpdateDocumentVersion",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :patch
     }
   end
@@ -591,6 +622,7 @@ defmodule Baiji.Workdocs do
       action:         "UpdateFolder",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :patch
     }
   end
@@ -607,6 +639,7 @@ defmodule Baiji.Workdocs do
       action:         "DeleteFolder",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -624,6 +657,7 @@ defmodule Baiji.Workdocs do
       action:         "DeactivateUser",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :delete
     }
   end
@@ -641,6 +675,7 @@ defmodule Baiji.Workdocs do
       action:         "CreateLabels",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :put
     }
   end
@@ -658,6 +693,7 @@ defmodule Baiji.Workdocs do
       action:         "CreateCustomMetadata",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :put
     }
   end
@@ -676,6 +712,7 @@ defmodule Baiji.Workdocs do
       action:         "GetCurrentUser",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -698,6 +735,7 @@ defmodule Baiji.Workdocs do
       action:         "GetDocumentPath",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end
@@ -714,6 +752,7 @@ defmodule Baiji.Workdocs do
       action:         "GetFolder",
       
       type:           :json,
+      version:        "2016-05-01",
       method:         :get
     }
   end

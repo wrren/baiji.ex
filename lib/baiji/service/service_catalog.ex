@@ -37,6 +37,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -63,6 +64,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -81,6 +83,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -99,6 +102,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -118,6 +122,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -148,6 +153,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -166,6 +172,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -184,6 +191,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -203,6 +211,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -221,6 +230,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -240,6 +250,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -258,6 +269,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -279,6 +291,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -297,6 +310,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -318,31 +332,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
-      method:         :post
-    }
-  end
-  
-  @doc """
-  Copies the specified source product to the specified target product or a
-  new product.
-
-  You can copy the product to the same account or another account. You can
-  copy the product to the same region or another region.
-
-  This operation is performed asynchronously. To track the progress of the
-  operation, use `DescribeCopyProductStatus`.
-  """
-  def copy_product(input \\ %{}, options \\ []) do
-    %Baiji.Operation{
-      service:        "servicecatalog",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyProduct",
-      
-      target_prefix:  "AWS242ServiceCatalogService",
-      
-      type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -361,6 +351,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -379,6 +370,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -397,6 +389,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -415,6 +408,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -433,6 +427,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -453,6 +448,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -460,6 +456,8 @@ defmodule Baiji.ServiceCatalog do
   @doc """
   Create a new provisioning artifact for the specified product. This
   operation does not work with a product that has been shared with you.
+
+  See the bottom of this topic for an example JSON request.
   """
   def create_provisioning_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
@@ -472,6 +470,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -490,6 +489,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -508,6 +508,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -526,6 +527,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -545,6 +547,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -570,6 +573,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -592,6 +596,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -610,6 +615,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -628,6 +634,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -646,6 +653,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -665,24 +673,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
-      method:         :post
-    }
-  end
-  
-  @doc """
-  Describes the status of the specified copy product operation.
-  """
-  def describe_copy_product_status(input \\ %{}, options \\ []) do
-    %Baiji.Operation{
-      service:        "servicecatalog",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCopyProductStatus",
-      
-      target_prefix:  "AWS242ServiceCatalogService",
-      
-      type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -702,6 +693,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -720,6 +712,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -738,6 +731,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -756,6 +750,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -777,6 +772,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -797,6 +793,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -815,6 +812,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -833,6 +831,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -853,6 +852,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -874,6 +874,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -895,6 +896,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -914,6 +916,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -933,6 +936,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -952,6 +956,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -971,6 +976,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -990,6 +996,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -1021,6 +1028,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -1039,6 +1047,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end
@@ -1057,6 +1066,7 @@ defmodule Baiji.ServiceCatalog do
       target_prefix:  "AWS242ServiceCatalogService",
       
       type:           :json,
+      version:        "2015-12-10",
       method:         :post
     }
   end

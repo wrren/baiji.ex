@@ -43,6 +43,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -64,6 +65,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -82,6 +84,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -105,6 +108,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -128,6 +132,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -147,6 +152,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -166,6 +172,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -184,6 +191,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -203,6 +211,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -218,8 +227,6 @@ defmodule Baiji.CloudwatchEvents do
 
   To enable multiple AWS accounts to put events to your default event bus,
   run `PutPermission` once for each of these accounts.
-
-  The permission policy on the default event bus cannot exceed 10KB in size.
   """
   def put_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
@@ -232,6 +239,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -267,6 +275,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -291,15 +300,9 @@ defmodule Baiji.CloudwatchEvents do
 
   </li> <li> AWS Step Functions state machines
 
-  </li> <li> Pipelines in Amazon Code Pipeline
-
-  </li> <li> Amazon Inspector assessment templates
-
   </li> <li> Amazon SNS topics
 
   </li> <li> Amazon SQS queues
-
-  </li> <li> The default event bus of another AWS account
 
   </li> </ul> Note that creating rules with built-in targets is supported
   only in the AWS Management Console.
@@ -321,16 +324,10 @@ defmodule Baiji.CloudwatchEvents do
   in the *Amazon CloudWatch Events User Guide*.
 
   If another AWS account is in the same region and has granted you permission
-  (using `PutPermission`), you can send events to that account by setting
-  that account's event bus as a target of the rules in your account. To send
-  the matched events to the other account, specify that account's event bus
-  as the `Arn` when you run `PutTargets`. If your account sends events to
-  another account, your account is charged for each sent event. Each event
-  sent to antoher account is charged as a custom event. The account receiving
-  the event is not charged. For more information on pricing, see [Amazon
-  CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
-
-  For more information about enabling cross-account events, see
+  (using `PutPermission`), you can set that account's event bus as a target
+  of the rules in your account. To send the matched events to the other
+  account, specify that account's event bus as the `Arn` when you run
+  `PutTargets`. For more information about enabling cross-account events, see
   `PutPermission`.
 
   **Input**, **InputPath** and **InputTransformer** are mutually exclusive
@@ -377,6 +374,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -399,6 +397,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -427,6 +426,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end
@@ -451,6 +451,7 @@ defmodule Baiji.CloudwatchEvents do
       target_prefix:  "AWSEvents",
       
       type:           :json,
+      version:        "2015-10-07",
       method:         :post
     }
   end

@@ -21,6 +21,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -42,6 +43,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -62,6 +64,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -81,6 +84,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -100,6 +104,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -120,6 +125,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -141,6 +147,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -161,6 +168,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -183,6 +191,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -205,6 +214,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end
@@ -225,6 +235,7 @@ defmodule Baiji.SMS do
       target_prefix:  "AWSServerMigrationService_V2016_10_24",
       
       type:           :json,
+      version:        "2016-10-24",
       method:         :post
     }
   end

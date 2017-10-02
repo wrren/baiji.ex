@@ -19,6 +19,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -37,6 +38,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -55,6 +57,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -73,6 +76,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -93,6 +97,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -111,6 +116,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -129,6 +135,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -148,6 +155,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -166,6 +174,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -185,6 +194,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -205,6 +215,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -228,6 +239,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -249,6 +261,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -267,6 +280,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -285,6 +299,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -303,6 +318,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -321,6 +337,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -339,6 +356,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -357,6 +375,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -375,6 +394,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -396,6 +416,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end
@@ -414,6 +435,7 @@ defmodule Baiji.Appstream do
       target_prefix:  "PhotonAdminProxyService",
       
       type:           :json,
+      version:        "2016-12-01",
       method:         :post
     }
   end

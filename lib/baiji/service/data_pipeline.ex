@@ -45,6 +45,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -63,6 +64,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -82,6 +84,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -105,6 +108,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -130,6 +134,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -150,6 +155,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -176,6 +182,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -196,6 +203,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -216,6 +224,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -235,6 +244,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -267,6 +277,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -297,6 +308,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -316,6 +328,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -334,6 +347,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -363,6 +377,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -385,6 +400,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -408,6 +424,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -430,6 +447,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end
@@ -449,6 +467,7 @@ defmodule Baiji.DataPipeline do
       target_prefix:  "DataPipeline",
       
       type:           :json,
+      version:        "2012-10-29",
       method:         :post
     }
   end

@@ -11,10 +11,12 @@ defmodule Baiji.Operation do
             secret_access_key:  nil,          # AWS secret access key
             security_token:     nil,          # AWS STS security token (optional)
             region:             "us-east-1",  # Target AWS Region
+            version:            nil,          # API Version String
             assigns:            [],           # Variables assigned to the operation by intermediate stages
             halted:             false,        # Indicates whether the operation has been halted due to an error
-            errors:             []            # Contains details of any errors that occurred while performing the operation
-  
+            errors:             [],            # Contains details of any errors that occurred while performing the operation
+            parser:             &Baiji.Response.parse/2
+            
   @doc """
   Add a new key-value pair to the operation's assigns
   """
@@ -25,15 +27,15 @@ defmodule Baiji.Operation do
   @doc """
   Check whether the operation has the debug flag set
   """
-  def debug?(%Baiji.Operation{assigns: assigns}) do
-    assigns[:debug] || false
+  def debug?(%Baiji.Operation{options: options}) do
+    options[:debug] || false
   end
 
   @doc """
   Set the debug flag to true or false on the given operation
   """
-  def debug!(%Baiji.Operation{} = op, debug \\ true) do
-    assign(op, :debug, debug)
+  def debug!(%Baiji.Operation{options: opts} = op, debug \\ true) do
+    %{op | options: [{:debug, debug} | opts]}
   end
 
   @doc """
@@ -54,5 +56,6 @@ defmodule Baiji.Operation do
       require Logger
       Logger.log(level, message)
     end
+    op
   end
 end

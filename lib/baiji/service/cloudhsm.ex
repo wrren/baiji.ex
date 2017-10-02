@@ -21,6 +21,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -40,6 +41,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -70,6 +72,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -88,6 +91,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -106,6 +110,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -125,6 +130,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -143,6 +149,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -161,6 +168,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -180,6 +188,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -198,6 +207,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -217,6 +227,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -235,6 +246,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -258,6 +270,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -282,6 +295,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -305,6 +319,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -323,6 +338,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -341,6 +357,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -367,6 +384,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -388,6 +406,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end
@@ -409,6 +428,7 @@ defmodule Baiji.CloudHSM do
       target_prefix:  "CloudHsmFrontendService",
       
       type:           :json,
+      version:        "2014-05-30",
       method:         :post
     }
   end

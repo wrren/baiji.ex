@@ -29,6 +29,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -49,6 +50,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -67,6 +69,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -85,6 +88,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -103,6 +107,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -121,6 +126,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -139,6 +145,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -158,6 +165,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -179,6 +187,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -197,6 +206,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -215,6 +225,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -238,6 +249,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -256,6 +268,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -274,6 +287,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -294,6 +308,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -312,6 +327,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -348,6 +364,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -366,6 +383,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -385,6 +403,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -403,6 +422,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -421,6 +441,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -440,6 +461,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -462,6 +484,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -487,6 +510,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -507,6 +531,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -525,6 +550,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -543,6 +569,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -561,6 +588,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -585,6 +613,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -607,6 +636,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -628,6 +658,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -647,6 +678,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -665,6 +697,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -683,6 +716,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -701,6 +735,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -724,6 +759,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -744,6 +780,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -767,6 +804,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -786,6 +824,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end
@@ -809,6 +848,7 @@ defmodule Baiji.DatabaseMigrationService do
       target_prefix:  "AmazonDMSv20160101",
       
       type:           :json,
+      version:        "2016-01-01",
       method:         :post
     }
   end

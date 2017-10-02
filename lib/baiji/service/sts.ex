@@ -163,6 +163,7 @@ defmodule Baiji.STS do
       action:         "AssumeRole",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end
@@ -258,6 +259,7 @@ defmodule Baiji.STS do
       action:         "AssumeRoleWithSAML",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end
@@ -376,6 +378,7 @@ defmodule Baiji.STS do
       action:         "AssumeRoleWithWebIdentity",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end
@@ -427,6 +430,7 @@ defmodule Baiji.STS do
       action:         "DecodeAuthorizationMessage",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end
@@ -444,6 +448,7 @@ defmodule Baiji.STS do
       action:         "GetCallerIdentity",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end
@@ -546,6 +551,7 @@ defmodule Baiji.STS do
       action:         "GetFederationToken",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end
@@ -612,6 +618,7 @@ defmodule Baiji.STS do
       action:         "GetSessionToken",
       
       type:           :xml,
+      version:        "2011-06-15",
       method:         :post
     }
   end

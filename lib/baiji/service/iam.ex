@@ -100,6 +100,7 @@ defmodule Baiji.IAM do
       action:         "GetRolePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -144,6 +145,7 @@ defmodule Baiji.IAM do
       action:         "SimulatePrincipalPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -177,6 +179,7 @@ defmodule Baiji.IAM do
       action:         "GetUserPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -197,6 +200,7 @@ defmodule Baiji.IAM do
       action:         "GetInstanceProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -213,6 +217,7 @@ defmodule Baiji.IAM do
       action:         "DeleteServiceSpecificCredential",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -241,6 +246,7 @@ defmodule Baiji.IAM do
       action:         "ListAttachedUserPolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -263,6 +269,7 @@ defmodule Baiji.IAM do
       action:         "ResyncMFADevice",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -282,6 +289,7 @@ defmodule Baiji.IAM do
       action:         "DeleteAccountAlias",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -305,6 +313,7 @@ defmodule Baiji.IAM do
       action:         "AttachUserPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -326,6 +335,7 @@ defmodule Baiji.IAM do
       action:         "ListRoles",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -356,6 +366,7 @@ defmodule Baiji.IAM do
       action:         "ListPolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -377,6 +388,7 @@ defmodule Baiji.IAM do
       action:         "GetAccountSummary",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -399,6 +411,7 @@ defmodule Baiji.IAM do
       action:         "ChangePassword",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -416,6 +429,7 @@ defmodule Baiji.IAM do
       action:         "ListOpenIDConnectProviders",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -449,6 +463,7 @@ defmodule Baiji.IAM do
       action:         "GetContextKeysForPrincipalPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -477,6 +492,7 @@ defmodule Baiji.IAM do
       action:         "ListAttachedRolePolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -505,6 +521,7 @@ defmodule Baiji.IAM do
       action:         "ListRolePolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -523,6 +540,7 @@ defmodule Baiji.IAM do
       action:         "ListGroupsForUser",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -545,6 +563,7 @@ defmodule Baiji.IAM do
       action:         "DetachUserPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -564,6 +583,7 @@ defmodule Baiji.IAM do
       action:         "CreateAccountAlias",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -581,6 +601,7 @@ defmodule Baiji.IAM do
       action:         "GetOpenIDConnectProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -604,6 +625,7 @@ defmodule Baiji.IAM do
       action:         "ListPolicyVersions",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -624,6 +646,7 @@ defmodule Baiji.IAM do
       action:         "GetUser",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -640,6 +663,7 @@ defmodule Baiji.IAM do
       action:         "UpdateRoleDescription",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -674,6 +698,7 @@ defmodule Baiji.IAM do
       action:         "DeleteServerCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -714,6 +739,7 @@ defmodule Baiji.IAM do
       action:         "CreateSAMLProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -730,6 +756,7 @@ defmodule Baiji.IAM do
       action:         "AddUserToGroup",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -756,6 +783,7 @@ defmodule Baiji.IAM do
       action:         "DeletePolicyVersion",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -788,6 +816,7 @@ defmodule Baiji.IAM do
       action:         "UpdateUser",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -807,6 +836,7 @@ defmodule Baiji.IAM do
       action:         "UpdateServiceSpecificCredential",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -842,6 +872,7 @@ defmodule Baiji.IAM do
       action:         "CreateOpenIDConnectProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -871,6 +902,7 @@ defmodule Baiji.IAM do
       action:         "AttachRolePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -893,6 +925,7 @@ defmodule Baiji.IAM do
       action:         "DeactivateMFADevice",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -916,6 +949,7 @@ defmodule Baiji.IAM do
       action:         "DeleteOpenIDConnectProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -943,6 +977,7 @@ defmodule Baiji.IAM do
       action:         "ListSSHPublicKeys",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -965,6 +1000,7 @@ defmodule Baiji.IAM do
       action:         "DeleteVirtualMFADevice",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -982,6 +1018,7 @@ defmodule Baiji.IAM do
       action:         "DeleteGroup",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1003,6 +1040,7 @@ defmodule Baiji.IAM do
       action:         "UpdateLoginProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1026,6 +1064,7 @@ defmodule Baiji.IAM do
       action:         "AttachGroupPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1045,6 +1084,7 @@ defmodule Baiji.IAM do
       action:         "GenerateCredentialReport",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1084,6 +1124,7 @@ defmodule Baiji.IAM do
       action:         "UpdateServerCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1109,6 +1150,7 @@ defmodule Baiji.IAM do
       action:         "AddRoleToInstanceProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1128,6 +1170,7 @@ defmodule Baiji.IAM do
       action:         "ResetServiceSpecificCredential",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1153,6 +1196,7 @@ defmodule Baiji.IAM do
       action:         "SetDefaultPolicyVersion",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1175,6 +1219,7 @@ defmodule Baiji.IAM do
       action:         "UpdateSAMLProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1196,6 +1241,7 @@ defmodule Baiji.IAM do
       action:         "CreateUser",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1218,6 +1264,7 @@ defmodule Baiji.IAM do
       action:         "GetSAMLProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1241,6 +1288,7 @@ defmodule Baiji.IAM do
       action:         "DeleteRolePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1268,6 +1316,7 @@ defmodule Baiji.IAM do
       action:         "CreatePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1289,6 +1338,7 @@ defmodule Baiji.IAM do
       action:         "ListInstanceProfiles",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1305,6 +1355,7 @@ defmodule Baiji.IAM do
       action:         "DeleteAccountPasswordPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1328,6 +1379,7 @@ defmodule Baiji.IAM do
       action:         "DeleteGroupPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1365,6 +1417,7 @@ defmodule Baiji.IAM do
       action:         "PutUserPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1387,6 +1440,7 @@ defmodule Baiji.IAM do
       action:         "ListMFADevices",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1404,6 +1458,7 @@ defmodule Baiji.IAM do
       action:         "GetGroup",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1422,6 +1477,7 @@ defmodule Baiji.IAM do
       action:         "GetLoginProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1440,6 +1496,7 @@ defmodule Baiji.IAM do
       action:         "GetAccountPasswordPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1463,6 +1520,7 @@ defmodule Baiji.IAM do
       action:         "ListServiceSpecificCredentials",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1492,6 +1550,7 @@ defmodule Baiji.IAM do
       action:         "CreateServiceLinkedRole",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1516,6 +1575,7 @@ defmodule Baiji.IAM do
       action:         "ListEntitiesForPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1557,6 +1617,7 @@ defmodule Baiji.IAM do
       action:         "GetPolicyVersion",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1589,6 +1650,7 @@ defmodule Baiji.IAM do
       action:         "CreateServiceSpecificCredential",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1610,6 +1672,7 @@ defmodule Baiji.IAM do
       action:         "RemoveClientIDFromOpenIDConnectProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1644,6 +1707,7 @@ defmodule Baiji.IAM do
       action:         "SimulateCustomPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1666,6 +1730,7 @@ defmodule Baiji.IAM do
       action:         "DetachGroupPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1687,6 +1752,7 @@ defmodule Baiji.IAM do
       action:         "ListVirtualMFADevices",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1721,6 +1787,7 @@ defmodule Baiji.IAM do
       action:         "UpdateOpenIDConnectProviderThumbprint",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1746,6 +1813,7 @@ defmodule Baiji.IAM do
       action:         "DeleteRole",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1772,6 +1840,7 @@ defmodule Baiji.IAM do
       action:         "RemoveRoleFromInstanceProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1797,6 +1866,7 @@ defmodule Baiji.IAM do
       action:         "ListServerCertificates",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1818,6 +1888,7 @@ defmodule Baiji.IAM do
       action:         "ListSAMLProviders",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1862,6 +1933,7 @@ defmodule Baiji.IAM do
       action:         "PutRolePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1879,6 +1951,7 @@ defmodule Baiji.IAM do
       action:         "DeleteUser",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1902,6 +1975,7 @@ defmodule Baiji.IAM do
       action:         "UploadSSHPublicKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1951,6 +2025,7 @@ defmodule Baiji.IAM do
       action:         "UploadServerCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1979,6 +2054,7 @@ defmodule Baiji.IAM do
       action:         "GetRole",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -1999,6 +2075,7 @@ defmodule Baiji.IAM do
       action:         "ListUsers",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2020,6 +2097,7 @@ defmodule Baiji.IAM do
       action:         "DeleteAccessKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2038,6 +2116,7 @@ defmodule Baiji.IAM do
       action:         "ListGroups",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2057,6 +2136,7 @@ defmodule Baiji.IAM do
       action:         "GetCredentialReport",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2075,6 +2155,7 @@ defmodule Baiji.IAM do
       action:         "EnableMFADevice",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2091,6 +2172,7 @@ defmodule Baiji.IAM do
       action:         "RemoveUserFromGroup",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2113,6 +2195,7 @@ defmodule Baiji.IAM do
       action:         "CreateRole",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2141,6 +2224,7 @@ defmodule Baiji.IAM do
       action:         "UpdateAccessKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2167,6 +2251,7 @@ defmodule Baiji.IAM do
       action:         "DeleteSAMLProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2189,6 +2274,7 @@ defmodule Baiji.IAM do
       action:         "GetAccountAuthorizationDetails",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2222,6 +2308,7 @@ defmodule Baiji.IAM do
       action:         "GetGroupPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2249,6 +2336,7 @@ defmodule Baiji.IAM do
       action:         "ListUserPolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2275,6 +2363,7 @@ defmodule Baiji.IAM do
       action:         "UpdateAccountPasswordPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2298,6 +2387,7 @@ defmodule Baiji.IAM do
       action:         "CreateInstanceProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2321,6 +2411,7 @@ defmodule Baiji.IAM do
       action:         "DeleteUserPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2347,6 +2438,7 @@ defmodule Baiji.IAM do
       action:         "DeleteInstanceProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2375,6 +2467,7 @@ defmodule Baiji.IAM do
       action:         "ListGroupPolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2398,6 +2491,7 @@ defmodule Baiji.IAM do
       action:         "GetSSHPublicKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2418,6 +2512,7 @@ defmodule Baiji.IAM do
       action:         "UpdateAssumeRolePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2445,6 +2540,7 @@ defmodule Baiji.IAM do
       action:         "GetContextKeysForCustomPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2464,6 +2560,7 @@ defmodule Baiji.IAM do
       action:         "GetAccessKeyLastUsed",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2484,6 +2581,7 @@ defmodule Baiji.IAM do
       action:         "ListAccountAliases",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2519,6 +2617,7 @@ defmodule Baiji.IAM do
       action:         "CreateAccessKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2559,6 +2658,7 @@ defmodule Baiji.IAM do
       action:         "DeletePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2589,6 +2689,7 @@ defmodule Baiji.IAM do
       action:         "UpdateGroup",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2617,6 +2718,7 @@ defmodule Baiji.IAM do
       action:         "ListAttachedGroupPolicies",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2648,6 +2750,7 @@ defmodule Baiji.IAM do
       action:         "GetPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2669,6 +2772,7 @@ defmodule Baiji.IAM do
       action:         "CreateGroup",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2690,6 +2794,7 @@ defmodule Baiji.IAM do
       action:         "AddClientIDToOpenIDConnectProvider",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2718,6 +2823,7 @@ defmodule Baiji.IAM do
       action:         "CreatePolicyVersion",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2743,6 +2849,7 @@ defmodule Baiji.IAM do
       action:         "DeleteLoginProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2767,6 +2874,7 @@ defmodule Baiji.IAM do
       action:         "UpdateSigningCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2789,6 +2897,7 @@ defmodule Baiji.IAM do
       action:         "DeleteSigningCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2826,6 +2935,7 @@ defmodule Baiji.IAM do
       action:         "PutGroupPolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2857,6 +2967,7 @@ defmodule Baiji.IAM do
       action:         "ListAccessKeys",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2878,6 +2989,7 @@ defmodule Baiji.IAM do
       action:         "ListInstanceProfilesForRole",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2904,6 +3016,7 @@ defmodule Baiji.IAM do
       action:         "UpdateSSHPublicKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2938,6 +3051,7 @@ defmodule Baiji.IAM do
       action:         "CreateVirtualMFADevice",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2960,6 +3074,7 @@ defmodule Baiji.IAM do
       action:         "DetachRolePolicy",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -2982,6 +3097,7 @@ defmodule Baiji.IAM do
       action:         "GetServerCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -3009,6 +3125,7 @@ defmodule Baiji.IAM do
       action:         "ListSigningCertificates",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -3046,6 +3163,7 @@ defmodule Baiji.IAM do
       action:         "UploadSigningCertificate",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -3069,6 +3187,7 @@ defmodule Baiji.IAM do
       action:         "DeleteSSHPublicKey",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end
@@ -3089,6 +3208,7 @@ defmodule Baiji.IAM do
       action:         "CreateLoginProfile",
       
       type:           :xml,
+      version:        "2010-05-08",
       method:         :post
     }
   end

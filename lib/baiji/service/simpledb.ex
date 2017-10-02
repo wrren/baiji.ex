@@ -54,6 +54,7 @@ defmodule Baiji.Simpledb do
       action:         "BatchDeleteAttributes",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -113,6 +114,7 @@ defmodule Baiji.Simpledb do
       action:         "BatchPutAttributes",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -139,6 +141,7 @@ defmodule Baiji.Simpledb do
       action:         "CreateDomain",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -166,6 +169,7 @@ defmodule Baiji.Simpledb do
       action:         "DeleteAttributes",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -188,6 +192,7 @@ defmodule Baiji.Simpledb do
       action:         "DeleteDomain",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -206,6 +211,7 @@ defmodule Baiji.Simpledb do
       action:         "DomainMetadata",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -231,6 +237,7 @@ defmodule Baiji.Simpledb do
       action:         "GetAttributes",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -253,6 +260,7 @@ defmodule Baiji.Simpledb do
       action:         "ListDomains",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -302,6 +310,7 @@ defmodule Baiji.Simpledb do
       action:         "PutAttributes",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end
@@ -330,6 +339,7 @@ defmodule Baiji.Simpledb do
       action:         "Select",
       
       type:           :xml,
+      version:        "2009-04-15",
       method:         :post
     }
   end

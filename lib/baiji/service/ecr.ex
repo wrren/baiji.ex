@@ -30,6 +30,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -56,6 +57,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -75,6 +77,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -101,6 +104,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -119,6 +123,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -138,6 +143,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -156,6 +162,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -182,6 +189,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -200,6 +208,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -226,6 +235,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -252,6 +262,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -270,6 +281,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -294,6 +306,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -319,6 +332,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -343,6 +357,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -362,6 +377,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end
@@ -386,6 +402,7 @@ defmodule Baiji.ECR do
       target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
       
       type:           :json,
+      version:        "2015-09-21",
       method:         :post
     }
   end

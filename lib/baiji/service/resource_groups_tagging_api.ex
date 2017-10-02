@@ -68,6 +68,7 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       target_prefix:  "ResourceGroupsTaggingAPI_20170126",
       
       type:           :json,
+      version:        "2017-01-26",
       method:         :post
     }
   end
@@ -86,6 +87,7 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       target_prefix:  "ResourceGroupsTaggingAPI_20170126",
       
       type:           :json,
+      version:        "2017-01-26",
       method:         :post
     }
   end
@@ -105,6 +107,7 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       target_prefix:  "ResourceGroupsTaggingAPI_20170126",
       
       type:           :json,
+      version:        "2017-01-26",
       method:         :post
     }
   end
@@ -143,6 +146,7 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       target_prefix:  "ResourceGroupsTaggingAPI_20170126",
       
       type:           :json,
+      version:        "2017-01-26",
       method:         :post
     }
   end
@@ -176,6 +180,7 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       target_prefix:  "ResourceGroupsTaggingAPI_20170126",
       
       type:           :json,
+      version:        "2017-01-26",
       method:         :post
     }
   end

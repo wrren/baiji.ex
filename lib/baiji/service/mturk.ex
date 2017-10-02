@@ -38,6 +38,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -60,6 +61,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -103,6 +105,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -125,6 +128,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -146,6 +150,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -167,6 +172,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -202,6 +208,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -236,6 +243,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -255,6 +263,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -274,6 +283,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -293,6 +303,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -316,6 +327,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -334,6 +346,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -362,6 +375,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -381,6 +395,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -401,6 +416,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -440,6 +456,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -460,6 +477,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -479,6 +497,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -498,6 +517,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -524,6 +544,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -545,6 +566,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -596,6 +618,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -618,6 +641,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -644,6 +668,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -665,6 +690,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -699,6 +725,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -731,6 +758,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -754,6 +782,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -774,6 +803,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -812,6 +842,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -837,6 +868,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -857,6 +889,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -877,6 +910,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -901,6 +935,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -929,6 +964,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -948,6 +984,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -969,6 +1006,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end
@@ -992,6 +1030,7 @@ defmodule Baiji.MTurk do
       target_prefix:  "MTurkRequesterServiceV20170117",
       
       type:           :json,
+      version:        "2017-01-17",
       method:         :post
     }
   end

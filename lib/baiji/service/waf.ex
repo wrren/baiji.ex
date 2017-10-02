@@ -24,6 +24,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -57,6 +58,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -76,6 +78,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -94,6 +97,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -130,6 +134,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -152,6 +157,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -171,6 +177,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -206,6 +213,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -240,6 +248,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -295,6 +304,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -314,6 +324,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -355,6 +366,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -438,6 +450,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -456,6 +469,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -474,6 +488,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -492,6 +507,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -522,6 +538,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -591,6 +608,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -609,6 +627,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -640,6 +659,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -658,6 +678,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -714,6 +735,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -772,6 +794,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -825,6 +848,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -865,6 +889,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -906,6 +931,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -961,6 +987,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1000,6 +1027,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1057,6 +1085,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1075,6 +1104,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1125,6 +1155,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1187,6 +1218,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1222,6 +1254,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1240,6 +1273,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1310,6 +1344,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1328,6 +1363,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1346,6 +1382,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1382,6 +1419,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1400,6 +1438,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1429,6 +1468,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1447,6 +1487,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1479,6 +1520,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1519,6 +1561,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end
@@ -1554,6 +1597,7 @@ defmodule Baiji.WAF do
       target_prefix:  "AWSWAF_20150824",
       
       type:           :json,
+      version:        "2015-08-24",
       method:         :post
     }
   end

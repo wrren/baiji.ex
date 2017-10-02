@@ -18,6 +18,7 @@ defmodule Baiji.Mobile do
       action:         "CreateProject",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :post
     }
   end
@@ -34,6 +35,7 @@ defmodule Baiji.Mobile do
       action:         "DeleteProject",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :delete
     }
   end
@@ -50,6 +52,7 @@ defmodule Baiji.Mobile do
       action:         "DescribeBundle",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :get
     }
   end
@@ -66,6 +69,7 @@ defmodule Baiji.Mobile do
       action:         "DescribeProject",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :get
     }
   end
@@ -84,6 +88,7 @@ defmodule Baiji.Mobile do
       action:         "ExportBundle",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :post
     }
   end
@@ -103,6 +108,7 @@ defmodule Baiji.Mobile do
       action:         "ExportProject",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :post
     }
   end
@@ -119,6 +125,7 @@ defmodule Baiji.Mobile do
       action:         "ListBundles",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :get
     }
   end
@@ -135,6 +142,7 @@ defmodule Baiji.Mobile do
       action:         "ListProjects",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :get
     }
   end
@@ -151,6 +159,7 @@ defmodule Baiji.Mobile do
       action:         "UpdateProject",
       
       type:           :json,
+      version:        "2017-07-01",
       method:         :post
     }
   end

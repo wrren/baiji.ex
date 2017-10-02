@@ -21,6 +21,7 @@ defmodule Baiji.ApiGateway do
       action:         "UpdateApiKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -37,6 +38,7 @@ defmodule Baiji.ApiGateway do
       action:         "GetResources",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -53,6 +55,7 @@ defmodule Baiji.ApiGateway do
       action:         "DeleteDomainName",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -69,6 +72,7 @@ defmodule Baiji.ApiGateway do
       action:         "GetDeployments",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -85,6 +89,7 @@ No Documentation Availabale
       action:         "GetSdkTypes",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -101,6 +106,7 @@ No Documentation Availabale
       action:         "UpdateUsagePlan",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -117,6 +123,7 @@ No Documentation Availabale
       action:         "GetExport",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -138,6 +145,7 @@ No Documentation Availabale
       action:         "TestInvokeAuthorizer",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -154,6 +162,7 @@ No Documentation Availabale
       action:         "UpdateMethod",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -170,6 +179,7 @@ No Documentation Availabale
       action:         "GetSdk",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -186,6 +196,7 @@ No Documentation Availabale
       action:         "DeleteRequestValidator",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -202,6 +213,7 @@ No Documentation Availabale
       action:         "GetIntegrationResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -218,6 +230,7 @@ No Documentation Availabale
       action:         "GetBasePathMappings",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -234,6 +247,7 @@ No Documentation Availabale
       action:         "ImportApiKeys",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -250,6 +264,7 @@ No Documentation Availabale
       action:         "GetStage",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -266,6 +281,7 @@ No Documentation Availabale
       action:         "GetBasePathMapping",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -282,6 +298,7 @@ No Documentation Availabale
       action:         "ImportDocumentationParts",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -299,6 +316,7 @@ No Documentation Availabale
       action:         "DeleteGatewayResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -318,6 +336,7 @@ No Documentation Availabale
       action:         "GetAuthorizers",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -334,6 +353,7 @@ No Documentation Availabale
       action:         "GetStages",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -350,6 +370,7 @@ No Documentation Availabale
       action:         "UpdateDomainName",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -366,6 +387,7 @@ No Documentation Availabale
       action:         "CreateDocumentationVersion",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -382,6 +404,7 @@ No Documentation Availabale
       action:         "GetAccount",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -398,6 +421,7 @@ No Documentation Availabale
       action:         "GetRestApis",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -414,6 +438,7 @@ No Documentation Availabale
       action:         "PutIntegrationResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -430,6 +455,7 @@ No Documentation Availabale
       action:         "UpdateClientCertificate",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -446,6 +472,7 @@ No Documentation Availabale
       action:         "GetRequestValidator",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -462,6 +489,7 @@ No Documentation Availabale
       action:         "DeleteClientCertificate",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -478,6 +506,7 @@ No Documentation Availabale
       action:         "UpdateIntegrationResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -494,6 +523,7 @@ No Documentation Availabale
       action:         "DeleteIntegration",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -510,6 +540,7 @@ No Documentation Availabale
       action:         "UpdateAccount",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -526,6 +557,7 @@ No Documentation Availabale
       action:         "UpdateDocumentationPart",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -542,6 +574,7 @@ No Documentation Availabale
       action:         "GetDocumentationParts",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -558,6 +591,7 @@ No Documentation Availabale
       action:         "FlushStageAuthorizersCache",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -574,6 +608,7 @@ No Documentation Availabale
       action:         "DeleteDocumentationVersion",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -590,6 +625,7 @@ No Documentation Availabale
       action:         "GetDocumentationVersions",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -606,6 +642,7 @@ No Documentation Availabale
       action:         "UpdateDeployment",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -623,6 +660,7 @@ No Documentation Availabale
       action:         "CreateDeployment",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -639,6 +677,7 @@ No Documentation Availabale
       action:         "CreateBasePathMapping",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -655,6 +694,7 @@ No Documentation Availabale
       action:         "GetDocumentationVersion",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -671,6 +711,7 @@ No Documentation Availabale
       action:         "UpdateRequestValidator",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -688,6 +729,7 @@ No Documentation Availabale
       action:         "UpdateUsage",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -704,6 +746,7 @@ No Documentation Availabale
       action:         "CreateDocumentationPart",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -720,6 +763,7 @@ No Documentation Availabale
       action:         "GetUsagePlan",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -739,6 +783,7 @@ No Documentation Availabale
       action:         "DeleteAuthorizer",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -755,6 +800,7 @@ No Documentation Availabale
       action:         "GetSdkType",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -772,6 +818,7 @@ No Documentation Availabale
       action:         "DeleteDeployment",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -788,6 +835,7 @@ No Documentation Availabale
       action:         "CreateDomainName",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -804,6 +852,7 @@ No Documentation Availabale
       action:         "GetUsagePlanKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -820,6 +869,7 @@ No Documentation Availabale
       action:         "UpdateResource",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -836,6 +886,7 @@ No Documentation Availabale
       action:         "GetMethod",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -853,6 +904,7 @@ No Documentation Availabale
       action:         "DeleteUsagePlanKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -869,6 +921,7 @@ No Documentation Availabale
       action:         "GetModels",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -885,6 +938,7 @@ No Documentation Availabale
       action:         "DeleteResource",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -901,6 +955,7 @@ No Documentation Availabale
       action:         "GetRestApi",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -918,6 +973,7 @@ No Documentation Availabale
       action:         "PutGatewayResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -937,6 +993,7 @@ No Documentation Availabale
       action:         "CreateAuthorizer",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -953,6 +1010,7 @@ No Documentation Availabale
       action:         "PutIntegration",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -969,6 +1027,7 @@ No Documentation Availabale
       action:         "DeleteApiKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -985,6 +1044,7 @@ No Documentation Availabale
       action:         "UpdateStage",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1002,6 +1062,7 @@ No Documentation Availabale
       action:         "UpdateGatewayResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1018,6 +1079,7 @@ No Documentation Availabale
       action:         "GetClientCertificate",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1037,6 +1099,7 @@ No Documentation Availabale
       action:         "UpdateAuthorizer",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1053,6 +1116,7 @@ No Documentation Availabale
       action:         "DeleteIntegrationResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1069,6 +1133,7 @@ No Documentation Availabale
       action:         "GetModel",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1085,6 +1150,7 @@ No Documentation Availabale
       action:         "GetMethodResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1104,6 +1170,7 @@ No Documentation Availabale
       action:         "GetGatewayResponses",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1120,6 +1187,7 @@ No Documentation Availabale
       action:         "GetRequestValidators",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1136,6 +1204,7 @@ No Documentation Availabale
       action:         "GetApiKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1152,6 +1221,7 @@ No Documentation Availabale
       action:         "CreateRestApi",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1168,6 +1238,7 @@ No Documentation Availabale
       action:         "PutMethodResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -1184,6 +1255,7 @@ No Documentation Availabale
       action:         "CreateResource",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1200,6 +1272,7 @@ No Documentation Availabale
       action:         "UpdateModel",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1216,6 +1289,7 @@ No Documentation Availabale
       action:         "UpdateIntegration",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1233,6 +1307,7 @@ No Documentation Availabale
       action:         "TestInvokeMethod",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1250,6 +1325,7 @@ No Documentation Availabale
       action:         "GetGatewayResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1269,6 +1345,7 @@ No Documentation Availabale
       action:         "PutRestApi",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -1285,6 +1362,7 @@ No Documentation Availabale
       action:         "PutMethod",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :put
     }
   end
@@ -1301,6 +1379,7 @@ No Documentation Availabale
       action:         "CreateRequestValidator",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1317,6 +1396,7 @@ No Documentation Availabale
       action:         "GetDomainNames",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1333,6 +1413,7 @@ No Documentation Availabale
       action:         "GetResource",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1349,6 +1430,7 @@ No Documentation Availabale
       action:         "GetDeployment",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1365,6 +1447,7 @@ No Documentation Availabale
       action:         "DeleteMethodResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1381,6 +1464,7 @@ No Documentation Availabale
       action:         "DeleteStage",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1397,6 +1481,7 @@ No Documentation Availabale
       action:         "GetClientCertificates",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1414,6 +1499,7 @@ No Documentation Availabale
       action:         "CreateStage",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1430,6 +1516,7 @@ No Documentation Availabale
       action:         "UpdateDocumentationVersion",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1447,6 +1534,7 @@ No Documentation Availabale
       action:         "CreateUsagePlan",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1463,6 +1551,7 @@ No Documentation Availabale
       action:         "CreateModel",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1479,6 +1568,7 @@ No Documentation Availabale
       action:         "DeleteModel",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1495,6 +1585,7 @@ No Documentation Availabale
       action:         "UpdateRestApi",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1512,6 +1603,7 @@ No Documentation Availabale
       action:         "GetModelTemplate",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1529,6 +1621,7 @@ No Documentation Availabale
       action:         "GetUsagePlanKeys",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1545,6 +1638,7 @@ No Documentation Availabale
       action:         "GenerateClientCertificate",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1561,6 +1655,7 @@ No Documentation Availabale
       action:         "GetApiKeys",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1577,6 +1672,7 @@ No Documentation Availabale
       action:         "GetUsagePlans",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1593,6 +1689,7 @@ No Documentation Availabale
       action:         "DeleteBasePathMapping",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1612,6 +1709,7 @@ No Documentation Availabale
       action:         "GetAuthorizer",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1629,6 +1727,7 @@ No Documentation Availabale
       action:         "GetDomainName",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1645,6 +1744,7 @@ No Documentation Availabale
       action:         "UpdateMethodResponse",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1661,6 +1761,7 @@ No Documentation Availabale
       action:         "UpdateBasePathMapping",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :patch
     }
   end
@@ -1680,6 +1781,7 @@ No Documentation Availabale
       action:         "CreateApiKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1696,6 +1798,7 @@ No Documentation Availabale
       action:         "GetUsage",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1712,6 +1815,7 @@ No Documentation Availabale
       action:         "DeleteRestApi",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1728,6 +1832,7 @@ No Documentation Availabale
       action:         "FlushStageCache",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1744,6 +1849,7 @@ No Documentation Availabale
       action:         "GetIntegration",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end
@@ -1760,6 +1866,7 @@ No Documentation Availabale
       action:         "DeleteUsagePlan",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1776,6 +1883,7 @@ No Documentation Availabale
       action:         "DeleteDocumentationPart",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1792,6 +1900,7 @@ No Documentation Availabale
       action:         "CreateUsagePlanKey",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1809,6 +1918,7 @@ No Documentation Availabale
       action:         "ImportRestApi",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :post
     }
   end
@@ -1825,6 +1935,7 @@ No Documentation Availabale
       action:         "DeleteMethod",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :delete
     }
   end
@@ -1841,6 +1952,7 @@ No Documentation Availabale
       action:         "GetDocumentationPart",
       
       type:           :rest_json,
+      version:        "2015-07-09",
       method:         :get
     }
   end

@@ -70,6 +70,7 @@ defmodule Baiji.EFS do
       action:         "CreateFileSystem",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :post
     }
   end
@@ -192,6 +193,7 @@ defmodule Baiji.EFS do
       action:         "CreateMountTarget",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :post
     }
   end
@@ -215,6 +217,7 @@ defmodule Baiji.EFS do
       action:         "CreateTags",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :post
     }
   end
@@ -247,6 +250,7 @@ defmodule Baiji.EFS do
       action:         "DeleteFileSystem",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :delete
     }
   end
@@ -289,6 +293,7 @@ defmodule Baiji.EFS do
       action:         "DeleteMountTarget",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :delete
     }
   end
@@ -313,6 +318,7 @@ defmodule Baiji.EFS do
       action:         "DeleteTags",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :post
     }
   end
@@ -355,6 +361,7 @@ defmodule Baiji.EFS do
       action:         "DescribeFileSystems",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :get
     }
   end
@@ -383,6 +390,7 @@ defmodule Baiji.EFS do
       action:         "DescribeMountTargetSecurityGroups",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :get
     }
   end
@@ -407,6 +415,7 @@ defmodule Baiji.EFS do
       action:         "DescribeMountTargets",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :get
     }
   end
@@ -429,6 +438,7 @@ defmodule Baiji.EFS do
       action:         "DescribeTags",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :get
     }
   end
@@ -462,6 +472,7 @@ defmodule Baiji.EFS do
       action:         "ModifyMountTargetSecurityGroups",
       
       type:           :rest_json,
+      version:        "2015-02-01",
       method:         :put
     }
   end

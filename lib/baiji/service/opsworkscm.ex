@@ -83,6 +83,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -115,6 +116,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -155,6 +157,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -179,6 +182,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -208,6 +212,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -229,6 +234,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -255,6 +261,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -280,6 +287,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -304,6 +312,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -330,6 +339,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -357,6 +367,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -386,6 +397,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -413,6 +425,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -433,6 +446,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end
@@ -462,6 +476,7 @@ defmodule Baiji.OpsWorksCM do
       target_prefix:  "OpsWorksCM_V2016_11_01",
       
       type:           :json,
+      version:        "2016-11-01",
       method:         :post
     }
   end

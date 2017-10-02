@@ -44,6 +44,7 @@ defmodule Baiji.Redshift do
       action:         "EnableSnapshotCopy",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -65,6 +66,7 @@ defmodule Baiji.Redshift do
       action:         "RevokeClusterSecurityGroupIngress",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -99,6 +101,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteCluster",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -120,6 +123,7 @@ defmodule Baiji.Redshift do
       action:         "CreateClusterSnapshot",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -142,6 +146,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeSnapshotCopyGrants",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -163,6 +168,7 @@ defmodule Baiji.Redshift do
       action:         "AuthorizeSnapshotAccess",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -191,6 +197,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeHsmConfigurations",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -207,6 +214,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteHsmClientCertificate",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -230,6 +238,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeResize",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -247,6 +256,7 @@ defmodule Baiji.Redshift do
       action:         "EnableLogging",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -267,6 +277,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeEvents",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -289,6 +300,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeDefaultClusterParameters",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -305,6 +317,7 @@ defmodule Baiji.Redshift do
       action:         "RotateEncryptionKey",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -329,6 +342,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteClusterSecurityGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -349,6 +363,7 @@ defmodule Baiji.Redshift do
       action:         "ResetClusterParameterGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -372,6 +387,7 @@ defmodule Baiji.Redshift do
       action:         "RebootCluster",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -405,6 +421,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusterSecurityGroups",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -432,6 +449,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeReservedNodeOfferings",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -448,6 +466,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteEventSubscription",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -476,6 +495,7 @@ defmodule Baiji.Redshift do
       action:         "ModifyCluster",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -511,6 +531,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusterParameterGroups",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -550,6 +571,7 @@ defmodule Baiji.Redshift do
       action:         "CreateEventSubscription",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -568,6 +590,7 @@ defmodule Baiji.Redshift do
       action:         "ModifyClusterSubnetGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -584,6 +607,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteHsmConfiguration",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -601,6 +625,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeLoggingStatus",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -618,6 +643,7 @@ defmodule Baiji.Redshift do
       action:         "ModifySnapshotCopyRetentionPeriod",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -634,6 +660,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteClusterSubnetGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -662,6 +689,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeHsmClientCertificates",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -699,6 +727,7 @@ defmodule Baiji.Redshift do
       action:         "AuthorizeClusterSecurityGroupIngress",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -729,6 +758,7 @@ defmodule Baiji.Redshift do
       action:         "RestoreFromClusterSnapshot",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -754,6 +784,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeOrderableClusterOptions",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -782,6 +813,7 @@ defmodule Baiji.Redshift do
       action:         "CopyClusterSnapshot",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -808,6 +840,7 @@ defmodule Baiji.Redshift do
       action:         "PurchaseReservedNodeOffering",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -830,6 +863,7 @@ defmodule Baiji.Redshift do
       action:         "CreateClusterSecurityGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -853,6 +887,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteClusterSnapshot",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -880,6 +915,7 @@ defmodule Baiji.Redshift do
       action:         "CreateClusterParameterGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -897,6 +933,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteTags",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -919,6 +956,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeTableRestoreStatus",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -951,6 +989,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusterSnapshots",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -974,6 +1013,7 @@ defmodule Baiji.Redshift do
       action:         "CreateSnapshotCopyGrant",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -993,6 +1033,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeEventCategories",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1022,6 +1063,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusterSubnetGroups",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1043,6 +1085,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteClusterParameterGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1082,6 +1125,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeTags",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1101,6 +1145,7 @@ defmodule Baiji.Redshift do
       action:         "ModifyClusterIamRoles",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1122,6 +1167,7 @@ defmodule Baiji.Redshift do
       action:         "ModifyClusterParameterGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1151,6 +1197,7 @@ defmodule Baiji.Redshift do
       action:         "RestoreTableFromClusterSnapshot",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1190,6 +1237,7 @@ defmodule Baiji.Redshift do
       action:         "GetClusterCredentials",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1213,6 +1261,7 @@ defmodule Baiji.Redshift do
       action:         "CreateCluster",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1229,6 +1278,7 @@ defmodule Baiji.Redshift do
       action:         "ModifyEventSubscription",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1251,6 +1301,7 @@ defmodule Baiji.Redshift do
       action:         "CreateTags",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1267,6 +1318,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeReservedNodes",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1296,6 +1348,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusterParameters",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1314,6 +1367,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeEventSubscriptions",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1335,6 +1389,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusterVersions",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1360,6 +1415,7 @@ defmodule Baiji.Redshift do
       action:         "CreateHsmConfiguration",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1376,6 +1432,7 @@ defmodule Baiji.Redshift do
       action:         "DeleteSnapshotCopyGrant",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1398,6 +1455,7 @@ defmodule Baiji.Redshift do
       action:         "RevokeSnapshotAccess",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1429,6 +1487,7 @@ defmodule Baiji.Redshift do
       action:         "DescribeClusters",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1451,6 +1510,7 @@ defmodule Baiji.Redshift do
       action:         "CreateClusterSubnetGroup",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1468,6 +1528,7 @@ defmodule Baiji.Redshift do
       action:         "DisableLogging",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1489,6 +1550,7 @@ defmodule Baiji.Redshift do
       action:         "DisableSnapshotCopy",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
@@ -1515,6 +1577,7 @@ defmodule Baiji.Redshift do
       action:         "CreateHsmClientCertificate",
       
       type:           :xml,
+      version:        "2012-12-01",
       method:         :post
     }
   end
