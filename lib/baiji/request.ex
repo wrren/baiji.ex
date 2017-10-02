@@ -22,15 +22,18 @@ defmodule Baiji.Request do
     |> new
     |> add_headers
     |> sign
+    |> execute
   end
 
   @doc """
   Generate a Request struct
   """
+  def new(%Operation{input: %{}, method: method} = op) do
+    %Request{operation: op, url: url(op), body: "", headers: [], method: method}
+  end
   def new(%Operation{input: input, method: method} = op) do
     %Request{operation: op, url: url(op), body: Poison.encode!(input), headers: [], method: method}
   end
-
   @doc """
   Sign the given request using the authentication data contained in its operation struct
   """
@@ -48,7 +51,7 @@ defmodule Baiji.Request do
   @doc """
   Determine the full URL to which the request should be sent
   """
-  def url(%Operation{endpoint: endpoint} = op), do: "https://#{host(op)}#{endpoint}"
+  def url(%Operation{endpoint: endpoint, action: action} = op), do: "https://#{host(op)}#{endpoint}?Action=#{action}"
 
   @doc """
   Add the appropriate headers to the given request on the operation type, version and host
@@ -92,5 +95,19 @@ defmodule Baiji.Request do
   """
   def add_host_header(%Request{operation: op, headers: headers} = req) do
     %{req | headers: [{"Host", host(op)} | headers]}
+  end
+
+  @doc """
+  Execute a Request and generate a Response struct
+  """
+  def execute(%Request{url: url, method: method, headers: headers, body: body}) do
+    case HTTPoison.request(method, url, body, headers) do
+      {:ok, %{status_code: code} = response} when code >= 200 and code <= 300 ->
+        {:ok, response}      
+      {:ok, %{status_code: code}} ->
+        {:error, "Request returned status code #{code}"}
+      {:error, message} ->
+        {:error, message}
+    end
   end
 end

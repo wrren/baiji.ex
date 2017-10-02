@@ -14,7 +14,7 @@ defmodule Baiji.Operation do
             assigns:            [],           # Variables assigned to the operation by intermediate stages
             halted:             false,        # Indicates whether the operation has been halted due to an error
             errors:             []            # Contains details of any errors that occurred while performing the operation
-
+  
   @doc """
   Add a new key-value pair to the operation's assigns
   """

@@ -12,6 +12,7 @@ defmodule Baiji do
   """
   alias Baiji.{
     Operation,
+    Config,
     Auth,
     Request,
     Response
@@ -22,6 +23,7 @@ defmodule Baiji do
   """
   def perform(%Operation{} = operation, opts \\ []) do
     %{operation | options: Keyword.merge(operation.options, opts)}
+    |> Config.merge
     |> Auth.populate
     |> Request.make
     |> Response.parse(operation)
