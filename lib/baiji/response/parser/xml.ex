@@ -22,7 +22,13 @@ defmodule Baiji.Response.Parser.XML do
   """
   def parse(response, %Operation{endpoint: %Endpoint{shapes: shapes}, output_shape: shape}) do
     {xml, _} = :xmerl_scan.string(:erlang.binary_to_list(response), [space: :normalize])
-    parse(xml, shape, shapes)
+    try do
+      {:ok, parse(xml, shape, shapes)}
+    catch
+      _ -> {:error, "The response format could not be correctly parsed"}
+    rescue
+      _ -> {:error, "The response format could not be correctly parsed"}
+    end
   end
 
   def parse(xml, shape_name, shapes) when is_binary(shape_name) do

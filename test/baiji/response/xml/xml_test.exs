@@ -7,7 +7,7 @@ defmodule Baiji.Response.Parser.XMLTest do
 
     operation = Baiji.EC2.describe_instances
 
-    assert Baiji.Response.Parser.XML.parse(response, operation) == %{
+    assert Baiji.Response.Parser.XML.parse(response, operation) == {:ok, %{
       "reservationSet"  => [
         %{
           "reservationId" => "r-1234567890abcdef0", 
@@ -46,6 +46,6 @@ defmodule Baiji.Response.Parser.XMLTest do
             "ipv6AddressesSet" => [%{"ipv6Address" => "2001:db8:1234:1a2b::123"}], "macAddress" => "02:dd:2c:5e:01:69", "networkInterfaceId" => "eni-551ba033", "ownerId" => "123456789012", "privateDnsName" => "ip-192-168-1-88.eu-west-1.compute.internal", "privateIpAddress" => "192.168.1.88", "privateIpAddressesSet" => [%{"association" => %{}, "primary" => true, "privateDnsName" => "ip-192-168-1-88.eu-west-1.compute.internal", "privateIpAddress" => "192.168.1.88"}], "sourceDestCheck" => true, "status" => "in-use", "subnetId" => "subnet-56f5f633", "vpcId" => "vpc-11112222"}], "placement" => %{}, "privateDnsName" => "ip-192-168-1-88.eu-west-1.compute.internal", "privateIpAddress" => "192.168.1.88", "productCodes" => [], "rootDeviceName" => "/dev/xvda", "rootDeviceType" => "ebs", "sourceDestCheck" => true, "subnetId" => "subnet-56f5f633", "tagSet" => [%{"key" => "Name", "value" => "Server_1"}], "virtualizationType" => "hvm", "vpcId" => "vpc-11112222"}], "ownerId" => "123456789012"}
         
       ]
-    }
+    }}
   end
 end

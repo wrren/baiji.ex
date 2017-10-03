@@ -20,10 +20,18 @@ defmodule Baiji.Request do
   """
   def make(%Operation{} = op) do
     op
+    |> validate!
     |> new
     |> add_headers
     |> sign
     |> execute
+  end
+
+  @doc """
+  Validate that the given operation includes correctly formatted inputs
+  """
+  def validate!(operation) do
+    Request.Validator.validate!(operation)
   end
 
   @doc """

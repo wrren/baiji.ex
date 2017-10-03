@@ -22,12 +22,16 @@ defmodule Baiji do
   Perform an operation
   """
   def perform(%Operation{} = operation, opts \\ []) do
-    %{operation | options: Keyword.merge(operation.options, opts)}
-    |> Config.merge
-    |> Operation.debug("Populating Authentication Parameters...")
-    |> Auth.populate
-    |> Operation.debug("Making Request...")
-    |> Request.make
-    |> Response.parse(operation)
+    try do
+      %{operation | options: Keyword.merge(operation.options, opts)}
+      |> Config.merge
+      |> Operation.debug("Populating Authentication Parameters...")
+      |> Auth.populate
+      |> Operation.debug("Making Request...")
+      |> Request.make
+      |> Response.parse(operation)
+    rescue
+      e -> {:error, e.message}
+    end
   end
 end
