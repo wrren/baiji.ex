@@ -18,30 +18,24 @@ defmodule Baiji.SNS do
   list of available SDKs, go to [Tools for Amazon Web
   Services](http://aws.amazon.com/tools/).
   """
-  
+
   @doc """
   Adds a statement to a topic's access control policy, granting access for
   the specified AWS accounts to the specified actions.
   """
   def add_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AddPermission",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "AddPermissionInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Accepts a phone number and indicates whether the phone holder has opted out
   of receiving SMS messages from your account. You cannot send SMS messages
@@ -52,23 +46,17 @@ defmodule Baiji.SNS do
   """
   def check_if_phone_number_is_opted_out(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CheckIfPhoneNumberIsOptedOut",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "CheckIfPhoneNumberIsOptedOutInput",
       output_shape:     "CheckIfPhoneNumberIsOptedOutResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Verifies an endpoint owner's intent to receive messages by validating the
   token sent to the endpoint by an earlier `Subscribe` action. If the token
@@ -78,23 +66,17 @@ defmodule Baiji.SNS do
   """
   def confirm_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ConfirmSubscription",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ConfirmSubscriptionInput",
       output_shape:     "ConfirmSubscriptionResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a platform application object for one of the supported push
   notification services, such as APNS and GCM, to which devices and mobile
@@ -134,23 +116,17 @@ defmodule Baiji.SNS do
   """
   def create_platform_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreatePlatformApplication",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "CreatePlatformApplicationInput",
       output_shape:     "CreatePlatformApplicationResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates an endpoint for a device and mobile app on one of the supported
   push notification services, such as GCM and APNS. `CreatePlatformEndpoint`
@@ -171,23 +147,17 @@ defmodule Baiji.SNS do
   """
   def create_platform_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreatePlatformEndpoint",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "CreatePlatformEndpointInput",
       output_shape:     "CreateEndpointResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a topic to which notifications can be published. Users can create
   at most 100,000 topics. For more information, see
@@ -197,23 +167,17 @@ defmodule Baiji.SNS do
   """
   def create_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateTopic",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "CreateTopicInput",
       output_shape:     "CreateTopicResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the endpoint for a device and mobile app from Amazon SNS. This
   action is idempotent. For more information, see [Using Amazon SNS Mobile
@@ -225,23 +189,17 @@ defmodule Baiji.SNS do
   """
   def delete_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteEndpoint",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "DeleteEndpointInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a platform application object for one of the supported push
   notification services, such as APNS and GCM. For more information, see
@@ -250,23 +208,17 @@ defmodule Baiji.SNS do
   """
   def delete_platform_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeletePlatformApplication",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "DeletePlatformApplicationInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a topic and all its subscriptions. Deleting a topic might prevent
   some messages previously sent to the topic from being delivered to
@@ -275,23 +227,17 @@ defmodule Baiji.SNS do
   """
   def delete_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteTopic",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "DeleteTopicInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves the endpoint attributes for a device on one of the supported push
   notification services, such as GCM and APNS. For more information, see
@@ -300,23 +246,17 @@ defmodule Baiji.SNS do
   """
   def get_endpoint_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetEndpointAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "GetEndpointAttributesInput",
       output_shape:     "GetEndpointAttributesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves the attributes of the platform application object for the
   supported push notification services, such as APNS and GCM. For more
@@ -325,23 +265,17 @@ defmodule Baiji.SNS do
   """
   def get_platform_application_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetPlatformApplicationAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "GetPlatformApplicationAttributesInput",
       output_shape:     "GetPlatformApplicationAttributesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the settings for sending SMS messages from your account.
 
@@ -349,68 +283,50 @@ defmodule Baiji.SNS do
   """
   def get_s_m_s_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetSMSAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "GetSMSAttributesInput",
       output_shape:     "GetSMSAttributesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns all of the properties of a subscription.
   """
   def get_subscription_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetSubscriptionAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "GetSubscriptionAttributesInput",
       output_shape:     "GetSubscriptionAttributesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns all of the properties of a topic. Topic properties returned might
   differ based on the authorization of the user.
   """
   def get_topic_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetTopicAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "GetTopicAttributesInput",
       output_shape:     "GetTopicAttributesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the endpoints and endpoint attributes for devices in a supported push
   notification service, such as GCM and APNS. The results for
@@ -425,23 +341,17 @@ defmodule Baiji.SNS do
   """
   def list_endpoints_by_platform_application(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListEndpointsByPlatformApplication",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ListEndpointsByPlatformApplicationInput",
       output_shape:     "ListEndpointsByPlatformApplicationResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of phone numbers that are opted out, meaning you cannot send
   SMS messages to them.
@@ -455,23 +365,17 @@ defmodule Baiji.SNS do
   """
   def list_phone_numbers_opted_out(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListPhoneNumbersOptedOut",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ListPhoneNumbersOptedOutInput",
       output_shape:     "ListPhoneNumbersOptedOutResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the platform application objects for the supported push notification
   services, such as APNS and GCM. The results for `ListPlatformApplications`
@@ -485,23 +389,17 @@ defmodule Baiji.SNS do
   """
   def list_platform_applications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListPlatformApplications",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ListPlatformApplicationsInput",
       output_shape:     "ListPlatformApplicationsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of the requester's subscriptions. Each call returns a
   limited list of subscriptions, up to 100. If there are more subscriptions,
@@ -510,23 +408,17 @@ defmodule Baiji.SNS do
   """
   def list_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListSubscriptions",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ListSubscriptionsInput",
       output_shape:     "ListSubscriptionsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of the subscriptions to a specific topic. Each call returns
   a limited list of subscriptions, up to 100. If there are more
@@ -535,23 +427,17 @@ defmodule Baiji.SNS do
   """
   def list_subscriptions_by_topic(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListSubscriptionsByTopic",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ListSubscriptionsByTopicInput",
       output_shape:     "ListSubscriptionsByTopicResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of the requester's topics. Each call returns a limited list
   of topics, up to 100. If there are more topics, a `NextToken` is also
@@ -560,23 +446,17 @@ defmodule Baiji.SNS do
   """
   def list_topics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTopics",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "ListTopicsInput",
       output_shape:     "ListTopicsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Use this request to opt in a phone number that is opted out, which enables
   you to resume sending SMS messages to the number.
@@ -585,23 +465,17 @@ defmodule Baiji.SNS do
   """
   def opt_in_phone_number(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "OptInPhoneNumber",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "OptInPhoneNumberInput",
       output_shape:     "OptInPhoneNumberResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sends a message to all of a topic's subscribed endpoints. When a
   `messageId` is returned, the message has been saved and Amazon SNS will
@@ -620,45 +494,33 @@ defmodule Baiji.SNS do
   """
   def publish(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Publish",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "PublishInput",
       output_shape:     "PublishResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes a statement from a topic's access control policy.
   """
   def remove_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RemovePermission",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "RemovePermissionInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the attributes for an endpoint for a device on one of the supported
   push notification services, such as GCM and APNS. For more information, see
@@ -667,23 +529,17 @@ defmodule Baiji.SNS do
   """
   def set_endpoint_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetEndpointAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "SetEndpointAttributesInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the attributes of the platform application object for the supported
   push notification services, such as APNS and GCM. For more information, see
@@ -695,23 +551,17 @@ defmodule Baiji.SNS do
   """
   def set_platform_application_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetPlatformApplicationAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "SetPlatformApplicationAttributesInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Use this request to set the default settings for sending SMS messages and
   receiving daily SMS usage reports.
@@ -724,68 +574,50 @@ defmodule Baiji.SNS do
   """
   def set_s_m_s_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetSMSAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "SetSMSAttributesInput",
       output_shape:     "SetSMSAttributesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Allows a subscription owner to set an attribute of the topic to a new
   value.
   """
   def set_subscription_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetSubscriptionAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "SetSubscriptionAttributesInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Allows a topic owner to set an attribute of the topic to a new value.
   """
   def set_topic_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetTopicAttributes",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "SetTopicAttributesInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Prepares to subscribe an endpoint by sending the endpoint a confirmation
   message. To actually create a subscription, the endpoint owner must call
@@ -794,23 +626,17 @@ defmodule Baiji.SNS do
   """
   def subscribe(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Subscribe",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "SubscribeInput",
       output_shape:     "SubscribeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a subscription. If the subscription requires authentication for
   deletion, only the owner of the subscription or the topic's owner can
@@ -822,28 +648,36 @@ defmodule Baiji.SNS do
   """
   def unsubscribe(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sns",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Unsubscribe",
-      
-      endpoint_prefix:  "sns",
-      type:             :xml,
-      version:          "2010-03-31",
       method:           :post,
       input_shape:      "UnsubscribeInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "sns",
+      target_prefix:    nil,
+      endpoint_prefix:  "sns",
+      type:             :xml,
+      version:          "2010-03-31",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"SubscriptionsList" => %{"member" => %{"shape" => "Subscription"}, "type" => "list"}, "ListSubscriptionsByTopicInput" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn"], "type" => "structure"}, "SubscribeResponse" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "type" => "structure"}, "MessageAttributeMap" => %{"key" => %{"locationName" => "Name", "shape" => "String"}, "type" => "map", "value" => %{"locationName" => "Value", "shape" => "MessageAttributeValue"}}, "ActionsList" => %{"member" => %{"shape" => "action"}, "type" => "list"}, "InvalidParameterException" => %{"error" => %{"code" => "InvalidParameter", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "EndpointDisabledException" => %{"error" => %{"code" => "EndpointDisabled", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "Topic" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "type" => "structure"}, "action" => %{"type" => "string"}, "PlatformApplication" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "PlatformApplicationArn" => %{"shape" => "String"}}, "type" => "structure"}, "PublishInput" => %{"members" => %{"Message" => %{"shape" => "message"}, "MessageAttributes" => %{"shape" => "MessageAttributeMap"}, "MessageStructure" => %{"shape" => "messageStructure"}, "PhoneNumber" => %{"shape" => "String"}, "Subject" => %{"shape" => "subject"}, "TargetArn" => %{"shape" => "String"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["Message"], "type" => "structure"}, "OptInPhoneNumberResponse" => %{"members" => %{}, "type" => "structure"}, "GetSubscriptionAttributesInput" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "required" => ["SubscriptionArn"], "type" => "structure"}, "ListPhoneNumbersOptedOutResponse" => %{"members" => %{"nextToken" => %{"shape" => "string"}, "phoneNumbers" => %{"shape" => "PhoneNumberList"}}, "type" => "structure"}, "ConfirmSubscriptionResponse" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "type" => "structure"}, "GetSubscriptionAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "SubscriptionAttributesMap"}}, "type" => "structure"}, "SetSMSAttributesInput" => %{"members" => %{"attributes" => %{"shape" => "MapStringToString"}}, "required" => ["attributes"], "type" => "structure"}, "CreateTopicResponse" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "type" => "structure"}, "ListSubscriptionsResponse" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "Subscriptions" => %{"shape" => "SubscriptionsList"}}, "type" => "structure"}, "ListPlatformApplicationsResponse" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "PlatformApplications" => %{"shape" => "ListOfPlatformApplications"}}, "type" => "structure"}, "GetTopicAttributesInput" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn"], "type" => "structure"}, "boolean" => %{"type" => "boolean"}, "CheckIfPhoneNumberIsOptedOutResponse" => %{"members" => %{"isOptedOut" => %{"shape" => "boolean"}}, "type" => "structure"}, "ListOfPlatformApplications" => %{"member" => %{"shape" => "PlatformApplication"}, "type" => "list"}, "InvalidParameterValueException" => %{"error" => %{"code" => "ParameterValueInvalid", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "TopicLimitExceededException" => %{"error" => %{"code" => "TopicLimitExceeded", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "DelegatesList" => %{"member" => %{"shape" => "delegate"}, "type" => "list"}, "ListPlatformApplicationsInput" => %{"members" => %{"NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "TopicAttributesMap" => %{"key" => %{"shape" => "attributeName"}, "type" => "map", "value" => %{"shape" => "attributeValue"}}, "PhoneNumberList" => %{"member" => %{"shape" => "PhoneNumber"}, "type" => "list"}, "SetTopicAttributesInput" => %{"members" => %{"AttributeName" => %{"shape" => "attributeName"}, "AttributeValue" => %{"shape" => "attributeValue"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "AttributeName"], "type" => "structure"}, "token" => %{"type" => "string"}, "SetPlatformApplicationAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn", "Attributes"], "type" => "structure"}, "SetSubscriptionAttributesInput" => %{"members" => %{"AttributeName" => %{"shape" => "attributeName"}, "AttributeValue" => %{"shape" => "attributeValue"}, "SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "required" => ["SubscriptionArn", "AttributeName"], "type" => "structure"}, "RemovePermissionInput" => %{"members" => %{"Label" => %{"shape" => "label"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Label"], "type" => "structure"}, "GetTopicAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "TopicAttributesMap"}}, "type" => "structure"}, "Endpoint" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "EndpointArn" => %{"shape" => "String"}}, "type" => "structure"}, "MapStringToString" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "String"}}, "InternalErrorException" => %{"error" => %{"code" => "InternalError", "httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "GetPlatformApplicationAttributesInput" => %{"members" => %{"PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn"], "type" => "structure"}, "GetSMSAttributesResponse" => %{"members" => %{"attributes" => %{"shape" => "MapStringToString"}}, "type" => "structure"}, "NotFoundException" => %{"error" => %{"code" => "NotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "string" => %{"type" => "string"}, "CheckIfPhoneNumberIsOptedOutInput" => %{"members" => %{"phoneNumber" => %{"shape" => "PhoneNumber"}}, "required" => ["phoneNumber"], "type" => "structure"}, "nextToken" => %{"type" => "string"}, "ListOfEndpoints" => %{"member" => %{"shape" => "Endpoint"}, "type" => "list"}, "SubscriptionLimitExceededException" => %{"error" => %{"code" => "SubscriptionLimitExceeded", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteTopicInput" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn"], "type" => "structure"}, "Subscription" => %{"members" => %{"Endpoint" => %{"shape" => "endpoint"}, "Owner" => %{"shape" => "account"}, "Protocol" => %{"shape" => "protocol"}, "SubscriptionArn" => %{"shape" => "subscriptionARN"}, "TopicArn" => %{"shape" => "topicARN"}}, "type" => "structure"}, "ListString" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "SubscribeInput" => %{"members" => %{"Endpoint" => %{"shape" => "endpoint"}, "Protocol" => %{"shape" => "protocol"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Protocol"], "type" => "structure"}, "ConfirmSubscriptionInput" => %{"members" => %{"AuthenticateOnUnsubscribe" => %{"shape" => "authenticateOnUnsubscribe"}, "Token" => %{"shape" => "token"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Token"], "type" => "structure"}, "CreateEndpointResponse" => %{"members" => %{"EndpointArn" => %{"shape" => "String"}}, "type" => "structure"}, "delegate" => %{"type" => "string"}, "ListEndpointsByPlatformApplicationResponse" => %{"members" => %{"Endpoints" => %{"shape" => "ListOfEndpoints"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "GetEndpointAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}}, "type" => "structure"}, "authenticateOnUnsubscribe" => %{"type" => "string"}, "MessageAttributeValue" => %{"members" => %{"BinaryValue" => %{"shape" => "Binary"}, "DataType" => %{"shape" => "String"}, "StringValue" => %{"shape" => "String"}}, "required" => ["DataType"], "type" => "structure"}, "PublishResponse" => %{"members" => %{"MessageId" => %{"shape" => "messageId"}}, "type" => "structure"}, "message" => %{"type" => "string"}, "GetEndpointAttributesInput" => %{"members" => %{"EndpointArn" => %{"shape" => "String"}}, "required" => ["EndpointArn"], "type" => "structure"}, "SetEndpointAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "EndpointArn" => %{"shape" => "String"}}, "required" => ["EndpointArn", "Attributes"], "type" => "structure"}, "CreatePlatformApplicationResponse" => %{"members" => %{"PlatformApplicationArn" => %{"shape" => "String"}}, "type" => "structure"}, "ListEndpointsByPlatformApplicationInput" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn"], "type" => "structure"}, "ListTopicsInput" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}}, "type" => "structure"}, "label" => %{"type" => "string"}, "UnsubscribeInput" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "required" => ["SubscriptionArn"], "type" => "structure"}, "endpoint" => %{"type" => "string"}, "CreatePlatformApplicationInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "Name" => %{"shape" => "String"}, "Platform" => %{"shape" => "String"}}, "required" => ["Name", "Platform", "Attributes"], "type" => "structure"}, "subscriptionARN" => %{"type" => "string"}, "Binary" => %{"type" => "blob"}, "GetPlatformApplicationAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}}, "type" => "structure"}, "CreatePlatformEndpointInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "CustomUserData" => %{"shape" => "String"}, "PlatformApplicationArn" => %{"shape" => "String"}, "Token" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn", "Token"], "type" => "structure"}, "ListSubscriptionsByTopicResponse" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "Subscriptions" => %{"shape" => "SubscriptionsList"}}, "type" => "structure"}, "attributeValue" => %{"type" => "string"}, "ThrottledException" => %{"error" => %{"code" => "Throttled", "httpStatusCode" => 429, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "OptInPhoneNumberInput" => %{"members" => %{"phoneNumber" => %{"shape" => "PhoneNumber"}}, "required" => ["phoneNumber"], "type" => "structure"}, "messageStructure" => %{"type" => "string"}, "DeletePlatformApplicationInput" => %{"members" => %{"PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn"], "type" => "structure"}, "account" => %{"type" => "string"}, "ListTopicsResponse" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "Topics" => %{"shape" => "TopicsList"}}, "type" => "structure"}, "messageId" => %{"type" => "string"}, "ListPhoneNumbersOptedOutInput" => %{"members" => %{"nextToken" => %{"shape" => "string"}}, "type" => "structure"}, "AddPermissionInput" => %{"members" => %{"AWSAccountId" => %{"shape" => "DelegatesList"}, "ActionName" => %{"shape" => "ActionsList"}, "Label" => %{"shape" => "label"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Label", "AWSAccountId", "ActionName"], "type" => "structure"}, "attributeName" => %{"type" => "string"}, "DeleteEndpointInput" => %{"members" => %{"EndpointArn" => %{"shape" => "String"}}, "required" => ["EndpointArn"], "type" => "structure"}, "SubscriptionAttributesMap" => %{"key" => %{"shape" => "attributeName"}, "type" => "map", "value" => %{"shape" => "attributeValue"}}, "PhoneNumber" => %{"type" => "string"}, "topicARN" => %{"type" => "string"}, "CreateTopicInput" => %{"members" => %{"Name" => %{"shape" => "topicName"}}, "required" => ["Name"], "type" => "structure"}, "GetSMSAttributesInput" => %{"members" => %{"attributes" => %{"shape" => "ListString"}}, "type" => "structure"}, "TopicsList" => %{"member" => %{"shape" => "Topic"}, "type" => "list"}, "topicName" => %{"type" => "string"}, "protocol" => %{"type" => "string"}, "subject" => %{"type" => "string"}, "AuthorizationErrorException" => %{"error" => %{"code" => "AuthorizationError", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "ListSubscriptionsInput" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}}, "type" => "structure"}, "PlatformApplicationDisabledException" => %{"error" => %{"code" => "PlatformApplicationDisabled", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "SetSMSAttributesResponse" => %{"members" => %{}, "type" => "structure"}}
+		%{"SubscriptionsList" => %{"member" => %{"shape" => "Subscription"}, "type" => "list"}, "ListSubscriptionsByTopicInput" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn"], "type" => "structure"}, "SubscribeResponse" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "type" => "structure"}, "MessageAttributeMap" => %{"key" => %{"locationName" => "Name", "shape" => "String"}, "type" => "map", "value" => %{"locationName" => "Value", "shape" => "MessageAttributeValue"}}, "ActionsList" => %{"member" => %{"shape" => "action"}, "type" => "list"}, "InvalidParameterException" => %{"error" => %{"code" => "InvalidParameter", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "EndpointDisabledException" => %{"error" => %{"code" => "EndpointDisabled", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "Topic" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "type" => "structure"}, "action" => %{"type" => "string"}, "PlatformApplication" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "PlatformApplicationArn" => %{"shape" => "String"}}, "type" => "structure"}, "PublishInput" => %{"members" => %{"Message" => %{"shape" => "message"}, "MessageAttributes" => %{"shape" => "MessageAttributeMap"}, "MessageStructure" => %{"shape" => "messageStructure"}, "PhoneNumber" => %{"shape" => "String"}, "Subject" => %{"shape" => "subject"}, "TargetArn" => %{"shape" => "String"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["Message"], "type" => "structure"}, "OptInPhoneNumberResponse" => %{"members" => %{}, "type" => "structure"}, "GetSubscriptionAttributesInput" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "required" => ["SubscriptionArn"], "type" => "structure"}, "ListPhoneNumbersOptedOutResponse" => %{"members" => %{"nextToken" => %{"shape" => "string"}, "phoneNumbers" => %{"shape" => "PhoneNumberList"}}, "type" => "structure"}, "ConfirmSubscriptionResponse" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "type" => "structure"}, "GetSubscriptionAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "SubscriptionAttributesMap"}}, "type" => "structure"}, "SetSMSAttributesInput" => %{"members" => %{"attributes" => %{"shape" => "MapStringToString"}}, "required" => ["attributes"], "type" => "structure"}, "CreateTopicResponse" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "type" => "structure"}, "ListSubscriptionsResponse" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "Subscriptions" => %{"shape" => "SubscriptionsList"}}, "type" => "structure"}, "ListPlatformApplicationsResponse" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "PlatformApplications" => %{"shape" => "ListOfPlatformApplications"}}, "type" => "structure"}, "GetTopicAttributesInput" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn"], "type" => "structure"}, "boolean" => %{"type" => "boolean"}, "CheckIfPhoneNumberIsOptedOutResponse" => %{"members" => %{"isOptedOut" => %{"shape" => "boolean"}}, "type" => "structure"}, "ListOfPlatformApplications" => %{"member" => %{"shape" => "PlatformApplication"}, "type" => "list"}, "InvalidParameterValueException" => %{"error" => %{"code" => "ParameterValueInvalid", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "TopicLimitExceededException" => %{"error" => %{"code" => "TopicLimitExceeded", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "DelegatesList" => %{"member" => %{"shape" => "delegate"}, "type" => "list"}, "ListPlatformApplicationsInput" => %{"members" => %{"NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "TopicAttributesMap" => %{"key" => %{"shape" => "attributeName"}, "type" => "map", "value" => %{"shape" => "attributeValue"}}, "PhoneNumberList" => %{"member" => %{"shape" => "PhoneNumber"}, "type" => "list"}, "SetTopicAttributesInput" => %{"members" => %{"AttributeName" => %{"shape" => "attributeName"}, "AttributeValue" => %{"shape" => "attributeValue"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "AttributeName"], "type" => "structure"}, "token" => %{"type" => "string"}, "SetPlatformApplicationAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn", "Attributes"], "type" => "structure"}, "SetSubscriptionAttributesInput" => %{"members" => %{"AttributeName" => %{"shape" => "attributeName"}, "AttributeValue" => %{"shape" => "attributeValue"}, "SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "required" => ["SubscriptionArn", "AttributeName"], "type" => "structure"}, "RemovePermissionInput" => %{"members" => %{"Label" => %{"shape" => "label"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Label"], "type" => "structure"}, "GetTopicAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "TopicAttributesMap"}}, "type" => "structure"}, "Endpoint" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "EndpointArn" => %{"shape" => "String"}}, "type" => "structure"}, "MapStringToString" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "String"}}, "InternalErrorException" => %{"error" => %{"code" => "InternalError", "httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "GetPlatformApplicationAttributesInput" => %{"members" => %{"PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn"], "type" => "structure"}, "GetSMSAttributesResponse" => %{"members" => %{"attributes" => %{"shape" => "MapStringToString"}}, "type" => "structure"}, "NotFoundException" => %{"error" => %{"code" => "NotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "string" => %{"type" => "string"}, "CheckIfPhoneNumberIsOptedOutInput" => %{"members" => %{"phoneNumber" => %{"shape" => "PhoneNumber"}}, "required" => ["phoneNumber"], "type" => "structure"}, "nextToken" => %{"type" => "string"}, "ListOfEndpoints" => %{"member" => %{"shape" => "Endpoint"}, "type" => "list"}, "SubscriptionLimitExceededException" => %{"error" => %{"code" => "SubscriptionLimitExceeded", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteTopicInput" => %{"members" => %{"TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn"], "type" => "structure"}, "Subscription" => %{"members" => %{"Endpoint" => %{"shape" => "endpoint"}, "Owner" => %{"shape" => "account"}, "Protocol" => %{"shape" => "protocol"}, "SubscriptionArn" => %{"shape" => "subscriptionARN"}, "TopicArn" => %{"shape" => "topicARN"}}, "type" => "structure"}, "ListString" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "SubscribeInput" => %{"members" => %{"Endpoint" => %{"shape" => "endpoint"}, "Protocol" => %{"shape" => "protocol"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Protocol"], "type" => "structure"}, "ConfirmSubscriptionInput" => %{"members" => %{"AuthenticateOnUnsubscribe" => %{"shape" => "authenticateOnUnsubscribe"}, "Token" => %{"shape" => "token"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Token"], "type" => "structure"}, "CreateEndpointResponse" => %{"members" => %{"EndpointArn" => %{"shape" => "String"}}, "type" => "structure"}, "delegate" => %{"type" => "string"}, "ListEndpointsByPlatformApplicationResponse" => %{"members" => %{"Endpoints" => %{"shape" => "ListOfEndpoints"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "GetEndpointAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}}, "type" => "structure"}, "authenticateOnUnsubscribe" => %{"type" => "string"}, "MessageAttributeValue" => %{"members" => %{"BinaryValue" => %{"shape" => "Binary"}, "DataType" => %{"shape" => "String"}, "StringValue" => %{"shape" => "String"}}, "required" => ["DataType"], "type" => "structure"}, "PublishResponse" => %{"members" => %{"MessageId" => %{"shape" => "messageId"}}, "type" => "structure"}, "message" => %{"type" => "string"}, "GetEndpointAttributesInput" => %{"members" => %{"EndpointArn" => %{"shape" => "String"}}, "required" => ["EndpointArn"], "type" => "structure"}, "SetEndpointAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "EndpointArn" => %{"shape" => "String"}}, "required" => ["EndpointArn", "Attributes"], "type" => "structure"}, "CreatePlatformApplicationResponse" => %{"members" => %{"PlatformApplicationArn" => %{"shape" => "String"}}, "type" => "structure"}, "ListEndpointsByPlatformApplicationInput" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn"], "type" => "structure"}, "ListTopicsInput" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}}, "type" => "structure"}, "label" => %{"type" => "string"}, "UnsubscribeInput" => %{"members" => %{"SubscriptionArn" => %{"shape" => "subscriptionARN"}}, "required" => ["SubscriptionArn"], "type" => "structure"}, "endpoint" => %{"type" => "string"}, "CreatePlatformApplicationInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "Name" => %{"shape" => "String"}, "Platform" => %{"shape" => "String"}}, "required" => ["Name", "Platform", "Attributes"], "type" => "structure"}, "subscriptionARN" => %{"type" => "string"}, "Binary" => %{"type" => "blob"}, "GetPlatformApplicationAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}}, "type" => "structure"}, "CreatePlatformEndpointInput" => %{"members" => %{"Attributes" => %{"shape" => "MapStringToString"}, "CustomUserData" => %{"shape" => "String"}, "PlatformApplicationArn" => %{"shape" => "String"}, "Token" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn", "Token"], "type" => "structure"}, "ListSubscriptionsByTopicResponse" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "Subscriptions" => %{"shape" => "SubscriptionsList"}}, "type" => "structure"}, "attributeValue" => %{"type" => "string"}, "ThrottledException" => %{"error" => %{"code" => "Throttled", "httpStatusCode" => 429, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "OptInPhoneNumberInput" => %{"members" => %{"phoneNumber" => %{"shape" => "PhoneNumber"}}, "required" => ["phoneNumber"], "type" => "structure"}, "messageStructure" => %{"type" => "string"}, "DeletePlatformApplicationInput" => %{"members" => %{"PlatformApplicationArn" => %{"shape" => "String"}}, "required" => ["PlatformApplicationArn"], "type" => "structure"}, "account" => %{"type" => "string"}, "ListTopicsResponse" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}, "Topics" => %{"shape" => "TopicsList"}}, "type" => "structure"}, "messageId" => %{"type" => "string"}, "ListPhoneNumbersOptedOutInput" => %{"members" => %{"nextToken" => %{"shape" => "string"}}, "type" => "structure"}, "AddPermissionInput" => %{"members" => %{"AWSAccountId" => %{"shape" => "DelegatesList"}, "ActionName" => %{"shape" => "ActionsList"}, "Label" => %{"shape" => "label"}, "TopicArn" => %{"shape" => "topicARN"}}, "required" => ["TopicArn", "Label", "AWSAccountId", "ActionName"], "type" => "structure"}, "attributeName" => %{"type" => "string"}, "DeleteEndpointInput" => %{"members" => %{"EndpointArn" => %{"shape" => "String"}}, "required" => ["EndpointArn"], "type" => "structure"}, "SubscriptionAttributesMap" => %{"key" => %{"shape" => "attributeName"}, "type" => "map", "value" => %{"shape" => "attributeValue"}}, "PhoneNumber" => %{"type" => "string"}, "topicARN" => %{"type" => "string"}, "CreateTopicInput" => %{"members" => %{"Name" => %{"shape" => "topicName"}}, "required" => ["Name"], "type" => "structure"}, "GetSMSAttributesInput" => %{"members" => %{"attributes" => %{"shape" => "ListString"}}, "type" => "structure"}, "TopicsList" => %{"member" => %{"shape" => "Topic"}, "type" => "list"}, "topicName" => %{"type" => "string"}, "protocol" => %{"type" => "string"}, "subject" => %{"type" => "string"}, "AuthorizationErrorException" => %{"error" => %{"code" => "AuthorizationError", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "ListSubscriptionsInput" => %{"members" => %{"NextToken" => %{"shape" => "nextToken"}}, "type" => "structure"}, "PlatformApplicationDisabledException" => %{"error" => %{"code" => "PlatformApplicationDisabled", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "string"}}, "type" => "structure"}, "SetSMSAttributesResponse" => %{"members" => %{}, "type" => "structure"}}
   end
 end

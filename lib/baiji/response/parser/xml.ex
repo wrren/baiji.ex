@@ -4,6 +4,7 @@ defmodule Baiji.Response.Parser.XML do
   """
   require Record
   alias Baiji.{
+    Endpoint,
     Operation
   }
 
@@ -19,9 +20,9 @@ defmodule Baiji.Response.Parser.XML do
   @doc """
   Parse the XML output of an API call and generate a response in the form of a map
   """
-  def parse(response, %Operation{shapes: shapes_func, output_shape: shape}) do
+  def parse(response, %Operation{endpoint: %Endpoint{shapes: shapes}, output_shape: shape}) do
     {xml, _} = :xmerl_scan.string(:erlang.binary_to_list(response), [space: :normalize])
-    parse(xml, shape, shapes_func.())
+    parse(xml, shape, shapes)
   end
 
   def parse(xml, shape_name, shapes) when is_binary(shape_name) do
@@ -49,7 +50,7 @@ defmodule Baiji.Response.Parser.XML do
   def parse(xmlElement(content: content), %{"type" => "structure", "members" => members}, shapes) do
     members
     |> Map.to_list
-    |> Enum.map(fn {name, %{"shape" => shape, "locationName" => location}} ->
+    |> Enum.map(fn {_, %{"shape" => shape, "locationName" => location}} ->
       case Enum.find(content, fn xmlElement(name: name) -> name == String.to_atom(location); _ -> false end) do
         xmlElement(content: c) ->
           {location, parse(c, shape, shapes)}

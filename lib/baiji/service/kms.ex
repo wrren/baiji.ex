@@ -84,32 +84,24 @@ defmodule Baiji.KMS do
 
   </li> </ul>
   """
-  
+
   @doc """
   Retrieves a Boolean value that indicates whether key rotation is enabled
   for the specified key.
   """
   def get_key_rotation_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetKeyRotationStatus",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "GetKeyRotationStatusRequest",
       output_shape:     "GetKeyRotationStatusResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Adds or overwrites one or more tags for the specified customer master key
   (CMK).
@@ -125,25 +117,17 @@ defmodule Baiji.KMS do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "TagResource",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "TagResourceRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Encrypts data on the server side with a new customer master key (CMK)
   without exposing the plaintext of the data on the client side. The data is
@@ -162,25 +146,17 @@ defmodule Baiji.KMS do
   """
   def re_encrypt(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ReEncrypt",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ReEncryptRequest",
       output_shape:     "ReEncryptResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes key material that you previously imported and makes the specified
   customer master key (CMK) unusable. For more information about importing
@@ -197,50 +173,34 @@ defmodule Baiji.KMS do
   """
   def delete_imported_key_material(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteImportedKeyMaterial",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "DeleteImportedKeyMaterialRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Revokes a grant. You can revoke a grant to actively deny operations that
   depend on it.
   """
   def revoke_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RevokeGrant",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "RevokeGrantRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of all grants for which the grant's `RetiringPrincipal`
   matches the one specified.
@@ -250,49 +210,33 @@ defmodule Baiji.KMS do
   """
   def list_retirable_grants(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListRetirableGrants",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ListRetirableGrantsRequest",
       output_shape:     "ListGrantsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Marks a key as enabled, thereby permitting its use.
   """
   def enable_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EnableKey",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "EnableKeyRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Attaches a key policy to the specified customer master key (CMK).
 
@@ -302,25 +246,17 @@ defmodule Baiji.KMS do
   """
   def put_key_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "PutKeyPolicy",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "PutKeyPolicyRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a display name for a customer master key. An alias can be used to
   identify a key and should be unique. The console enforces a one-to-one
@@ -337,25 +273,17 @@ defmodule Baiji.KMS do
   """
   def create_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateAlias",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "CreateAliasRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes the specified tag or tags from the specified customer master key
   (CMK).
@@ -366,25 +294,17 @@ defmodule Baiji.KMS do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UntagResource",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "UntagResourceRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Adds a grant to a key to specify who can use the key and under what
   conditions. Grants are alternate permission mechanisms to key policies.
@@ -395,25 +315,17 @@ defmodule Baiji.KMS do
   """
   def create_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateGrant",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "CreateGrantRequest",
       output_shape:     "CreateGrantResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the state of a customer master key (CMK) to disabled, thereby
   preventing its use for cryptographic operations. For more information about
@@ -424,50 +336,34 @@ defmodule Baiji.KMS do
   """
   def disable_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DisableKey",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "DisableKeyRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified alias. To map an alias to a different key, call
   `UpdateAlias`.
   """
   def delete_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteAlias",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "DeleteAliasRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a data encryption key encrypted under a customer master key (CMK).
   This operation is identical to `GenerateDataKey` but returns only the
@@ -488,25 +384,17 @@ defmodule Baiji.KMS do
   """
   def generate_data_key_without_plaintext(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GenerateDataKeyWithoutPlaintext",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "GenerateDataKeyWithoutPlaintextRequest",
       output_shape:     "GenerateDataKeyWithoutPlaintextResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Schedules the deletion of a customer master key (CMK). You may provide a
   waiting period, specified in days, before deletion occurs. If you do not
@@ -529,49 +417,33 @@ defmodule Baiji.KMS do
   """
   def schedule_key_deletion(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ScheduleKeyDeletion",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ScheduleKeyDeletionRequest",
       output_shape:     "ScheduleKeyDeletionResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the customer master keys.
   """
   def list_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListKeys",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ListKeysRequest",
       output_shape:     "ListKeysResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a random byte string that is cryptographically secure.
 
@@ -582,25 +454,17 @@ defmodule Baiji.KMS do
   """
   def generate_random(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GenerateRandom",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "GenerateRandomRequest",
       output_shape:     "GenerateRandomResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates an alias to map it to a different key.
 
@@ -619,25 +483,17 @@ defmodule Baiji.KMS do
   """
   def update_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateAlias",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "UpdateAliasRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retires a grant. To clean up, you can retire a grant when you're done using
   it. You should revoke a grant when you intend to actively deny operations
@@ -658,25 +514,17 @@ defmodule Baiji.KMS do
   """
   def retire_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RetireGrant",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "RetireGrantRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a customer master key (CMK).
 
@@ -695,25 +543,17 @@ defmodule Baiji.KMS do
   """
   def create_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateKey",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "CreateKeyRequest",
       output_shape:     "CreateKeyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the items you need in order to import key material into AWS KMS
   from your existing key management infrastructure. For more information
@@ -736,49 +576,33 @@ defmodule Baiji.KMS do
   """
   def get_parameters_for_import(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetParametersForImport",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "GetParametersForImportRequest",
       output_shape:     "GetParametersForImportResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Provides detailed information about the specified customer master key.
   """
   def describe_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeKey",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "DescribeKeyRequest",
       output_shape:     "DescribeKeyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a data encryption key that you can use in your application to
   encrypt data locally.
@@ -829,169 +653,113 @@ defmodule Baiji.KMS do
   """
   def generate_data_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GenerateDataKey",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "GenerateDataKeyRequest",
       output_shape:     "GenerateDataKeyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all of the key aliases in the account.
   """
   def list_aliases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListAliases",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ListAliasesRequest",
       output_shape:     "ListAliasesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Disables rotation of the specified key.
   """
   def disable_key_rotation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DisableKeyRotation",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "DisableKeyRotationRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves a list of policies attached to a key.
   """
   def list_key_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListKeyPolicies",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ListKeyPoliciesRequest",
       output_shape:     "ListKeyPoliciesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Enables rotation of the specified customer master key.
   """
   def enable_key_rotation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EnableKeyRotation",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "EnableKeyRotationRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of all tags for the specified customer master key (CMK).
   """
   def list_resource_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListResourceTags",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ListResourceTagsRequest",
       output_shape:     "ListResourceTagsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates the description of a customer master key (CMK).
   """
   def update_key_description(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateKeyDescription",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "UpdateKeyDescriptionRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Cancels the deletion of a customer master key (CMK). When this operation is
   successful, the CMK is set to the `Disabled` state. To enable a CMK, use
@@ -1004,25 +772,17 @@ defmodule Baiji.KMS do
   """
   def cancel_key_deletion(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CancelKeyDeletion",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "CancelKeyDeletionRequest",
       output_shape:     "CancelKeyDeletionResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Imports key material into an AWS KMS customer master key (CMK) from your
   existing key management infrastructure. For more information about
@@ -1050,25 +810,17 @@ defmodule Baiji.KMS do
   """
   def import_key_material(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ImportKeyMaterial",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ImportKeyMaterialRequest",
       output_shape:     "ImportKeyMaterialResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Decrypts ciphertext. Ciphertext is plaintext that has been previously
   encrypted by using any of the following functions:
@@ -1090,49 +842,33 @@ defmodule Baiji.KMS do
   """
   def decrypt(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Decrypt",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "DecryptRequest",
       output_shape:     "DecryptResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   List the grants for a specified key.
   """
   def list_grants(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListGrants",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "ListGrantsRequest",
       output_shape:     "ListGrantsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Encrypts plaintext into ciphertext by using a customer master key. The
   `Encrypt` function has two primary use cases:
@@ -1159,54 +895,52 @@ defmodule Baiji.KMS do
   """
   def encrypt(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Encrypt",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "EncryptRequest",
       output_shape:     "EncryptResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves a policy attached to the specified key.
   """
   def get_key_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kms",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetKeyPolicy",
-      
-      target_prefix:    "TrentService",
-      
-      endpoint_prefix:  "kms",
-      type:             :json,
-      version:          "2014-11-01",
       method:           :post,
       input_shape:      "GetKeyPolicyRequest",
       output_shape:     "GetKeyPolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "kms",
+      target_prefix:    "TrentService",
+      endpoint_prefix:  "kms",
+      type:             :json,
+      version:          "2014-11-01",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"KeyList" => %{"member" => %{"shape" => "KeyListEntry"}, "type" => "list"}, "KMSInternalException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DescriptionType" => %{"max" => 8192, "min" => 0, "type" => "string"}, "DependencyTimeoutException" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DataKeySpec" => %{"enum" => ["AES_256", "AES_128"], "type" => "string"}, "CreateGrantResponse" => %{"members" => %{"GrantId" => %{"shape" => "GrantIdType"}, "GrantToken" => %{"shape" => "GrantTokenType"}}, "type" => "structure"}, "ListGrantsRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "required" => ["KeyId"], "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKeyType"}, "type" => "list"}, "ScheduleKeyDeletionResponse" => %{"members" => %{"DeletionDate" => %{"shape" => "DateType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "InvalidCiphertextException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ReEncryptRequest" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "DestinationEncryptionContext" => %{"shape" => "EncryptionContextType"}, "DestinationKeyId" => %{"shape" => "KeyIdType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "SourceEncryptionContext" => %{"shape" => "EncryptionContextType"}}, "required" => ["CiphertextBlob", "DestinationKeyId"], "type" => "structure"}, "AWSAccountIdType" => %{"type" => "string"}, "PolicyNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w]+", "type" => "string"}, "TagException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ImportKeyMaterialRequest" => %{"members" => %{"EncryptedKeyMaterial" => %{"shape" => "CiphertextType"}, "ExpirationModel" => %{"shape" => "ExpirationModelType"}, "ImportToken" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "ValidTo" => %{"shape" => "DateType"}}, "required" => ["KeyId", "ImportToken", "EncryptedKeyMaterial"], "type" => "structure"}, "InvalidKeyUsageException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "RetireGrantRequest" => %{"members" => %{"GrantId" => %{"shape" => "GrantIdType"}, "GrantToken" => %{"shape" => "GrantTokenType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "DisabledException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DeleteAliasRequest" => %{"members" => %{"AliasName" => %{"shape" => "AliasNameType"}}, "required" => ["AliasName"], "type" => "structure"}, "GetKeyPolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "TagKeyType" => %{"max" => 128, "min" => 1, "type" => "string"}, "GrantTokenType" => %{"max" => 8192, "min" => 1, "type" => "string"}, "OriginType" => %{"enum" => ["AWS_KMS", "EXTERNAL"], "type" => "string"}, "DisableKeyRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "GenerateDataKeyRequest" => %{"members" => %{"EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}, "KeySpec" => %{"shape" => "DataKeySpec"}, "NumberOfBytes" => %{"shape" => "NumberOfBytesType"}}, "required" => ["KeyId"], "type" => "structure"}, "GrantIdType" => %{"max" => 128, "min" => 1, "type" => "string"}, "DecryptResponse" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Plaintext" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "KeyMetadata" => %{"members" => %{"AWSAccountId" => %{"shape" => "AWSAccountIdType"}, "Arn" => %{"shape" => "ArnType"}, "CreationDate" => %{"shape" => "DateType"}, "DeletionDate" => %{"shape" => "DateType"}, "Description" => %{"shape" => "DescriptionType"}, "Enabled" => %{"shape" => "BooleanType"}, "ExpirationModel" => %{"shape" => "ExpirationModelType"}, "KeyId" => %{"shape" => "KeyIdType"}, "KeyManager" => %{"shape" => "KeyManagerType"}, "KeyState" => %{"shape" => "KeyState"}, "KeyUsage" => %{"shape" => "KeyUsageType"}, "Origin" => %{"shape" => "OriginType"}, "ValidTo" => %{"shape" => "DateType"}}, "required" => ["KeyId"], "type" => "structure"}, "CreateKeyResponse" => %{"members" => %{"KeyMetadata" => %{"shape" => "KeyMetadata"}}, "type" => "structure"}, "MalformedPolicyDocumentException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "CancelKeyDeletionRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "GetKeyRotationStatusRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "ListRetirableGrantsRequest" => %{"members" => %{"Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}, "RetiringPrincipal" => %{"shape" => "PrincipalIdType"}}, "required" => ["RetiringPrincipal"], "type" => "structure"}, "ListAliasesResponse" => %{"members" => %{"Aliases" => %{"shape" => "AliasList"}, "NextMarker" => %{"shape" => "MarkerType"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "AlreadyExistsException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ListAliasesRequest" => %{"members" => %{"Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "type" => "structure"}, "CiphertextType" => %{"max" => 6144, "min" => 1, "type" => "blob"}, "ListKeysRequest" => %{"members" => %{"Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "type" => "structure"}, "GenerateDataKeyWithoutPlaintextRequest" => %{"members" => %{"EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}, "KeySpec" => %{"shape" => "DataKeySpec"}, "NumberOfBytes" => %{"shape" => "NumberOfBytesType"}}, "required" => ["KeyId"], "type" => "structure"}, "KeyState" => %{"enum" => ["Enabled", "Disabled", "PendingDeletion", "PendingImport"], "type" => "string"}, "GenerateDataKeyWithoutPlaintextResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "UntagResourceRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["KeyId", "TagKeys"], "type" => "structure"}, "GenerateDataKeyResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Plaintext" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "ListGrantsResponse" => %{"members" => %{"Grants" => %{"shape" => "GrantList"}, "NextMarker" => %{"shape" => "MarkerType"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "Tag" => %{"members" => %{"TagKey" => %{"shape" => "TagKeyType"}, "TagValue" => %{"shape" => "TagValueType"}}, "required" => ["TagKey", "TagValue"], "type" => "structure"}, "TagValueType" => %{"max" => 256, "min" => 0, "type" => "string"}, "DescribeKeyResponse" => %{"members" => %{"KeyMetadata" => %{"shape" => "KeyMetadata"}}, "type" => "structure"}, "CancelKeyDeletionResponse" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "KMSInvalidStateException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "NotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "GetKeyPolicyRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "PolicyName" => %{"shape" => "PolicyNameType"}}, "required" => ["KeyId", "PolicyName"], "type" => "structure"}, "DisableKeyRotationRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "UnsupportedOperationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "InvalidMarkerException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "GrantOperation" => %{"enum" => ["Decrypt", "Encrypt", "GenerateDataKey", "GenerateDataKeyWithoutPlaintext", "ReEncryptFrom", "ReEncryptTo", "CreateGrant", "RetireGrant", "DescribeKey"], "type" => "string"}, "ListKeyPoliciesResponse" => %{"members" => %{"NextMarker" => %{"shape" => "MarkerType"}, "PolicyNames" => %{"shape" => "PolicyNameList"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "EncryptResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "GrantList" => %{"member" => %{"shape" => "GrantListEntry"}, "type" => "list"}, "KeyListEntry" => %{"members" => %{"KeyArn" => %{"shape" => "ArnType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "WrappingKeySpec" => %{"enum" => ["RSA_2048"], "type" => "string"}, "GrantConstraints" => %{"members" => %{"EncryptionContextEquals" => %{"shape" => "EncryptionContextType"}, "EncryptionContextSubset" => %{"shape" => "EncryptionContextType"}}, "type" => "structure"}, "PolicyNameList" => %{"member" => %{"shape" => "PolicyNameType"}, "type" => "list"}, "DecryptRequest" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}}, "required" => ["CiphertextBlob"], "type" => "structure"}, "EncryptionContextKey" => %{"type" => "string"}, "GrantNameType" => %{"max" => 256, "min" => 1, "pattern" => "^[a-zA-Z0-9:/_-]+$", "type" => "string"}, "GetKeyRotationStatusResponse" => %{"members" => %{"KeyRotationEnabled" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "ExpiredImportTokenException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "KeyIdType" => %{"max" => 2048, "min" => 1, "type" => "string"}, "GetParametersForImportResponse" => %{"members" => %{"ImportToken" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "ParametersValidTo" => %{"shape" => "DateType"}, "PublicKey" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "EnableKeyRotationRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "InvalidImportTokenException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DeleteImportedKeyMaterialRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "TagResourceRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["KeyId", "Tags"], "type" => "structure"}, "ExpirationModelType" => %{"enum" => ["KEY_MATERIAL_EXPIRES", "KEY_MATERIAL_DOES_NOT_EXPIRE"], "type" => "string"}, "InvalidAliasNameException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "GrantOperationList" => %{"member" => %{"shape" => "GrantOperation"}, "type" => "list"}, "GenerateRandomRequest" => %{"members" => %{"NumberOfBytes" => %{"shape" => "NumberOfBytesType"}}, "type" => "structure"}, "LimitType" => %{"max" => 1000, "min" => 1, "type" => "integer"}, "AlgorithmSpec" => %{"enum" => ["RSAES_PKCS1_V1_5", "RSAES_OAEP_SHA_1", "RSAES_OAEP_SHA_256"], "type" => "string"}, "UpdateAliasRequest" => %{"members" => %{"AliasName" => %{"shape" => "AliasNameType"}, "TargetKeyId" => %{"shape" => "KeyIdType"}}, "required" => ["AliasName", "TargetKeyId"], "type" => "structure"}, "ListKeysResponse" => %{"members" => %{"Keys" => %{"shape" => "KeyList"}, "NextMarker" => %{"shape" => "MarkerType"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "KeyUnavailableException" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ReEncryptResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "SourceKeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "DateType" => %{"type" => "timestamp"}, "KeyUsageType" => %{"enum" => ["ENCRYPT_DECRYPT"], "type" => "string"}, "GrantListEntry" => %{"members" => %{"Constraints" => %{"shape" => "GrantConstraints"}, "CreationDate" => %{"shape" => "DateType"}, "GrantId" => %{"shape" => "GrantIdType"}, "GranteePrincipal" => %{"shape" => "PrincipalIdType"}, "IssuingAccount" => %{"shape" => "PrincipalIdType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Name" => %{"shape" => "GrantNameType"}, "Operations" => %{"shape" => "GrantOperationList"}, "RetiringPrincipal" => %{"shape" => "PrincipalIdType"}}, "type" => "structure"}, "InvalidArnException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "UpdateKeyDescriptionRequest" => %{"members" => %{"Description" => %{"shape" => "DescriptionType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId", "Description"], "type" => "structure"}, "EncryptionContextType" => %{"key" => %{"shape" => "EncryptionContextKey"}, "type" => "map", "value" => %{"shape" => "EncryptionContextValue"}}, "GenerateRandomResponse" => %{"members" => %{"Plaintext" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "BooleanType" => %{"type" => "boolean"}, "ListKeyPoliciesRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "required" => ["KeyId"], "type" => "structure"}, "KeyManagerType" => %{"enum" => ["AWS", "CUSTOMER"], "type" => "string"}, "IncorrectKeyMaterialException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "CreateKeyRequest" => %{"members" => %{"BypassPolicyLockoutSafetyCheck" => %{"shape" => "BooleanType"}, "Description" => %{"shape" => "DescriptionType"}, "KeyUsage" => %{"shape" => "KeyUsageType"}, "Origin" => %{"shape" => "OriginType"}, "Policy" => %{"shape" => "PolicyType"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ImportKeyMaterialResponse" => %{"members" => %{}, "type" => "structure"}, "CreateGrantRequest" => %{"members" => %{"Constraints" => %{"shape" => "GrantConstraints"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "GranteePrincipal" => %{"shape" => "PrincipalIdType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Name" => %{"shape" => "GrantNameType"}, "Operations" => %{"shape" => "GrantOperationList"}, "RetiringPrincipal" => %{"shape" => "PrincipalIdType"}}, "required" => ["KeyId", "GranteePrincipal"], "type" => "structure"}, "CreateAliasRequest" => %{"members" => %{"AliasName" => %{"shape" => "AliasNameType"}, "TargetKeyId" => %{"shape" => "KeyIdType"}}, "required" => ["AliasName", "TargetKeyId"], "type" => "structure"}, "AliasList" => %{"member" => %{"shape" => "AliasListEntry"}, "type" => "list"}, "ArnType" => %{"max" => 2048, "min" => 20, "type" => "string"}, "ListResourceTagsRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "required" => ["KeyId"], "type" => "structure"}, "InvalidGrantTokenException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "NumberOfBytesType" => %{"max" => 1024, "min" => 1, "type" => "integer"}, "ErrorMessageType" => %{"type" => "string"}, "EnableKeyRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "PutKeyPolicyRequest" => %{"members" => %{"BypassPolicyLockoutSafetyCheck" => %{"shape" => "BooleanType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Policy" => %{"shape" => "PolicyType"}, "PolicyName" => %{"shape" => "PolicyNameType"}}, "required" => ["KeyId", "PolicyName", "Policy"], "type" => "structure"}, "InvalidGrantIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DescribeKeyRequest" => %{"members" => %{"GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "GetParametersForImportRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "WrappingAlgorithm" => %{"shape" => "AlgorithmSpec"}, "WrappingKeySpec" => %{"shape" => "WrappingKeySpec"}}, "required" => ["KeyId", "WrappingAlgorithm", "WrappingKeySpec"], "type" => "structure"}, "ScheduleKeyDeletionRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "PendingWindowInDays" => %{"shape" => "PendingWindowInDaysType"}}, "required" => ["KeyId"], "type" => "structure"}, "RevokeGrantRequest" => %{"members" => %{"GrantId" => %{"shape" => "GrantIdType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId", "GrantId"], "type" => "structure"}, "PendingWindowInDaysType" => %{"max" => 365, "min" => 1, "type" => "integer"}, "AliasNameType" => %{"max" => 256, "min" => 1, "pattern" => "^[a-zA-Z0-9:/_-]+$", "type" => "string"}, "EncryptionContextValue" => %{"type" => "string"}, "AliasListEntry" => %{"members" => %{"AliasArn" => %{"shape" => "ArnType"}, "AliasName" => %{"shape" => "AliasNameType"}, "TargetKeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "MarkerType" => %{"max" => 320, "min" => 1, "pattern" => "[\\u0020-\\u00FF]*", "type" => "string"}, "GrantTokenList" => %{"max" => 10, "member" => %{"shape" => "GrantTokenType"}, "min" => 0, "type" => "list"}, "EncryptRequest" => %{"members" => %{"EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}, "Plaintext" => %{"shape" => "PlaintextType"}}, "required" => ["KeyId", "Plaintext"], "type" => "structure"}, "PolicyType" => %{"max" => 131072, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "ListResourceTagsResponse" => %{"members" => %{"NextMarker" => %{"shape" => "MarkerType"}, "Tags" => %{"shape" => "TagList"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "PrincipalIdType" => %{"max" => 256, "min" => 1, "type" => "string"}, "PlaintextType" => %{"max" => 4096, "min" => 1, "sensitive" => true, "type" => "blob"}}
+		%{"KeyList" => %{"member" => %{"shape" => "KeyListEntry"}, "type" => "list"}, "KMSInternalException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DescriptionType" => %{"max" => 8192, "min" => 0, "type" => "string"}, "DependencyTimeoutException" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DataKeySpec" => %{"enum" => ["AES_256", "AES_128"], "type" => "string"}, "CreateGrantResponse" => %{"members" => %{"GrantId" => %{"shape" => "GrantIdType"}, "GrantToken" => %{"shape" => "GrantTokenType"}}, "type" => "structure"}, "ListGrantsRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "required" => ["KeyId"], "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKeyType"}, "type" => "list"}, "ScheduleKeyDeletionResponse" => %{"members" => %{"DeletionDate" => %{"shape" => "DateType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "InvalidCiphertextException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ReEncryptRequest" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "DestinationEncryptionContext" => %{"shape" => "EncryptionContextType"}, "DestinationKeyId" => %{"shape" => "KeyIdType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "SourceEncryptionContext" => %{"shape" => "EncryptionContextType"}}, "required" => ["CiphertextBlob", "DestinationKeyId"], "type" => "structure"}, "AWSAccountIdType" => %{"type" => "string"}, "PolicyNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w]+", "type" => "string"}, "TagException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ImportKeyMaterialRequest" => %{"members" => %{"EncryptedKeyMaterial" => %{"shape" => "CiphertextType"}, "ExpirationModel" => %{"shape" => "ExpirationModelType"}, "ImportToken" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "ValidTo" => %{"shape" => "DateType"}}, "required" => ["KeyId", "ImportToken", "EncryptedKeyMaterial"], "type" => "structure"}, "InvalidKeyUsageException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "RetireGrantRequest" => %{"members" => %{"GrantId" => %{"shape" => "GrantIdType"}, "GrantToken" => %{"shape" => "GrantTokenType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "DisabledException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DeleteAliasRequest" => %{"members" => %{"AliasName" => %{"shape" => "AliasNameType"}}, "required" => ["AliasName"], "type" => "structure"}, "GetKeyPolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "TagKeyType" => %{"max" => 128, "min" => 1, "type" => "string"}, "GrantTokenType" => %{"max" => 8192, "min" => 1, "type" => "string"}, "OriginType" => %{"enum" => ["AWS_KMS", "EXTERNAL"], "type" => "string"}, "DisableKeyRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "GenerateDataKeyRequest" => %{"members" => %{"EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}, "KeySpec" => %{"shape" => "DataKeySpec"}, "NumberOfBytes" => %{"shape" => "NumberOfBytesType"}}, "required" => ["KeyId"], "type" => "structure"}, "GrantIdType" => %{"max" => 128, "min" => 1, "type" => "string"}, "DecryptResponse" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Plaintext" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "KeyMetadata" => %{"members" => %{"AWSAccountId" => %{"shape" => "AWSAccountIdType"}, "Arn" => %{"shape" => "ArnType"}, "CreationDate" => %{"shape" => "DateType"}, "DeletionDate" => %{"shape" => "DateType"}, "Description" => %{"shape" => "DescriptionType"}, "Enabled" => %{"shape" => "BooleanType"}, "ExpirationModel" => %{"shape" => "ExpirationModelType"}, "KeyId" => %{"shape" => "KeyIdType"}, "KeyManager" => %{"shape" => "KeyManagerType"}, "KeyState" => %{"shape" => "KeyState"}, "KeyUsage" => %{"shape" => "KeyUsageType"}, "Origin" => %{"shape" => "OriginType"}, "ValidTo" => %{"shape" => "DateType"}}, "required" => ["KeyId"], "type" => "structure"}, "CreateKeyResponse" => %{"members" => %{"KeyMetadata" => %{"shape" => "KeyMetadata"}}, "type" => "structure"}, "MalformedPolicyDocumentException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "CancelKeyDeletionRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "GetKeyRotationStatusRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "ListRetirableGrantsRequest" => %{"members" => %{"Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}, "RetiringPrincipal" => %{"shape" => "PrincipalIdType"}}, "required" => ["RetiringPrincipal"], "type" => "structure"}, "ListAliasesResponse" => %{"members" => %{"Aliases" => %{"shape" => "AliasList"}, "NextMarker" => %{"shape" => "MarkerType"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "AlreadyExistsException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ListAliasesRequest" => %{"members" => %{"Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "type" => "structure"}, "CiphertextType" => %{"max" => 6144, "min" => 1, "type" => "blob"}, "ListKeysRequest" => %{"members" => %{"Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "type" => "structure"}, "GenerateDataKeyWithoutPlaintextRequest" => %{"members" => %{"EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}, "KeySpec" => %{"shape" => "DataKeySpec"}, "NumberOfBytes" => %{"shape" => "NumberOfBytesType"}}, "required" => ["KeyId"], "type" => "structure"}, "KeyState" => %{"enum" => ["Enabled", "Disabled", "PendingDeletion", "PendingImport"], "type" => "string"}, "GenerateDataKeyWithoutPlaintextResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "UntagResourceRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["KeyId", "TagKeys"], "type" => "structure"}, "GenerateDataKeyResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Plaintext" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "ListGrantsResponse" => %{"members" => %{"Grants" => %{"shape" => "GrantList"}, "NextMarker" => %{"shape" => "MarkerType"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "Tag" => %{"members" => %{"TagKey" => %{"shape" => "TagKeyType"}, "TagValue" => %{"shape" => "TagValueType"}}, "required" => ["TagKey", "TagValue"], "type" => "structure"}, "TagValueType" => %{"max" => 256, "min" => 0, "type" => "string"}, "DescribeKeyResponse" => %{"members" => %{"KeyMetadata" => %{"shape" => "KeyMetadata"}}, "type" => "structure"}, "CancelKeyDeletionResponse" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "KMSInvalidStateException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "NotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "GetKeyPolicyRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "PolicyName" => %{"shape" => "PolicyNameType"}}, "required" => ["KeyId", "PolicyName"], "type" => "structure"}, "DisableKeyRotationRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "UnsupportedOperationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "InvalidMarkerException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "GrantOperation" => %{"enum" => ["Decrypt", "Encrypt", "GenerateDataKey", "GenerateDataKeyWithoutPlaintext", "ReEncryptFrom", "ReEncryptTo", "CreateGrant", "RetireGrant", "DescribeKey"], "type" => "string"}, "ListKeyPoliciesResponse" => %{"members" => %{"NextMarker" => %{"shape" => "MarkerType"}, "PolicyNames" => %{"shape" => "PolicyNameList"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "EncryptResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "GrantList" => %{"member" => %{"shape" => "GrantListEntry"}, "type" => "list"}, "KeyListEntry" => %{"members" => %{"KeyArn" => %{"shape" => "ArnType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "WrappingKeySpec" => %{"enum" => ["RSA_2048"], "type" => "string"}, "GrantConstraints" => %{"members" => %{"EncryptionContextEquals" => %{"shape" => "EncryptionContextType"}, "EncryptionContextSubset" => %{"shape" => "EncryptionContextType"}}, "type" => "structure"}, "PolicyNameList" => %{"member" => %{"shape" => "PolicyNameType"}, "type" => "list"}, "DecryptRequest" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}}, "required" => ["CiphertextBlob"], "type" => "structure"}, "EncryptionContextKey" => %{"type" => "string"}, "GrantNameType" => %{"max" => 256, "min" => 1, "pattern" => "^[a-zA-Z0-9:/_-]+$", "type" => "string"}, "GetKeyRotationStatusResponse" => %{"members" => %{"KeyRotationEnabled" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "ExpiredImportTokenException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "KeyIdType" => %{"max" => 2048, "min" => 1, "type" => "string"}, "GetParametersForImportResponse" => %{"members" => %{"ImportToken" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "ParametersValidTo" => %{"shape" => "DateType"}, "PublicKey" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "EnableKeyRotationRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "InvalidImportTokenException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DeleteImportedKeyMaterialRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "TagResourceRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["KeyId", "Tags"], "type" => "structure"}, "ExpirationModelType" => %{"enum" => ["KEY_MATERIAL_EXPIRES", "KEY_MATERIAL_DOES_NOT_EXPIRE"], "type" => "string"}, "InvalidAliasNameException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "GrantOperationList" => %{"member" => %{"shape" => "GrantOperation"}, "type" => "list"}, "GenerateRandomRequest" => %{"members" => %{"NumberOfBytes" => %{"shape" => "NumberOfBytesType"}}, "type" => "structure"}, "LimitType" => %{"max" => 1000, "min" => 1, "type" => "integer"}, "AlgorithmSpec" => %{"enum" => ["RSAES_PKCS1_V1_5", "RSAES_OAEP_SHA_1", "RSAES_OAEP_SHA_256"], "type" => "string"}, "UpdateAliasRequest" => %{"members" => %{"AliasName" => %{"shape" => "AliasNameType"}, "TargetKeyId" => %{"shape" => "KeyIdType"}}, "required" => ["AliasName", "TargetKeyId"], "type" => "structure"}, "ListKeysResponse" => %{"members" => %{"Keys" => %{"shape" => "KeyList"}, "NextMarker" => %{"shape" => "MarkerType"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "KeyUnavailableException" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "ReEncryptResponse" => %{"members" => %{"CiphertextBlob" => %{"shape" => "CiphertextType"}, "KeyId" => %{"shape" => "KeyIdType"}, "SourceKeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "DateType" => %{"type" => "timestamp"}, "KeyUsageType" => %{"enum" => ["ENCRYPT_DECRYPT"], "type" => "string"}, "GrantListEntry" => %{"members" => %{"Constraints" => %{"shape" => "GrantConstraints"}, "CreationDate" => %{"shape" => "DateType"}, "GrantId" => %{"shape" => "GrantIdType"}, "GranteePrincipal" => %{"shape" => "PrincipalIdType"}, "IssuingAccount" => %{"shape" => "PrincipalIdType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Name" => %{"shape" => "GrantNameType"}, "Operations" => %{"shape" => "GrantOperationList"}, "RetiringPrincipal" => %{"shape" => "PrincipalIdType"}}, "type" => "structure"}, "InvalidArnException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "UpdateKeyDescriptionRequest" => %{"members" => %{"Description" => %{"shape" => "DescriptionType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId", "Description"], "type" => "structure"}, "EncryptionContextType" => %{"key" => %{"shape" => "EncryptionContextKey"}, "type" => "map", "value" => %{"shape" => "EncryptionContextValue"}}, "GenerateRandomResponse" => %{"members" => %{"Plaintext" => %{"shape" => "PlaintextType"}}, "type" => "structure"}, "BooleanType" => %{"type" => "boolean"}, "ListKeyPoliciesRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "required" => ["KeyId"], "type" => "structure"}, "KeyManagerType" => %{"enum" => ["AWS", "CUSTOMER"], "type" => "string"}, "IncorrectKeyMaterialException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "CreateKeyRequest" => %{"members" => %{"BypassPolicyLockoutSafetyCheck" => %{"shape" => "BooleanType"}, "Description" => %{"shape" => "DescriptionType"}, "KeyUsage" => %{"shape" => "KeyUsageType"}, "Origin" => %{"shape" => "OriginType"}, "Policy" => %{"shape" => "PolicyType"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ImportKeyMaterialResponse" => %{"members" => %{}, "type" => "structure"}, "CreateGrantRequest" => %{"members" => %{"Constraints" => %{"shape" => "GrantConstraints"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "GranteePrincipal" => %{"shape" => "PrincipalIdType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Name" => %{"shape" => "GrantNameType"}, "Operations" => %{"shape" => "GrantOperationList"}, "RetiringPrincipal" => %{"shape" => "PrincipalIdType"}}, "required" => ["KeyId", "GranteePrincipal"], "type" => "structure"}, "CreateAliasRequest" => %{"members" => %{"AliasName" => %{"shape" => "AliasNameType"}, "TargetKeyId" => %{"shape" => "KeyIdType"}}, "required" => ["AliasName", "TargetKeyId"], "type" => "structure"}, "AliasList" => %{"member" => %{"shape" => "AliasListEntry"}, "type" => "list"}, "ArnType" => %{"max" => 2048, "min" => 20, "type" => "string"}, "ListResourceTagsRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "Limit" => %{"shape" => "LimitType"}, "Marker" => %{"shape" => "MarkerType"}}, "required" => ["KeyId"], "type" => "structure"}, "InvalidGrantTokenException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "NumberOfBytesType" => %{"max" => 1024, "min" => 1, "type" => "integer"}, "ErrorMessageType" => %{"type" => "string"}, "EnableKeyRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "PutKeyPolicyRequest" => %{"members" => %{"BypassPolicyLockoutSafetyCheck" => %{"shape" => "BooleanType"}, "KeyId" => %{"shape" => "KeyIdType"}, "Policy" => %{"shape" => "PolicyType"}, "PolicyName" => %{"shape" => "PolicyNameType"}}, "required" => ["KeyId", "PolicyName", "Policy"], "type" => "structure"}, "InvalidGrantIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessageType"}}, "type" => "structure"}, "DescribeKeyRequest" => %{"members" => %{"GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId"], "type" => "structure"}, "GetParametersForImportRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "WrappingAlgorithm" => %{"shape" => "AlgorithmSpec"}, "WrappingKeySpec" => %{"shape" => "WrappingKeySpec"}}, "required" => ["KeyId", "WrappingAlgorithm", "WrappingKeySpec"], "type" => "structure"}, "ScheduleKeyDeletionRequest" => %{"members" => %{"KeyId" => %{"shape" => "KeyIdType"}, "PendingWindowInDays" => %{"shape" => "PendingWindowInDaysType"}}, "required" => ["KeyId"], "type" => "structure"}, "RevokeGrantRequest" => %{"members" => %{"GrantId" => %{"shape" => "GrantIdType"}, "KeyId" => %{"shape" => "KeyIdType"}}, "required" => ["KeyId", "GrantId"], "type" => "structure"}, "PendingWindowInDaysType" => %{"max" => 365, "min" => 1, "type" => "integer"}, "AliasNameType" => %{"max" => 256, "min" => 1, "pattern" => "^[a-zA-Z0-9:/_-]+$", "type" => "string"}, "EncryptionContextValue" => %{"type" => "string"}, "AliasListEntry" => %{"members" => %{"AliasArn" => %{"shape" => "ArnType"}, "AliasName" => %{"shape" => "AliasNameType"}, "TargetKeyId" => %{"shape" => "KeyIdType"}}, "type" => "structure"}, "MarkerType" => %{"max" => 320, "min" => 1, "pattern" => "[\\u0020-\\u00FF]*", "type" => "string"}, "GrantTokenList" => %{"max" => 10, "member" => %{"shape" => "GrantTokenType"}, "min" => 0, "type" => "list"}, "EncryptRequest" => %{"members" => %{"EncryptionContext" => %{"shape" => "EncryptionContextType"}, "GrantTokens" => %{"shape" => "GrantTokenList"}, "KeyId" => %{"shape" => "KeyIdType"}, "Plaintext" => %{"shape" => "PlaintextType"}}, "required" => ["KeyId", "Plaintext"], "type" => "structure"}, "PolicyType" => %{"max" => 131072, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "ListResourceTagsResponse" => %{"members" => %{"NextMarker" => %{"shape" => "MarkerType"}, "Tags" => %{"shape" => "TagList"}, "Truncated" => %{"shape" => "BooleanType"}}, "type" => "structure"}, "PrincipalIdType" => %{"max" => 256, "min" => 1, "type" => "string"}, "PlaintextType" => %{"max" => 4096, "min" => 1, "sensitive" => true, "type" => "blob"}}
   end
 end

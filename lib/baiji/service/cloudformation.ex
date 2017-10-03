@@ -24,7 +24,7 @@ defmodule Baiji.Cloudformation do
   the product's technical documentation at
   [docs.aws.amazon.com](http://docs.aws.amazon.com/).
   """
-  
+
   @doc """
   Cancels an update on the specified stack. If the call completes
   successfully, the stack rolls back the update and reverts to the previous
@@ -36,23 +36,17 @@ defmodule Baiji.Cloudformation do
   """
   def cancel_update_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CancelUpdateStack",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "CancelUpdateStackInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the description for the specified stack; if no stack name was
   specified, then it returns the description for all the stacks created.
@@ -64,23 +58,17 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStacks",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStacksInput",
       output_shape:     "DescribeStacksOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sends a signal to the specified resource with a success or failure status.
   You can use the SignalResource API in conjunction with a creation policy or
@@ -91,45 +79,33 @@ defmodule Baiji.Cloudformation do
   """
   def signal_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SignalResource",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "SignalResourceInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns summary information about the results of a stack set operation.
   """
   def list_stack_set_operation_results(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStackSetOperationResults",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListStackSetOperationResultsInput",
       output_shape:     "ListStackSetOperationResultsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates the stack set and *all* associated stack instances.
 
@@ -141,23 +117,17 @@ defmodule Baiji.Cloudformation do
   """
   def update_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateStackSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "UpdateStackSetInput",
       output_shape:     "UpdateStackSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns summary information about stack instances that are associated with
   the specified stack set. You can filter for stack instances that are
@@ -165,45 +135,33 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStackInstances",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListStackInstancesInput",
       output_shape:     "ListStackInstancesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns summary information about operations performed on a stack set.
   """
   def list_stack_set_operations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStackSetOperations",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListStackSetOperationsInput",
       output_shape:     "ListStackSetOperationsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all stacks that are importing an exported output value. To modify or
   remove an exported output value, first use this action to see which stacks
@@ -217,23 +175,17 @@ defmodule Baiji.Cloudformation do
   """
   def list_imports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListImports",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListImportsInput",
       output_shape:     "ListImportsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a description of the specified resource in the specified stack.
 
@@ -242,23 +194,17 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStackResource",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStackResourceInput",
       output_shape:     "DescribeStackResourceOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   For a specified stack that is in the `UPDATE_ROLLBACK_FAILED` state,
   continues rolling it back to the `UPDATE_ROLLBACK_COMPLETE` state.
@@ -278,68 +224,50 @@ defmodule Baiji.Cloudformation do
   """
   def continue_update_rollback(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ContinueUpdateRollback",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ContinueUpdateRollbackInput",
       output_shape:     "ContinueUpdateRollbackOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the stack policy for a specified stack. If a stack doesn't have a
   policy, a null value is returned.
   """
   def get_stack_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetStackPolicy",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "GetStackPolicyInput",
       output_shape:     "GetStackPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the description of the specified stack set operation.
   """
   def describe_stack_set_operation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStackSetOperation",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStackSetOperationInput",
       output_shape:     "DescribeStackSetOperationOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified change set. Deleting change sets ensures that no one
   executes the wrong change set.
@@ -349,23 +277,17 @@ defmodule Baiji.Cloudformation do
   """
   def delete_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteChangeSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DeleteChangeSetInput",
       output_shape:     "DeleteChangeSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a specified stack. Once the call completes successfully, stack
   deletion starts. Deleted stacks do not show up in the `DescribeStacks` API
@@ -373,23 +295,17 @@ defmodule Baiji.Cloudformation do
   """
   def delete_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteStack",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DeleteStackInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a stack as specified in the template. After the call completes
   successfully, the stack creation starts. You can check the status of the
@@ -397,23 +313,17 @@ defmodule Baiji.Cloudformation do
   """
   def create_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateStack",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "CreateStackInput",
       output_shape:     "CreateStackOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the ID and status of each active change set for a stack. For
   example, AWS CloudFormation lists change sets that are in the
@@ -421,23 +331,17 @@ defmodule Baiji.Cloudformation do
   """
   def list_change_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListChangeSets",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListChangeSetsInput",
       output_shape:     "ListChangeSetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the inputs for the change set and a list of changes that AWS
   CloudFormation will make if you execute the change set. For more
@@ -447,46 +351,34 @@ defmodule Baiji.Cloudformation do
   """
   def describe_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeChangeSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeChangeSetInput",
       output_shape:     "DescribeChangeSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Stops an in-progress operation on a stack set and its associated stack
   instances.
   """
   def stop_stack_set_operation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "StopStackSetOperation",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "StopStackSetOperationInput",
       output_shape:     "StopStackSetOperationOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Validates a specified template. AWS CloudFormation first checks if the
   template is valid JSON. If it isn't, AWS CloudFormation checks if the
@@ -495,23 +387,17 @@ defmodule Baiji.Cloudformation do
   """
   def validate_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ValidateTemplate",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ValidateTemplateInput",
       output_shape:     "ValidateTemplateOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates stack instances for the specified accounts, within the specified
   regions. A stack instance refers to a stack in a specific account and
@@ -520,23 +406,17 @@ defmodule Baiji.Cloudformation do
   """
   def create_stack_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateStackInstances",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "CreateStackInstancesInput",
       output_shape:     "CreateStackInstancesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns all stack related events for a specified stack in reverse
   chronological order. For more information about a stack's event history, go
@@ -551,46 +431,34 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStackEvents",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStackEventsInput",
       output_shape:     "DescribeStackEventsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns summary information about stack sets that are associated with the
   user.
   """
   def list_stack_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStackSets",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListStackSetsInput",
       output_shape:     "ListStackSetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns AWS resource descriptions for running and deleted stacks. If
   `StackName` is specified, all the associated resources that are part of the
@@ -616,23 +484,17 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStackResources",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStackResourcesInput",
       output_shape:     "DescribeStackResourcesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the estimated monthly cost of a template. The return value is an
   AWS Simple Monthly Calculator URL with a query string that describes the
@@ -640,23 +502,17 @@ defmodule Baiji.Cloudformation do
   """
   def estimate_template_cost(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EstimateTemplateCost",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "EstimateTemplateCostInput",
       output_shape:     "EstimateTemplateCostOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the template body for a specified stack. You can get the template
   for running or deleted stacks.
@@ -670,45 +526,33 @@ defmodule Baiji.Cloudformation do
   """
   def get_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetTemplate",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "GetTemplateInput",
       output_shape:     "GetTemplateOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a stack set.
   """
   def create_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateStackSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "CreateStackSetInput",
       output_shape:     "CreateStackSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the stack instance that's associated with the specified stack set,
   AWS account, and region.
@@ -718,45 +562,33 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStackInstance",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStackInstanceInput",
       output_shape:     "DescribeStackInstanceOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets a stack policy for a specified stack.
   """
   def set_stack_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetStackPolicy",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "SetStackPolicyInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the summary information for stacks whose status matches the
   specified StackStatusFilter. Summary information for stacks that have been
@@ -766,45 +598,33 @@ defmodule Baiji.Cloudformation do
   """
   def list_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStacks",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListStacksInput",
       output_shape:     "ListStacksOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the description of the specified stack set.
   """
   def describe_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStackSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeStackSetInput",
       output_shape:     "DescribeStackSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates a stack as specified in the template. After the call completes
   successfully, the stack update starts. You can check the status of the
@@ -819,23 +639,17 @@ defmodule Baiji.Cloudformation do
   """
   def update_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateStack",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "UpdateStackInput",
       output_shape:     "UpdateStackOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all exported output values in the account and region in which you
   call this action. Use this action to see the exported output values that
@@ -849,46 +663,34 @@ defmodule Baiji.Cloudformation do
   """
   def list_exports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListExports",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListExportsInput",
       output_shape:     "ListExportsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes stack instances for the specified accounts, in the specified
   regions.
   """
   def delete_stack_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteStackInstances",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DeleteStackInstancesInput",
       output_shape:     "DeleteStackInstancesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates a stack using the input information that was provided when the
   specified change set was created. After the call successfully completes,
@@ -905,23 +707,17 @@ defmodule Baiji.Cloudformation do
   """
   def execute_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ExecuteChangeSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ExecuteChangeSetInput",
       output_shape:     "ExecuteChangeSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns descriptions of all resources of the specified stack.
 
@@ -930,23 +726,17 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStackResources",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "ListStackResourcesInput",
       output_shape:     "ListStackResourcesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a stack set. Before you can delete a stack set, all of its member
   stack instances must be deleted. For more information about how to do this,
@@ -954,23 +744,17 @@ defmodule Baiji.Cloudformation do
   """
   def delete_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteStackSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DeleteStackSetInput",
       output_shape:     "DeleteStackSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns information about a new or existing template. The
   `GetTemplateSummary` action is useful for viewing parameter information,
@@ -987,46 +771,34 @@ defmodule Baiji.Cloudformation do
   """
   def get_template_summary(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetTemplateSummary",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "GetTemplateSummaryInput",
       output_shape:     "GetTemplateSummaryOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves your account's AWS CloudFormation limits, such as the maximum
   number of stacks that you can create in your account.
   """
   def describe_account_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeAccountLimits",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "DescribeAccountLimitsInput",
       output_shape:     "DescribeAccountLimitsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a list of changes that will be applied to a stack so that you can
   review the changes before executing them. You can create a change set for a
@@ -1052,28 +824,36 @@ defmodule Baiji.Cloudformation do
   """
   def create_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "cloudformation",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateChangeSet",
-      
-      endpoint_prefix:  "cloudformation",
-      type:             :xml,
-      version:          "2010-05-15",
       method:           :post,
       input_shape:      "CreateChangeSetInput",
       output_shape:     "CreateChangeSetOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "cloudformation",
+      target_prefix:    nil,
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"Capabilities" => %{"member" => %{"shape" => "Capability"}, "type" => "list"}, "Url" => %{"type" => "string"}, "AllowedValue" => %{"type" => "string"}, "RegionList" => %{"member" => %{"shape" => "Region"}, "type" => "list"}, "StackName" => %{"type" => "string"}, "CreateStackInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "DisableRollback" => %{"shape" => "DisableRollback"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "OnFailure" => %{"shape" => "OnFailure"}, "Parameters" => %{"shape" => "Parameters"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackName" => %{"shape" => "StackName"}, "StackPolicyBody" => %{"shape" => "StackPolicyBody"}, "StackPolicyURL" => %{"shape" => "StackPolicyURL"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "TimeoutInMinutes" => %{"shape" => "TimeoutMinutes"}}, "required" => ["StackName"], "type" => "structure"}, "StackEvent" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "EventId" => %{"shape" => "EventId"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceProperties" => %{"shape" => "ResourceProperties"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Timestamp" => %{"shape" => "Timestamp"}}, "required" => ["StackId", "EventId", "StackName", "Timestamp"], "type" => "structure"}, "ChangeAction" => %{"enum" => ["Add", "Modify", "Remove"], "type" => "string"}, "ParameterConstraints" => %{"members" => %{"AllowedValues" => %{"shape" => "AllowedValues"}}, "type" => "structure"}, "ExecutionStatus" => %{"enum" => ["UNAVAILABLE", "AVAILABLE", "EXECUTE_IN_PROGRESS", "EXECUTE_COMPLETE", "EXECUTE_FAILED", "OBSOLETE"], "type" => "string"}, "ResourceType" => %{"max" => 256, "min" => 1, "type" => "string"}, "ResourceSignalUniqueId" => %{"max" => 64, "min" => 1, "type" => "string"}, "Imports" => %{"member" => %{"shape" => "StackName"}, "type" => "list"}, "Parameter" => %{"members" => %{"ParameterKey" => %{"shape" => "ParameterKey"}, "ParameterValue" => %{"shape" => "ParameterValue"}, "UsePreviousValue" => %{"shape" => "UsePreviousValue"}}, "type" => "structure"}, "ResourceTypes" => %{"member" => %{"shape" => "ResourceType"}, "type" => "list"}, "ListStackSetsInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "Status" => %{"shape" => "StackSetStatus"}}, "type" => "structure"}, "ChangeSetNotFoundException" => %{"error" => %{"code" => "ChangeSetNotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ListStackResourcesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackResourceSummaries" => %{"shape" => "StackResourceSummaries"}}, "type" => "structure"}, "ParameterType" => %{"type" => "string"}, "CausingEntity" => %{"type" => "string"}, "ListStackSetOperationsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackSetOperationSummaries"}}, "type" => "structure"}, "AllowedValues" => %{"member" => %{"shape" => "AllowedValue"}, "type" => "list"}, "CreateStackInstancesOutput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "StackSetNotFoundException" => %{"error" => %{"code" => "StackSetNotFoundException", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreationTime" => %{"type" => "timestamp"}, "Type" => %{"type" => "string"}, "LimitValue" => %{"type" => "integer"}, "StackEvents" => %{"member" => %{"shape" => "StackEvent"}, "type" => "list"}, "RollbackConfiguration" => %{"members" => %{"MonitoringTimeInMinutes" => %{"shape" => "MonitoringTimeInMinutes"}, "RollbackTriggers" => %{"shape" => "RollbackTriggers"}}, "type" => "structure"}, "DescribeStackSetOutput" => %{"members" => %{"StackSet" => %{"shape" => "StackSet"}}, "type" => "structure"}, "RetainStacksNullable" => %{"type" => "boolean"}, "ListStackInstancesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackInstanceSummaries"}}, "type" => "structure"}, "ContinueUpdateRollbackOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeStackResourcesOutput" => %{"members" => %{"StackResources" => %{"shape" => "StackResources"}}, "type" => "structure"}, "DeleteStackSetOutput" => %{"members" => %{}, "type" => "structure"}, "PropertyName" => %{"type" => "string"}, "Scope" => %{"member" => %{"shape" => "ResourceAttribute"}, "type" => "list"}, "DeleteChangeSetInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["ChangeSetName"], "type" => "structure"}, "ExportName" => %{"type" => "string"}, "OnFailure" => %{"enum" => ["DO_NOTHING", "ROLLBACK", "DELETE"], "type" => "string"}, "Changes" => %{"member" => %{"shape" => "Change"}, "type" => "list"}, "Export" => %{"members" => %{"ExportingStackId" => %{"shape" => "StackId"}, "Name" => %{"shape" => "ExportName"}, "Value" => %{"shape" => "ExportValue"}}, "type" => "structure"}, "ChangeSetType" => %{"enum" => ["CREATE", "UPDATE"], "type" => "string"}, "DescribeStackEventsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackEvents" => %{"shape" => "StackEvents"}}, "type" => "structure"}, "InvalidChangeSetStatusException" => %{"error" => %{"code" => "InvalidChangeSetStatus", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Metadata" => %{"type" => "string"}, "StackSetNotEmptyException" => %{"error" => %{"code" => "StackSetNotEmptyException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ChangeSetStatus" => %{"enum" => ["CREATE_PENDING", "CREATE_IN_PROGRESS", "CREATE_COMPLETE", "DELETE_COMPLETE", "FAILED"], "type" => "string"}, "StackStatusFilter" => %{"member" => %{"shape" => "StackStatus"}, "type" => "list"}, "EstimateTemplateCostInput" => %{"members" => %{"Parameters" => %{"shape" => "Parameters"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "type" => "structure"}, "StackSetOperationResultStatus" => %{"enum" => ["PENDING", "RUNNING", "SUCCEEDED", "FAILED", "CANCELLED"], "type" => "string"}, "AccountGateStatusReason" => %{"type" => "string"}, "AccountList" => %{"member" => %{"shape" => "Account"}, "type" => "list"}, "NotificationARN" => %{"type" => "string"}, "RequiresRecreation" => %{"enum" => ["Never", "Conditionally", "Always"], "type" => "string"}, "StageList" => %{"member" => %{"shape" => "TemplateStage"}, "type" => "list"}, "ClientToken" => %{"max" => 128, "min" => 1, "type" => "string"}, "StackStatusReason" => %{"type" => "string"}, "TimeoutMinutes" => %{"min" => 1, "type" => "integer"}, "DeleteStackInstancesOutput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "StackSetOperationPreferences" => %{"members" => %{"FailureToleranceCount" => %{"shape" => "FailureToleranceCount"}, "FailureTolerancePercentage" => %{"shape" => "FailureTolerancePercentage"}, "MaxConcurrentCount" => %{"shape" => "MaxConcurrentCount"}, "MaxConcurrentPercentage" => %{"shape" => "MaxConcurrentPercentage"}, "RegionOrder" => %{"shape" => "RegionList"}}, "type" => "structure"}, "StackInstanceSummaries" => %{"member" => %{"shape" => "StackInstanceSummary"}, "type" => "list"}, "DeleteStackInput" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "RetainResources" => %{"shape" => "RetainResources"}, "RoleARN" => %{"shape" => "RoleARN"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "StaleRequestException" => %{"error" => %{"code" => "StaleRequestException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ListImportsOutput" => %{"members" => %{"Imports" => %{"shape" => "Imports"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Account" => %{"pattern" => "[0-9]{12}", "type" => "string"}, "EventId" => %{"type" => "string"}, "ContinueUpdateRollbackInput" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "ResourcesToSkip" => %{"shape" => "ResourcesToSkip"}, "RoleARN" => %{"shape" => "RoleARN"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["StackName"], "type" => "structure"}, "Reason" => %{"type" => "string"}, "TransformsList" => %{"member" => %{"shape" => "TransformName"}, "type" => "list"}, "CreateChangeSetInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ChangeSetName" => %{"shape" => "ChangeSetName"}, "ChangeSetType" => %{"shape" => "ChangeSetType"}, "ClientToken" => %{"shape" => "ClientToken"}, "Description" => %{"shape" => "Description"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Parameters" => %{"shape" => "Parameters"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackName" => %{"shape" => "StackNameOrId"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "UsePreviousTemplate" => %{"shape" => "UsePreviousTemplate"}}, "required" => ["StackName", "ChangeSetName"], "type" => "structure"}, "Stack" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ChangeSetId" => %{"shape" => "ChangeSetId"}, "CreationTime" => %{"shape" => "CreationTime"}, "Description" => %{"shape" => "Description"}, "DisableRollback" => %{"shape" => "DisableRollback"}, "LastUpdatedTime" => %{"shape" => "LastUpdatedTime"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Outputs" => %{"shape" => "Outputs"}, "Parameters" => %{"shape" => "Parameters"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "StackStatus" => %{"shape" => "StackStatus"}, "StackStatusReason" => %{"shape" => "StackStatusReason"}, "Tags" => %{"shape" => "Tags"}, "TimeoutInMinutes" => %{"shape" => "TimeoutMinutes"}}, "required" => ["StackName", "CreationTime", "StackStatus"], "type" => "structure"}, "ExecuteChangeSetInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["ChangeSetName"], "type" => "structure"}, "RoleARN" => %{"max" => 2048, "min" => 20, "type" => "string"}, "Region" => %{"type" => "string"}, "AlreadyExistsException" => %{"error" => %{"code" => "AlreadyExistsException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ParameterValue" => %{"type" => "string"}, "ListStackSetOperationsInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "StackId" => %{"type" => "string"}, "GetTemplateSummaryInput" => %{"members" => %{"StackName" => %{"shape" => "StackNameOrId"}, "StackSetName" => %{"shape" => "StackSetNameOrId"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "type" => "structure"}, "ChangeSource" => %{"enum" => ["ResourceReference", "ParameterReference", "ResourceAttribute", "DirectModification", "Automatic"], "type" => "string"}, "ListExportsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Description" => %{"max" => 1024, "min" => 1, "type" => "string"}, "CreateChangeSetOutput" => %{"members" => %{"Id" => %{"shape" => "ChangeSetId"}, "StackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "Version" => %{"type" => "string"}, "ResourceProperties" => %{"type" => "string"}, "AccountLimitList" => %{"member" => %{"shape" => "AccountLimit"}, "type" => "list"}, "TemplateParameters" => %{"member" => %{"shape" => "TemplateParameter"}, "type" => "list"}, "RollbackTrigger" => %{"members" => %{"Arn" => %{"shape" => "Arn"}, "Type" => %{"shape" => "Type"}}, "required" => ["Arn", "Type"], "type" => "structure"}, "UsePreviousTemplate" => %{"type" => "boolean"}, "CreatedButModifiedException" => %{"error" => %{"code" => "CreatedButModifiedException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ResourceChangeDetail" => %{"members" => %{"CausingEntity" => %{"shape" => "CausingEntity"}, "ChangeSource" => %{"shape" => "ChangeSource"}, "Evaluation" => %{"shape" => "EvaluationType"}, "Target" => %{"shape" => "ResourceTargetDefinition"}}, "type" => "structure"}, "StackResourceDetail" => %{"members" => %{"Description" => %{"shape" => "Description"}, "LastUpdatedTimestamp" => %{"shape" => "Timestamp"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "Metadata" => %{"shape" => "Metadata"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["LogicalResourceId", "ResourceType", "LastUpdatedTimestamp", "ResourceStatus"], "type" => "structure"}, "ValidateTemplateOutput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "CapabilitiesReason" => %{"shape" => "CapabilitiesReason"}, "DeclaredTransforms" => %{"shape" => "TransformsList"}, "Description" => %{"shape" => "Description"}, "Parameters" => %{"shape" => "TemplateParameters"}}, "type" => "structure"}, "StackSetOperationResultSummary" => %{"members" => %{"Account" => %{"shape" => "Account"}, "AccountGateResult" => %{"shape" => "AccountGateResult"}, "Region" => %{"shape" => "Region"}, "Status" => %{"shape" => "StackSetOperationResultStatus"}, "StatusReason" => %{"shape" => "Reason"}}, "type" => "structure"}, "AccountLimit" => %{"members" => %{"Name" => %{"shape" => "LimitName"}, "Value" => %{"shape" => "LimitValue"}}, "type" => "structure"}, "Tags" => %{"max" => 50, "member" => %{"shape" => "Tag"}, "type" => "list"}, "StackSetSummaries" => %{"member" => %{"shape" => "StackSetSummary"}, "type" => "list"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "StackSetId" => %{"type" => "string"}, "UpdateStackSetOutput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "StackSetOperationResultSummaries" => %{"member" => %{"shape" => "StackSetOperationResultSummary"}, "type" => "list"}, "DescribeChangeSetInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["ChangeSetName"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "ListStackSetsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackSetSummaries"}}, "type" => "structure"}, "CreateStackOutput" => %{"members" => %{"StackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "ExecuteChangeSetOutput" => %{"members" => %{}, "type" => "structure"}, "StackPolicyBody" => %{"max" => 16384, "min" => 1, "type" => "string"}, "GetTemplateSummaryOutput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "CapabilitiesReason" => %{"shape" => "CapabilitiesReason"}, "DeclaredTransforms" => %{"shape" => "TransformsList"}, "Description" => %{"shape" => "Description"}, "Metadata" => %{"shape" => "Metadata"}, "Parameters" => %{"shape" => "ParameterDeclarations"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "Version" => %{"shape" => "Version"}}, "type" => "structure"}, "StackResource" => %{"members" => %{"Description" => %{"shape" => "Description"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Timestamp" => %{"shape" => "Timestamp"}}, "required" => ["LogicalResourceId", "ResourceType", "Timestamp", "ResourceStatus"], "type" => "structure"}, "MaxResults" => %{"max" => 100, "min" => 1, "type" => "integer"}, "TagValue" => %{"max" => 256, "min" => 1, "type" => "string"}, "TemplateBody" => %{"min" => 1, "type" => "string"}, "MaxConcurrentCount" => %{"min" => 1, "type" => "integer"}, "DescribeStackResourceOutput" => %{"members" => %{"StackResourceDetail" => %{"shape" => "StackResourceDetail"}}, "type" => "structure"}, "StopStackSetOperationInput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "OperationId"], "type" => "structure"}, "StackSetOperationSummary" => %{"members" => %{"Action" => %{"shape" => "StackSetOperationAction"}, "CreationTimestamp" => %{"shape" => "Timestamp"}, "EndTimestamp" => %{"shape" => "Timestamp"}, "OperationId" => %{"shape" => "ClientRequestToken"}, "Status" => %{"shape" => "StackSetOperationStatus"}}, "type" => "structure"}, "StackSetName" => %{"type" => "string"}, "ListExportsOutput" => %{"members" => %{"Exports" => %{"shape" => "Exports"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Arn" => %{"type" => "string"}, "StackSetOperation" => %{"members" => %{"Action" => %{"shape" => "StackSetOperationAction"}, "CreationTimestamp" => %{"shape" => "Timestamp"}, "EndTimestamp" => %{"shape" => "Timestamp"}, "OperationId" => %{"shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "RetainStacks" => %{"shape" => "RetainStacksNullable"}, "StackSetId" => %{"shape" => "StackSetId"}, "Status" => %{"shape" => "StackSetOperationStatus"}}, "type" => "structure"}, "ChangeSetId" => %{"min" => 1, "pattern" => "arn:[-a-zA-Z0-9:/]*", "type" => "string"}, "ListStackInstancesInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "StackInstanceAccount" => %{"shape" => "Account"}, "StackInstanceRegion" => %{"shape" => "Region"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "StackSetStatus" => %{"enum" => ["ACTIVE", "DELETED"], "type" => "string"}, "ListChangeSetsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["StackName"], "type" => "structure"}, "ParameterKey" => %{"type" => "string"}, "DisableRollback" => %{"type" => "boolean"}, "InsufficientCapabilitiesException" => %{"error" => %{"code" => "InsufficientCapabilitiesException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TemplateParameter" => %{"members" => %{"DefaultValue" => %{"shape" => "ParameterValue"}, "Description" => %{"shape" => "Description"}, "NoEcho" => %{"shape" => "NoEcho"}, "ParameterKey" => %{"shape" => "ParameterKey"}}, "type" => "structure"}, "DescribeAccountLimitsOutput" => %{"members" => %{"AccountLimits" => %{"shape" => "AccountLimitList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "StackInstance" => %{"members" => %{"Account" => %{"shape" => "Account"}, "Region" => %{"shape" => "Region"}, "StackId" => %{"shape" => "StackId"}, "StackSetId" => %{"shape" => "StackSetId"}, "Status" => %{"shape" => "StackInstanceStatus"}, "StatusReason" => %{"shape" => "Reason"}}, "type" => "structure"}, "ResourceStatus" => %{"enum" => ["CREATE_IN_PROGRESS", "CREATE_FAILED", "CREATE_COMPLETE", "DELETE_IN_PROGRESS", "DELETE_FAILED", "DELETE_COMPLETE", "DELETE_SKIPPED", "UPDATE_IN_PROGRESS", "UPDATE_FAILED", "UPDATE_COMPLETE"], "type" => "string"}, "UpdateStackSetInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "Description" => %{"shape" => "Description"}, "OperationId" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "Parameters" => %{"shape" => "Parameters"}, "StackSetName" => %{"shape" => "StackSetName"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "UsePreviousTemplate" => %{"shape" => "UsePreviousTemplate"}}, "required" => ["StackSetName"], "type" => "structure"}, "TokenAlreadyExistsException" => %{"error" => %{"code" => "TokenAlreadyExistsException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ChangeSetName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z][-a-zA-Z0-9]*", "type" => "string"}, "MaxConcurrentPercentage" => %{"max" => 100, "min" => 1, "type" => "integer"}, "LimitExceededException" => %{"error" => %{"code" => "LimitExceededException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AccountGateStatus" => %{"enum" => ["SUCCEEDED", "FAILED", "SKIPPED"], "type" => "string"}, "DescribeStackInstanceInput" => %{"members" => %{"StackInstanceAccount" => %{"shape" => "Account"}, "StackInstanceRegion" => %{"shape" => "Region"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "StackInstanceAccount", "StackInstanceRegion"], "type" => "structure"}, "Change" => %{"members" => %{"ResourceChange" => %{"shape" => "ResourceChange"}, "Type" => %{"shape" => "ChangeType"}}, "type" => "structure"}, "EvaluationType" => %{"enum" => ["Static", "Dynamic"], "type" => "string"}, "SetStackPolicyInput" => %{"members" => %{"StackName" => %{"shape" => "StackName"}, "StackPolicyBody" => %{"shape" => "StackPolicyBody"}, "StackPolicyURL" => %{"shape" => "StackPolicyURL"}}, "required" => ["StackName"], "type" => "structure"}, "DescribeAccountLimitsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "StackPolicyURL" => %{"max" => 1350, "min" => 1, "type" => "string"}, "CancelUpdateStackInput" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "ResourceStatusReason" => %{"type" => "string"}, "FailureToleranceCount" => %{"min" => 0, "type" => "integer"}, "StackInstanceStatus" => %{"enum" => ["CURRENT", "OUTDATED", "INOPERABLE"], "type" => "string"}, "CreateStackSetInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ClientRequestToken" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "Description" => %{"shape" => "Description"}, "Parameters" => %{"shape" => "Parameters"}, "StackSetName" => %{"shape" => "StackSetName"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "required" => ["StackSetName"], "type" => "structure"}, "RollbackTriggers" => %{"max" => 5, "member" => %{"shape" => "RollbackTrigger"}, "type" => "list"}, "LimitName" => %{"type" => "string"}, "ListStackSetOperationResultsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackSetOperationResultSummaries"}}, "type" => "structure"}, "StackNameOrId" => %{"min" => 1, "pattern" => "([a-zA-Z][-a-zA-Z0-9]*)|(arn:\\b(aws|aws-us-gov|aws-cn)\\b:[-a-zA-Z0-9:/._+]*)", "type" => "string"}, "DescribeStackSetOperationOutput" => %{"members" => %{"StackSetOperation" => %{"shape" => "StackSetOperation"}}, "type" => "structure"}, "OutputKey" => %{"type" => "string"}, "StackSetSummary" => %{"members" => %{"Description" => %{"shape" => "Description"}, "StackSetId" => %{"shape" => "StackSetId"}, "StackSetName" => %{"shape" => "StackSetName"}, "Status" => %{"shape" => "StackSetStatus"}}, "type" => "structure"}, "ListStacksInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackStatusFilter" => %{"shape" => "StackStatusFilter"}}, "type" => "structure"}, "StopStackSetOperationOutput" => %{"members" => %{}, "type" => "structure"}, "ResourceToSkip" => %{"pattern" => "[a-zA-Z0-9]+|[a-zA-Z][-a-zA-Z0-9]*\\.[a-zA-Z0-9]+", "type" => "string"}, "DeleteStackSetInput" => %{"members" => %{"StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "ListStacksOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackSummaries" => %{"shape" => "StackSummaries"}}, "type" => "structure"}, "GetTemplateOutput" => %{"members" => %{"StagesAvailable" => %{"shape" => "StageList"}, "TemplateBody" => %{"shape" => "TemplateBody"}}, "type" => "structure"}, "TemplateDescription" => %{"type" => "string"}, "Capability" => %{"enum" => ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"], "type" => "string"}, "ResourcesToSkip" => %{"member" => %{"shape" => "ResourceToSkip"}, "type" => "list"}, "DescribeStackResourceInput" => %{"members" => %{"LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName", "LogicalResourceId"], "type" => "structure"}, "Exports" => %{"member" => %{"shape" => "Export"}, "type" => "list"}, "Outputs" => %{"member" => %{"shape" => "Output"}, "type" => "list"}, "DescribeStackResourcesInput" => %{"members" => %{"LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "StackName" => %{"shape" => "StackName"}}, "type" => "structure"}, "ListStackSetOperationResultsInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "OperationId" => %{"shape" => "ClientRequestToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "OperationId"], "type" => "structure"}, "MonitoringTimeInMinutes" => %{"max" => 180, "min" => 0, "type" => "integer"}, "AccountGateResult" => %{"members" => %{"Status" => %{"shape" => "AccountGateStatus"}, "StatusReason" => %{"shape" => "AccountGateStatusReason"}}, "type" => "structure"}, "ResourceChangeDetails" => %{"member" => %{"shape" => "ResourceChangeDetail"}, "type" => "list"}, "DeleteStackInstancesInput" => %{"members" => %{"Accounts" => %{"shape" => "AccountList"}, "OperationId" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "Regions" => %{"shape" => "RegionList"}, "RetainStacks" => %{"shape" => "RetainStacks"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "Accounts", "Regions", "RetainStacks"], "type" => "structure"}, "TemplateURL" => %{"max" => 1024, "min" => 1, "type" => "string"}, "ChangeSetSummary" => %{"members" => %{"ChangeSetId" => %{"shape" => "ChangeSetId"}, "ChangeSetName" => %{"shape" => "ChangeSetName"}, "CreationTime" => %{"shape" => "CreationTime"}, "Description" => %{"shape" => "Description"}, "ExecutionStatus" => %{"shape" => "ExecutionStatus"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Status" => %{"shape" => "ChangeSetStatus"}, "StatusReason" => %{"shape" => "ChangeSetStatusReason"}}, "type" => "structure"}, "LastUpdatedTime" => %{"type" => "timestamp"}, "DeletionTime" => %{"type" => "timestamp"}, "OperationIdAlreadyExistsException" => %{"error" => %{"code" => "OperationIdAlreadyExistsException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "StackSet" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "Description" => %{"shape" => "Description"}, "Parameters" => %{"shape" => "Parameters"}, "StackSetId" => %{"shape" => "StackSetId"}, "StackSetName" => %{"shape" => "StackSetName"}, "Status" => %{"shape" => "StackSetStatus"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}}, "type" => "structure"}, "StackResourceSummaries" => %{"member" => %{"shape" => "StackResourceSummary"}, "type" => "list"}, "ChangeSetNameOrId" => %{"max" => 1600, "min" => 1, "pattern" => "[a-zA-Z][-a-zA-Z0-9]*|arn:[-a-zA-Z0-9:/]*", "type" => "string"}, "StackInstanceSummary" => %{"members" => %{"Account" => %{"shape" => "Account"}, "Region" => %{"shape" => "Region"}, "StackId" => %{"shape" => "StackId"}, "StackSetId" => %{"shape" => "StackSetId"}, "Status" => %{"shape" => "StackInstanceStatus"}, "StatusReason" => %{"shape" => "Reason"}}, "type" => "structure"}, "ChangeSetStatusReason" => %{"type" => "string"}, "LogicalResourceId" => %{"type" => "string"}, "NameAlreadyExistsException" => %{"error" => %{"code" => "NameAlreadyExistsException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeStacksInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackName"}}, "type" => "structure"}, "ClientRequestToken" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9][-a-zA-Z0-9]*", "type" => "string"}, "InvalidOperationException" => %{"error" => %{"code" => "InvalidOperationException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Parameters" => %{"member" => %{"shape" => "Parameter"}, "type" => "list"}, "OperationNotFoundException" => %{"error" => %{"code" => "OperationNotFoundException", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "NotificationARNs" => %{"max" => 5, "member" => %{"shape" => "NotificationARN"}, "type" => "list"}, "OutputValue" => %{"type" => "string"}, "RetainResources" => %{"member" => %{"shape" => "LogicalResourceId"}, "type" => "list"}, "EstimateTemplateCostOutput" => %{"members" => %{"Url" => %{"shape" => "Url"}}, "type" => "structure"}, "ParameterDeclaration" => %{"members" => %{"DefaultValue" => %{"shape" => "ParameterValue"}, "Description" => %{"shape" => "Description"}, "NoEcho" => %{"shape" => "NoEcho"}, "ParameterConstraints" => %{"shape" => "ParameterConstraints"}, "ParameterKey" => %{"shape" => "ParameterKey"}, "ParameterType" => %{"shape" => "ParameterType"}}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "type" => "string"}, "ResourceSignalStatus" => %{"enum" => ["SUCCESS", "FAILURE"], "type" => "string"}, "Replacement" => %{"enum" => ["True", "False", "Conditional"], "type" => "string"}, "ParameterDeclarations" => %{"member" => %{"shape" => "ParameterDeclaration"}, "type" => "list"}, "CreateStackSetOutput" => %{"members" => %{"StackSetId" => %{"shape" => "StackSetId"}}, "type" => "structure"}, "UpdateStackInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Parameters" => %{"shape" => "Parameters"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackName" => %{"shape" => "StackName"}, "StackPolicyBody" => %{"shape" => "StackPolicyBody"}, "StackPolicyDuringUpdateBody" => %{"shape" => "StackPolicyDuringUpdateBody"}, "StackPolicyDuringUpdateURL" => %{"shape" => "StackPolicyDuringUpdateURL"}, "StackPolicyURL" => %{"shape" => "StackPolicyURL"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "UsePreviousTemplate" => %{"shape" => "UsePreviousTemplate"}}, "required" => ["StackName"], "type" => "structure"}, "StackSetOperationSummaries" => %{"member" => %{"shape" => "StackSetOperationSummary"}, "type" => "list"}, "DescribeStackEventsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackName"}}, "type" => "structure"}, "ListStackResourcesInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "StackSetOperationStatus" => %{"enum" => ["RUNNING", "SUCCEEDED", "FAILED", "STOPPING", "STOPPED"], "type" => "string"}, "ValidateTemplateInput" => %{"members" => %{"TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "type" => "structure"}, "DescribeStackSetInput" => %{"members" => %{"StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "NoEcho" => %{"type" => "boolean"}, "UpdateStackOutput" => %{"members" => %{"StackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "UsePreviousValue" => %{"type" => "boolean"}, "StackInstanceNotFoundException" => %{"error" => %{"code" => "StackInstanceNotFoundException", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ResourceAttribute" => %{"enum" => ["Properties", "Metadata", "CreationPolicy", "UpdatePolicy", "DeletionPolicy", "Tags"], "type" => "string"}, "DescribeStackSetOperationInput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "OperationId"], "type" => "structure"}, "ResourceTargetDefinition" => %{"members" => %{"Attribute" => %{"shape" => "ResourceAttribute"}, "Name" => %{"shape" => "PropertyName"}, "RequiresRecreation" => %{"shape" => "RequiresRecreation"}}, "type" => "structure"}, "StackResourceSummary" => %{"members" => %{"LastUpdatedTimestamp" => %{"shape" => "Timestamp"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}}, "required" => ["LogicalResourceId", "ResourceType", "LastUpdatedTimestamp", "ResourceStatus"], "type" => "structure"}, "ResourceChange" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "Details" => %{"shape" => "ResourceChangeDetails"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "Replacement" => %{"shape" => "Replacement"}, "ResourceType" => %{"shape" => "ResourceType"}, "Scope" => %{"shape" => "Scope"}}, "type" => "structure"}, "ListChangeSetsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "ChangeSetSummaries"}}, "type" => "structure"}, "ChangeType" => %{"enum" => ["Resource"], "type" => "string"}, "Stacks" => %{"member" => %{"shape" => "Stack"}, "type" => "list"}, "StackSetNameOrId" => %{"min" => 1, "pattern" => "[a-zA-Z][-a-zA-Z0-9]*", "type" => "string"}, "Output" => %{"members" => %{"Description" => %{"shape" => "Description"}, "ExportName" => %{"shape" => "ExportName"}, "OutputKey" => %{"shape" => "OutputKey"}, "OutputValue" => %{"shape" => "OutputValue"}}, "type" => "structure"}, "DescribeStacksOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Stacks" => %{"shape" => "Stacks"}}, "type" => "structure"}, "DeleteChangeSetOutput" => %{"members" => %{}, "type" => "structure"}, "StackResources" => %{"member" => %{"shape" => "StackResource"}, "type" => "list"}, "ChangeSetSummaries" => %{"member" => %{"shape" => "ChangeSetSummary"}, "type" => "list"}, "StackSummary" => %{"members" => %{"CreationTime" => %{"shape" => "CreationTime"}, "DeletionTime" => %{"shape" => "DeletionTime"}, "LastUpdatedTime" => %{"shape" => "LastUpdatedTime"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "StackStatus" => %{"shape" => "StackStatus"}, "StackStatusReason" => %{"shape" => "StackStatusReason"}, "TemplateDescription" => %{"shape" => "TemplateDescription"}}, "required" => ["StackName", "CreationTime", "StackStatus"], "type" => "structure"}, "StackPolicyDuringUpdateBody" => %{"max" => 16384, "min" => 1, "type" => "string"}, "GetStackPolicyOutput" => %{"members" => %{"StackPolicyBody" => %{"shape" => "StackPolicyBody"}}, "type" => "structure"}, "GetTemplateInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "StackName" => %{"shape" => "StackName"}, "TemplateStage" => %{"shape" => "TemplateStage"}}, "type" => "structure"}, "OperationInProgressException" => %{"error" => %{"code" => "OperationInProgressException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreateStackInstancesInput" => %{"members" => %{"Accounts" => %{"shape" => "AccountList"}, "OperationId" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "Regions" => %{"shape" => "RegionList"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "Accounts", "Regions"], "type" => "structure"}, "NextToken" => %{"max" => 1024, "min" => 1, "type" => "string"}, "ExportValue" => %{"type" => "string"}, "RetainStacks" => %{"type" => "boolean"}, "GetStackPolicyInput" => %{"members" => %{"StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "DescribeStackInstanceOutput" => %{"members" => %{"StackInstance" => %{"shape" => "StackInstance"}}, "type" => "structure"}, "StackPolicyDuringUpdateURL" => %{"max" => 1350, "min" => 1, "type" => "string"}, "StackSummaries" => %{"member" => %{"shape" => "StackSummary"}, "type" => "list"}, "StackSetOperationAction" => %{"enum" => ["CREATE", "UPDATE", "DELETE"], "type" => "string"}, "ListImportsInput" => %{"members" => %{"ExportName" => %{"shape" => "ExportName"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["ExportName"], "type" => "structure"}, "FailureTolerancePercentage" => %{"max" => 100, "min" => 0, "type" => "integer"}, "DescribeChangeSetOutput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ChangeSetId" => %{"shape" => "ChangeSetId"}, "ChangeSetName" => %{"shape" => "ChangeSetName"}, "Changes" => %{"shape" => "Changes"}, "CreationTime" => %{"shape" => "CreationTime"}, "Description" => %{"shape" => "Description"}, "ExecutionStatus" => %{"shape" => "ExecutionStatus"}, "NextToken" => %{"shape" => "NextToken"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Parameters" => %{"shape" => "Parameters"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Status" => %{"shape" => "ChangeSetStatus"}, "StatusReason" => %{"shape" => "ChangeSetStatusReason"}, "Tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "SignalResourceInput" => %{"members" => %{"LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "StackName" => %{"shape" => "StackNameOrId"}, "Status" => %{"shape" => "ResourceSignalStatus"}, "UniqueId" => %{"shape" => "ResourceSignalUniqueId"}}, "required" => ["StackName", "LogicalResourceId", "UniqueId", "Status"], "type" => "structure"}, "StackStatus" => %{"enum" => ["CREATE_IN_PROGRESS", "CREATE_FAILED", "CREATE_COMPLETE", "ROLLBACK_IN_PROGRESS", "ROLLBACK_FAILED", "ROLLBACK_COMPLETE", "DELETE_IN_PROGRESS", "DELETE_FAILED", "DELETE_COMPLETE", "UPDATE_IN_PROGRESS", "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS", "UPDATE_COMPLETE", "UPDATE_ROLLBACK_IN_PROGRESS", "UPDATE_ROLLBACK_FAILED", "UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS", "UPDATE_ROLLBACK_COMPLETE", "REVIEW_IN_PROGRESS"], "type" => "string"}, "CapabilitiesReason" => %{"type" => "string"}, "TransformName" => %{"type" => "string"}, "PhysicalResourceId" => %{"type" => "string"}, "TemplateStage" => %{"enum" => ["Original", "Processed"], "type" => "string"}}
+		%{"Capabilities" => %{"member" => %{"shape" => "Capability"}, "type" => "list"}, "Url" => %{"type" => "string"}, "AllowedValue" => %{"type" => "string"}, "RegionList" => %{"member" => %{"shape" => "Region"}, "type" => "list"}, "StackName" => %{"type" => "string"}, "CreateStackInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "DisableRollback" => %{"shape" => "DisableRollback"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "OnFailure" => %{"shape" => "OnFailure"}, "Parameters" => %{"shape" => "Parameters"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackName" => %{"shape" => "StackName"}, "StackPolicyBody" => %{"shape" => "StackPolicyBody"}, "StackPolicyURL" => %{"shape" => "StackPolicyURL"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "TimeoutInMinutes" => %{"shape" => "TimeoutMinutes"}}, "required" => ["StackName"], "type" => "structure"}, "StackEvent" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "EventId" => %{"shape" => "EventId"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceProperties" => %{"shape" => "ResourceProperties"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Timestamp" => %{"shape" => "Timestamp"}}, "required" => ["StackId", "EventId", "StackName", "Timestamp"], "type" => "structure"}, "ChangeAction" => %{"enum" => ["Add", "Modify", "Remove"], "type" => "string"}, "ParameterConstraints" => %{"members" => %{"AllowedValues" => %{"shape" => "AllowedValues"}}, "type" => "structure"}, "ExecutionStatus" => %{"enum" => ["UNAVAILABLE", "AVAILABLE", "EXECUTE_IN_PROGRESS", "EXECUTE_COMPLETE", "EXECUTE_FAILED", "OBSOLETE"], "type" => "string"}, "ResourceType" => %{"max" => 256, "min" => 1, "type" => "string"}, "ResourceSignalUniqueId" => %{"max" => 64, "min" => 1, "type" => "string"}, "Imports" => %{"member" => %{"shape" => "StackName"}, "type" => "list"}, "Parameter" => %{"members" => %{"ParameterKey" => %{"shape" => "ParameterKey"}, "ParameterValue" => %{"shape" => "ParameterValue"}, "UsePreviousValue" => %{"shape" => "UsePreviousValue"}}, "type" => "structure"}, "ResourceTypes" => %{"member" => %{"shape" => "ResourceType"}, "type" => "list"}, "ListStackSetsInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "Status" => %{"shape" => "StackSetStatus"}}, "type" => "structure"}, "ChangeSetNotFoundException" => %{"error" => %{"code" => "ChangeSetNotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ListStackResourcesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackResourceSummaries" => %{"shape" => "StackResourceSummaries"}}, "type" => "structure"}, "ParameterType" => %{"type" => "string"}, "CausingEntity" => %{"type" => "string"}, "ListStackSetOperationsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackSetOperationSummaries"}}, "type" => "structure"}, "AllowedValues" => %{"member" => %{"shape" => "AllowedValue"}, "type" => "list"}, "CreateStackInstancesOutput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "StackSetNotFoundException" => %{"error" => %{"code" => "StackSetNotFoundException", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreationTime" => %{"type" => "timestamp"}, "Type" => %{"type" => "string"}, "LimitValue" => %{"type" => "integer"}, "StackEvents" => %{"member" => %{"shape" => "StackEvent"}, "type" => "list"}, "RollbackConfiguration" => %{"members" => %{"MonitoringTimeInMinutes" => %{"shape" => "MonitoringTimeInMinutes"}, "RollbackTriggers" => %{"shape" => "RollbackTriggers"}}, "type" => "structure"}, "DescribeStackSetOutput" => %{"members" => %{"StackSet" => %{"shape" => "StackSet"}}, "type" => "structure"}, "RetainStacksNullable" => %{"type" => "boolean"}, "ListStackInstancesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackInstanceSummaries"}}, "type" => "structure"}, "ContinueUpdateRollbackOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeStackResourcesOutput" => %{"members" => %{"StackResources" => %{"shape" => "StackResources"}}, "type" => "structure"}, "DeleteStackSetOutput" => %{"members" => %{}, "type" => "structure"}, "PropertyName" => %{"type" => "string"}, "Scope" => %{"member" => %{"shape" => "ResourceAttribute"}, "type" => "list"}, "DeleteChangeSetInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["ChangeSetName"], "type" => "structure"}, "ExportName" => %{"type" => "string"}, "OnFailure" => %{"enum" => ["DO_NOTHING", "ROLLBACK", "DELETE"], "type" => "string"}, "Changes" => %{"member" => %{"shape" => "Change"}, "type" => "list"}, "Export" => %{"members" => %{"ExportingStackId" => %{"shape" => "StackId"}, "Name" => %{"shape" => "ExportName"}, "Value" => %{"shape" => "ExportValue"}}, "type" => "structure"}, "ChangeSetType" => %{"enum" => ["CREATE", "UPDATE"], "type" => "string"}, "DescribeStackEventsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackEvents" => %{"shape" => "StackEvents"}}, "type" => "structure"}, "InvalidChangeSetStatusException" => %{"error" => %{"code" => "InvalidChangeSetStatus", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Metadata" => %{"type" => "string"}, "StackSetNotEmptyException" => %{"error" => %{"code" => "StackSetNotEmptyException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ChangeSetStatus" => %{"enum" => ["CREATE_PENDING", "CREATE_IN_PROGRESS", "CREATE_COMPLETE", "DELETE_COMPLETE", "FAILED"], "type" => "string"}, "StackStatusFilter" => %{"member" => %{"shape" => "StackStatus"}, "type" => "list"}, "EstimateTemplateCostInput" => %{"members" => %{"Parameters" => %{"shape" => "Parameters"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "type" => "structure"}, "StackSetOperationResultStatus" => %{"enum" => ["PENDING", "RUNNING", "SUCCEEDED", "FAILED", "CANCELLED"], "type" => "string"}, "AccountGateStatusReason" => %{"type" => "string"}, "AccountList" => %{"member" => %{"shape" => "Account"}, "type" => "list"}, "NotificationARN" => %{"type" => "string"}, "RequiresRecreation" => %{"enum" => ["Never", "Conditionally", "Always"], "type" => "string"}, "StageList" => %{"member" => %{"shape" => "TemplateStage"}, "type" => "list"}, "ClientToken" => %{"max" => 128, "min" => 1, "type" => "string"}, "StackStatusReason" => %{"type" => "string"}, "TimeoutMinutes" => %{"min" => 1, "type" => "integer"}, "DeleteStackInstancesOutput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "StackSetOperationPreferences" => %{"members" => %{"FailureToleranceCount" => %{"shape" => "FailureToleranceCount"}, "FailureTolerancePercentage" => %{"shape" => "FailureTolerancePercentage"}, "MaxConcurrentCount" => %{"shape" => "MaxConcurrentCount"}, "MaxConcurrentPercentage" => %{"shape" => "MaxConcurrentPercentage"}, "RegionOrder" => %{"shape" => "RegionList"}}, "type" => "structure"}, "StackInstanceSummaries" => %{"member" => %{"shape" => "StackInstanceSummary"}, "type" => "list"}, "DeleteStackInput" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "RetainResources" => %{"shape" => "RetainResources"}, "RoleARN" => %{"shape" => "RoleARN"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "StaleRequestException" => %{"error" => %{"code" => "StaleRequestException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ListImportsOutput" => %{"members" => %{"Imports" => %{"shape" => "Imports"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Account" => %{"pattern" => "[0-9]{12}", "type" => "string"}, "EventId" => %{"type" => "string"}, "ContinueUpdateRollbackInput" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "ResourcesToSkip" => %{"shape" => "ResourcesToSkip"}, "RoleARN" => %{"shape" => "RoleARN"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["StackName"], "type" => "structure"}, "Reason" => %{"type" => "string"}, "TransformsList" => %{"member" => %{"shape" => "TransformName"}, "type" => "list"}, "CreateChangeSetInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ChangeSetName" => %{"shape" => "ChangeSetName"}, "ChangeSetType" => %{"shape" => "ChangeSetType"}, "ClientToken" => %{"shape" => "ClientToken"}, "Description" => %{"shape" => "Description"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Parameters" => %{"shape" => "Parameters"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackName" => %{"shape" => "StackNameOrId"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "UsePreviousTemplate" => %{"shape" => "UsePreviousTemplate"}}, "required" => ["StackName", "ChangeSetName"], "type" => "structure"}, "Stack" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ChangeSetId" => %{"shape" => "ChangeSetId"}, "CreationTime" => %{"shape" => "CreationTime"}, "Description" => %{"shape" => "Description"}, "DisableRollback" => %{"shape" => "DisableRollback"}, "LastUpdatedTime" => %{"shape" => "LastUpdatedTime"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Outputs" => %{"shape" => "Outputs"}, "Parameters" => %{"shape" => "Parameters"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "StackStatus" => %{"shape" => "StackStatus"}, "StackStatusReason" => %{"shape" => "StackStatusReason"}, "Tags" => %{"shape" => "Tags"}, "TimeoutInMinutes" => %{"shape" => "TimeoutMinutes"}}, "required" => ["StackName", "CreationTime", "StackStatus"], "type" => "structure"}, "ExecuteChangeSetInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["ChangeSetName"], "type" => "structure"}, "RoleARN" => %{"max" => 2048, "min" => 20, "type" => "string"}, "Region" => %{"type" => "string"}, "AlreadyExistsException" => %{"error" => %{"code" => "AlreadyExistsException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ParameterValue" => %{"type" => "string"}, "ListStackSetOperationsInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "StackId" => %{"type" => "string"}, "GetTemplateSummaryInput" => %{"members" => %{"StackName" => %{"shape" => "StackNameOrId"}, "StackSetName" => %{"shape" => "StackSetNameOrId"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "type" => "structure"}, "ChangeSource" => %{"enum" => ["ResourceReference", "ParameterReference", "ResourceAttribute", "DirectModification", "Automatic"], "type" => "string"}, "ListExportsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Description" => %{"max" => 1024, "min" => 1, "type" => "string"}, "CreateChangeSetOutput" => %{"members" => %{"Id" => %{"shape" => "ChangeSetId"}, "StackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "Version" => %{"type" => "string"}, "ResourceProperties" => %{"type" => "string"}, "AccountLimitList" => %{"member" => %{"shape" => "AccountLimit"}, "type" => "list"}, "TemplateParameters" => %{"member" => %{"shape" => "TemplateParameter"}, "type" => "list"}, "RollbackTrigger" => %{"members" => %{"Arn" => %{"shape" => "Arn"}, "Type" => %{"shape" => "Type"}}, "required" => ["Arn", "Type"], "type" => "structure"}, "UsePreviousTemplate" => %{"type" => "boolean"}, "CreatedButModifiedException" => %{"error" => %{"code" => "CreatedButModifiedException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ResourceChangeDetail" => %{"members" => %{"CausingEntity" => %{"shape" => "CausingEntity"}, "ChangeSource" => %{"shape" => "ChangeSource"}, "Evaluation" => %{"shape" => "EvaluationType"}, "Target" => %{"shape" => "ResourceTargetDefinition"}}, "type" => "structure"}, "StackResourceDetail" => %{"members" => %{"Description" => %{"shape" => "Description"}, "LastUpdatedTimestamp" => %{"shape" => "Timestamp"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "Metadata" => %{"shape" => "Metadata"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["LogicalResourceId", "ResourceType", "LastUpdatedTimestamp", "ResourceStatus"], "type" => "structure"}, "ValidateTemplateOutput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "CapabilitiesReason" => %{"shape" => "CapabilitiesReason"}, "DeclaredTransforms" => %{"shape" => "TransformsList"}, "Description" => %{"shape" => "Description"}, "Parameters" => %{"shape" => "TemplateParameters"}}, "type" => "structure"}, "StackSetOperationResultSummary" => %{"members" => %{"Account" => %{"shape" => "Account"}, "AccountGateResult" => %{"shape" => "AccountGateResult"}, "Region" => %{"shape" => "Region"}, "Status" => %{"shape" => "StackSetOperationResultStatus"}, "StatusReason" => %{"shape" => "Reason"}}, "type" => "structure"}, "AccountLimit" => %{"members" => %{"Name" => %{"shape" => "LimitName"}, "Value" => %{"shape" => "LimitValue"}}, "type" => "structure"}, "Tags" => %{"max" => 50, "member" => %{"shape" => "Tag"}, "type" => "list"}, "StackSetSummaries" => %{"member" => %{"shape" => "StackSetSummary"}, "type" => "list"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "StackSetId" => %{"type" => "string"}, "UpdateStackSetOutput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "StackSetOperationResultSummaries" => %{"member" => %{"shape" => "StackSetOperationResultSummary"}, "type" => "list"}, "DescribeChangeSetInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["ChangeSetName"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "ListStackSetsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackSetSummaries"}}, "type" => "structure"}, "CreateStackOutput" => %{"members" => %{"StackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "ExecuteChangeSetOutput" => %{"members" => %{}, "type" => "structure"}, "StackPolicyBody" => %{"max" => 16384, "min" => 1, "type" => "string"}, "GetTemplateSummaryOutput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "CapabilitiesReason" => %{"shape" => "CapabilitiesReason"}, "DeclaredTransforms" => %{"shape" => "TransformsList"}, "Description" => %{"shape" => "Description"}, "Metadata" => %{"shape" => "Metadata"}, "Parameters" => %{"shape" => "ParameterDeclarations"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "Version" => %{"shape" => "Version"}}, "type" => "structure"}, "StackResource" => %{"members" => %{"Description" => %{"shape" => "Description"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Timestamp" => %{"shape" => "Timestamp"}}, "required" => ["LogicalResourceId", "ResourceType", "Timestamp", "ResourceStatus"], "type" => "structure"}, "MaxResults" => %{"max" => 100, "min" => 1, "type" => "integer"}, "TagValue" => %{"max" => 256, "min" => 1, "type" => "string"}, "TemplateBody" => %{"min" => 1, "type" => "string"}, "MaxConcurrentCount" => %{"min" => 1, "type" => "integer"}, "DescribeStackResourceOutput" => %{"members" => %{"StackResourceDetail" => %{"shape" => "StackResourceDetail"}}, "type" => "structure"}, "StopStackSetOperationInput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "OperationId"], "type" => "structure"}, "StackSetOperationSummary" => %{"members" => %{"Action" => %{"shape" => "StackSetOperationAction"}, "CreationTimestamp" => %{"shape" => "Timestamp"}, "EndTimestamp" => %{"shape" => "Timestamp"}, "OperationId" => %{"shape" => "ClientRequestToken"}, "Status" => %{"shape" => "StackSetOperationStatus"}}, "type" => "structure"}, "StackSetName" => %{"type" => "string"}, "ListExportsOutput" => %{"members" => %{"Exports" => %{"shape" => "Exports"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Arn" => %{"type" => "string"}, "StackSetOperation" => %{"members" => %{"Action" => %{"shape" => "StackSetOperationAction"}, "CreationTimestamp" => %{"shape" => "Timestamp"}, "EndTimestamp" => %{"shape" => "Timestamp"}, "OperationId" => %{"shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "RetainStacks" => %{"shape" => "RetainStacksNullable"}, "StackSetId" => %{"shape" => "StackSetId"}, "Status" => %{"shape" => "StackSetOperationStatus"}}, "type" => "structure"}, "ChangeSetId" => %{"min" => 1, "pattern" => "arn:[-a-zA-Z0-9:/]*", "type" => "string"}, "ListStackInstancesInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "StackInstanceAccount" => %{"shape" => "Account"}, "StackInstanceRegion" => %{"shape" => "Region"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "StackSetStatus" => %{"enum" => ["ACTIVE", "DELETED"], "type" => "string"}, "ListChangeSetsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackNameOrId"}}, "required" => ["StackName"], "type" => "structure"}, "ParameterKey" => %{"type" => "string"}, "DisableRollback" => %{"type" => "boolean"}, "InsufficientCapabilitiesException" => %{"error" => %{"code" => "InsufficientCapabilitiesException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TemplateParameter" => %{"members" => %{"DefaultValue" => %{"shape" => "ParameterValue"}, "Description" => %{"shape" => "Description"}, "NoEcho" => %{"shape" => "NoEcho"}, "ParameterKey" => %{"shape" => "ParameterKey"}}, "type" => "structure"}, "DescribeAccountLimitsOutput" => %{"members" => %{"AccountLimits" => %{"shape" => "AccountLimitList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "StackInstance" => %{"members" => %{"Account" => %{"shape" => "Account"}, "Region" => %{"shape" => "Region"}, "StackId" => %{"shape" => "StackId"}, "StackSetId" => %{"shape" => "StackSetId"}, "Status" => %{"shape" => "StackInstanceStatus"}, "StatusReason" => %{"shape" => "Reason"}}, "type" => "structure"}, "ResourceStatus" => %{"enum" => ["CREATE_IN_PROGRESS", "CREATE_FAILED", "CREATE_COMPLETE", "DELETE_IN_PROGRESS", "DELETE_FAILED", "DELETE_COMPLETE", "DELETE_SKIPPED", "UPDATE_IN_PROGRESS", "UPDATE_FAILED", "UPDATE_COMPLETE"], "type" => "string"}, "UpdateStackSetInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "Description" => %{"shape" => "Description"}, "OperationId" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "Parameters" => %{"shape" => "Parameters"}, "StackSetName" => %{"shape" => "StackSetName"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "UsePreviousTemplate" => %{"shape" => "UsePreviousTemplate"}}, "required" => ["StackSetName"], "type" => "structure"}, "TokenAlreadyExistsException" => %{"error" => %{"code" => "TokenAlreadyExistsException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ChangeSetName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z][-a-zA-Z0-9]*", "type" => "string"}, "MaxConcurrentPercentage" => %{"max" => 100, "min" => 1, "type" => "integer"}, "LimitExceededException" => %{"error" => %{"code" => "LimitExceededException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AccountGateStatus" => %{"enum" => ["SUCCEEDED", "FAILED", "SKIPPED"], "type" => "string"}, "DescribeStackInstanceInput" => %{"members" => %{"StackInstanceAccount" => %{"shape" => "Account"}, "StackInstanceRegion" => %{"shape" => "Region"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "StackInstanceAccount", "StackInstanceRegion"], "type" => "structure"}, "Change" => %{"members" => %{"ResourceChange" => %{"shape" => "ResourceChange"}, "Type" => %{"shape" => "ChangeType"}}, "type" => "structure"}, "EvaluationType" => %{"enum" => ["Static", "Dynamic"], "type" => "string"}, "SetStackPolicyInput" => %{"members" => %{"StackName" => %{"shape" => "StackName"}, "StackPolicyBody" => %{"shape" => "StackPolicyBody"}, "StackPolicyURL" => %{"shape" => "StackPolicyURL"}}, "required" => ["StackName"], "type" => "structure"}, "DescribeAccountLimitsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "StackPolicyURL" => %{"max" => 1350, "min" => 1, "type" => "string"}, "CancelUpdateStackInput" => %{"members" => %{"ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "ResourceStatusReason" => %{"type" => "string"}, "FailureToleranceCount" => %{"min" => 0, "type" => "integer"}, "StackInstanceStatus" => %{"enum" => ["CURRENT", "OUTDATED", "INOPERABLE"], "type" => "string"}, "CreateStackSetInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ClientRequestToken" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "Description" => %{"shape" => "Description"}, "Parameters" => %{"shape" => "Parameters"}, "StackSetName" => %{"shape" => "StackSetName"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "required" => ["StackSetName"], "type" => "structure"}, "RollbackTriggers" => %{"max" => 5, "member" => %{"shape" => "RollbackTrigger"}, "type" => "list"}, "LimitName" => %{"type" => "string"}, "ListStackSetOperationResultsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "StackSetOperationResultSummaries"}}, "type" => "structure"}, "StackNameOrId" => %{"min" => 1, "pattern" => "([a-zA-Z][-a-zA-Z0-9]*)|(arn:\\b(aws|aws-us-gov|aws-cn)\\b:[-a-zA-Z0-9:/._+]*)", "type" => "string"}, "DescribeStackSetOperationOutput" => %{"members" => %{"StackSetOperation" => %{"shape" => "StackSetOperation"}}, "type" => "structure"}, "OutputKey" => %{"type" => "string"}, "StackSetSummary" => %{"members" => %{"Description" => %{"shape" => "Description"}, "StackSetId" => %{"shape" => "StackSetId"}, "StackSetName" => %{"shape" => "StackSetName"}, "Status" => %{"shape" => "StackSetStatus"}}, "type" => "structure"}, "ListStacksInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackStatusFilter" => %{"shape" => "StackStatusFilter"}}, "type" => "structure"}, "StopStackSetOperationOutput" => %{"members" => %{}, "type" => "structure"}, "ResourceToSkip" => %{"pattern" => "[a-zA-Z0-9]+|[a-zA-Z][-a-zA-Z0-9]*\\.[a-zA-Z0-9]+", "type" => "string"}, "DeleteStackSetInput" => %{"members" => %{"StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "ListStacksOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackSummaries" => %{"shape" => "StackSummaries"}}, "type" => "structure"}, "GetTemplateOutput" => %{"members" => %{"StagesAvailable" => %{"shape" => "StageList"}, "TemplateBody" => %{"shape" => "TemplateBody"}}, "type" => "structure"}, "TemplateDescription" => %{"type" => "string"}, "Capability" => %{"enum" => ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"], "type" => "string"}, "ResourcesToSkip" => %{"member" => %{"shape" => "ResourceToSkip"}, "type" => "list"}, "DescribeStackResourceInput" => %{"members" => %{"LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName", "LogicalResourceId"], "type" => "structure"}, "Exports" => %{"member" => %{"shape" => "Export"}, "type" => "list"}, "Outputs" => %{"member" => %{"shape" => "Output"}, "type" => "list"}, "DescribeStackResourcesInput" => %{"members" => %{"LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "StackName" => %{"shape" => "StackName"}}, "type" => "structure"}, "ListStackSetOperationResultsInput" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "OperationId" => %{"shape" => "ClientRequestToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "OperationId"], "type" => "structure"}, "MonitoringTimeInMinutes" => %{"max" => 180, "min" => 0, "type" => "integer"}, "AccountGateResult" => %{"members" => %{"Status" => %{"shape" => "AccountGateStatus"}, "StatusReason" => %{"shape" => "AccountGateStatusReason"}}, "type" => "structure"}, "ResourceChangeDetails" => %{"member" => %{"shape" => "ResourceChangeDetail"}, "type" => "list"}, "DeleteStackInstancesInput" => %{"members" => %{"Accounts" => %{"shape" => "AccountList"}, "OperationId" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "Regions" => %{"shape" => "RegionList"}, "RetainStacks" => %{"shape" => "RetainStacks"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "Accounts", "Regions", "RetainStacks"], "type" => "structure"}, "TemplateURL" => %{"max" => 1024, "min" => 1, "type" => "string"}, "ChangeSetSummary" => %{"members" => %{"ChangeSetId" => %{"shape" => "ChangeSetId"}, "ChangeSetName" => %{"shape" => "ChangeSetName"}, "CreationTime" => %{"shape" => "CreationTime"}, "Description" => %{"shape" => "Description"}, "ExecutionStatus" => %{"shape" => "ExecutionStatus"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Status" => %{"shape" => "ChangeSetStatus"}, "StatusReason" => %{"shape" => "ChangeSetStatusReason"}}, "type" => "structure"}, "LastUpdatedTime" => %{"type" => "timestamp"}, "DeletionTime" => %{"type" => "timestamp"}, "OperationIdAlreadyExistsException" => %{"error" => %{"code" => "OperationIdAlreadyExistsException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "StackSet" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "Description" => %{"shape" => "Description"}, "Parameters" => %{"shape" => "Parameters"}, "StackSetId" => %{"shape" => "StackSetId"}, "StackSetName" => %{"shape" => "StackSetName"}, "Status" => %{"shape" => "StackSetStatus"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}}, "type" => "structure"}, "StackResourceSummaries" => %{"member" => %{"shape" => "StackResourceSummary"}, "type" => "list"}, "ChangeSetNameOrId" => %{"max" => 1600, "min" => 1, "pattern" => "[a-zA-Z][-a-zA-Z0-9]*|arn:[-a-zA-Z0-9:/]*", "type" => "string"}, "StackInstanceSummary" => %{"members" => %{"Account" => %{"shape" => "Account"}, "Region" => %{"shape" => "Region"}, "StackId" => %{"shape" => "StackId"}, "StackSetId" => %{"shape" => "StackSetId"}, "Status" => %{"shape" => "StackInstanceStatus"}, "StatusReason" => %{"shape" => "Reason"}}, "type" => "structure"}, "ChangeSetStatusReason" => %{"type" => "string"}, "LogicalResourceId" => %{"type" => "string"}, "NameAlreadyExistsException" => %{"error" => %{"code" => "NameAlreadyExistsException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeStacksInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackName"}}, "type" => "structure"}, "ClientRequestToken" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9][-a-zA-Z0-9]*", "type" => "string"}, "InvalidOperationException" => %{"error" => %{"code" => "InvalidOperationException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Parameters" => %{"member" => %{"shape" => "Parameter"}, "type" => "list"}, "OperationNotFoundException" => %{"error" => %{"code" => "OperationNotFoundException", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "NotificationARNs" => %{"max" => 5, "member" => %{"shape" => "NotificationARN"}, "type" => "list"}, "OutputValue" => %{"type" => "string"}, "RetainResources" => %{"member" => %{"shape" => "LogicalResourceId"}, "type" => "list"}, "EstimateTemplateCostOutput" => %{"members" => %{"Url" => %{"shape" => "Url"}}, "type" => "structure"}, "ParameterDeclaration" => %{"members" => %{"DefaultValue" => %{"shape" => "ParameterValue"}, "Description" => %{"shape" => "Description"}, "NoEcho" => %{"shape" => "NoEcho"}, "ParameterConstraints" => %{"shape" => "ParameterConstraints"}, "ParameterKey" => %{"shape" => "ParameterKey"}, "ParameterType" => %{"shape" => "ParameterType"}}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "type" => "string"}, "ResourceSignalStatus" => %{"enum" => ["SUCCESS", "FAILURE"], "type" => "string"}, "Replacement" => %{"enum" => ["True", "False", "Conditional"], "type" => "string"}, "ParameterDeclarations" => %{"member" => %{"shape" => "ParameterDeclaration"}, "type" => "list"}, "CreateStackSetOutput" => %{"members" => %{"StackSetId" => %{"shape" => "StackSetId"}}, "type" => "structure"}, "UpdateStackInput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ClientRequestToken" => %{"shape" => "ClientRequestToken"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Parameters" => %{"shape" => "Parameters"}, "ResourceTypes" => %{"shape" => "ResourceTypes"}, "RoleARN" => %{"shape" => "RoleARN"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackName" => %{"shape" => "StackName"}, "StackPolicyBody" => %{"shape" => "StackPolicyBody"}, "StackPolicyDuringUpdateBody" => %{"shape" => "StackPolicyDuringUpdateBody"}, "StackPolicyDuringUpdateURL" => %{"shape" => "StackPolicyDuringUpdateURL"}, "StackPolicyURL" => %{"shape" => "StackPolicyURL"}, "Tags" => %{"shape" => "Tags"}, "TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}, "UsePreviousTemplate" => %{"shape" => "UsePreviousTemplate"}}, "required" => ["StackName"], "type" => "structure"}, "StackSetOperationSummaries" => %{"member" => %{"shape" => "StackSetOperationSummary"}, "type" => "list"}, "DescribeStackEventsInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackName"}}, "type" => "structure"}, "ListStackResourcesInput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "StackSetOperationStatus" => %{"enum" => ["RUNNING", "SUCCEEDED", "FAILED", "STOPPING", "STOPPED"], "type" => "string"}, "ValidateTemplateInput" => %{"members" => %{"TemplateBody" => %{"shape" => "TemplateBody"}, "TemplateURL" => %{"shape" => "TemplateURL"}}, "type" => "structure"}, "DescribeStackSetInput" => %{"members" => %{"StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName"], "type" => "structure"}, "NoEcho" => %{"type" => "boolean"}, "UpdateStackOutput" => %{"members" => %{"StackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "UsePreviousValue" => %{"type" => "boolean"}, "StackInstanceNotFoundException" => %{"error" => %{"code" => "StackInstanceNotFoundException", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ResourceAttribute" => %{"enum" => ["Properties", "Metadata", "CreationPolicy", "UpdatePolicy", "DeletionPolicy", "Tags"], "type" => "string"}, "DescribeStackSetOperationInput" => %{"members" => %{"OperationId" => %{"shape" => "ClientRequestToken"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "OperationId"], "type" => "structure"}, "ResourceTargetDefinition" => %{"members" => %{"Attribute" => %{"shape" => "ResourceAttribute"}, "Name" => %{"shape" => "PropertyName"}, "RequiresRecreation" => %{"shape" => "RequiresRecreation"}}, "type" => "structure"}, "StackResourceSummary" => %{"members" => %{"LastUpdatedTimestamp" => %{"shape" => "Timestamp"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "ResourceStatus" => %{"shape" => "ResourceStatus"}, "ResourceStatusReason" => %{"shape" => "ResourceStatusReason"}, "ResourceType" => %{"shape" => "ResourceType"}}, "required" => ["LogicalResourceId", "ResourceType", "LastUpdatedTimestamp", "ResourceStatus"], "type" => "structure"}, "ResourceChange" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "Details" => %{"shape" => "ResourceChangeDetails"}, "LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "PhysicalResourceId" => %{"shape" => "PhysicalResourceId"}, "Replacement" => %{"shape" => "Replacement"}, "ResourceType" => %{"shape" => "ResourceType"}, "Scope" => %{"shape" => "Scope"}}, "type" => "structure"}, "ListChangeSetsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Summaries" => %{"shape" => "ChangeSetSummaries"}}, "type" => "structure"}, "ChangeType" => %{"enum" => ["Resource"], "type" => "string"}, "Stacks" => %{"member" => %{"shape" => "Stack"}, "type" => "list"}, "StackSetNameOrId" => %{"min" => 1, "pattern" => "[a-zA-Z][-a-zA-Z0-9]*", "type" => "string"}, "Output" => %{"members" => %{"Description" => %{"shape" => "Description"}, "ExportName" => %{"shape" => "ExportName"}, "OutputKey" => %{"shape" => "OutputKey"}, "OutputValue" => %{"shape" => "OutputValue"}}, "type" => "structure"}, "DescribeStacksOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Stacks" => %{"shape" => "Stacks"}}, "type" => "structure"}, "DeleteChangeSetOutput" => %{"members" => %{}, "type" => "structure"}, "StackResources" => %{"member" => %{"shape" => "StackResource"}, "type" => "list"}, "ChangeSetSummaries" => %{"member" => %{"shape" => "ChangeSetSummary"}, "type" => "list"}, "StackSummary" => %{"members" => %{"CreationTime" => %{"shape" => "CreationTime"}, "DeletionTime" => %{"shape" => "DeletionTime"}, "LastUpdatedTime" => %{"shape" => "LastUpdatedTime"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "StackStatus" => %{"shape" => "StackStatus"}, "StackStatusReason" => %{"shape" => "StackStatusReason"}, "TemplateDescription" => %{"shape" => "TemplateDescription"}}, "required" => ["StackName", "CreationTime", "StackStatus"], "type" => "structure"}, "StackPolicyDuringUpdateBody" => %{"max" => 16384, "min" => 1, "type" => "string"}, "GetStackPolicyOutput" => %{"members" => %{"StackPolicyBody" => %{"shape" => "StackPolicyBody"}}, "type" => "structure"}, "GetTemplateInput" => %{"members" => %{"ChangeSetName" => %{"shape" => "ChangeSetNameOrId"}, "StackName" => %{"shape" => "StackName"}, "TemplateStage" => %{"shape" => "TemplateStage"}}, "type" => "structure"}, "OperationInProgressException" => %{"error" => %{"code" => "OperationInProgressException", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreateStackInstancesInput" => %{"members" => %{"Accounts" => %{"shape" => "AccountList"}, "OperationId" => %{"idempotencyToken" => true, "shape" => "ClientRequestToken"}, "OperationPreferences" => %{"shape" => "StackSetOperationPreferences"}, "Regions" => %{"shape" => "RegionList"}, "StackSetName" => %{"shape" => "StackSetName"}}, "required" => ["StackSetName", "Accounts", "Regions"], "type" => "structure"}, "NextToken" => %{"max" => 1024, "min" => 1, "type" => "string"}, "ExportValue" => %{"type" => "string"}, "RetainStacks" => %{"type" => "boolean"}, "GetStackPolicyInput" => %{"members" => %{"StackName" => %{"shape" => "StackName"}}, "required" => ["StackName"], "type" => "structure"}, "DescribeStackInstanceOutput" => %{"members" => %{"StackInstance" => %{"shape" => "StackInstance"}}, "type" => "structure"}, "StackPolicyDuringUpdateURL" => %{"max" => 1350, "min" => 1, "type" => "string"}, "StackSummaries" => %{"member" => %{"shape" => "StackSummary"}, "type" => "list"}, "StackSetOperationAction" => %{"enum" => ["CREATE", "UPDATE", "DELETE"], "type" => "string"}, "ListImportsInput" => %{"members" => %{"ExportName" => %{"shape" => "ExportName"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["ExportName"], "type" => "structure"}, "FailureTolerancePercentage" => %{"max" => 100, "min" => 0, "type" => "integer"}, "DescribeChangeSetOutput" => %{"members" => %{"Capabilities" => %{"shape" => "Capabilities"}, "ChangeSetId" => %{"shape" => "ChangeSetId"}, "ChangeSetName" => %{"shape" => "ChangeSetName"}, "Changes" => %{"shape" => "Changes"}, "CreationTime" => %{"shape" => "CreationTime"}, "Description" => %{"shape" => "Description"}, "ExecutionStatus" => %{"shape" => "ExecutionStatus"}, "NextToken" => %{"shape" => "NextToken"}, "NotificationARNs" => %{"shape" => "NotificationARNs"}, "Parameters" => %{"shape" => "Parameters"}, "RollbackConfiguration" => %{"shape" => "RollbackConfiguration"}, "StackId" => %{"shape" => "StackId"}, "StackName" => %{"shape" => "StackName"}, "Status" => %{"shape" => "ChangeSetStatus"}, "StatusReason" => %{"shape" => "ChangeSetStatusReason"}, "Tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "SignalResourceInput" => %{"members" => %{"LogicalResourceId" => %{"shape" => "LogicalResourceId"}, "StackName" => %{"shape" => "StackNameOrId"}, "Status" => %{"shape" => "ResourceSignalStatus"}, "UniqueId" => %{"shape" => "ResourceSignalUniqueId"}}, "required" => ["StackName", "LogicalResourceId", "UniqueId", "Status"], "type" => "structure"}, "StackStatus" => %{"enum" => ["CREATE_IN_PROGRESS", "CREATE_FAILED", "CREATE_COMPLETE", "ROLLBACK_IN_PROGRESS", "ROLLBACK_FAILED", "ROLLBACK_COMPLETE", "DELETE_IN_PROGRESS", "DELETE_FAILED", "DELETE_COMPLETE", "UPDATE_IN_PROGRESS", "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS", "UPDATE_COMPLETE", "UPDATE_ROLLBACK_IN_PROGRESS", "UPDATE_ROLLBACK_FAILED", "UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS", "UPDATE_ROLLBACK_COMPLETE", "REVIEW_IN_PROGRESS"], "type" => "string"}, "CapabilitiesReason" => %{"type" => "string"}, "TransformName" => %{"type" => "string"}, "PhysicalResourceId" => %{"type" => "string"}, "TemplateStage" => %{"enum" => ["Original", "Processed"], "type" => "string"}}
   end
 end

@@ -2,24 +2,19 @@ defmodule Baiji.Operation do
   defstruct input:              %{},          # Operation inputs (POST/PUT body, etc)
             options:            [],           # Additional options applied to the operation
             action:             nil,          # Action name "DescribeInstances", etc.
-            service:            nil,          # AWS service name (ec2, apigateway, etc.)
-            type:               :unknown,     # Action type (xml, json, rest-json, rest-xml, etc.)
-            endpoint:           nil,          # API Endpoint to contact in order to execute the operation
-            target_prefix:      nil,          # API Target name prefix
-            endpoint_prefix:    nil,          # API Endpoint Prefix
+            path:               nil,          # API Endpoint to contact in order to execute the operation
             method:             :unknown,     # HTTP Method
             access_key_id:      nil,          # AWS access key ID
             secret_access_key:  nil,          # AWS secret access key
             security_token:     nil,          # AWS STS security token (optional)
             region:             "us-east-1",  # Target AWS Region
-            version:            nil,          # API Version String
             assigns:            [],           # Variables assigned to the operation by intermediate stages
             halted:             false,        # Indicates whether the operation has been halted due to an error
             errors:             [],           # Contains details of any errors that occurred while performing the operation
             parser:             nil,          # Parser to be used when decoding the API response body
             input_shape:        nil,          # Name of the input shape for this operation
             output_shape:       nil,          # Name of the output shape for this operation
-            shapes:             nil           # Function that returns a Shape map for operations under this endpoint
+            endpoint:           nil           # Endpoint struct
             
   @doc """
   Add a new key-value pair to the operation's assigns

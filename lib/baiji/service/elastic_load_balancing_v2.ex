@@ -56,7 +56,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   means that they complete at most one time. If you repeat an operation, it
   succeeds.
   """
-  
+
   @doc """
   Adds the specified tags to the specified Elastic Load Balancing resource.
   You can tag your Application Load Balancers, Network Load Balancers, and
@@ -70,23 +70,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AddTags",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "AddTagsInput",
       output_shape:     "AddTagsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a listener for the specified Application Load Balancer or Network
   Load Balancer.
@@ -107,23 +101,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateListener",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "CreateListenerInput",
       output_shape:     "CreateListenerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates an Application Load Balancer or a Network Load Balancer.
 
@@ -152,23 +140,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "CreateLoadBalancerInput",
       output_shape:     "CreateLoadBalancerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a rule for the specified listener. The listener must be associated
   with an Application Load Balancer.
@@ -186,23 +168,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateRule",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "CreateRuleInput",
       output_shape:     "CreateRuleOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a target group.
 
@@ -225,23 +201,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_target_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateTargetGroup",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "CreateTargetGroupInput",
       output_shape:     "CreateTargetGroupOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified listener.
 
@@ -250,23 +220,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteListener",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DeleteListenerInput",
       output_shape:     "DeleteListenerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified Application Load Balancer or Network Load Balancer
   and its attached listeners.
@@ -282,45 +246,33 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DeleteLoadBalancerInput",
       output_shape:     "DeleteLoadBalancerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified rule.
   """
   def delete_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteRule",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DeleteRuleInput",
       output_shape:     "DeleteRuleOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified target group.
 
@@ -329,23 +281,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_target_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteTargetGroup",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DeleteTargetGroupInput",
       output_shape:     "DeleteTargetGroupOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deregisters the specified targets from the specified target group. After
   the targets are deregistered, they no longer receive traffic from the load
@@ -353,23 +299,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def deregister_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeregisterTargets",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DeregisterTargetsInput",
       output_shape:     "DeregisterTargetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the current Elastic Load Balancing resource limits for your AWS
   account.
@@ -382,23 +322,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_account_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeAccountLimits",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeAccountLimitsInput",
       output_shape:     "DescribeAccountLimitsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified listeners or the listeners for the specified
   Application Load Balancer or Network Load Balancer. You must specify either
@@ -406,46 +340,34 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_listeners(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeListeners",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeListenersInput",
       output_shape:     "DescribeListenersOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the attributes for the specified Application Load Balancer or
   Network Load Balancer.
   """
   def describe_load_balancer_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLoadBalancerAttributes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeLoadBalancerAttributesInput",
       output_shape:     "DescribeLoadBalancerAttributesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified load balancers or all of your load balancers.
 
@@ -455,46 +377,34 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLoadBalancers",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeLoadBalancersInput",
       output_shape:     "DescribeLoadBalancersOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified rules or the rules for the specified listener. You
   must specify either a listener or one or more rules.
   """
   def describe_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeRules",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeRulesInput",
       output_shape:     "DescribeRulesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified policies or all policies used for SSL negotiation.
 
@@ -504,23 +414,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_s_s_l_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeSSLPolicies",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeSSLPoliciesInput",
       output_shape:     "DescribeSSLPoliciesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the tags for the specified resources. You can describe the tags
   for one or more Application Load Balancers, Network Load Balancers, and
@@ -528,45 +432,33 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTags",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeTagsInput",
       output_shape:     "DescribeTagsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the attributes for the specified target group.
   """
   def describe_target_group_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTargetGroupAttributes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeTargetGroupAttributesInput",
       output_shape:     "DescribeTargetGroupAttributesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified target groups or all of your target groups. By
   default, all target groups are described. Alternatively, you can specify
@@ -580,45 +472,33 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_target_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTargetGroups",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeTargetGroupsInput",
       output_shape:     "DescribeTargetGroupsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the health of the specified targets or all of your targets.
   """
   def describe_target_health(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTargetHealth",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "DescribeTargetHealthInput",
       output_shape:     "DescribeTargetHealthOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the specified properties of the specified listener.
 
@@ -629,23 +509,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ModifyListener",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "ModifyListenerInput",
       output_shape:     "ModifyListenerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the specified attributes of the specified Application Load
   Balancer or Network Load Balancer.
@@ -656,23 +530,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_load_balancer_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ModifyLoadBalancerAttributes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "ModifyLoadBalancerAttributesInput",
       output_shape:     "ModifyLoadBalancerAttributesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the specified rule.
 
@@ -682,23 +550,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ModifyRule",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "ModifyRuleInput",
       output_shape:     "ModifyRuleOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the health checks used when evaluating the health state of the
   targets in the specified target group.
@@ -707,45 +569,33 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_target_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ModifyTargetGroup",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "ModifyTargetGroupInput",
       output_shape:     "ModifyTargetGroupOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the specified attributes of the specified target group.
   """
   def modify_target_group_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ModifyTargetGroupAttributes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "ModifyTargetGroupAttributesInput",
       output_shape:     "ModifyTargetGroupAttributesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Registers the specified targets with the specified target group.
 
@@ -765,23 +615,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def register_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RegisterTargets",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "RegisterTargetsInput",
       output_shape:     "RegisterTargetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes the specified tags from the specified Elastic Load Balancing
   resource.
@@ -790,23 +634,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RemoveTags",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "RemoveTagsInput",
       output_shape:     "RemoveTagsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the type of IP addresses used by the subnets of the specified
   Application Load Balancer or Network Load Balancer.
@@ -815,23 +653,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_ip_address_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetIpAddressType",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "SetIpAddressTypeInput",
       output_shape:     "SetIpAddressTypeOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the priorities of the specified rules.
 
@@ -841,23 +673,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_rule_priorities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetRulePriorities",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "SetRulePrioritiesInput",
       output_shape:     "SetRulePrioritiesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Associates the specified security groups with the specified Application
   Load Balancer. The specified security groups override the previously
@@ -867,23 +693,17 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetSecurityGroups",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "SetSecurityGroupsInput",
       output_shape:     "SetSecurityGroupsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Enables the Availability Zone for the specified subnets for the specified
   Application Load Balancer. The specified subnets replace the previously
@@ -893,28 +713,36 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_subnets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancingv2",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetSubnets",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2015-12-01",
       method:           :post,
       input_shape:      "SetSubnetsInput",
       output_shape:     "SetSubnetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "elasticloadbalancingv2",
+      target_prefix:    nil,
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"LoadBalancerArns" => %{"member" => %{"shape" => "LoadBalancerArn"}, "type" => "list"}, "PageSize" => %{"max" => 400, "min" => 1, "type" => "integer"}, "Listeners" => %{"member" => %{"shape" => "Listener"}, "type" => "list"}, "ModifyListenerInput" => %{"members" => %{"Certificates" => %{"shape" => "CertificateList"}, "DefaultActions" => %{"shape" => "Actions"}, "ListenerArn" => %{"shape" => "ListenerArn"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "SslPolicy" => %{"shape" => "SslPolicyName"}}, "required" => ["ListenerArn"], "type" => "structure"}, "TagDescriptions" => %{"member" => %{"shape" => "TagDescription"}, "type" => "list"}, "TagKeys" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "ActionTypeEnum" => %{"enum" => ["forward"], "type" => "string"}, "RuleArns" => %{"member" => %{"shape" => "RuleArn"}, "type" => "list"}, "HttpCode" => %{"type" => "string"}, "Rules" => %{"member" => %{"shape" => "Rule"}, "type" => "list"}, "DeleteTargetGroupInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "LoadBalancerTypeEnum" => %{"enum" => ["application", "network"], "type" => "string"}, "CanonicalHostedZoneId" => %{"type" => "string"}, "InvalidSubnetException" => %{"error" => %{"code" => "InvalidSubnet", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Subnets" => %{"member" => %{"shape" => "SubnetId"}, "type" => "list"}, "TargetGroupArns" => %{"member" => %{"shape" => "TargetGroupArn"}, "type" => "list"}, "AddTagsOutput" => %{"members" => %{}, "type" => "structure"}, "PriorityInUseException" => %{"error" => %{"code" => "PriorityInUse", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RuleNotFoundException" => %{"error" => %{"code" => "RuleNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DNSName" => %{"type" => "string"}, "SslPolicyNames" => %{"member" => %{"shape" => "SslPolicyName"}, "type" => "list"}, "LoadBalancerName" => %{"type" => "string"}, "LoadBalancerAttributeValue" => %{"max" => 1024, "type" => "string"}, "Listener" => %{"members" => %{"Certificates" => %{"shape" => "CertificateList"}, "DefaultActions" => %{"shape" => "Actions"}, "ListenerArn" => %{"shape" => "ListenerArn"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "SslPolicy" => %{"shape" => "SslPolicyName"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "IncompatibleProtocolsException" => %{"error" => %{"code" => "IncompatibleProtocols", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeListenersOutput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "TargetHealthDescription" => %{"members" => %{"HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "Target" => %{"shape" => "TargetDescription"}, "TargetHealth" => %{"shape" => "TargetHealth"}}, "type" => "structure"}, "CreateTargetGroupInput" => %{"members" => %{"HealthCheckIntervalSeconds" => %{"shape" => "HealthCheckIntervalSeconds"}, "HealthCheckPath" => %{"shape" => "Path"}, "HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "HealthCheckProtocol" => %{"shape" => "ProtocolEnum"}, "HealthCheckTimeoutSeconds" => %{"shape" => "HealthCheckTimeoutSeconds"}, "HealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "Matcher" => %{"shape" => "Matcher"}, "Name" => %{"shape" => "TargetGroupName"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "TargetType" => %{"shape" => "TargetTypeEnum"}, "UnhealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "VpcId" => %{"shape" => "VpcId"}}, "required" => ["Name", "Protocol", "Port", "VpcId"], "type" => "structure"}, "CreateListenerInput" => %{"members" => %{"Certificates" => %{"shape" => "CertificateList"}, "DefaultActions" => %{"shape" => "Actions"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "SslPolicy" => %{"shape" => "SslPolicyName"}}, "required" => ["LoadBalancerArn", "Protocol", "Port", "DefaultActions"], "type" => "structure"}, "RemoveTagsOutput" => %{"members" => %{}, "type" => "structure"}, "CreateLoadBalancerInput" => %{"members" => %{"IpAddressType" => %{"shape" => "IpAddressType"}, "Name" => %{"shape" => "LoadBalancerName"}, "Scheme" => %{"shape" => "LoadBalancerSchemeEnum"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "SubnetMappings" => %{"shape" => "SubnetMappings"}, "Subnets" => %{"shape" => "Subnets"}, "Tags" => %{"shape" => "TagList"}, "Type" => %{"shape" => "LoadBalancerTypeEnum"}}, "required" => ["Name"], "type" => "structure"}, "TargetDescriptions" => %{"member" => %{"shape" => "TargetDescription"}, "type" => "list"}, "TargetDescription" => %{"members" => %{"AvailabilityZone" => %{"shape" => "ZoneName"}, "Id" => %{"shape" => "TargetId"}, "Port" => %{"shape" => "Port"}}, "required" => ["Id"], "type" => "structure"}, "ProtocolEnum" => %{"enum" => ["HTTP", "HTTPS", "TCP"], "type" => "string"}, "SetSubnetsInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "SubnetMappings" => %{"shape" => "SubnetMappings"}, "Subnets" => %{"shape" => "Subnets"}}, "required" => ["LoadBalancerArn", "Subnets"], "type" => "structure"}, "CipherName" => %{"type" => "string"}, "RegisterTargetsInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Targets" => %{"shape" => "TargetDescriptions"}}, "required" => ["TargetGroupArn", "Targets"], "type" => "structure"}, "HealthCheckThresholdCount" => %{"max" => 10, "min" => 2, "type" => "integer"}, "TooManyCertificatesException" => %{"error" => %{"code" => "TooManyCertificates", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeListenersInput" => %{"members" => %{"ListenerArns" => %{"shape" => "ListenerArns"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "LoadBalancerAddresses" => %{"member" => %{"shape" => "LoadBalancerAddress"}, "type" => "list"}, "DescribeTargetHealthInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Targets" => %{"shape" => "TargetDescriptions"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "SslPolicies" => %{"member" => %{"shape" => "SslPolicy"}, "type" => "list"}, "DescribeRulesInput" => %{"members" => %{"ListenerArn" => %{"shape" => "ListenerArn"}, "Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}, "RuleArns" => %{"shape" => "RuleArns"}}, "type" => "structure"}, "Port" => %{"max" => 65535, "min" => 1, "type" => "integer"}, "LoadBalancer" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "CanonicalHostedZoneId" => %{"shape" => "CanonicalHostedZoneId"}, "CreatedTime" => %{"shape" => "CreatedTime"}, "DNSName" => %{"shape" => "DNSName"}, "IpAddressType" => %{"shape" => "IpAddressType"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "LoadBalancerName" => %{"shape" => "LoadBalancerName"}, "Scheme" => %{"shape" => "LoadBalancerSchemeEnum"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "State" => %{"shape" => "LoadBalancerState"}, "Type" => %{"shape" => "LoadBalancerTypeEnum"}, "VpcId" => %{"shape" => "VpcId"}}, "type" => "structure"}, "RuleArn" => %{"type" => "string"}, "ResourceInUseException" => %{"error" => %{"code" => "ResourceInUse", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "HealthUnavailableException" => %{"error" => %{"code" => "HealthUnavailable", "httpStatusCode" => 500}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreateListenerOutput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}}, "type" => "structure"}, "DuplicateLoadBalancerNameException" => %{"error" => %{"code" => "DuplicateLoadBalancerName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "InvalidConfigurationRequestException" => %{"error" => %{"code" => "InvalidConfigurationRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AddTagsInput" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["ResourceArns", "Tags"], "type" => "structure"}, "DescribeLoadBalancerAttributesInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn"], "type" => "structure"}, "SetIpAddressTypeInput" => %{"members" => %{"IpAddressType" => %{"shape" => "IpAddressType"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn", "IpAddressType"], "type" => "structure"}, "Name" => %{"type" => "string"}, "SslProtocol" => %{"type" => "string"}, "CreateLoadBalancerOutput" => %{"members" => %{"LoadBalancers" => %{"shape" => "LoadBalancers"}}, "type" => "structure"}, "Limit" => %{"members" => %{"Max" => %{"shape" => "Max"}, "Name" => %{"shape" => "Name"}}, "type" => "structure"}, "DescribeTargetGroupAttributesInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "TargetHealthReasonEnum" => %{"enum" => ["Elb.RegistrationInProgress", "Elb.InitialHealthChecking", "Target.ResponseCodeMismatch", "Target.Timeout", "Target.FailedHealthChecks", "Target.NotRegistered", "Target.NotInUse", "Target.DeregistrationInProgress", "Target.InvalidState", "Target.IpUnusable", "Elb.InternalError"], "type" => "string"}, "AllocationIdNotFoundException" => %{"error" => %{"code" => "AllocationIdNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RulePriorityList" => %{"member" => %{"shape" => "RulePriorityPair"}, "type" => "list"}, "TargetGroupNotFoundException" => %{"error" => %{"code" => "TargetGroupNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CertificateArn" => %{"type" => "string"}, "TargetGroupAttributeValue" => %{"type" => "string"}, "DuplicateTagKeysException" => %{"error" => %{"code" => "DuplicateTagKeys", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ModifyTargetGroupInput" => %{"members" => %{"HealthCheckIntervalSeconds" => %{"shape" => "HealthCheckIntervalSeconds"}, "HealthCheckPath" => %{"shape" => "Path"}, "HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "HealthCheckProtocol" => %{"shape" => "ProtocolEnum"}, "HealthCheckTimeoutSeconds" => %{"shape" => "HealthCheckTimeoutSeconds"}, "HealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "Matcher" => %{"shape" => "Matcher"}, "TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "UnhealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "ConditionFieldName" => %{"max" => 64, "type" => "string"}, "DescribeRulesOutput" => %{"members" => %{"NextMarker" => %{"shape" => "Marker"}, "Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "TargetGroupArn" => %{"type" => "string"}, "Description" => %{"type" => "string"}, "TargetGroupName" => %{"type" => "string"}, "TooManyTargetGroupsException" => %{"error" => %{"code" => "TooManyTargetGroups", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TargetHealth" => %{"members" => %{"Description" => %{"shape" => "Description"}, "Reason" => %{"shape" => "TargetHealthReasonEnum"}, "State" => %{"shape" => "TargetHealthStateEnum"}}, "type" => "structure"}, "VpcId" => %{"type" => "string"}, "ModifyRuleOutput" => %{"members" => %{"Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "Limits" => %{"member" => %{"shape" => "Limit"}, "type" => "list"}, "Action" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Type" => %{"shape" => "ActionTypeEnum"}}, "required" => ["Type", "TargetGroupArn"], "type" => "structure"}, "Path" => %{"max" => 1024, "min" => 1, "type" => "string"}, "ZoneName" => %{"type" => "string"}, "CreateRuleOutput" => %{"members" => %{"Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "HealthCheckIntervalSeconds" => %{"max" => 300, "min" => 5, "type" => "integer"}, "TargetGroupAttributeKey" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9._]+$", "type" => "string"}, "RemoveTagsInput" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}, "TagKeys" => %{"shape" => "TagKeys"}}, "required" => ["ResourceArns", "TagKeys"], "type" => "structure"}, "TargetGroupAttribute" => %{"members" => %{"Key" => %{"shape" => "TargetGroupAttributeKey"}, "Value" => %{"shape" => "TargetGroupAttributeValue"}}, "type" => "structure"}, "SecurityGroups" => %{"member" => %{"shape" => "SecurityGroupId"}, "type" => "list"}, "ResourceArns" => %{"member" => %{"shape" => "ResourceArn"}, "type" => "list"}, "DescribeTargetGroupAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "TargetGroupAttributes"}}, "type" => "structure"}, "TooManyRulesException" => %{"error" => %{"code" => "TooManyRules", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SubnetNotFoundException" => %{"error" => %{"code" => "SubnetNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SetIpAddressTypeOutput" => %{"members" => %{"IpAddressType" => %{"shape" => "IpAddressType"}}, "type" => "structure"}, "ModifyLoadBalancerAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "LoadBalancerAttributes"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn", "Attributes"], "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key"], "type" => "structure"}, "StateReason" => %{"type" => "string"}, "UnsupportedProtocolException" => %{"error" => %{"code" => "UnsupportedProtocol", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "InvalidSchemeException" => %{"error" => %{"code" => "InvalidScheme", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SubnetMapping" => %{"members" => %{"AllocationId" => %{"shape" => "AllocationId"}, "SubnetId" => %{"shape" => "SubnetId"}}, "type" => "structure"}, "TargetGroup" => %{"members" => %{"HealthCheckIntervalSeconds" => %{"shape" => "HealthCheckIntervalSeconds"}, "HealthCheckPath" => %{"shape" => "Path"}, "HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "HealthCheckProtocol" => %{"shape" => "ProtocolEnum"}, "HealthCheckTimeoutSeconds" => %{"shape" => "HealthCheckTimeoutSeconds"}, "HealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "LoadBalancerArns" => %{"shape" => "LoadBalancerArns"}, "Matcher" => %{"shape" => "Matcher"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "TargetGroupName" => %{"shape" => "TargetGroupName"}, "TargetType" => %{"shape" => "TargetTypeEnum"}, "UnhealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "VpcId" => %{"shape" => "VpcId"}}, "type" => "structure"}, "ModifyTargetGroupAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "TargetGroupAttributes"}}, "type" => "structure"}, "TargetGroups" => %{"member" => %{"shape" => "TargetGroup"}, "type" => "list"}, "DeleteListenerOutput" => %{"members" => %{}, "type" => "structure"}, "TargetHealthDescriptions" => %{"member" => %{"shape" => "TargetHealthDescription"}, "type" => "list"}, "DescribeSSLPoliciesInput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "Names" => %{"shape" => "SslPolicyNames"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "SSLPolicyNotFoundException" => %{"error" => %{"code" => "SSLPolicyNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ListOfString" => %{"member" => %{"shape" => "StringValue"}, "type" => "list"}, "LoadBalancerAddress" => %{"members" => %{"AllocationId" => %{"shape" => "AllocationId"}, "IpAddress" => %{"shape" => "IpAddress"}}, "type" => "structure"}, "Cipher" => %{"members" => %{"Name" => %{"shape" => "CipherName"}, "Priority" => %{"shape" => "CipherPriority"}}, "type" => "structure"}, "ModifyRuleInput" => %{"members" => %{"Actions" => %{"shape" => "Actions"}, "Conditions" => %{"shape" => "RuleConditionList"}, "RuleArn" => %{"shape" => "RuleArn"}}, "required" => ["RuleArn"], "type" => "structure"}, "TargetTypeEnum" => %{"enum" => ["instance", "ip"], "type" => "string"}, "LoadBalancerState" => %{"members" => %{"Code" => %{"shape" => "LoadBalancerStateEnum"}, "Reason" => %{"shape" => "StateReason"}}, "type" => "structure"}, "SetSecurityGroupsInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}}, "required" => ["LoadBalancerArn", "SecurityGroups"], "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 1, "type" => "list"}, "CertificateList" => %{"member" => %{"shape" => "Certificate"}, "type" => "list"}, "LoadBalancerArn" => %{"type" => "string"}, "ListenerNotFoundException" => %{"error" => %{"code" => "ListenerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TagValue" => %{"max" => 256, "min" => 0, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "CreateRuleInput" => %{"members" => %{"Actions" => %{"shape" => "Actions"}, "Conditions" => %{"shape" => "RuleConditionList"}, "ListenerArn" => %{"shape" => "ListenerArn"}, "Priority" => %{"shape" => "RulePriority"}}, "required" => ["ListenerArn", "Conditions", "Priority", "Actions"], "type" => "structure"}, "LoadBalancerStateEnum" => %{"enum" => ["active", "provisioning", "active_impaired", "failed"], "type" => "string"}, "LoadBalancerAttributeKey" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9._]+$", "type" => "string"}, "DuplicateTargetGroupNameException" => %{"error" => %{"code" => "DuplicateTargetGroupName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "LoadBalancerAttribute" => %{"members" => %{"Key" => %{"shape" => "LoadBalancerAttributeKey"}, "Value" => %{"shape" => "LoadBalancerAttributeValue"}}, "type" => "structure"}, "InvalidSecurityGroupException" => %{"error" => %{"code" => "InvalidSecurityGroup", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TargetGroupNames" => %{"member" => %{"shape" => "TargetGroupName"}, "type" => "list"}, "DescribeLoadBalancersInput" => %{"members" => %{"LoadBalancerArns" => %{"shape" => "LoadBalancerArns"}, "Marker" => %{"shape" => "Marker"}, "Names" => %{"shape" => "LoadBalancerNames"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "RuleCondition" => %{"members" => %{"Field" => %{"shape" => "ConditionFieldName"}, "Values" => %{"shape" => "ListOfString"}}, "type" => "structure"}, "CreateTargetGroupOutput" => %{"members" => %{"TargetGroups" => %{"shape" => "TargetGroups"}}, "type" => "structure"}, "TooManyRegistrationsForTargetIdException" => %{"error" => %{"code" => "TooManyRegistrationsForTargetId", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RulePriorityPair" => %{"members" => %{"Priority" => %{"shape" => "RulePriority"}, "RuleArn" => %{"shape" => "RuleArn"}}, "type" => "structure"}, "ListenerArns" => %{"member" => %{"shape" => "ListenerArn"}, "type" => "list"}, "SecurityGroupId" => %{"type" => "string"}, "AllocationId" => %{"type" => "string"}, "AvailabilityZone" => %{"members" => %{"LoadBalancerAddresses" => %{"shape" => "LoadBalancerAddresses"}, "SubnetId" => %{"shape" => "SubnetId"}, "ZoneName" => %{"shape" => "ZoneName"}}, "type" => "structure"}, "CertificateNotFoundException" => %{"error" => %{"code" => "CertificateNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DeleteLoadBalancerOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeAccountLimitsOutput" => %{"members" => %{"Limits" => %{"shape" => "Limits"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "DescribeLoadBalancersOutput" => %{"members" => %{"LoadBalancers" => %{"shape" => "LoadBalancers"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "Max" => %{"type" => "string"}, "TagDescription" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArn"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ListenerArn" => %{"type" => "string"}, "TargetId" => %{"type" => "string"}, "ResourceArn" => %{"type" => "string"}, "SubnetId" => %{"type" => "string"}, "DescribeAccountLimitsInput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "RegisterTargetsOutput" => %{"members" => %{}, "type" => "structure"}, "DeleteLoadBalancerInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn"], "type" => "structure"}, "DeleteRuleInput" => %{"members" => %{"RuleArn" => %{"shape" => "RuleArn"}}, "required" => ["RuleArn"], "type" => "structure"}, "SubnetMappings" => %{"member" => %{"shape" => "SubnetMapping"}, "type" => "list"}, "IpAddress" => %{"type" => "string"}, "OperationNotPermittedException" => %{"error" => %{"code" => "OperationNotPermitted", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "HealthCheckTimeoutSeconds" => %{"max" => 60, "min" => 2, "type" => "integer"}, "CreatedTime" => %{"type" => "timestamp"}, "AvailabilityZones" => %{"member" => %{"shape" => "AvailabilityZone"}, "type" => "list"}, "IpAddressType" => %{"enum" => ["ipv4", "dualstack"], "type" => "string"}, "ModifyTargetGroupAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "TargetGroupAttributes"}, "TargetGroupArn" => %{"shape" => "TargetGroupArn"}}, "required" => ["TargetGroupArn", "Attributes"], "type" => "structure"}, "DescribeSSLPoliciesOutput" => %{"members" => %{"NextMarker" => %{"shape" => "Marker"}, "SslPolicies" => %{"shape" => "SslPolicies"}}, "type" => "structure"}, "DeleteTargetGroupOutput" => %{"members" => %{}, "type" => "structure"}, "Marker" => %{"type" => "string"}, "SslPolicy" => %{"members" => %{"Ciphers" => %{"shape" => "Ciphers"}, "Name" => %{"shape" => "SslPolicyName"}, "SslProtocols" => %{"shape" => "SslProtocols"}}, "type" => "structure"}, "DescribeLoadBalancerAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "LoadBalancerAttributes"}}, "type" => "structure"}, "DeregisterTargetsInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Targets" => %{"shape" => "TargetDescriptions"}}, "required" => ["TargetGroupArn", "Targets"], "type" => "structure"}, "IsDefault" => %{"type" => "boolean"}, "Matcher" => %{"members" => %{"HttpCode" => %{"shape" => "HttpCode"}}, "required" => ["HttpCode"], "type" => "structure"}, "TooManyLoadBalancersException" => %{"error" => %{"code" => "TooManyLoadBalancers", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SslProtocols" => %{"member" => %{"shape" => "SslProtocol"}, "type" => "list"}, "SetSubnetsOutput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}}, "type" => "structure"}, "SslPolicyName" => %{"type" => "string"}, "InvalidTargetException" => %{"error" => %{"code" => "InvalidTarget", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ModifyLoadBalancerAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "LoadBalancerAttributes"}}, "type" => "structure"}, "ModifyTargetGroupOutput" => %{"members" => %{"TargetGroups" => %{"shape" => "TargetGroups"}}, "type" => "structure"}, "CipherPriority" => %{"type" => "integer"}, "LoadBalancerAttributes" => %{"max" => 20, "member" => %{"shape" => "LoadBalancerAttribute"}, "type" => "list"}, "DeregisterTargetsOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeTargetGroupsOutput" => %{"members" => %{"NextMarker" => %{"shape" => "Marker"}, "TargetGroups" => %{"shape" => "TargetGroups"}}, "type" => "structure"}, "LoadBalancerNotFoundException" => %{"error" => %{"code" => "LoadBalancerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeTagsOutput" => %{"members" => %{"TagDescriptions" => %{"shape" => "TagDescriptions"}}, "type" => "structure"}, "TooManyTagsException" => %{"error" => %{"code" => "TooManyTags", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DeleteListenerInput" => %{"members" => %{"ListenerArn" => %{"shape" => "ListenerArn"}}, "required" => ["ListenerArn"], "type" => "structure"}, "Rule" => %{"members" => %{"Actions" => %{"shape" => "Actions"}, "Conditions" => %{"shape" => "RuleConditionList"}, "IsDefault" => %{"shape" => "IsDefault"}, "Priority" => %{"shape" => "String"}, "RuleArn" => %{"shape" => "RuleArn"}}, "type" => "structure"}, "TooManyListenersException" => %{"error" => %{"code" => "TooManyListeners", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "TargetGroupAttributes" => %{"member" => %{"shape" => "TargetGroupAttribute"}, "type" => "list"}, "LoadBalancerSchemeEnum" => %{"enum" => ["internet-facing", "internal"], "type" => "string"}, "TargetGroupAssociationLimitException" => %{"error" => %{"code" => "TargetGroupAssociationLimit", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TargetHealthStateEnum" => %{"enum" => ["initial", "healthy", "unhealthy", "unused", "draining", "unavailable"], "type" => "string"}, "StringValue" => %{"type" => "string"}, "DeleteRuleOutput" => %{"members" => %{}, "type" => "structure"}, "Ciphers" => %{"member" => %{"shape" => "Cipher"}, "type" => "list"}, "LoadBalancerNames" => %{"member" => %{"shape" => "LoadBalancerName"}, "type" => "list"}, "LoadBalancers" => %{"member" => %{"shape" => "LoadBalancer"}, "type" => "list"}, "DuplicateListenerException" => %{"error" => %{"code" => "DuplicateListener", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TooManyTargetsException" => %{"error" => %{"code" => "TooManyTargets", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AvailabilityZoneNotSupportedException" => %{"error" => %{"code" => "AvailabilityZoneNotSupported", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RuleConditionList" => %{"member" => %{"shape" => "RuleCondition"}, "type" => "list"}, "SetRulePrioritiesOutput" => %{"members" => %{"Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "SetSecurityGroupsOutput" => %{"members" => %{"SecurityGroupIds" => %{"shape" => "SecurityGroups"}}, "type" => "structure"}, "SetRulePrioritiesInput" => %{"members" => %{"RulePriorities" => %{"shape" => "RulePriorityList"}}, "required" => ["RulePriorities"], "type" => "structure"}, "HealthCheckPort" => %{"type" => "string"}, "Certificate" => %{"members" => %{"CertificateArn" => %{"shape" => "CertificateArn"}}, "type" => "structure"}, "RulePriority" => %{"max" => 50000, "min" => 1, "type" => "integer"}, "DescribeTargetHealthOutput" => %{"members" => %{"TargetHealthDescriptions" => %{"shape" => "TargetHealthDescriptions"}}, "type" => "structure"}, "DescribeTagsInput" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}}, "required" => ["ResourceArns"], "type" => "structure"}, "Actions" => %{"member" => %{"shape" => "Action"}, "type" => "list"}, "ModifyListenerOutput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}}, "type" => "structure"}, "DescribeTargetGroupsInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Marker" => %{"shape" => "Marker"}, "Names" => %{"shape" => "TargetGroupNames"}, "PageSize" => %{"shape" => "PageSize"}, "TargetGroupArns" => %{"shape" => "TargetGroupArns"}}, "type" => "structure"}}
+		%{"LoadBalancerArns" => %{"member" => %{"shape" => "LoadBalancerArn"}, "type" => "list"}, "PageSize" => %{"max" => 400, "min" => 1, "type" => "integer"}, "Listeners" => %{"member" => %{"shape" => "Listener"}, "type" => "list"}, "ModifyListenerInput" => %{"members" => %{"Certificates" => %{"shape" => "CertificateList"}, "DefaultActions" => %{"shape" => "Actions"}, "ListenerArn" => %{"shape" => "ListenerArn"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "SslPolicy" => %{"shape" => "SslPolicyName"}}, "required" => ["ListenerArn"], "type" => "structure"}, "TagDescriptions" => %{"member" => %{"shape" => "TagDescription"}, "type" => "list"}, "TagKeys" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "ActionTypeEnum" => %{"enum" => ["forward"], "type" => "string"}, "RuleArns" => %{"member" => %{"shape" => "RuleArn"}, "type" => "list"}, "HttpCode" => %{"type" => "string"}, "Rules" => %{"member" => %{"shape" => "Rule"}, "type" => "list"}, "DeleteTargetGroupInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "LoadBalancerTypeEnum" => %{"enum" => ["application", "network"], "type" => "string"}, "CanonicalHostedZoneId" => %{"type" => "string"}, "InvalidSubnetException" => %{"error" => %{"code" => "InvalidSubnet", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Subnets" => %{"member" => %{"shape" => "SubnetId"}, "type" => "list"}, "TargetGroupArns" => %{"member" => %{"shape" => "TargetGroupArn"}, "type" => "list"}, "AddTagsOutput" => %{"members" => %{}, "type" => "structure"}, "PriorityInUseException" => %{"error" => %{"code" => "PriorityInUse", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RuleNotFoundException" => %{"error" => %{"code" => "RuleNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DNSName" => %{"type" => "string"}, "SslPolicyNames" => %{"member" => %{"shape" => "SslPolicyName"}, "type" => "list"}, "LoadBalancerName" => %{"type" => "string"}, "LoadBalancerAttributeValue" => %{"max" => 1024, "type" => "string"}, "Listener" => %{"members" => %{"Certificates" => %{"shape" => "CertificateList"}, "DefaultActions" => %{"shape" => "Actions"}, "ListenerArn" => %{"shape" => "ListenerArn"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "SslPolicy" => %{"shape" => "SslPolicyName"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "IncompatibleProtocolsException" => %{"error" => %{"code" => "IncompatibleProtocols", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeListenersOutput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "TargetHealthDescription" => %{"members" => %{"HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "Target" => %{"shape" => "TargetDescription"}, "TargetHealth" => %{"shape" => "TargetHealth"}}, "type" => "structure"}, "CreateTargetGroupInput" => %{"members" => %{"HealthCheckIntervalSeconds" => %{"shape" => "HealthCheckIntervalSeconds"}, "HealthCheckPath" => %{"shape" => "Path"}, "HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "HealthCheckProtocol" => %{"shape" => "ProtocolEnum"}, "HealthCheckTimeoutSeconds" => %{"shape" => "HealthCheckTimeoutSeconds"}, "HealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "Matcher" => %{"shape" => "Matcher"}, "Name" => %{"shape" => "TargetGroupName"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "TargetType" => %{"shape" => "TargetTypeEnum"}, "UnhealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "VpcId" => %{"shape" => "VpcId"}}, "required" => ["Name", "Protocol", "Port", "VpcId"], "type" => "structure"}, "CreateListenerInput" => %{"members" => %{"Certificates" => %{"shape" => "CertificateList"}, "DefaultActions" => %{"shape" => "Actions"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "SslPolicy" => %{"shape" => "SslPolicyName"}}, "required" => ["LoadBalancerArn", "Protocol", "Port", "DefaultActions"], "type" => "structure"}, "RemoveTagsOutput" => %{"members" => %{}, "type" => "structure"}, "CreateLoadBalancerInput" => %{"members" => %{"IpAddressType" => %{"shape" => "IpAddressType"}, "Name" => %{"shape" => "LoadBalancerName"}, "Scheme" => %{"shape" => "LoadBalancerSchemeEnum"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "SubnetMappings" => %{"shape" => "SubnetMappings"}, "Subnets" => %{"shape" => "Subnets"}, "Tags" => %{"shape" => "TagList"}, "Type" => %{"shape" => "LoadBalancerTypeEnum"}}, "required" => ["Name"], "type" => "structure"}, "TargetDescriptions" => %{"member" => %{"shape" => "TargetDescription"}, "type" => "list"}, "TargetDescription" => %{"members" => %{"AvailabilityZone" => %{"shape" => "ZoneName"}, "Id" => %{"shape" => "TargetId"}, "Port" => %{"shape" => "Port"}}, "required" => ["Id"], "type" => "structure"}, "ProtocolEnum" => %{"enum" => ["HTTP", "HTTPS", "TCP"], "type" => "string"}, "SetSubnetsInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "SubnetMappings" => %{"shape" => "SubnetMappings"}, "Subnets" => %{"shape" => "Subnets"}}, "required" => ["LoadBalancerArn", "Subnets"], "type" => "structure"}, "CipherName" => %{"type" => "string"}, "RegisterTargetsInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Targets" => %{"shape" => "TargetDescriptions"}}, "required" => ["TargetGroupArn", "Targets"], "type" => "structure"}, "HealthCheckThresholdCount" => %{"max" => 10, "min" => 2, "type" => "integer"}, "TooManyCertificatesException" => %{"error" => %{"code" => "TooManyCertificates", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeListenersInput" => %{"members" => %{"ListenerArns" => %{"shape" => "ListenerArns"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "LoadBalancerAddresses" => %{"member" => %{"shape" => "LoadBalancerAddress"}, "type" => "list"}, "DescribeTargetHealthInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Targets" => %{"shape" => "TargetDescriptions"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "SslPolicies" => %{"member" => %{"shape" => "SslPolicy"}, "type" => "list"}, "DescribeRulesInput" => %{"members" => %{"ListenerArn" => %{"shape" => "ListenerArn"}, "Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}, "RuleArns" => %{"shape" => "RuleArns"}}, "type" => "structure"}, "Port" => %{"max" => 65535, "min" => 1, "type" => "integer"}, "LoadBalancer" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "CanonicalHostedZoneId" => %{"shape" => "CanonicalHostedZoneId"}, "CreatedTime" => %{"shape" => "CreatedTime"}, "DNSName" => %{"shape" => "DNSName"}, "IpAddressType" => %{"shape" => "IpAddressType"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "LoadBalancerName" => %{"shape" => "LoadBalancerName"}, "Scheme" => %{"shape" => "LoadBalancerSchemeEnum"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "State" => %{"shape" => "LoadBalancerState"}, "Type" => %{"shape" => "LoadBalancerTypeEnum"}, "VpcId" => %{"shape" => "VpcId"}}, "type" => "structure"}, "RuleArn" => %{"type" => "string"}, "ResourceInUseException" => %{"error" => %{"code" => "ResourceInUse", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "HealthUnavailableException" => %{"error" => %{"code" => "HealthUnavailable", "httpStatusCode" => 500}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreateListenerOutput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}}, "type" => "structure"}, "DuplicateLoadBalancerNameException" => %{"error" => %{"code" => "DuplicateLoadBalancerName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "InvalidConfigurationRequestException" => %{"error" => %{"code" => "InvalidConfigurationRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AddTagsInput" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["ResourceArns", "Tags"], "type" => "structure"}, "DescribeLoadBalancerAttributesInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn"], "type" => "structure"}, "SetIpAddressTypeInput" => %{"members" => %{"IpAddressType" => %{"shape" => "IpAddressType"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn", "IpAddressType"], "type" => "structure"}, "Name" => %{"type" => "string"}, "SslProtocol" => %{"type" => "string"}, "CreateLoadBalancerOutput" => %{"members" => %{"LoadBalancers" => %{"shape" => "LoadBalancers"}}, "type" => "structure"}, "Limit" => %{"members" => %{"Max" => %{"shape" => "Max"}, "Name" => %{"shape" => "Name"}}, "type" => "structure"}, "DescribeTargetGroupAttributesInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "TargetHealthReasonEnum" => %{"enum" => ["Elb.RegistrationInProgress", "Elb.InitialHealthChecking", "Target.ResponseCodeMismatch", "Target.Timeout", "Target.FailedHealthChecks", "Target.NotRegistered", "Target.NotInUse", "Target.DeregistrationInProgress", "Target.InvalidState", "Target.IpUnusable", "Elb.InternalError"], "type" => "string"}, "AllocationIdNotFoundException" => %{"error" => %{"code" => "AllocationIdNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RulePriorityList" => %{"member" => %{"shape" => "RulePriorityPair"}, "type" => "list"}, "TargetGroupNotFoundException" => %{"error" => %{"code" => "TargetGroupNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CertificateArn" => %{"type" => "string"}, "TargetGroupAttributeValue" => %{"type" => "string"}, "DuplicateTagKeysException" => %{"error" => %{"code" => "DuplicateTagKeys", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ModifyTargetGroupInput" => %{"members" => %{"HealthCheckIntervalSeconds" => %{"shape" => "HealthCheckIntervalSeconds"}, "HealthCheckPath" => %{"shape" => "Path"}, "HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "HealthCheckProtocol" => %{"shape" => "ProtocolEnum"}, "HealthCheckTimeoutSeconds" => %{"shape" => "HealthCheckTimeoutSeconds"}, "HealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "Matcher" => %{"shape" => "Matcher"}, "TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "UnhealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}}, "required" => ["TargetGroupArn"], "type" => "structure"}, "ConditionFieldName" => %{"max" => 64, "type" => "string"}, "DescribeRulesOutput" => %{"members" => %{"NextMarker" => %{"shape" => "Marker"}, "Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "TargetGroupArn" => %{"type" => "string"}, "Description" => %{"type" => "string"}, "TargetGroupName" => %{"type" => "string"}, "TooManyTargetGroupsException" => %{"error" => %{"code" => "TooManyTargetGroups", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TargetHealth" => %{"members" => %{"Description" => %{"shape" => "Description"}, "Reason" => %{"shape" => "TargetHealthReasonEnum"}, "State" => %{"shape" => "TargetHealthStateEnum"}}, "type" => "structure"}, "VpcId" => %{"type" => "string"}, "ModifyRuleOutput" => %{"members" => %{"Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "Limits" => %{"member" => %{"shape" => "Limit"}, "type" => "list"}, "Action" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Type" => %{"shape" => "ActionTypeEnum"}}, "required" => ["Type", "TargetGroupArn"], "type" => "structure"}, "Path" => %{"max" => 1024, "min" => 1, "type" => "string"}, "ZoneName" => %{"type" => "string"}, "CreateRuleOutput" => %{"members" => %{"Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "HealthCheckIntervalSeconds" => %{"max" => 300, "min" => 5, "type" => "integer"}, "TargetGroupAttributeKey" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9._]+$", "type" => "string"}, "RemoveTagsInput" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}, "TagKeys" => %{"shape" => "TagKeys"}}, "required" => ["ResourceArns", "TagKeys"], "type" => "structure"}, "TargetGroupAttribute" => %{"members" => %{"Key" => %{"shape" => "TargetGroupAttributeKey"}, "Value" => %{"shape" => "TargetGroupAttributeValue"}}, "type" => "structure"}, "SecurityGroups" => %{"member" => %{"shape" => "SecurityGroupId"}, "type" => "list"}, "ResourceArns" => %{"member" => %{"shape" => "ResourceArn"}, "type" => "list"}, "DescribeTargetGroupAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "TargetGroupAttributes"}}, "type" => "structure"}, "TooManyRulesException" => %{"error" => %{"code" => "TooManyRules", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SubnetNotFoundException" => %{"error" => %{"code" => "SubnetNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SetIpAddressTypeOutput" => %{"members" => %{"IpAddressType" => %{"shape" => "IpAddressType"}}, "type" => "structure"}, "ModifyLoadBalancerAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "LoadBalancerAttributes"}, "LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn", "Attributes"], "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key"], "type" => "structure"}, "StateReason" => %{"type" => "string"}, "UnsupportedProtocolException" => %{"error" => %{"code" => "UnsupportedProtocol", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "InvalidSchemeException" => %{"error" => %{"code" => "InvalidScheme", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SubnetMapping" => %{"members" => %{"AllocationId" => %{"shape" => "AllocationId"}, "SubnetId" => %{"shape" => "SubnetId"}}, "type" => "structure"}, "TargetGroup" => %{"members" => %{"HealthCheckIntervalSeconds" => %{"shape" => "HealthCheckIntervalSeconds"}, "HealthCheckPath" => %{"shape" => "Path"}, "HealthCheckPort" => %{"shape" => "HealthCheckPort"}, "HealthCheckProtocol" => %{"shape" => "ProtocolEnum"}, "HealthCheckTimeoutSeconds" => %{"shape" => "HealthCheckTimeoutSeconds"}, "HealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "LoadBalancerArns" => %{"shape" => "LoadBalancerArns"}, "Matcher" => %{"shape" => "Matcher"}, "Port" => %{"shape" => "Port"}, "Protocol" => %{"shape" => "ProtocolEnum"}, "TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "TargetGroupName" => %{"shape" => "TargetGroupName"}, "TargetType" => %{"shape" => "TargetTypeEnum"}, "UnhealthyThresholdCount" => %{"shape" => "HealthCheckThresholdCount"}, "VpcId" => %{"shape" => "VpcId"}}, "type" => "structure"}, "ModifyTargetGroupAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "TargetGroupAttributes"}}, "type" => "structure"}, "TargetGroups" => %{"member" => %{"shape" => "TargetGroup"}, "type" => "list"}, "DeleteListenerOutput" => %{"members" => %{}, "type" => "structure"}, "TargetHealthDescriptions" => %{"member" => %{"shape" => "TargetHealthDescription"}, "type" => "list"}, "DescribeSSLPoliciesInput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "Names" => %{"shape" => "SslPolicyNames"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "SSLPolicyNotFoundException" => %{"error" => %{"code" => "SSLPolicyNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ListOfString" => %{"member" => %{"shape" => "StringValue"}, "type" => "list"}, "LoadBalancerAddress" => %{"members" => %{"AllocationId" => %{"shape" => "AllocationId"}, "IpAddress" => %{"shape" => "IpAddress"}}, "type" => "structure"}, "Cipher" => %{"members" => %{"Name" => %{"shape" => "CipherName"}, "Priority" => %{"shape" => "CipherPriority"}}, "type" => "structure"}, "ModifyRuleInput" => %{"members" => %{"Actions" => %{"shape" => "Actions"}, "Conditions" => %{"shape" => "RuleConditionList"}, "RuleArn" => %{"shape" => "RuleArn"}}, "required" => ["RuleArn"], "type" => "structure"}, "TargetTypeEnum" => %{"enum" => ["instance", "ip"], "type" => "string"}, "LoadBalancerState" => %{"members" => %{"Code" => %{"shape" => "LoadBalancerStateEnum"}, "Reason" => %{"shape" => "StateReason"}}, "type" => "structure"}, "SetSecurityGroupsInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}}, "required" => ["LoadBalancerArn", "SecurityGroups"], "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 1, "type" => "list"}, "CertificateList" => %{"member" => %{"shape" => "Certificate"}, "type" => "list"}, "LoadBalancerArn" => %{"type" => "string"}, "ListenerNotFoundException" => %{"error" => %{"code" => "ListenerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TagValue" => %{"max" => 256, "min" => 0, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "CreateRuleInput" => %{"members" => %{"Actions" => %{"shape" => "Actions"}, "Conditions" => %{"shape" => "RuleConditionList"}, "ListenerArn" => %{"shape" => "ListenerArn"}, "Priority" => %{"shape" => "RulePriority"}}, "required" => ["ListenerArn", "Conditions", "Priority", "Actions"], "type" => "structure"}, "LoadBalancerStateEnum" => %{"enum" => ["active", "provisioning", "active_impaired", "failed"], "type" => "string"}, "LoadBalancerAttributeKey" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9._]+$", "type" => "string"}, "DuplicateTargetGroupNameException" => %{"error" => %{"code" => "DuplicateTargetGroupName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "LoadBalancerAttribute" => %{"members" => %{"Key" => %{"shape" => "LoadBalancerAttributeKey"}, "Value" => %{"shape" => "LoadBalancerAttributeValue"}}, "type" => "structure"}, "InvalidSecurityGroupException" => %{"error" => %{"code" => "InvalidSecurityGroup", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TargetGroupNames" => %{"member" => %{"shape" => "TargetGroupName"}, "type" => "list"}, "DescribeLoadBalancersInput" => %{"members" => %{"LoadBalancerArns" => %{"shape" => "LoadBalancerArns"}, "Marker" => %{"shape" => "Marker"}, "Names" => %{"shape" => "LoadBalancerNames"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "RuleCondition" => %{"members" => %{"Field" => %{"shape" => "ConditionFieldName"}, "Values" => %{"shape" => "ListOfString"}}, "type" => "structure"}, "CreateTargetGroupOutput" => %{"members" => %{"TargetGroups" => %{"shape" => "TargetGroups"}}, "type" => "structure"}, "TooManyRegistrationsForTargetIdException" => %{"error" => %{"code" => "TooManyRegistrationsForTargetId", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RulePriorityPair" => %{"members" => %{"Priority" => %{"shape" => "RulePriority"}, "RuleArn" => %{"shape" => "RuleArn"}}, "type" => "structure"}, "ListenerArns" => %{"member" => %{"shape" => "ListenerArn"}, "type" => "list"}, "SecurityGroupId" => %{"type" => "string"}, "AllocationId" => %{"type" => "string"}, "AvailabilityZone" => %{"members" => %{"LoadBalancerAddresses" => %{"shape" => "LoadBalancerAddresses"}, "SubnetId" => %{"shape" => "SubnetId"}, "ZoneName" => %{"shape" => "ZoneName"}}, "type" => "structure"}, "CertificateNotFoundException" => %{"error" => %{"code" => "CertificateNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DeleteLoadBalancerOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeAccountLimitsOutput" => %{"members" => %{"Limits" => %{"shape" => "Limits"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "DescribeLoadBalancersOutput" => %{"members" => %{"LoadBalancers" => %{"shape" => "LoadBalancers"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "Max" => %{"type" => "string"}, "TagDescription" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArn"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ListenerArn" => %{"type" => "string"}, "TargetId" => %{"type" => "string"}, "ResourceArn" => %{"type" => "string"}, "SubnetId" => %{"type" => "string"}, "DescribeAccountLimitsInput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "RegisterTargetsOutput" => %{"members" => %{}, "type" => "structure"}, "DeleteLoadBalancerInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}}, "required" => ["LoadBalancerArn"], "type" => "structure"}, "DeleteRuleInput" => %{"members" => %{"RuleArn" => %{"shape" => "RuleArn"}}, "required" => ["RuleArn"], "type" => "structure"}, "SubnetMappings" => %{"member" => %{"shape" => "SubnetMapping"}, "type" => "list"}, "IpAddress" => %{"type" => "string"}, "OperationNotPermittedException" => %{"error" => %{"code" => "OperationNotPermitted", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "HealthCheckTimeoutSeconds" => %{"max" => 60, "min" => 2, "type" => "integer"}, "CreatedTime" => %{"type" => "timestamp"}, "AvailabilityZones" => %{"member" => %{"shape" => "AvailabilityZone"}, "type" => "list"}, "IpAddressType" => %{"enum" => ["ipv4", "dualstack"], "type" => "string"}, "ModifyTargetGroupAttributesInput" => %{"members" => %{"Attributes" => %{"shape" => "TargetGroupAttributes"}, "TargetGroupArn" => %{"shape" => "TargetGroupArn"}}, "required" => ["TargetGroupArn", "Attributes"], "type" => "structure"}, "DescribeSSLPoliciesOutput" => %{"members" => %{"NextMarker" => %{"shape" => "Marker"}, "SslPolicies" => %{"shape" => "SslPolicies"}}, "type" => "structure"}, "DeleteTargetGroupOutput" => %{"members" => %{}, "type" => "structure"}, "Marker" => %{"type" => "string"}, "SslPolicy" => %{"members" => %{"Ciphers" => %{"shape" => "Ciphers"}, "Name" => %{"shape" => "SslPolicyName"}, "SslProtocols" => %{"shape" => "SslProtocols"}}, "type" => "structure"}, "DescribeLoadBalancerAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "LoadBalancerAttributes"}}, "type" => "structure"}, "DeregisterTargetsInput" => %{"members" => %{"TargetGroupArn" => %{"shape" => "TargetGroupArn"}, "Targets" => %{"shape" => "TargetDescriptions"}}, "required" => ["TargetGroupArn", "Targets"], "type" => "structure"}, "IsDefault" => %{"type" => "boolean"}, "Matcher" => %{"members" => %{"HttpCode" => %{"shape" => "HttpCode"}}, "required" => ["HttpCode"], "type" => "structure"}, "TooManyLoadBalancersException" => %{"error" => %{"code" => "TooManyLoadBalancers", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SslProtocols" => %{"member" => %{"shape" => "SslProtocol"}, "type" => "list"}, "SetSubnetsOutput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}}, "type" => "structure"}, "SslPolicyName" => %{"type" => "string"}, "InvalidTargetException" => %{"error" => %{"code" => "InvalidTarget", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ModifyLoadBalancerAttributesOutput" => %{"members" => %{"Attributes" => %{"shape" => "LoadBalancerAttributes"}}, "type" => "structure"}, "ModifyTargetGroupOutput" => %{"members" => %{"TargetGroups" => %{"shape" => "TargetGroups"}}, "type" => "structure"}, "CipherPriority" => %{"type" => "integer"}, "LoadBalancerAttributes" => %{"max" => 20, "member" => %{"shape" => "LoadBalancerAttribute"}, "type" => "list"}, "DeregisterTargetsOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeTargetGroupsOutput" => %{"members" => %{"NextMarker" => %{"shape" => "Marker"}, "TargetGroups" => %{"shape" => "TargetGroups"}}, "type" => "structure"}, "LoadBalancerNotFoundException" => %{"error" => %{"code" => "LoadBalancerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeTagsOutput" => %{"members" => %{"TagDescriptions" => %{"shape" => "TagDescriptions"}}, "type" => "structure"}, "TooManyTagsException" => %{"error" => %{"code" => "TooManyTags", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DeleteListenerInput" => %{"members" => %{"ListenerArn" => %{"shape" => "ListenerArn"}}, "required" => ["ListenerArn"], "type" => "structure"}, "Rule" => %{"members" => %{"Actions" => %{"shape" => "Actions"}, "Conditions" => %{"shape" => "RuleConditionList"}, "IsDefault" => %{"shape" => "IsDefault"}, "Priority" => %{"shape" => "String"}, "RuleArn" => %{"shape" => "RuleArn"}}, "type" => "structure"}, "TooManyListenersException" => %{"error" => %{"code" => "TooManyListeners", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "TargetGroupAttributes" => %{"member" => %{"shape" => "TargetGroupAttribute"}, "type" => "list"}, "LoadBalancerSchemeEnum" => %{"enum" => ["internet-facing", "internal"], "type" => "string"}, "TargetGroupAssociationLimitException" => %{"error" => %{"code" => "TargetGroupAssociationLimit", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TargetHealthStateEnum" => %{"enum" => ["initial", "healthy", "unhealthy", "unused", "draining", "unavailable"], "type" => "string"}, "StringValue" => %{"type" => "string"}, "DeleteRuleOutput" => %{"members" => %{}, "type" => "structure"}, "Ciphers" => %{"member" => %{"shape" => "Cipher"}, "type" => "list"}, "LoadBalancerNames" => %{"member" => %{"shape" => "LoadBalancerName"}, "type" => "list"}, "LoadBalancers" => %{"member" => %{"shape" => "LoadBalancer"}, "type" => "list"}, "DuplicateListenerException" => %{"error" => %{"code" => "DuplicateListener", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TooManyTargetsException" => %{"error" => %{"code" => "TooManyTargets", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AvailabilityZoneNotSupportedException" => %{"error" => %{"code" => "AvailabilityZoneNotSupported", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RuleConditionList" => %{"member" => %{"shape" => "RuleCondition"}, "type" => "list"}, "SetRulePrioritiesOutput" => %{"members" => %{"Rules" => %{"shape" => "Rules"}}, "type" => "structure"}, "SetSecurityGroupsOutput" => %{"members" => %{"SecurityGroupIds" => %{"shape" => "SecurityGroups"}}, "type" => "structure"}, "SetRulePrioritiesInput" => %{"members" => %{"RulePriorities" => %{"shape" => "RulePriorityList"}}, "required" => ["RulePriorities"], "type" => "structure"}, "HealthCheckPort" => %{"type" => "string"}, "Certificate" => %{"members" => %{"CertificateArn" => %{"shape" => "CertificateArn"}}, "type" => "structure"}, "RulePriority" => %{"max" => 50000, "min" => 1, "type" => "integer"}, "DescribeTargetHealthOutput" => %{"members" => %{"TargetHealthDescriptions" => %{"shape" => "TargetHealthDescriptions"}}, "type" => "structure"}, "DescribeTagsInput" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}}, "required" => ["ResourceArns"], "type" => "structure"}, "Actions" => %{"member" => %{"shape" => "Action"}, "type" => "list"}, "ModifyListenerOutput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}}, "type" => "structure"}, "DescribeTargetGroupsInput" => %{"members" => %{"LoadBalancerArn" => %{"shape" => "LoadBalancerArn"}, "Marker" => %{"shape" => "Marker"}, "Names" => %{"shape" => "TargetGroupNames"}, "PageSize" => %{"shape" => "PageSize"}, "TargetGroupArns" => %{"shape" => "TargetGroupArns"}}, "type" => "structure"}}
   end
 end

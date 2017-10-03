@@ -56,7 +56,7 @@ defmodule Baiji.STS do
   your log files, see the [AWS CloudTrail User
   Guide](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html).
   """
-  
+
   @doc """
   Returns a set of temporary security credentials (consisting of an access
   key ID, a secret access key, and a security token) that you can use to
@@ -156,23 +156,17 @@ defmodule Baiji.STS do
   """
   def assume_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AssumeRole",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "AssumeRoleRequest",
       output_shape:     "AssumeRoleResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a set of temporary security credentials for users who have been
   authenticated via a SAML authentication response. This operation provides a
@@ -257,23 +251,17 @@ defmodule Baiji.STS do
   """
   def assume_role_with_s_a_m_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AssumeRoleWithSAML",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "AssumeRoleWithSAMLRequest",
       output_shape:     "AssumeRoleWithSAMLResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a set of temporary security credentials for users who have been
   authenticated in a mobile or web application with a web identity provider,
@@ -381,23 +369,17 @@ defmodule Baiji.STS do
   """
   def assume_role_with_web_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AssumeRoleWithWebIdentity",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "AssumeRoleWithWebIdentityRequest",
       output_shape:     "AssumeRoleWithWebIdentityResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Decodes additional information about the authorization status of a request
   from an encoded message returned in response to an AWS request.
@@ -438,46 +420,34 @@ defmodule Baiji.STS do
   """
   def decode_authorization_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DecodeAuthorizationMessage",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "DecodeAuthorizationMessageRequest",
       output_shape:     "DecodeAuthorizationMessageResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns details about the IAM identity whose credentials are used to call
   the API.
   """
   def get_caller_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetCallerIdentity",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "GetCallerIdentityRequest",
       output_shape:     "GetCallerIdentityResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a set of temporary security credentials (consisting of an access
   key ID, a secret access key, and a security token) for a federated user. A
@@ -569,23 +539,17 @@ defmodule Baiji.STS do
   """
   def get_federation_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetFederationToken",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "GetFederationTokenRequest",
       output_shape:     "GetFederationTokenResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a set of temporary credentials for an AWS account or IAM user. The
   credentials consist of an access key ID, a secret access key, and a
@@ -641,28 +605,36 @@ defmodule Baiji.STS do
   """
   def get_session_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sts",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetSessionToken",
-      
-      endpoint_prefix:  "sts",
-      type:             :xml,
-      version:          "2011-06-15",
       method:           :post,
       input_shape:      "GetSessionTokenRequest",
       output_shape:     "GetSessionTokenResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "sts",
+      target_prefix:    nil,
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"FederatedUser" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "FederatedUserId" => %{"shape" => "federatedIdType"}}, "required" => ["FederatedUserId", "Arn"], "type" => "structure"}, "accessKeyIdType" => %{"max" => 128, "min" => 16, "pattern" => "[\\w]*", "type" => "string"}, "arnType" => %{"max" => 2048, "min" => 20, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u007E\\u0085\\u00A0-\\uD7FF\\uE000-\\uFFFD\\u10000-\\u10FFFF]+", "type" => "string"}, "Subject" => %{"type" => "string"}, "AssumeRoleResponse" => %{"members" => %{"AssumedRoleUser" => %{"shape" => "AssumedRoleUser"}, "Credentials" => %{"shape" => "Credentials"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}}, "type" => "structure"}, "AssumeRoleWithWebIdentityRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "roleDurationSecondsType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}, "ProviderId" => %{"shape" => "urlType"}, "RoleArn" => %{"shape" => "arnType"}, "RoleSessionName" => %{"shape" => "roleSessionNameType"}, "WebIdentityToken" => %{"shape" => "clientTokenType"}}, "required" => ["RoleArn", "RoleSessionName", "WebIdentityToken"], "type" => "structure"}, "GetFederationTokenRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "durationSecondsType"}, "Name" => %{"shape" => "userNameType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}}, "required" => ["Name"], "type" => "structure"}, "serialNumberType" => %{"max" => 256, "min" => 9, "pattern" => "[\\w+=/:,.@-]*", "type" => "string"}, "decodedMessageType" => %{"type" => "string"}, "GetFederationTokenResponse" => %{"members" => %{"Credentials" => %{"shape" => "Credentials"}, "FederatedUser" => %{"shape" => "FederatedUser"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}}, "type" => "structure"}, "Issuer" => %{"type" => "string"}, "invalidAuthorizationMessage" => %{"type" => "string"}, "AssumeRoleRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "roleDurationSecondsType"}, "ExternalId" => %{"shape" => "externalIdType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}, "RoleArn" => %{"shape" => "arnType"}, "RoleSessionName" => %{"shape" => "roleSessionNameType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "TokenCode" => %{"shape" => "tokenCodeType"}}, "required" => ["RoleArn", "RoleSessionName"], "type" => "structure"}, "Credentials" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}, "Expiration" => %{"shape" => "dateType"}, "SecretAccessKey" => %{"shape" => "accessKeySecretType"}, "SessionToken" => %{"shape" => "tokenType"}}, "required" => ["AccessKeyId", "SecretAccessKey", "SessionToken", "Expiration"], "type" => "structure"}, "accessKeySecretType" => %{"type" => "string"}, "AssumeRoleWithWebIdentityResponse" => %{"members" => %{"AssumedRoleUser" => %{"shape" => "AssumedRoleUser"}, "Audience" => %{"shape" => "Audience"}, "Credentials" => %{"shape" => "Credentials"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}, "Provider" => %{"shape" => "Issuer"}, "SubjectFromWebIdentityToken" => %{"shape" => "webIdentitySubjectType"}}, "type" => "structure"}, "ExpiredTokenException" => %{"error" => %{"code" => "ExpiredTokenException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "expiredIdentityTokenMessage"}}, "type" => "structure"}, "GetCallerIdentityRequest" => %{"members" => %{}, "type" => "structure"}, "RegionDisabledException" => %{"error" => %{"code" => "RegionDisabledException", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "regionDisabledMessage"}}, "type" => "structure"}, "IDPCommunicationErrorException" => %{"error" => %{"code" => "IDPCommunicationError", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "idpCommunicationErrorMessage"}}, "type" => "structure"}, "InvalidAuthorizationMessageException" => %{"error" => %{"code" => "InvalidAuthorizationMessageException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidAuthorizationMessage"}}, "type" => "structure"}, "malformedPolicyDocumentMessage" => %{"type" => "string"}, "externalIdType" => %{"max" => 1224, "min" => 2, "pattern" => "[\\w+=,.@:\\/-]*", "type" => "string"}, "MalformedPolicyDocumentException" => %{"error" => %{"code" => "MalformedPolicyDocument", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "malformedPolicyDocumentMessage"}}, "type" => "structure"}, "DecodeAuthorizationMessageResponse" => %{"members" => %{"DecodedMessage" => %{"shape" => "decodedMessageType"}}, "type" => "structure"}, "dateType" => %{"type" => "timestamp"}, "clientTokenType" => %{"max" => 2048, "min" => 4, "type" => "string"}, "idpRejectedClaimMessage" => %{"type" => "string"}, "AssumeRoleWithSAMLResponse" => %{"members" => %{"AssumedRoleUser" => %{"shape" => "AssumedRoleUser"}, "Audience" => %{"shape" => "Audience"}, "Credentials" => %{"shape" => "Credentials"}, "Issuer" => %{"shape" => "Issuer"}, "NameQualifier" => %{"shape" => "NameQualifier"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}, "Subject" => %{"shape" => "Subject"}, "SubjectType" => %{"shape" => "SubjectType"}}, "type" => "structure"}, "sessionPolicyDocumentType" => %{"max" => 2048, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "roleSessionNameType" => %{"max" => 64, "min" => 2, "pattern" => "[\\w+=,.@-]*", "type" => "string"}, "SAMLAssertionType" => %{"max" => 50000, "min" => 4, "type" => "string"}, "regionDisabledMessage" => %{"type" => "string"}, "assumedRoleIdType" => %{"max" => 193, "min" => 2, "pattern" => "[\\w+=,.@:-]*", "type" => "string"}, "invalidIdentityTokenMessage" => %{"type" => "string"}, "accountType" => %{"type" => "string"}, "GetSessionTokenRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "durationSecondsType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "TokenCode" => %{"shape" => "tokenCodeType"}}, "type" => "structure"}, "idpCommunicationErrorMessage" => %{"type" => "string"}, "encodedMessageType" => %{"max" => 10240, "min" => 1, "type" => "string"}, "roleDurationSecondsType" => %{"max" => 3600, "min" => 900, "type" => "integer"}, "AssumedRoleUser" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AssumedRoleId" => %{"shape" => "assumedRoleIdType"}}, "required" => ["AssumedRoleId", "Arn"], "type" => "structure"}, "webIdentitySubjectType" => %{"max" => 255, "min" => 6, "type" => "string"}, "AssumeRoleWithSAMLRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "roleDurationSecondsType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}, "PrincipalArn" => %{"shape" => "arnType"}, "RoleArn" => %{"shape" => "arnType"}, "SAMLAssertion" => %{"shape" => "SAMLAssertionType"}}, "required" => ["RoleArn", "PrincipalArn", "SAMLAssertion"], "type" => "structure"}, "GetCallerIdentityResponse" => %{"members" => %{"Account" => %{"shape" => "accountType"}, "Arn" => %{"shape" => "arnType"}, "UserId" => %{"shape" => "userIdType"}}, "type" => "structure"}, "NameQualifier" => %{"type" => "string"}, "DecodeAuthorizationMessageRequest" => %{"members" => %{"EncodedMessage" => %{"shape" => "encodedMessageType"}}, "required" => ["EncodedMessage"], "type" => "structure"}, "nonNegativeIntegerType" => %{"min" => 0, "type" => "integer"}, "GetSessionTokenResponse" => %{"members" => %{"Credentials" => %{"shape" => "Credentials"}}, "type" => "structure"}, "InvalidIdentityTokenException" => %{"error" => %{"code" => "InvalidIdentityToken", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidIdentityTokenMessage"}}, "type" => "structure"}, "federatedIdType" => %{"max" => 193, "min" => 2, "pattern" => "[\\w+=,.@\\:-]*", "type" => "string"}, "Audience" => %{"type" => "string"}, "packedPolicyTooLargeMessage" => %{"type" => "string"}, "PackedPolicyTooLargeException" => %{"error" => %{"code" => "PackedPolicyTooLarge", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "packedPolicyTooLargeMessage"}}, "type" => "structure"}, "IDPRejectedClaimException" => %{"error" => %{"code" => "IDPRejectedClaim", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "idpRejectedClaimMessage"}}, "type" => "structure"}, "tokenCodeType" => %{"max" => 6, "min" => 6, "pattern" => "[\\d]*", "type" => "string"}, "tokenType" => %{"type" => "string"}, "expiredIdentityTokenMessage" => %{"type" => "string"}, "durationSecondsType" => %{"max" => 129600, "min" => 900, "type" => "integer"}, "urlType" => %{"max" => 2048, "min" => 4, "type" => "string"}, "SubjectType" => %{"type" => "string"}, "userNameType" => %{"max" => 32, "min" => 2, "pattern" => "[\\w+=,.@-]*", "type" => "string"}, "userIdType" => %{"type" => "string"}}
+		%{"FederatedUser" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "FederatedUserId" => %{"shape" => "federatedIdType"}}, "required" => ["FederatedUserId", "Arn"], "type" => "structure"}, "accessKeyIdType" => %{"max" => 128, "min" => 16, "pattern" => "[\\w]*", "type" => "string"}, "arnType" => %{"max" => 2048, "min" => 20, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u007E\\u0085\\u00A0-\\uD7FF\\uE000-\\uFFFD\\u10000-\\u10FFFF]+", "type" => "string"}, "Subject" => %{"type" => "string"}, "AssumeRoleResponse" => %{"members" => %{"AssumedRoleUser" => %{"shape" => "AssumedRoleUser"}, "Credentials" => %{"shape" => "Credentials"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}}, "type" => "structure"}, "AssumeRoleWithWebIdentityRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "roleDurationSecondsType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}, "ProviderId" => %{"shape" => "urlType"}, "RoleArn" => %{"shape" => "arnType"}, "RoleSessionName" => %{"shape" => "roleSessionNameType"}, "WebIdentityToken" => %{"shape" => "clientTokenType"}}, "required" => ["RoleArn", "RoleSessionName", "WebIdentityToken"], "type" => "structure"}, "GetFederationTokenRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "durationSecondsType"}, "Name" => %{"shape" => "userNameType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}}, "required" => ["Name"], "type" => "structure"}, "serialNumberType" => %{"max" => 256, "min" => 9, "pattern" => "[\\w+=/:,.@-]*", "type" => "string"}, "decodedMessageType" => %{"type" => "string"}, "GetFederationTokenResponse" => %{"members" => %{"Credentials" => %{"shape" => "Credentials"}, "FederatedUser" => %{"shape" => "FederatedUser"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}}, "type" => "structure"}, "Issuer" => %{"type" => "string"}, "invalidAuthorizationMessage" => %{"type" => "string"}, "AssumeRoleRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "roleDurationSecondsType"}, "ExternalId" => %{"shape" => "externalIdType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}, "RoleArn" => %{"shape" => "arnType"}, "RoleSessionName" => %{"shape" => "roleSessionNameType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "TokenCode" => %{"shape" => "tokenCodeType"}}, "required" => ["RoleArn", "RoleSessionName"], "type" => "structure"}, "Credentials" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}, "Expiration" => %{"shape" => "dateType"}, "SecretAccessKey" => %{"shape" => "accessKeySecretType"}, "SessionToken" => %{"shape" => "tokenType"}}, "required" => ["AccessKeyId", "SecretAccessKey", "SessionToken", "Expiration"], "type" => "structure"}, "accessKeySecretType" => %{"type" => "string"}, "AssumeRoleWithWebIdentityResponse" => %{"members" => %{"AssumedRoleUser" => %{"shape" => "AssumedRoleUser"}, "Audience" => %{"shape" => "Audience"}, "Credentials" => %{"shape" => "Credentials"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}, "Provider" => %{"shape" => "Issuer"}, "SubjectFromWebIdentityToken" => %{"shape" => "webIdentitySubjectType"}}, "type" => "structure"}, "ExpiredTokenException" => %{"error" => %{"code" => "ExpiredTokenException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "expiredIdentityTokenMessage"}}, "type" => "structure"}, "GetCallerIdentityRequest" => %{"members" => %{}, "type" => "structure"}, "RegionDisabledException" => %{"error" => %{"code" => "RegionDisabledException", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "regionDisabledMessage"}}, "type" => "structure"}, "IDPCommunicationErrorException" => %{"error" => %{"code" => "IDPCommunicationError", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "idpCommunicationErrorMessage"}}, "type" => "structure"}, "InvalidAuthorizationMessageException" => %{"error" => %{"code" => "InvalidAuthorizationMessageException", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidAuthorizationMessage"}}, "type" => "structure"}, "malformedPolicyDocumentMessage" => %{"type" => "string"}, "externalIdType" => %{"max" => 1224, "min" => 2, "pattern" => "[\\w+=,.@:\\/-]*", "type" => "string"}, "MalformedPolicyDocumentException" => %{"error" => %{"code" => "MalformedPolicyDocument", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "malformedPolicyDocumentMessage"}}, "type" => "structure"}, "DecodeAuthorizationMessageResponse" => %{"members" => %{"DecodedMessage" => %{"shape" => "decodedMessageType"}}, "type" => "structure"}, "dateType" => %{"type" => "timestamp"}, "clientTokenType" => %{"max" => 2048, "min" => 4, "type" => "string"}, "idpRejectedClaimMessage" => %{"type" => "string"}, "AssumeRoleWithSAMLResponse" => %{"members" => %{"AssumedRoleUser" => %{"shape" => "AssumedRoleUser"}, "Audience" => %{"shape" => "Audience"}, "Credentials" => %{"shape" => "Credentials"}, "Issuer" => %{"shape" => "Issuer"}, "NameQualifier" => %{"shape" => "NameQualifier"}, "PackedPolicySize" => %{"shape" => "nonNegativeIntegerType"}, "Subject" => %{"shape" => "Subject"}, "SubjectType" => %{"shape" => "SubjectType"}}, "type" => "structure"}, "sessionPolicyDocumentType" => %{"max" => 2048, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "roleSessionNameType" => %{"max" => 64, "min" => 2, "pattern" => "[\\w+=,.@-]*", "type" => "string"}, "SAMLAssertionType" => %{"max" => 50000, "min" => 4, "type" => "string"}, "regionDisabledMessage" => %{"type" => "string"}, "assumedRoleIdType" => %{"max" => 193, "min" => 2, "pattern" => "[\\w+=,.@:-]*", "type" => "string"}, "invalidIdentityTokenMessage" => %{"type" => "string"}, "accountType" => %{"type" => "string"}, "GetSessionTokenRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "durationSecondsType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "TokenCode" => %{"shape" => "tokenCodeType"}}, "type" => "structure"}, "idpCommunicationErrorMessage" => %{"type" => "string"}, "encodedMessageType" => %{"max" => 10240, "min" => 1, "type" => "string"}, "roleDurationSecondsType" => %{"max" => 3600, "min" => 900, "type" => "integer"}, "AssumedRoleUser" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AssumedRoleId" => %{"shape" => "assumedRoleIdType"}}, "required" => ["AssumedRoleId", "Arn"], "type" => "structure"}, "webIdentitySubjectType" => %{"max" => 255, "min" => 6, "type" => "string"}, "AssumeRoleWithSAMLRequest" => %{"members" => %{"DurationSeconds" => %{"shape" => "roleDurationSecondsType"}, "Policy" => %{"shape" => "sessionPolicyDocumentType"}, "PrincipalArn" => %{"shape" => "arnType"}, "RoleArn" => %{"shape" => "arnType"}, "SAMLAssertion" => %{"shape" => "SAMLAssertionType"}}, "required" => ["RoleArn", "PrincipalArn", "SAMLAssertion"], "type" => "structure"}, "GetCallerIdentityResponse" => %{"members" => %{"Account" => %{"shape" => "accountType"}, "Arn" => %{"shape" => "arnType"}, "UserId" => %{"shape" => "userIdType"}}, "type" => "structure"}, "NameQualifier" => %{"type" => "string"}, "DecodeAuthorizationMessageRequest" => %{"members" => %{"EncodedMessage" => %{"shape" => "encodedMessageType"}}, "required" => ["EncodedMessage"], "type" => "structure"}, "nonNegativeIntegerType" => %{"min" => 0, "type" => "integer"}, "GetSessionTokenResponse" => %{"members" => %{"Credentials" => %{"shape" => "Credentials"}}, "type" => "structure"}, "InvalidIdentityTokenException" => %{"error" => %{"code" => "InvalidIdentityToken", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidIdentityTokenMessage"}}, "type" => "structure"}, "federatedIdType" => %{"max" => 193, "min" => 2, "pattern" => "[\\w+=,.@\\:-]*", "type" => "string"}, "Audience" => %{"type" => "string"}, "packedPolicyTooLargeMessage" => %{"type" => "string"}, "PackedPolicyTooLargeException" => %{"error" => %{"code" => "PackedPolicyTooLarge", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "packedPolicyTooLargeMessage"}}, "type" => "structure"}, "IDPRejectedClaimException" => %{"error" => %{"code" => "IDPRejectedClaim", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "idpRejectedClaimMessage"}}, "type" => "structure"}, "tokenCodeType" => %{"max" => 6, "min" => 6, "pattern" => "[\\d]*", "type" => "string"}, "tokenType" => %{"type" => "string"}, "expiredIdentityTokenMessage" => %{"type" => "string"}, "durationSecondsType" => %{"max" => 129600, "min" => 900, "type" => "integer"}, "urlType" => %{"max" => 2048, "min" => 4, "type" => "string"}, "SubjectType" => %{"type" => "string"}, "userNameType" => %{"max" => 32, "min" => 2, "pattern" => "[\\w+=,.@-]*", "type" => "string"}, "userIdType" => %{"type" => "string"}}
   end
 end

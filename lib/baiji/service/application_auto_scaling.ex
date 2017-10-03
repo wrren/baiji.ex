@@ -43,7 +43,7 @@ defmodule Baiji.ApplicationAutoScaling do
   Scaling](http://docs.aws.amazon.com/general/latest/gr/rande.html#as-app_region)
   in the *AWS General Reference*.
   """
-  
+
   @doc """
   Deletes the specified Application Auto Scaling scaling policy.
 
@@ -56,25 +56,17 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def delete_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteScalingPolicy",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "DeleteScalingPolicyRequest",
       output_shape:     "DeleteScalingPolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deregisters a scalable target.
 
@@ -86,25 +78,17 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def deregister_scalable_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeregisterScalableTarget",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "DeregisterScalableTargetRequest",
       output_shape:     "DeregisterScalableTargetResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Provides descriptive information about the scalable targets in the
   specified namespace.
@@ -118,25 +102,17 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def describe_scalable_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeScalableTargets",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "DescribeScalableTargetsRequest",
       output_shape:     "DescribeScalableTargetsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Provides descriptive information about the scaling activities in the
   specified namespace from the previous six weeks.
@@ -151,25 +127,17 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def describe_scaling_activities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeScalingActivities",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "DescribeScalingActivitiesRequest",
       output_shape:     "DescribeScalingActivitiesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Provides descriptive information about the scaling policies in the
   specified namespace.
@@ -183,25 +151,17 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def describe_scaling_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeScalingPolicies",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "DescribeScalingPoliciesRequest",
       output_shape:     "DescribeScalingPoliciesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates or updates a policy for an Application Auto Scaling scalable
   target.
@@ -221,25 +181,17 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def put_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "PutScalingPolicy",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "PutScalingPolicyRequest",
       output_shape:     "PutScalingPolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Registers or updates a scalable target. A scalable target is a resource
   that Application Auto Scaling can scale out or scale in. After you have
@@ -254,30 +206,36 @@ defmodule Baiji.ApplicationAutoScaling do
   """
   def register_scalable_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "application-autoscaling",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RegisterScalableTarget",
-      
-      target_prefix:    "AnyScaleFrontendService",
-      
-      endpoint_prefix:  "autoscaling",
-      type:             :json,
-      version:          "2016-02-06",
       method:           :post,
       input_shape:      "RegisterScalableTargetRequest",
       output_shape:     "RegisterScalableTargetResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "application-autoscaling",
+      target_prefix:    "AnyScaleFrontendService",
+      endpoint_prefix:  "autoscaling",
+      type:             :json,
+      version:          "2016-02-06",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"PutScalingPolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "PolicyName"}, "PolicyType" => %{"shape" => "PolicyType"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}, "StepScalingPolicyConfiguration" => %{"shape" => "StepScalingPolicyConfiguration"}, "TargetTrackingScalingPolicyConfiguration" => %{"shape" => "TargetTrackingScalingPolicyConfiguration"}}, "required" => ["PolicyName", "ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "Alarms" => %{"member" => %{"shape" => "Alarm"}, "type" => "list"}, "TimestampType" => %{"type" => "timestamp"}, "MetricType" => %{"enum" => ["DynamoDBReadCapacityUtilization", "DynamoDBWriteCapacityUtilization"], "type" => "string"}, "DeleteScalingPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "ConcurrentUpdateException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "DeregisterScalableTargetRequest" => %{"members" => %{"ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "ScalableTargets" => %{"member" => %{"shape" => "ScalableTarget"}, "type" => "list"}, "RegisterScalableTargetRequest" => %{"members" => %{"MaxCapacity" => %{"shape" => "ResourceCapacity"}, "MinCapacity" => %{"shape" => "ResourceCapacity"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "RoleARN" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "InvalidNextTokenException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutScalingPolicyResponse" => %{"members" => %{"Alarms" => %{"shape" => "Alarms"}, "PolicyARN" => %{"shape" => "ResourceIdMaxLen1600"}}, "required" => ["PolicyARN"], "type" => "structure"}, "ScalingActivities" => %{"member" => %{"shape" => "ScalingActivity"}, "type" => "list"}, "MinAdjustmentMagnitude" => %{"type" => "integer"}, "ScalingPolicies" => %{"member" => %{"shape" => "ScalingPolicy"}, "type" => "list"}, "MetricDimensionValue" => %{"type" => "string"}, "PredefinedMetricSpecification" => %{"members" => %{"PredefinedMetricType" => %{"shape" => "MetricType"}, "ResourceLabel" => %{"shape" => "ResourceLabel"}}, "required" => ["PredefinedMetricType"], "type" => "structure"}, "ServiceNamespace" => %{"enum" => ["ecs", "elasticmapreduce", "ec2", "appstream", "dynamodb"], "type" => "string"}, "MetricUnit" => %{"type" => "string"}, "MetricScale" => %{"type" => "double"}, "AdjustmentType" => %{"enum" => ["ChangeInCapacity", "PercentChangeInCapacity", "ExactCapacity"], "type" => "string"}, "DescribeScalingPoliciesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "XmlString"}, "PolicyNames" => %{"shape" => "ResourceIdsMaxLen1600"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace"], "type" => "structure"}, "MetricNamespace" => %{"type" => "string"}, "MaxResults" => %{"type" => "integer"}, "MetricName" => %{"type" => "string"}, "ValidationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ScalingActivity" => %{"members" => %{"ActivityId" => %{"shape" => "ResourceId"}, "Cause" => %{"shape" => "XmlString"}, "Description" => %{"shape" => "XmlString"}, "Details" => %{"shape" => "XmlString"}, "EndTime" => %{"shape" => "TimestampType"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}, "StartTime" => %{"shape" => "TimestampType"}, "StatusCode" => %{"shape" => "ScalingActivityStatusCode"}, "StatusMessage" => %{"shape" => "XmlString"}}, "required" => ["ActivityId", "ServiceNamespace", "ResourceId", "ScalableDimension", "Description", "Cause", "StartTime", "StatusCode"], "type" => "structure"}, "XmlString" => %{"pattern" => "[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\r\\n\\t]*", "type" => "string"}, "ScalingPolicy" => %{"members" => %{"Alarms" => %{"shape" => "Alarms"}, "CreationTime" => %{"shape" => "TimestampType"}, "PolicyARN" => %{"shape" => "ResourceIdMaxLen1600"}, "PolicyName" => %{"shape" => "PolicyName"}, "PolicyType" => %{"shape" => "PolicyType"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}, "StepScalingPolicyConfiguration" => %{"shape" => "StepScalingPolicyConfiguration"}, "TargetTrackingScalingPolicyConfiguration" => %{"shape" => "TargetTrackingScalingPolicyConfiguration"}}, "required" => ["PolicyARN", "PolicyName", "ServiceNamespace", "ResourceId", "ScalableDimension", "PolicyType", "CreationTime"], "type" => "structure"}, "DescribeScalingPoliciesResponse" => %{"members" => %{"NextToken" => %{"shape" => "XmlString"}, "ScalingPolicies" => %{"shape" => "ScalingPolicies"}}, "type" => "structure"}, "ResourceCapacity" => %{"type" => "integer"}, "LimitExceededException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ResourceId" => %{"pattern" => "[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\r\\n\\t]*", "type" => "string"}, "MetricDimensions" => %{"member" => %{"shape" => "MetricDimension"}, "type" => "list"}, "ScalableDimension" => %{"enum" => ["ecs:service:DesiredCount", "ec2:spot-fleet-request:TargetCapacity", "elasticmapreduce:instancegroup:InstanceCount", "appstream:fleet:DesiredCapacity", "dynamodb:table:ReadCapacityUnits", "dynamodb:table:WriteCapacityUnits", "dynamodb:index:ReadCapacityUnits", "dynamodb:index:WriteCapacityUnits"], "type" => "string"}, "MetricDimension" => %{"members" => %{"Name" => %{"shape" => "MetricDimensionName"}, "Value" => %{"shape" => "MetricDimensionValue"}}, "required" => ["Name", "Value"], "type" => "structure"}, "FailedResourceAccessException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InternalServiceException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DeleteScalingPolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "ResourceIdMaxLen1600"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["PolicyName", "ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "ScalingAdjustment" => %{"type" => "integer"}, "DescribeScalingActivitiesResponse" => %{"members" => %{"NextToken" => %{"shape" => "XmlString"}, "ScalingActivities" => %{"shape" => "ScalingActivities"}}, "type" => "structure"}, "MetricAggregationType" => %{"enum" => ["Average", "Minimum", "Maximum"], "type" => "string"}, "DescribeScalableTargetsResponse" => %{"members" => %{"NextToken" => %{"shape" => "XmlString"}, "ScalableTargets" => %{"shape" => "ScalableTargets"}}, "type" => "structure"}, "RegisterScalableTargetResponse" => %{"members" => %{}, "type" => "structure"}, "CustomizedMetricSpecification" => %{"members" => %{"Dimensions" => %{"shape" => "MetricDimensions"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "MetricNamespace"}, "Statistic" => %{"shape" => "MetricStatistic"}, "Unit" => %{"shape" => "MetricUnit"}}, "required" => ["MetricName", "Namespace", "Statistic"], "type" => "structure"}, "TargetTrackingScalingPolicyConfiguration" => %{"members" => %{"CustomizedMetricSpecification" => %{"shape" => "CustomizedMetricSpecification"}, "DisableScaleIn" => %{"shape" => "DisableScaleIn"}, "PredefinedMetricSpecification" => %{"shape" => "PredefinedMetricSpecification"}, "ScaleInCooldown" => %{"shape" => "Cooldown"}, "ScaleOutCooldown" => %{"shape" => "Cooldown"}, "TargetValue" => %{"shape" => "MetricScale"}}, "required" => ["TargetValue"], "type" => "structure"}, "StepAdjustments" => %{"member" => %{"shape" => "StepAdjustment"}, "type" => "list"}, "StepAdjustment" => %{"members" => %{"MetricIntervalLowerBound" => %{"shape" => "MetricScale"}, "MetricIntervalUpperBound" => %{"shape" => "MetricScale"}, "ScalingAdjustment" => %{"shape" => "ScalingAdjustment"}}, "required" => ["ScalingAdjustment"], "type" => "structure"}, "DisableScaleIn" => %{"type" => "boolean"}, "DescribeScalingActivitiesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "XmlString"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace"], "type" => "structure"}, "DescribeScalableTargetsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "XmlString"}, "ResourceIds" => %{"shape" => "ResourceIdsMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace"], "type" => "structure"}, "ScalingActivityStatusCode" => %{"enum" => ["Pending", "InProgress", "Successful", "Overridden", "Unfulfilled", "Failed"], "type" => "string"}, "PolicyName" => %{"max" => 256, "min" => 1, "pattern" => "\\p{Print}+", "type" => "string"}, "ObjectNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Cooldown" => %{"type" => "integer"}, "StepScalingPolicyConfiguration" => %{"members" => %{"AdjustmentType" => %{"shape" => "AdjustmentType"}, "Cooldown" => %{"shape" => "Cooldown"}, "MetricAggregationType" => %{"shape" => "MetricAggregationType"}, "MinAdjustmentMagnitude" => %{"shape" => "MinAdjustmentMagnitude"}, "StepAdjustments" => %{"shape" => "StepAdjustments"}}, "type" => "structure"}, "ResourceIdMaxLen1600" => %{"max" => 1600, "min" => 1, "pattern" => "[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\r\\n\\t]*", "type" => "string"}, "ResourceIdsMaxLen1600" => %{"member" => %{"shape" => "ResourceIdMaxLen1600"}, "type" => "list"}, "ResourceLabel" => %{"max" => 1023, "min" => 1, "type" => "string"}, "DeregisterScalableTargetResponse" => %{"members" => %{}, "type" => "structure"}, "ScalableTarget" => %{"members" => %{"CreationTime" => %{"shape" => "TimestampType"}, "MaxCapacity" => %{"shape" => "ResourceCapacity"}, "MinCapacity" => %{"shape" => "ResourceCapacity"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "RoleARN" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace", "ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"], "type" => "structure"}, "MetricDimensionName" => %{"type" => "string"}, "PolicyType" => %{"enum" => ["StepScaling", "TargetTrackingScaling"], "type" => "string"}, "Alarm" => %{"members" => %{"AlarmARN" => %{"shape" => "ResourceId"}, "AlarmName" => %{"shape" => "ResourceId"}}, "required" => ["AlarmName", "AlarmARN"], "type" => "structure"}, "MetricStatistic" => %{"enum" => ["Average", "Minimum", "Maximum", "SampleCount", "Sum"], "type" => "string"}}
+		%{"PutScalingPolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "PolicyName"}, "PolicyType" => %{"shape" => "PolicyType"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}, "StepScalingPolicyConfiguration" => %{"shape" => "StepScalingPolicyConfiguration"}, "TargetTrackingScalingPolicyConfiguration" => %{"shape" => "TargetTrackingScalingPolicyConfiguration"}}, "required" => ["PolicyName", "ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "Alarms" => %{"member" => %{"shape" => "Alarm"}, "type" => "list"}, "TimestampType" => %{"type" => "timestamp"}, "MetricType" => %{"enum" => ["DynamoDBReadCapacityUtilization", "DynamoDBWriteCapacityUtilization"], "type" => "string"}, "DeleteScalingPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "ConcurrentUpdateException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "DeregisterScalableTargetRequest" => %{"members" => %{"ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "ScalableTargets" => %{"member" => %{"shape" => "ScalableTarget"}, "type" => "list"}, "RegisterScalableTargetRequest" => %{"members" => %{"MaxCapacity" => %{"shape" => "ResourceCapacity"}, "MinCapacity" => %{"shape" => "ResourceCapacity"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "RoleARN" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "InvalidNextTokenException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutScalingPolicyResponse" => %{"members" => %{"Alarms" => %{"shape" => "Alarms"}, "PolicyARN" => %{"shape" => "ResourceIdMaxLen1600"}}, "required" => ["PolicyARN"], "type" => "structure"}, "ScalingActivities" => %{"member" => %{"shape" => "ScalingActivity"}, "type" => "list"}, "MinAdjustmentMagnitude" => %{"type" => "integer"}, "ScalingPolicies" => %{"member" => %{"shape" => "ScalingPolicy"}, "type" => "list"}, "MetricDimensionValue" => %{"type" => "string"}, "PredefinedMetricSpecification" => %{"members" => %{"PredefinedMetricType" => %{"shape" => "MetricType"}, "ResourceLabel" => %{"shape" => "ResourceLabel"}}, "required" => ["PredefinedMetricType"], "type" => "structure"}, "ServiceNamespace" => %{"enum" => ["ecs", "elasticmapreduce", "ec2", "appstream", "dynamodb"], "type" => "string"}, "MetricUnit" => %{"type" => "string"}, "MetricScale" => %{"type" => "double"}, "AdjustmentType" => %{"enum" => ["ChangeInCapacity", "PercentChangeInCapacity", "ExactCapacity"], "type" => "string"}, "DescribeScalingPoliciesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "XmlString"}, "PolicyNames" => %{"shape" => "ResourceIdsMaxLen1600"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace"], "type" => "structure"}, "MetricNamespace" => %{"type" => "string"}, "MaxResults" => %{"type" => "integer"}, "MetricName" => %{"type" => "string"}, "ValidationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ScalingActivity" => %{"members" => %{"ActivityId" => %{"shape" => "ResourceId"}, "Cause" => %{"shape" => "XmlString"}, "Description" => %{"shape" => "XmlString"}, "Details" => %{"shape" => "XmlString"}, "EndTime" => %{"shape" => "TimestampType"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}, "StartTime" => %{"shape" => "TimestampType"}, "StatusCode" => %{"shape" => "ScalingActivityStatusCode"}, "StatusMessage" => %{"shape" => "XmlString"}}, "required" => ["ActivityId", "ServiceNamespace", "ResourceId", "ScalableDimension", "Description", "Cause", "StartTime", "StatusCode"], "type" => "structure"}, "XmlString" => %{"pattern" => "[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\r\\n\\t]*", "type" => "string"}, "ScalingPolicy" => %{"members" => %{"Alarms" => %{"shape" => "Alarms"}, "CreationTime" => %{"shape" => "TimestampType"}, "PolicyARN" => %{"shape" => "ResourceIdMaxLen1600"}, "PolicyName" => %{"shape" => "PolicyName"}, "PolicyType" => %{"shape" => "PolicyType"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}, "StepScalingPolicyConfiguration" => %{"shape" => "StepScalingPolicyConfiguration"}, "TargetTrackingScalingPolicyConfiguration" => %{"shape" => "TargetTrackingScalingPolicyConfiguration"}}, "required" => ["PolicyARN", "PolicyName", "ServiceNamespace", "ResourceId", "ScalableDimension", "PolicyType", "CreationTime"], "type" => "structure"}, "DescribeScalingPoliciesResponse" => %{"members" => %{"NextToken" => %{"shape" => "XmlString"}, "ScalingPolicies" => %{"shape" => "ScalingPolicies"}}, "type" => "structure"}, "ResourceCapacity" => %{"type" => "integer"}, "LimitExceededException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ResourceId" => %{"pattern" => "[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\r\\n\\t]*", "type" => "string"}, "MetricDimensions" => %{"member" => %{"shape" => "MetricDimension"}, "type" => "list"}, "ScalableDimension" => %{"enum" => ["ecs:service:DesiredCount", "ec2:spot-fleet-request:TargetCapacity", "elasticmapreduce:instancegroup:InstanceCount", "appstream:fleet:DesiredCapacity", "dynamodb:table:ReadCapacityUnits", "dynamodb:table:WriteCapacityUnits", "dynamodb:index:ReadCapacityUnits", "dynamodb:index:WriteCapacityUnits"], "type" => "string"}, "MetricDimension" => %{"members" => %{"Name" => %{"shape" => "MetricDimensionName"}, "Value" => %{"shape" => "MetricDimensionValue"}}, "required" => ["Name", "Value"], "type" => "structure"}, "FailedResourceAccessException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InternalServiceException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DeleteScalingPolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "ResourceIdMaxLen1600"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["PolicyName", "ServiceNamespace", "ResourceId", "ScalableDimension"], "type" => "structure"}, "ScalingAdjustment" => %{"type" => "integer"}, "DescribeScalingActivitiesResponse" => %{"members" => %{"NextToken" => %{"shape" => "XmlString"}, "ScalingActivities" => %{"shape" => "ScalingActivities"}}, "type" => "structure"}, "MetricAggregationType" => %{"enum" => ["Average", "Minimum", "Maximum"], "type" => "string"}, "DescribeScalableTargetsResponse" => %{"members" => %{"NextToken" => %{"shape" => "XmlString"}, "ScalableTargets" => %{"shape" => "ScalableTargets"}}, "type" => "structure"}, "RegisterScalableTargetResponse" => %{"members" => %{}, "type" => "structure"}, "CustomizedMetricSpecification" => %{"members" => %{"Dimensions" => %{"shape" => "MetricDimensions"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "MetricNamespace"}, "Statistic" => %{"shape" => "MetricStatistic"}, "Unit" => %{"shape" => "MetricUnit"}}, "required" => ["MetricName", "Namespace", "Statistic"], "type" => "structure"}, "TargetTrackingScalingPolicyConfiguration" => %{"members" => %{"CustomizedMetricSpecification" => %{"shape" => "CustomizedMetricSpecification"}, "DisableScaleIn" => %{"shape" => "DisableScaleIn"}, "PredefinedMetricSpecification" => %{"shape" => "PredefinedMetricSpecification"}, "ScaleInCooldown" => %{"shape" => "Cooldown"}, "ScaleOutCooldown" => %{"shape" => "Cooldown"}, "TargetValue" => %{"shape" => "MetricScale"}}, "required" => ["TargetValue"], "type" => "structure"}, "StepAdjustments" => %{"member" => %{"shape" => "StepAdjustment"}, "type" => "list"}, "StepAdjustment" => %{"members" => %{"MetricIntervalLowerBound" => %{"shape" => "MetricScale"}, "MetricIntervalUpperBound" => %{"shape" => "MetricScale"}, "ScalingAdjustment" => %{"shape" => "ScalingAdjustment"}}, "required" => ["ScalingAdjustment"], "type" => "structure"}, "DisableScaleIn" => %{"type" => "boolean"}, "DescribeScalingActivitiesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "XmlString"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace"], "type" => "structure"}, "DescribeScalableTargetsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "XmlString"}, "ResourceIds" => %{"shape" => "ResourceIdsMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace"], "type" => "structure"}, "ScalingActivityStatusCode" => %{"enum" => ["Pending", "InProgress", "Successful", "Overridden", "Unfulfilled", "Failed"], "type" => "string"}, "PolicyName" => %{"max" => 256, "min" => 1, "pattern" => "\\p{Print}+", "type" => "string"}, "ObjectNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Cooldown" => %{"type" => "integer"}, "StepScalingPolicyConfiguration" => %{"members" => %{"AdjustmentType" => %{"shape" => "AdjustmentType"}, "Cooldown" => %{"shape" => "Cooldown"}, "MetricAggregationType" => %{"shape" => "MetricAggregationType"}, "MinAdjustmentMagnitude" => %{"shape" => "MinAdjustmentMagnitude"}, "StepAdjustments" => %{"shape" => "StepAdjustments"}}, "type" => "structure"}, "ResourceIdMaxLen1600" => %{"max" => 1600, "min" => 1, "pattern" => "[\\u0020-\\uD7FF\\uE000-\\uFFFD\\uD800\\uDC00-\\uDBFF\\uDFFF\\r\\n\\t]*", "type" => "string"}, "ResourceIdsMaxLen1600" => %{"member" => %{"shape" => "ResourceIdMaxLen1600"}, "type" => "list"}, "ResourceLabel" => %{"max" => 1023, "min" => 1, "type" => "string"}, "DeregisterScalableTargetResponse" => %{"members" => %{}, "type" => "structure"}, "ScalableTarget" => %{"members" => %{"CreationTime" => %{"shape" => "TimestampType"}, "MaxCapacity" => %{"shape" => "ResourceCapacity"}, "MinCapacity" => %{"shape" => "ResourceCapacity"}, "ResourceId" => %{"shape" => "ResourceIdMaxLen1600"}, "RoleARN" => %{"shape" => "ResourceIdMaxLen1600"}, "ScalableDimension" => %{"shape" => "ScalableDimension"}, "ServiceNamespace" => %{"shape" => "ServiceNamespace"}}, "required" => ["ServiceNamespace", "ResourceId", "ScalableDimension", "MinCapacity", "MaxCapacity", "RoleARN", "CreationTime"], "type" => "structure"}, "MetricDimensionName" => %{"type" => "string"}, "PolicyType" => %{"enum" => ["StepScaling", "TargetTrackingScaling"], "type" => "string"}, "Alarm" => %{"members" => %{"AlarmARN" => %{"shape" => "ResourceId"}, "AlarmName" => %{"shape" => "ResourceId"}}, "required" => ["AlarmName", "AlarmARN"], "type" => "structure"}, "MetricStatistic" => %{"enum" => ["Average", "Minimum", "Maximum", "SampleCount", "Sum"], "type" => "string"}}
   end
 end

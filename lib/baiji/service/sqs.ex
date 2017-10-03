@@ -45,7 +45,7 @@ defmodule Baiji.SQS do
 
   </li> </ul> </li> </ul>
   """
-  
+
   @doc """
   Adds a permission to a queue for a specific
   [principal](http://docs.aws.amazon.com/general/latest/gr/glos-chap.html#P).
@@ -76,23 +76,17 @@ defmodule Baiji.SQS do
   """
   def add_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AddPermission",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "AddPermissionRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Changes the visibility timeout of a specified message in a queue to a new
   value. The maximum allowed timeout value is 12 hours. Thus, you can't
@@ -138,23 +132,17 @@ defmodule Baiji.SQS do
   """
   def change_message_visibility(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ChangeMessageVisibility",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "ChangeMessageVisibilityRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Changes the visibility timeout of multiple messages. This is a batch
   version of ` `ChangeMessageVisibility`.` The result of the action on each
@@ -178,23 +166,17 @@ defmodule Baiji.SQS do
   """
   def change_message_visibility_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ChangeMessageVisibilityBatch",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "ChangeMessageVisibilityBatchRequest",
       output_shape:     "ChangeMessageVisibilityBatchResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a new standard or FIFO queue. You can pass one or more attributes
   in the request. Keep the following caveats in mind:
@@ -243,23 +225,17 @@ defmodule Baiji.SQS do
   """
   def create_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateQueue",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "CreateQueueRequest",
       output_shape:     "CreateQueueResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified message from the specified queue. You specify the
   message by using the message's *receipt handle* and not the *MessageId* you
@@ -287,23 +263,17 @@ defmodule Baiji.SQS do
   """
   def delete_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteMessage",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "DeleteMessageRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes up to ten messages from the specified queue. This is a batch
   version of ` `DeleteMessage`.` The result of the action on each message is
@@ -325,23 +295,17 @@ defmodule Baiji.SQS do
   """
   def delete_message_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteMessageBatch",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "DeleteMessageBatchRequest",
       output_shape:     "DeleteMessageBatchResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the queue specified by the `QueueUrl`, even if the queue is empty.
   If the specified queue doesn't exist, Amazon SQS returns a successful
@@ -360,23 +324,17 @@ defmodule Baiji.SQS do
   """
   def delete_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteQueue",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "DeleteQueueRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Gets attributes for the specified queue.
 
@@ -396,23 +354,17 @@ defmodule Baiji.SQS do
   """
   def get_queue_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetQueueAttributes",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "GetQueueAttributesRequest",
       output_shape:     "GetQueueAttributesResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the URL of an existing queue. This action provides a simple way to
   retrieve the URL of an Amazon SQS queue.
@@ -427,23 +379,17 @@ defmodule Baiji.SQS do
   """
   def get_queue_url(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetQueueUrl",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "GetQueueUrlRequest",
       output_shape:     "GetQueueUrlResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of your queues that have the `RedrivePolicy` queue attribute
   configured with a dead letter queue.
@@ -455,23 +401,17 @@ defmodule Baiji.SQS do
   """
   def list_dead_letter_source_queues(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListDeadLetterSourceQueues",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "ListDeadLetterSourceQueuesRequest",
       output_shape:     "ListDeadLetterSourceQueuesResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns a list of your queues. The maximum number of queues that can be
   returned is 1,000. If you specify a value for the optional
@@ -480,23 +420,17 @@ defmodule Baiji.SQS do
   """
   def list_queues(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListQueues",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "ListQueuesRequest",
       output_shape:     "ListQueuesResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the messages in a queue specified by the `QueueURL` parameter.
 
@@ -512,23 +446,17 @@ defmodule Baiji.SQS do
   """
   def purge_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "PurgeQueue",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "PurgeQueueRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves one or more messages (up to 10), from the specified queue. Using
   the `WaitTimeSeconds` parameter enables long-poll support. For more
@@ -586,46 +514,34 @@ defmodule Baiji.SQS do
   """
   def receive_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ReceiveMessage",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "ReceiveMessageRequest",
       output_shape:     "ReceiveMessageResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Revokes any permissions in the queue policy that matches the specified
   `Label` parameter. Only the owner of the queue can remove permissions.
   """
   def remove_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RemovePermission",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "RemovePermissionRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Delivers a message to the specified queue.
 
@@ -643,23 +559,17 @@ defmodule Baiji.SQS do
   """
   def send_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SendMessage",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "SendMessageRequest",
       output_shape:     "SendMessageResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Delivers up to ten messages to the specified queue. This is a batch version
   of ` `SendMessage`.` For a FIFO queue, multiple messages within a single
@@ -699,23 +609,17 @@ defmodule Baiji.SQS do
   """
   def send_message_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SendMessageBatch",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "SendMessageBatchRequest",
       output_shape:     "SendMessageBatchResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the value of one or more queue attributes. When you change a queue's
   attributes, the change can take up to 60 seconds for most of the attributes
@@ -730,28 +634,36 @@ defmodule Baiji.SQS do
   """
   def set_queue_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "sqs",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetQueueAttributes",
-      
-      endpoint_prefix:  "sqs",
-      type:             :xml,
-      version:          "2012-11-05",
       method:           :post,
       input_shape:      "SetQueueAttributesRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "sqs",
+      target_prefix:    nil,
+      endpoint_prefix:  "sqs",
+      type:             :xml,
+      version:          "2012-11-05",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"BinaryList" => %{"member" => %{"locationName" => "BinaryListValue", "shape" => "Binary"}, "type" => "list"}, "DeleteMessageBatchResultEntry" => %{"members" => %{"Id" => %{"shape" => "String"}}, "required" => ["Id"], "type" => "structure"}, "String" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "MessageSystemAttributeMap" => %{"flattened" => true, "key" => %{"locationName" => "Name", "shape" => "MessageSystemAttributeName"}, "locationName" => "Attribute", "type" => "map", "value" => %{"locationName" => "Value", "shape" => "String"}}, "QueueAttributeName" => %{"enum" => ["All", "Policy", "VisibilityTimeout", "MaximumMessageSize", "MessageRetentionPeriod", "ApproximateNumberOfMessages", "ApproximateNumberOfMessagesNotVisible", "CreatedTimestamp", "LastModifiedTimestamp", "QueueArn", "ApproximateNumberOfMessagesDelayed", "DelaySeconds", "ReceiveMessageWaitTimeSeconds", "RedrivePolicy", "FifoQueue", "ContentBasedDeduplication", "KmsMasterKeyId", "KmsDataKeyReusePeriodSeconds"], "type" => "string"}, "ChangeMessageVisibilityRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}, "VisibilityTimeout" => %{"shape" => "Integer"}}, "required" => ["QueueUrl", "ReceiptHandle", "VisibilityTimeout"], "type" => "structure"}, "QueueDoesNotExist" => %{"error" => %{"code" => "AWS.SimpleQueueService.NonExistentQueue", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SendMessageBatchRequestEntryList" => %{"flattened" => true, "member" => %{"locationName" => "SendMessageBatchRequestEntry", "shape" => "SendMessageBatchRequestEntry"}, "type" => "list"}, "ListQueuesResult" => %{"members" => %{"QueueUrls" => %{"shape" => "QueueUrlList"}}, "type" => "structure"}, "GetQueueAttributesResult" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "QueueAttributeMap"}}, "type" => "structure"}, "AddPermissionRequest" => %{"members" => %{"AWSAccountIds" => %{"shape" => "AWSAccountIdList"}, "Actions" => %{"shape" => "ActionNameList"}, "Label" => %{"shape" => "String"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Label", "AWSAccountIds", "Actions"], "type" => "structure"}, "ChangeMessageVisibilityBatchRequestEntryList" => %{"flattened" => true, "member" => %{"locationName" => "ChangeMessageVisibilityBatchRequestEntry", "shape" => "ChangeMessageVisibilityBatchRequestEntry"}, "type" => "list"}, "ListDeadLetterSourceQueuesResult" => %{"members" => %{"queueUrls" => %{"shape" => "QueueUrlList"}}, "required" => ["queueUrls"], "type" => "structure"}, "ListDeadLetterSourceQueuesRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "SendMessageBatchResult" => %{"members" => %{"Failed" => %{"shape" => "BatchResultErrorEntryList"}, "Successful" => %{"shape" => "SendMessageBatchResultEntryList"}}, "required" => ["Successful", "Failed"], "type" => "structure"}, "StringList" => %{"member" => %{"locationName" => "StringListValue", "shape" => "String"}, "type" => "list"}, "AWSAccountIdList" => %{"flattened" => true, "member" => %{"locationName" => "AWSAccountId", "shape" => "String"}, "type" => "list"}, "UnsupportedOperation" => %{"error" => %{"code" => "AWS.SimpleQueueService.UnsupportedOperation", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "QueueUrlList" => %{"flattened" => true, "member" => %{"locationName" => "QueueUrl", "shape" => "String"}, "type" => "list"}, "SendMessageBatchResultEntryList" => %{"flattened" => true, "member" => %{"locationName" => "SendMessageBatchResultEntry", "shape" => "SendMessageBatchResultEntry"}, "type" => "list"}, "GetQueueUrlResult" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "type" => "structure"}, "BatchEntryIdsNotDistinct" => %{"error" => %{"code" => "AWS.SimpleQueueService.BatchEntryIdsNotDistinct", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "QueueNameExists" => %{"error" => %{"code" => "QueueAlreadyExists", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SendMessageRequest" => %{"members" => %{"DelaySeconds" => %{"shape" => "Integer"}, "MessageAttributes" => %{"locationName" => "MessageAttribute", "shape" => "MessageBodyAttributeMap"}, "MessageBody" => %{"shape" => "String"}, "MessageDeduplicationId" => %{"shape" => "String"}, "MessageGroupId" => %{"shape" => "String"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "MessageBody"], "type" => "structure"}, "MessageAttributeName" => %{"type" => "string"}, "ChangeMessageVisibilityBatchResult" => %{"members" => %{"Failed" => %{"shape" => "BatchResultErrorEntryList"}, "Successful" => %{"shape" => "ChangeMessageVisibilityBatchResultEntryList"}}, "required" => ["Successful", "Failed"], "type" => "structure"}, "InvalidMessageContents" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Message" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "MessageSystemAttributeMap"}, "Body" => %{"shape" => "String"}, "MD5OfBody" => %{"shape" => "String"}, "MD5OfMessageAttributes" => %{"shape" => "String"}, "MessageAttributes" => %{"locationName" => "MessageAttribute", "shape" => "MessageBodyAttributeMap"}, "MessageId" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteMessageRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}}, "required" => ["QueueUrl", "ReceiptHandle"], "type" => "structure"}, "InvalidBatchEntryId" => %{"error" => %{"code" => "AWS.SimpleQueueService.InvalidBatchEntryId", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SendMessageBatchResultEntry" => %{"members" => %{"Id" => %{"shape" => "String"}, "MD5OfMessageAttributes" => %{"shape" => "String"}, "MD5OfMessageBody" => %{"shape" => "String"}, "MessageId" => %{"shape" => "String"}, "SequenceNumber" => %{"shape" => "String"}}, "required" => ["Id", "MessageId", "MD5OfMessageBody"], "type" => "structure"}, "EmptyBatchRequest" => %{"error" => %{"code" => "AWS.SimpleQueueService.EmptyBatchRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "MessageSystemAttributeName" => %{"enum" => ["SenderId", "SentTimestamp", "ApproximateReceiveCount", "ApproximateFirstReceiveTimestamp", "SequenceNumber", "MessageDeduplicationId", "MessageGroupId"], "type" => "string"}, "GetQueueAttributesRequest" => %{"members" => %{"AttributeNames" => %{"shape" => "AttributeNameList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "SendMessageResult" => %{"members" => %{"MD5OfMessageAttributes" => %{"shape" => "String"}, "MD5OfMessageBody" => %{"shape" => "String"}, "MessageId" => %{"shape" => "String"}, "SequenceNumber" => %{"shape" => "String"}}, "type" => "structure"}, "ChangeMessageVisibilityBatchResultEntry" => %{"members" => %{"Id" => %{"shape" => "String"}}, "required" => ["Id"], "type" => "structure"}, "BatchRequestTooLong" => %{"error" => %{"code" => "AWS.SimpleQueueService.BatchRequestTooLong", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ReceiptHandleIsInvalid" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "PurgeQueueRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "InvalidIdFormat" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteMessageBatchResult" => %{"members" => %{"Failed" => %{"shape" => "BatchResultErrorEntryList"}, "Successful" => %{"shape" => "DeleteMessageBatchResultEntryList"}}, "required" => ["Successful", "Failed"], "type" => "structure"}, "QueueDeletedRecently" => %{"error" => %{"code" => "AWS.SimpleQueueService.QueueDeletedRecently", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "MessageAttributeValue" => %{"members" => %{"BinaryListValues" => %{"flattened" => true, "locationName" => "BinaryListValue", "shape" => "BinaryList"}, "BinaryValue" => %{"shape" => "Binary"}, "DataType" => %{"shape" => "String"}, "StringListValues" => %{"flattened" => true, "locationName" => "StringListValue", "shape" => "StringList"}, "StringValue" => %{"shape" => "String"}}, "required" => ["DataType"], "type" => "structure"}, "BatchResultErrorEntryList" => %{"flattened" => true, "member" => %{"locationName" => "BatchResultErrorEntry", "shape" => "BatchResultErrorEntry"}, "type" => "list"}, "ListQueuesRequest" => %{"members" => %{"QueueNamePrefix" => %{"shape" => "String"}}, "type" => "structure"}, "ChangeMessageVisibilityBatchRequest" => %{"members" => %{"Entries" => %{"shape" => "ChangeMessageVisibilityBatchRequestEntryList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Entries"], "type" => "structure"}, "BatchResultErrorEntry" => %{"members" => %{"Code" => %{"shape" => "String"}, "Id" => %{"shape" => "String"}, "Message" => %{"shape" => "String"}, "SenderFault" => %{"shape" => "Boolean"}}, "required" => ["Id", "SenderFault", "Code"], "type" => "structure"}, "DeleteMessageBatchRequest" => %{"members" => %{"Entries" => %{"shape" => "DeleteMessageBatchRequestEntryList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Entries"], "type" => "structure"}, "DeleteMessageBatchRequestEntryList" => %{"flattened" => true, "member" => %{"locationName" => "DeleteMessageBatchRequestEntry", "shape" => "DeleteMessageBatchRequestEntry"}, "type" => "list"}, "CreateQueueResult" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "type" => "structure"}, "GetQueueUrlRequest" => %{"members" => %{"QueueName" => %{"shape" => "String"}, "QueueOwnerAWSAccountId" => %{"shape" => "String"}}, "required" => ["QueueName"], "type" => "structure"}, "DeleteMessageBatchResultEntryList" => %{"flattened" => true, "member" => %{"locationName" => "DeleteMessageBatchResultEntry", "shape" => "DeleteMessageBatchResultEntry"}, "type" => "list"}, "MessageList" => %{"flattened" => true, "member" => %{"locationName" => "Message", "shape" => "Message"}, "type" => "list"}, "TooManyEntriesInBatchRequest" => %{"error" => %{"code" => "AWS.SimpleQueueService.TooManyEntriesInBatchRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Binary" => %{"type" => "blob"}, "RemovePermissionRequest" => %{"members" => %{"Label" => %{"shape" => "String"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Label"], "type" => "structure"}, "ChangeMessageVisibilityBatchResultEntryList" => %{"flattened" => true, "member" => %{"locationName" => "ChangeMessageVisibilityBatchResultEntry", "shape" => "ChangeMessageVisibilityBatchResultEntry"}, "type" => "list"}, "PurgeQueueInProgress" => %{"error" => %{"code" => "AWS.SimpleQueueService.PurgeQueueInProgress", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreateQueueRequest" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "QueueAttributeMap"}, "QueueName" => %{"shape" => "String"}}, "required" => ["QueueName"], "type" => "structure"}, "AttributeNameList" => %{"flattened" => true, "member" => %{"locationName" => "AttributeName", "shape" => "QueueAttributeName"}, "type" => "list"}, "DeleteMessageBatchRequestEntry" => %{"members" => %{"Id" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}}, "required" => ["Id", "ReceiptHandle"], "type" => "structure"}, "InvalidAttributeName" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ActionNameList" => %{"flattened" => true, "member" => %{"locationName" => "ActionName", "shape" => "String"}, "type" => "list"}, "OverLimit" => %{"error" => %{"code" => "OverLimit", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "MessageNotInflight" => %{"error" => %{"code" => "AWS.SimpleQueueService.MessageNotInflight", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ReceiveMessageRequest" => %{"members" => %{"AttributeNames" => %{"shape" => "AttributeNameList"}, "MaxNumberOfMessages" => %{"shape" => "Integer"}, "MessageAttributeNames" => %{"shape" => "MessageAttributeNameList"}, "QueueUrl" => %{"shape" => "String"}, "ReceiveRequestAttemptId" => %{"shape" => "String"}, "VisibilityTimeout" => %{"shape" => "Integer"}, "WaitTimeSeconds" => %{"shape" => "Integer"}}, "required" => ["QueueUrl"], "type" => "structure"}, "SendMessageBatchRequest" => %{"members" => %{"Entries" => %{"shape" => "SendMessageBatchRequestEntryList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Entries"], "type" => "structure"}, "QueueAttributeMap" => %{"flattened" => true, "key" => %{"locationName" => "Name", "shape" => "QueueAttributeName"}, "locationName" => "Attribute", "type" => "map", "value" => %{"locationName" => "Value", "shape" => "String"}}, "Integer" => %{"type" => "integer"}, "MessageAttributeNameList" => %{"flattened" => true, "member" => %{"locationName" => "MessageAttributeName", "shape" => "MessageAttributeName"}, "type" => "list"}, "ReceiveMessageResult" => %{"members" => %{"Messages" => %{"shape" => "MessageList"}}, "type" => "structure"}, "SendMessageBatchRequestEntry" => %{"members" => %{"DelaySeconds" => %{"shape" => "Integer"}, "Id" => %{"shape" => "String"}, "MessageAttributes" => %{"locationName" => "MessageAttribute", "shape" => "MessageBodyAttributeMap"}, "MessageBody" => %{"shape" => "String"}, "MessageDeduplicationId" => %{"shape" => "String"}, "MessageGroupId" => %{"shape" => "String"}}, "required" => ["Id", "MessageBody"], "type" => "structure"}, "DeleteQueueRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "MessageBodyAttributeMap" => %{"flattened" => true, "key" => %{"locationName" => "Name", "shape" => "String"}, "type" => "map", "value" => %{"locationName" => "Value", "shape" => "MessageAttributeValue"}}, "SetQueueAttributesRequest" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "QueueAttributeMap"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Attributes"], "type" => "structure"}, "ChangeMessageVisibilityBatchRequestEntry" => %{"members" => %{"Id" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}, "VisibilityTimeout" => %{"shape" => "Integer"}}, "required" => ["Id", "ReceiptHandle"], "type" => "structure"}}
+		%{"BinaryList" => %{"member" => %{"locationName" => "BinaryListValue", "shape" => "Binary"}, "type" => "list"}, "DeleteMessageBatchResultEntry" => %{"members" => %{"Id" => %{"shape" => "String"}}, "required" => ["Id"], "type" => "structure"}, "String" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "MessageSystemAttributeMap" => %{"flattened" => true, "key" => %{"locationName" => "Name", "shape" => "MessageSystemAttributeName"}, "locationName" => "Attribute", "type" => "map", "value" => %{"locationName" => "Value", "shape" => "String"}}, "QueueAttributeName" => %{"enum" => ["All", "Policy", "VisibilityTimeout", "MaximumMessageSize", "MessageRetentionPeriod", "ApproximateNumberOfMessages", "ApproximateNumberOfMessagesNotVisible", "CreatedTimestamp", "LastModifiedTimestamp", "QueueArn", "ApproximateNumberOfMessagesDelayed", "DelaySeconds", "ReceiveMessageWaitTimeSeconds", "RedrivePolicy", "FifoQueue", "ContentBasedDeduplication", "KmsMasterKeyId", "KmsDataKeyReusePeriodSeconds"], "type" => "string"}, "ChangeMessageVisibilityRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}, "VisibilityTimeout" => %{"shape" => "Integer"}}, "required" => ["QueueUrl", "ReceiptHandle", "VisibilityTimeout"], "type" => "structure"}, "QueueDoesNotExist" => %{"error" => %{"code" => "AWS.SimpleQueueService.NonExistentQueue", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SendMessageBatchRequestEntryList" => %{"flattened" => true, "member" => %{"locationName" => "SendMessageBatchRequestEntry", "shape" => "SendMessageBatchRequestEntry"}, "type" => "list"}, "ListQueuesResult" => %{"members" => %{"QueueUrls" => %{"shape" => "QueueUrlList"}}, "type" => "structure"}, "GetQueueAttributesResult" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "QueueAttributeMap"}}, "type" => "structure"}, "AddPermissionRequest" => %{"members" => %{"AWSAccountIds" => %{"shape" => "AWSAccountIdList"}, "Actions" => %{"shape" => "ActionNameList"}, "Label" => %{"shape" => "String"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Label", "AWSAccountIds", "Actions"], "type" => "structure"}, "ChangeMessageVisibilityBatchRequestEntryList" => %{"flattened" => true, "member" => %{"locationName" => "ChangeMessageVisibilityBatchRequestEntry", "shape" => "ChangeMessageVisibilityBatchRequestEntry"}, "type" => "list"}, "ListDeadLetterSourceQueuesResult" => %{"members" => %{"queueUrls" => %{"shape" => "QueueUrlList"}}, "required" => ["queueUrls"], "type" => "structure"}, "ListDeadLetterSourceQueuesRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "SendMessageBatchResult" => %{"members" => %{"Failed" => %{"shape" => "BatchResultErrorEntryList"}, "Successful" => %{"shape" => "SendMessageBatchResultEntryList"}}, "required" => ["Successful", "Failed"], "type" => "structure"}, "StringList" => %{"member" => %{"locationName" => "StringListValue", "shape" => "String"}, "type" => "list"}, "AWSAccountIdList" => %{"flattened" => true, "member" => %{"locationName" => "AWSAccountId", "shape" => "String"}, "type" => "list"}, "UnsupportedOperation" => %{"error" => %{"code" => "AWS.SimpleQueueService.UnsupportedOperation", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "QueueUrlList" => %{"flattened" => true, "member" => %{"locationName" => "QueueUrl", "shape" => "String"}, "type" => "list"}, "SendMessageBatchResultEntryList" => %{"flattened" => true, "member" => %{"locationName" => "SendMessageBatchResultEntry", "shape" => "SendMessageBatchResultEntry"}, "type" => "list"}, "GetQueueUrlResult" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "type" => "structure"}, "BatchEntryIdsNotDistinct" => %{"error" => %{"code" => "AWS.SimpleQueueService.BatchEntryIdsNotDistinct", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "QueueNameExists" => %{"error" => %{"code" => "QueueAlreadyExists", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SendMessageRequest" => %{"members" => %{"DelaySeconds" => %{"shape" => "Integer"}, "MessageAttributes" => %{"locationName" => "MessageAttribute", "shape" => "MessageBodyAttributeMap"}, "MessageBody" => %{"shape" => "String"}, "MessageDeduplicationId" => %{"shape" => "String"}, "MessageGroupId" => %{"shape" => "String"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "MessageBody"], "type" => "structure"}, "MessageAttributeName" => %{"type" => "string"}, "ChangeMessageVisibilityBatchResult" => %{"members" => %{"Failed" => %{"shape" => "BatchResultErrorEntryList"}, "Successful" => %{"shape" => "ChangeMessageVisibilityBatchResultEntryList"}}, "required" => ["Successful", "Failed"], "type" => "structure"}, "InvalidMessageContents" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Message" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "MessageSystemAttributeMap"}, "Body" => %{"shape" => "String"}, "MD5OfBody" => %{"shape" => "String"}, "MD5OfMessageAttributes" => %{"shape" => "String"}, "MessageAttributes" => %{"locationName" => "MessageAttribute", "shape" => "MessageBodyAttributeMap"}, "MessageId" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteMessageRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}}, "required" => ["QueueUrl", "ReceiptHandle"], "type" => "structure"}, "InvalidBatchEntryId" => %{"error" => %{"code" => "AWS.SimpleQueueService.InvalidBatchEntryId", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SendMessageBatchResultEntry" => %{"members" => %{"Id" => %{"shape" => "String"}, "MD5OfMessageAttributes" => %{"shape" => "String"}, "MD5OfMessageBody" => %{"shape" => "String"}, "MessageId" => %{"shape" => "String"}, "SequenceNumber" => %{"shape" => "String"}}, "required" => ["Id", "MessageId", "MD5OfMessageBody"], "type" => "structure"}, "EmptyBatchRequest" => %{"error" => %{"code" => "AWS.SimpleQueueService.EmptyBatchRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "MessageSystemAttributeName" => %{"enum" => ["SenderId", "SentTimestamp", "ApproximateReceiveCount", "ApproximateFirstReceiveTimestamp", "SequenceNumber", "MessageDeduplicationId", "MessageGroupId"], "type" => "string"}, "GetQueueAttributesRequest" => %{"members" => %{"AttributeNames" => %{"shape" => "AttributeNameList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "SendMessageResult" => %{"members" => %{"MD5OfMessageAttributes" => %{"shape" => "String"}, "MD5OfMessageBody" => %{"shape" => "String"}, "MessageId" => %{"shape" => "String"}, "SequenceNumber" => %{"shape" => "String"}}, "type" => "structure"}, "ChangeMessageVisibilityBatchResultEntry" => %{"members" => %{"Id" => %{"shape" => "String"}}, "required" => ["Id"], "type" => "structure"}, "BatchRequestTooLong" => %{"error" => %{"code" => "AWS.SimpleQueueService.BatchRequestTooLong", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ReceiptHandleIsInvalid" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "PurgeQueueRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "InvalidIdFormat" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteMessageBatchResult" => %{"members" => %{"Failed" => %{"shape" => "BatchResultErrorEntryList"}, "Successful" => %{"shape" => "DeleteMessageBatchResultEntryList"}}, "required" => ["Successful", "Failed"], "type" => "structure"}, "QueueDeletedRecently" => %{"error" => %{"code" => "AWS.SimpleQueueService.QueueDeletedRecently", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "MessageAttributeValue" => %{"members" => %{"BinaryListValues" => %{"flattened" => true, "locationName" => "BinaryListValue", "shape" => "BinaryList"}, "BinaryValue" => %{"shape" => "Binary"}, "DataType" => %{"shape" => "String"}, "StringListValues" => %{"flattened" => true, "locationName" => "StringListValue", "shape" => "StringList"}, "StringValue" => %{"shape" => "String"}}, "required" => ["DataType"], "type" => "structure"}, "BatchResultErrorEntryList" => %{"flattened" => true, "member" => %{"locationName" => "BatchResultErrorEntry", "shape" => "BatchResultErrorEntry"}, "type" => "list"}, "ListQueuesRequest" => %{"members" => %{"QueueNamePrefix" => %{"shape" => "String"}}, "type" => "structure"}, "ChangeMessageVisibilityBatchRequest" => %{"members" => %{"Entries" => %{"shape" => "ChangeMessageVisibilityBatchRequestEntryList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Entries"], "type" => "structure"}, "BatchResultErrorEntry" => %{"members" => %{"Code" => %{"shape" => "String"}, "Id" => %{"shape" => "String"}, "Message" => %{"shape" => "String"}, "SenderFault" => %{"shape" => "Boolean"}}, "required" => ["Id", "SenderFault", "Code"], "type" => "structure"}, "DeleteMessageBatchRequest" => %{"members" => %{"Entries" => %{"shape" => "DeleteMessageBatchRequestEntryList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Entries"], "type" => "structure"}, "DeleteMessageBatchRequestEntryList" => %{"flattened" => true, "member" => %{"locationName" => "DeleteMessageBatchRequestEntry", "shape" => "DeleteMessageBatchRequestEntry"}, "type" => "list"}, "CreateQueueResult" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "type" => "structure"}, "GetQueueUrlRequest" => %{"members" => %{"QueueName" => %{"shape" => "String"}, "QueueOwnerAWSAccountId" => %{"shape" => "String"}}, "required" => ["QueueName"], "type" => "structure"}, "DeleteMessageBatchResultEntryList" => %{"flattened" => true, "member" => %{"locationName" => "DeleteMessageBatchResultEntry", "shape" => "DeleteMessageBatchResultEntry"}, "type" => "list"}, "MessageList" => %{"flattened" => true, "member" => %{"locationName" => "Message", "shape" => "Message"}, "type" => "list"}, "TooManyEntriesInBatchRequest" => %{"error" => %{"code" => "AWS.SimpleQueueService.TooManyEntriesInBatchRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Binary" => %{"type" => "blob"}, "RemovePermissionRequest" => %{"members" => %{"Label" => %{"shape" => "String"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Label"], "type" => "structure"}, "ChangeMessageVisibilityBatchResultEntryList" => %{"flattened" => true, "member" => %{"locationName" => "ChangeMessageVisibilityBatchResultEntry", "shape" => "ChangeMessageVisibilityBatchResultEntry"}, "type" => "list"}, "PurgeQueueInProgress" => %{"error" => %{"code" => "AWS.SimpleQueueService.PurgeQueueInProgress", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "CreateQueueRequest" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "QueueAttributeMap"}, "QueueName" => %{"shape" => "String"}}, "required" => ["QueueName"], "type" => "structure"}, "AttributeNameList" => %{"flattened" => true, "member" => %{"locationName" => "AttributeName", "shape" => "QueueAttributeName"}, "type" => "list"}, "DeleteMessageBatchRequestEntry" => %{"members" => %{"Id" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}}, "required" => ["Id", "ReceiptHandle"], "type" => "structure"}, "InvalidAttributeName" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ActionNameList" => %{"flattened" => true, "member" => %{"locationName" => "ActionName", "shape" => "String"}, "type" => "list"}, "OverLimit" => %{"error" => %{"code" => "OverLimit", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "MessageNotInflight" => %{"error" => %{"code" => "AWS.SimpleQueueService.MessageNotInflight", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ReceiveMessageRequest" => %{"members" => %{"AttributeNames" => %{"shape" => "AttributeNameList"}, "MaxNumberOfMessages" => %{"shape" => "Integer"}, "MessageAttributeNames" => %{"shape" => "MessageAttributeNameList"}, "QueueUrl" => %{"shape" => "String"}, "ReceiveRequestAttemptId" => %{"shape" => "String"}, "VisibilityTimeout" => %{"shape" => "Integer"}, "WaitTimeSeconds" => %{"shape" => "Integer"}}, "required" => ["QueueUrl"], "type" => "structure"}, "SendMessageBatchRequest" => %{"members" => %{"Entries" => %{"shape" => "SendMessageBatchRequestEntryList"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Entries"], "type" => "structure"}, "QueueAttributeMap" => %{"flattened" => true, "key" => %{"locationName" => "Name", "shape" => "QueueAttributeName"}, "locationName" => "Attribute", "type" => "map", "value" => %{"locationName" => "Value", "shape" => "String"}}, "Integer" => %{"type" => "integer"}, "MessageAttributeNameList" => %{"flattened" => true, "member" => %{"locationName" => "MessageAttributeName", "shape" => "MessageAttributeName"}, "type" => "list"}, "ReceiveMessageResult" => %{"members" => %{"Messages" => %{"shape" => "MessageList"}}, "type" => "structure"}, "SendMessageBatchRequestEntry" => %{"members" => %{"DelaySeconds" => %{"shape" => "Integer"}, "Id" => %{"shape" => "String"}, "MessageAttributes" => %{"locationName" => "MessageAttribute", "shape" => "MessageBodyAttributeMap"}, "MessageBody" => %{"shape" => "String"}, "MessageDeduplicationId" => %{"shape" => "String"}, "MessageGroupId" => %{"shape" => "String"}}, "required" => ["Id", "MessageBody"], "type" => "structure"}, "DeleteQueueRequest" => %{"members" => %{"QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl"], "type" => "structure"}, "MessageBodyAttributeMap" => %{"flattened" => true, "key" => %{"locationName" => "Name", "shape" => "String"}, "type" => "map", "value" => %{"locationName" => "Value", "shape" => "MessageAttributeValue"}}, "SetQueueAttributesRequest" => %{"members" => %{"Attributes" => %{"locationName" => "Attribute", "shape" => "QueueAttributeMap"}, "QueueUrl" => %{"shape" => "String"}}, "required" => ["QueueUrl", "Attributes"], "type" => "structure"}, "ChangeMessageVisibilityBatchRequestEntry" => %{"members" => %{"Id" => %{"shape" => "String"}, "ReceiptHandle" => %{"shape" => "String"}, "VisibilityTimeout" => %{"shape" => "Integer"}}, "required" => ["Id", "ReceiptHandle"], "type" => "structure"}}
   end
 end

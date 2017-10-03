@@ -7,7 +7,7 @@ defmodule Baiji.Response.Parser.XMLTest do
 
     operation = Baiji.EC2.describe_instances
 
-    assert Baiji.Response.Parser.XML.parse(%{body: response}, operation) == %{
+    assert Baiji.Response.Parser.XML.parse(response, operation) == %{
       "reservationSet"  => [
         %{
           "reservationId" => "r-1234567890abcdef0", 

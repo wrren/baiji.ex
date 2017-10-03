@@ -5,7 +5,7 @@ defmodule Baiji.Kinesis do
   Amazon Kinesis Streams is a managed service that scales elastically for
   real time processing of streaming big data.
   """
-  
+
   @doc """
   Adds or updates tags for the specified Amazon Kinesis stream. Each stream
   can have up to 10 tags.
@@ -15,25 +15,17 @@ defmodule Baiji.Kinesis do
   """
   def add_tags_to_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AddTagsToStream",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "AddTagsToStreamInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates an Amazon Kinesis stream. A stream captures and transports data
   records that are continuously emitted from different data sources or
@@ -79,25 +71,17 @@ defmodule Baiji.Kinesis do
   """
   def create_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateStream",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "CreateStreamInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Decreases the Amazon Kinesis stream's retention period, which is the length
   of time data records are accessible after they are added to the stream. The
@@ -109,25 +93,17 @@ defmodule Baiji.Kinesis do
   """
   def decrease_stream_retention_period(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DecreaseStreamRetentionPeriod",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "DecreaseStreamRetentionPeriodInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes an Amazon Kinesis stream and all its shards and data. You must shut
   down any applications that are operating on the stream before you delete
@@ -152,25 +128,17 @@ defmodule Baiji.Kinesis do
   """
   def delete_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteStream",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "DeleteStreamInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the shard limits and usage for the account.
 
@@ -181,25 +149,17 @@ defmodule Baiji.Kinesis do
   """
   def describe_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLimits",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "DescribeLimitsInput",
       output_shape:     "DescribeLimitsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified Amazon Kinesis stream.
 
@@ -224,73 +184,49 @@ defmodule Baiji.Kinesis do
   """
   def describe_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeStream",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "DescribeStreamInput",
       output_shape:     "DescribeStreamOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Disables enhanced monitoring.
   """
   def disable_enhanced_monitoring(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DisableEnhancedMonitoring",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "DisableEnhancedMonitoringInput",
       output_shape:     "EnhancedMonitoringOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Enables enhanced Amazon Kinesis stream monitoring for shard-level metrics.
   """
   def enable_enhanced_monitoring(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EnableEnhancedMonitoring",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "EnableEnhancedMonitoringInput",
       output_shape:     "EnhancedMonitoringOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Gets data records from an Amazon Kinesis stream's shard.
 
@@ -353,25 +289,17 @@ defmodule Baiji.Kinesis do
   """
   def get_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetRecords",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "GetRecordsInput",
       output_shape:     "GetRecordsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Gets an Amazon Kinesis shard iterator. A shard iterator expires five
   minutes after it is returned to the requester.
@@ -416,25 +344,17 @@ defmodule Baiji.Kinesis do
   """
   def get_shard_iterator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetShardIterator",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "GetShardIteratorInput",
       output_shape:     "GetShardIteratorOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Increases the Amazon Kinesis stream's retention period, which is the length
   of time data records are accessible after they are added to the stream. The
@@ -450,25 +370,17 @@ defmodule Baiji.Kinesis do
   """
   def increase_stream_retention_period(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "IncreaseStreamRetentionPeriod",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "IncreaseStreamRetentionPeriodInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists your Amazon Kinesis streams.
 
@@ -490,49 +402,33 @@ defmodule Baiji.Kinesis do
   """
   def list_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListStreams",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "ListStreamsInput",
       output_shape:     "ListStreamsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the tags for the specified Amazon Kinesis stream.
   """
   def list_tags_for_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTagsForStream",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "ListTagsForStreamInput",
       output_shape:     "ListTagsForStreamOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Merges two adjacent shards in an Amazon Kinesis stream and combines them
   into a single shard to reduce the stream's capacity to ingest and transport
@@ -576,25 +472,17 @@ defmodule Baiji.Kinesis do
   """
   def merge_shards(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "MergeShards",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "MergeShardsInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Writes a single data record into an Amazon Kinesis stream. Call `PutRecord`
   to send data into the stream for real-time ingestion and subsequent
@@ -643,25 +531,17 @@ defmodule Baiji.Kinesis do
   """
   def put_record(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "PutRecord",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "PutRecordInput",
       output_shape:     "PutRecordOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Writes multiple data records into an Amazon Kinesis stream in a single call
   (also referred to as a `PutRecords` request). Use this operation to send
@@ -731,25 +611,17 @@ defmodule Baiji.Kinesis do
   """
   def put_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "PutRecords",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "PutRecordsInput",
       output_shape:     "PutRecordsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes tags from the specified Amazon Kinesis stream. Removed tags are
   deleted and cannot be recovered after this operation successfully
@@ -759,25 +631,17 @@ defmodule Baiji.Kinesis do
   """
   def remove_tags_from_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RemoveTagsFromStream",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "RemoveTagsFromStreamInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Splits a shard into two new shards in the Amazon Kinesis stream to increase
   the stream's capacity to ingest and transport data. `SplitShard` is called
@@ -832,25 +696,17 @@ defmodule Baiji.Kinesis do
   """
   def split_shard(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SplitShard",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "SplitShardInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Enables or updates server-side encryption using an AWS KMS key for a
   specified stream.
@@ -874,25 +730,17 @@ defmodule Baiji.Kinesis do
   """
   def start_stream_encryption(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "StartStreamEncryption",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "StartStreamEncryptionInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Disables server-side encryption for a specified stream.
 
@@ -916,25 +764,17 @@ defmodule Baiji.Kinesis do
   """
   def stop_stream_encryption(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "StopStreamEncryption",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "StopStreamEncryptionInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates the shard count of the specified stream to the specified number of
   shards.
@@ -976,30 +816,36 @@ defmodule Baiji.Kinesis do
   """
   def update_shard_count(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "kinesis",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateShardCount",
-      
-      target_prefix:    "Kinesis_20131202",
-      
-      endpoint_prefix:  "kinesis",
-      type:             :json,
-      version:          "2013-12-02",
       method:           :post,
       input_shape:      "UpdateShardCountInput",
       output_shape:     "UpdateShardCountOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "kinesis",
+      target_prefix:    "Kinesis_20131202",
+      endpoint_prefix:  "kinesis",
+      type:             :json,
+      version:          "2013-12-02",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"GetShardIteratorInput" => %{"members" => %{"ShardId" => %{"shape" => "ShardId"}, "ShardIteratorType" => %{"shape" => "ShardIteratorType"}, "StartingSequenceNumber" => %{"shape" => "SequenceNumber"}, "StreamName" => %{"shape" => "StreamName"}, "Timestamp" => %{"shape" => "Timestamp"}}, "required" => ["StreamName", "ShardId", "ShardIteratorType"], "type" => "structure"}, "MetricsNameList" => %{"max" => 7, "member" => %{"shape" => "MetricsName"}, "min" => 1, "type" => "list"}, "ShardIteratorType" => %{"enum" => ["AT_SEQUENCE_NUMBER", "AFTER_SEQUENCE_NUMBER", "TRIM_HORIZON", "LATEST", "AT_TIMESTAMP"], "type" => "string"}, "ProvisionedThroughputExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TagKeyList" => %{"max" => 10, "member" => %{"shape" => "TagKey"}, "min" => 1, "type" => "list"}, "RemoveTagsFromStreamInput" => %{"members" => %{"StreamName" => %{"shape" => "StreamName"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["StreamName", "TagKeys"], "type" => "structure"}, "StartStreamEncryptionInput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "KeyId" => %{"shape" => "KeyId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "EncryptionType", "KeyId"], "type" => "structure"}, "HashKeyRange" => %{"members" => %{"EndingHashKey" => %{"shape" => "HashKey"}, "StartingHashKey" => %{"shape" => "HashKey"}}, "required" => ["StartingHashKey", "EndingHashKey"], "type" => "structure"}, "DisableEnhancedMonitoringInput" => %{"members" => %{"ShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardLevelMetrics"], "type" => "structure"}, "PutRecordsRequestEntry" => %{"members" => %{"Data" => %{"shape" => "Data"}, "ExplicitHashKey" => %{"shape" => "HashKey"}, "PartitionKey" => %{"shape" => "PartitionKey"}}, "required" => ["Data", "PartitionKey"], "type" => "structure"}, "EnhancedMetrics" => %{"members" => %{"ShardLevelMetrics" => %{"shape" => "MetricsNameList"}}, "type" => "structure"}, "StreamName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "PutRecordOutput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "SequenceNumber" => %{"shape" => "SequenceNumber"}, "ShardId" => %{"shape" => "ShardId"}}, "required" => ["ShardId", "SequenceNumber"], "type" => "structure"}, "GetShardIteratorOutput" => %{"members" => %{"ShardIterator" => %{"shape" => "ShardIterator"}}, "type" => "structure"}, "EncryptionType" => %{"enum" => ["NONE", "KMS"], "type" => "string"}, "HashKey" => %{"pattern" => "0|([1-9]\\d{0,38})", "type" => "string"}, "DescribeLimitsInput" => %{"members" => %{}, "type" => "structure"}, "Record" => %{"members" => %{"ApproximateArrivalTimestamp" => %{"shape" => "Timestamp"}, "Data" => %{"shape" => "Data"}, "EncryptionType" => %{"shape" => "EncryptionType"}, "PartitionKey" => %{"shape" => "PartitionKey"}, "SequenceNumber" => %{"shape" => "SequenceNumber"}}, "required" => ["SequenceNumber", "Data", "PartitionKey"], "type" => "structure"}, "MergeShardsInput" => %{"members" => %{"AdjacentShardToMerge" => %{"shape" => "ShardId"}, "ShardToMerge" => %{"shape" => "ShardId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardToMerge", "AdjacentShardToMerge"], "type" => "structure"}, "ResourceInUseException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutRecordInput" => %{"members" => %{"Data" => %{"shape" => "Data"}, "ExplicitHashKey" => %{"shape" => "HashKey"}, "PartitionKey" => %{"shape" => "PartitionKey"}, "SequenceNumberForOrdering" => %{"shape" => "SequenceNumber"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "Data", "PartitionKey"], "type" => "structure"}, "GetRecordsInput" => %{"members" => %{"Limit" => %{"shape" => "GetRecordsInputLimit"}, "ShardIterator" => %{"shape" => "ShardIterator"}}, "required" => ["ShardIterator"], "type" => "structure"}, "PositiveIntegerObject" => %{"max" => 100000, "min" => 1, "type" => "integer"}, "StreamDescription" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "EnhancedMonitoring" => %{"shape" => "EnhancedMonitoringList"}, "HasMoreShards" => %{"shape" => "BooleanObject"}, "KeyId" => %{"shape" => "KeyId"}, "RetentionPeriodHours" => %{"shape" => "PositiveIntegerObject"}, "Shards" => %{"shape" => "ShardList"}, "StreamARN" => %{"shape" => "StreamARN"}, "StreamCreationTimestamp" => %{"shape" => "Timestamp"}, "StreamName" => %{"shape" => "StreamName"}, "StreamStatus" => %{"shape" => "StreamStatus"}}, "required" => ["StreamName", "StreamARN", "StreamStatus", "Shards", "HasMoreShards", "RetentionPeriodHours", "StreamCreationTimestamp", "EnhancedMonitoring"], "type" => "structure"}, "UpdateShardCountInput" => %{"members" => %{"ScalingType" => %{"shape" => "ScalingType"}, "StreamName" => %{"shape" => "StreamName"}, "TargetShardCount" => %{"shape" => "PositiveIntegerObject"}}, "required" => ["StreamName", "TargetShardCount", "ScalingType"], "type" => "structure"}, "AddTagsToStreamInput" => %{"members" => %{"StreamName" => %{"shape" => "StreamName"}, "Tags" => %{"shape" => "TagMap"}}, "required" => ["StreamName", "Tags"], "type" => "structure"}, "BooleanObject" => %{"type" => "boolean"}, "PutRecordsRequestEntryList" => %{"max" => 500, "member" => %{"shape" => "PutRecordsRequestEntry"}, "min" => 1, "type" => "list"}, "ShardList" => %{"member" => %{"shape" => "Shard"}, "type" => "list"}, "SequenceNumberRange" => %{"members" => %{"EndingSequenceNumber" => %{"shape" => "SequenceNumber"}, "StartingSequenceNumber" => %{"shape" => "SequenceNumber"}}, "required" => ["StartingSequenceNumber"], "type" => "structure"}, "DescribeLimitsOutput" => %{"members" => %{"OpenShardCount" => %{"shape" => "ShardCountObject"}, "ShardLimit" => %{"shape" => "ShardCountObject"}}, "required" => ["ShardLimit", "OpenShardCount"], "type" => "structure"}, "KMSAccessDeniedException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ShardIterator" => %{"max" => 512, "min" => 1, "type" => "string"}, "ErrorCode" => %{"type" => "string"}, "StreamARN" => %{"type" => "string"}, "KeyId" => %{"max" => 2048, "min" => 1, "type" => "string"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "EnhancedMonitoringOutput" => %{"members" => %{"CurrentShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "DesiredShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "StreamName" => %{"shape" => "StreamName"}}, "type" => "structure"}, "KMSInvalidStateException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "SplitShardInput" => %{"members" => %{"NewStartingHashKey" => %{"shape" => "HashKey"}, "ShardToSplit" => %{"shape" => "ShardId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardToSplit", "NewStartingHashKey"], "type" => "structure"}, "KMSThrottlingException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 0, "type" => "list"}, "UpdateShardCountOutput" => %{"members" => %{"CurrentShardCount" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}, "TargetShardCount" => %{"shape" => "PositiveIntegerObject"}}, "type" => "structure"}, "TagValue" => %{"max" => 256, "min" => 0, "type" => "string"}, "ListStreamsOutput" => %{"members" => %{"HasMoreStreams" => %{"shape" => "BooleanObject"}, "StreamNames" => %{"shape" => "StreamNameList"}}, "required" => ["StreamNames", "HasMoreStreams"], "type" => "structure"}, "DecreaseStreamRetentionPeriodInput" => %{"members" => %{"RetentionPeriodHours" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "RetentionPeriodHours"], "type" => "structure"}, "ListStreamsInput" => %{"members" => %{"ExclusiveStartStreamName" => %{"shape" => "StreamName"}, "Limit" => %{"shape" => "ListStreamsInputLimit"}}, "type" => "structure"}, "EnableEnhancedMonitoringInput" => %{"members" => %{"ShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardLevelMetrics"], "type" => "structure"}, "DeleteStreamInput" => %{"members" => %{"StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName"], "type" => "structure"}, "InvalidArgumentException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "EnhancedMonitoringList" => %{"member" => %{"shape" => "EnhancedMetrics"}, "type" => "list"}, "GetRecordsInputLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DescribeStreamOutput" => %{"members" => %{"StreamDescription" => %{"shape" => "StreamDescription"}}, "required" => ["StreamDescription"], "type" => "structure"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PartitionKey" => %{"max" => 256, "min" => 1, "type" => "string"}, "DescribeStreamInput" => %{"members" => %{"ExclusiveStartShardId" => %{"shape" => "ShardId"}, "Limit" => %{"shape" => "DescribeStreamInputLimit"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName"], "type" => "structure"}, "RecordList" => %{"member" => %{"shape" => "Record"}, "type" => "list"}, "StreamStatus" => %{"enum" => ["CREATING", "DELETING", "ACTIVE", "UPDATING"], "type" => "string"}, "KMSDisabledException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutRecordsResultEntry" => %{"members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "ErrorMessage" => %{"shape" => "ErrorMessage"}, "SequenceNumber" => %{"shape" => "SequenceNumber"}, "ShardId" => %{"shape" => "ShardId"}}, "type" => "structure"}, "ScalingType" => %{"enum" => ["UNIFORM_SCALING"], "type" => "string"}, "Data" => %{"max" => 1048576, "min" => 0, "type" => "blob"}, "StreamNameList" => %{"member" => %{"shape" => "StreamName"}, "type" => "list"}, "PutRecordsOutput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "FailedRecordCount" => %{"shape" => "PositiveIntegerObject"}, "Records" => %{"shape" => "PutRecordsResultEntryList"}}, "required" => ["Records"], "type" => "structure"}, "IncreaseStreamRetentionPeriodInput" => %{"members" => %{"RetentionPeriodHours" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "RetentionPeriodHours"], "type" => "structure"}, "ListStreamsInputLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "MetricsName" => %{"enum" => ["IncomingBytes", "IncomingRecords", "OutgoingBytes", "OutgoingRecords", "WriteProvisionedThroughputExceeded", "ReadProvisionedThroughputExceeded", "IteratorAgeMilliseconds", "ALL"], "type" => "string"}, "GetRecordsOutput" => %{"members" => %{"MillisBehindLatest" => %{"shape" => "MillisBehindLatest"}, "NextShardIterator" => %{"shape" => "ShardIterator"}, "Records" => %{"shape" => "RecordList"}}, "required" => ["Records"], "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "type" => "string"}, "ShardId" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "TagMap" => %{"key" => %{"shape" => "TagKey"}, "max" => 10, "min" => 1, "type" => "map", "value" => %{"shape" => "TagValue"}}, "StopStreamEncryptionInput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "KeyId" => %{"shape" => "KeyId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "EncryptionType", "KeyId"], "type" => "structure"}, "PutRecordsInput" => %{"members" => %{"Records" => %{"shape" => "PutRecordsRequestEntryList"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["Records", "StreamName"], "type" => "structure"}, "Shard" => %{"members" => %{"AdjacentParentShardId" => %{"shape" => "ShardId"}, "HashKeyRange" => %{"shape" => "HashKeyRange"}, "ParentShardId" => %{"shape" => "ShardId"}, "SequenceNumberRange" => %{"shape" => "SequenceNumberRange"}, "ShardId" => %{"shape" => "ShardId"}}, "required" => ["ShardId", "HashKeyRange", "SequenceNumberRange"], "type" => "structure"}, "CreateStreamInput" => %{"members" => %{"ShardCount" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardCount"], "type" => "structure"}, "ListTagsForStreamOutput" => %{"members" => %{"HasMoreTags" => %{"shape" => "BooleanObject"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["Tags", "HasMoreTags"], "type" => "structure"}, "ListTagsForStreamInput" => %{"members" => %{"ExclusiveStartTagKey" => %{"shape" => "TagKey"}, "Limit" => %{"shape" => "ListTagsForStreamInputLimit"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName"], "type" => "structure"}, "ShardCountObject" => %{"max" => 1000000, "min" => 0, "type" => "integer"}, "PutRecordsResultEntryList" => %{"max" => 500, "member" => %{"shape" => "PutRecordsResultEntry"}, "min" => 1, "type" => "list"}, "ExpiredIteratorException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "KMSOptInRequired" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "KMSNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListTagsForStreamInputLimit" => %{"max" => 10, "min" => 1, "type" => "integer"}, "SequenceNumber" => %{"pattern" => "0|([1-9]\\d{0,128})", "type" => "string"}, "DescribeStreamInputLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "MillisBehindLatest" => %{"min" => 0, "type" => "long"}}
+		%{"GetShardIteratorInput" => %{"members" => %{"ShardId" => %{"shape" => "ShardId"}, "ShardIteratorType" => %{"shape" => "ShardIteratorType"}, "StartingSequenceNumber" => %{"shape" => "SequenceNumber"}, "StreamName" => %{"shape" => "StreamName"}, "Timestamp" => %{"shape" => "Timestamp"}}, "required" => ["StreamName", "ShardId", "ShardIteratorType"], "type" => "structure"}, "MetricsNameList" => %{"max" => 7, "member" => %{"shape" => "MetricsName"}, "min" => 1, "type" => "list"}, "ShardIteratorType" => %{"enum" => ["AT_SEQUENCE_NUMBER", "AFTER_SEQUENCE_NUMBER", "TRIM_HORIZON", "LATEST", "AT_TIMESTAMP"], "type" => "string"}, "ProvisionedThroughputExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TagKeyList" => %{"max" => 10, "member" => %{"shape" => "TagKey"}, "min" => 1, "type" => "list"}, "RemoveTagsFromStreamInput" => %{"members" => %{"StreamName" => %{"shape" => "StreamName"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["StreamName", "TagKeys"], "type" => "structure"}, "StartStreamEncryptionInput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "KeyId" => %{"shape" => "KeyId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "EncryptionType", "KeyId"], "type" => "structure"}, "HashKeyRange" => %{"members" => %{"EndingHashKey" => %{"shape" => "HashKey"}, "StartingHashKey" => %{"shape" => "HashKey"}}, "required" => ["StartingHashKey", "EndingHashKey"], "type" => "structure"}, "DisableEnhancedMonitoringInput" => %{"members" => %{"ShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardLevelMetrics"], "type" => "structure"}, "PutRecordsRequestEntry" => %{"members" => %{"Data" => %{"shape" => "Data"}, "ExplicitHashKey" => %{"shape" => "HashKey"}, "PartitionKey" => %{"shape" => "PartitionKey"}}, "required" => ["Data", "PartitionKey"], "type" => "structure"}, "EnhancedMetrics" => %{"members" => %{"ShardLevelMetrics" => %{"shape" => "MetricsNameList"}}, "type" => "structure"}, "StreamName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "PutRecordOutput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "SequenceNumber" => %{"shape" => "SequenceNumber"}, "ShardId" => %{"shape" => "ShardId"}}, "required" => ["ShardId", "SequenceNumber"], "type" => "structure"}, "GetShardIteratorOutput" => %{"members" => %{"ShardIterator" => %{"shape" => "ShardIterator"}}, "type" => "structure"}, "EncryptionType" => %{"enum" => ["NONE", "KMS"], "type" => "string"}, "HashKey" => %{"pattern" => "0|([1-9]\\d{0,38})", "type" => "string"}, "DescribeLimitsInput" => %{"members" => %{}, "type" => "structure"}, "Record" => %{"members" => %{"ApproximateArrivalTimestamp" => %{"shape" => "Timestamp"}, "Data" => %{"shape" => "Data"}, "EncryptionType" => %{"shape" => "EncryptionType"}, "PartitionKey" => %{"shape" => "PartitionKey"}, "SequenceNumber" => %{"shape" => "SequenceNumber"}}, "required" => ["SequenceNumber", "Data", "PartitionKey"], "type" => "structure"}, "MergeShardsInput" => %{"members" => %{"AdjacentShardToMerge" => %{"shape" => "ShardId"}, "ShardToMerge" => %{"shape" => "ShardId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardToMerge", "AdjacentShardToMerge"], "type" => "structure"}, "ResourceInUseException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutRecordInput" => %{"members" => %{"Data" => %{"shape" => "Data"}, "ExplicitHashKey" => %{"shape" => "HashKey"}, "PartitionKey" => %{"shape" => "PartitionKey"}, "SequenceNumberForOrdering" => %{"shape" => "SequenceNumber"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "Data", "PartitionKey"], "type" => "structure"}, "GetRecordsInput" => %{"members" => %{"Limit" => %{"shape" => "GetRecordsInputLimit"}, "ShardIterator" => %{"shape" => "ShardIterator"}}, "required" => ["ShardIterator"], "type" => "structure"}, "PositiveIntegerObject" => %{"max" => 100000, "min" => 1, "type" => "integer"}, "StreamDescription" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "EnhancedMonitoring" => %{"shape" => "EnhancedMonitoringList"}, "HasMoreShards" => %{"shape" => "BooleanObject"}, "KeyId" => %{"shape" => "KeyId"}, "RetentionPeriodHours" => %{"shape" => "PositiveIntegerObject"}, "Shards" => %{"shape" => "ShardList"}, "StreamARN" => %{"shape" => "StreamARN"}, "StreamCreationTimestamp" => %{"shape" => "Timestamp"}, "StreamName" => %{"shape" => "StreamName"}, "StreamStatus" => %{"shape" => "StreamStatus"}}, "required" => ["StreamName", "StreamARN", "StreamStatus", "Shards", "HasMoreShards", "RetentionPeriodHours", "StreamCreationTimestamp", "EnhancedMonitoring"], "type" => "structure"}, "UpdateShardCountInput" => %{"members" => %{"ScalingType" => %{"shape" => "ScalingType"}, "StreamName" => %{"shape" => "StreamName"}, "TargetShardCount" => %{"shape" => "PositiveIntegerObject"}}, "required" => ["StreamName", "TargetShardCount", "ScalingType"], "type" => "structure"}, "AddTagsToStreamInput" => %{"members" => %{"StreamName" => %{"shape" => "StreamName"}, "Tags" => %{"shape" => "TagMap"}}, "required" => ["StreamName", "Tags"], "type" => "structure"}, "BooleanObject" => %{"type" => "boolean"}, "PutRecordsRequestEntryList" => %{"max" => 500, "member" => %{"shape" => "PutRecordsRequestEntry"}, "min" => 1, "type" => "list"}, "ShardList" => %{"member" => %{"shape" => "Shard"}, "type" => "list"}, "SequenceNumberRange" => %{"members" => %{"EndingSequenceNumber" => %{"shape" => "SequenceNumber"}, "StartingSequenceNumber" => %{"shape" => "SequenceNumber"}}, "required" => ["StartingSequenceNumber"], "type" => "structure"}, "DescribeLimitsOutput" => %{"members" => %{"OpenShardCount" => %{"shape" => "ShardCountObject"}, "ShardLimit" => %{"shape" => "ShardCountObject"}}, "required" => ["ShardLimit", "OpenShardCount"], "type" => "structure"}, "KMSAccessDeniedException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ShardIterator" => %{"max" => 512, "min" => 1, "type" => "string"}, "ErrorCode" => %{"type" => "string"}, "StreamARN" => %{"type" => "string"}, "KeyId" => %{"max" => 2048, "min" => 1, "type" => "string"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "EnhancedMonitoringOutput" => %{"members" => %{"CurrentShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "DesiredShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "StreamName" => %{"shape" => "StreamName"}}, "type" => "structure"}, "KMSInvalidStateException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "SplitShardInput" => %{"members" => %{"NewStartingHashKey" => %{"shape" => "HashKey"}, "ShardToSplit" => %{"shape" => "ShardId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardToSplit", "NewStartingHashKey"], "type" => "structure"}, "KMSThrottlingException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 0, "type" => "list"}, "UpdateShardCountOutput" => %{"members" => %{"CurrentShardCount" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}, "TargetShardCount" => %{"shape" => "PositiveIntegerObject"}}, "type" => "structure"}, "TagValue" => %{"max" => 256, "min" => 0, "type" => "string"}, "ListStreamsOutput" => %{"members" => %{"HasMoreStreams" => %{"shape" => "BooleanObject"}, "StreamNames" => %{"shape" => "StreamNameList"}}, "required" => ["StreamNames", "HasMoreStreams"], "type" => "structure"}, "DecreaseStreamRetentionPeriodInput" => %{"members" => %{"RetentionPeriodHours" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "RetentionPeriodHours"], "type" => "structure"}, "ListStreamsInput" => %{"members" => %{"ExclusiveStartStreamName" => %{"shape" => "StreamName"}, "Limit" => %{"shape" => "ListStreamsInputLimit"}}, "type" => "structure"}, "EnableEnhancedMonitoringInput" => %{"members" => %{"ShardLevelMetrics" => %{"shape" => "MetricsNameList"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardLevelMetrics"], "type" => "structure"}, "DeleteStreamInput" => %{"members" => %{"StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName"], "type" => "structure"}, "InvalidArgumentException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "EnhancedMonitoringList" => %{"member" => %{"shape" => "EnhancedMetrics"}, "type" => "list"}, "GetRecordsInputLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DescribeStreamOutput" => %{"members" => %{"StreamDescription" => %{"shape" => "StreamDescription"}}, "required" => ["StreamDescription"], "type" => "structure"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PartitionKey" => %{"max" => 256, "min" => 1, "type" => "string"}, "DescribeStreamInput" => %{"members" => %{"ExclusiveStartShardId" => %{"shape" => "ShardId"}, "Limit" => %{"shape" => "DescribeStreamInputLimit"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName"], "type" => "structure"}, "RecordList" => %{"member" => %{"shape" => "Record"}, "type" => "list"}, "StreamStatus" => %{"enum" => ["CREATING", "DELETING", "ACTIVE", "UPDATING"], "type" => "string"}, "KMSDisabledException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutRecordsResultEntry" => %{"members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "ErrorMessage" => %{"shape" => "ErrorMessage"}, "SequenceNumber" => %{"shape" => "SequenceNumber"}, "ShardId" => %{"shape" => "ShardId"}}, "type" => "structure"}, "ScalingType" => %{"enum" => ["UNIFORM_SCALING"], "type" => "string"}, "Data" => %{"max" => 1048576, "min" => 0, "type" => "blob"}, "StreamNameList" => %{"member" => %{"shape" => "StreamName"}, "type" => "list"}, "PutRecordsOutput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "FailedRecordCount" => %{"shape" => "PositiveIntegerObject"}, "Records" => %{"shape" => "PutRecordsResultEntryList"}}, "required" => ["Records"], "type" => "structure"}, "IncreaseStreamRetentionPeriodInput" => %{"members" => %{"RetentionPeriodHours" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "RetentionPeriodHours"], "type" => "structure"}, "ListStreamsInputLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "MetricsName" => %{"enum" => ["IncomingBytes", "IncomingRecords", "OutgoingBytes", "OutgoingRecords", "WriteProvisionedThroughputExceeded", "ReadProvisionedThroughputExceeded", "IteratorAgeMilliseconds", "ALL"], "type" => "string"}, "GetRecordsOutput" => %{"members" => %{"MillisBehindLatest" => %{"shape" => "MillisBehindLatest"}, "NextShardIterator" => %{"shape" => "ShardIterator"}, "Records" => %{"shape" => "RecordList"}}, "required" => ["Records"], "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "type" => "string"}, "ShardId" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "TagMap" => %{"key" => %{"shape" => "TagKey"}, "max" => 10, "min" => 1, "type" => "map", "value" => %{"shape" => "TagValue"}}, "StopStreamEncryptionInput" => %{"members" => %{"EncryptionType" => %{"shape" => "EncryptionType"}, "KeyId" => %{"shape" => "KeyId"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "EncryptionType", "KeyId"], "type" => "structure"}, "PutRecordsInput" => %{"members" => %{"Records" => %{"shape" => "PutRecordsRequestEntryList"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["Records", "StreamName"], "type" => "structure"}, "Shard" => %{"members" => %{"AdjacentParentShardId" => %{"shape" => "ShardId"}, "HashKeyRange" => %{"shape" => "HashKeyRange"}, "ParentShardId" => %{"shape" => "ShardId"}, "SequenceNumberRange" => %{"shape" => "SequenceNumberRange"}, "ShardId" => %{"shape" => "ShardId"}}, "required" => ["ShardId", "HashKeyRange", "SequenceNumberRange"], "type" => "structure"}, "CreateStreamInput" => %{"members" => %{"ShardCount" => %{"shape" => "PositiveIntegerObject"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName", "ShardCount"], "type" => "structure"}, "ListTagsForStreamOutput" => %{"members" => %{"HasMoreTags" => %{"shape" => "BooleanObject"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["Tags", "HasMoreTags"], "type" => "structure"}, "ListTagsForStreamInput" => %{"members" => %{"ExclusiveStartTagKey" => %{"shape" => "TagKey"}, "Limit" => %{"shape" => "ListTagsForStreamInputLimit"}, "StreamName" => %{"shape" => "StreamName"}}, "required" => ["StreamName"], "type" => "structure"}, "ShardCountObject" => %{"max" => 1000000, "min" => 0, "type" => "integer"}, "PutRecordsResultEntryList" => %{"max" => 500, "member" => %{"shape" => "PutRecordsResultEntry"}, "min" => 1, "type" => "list"}, "ExpiredIteratorException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "KMSOptInRequired" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "KMSNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListTagsForStreamInputLimit" => %{"max" => 10, "min" => 1, "type" => "integer"}, "SequenceNumber" => %{"pattern" => "0|([1-9]\\d{0,128})", "type" => "string"}, "DescribeStreamInputLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "MillisBehindLatest" => %{"min" => 0, "type" => "long"}}
   end
 end

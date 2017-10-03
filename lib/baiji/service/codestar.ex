@@ -59,55 +59,39 @@ defmodule Baiji.CodeStar do
 
   </li> </ul>
   """
-  
+
   @doc """
   Adds an IAM user to the team for an AWS CodeStar project.
   """
   def associate_team_member(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AssociateTeamMember",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "AssociateTeamMemberRequest",
       output_shape:     "AssociateTeamMemberResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Reserved for future use. To create a project, use the AWS CodeStar console.
   """
   def create_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "CreateProjectRequest",
       output_shape:     "CreateProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a profile for a user that includes user preferences, such as the
   display name and email address assocciated with the user, in AWS CodeStar.
@@ -117,25 +101,17 @@ defmodule Baiji.CodeStar do
   """
   def create_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateUserProfile",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "CreateUserProfileRequest",
       output_shape:     "CreateUserProfileResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a project, including project resources. Does not delete users
   associated with the project, but does delete the IAM roles that allowed
@@ -143,25 +119,17 @@ defmodule Baiji.CodeStar do
   """
   def delete_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "DeleteProjectRequest",
       output_shape:     "DeleteProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a user profile in AWS CodeStar, including all personal preference
   data associated with that profile, such as display name and email address.
@@ -170,74 +138,50 @@ defmodule Baiji.CodeStar do
   """
   def delete_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteUserProfile",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "DeleteUserProfileRequest",
       output_shape:     "DeleteUserProfileResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes a project and its resources.
   """
   def describe_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "DescribeProjectRequest",
       output_shape:     "DescribeProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes a user in AWS CodeStar and the user attributes across all
   projects.
   """
   def describe_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeUserProfile",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "DescribeUserProfileRequest",
       output_shape:     "DescribeUserProfileResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes a user from a project. Removing a user from a project also removes
   the IAM policies from that user that allowed access to the project and its
@@ -246,218 +190,146 @@ defmodule Baiji.CodeStar do
   """
   def disassociate_team_member(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DisassociateTeamMember",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "DisassociateTeamMemberRequest",
       output_shape:     "DisassociateTeamMemberResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all projects in AWS CodeStar associated with your AWS account.
   """
   def list_projects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListProjects",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "ListProjectsRequest",
       output_shape:     "ListProjectsResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists resources associated with a project in AWS CodeStar.
   """
   def list_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListResources",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "ListResourcesRequest",
       output_shape:     "ListResourcesResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Gets the tags for a project.
   """
   def list_tags_for_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTagsForProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "ListTagsForProjectRequest",
       output_shape:     "ListTagsForProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all team members associated with a project.
   """
   def list_team_members(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTeamMembers",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "ListTeamMembersRequest",
       output_shape:     "ListTeamMembersResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all the user profiles configured for your AWS account in AWS
   CodeStar.
   """
   def list_user_profiles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListUserProfiles",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "ListUserProfilesRequest",
       output_shape:     "ListUserProfilesResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Adds tags to a project.
   """
   def tag_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "TagProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "TagProjectRequest",
       output_shape:     "TagProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes tags from a project.
   """
   def untag_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UntagProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "UntagProjectRequest",
       output_shape:     "UntagProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates a project in AWS CodeStar.
   """
   def update_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateProject",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "UpdateProjectRequest",
       output_shape:     "UpdateProjectResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates a team member's attributes in an AWS CodeStar project. For example,
   you can change a team member's role in the project, or change whether they
@@ -465,25 +337,17 @@ defmodule Baiji.CodeStar do
   """
   def update_team_member(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateTeamMember",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "UpdateTeamMemberRequest",
       output_shape:     "UpdateTeamMemberResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates a user's profile in AWS CodeStar. The user profile is not
   project-specific. Information in the user profile is displayed wherever the
@@ -491,30 +355,36 @@ defmodule Baiji.CodeStar do
   """
   def update_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "codestar",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateUserProfile",
-      
-      target_prefix:    "CodeStar_20170419",
-      
-      endpoint_prefix:  "codestar",
-      type:             :json,
-      version:          "2017-04-19",
       method:           :post,
       input_shape:      "UpdateUserProfileRequest",
       output_shape:     "UpdateUserProfileResult",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "codestar",
+      target_prefix:    "CodeStar_20170419",
+      endpoint_prefix:  "codestar",
+      type:             :json,
+      version:          "2017-04-19",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"TagKeys" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "ProjectName" => %{"max" => 100, "min" => 1, "pattern" => "^\\S(.*\\S)?$", "sensitive" => true, "type" => "string"}, "CreateUserProfileRequest" => %{"members" => %{"displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn", "displayName", "emailAddress"], "type" => "structure"}, "ListProjectsRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "ListTagsForProjectResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "ProjectId" => %{"max" => 15, "min" => 2, "pattern" => "^[a-z][a-z0-9-]+$", "type" => "string"}, "TeamMemberNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ProjectNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CreateProjectResult" => %{"members" => %{"arn" => %{"shape" => "ProjectArn"}, "clientRequestToken" => %{"shape" => "ClientRequestToken"}, "id" => %{"shape" => "ProjectId"}, "projectTemplateId" => %{"shape" => "ProjectTemplateId"}}, "required" => ["id", "arn"], "type" => "structure"}, "Role" => %{"pattern" => "^(Owner|Viewer|Contributor)$", "type" => "string"}, "UpdateTeamMemberRequest" => %{"members" => %{"projectId" => %{"shape" => "ProjectId"}, "projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["projectId", "userArn"], "type" => "structure"}, "CreateUserProfileResult" => %{"members" => %{"createdTimestamp" => %{"shape" => "CreatedTimestamp"}, "displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "lastModifiedTimestamp" => %{"shape" => "LastModifiedTimestamp"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "DeleteProjectResult" => %{"members" => %{"projectArn" => %{"shape" => "ProjectArn"}, "stackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "ResourcesResult" => %{"member" => %{"shape" => "Resource"}, "type" => "list"}, "InvalidNextTokenException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidServiceRoleException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "TeamMember" => %{"members" => %{"projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn", "projectRole"], "type" => "structure"}, "DescribeProjectResult" => %{"members" => %{"arn" => %{"shape" => "ProjectArn"}, "clientRequestToken" => %{"shape" => "ClientRequestToken"}, "createdTimeStamp" => %{"shape" => "CreatedTimestamp"}, "description" => %{"shape" => "ProjectDescription"}, "id" => %{"shape" => "ProjectId"}, "name" => %{"shape" => "ProjectName"}, "projectTemplateId" => %{"shape" => "ProjectTemplateId"}, "stackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "ListUserProfilesRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "DisassociateTeamMemberRequest" => %{"members" => %{"projectId" => %{"shape" => "ProjectId"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["projectId", "userArn"], "type" => "structure"}, "ListTeamMembersRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}, "projectId" => %{"shape" => "ProjectId"}}, "required" => ["projectId"], "type" => "structure"}, "Resource" => %{"members" => %{"id" => %{"shape" => "ResourceId"}}, "required" => ["id"], "type" => "structure"}, "UserProfilesList" => %{"member" => %{"shape" => "UserProfileSummary"}, "type" => "list"}, "UpdateUserProfileResult" => %{"members" => %{"createdTimestamp" => %{"shape" => "CreatedTimestamp"}, "displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "lastModifiedTimestamp" => %{"shape" => "LastModifiedTimestamp"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "UpdateProjectRequest" => %{"members" => %{"description" => %{"shape" => "ProjectDescription"}, "id" => %{"shape" => "ProjectId"}, "name" => %{"shape" => "ProjectName"}}, "required" => ["id"], "type" => "structure"}, "StackId" => %{"pattern" => "^arn:aws[^:\\s]*:cloudformation:[^:\\s]+:[0-9]{12}:stack\\/[^:\\s]+\\/[^:\\s]+$", "type" => "string"}, "DeleteStack" => %{"type" => "boolean"}, "UserArn" => %{"max" => 95, "min" => 32, "pattern" => "^arn:aws:iam::\\d{12}:user(?:(\\u002F)|(\\u002F[\\u0021-\\u007E]+\\u002F))[\\w+=,.@-]+$", "type" => "string"}, "DescribeUserProfileResult" => %{"members" => %{"createdTimestamp" => %{"shape" => "CreatedTimestamp"}, "displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "lastModifiedTimestamp" => %{"shape" => "LastModifiedTimestamp"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn", "createdTimestamp", "lastModifiedTimestamp"], "type" => "structure"}, "Email" => %{"max" => 128, "min" => 3, "pattern" => "^[\\w-.+]+@[\\w-.+]+$", "sensitive" => true, "type" => "string"}, "Tags" => %{"key" => %{"shape" => "TagKey"}, "type" => "map", "value" => %{"shape" => "TagValue"}}, "UserProfileSummary" => %{"members" => %{"displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "type" => "structure"}, "UntagProjectResult" => %{"members" => %{}, "type" => "structure"}, "RemoteAccessAllowed" => %{"type" => "boolean"}, "ListTeamMembersResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "teamMembers" => %{"shape" => "TeamMemberResult"}}, "required" => ["teamMembers"], "type" => "structure"}, "ListResourcesRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}, "projectId" => %{"shape" => "ProjectId"}}, "required" => ["projectId"], "type" => "structure"}, "MaxResults" => %{"max" => 100, "min" => 1, "type" => "integer"}, "TagValue" => %{"max" => 256, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "ValidationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ProjectConfigurationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ResourceId" => %{"min" => 11, "pattern" => "^arn\\:aws\\:\\S.*\\:.*", "type" => "string"}, "LastModifiedTimestamp" => %{"type" => "timestamp"}, "TeamMemberAlreadyAssociatedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UpdateUserProfileRequest" => %{"members" => %{"displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ListProjectsResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "projects" => %{"shape" => "ProjectsList"}}, "required" => ["projects"], "type" => "structure"}, "ProjectSummary" => %{"members" => %{"projectArn" => %{"shape" => "ProjectArn"}, "projectId" => %{"shape" => "ProjectId"}}, "type" => "structure"}, "ListUserProfilesResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "userProfiles" => %{"shape" => "UserProfilesList"}}, "required" => ["userProfiles"], "type" => "structure"}, "ListResourcesResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "resources" => %{"shape" => "ResourcesResult"}}, "type" => "structure"}, "ProjectArn" => %{"pattern" => "^arn:aws[^:\\s]*:codestar:[^:\\s]+:[0-9]{12}:project\\/[a-z]([a-z0-9|-])+$", "type" => "string"}, "AssociateTeamMemberResult" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "PaginationToken" => %{"max" => 512, "min" => 1, "pattern" => "^[\\w/+=]+$", "type" => "string"}, "ClientRequestToken" => %{"max" => 256, "min" => 1, "pattern" => "^[\\w:/-]+$", "type" => "string"}, "ProjectsList" => %{"member" => %{"shape" => "ProjectSummary"}, "type" => "list"}, "ProjectDescription" => %{"max" => 1024, "pattern" => "^$|^\\S(.*\\S)?$", "sensitive" => true, "type" => "string"}, "DescribeProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}}, "required" => ["id"], "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "UserProfileNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UntagProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}, "tags" => %{"shape" => "TagKeys"}}, "required" => ["id", "tags"], "type" => "structure"}, "DeleteProjectRequest" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}, "deleteStack" => %{"shape" => "DeleteStack"}, "id" => %{"shape" => "ProjectId"}}, "required" => ["id"], "type" => "structure"}, "UserProfileDisplayName" => %{"max" => 64, "min" => 1, "pattern" => "^\\S(.*\\S)?$", "type" => "string"}, "AssociateTeamMemberRequest" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}, "projectId" => %{"shape" => "ProjectId"}, "projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["projectId", "userArn", "projectRole"], "type" => "structure"}, "ListTagsForProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}, "maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}}, "required" => ["id"], "type" => "structure"}, "DisassociateTeamMemberResult" => %{"members" => %{}, "type" => "structure"}, "TagProjectResult" => %{"members" => %{"tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "CreateProjectRequest" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}, "description" => %{"shape" => "ProjectDescription"}, "id" => %{"shape" => "ProjectId"}, "name" => %{"shape" => "ProjectName"}}, "required" => ["name", "id"], "type" => "structure"}, "SshPublicKey" => %{"max" => 16384, "pattern" => "^[\\t\\r\\n\\u0020-\\u00FF]*$", "type" => "string"}, "UpdateTeamMemberResult" => %{"members" => %{"projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "type" => "structure"}, "CreatedTimestamp" => %{"type" => "timestamp"}, "TagProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}, "tags" => %{"shape" => "Tags"}}, "required" => ["id", "tags"], "type" => "structure"}, "ProjectAlreadyExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UpdateProjectResult" => %{"members" => %{}, "type" => "structure"}, "TeamMemberResult" => %{"member" => %{"shape" => "TeamMember"}, "type" => "list"}, "DeleteUserProfileRequest" => %{"members" => %{"userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ProjectCreationFailedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UserProfileAlreadyExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DescribeUserProfileRequest" => %{"members" => %{"userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ConcurrentModificationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteUserProfileResult" => %{"members" => %{"userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ProjectTemplateId" => %{"min" => 1, "pattern" => "^arn:aws[^:\\s]{0,5}:codestar:[^:\\s]+::project-template\\/[a-z0-9-]+$", "type" => "string"}}
+		%{"TagKeys" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "ProjectName" => %{"max" => 100, "min" => 1, "pattern" => "^\\S(.*\\S)?$", "sensitive" => true, "type" => "string"}, "CreateUserProfileRequest" => %{"members" => %{"displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn", "displayName", "emailAddress"], "type" => "structure"}, "ListProjectsRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "ListTagsForProjectResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "ProjectId" => %{"max" => 15, "min" => 2, "pattern" => "^[a-z][a-z0-9-]+$", "type" => "string"}, "TeamMemberNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ProjectNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CreateProjectResult" => %{"members" => %{"arn" => %{"shape" => "ProjectArn"}, "clientRequestToken" => %{"shape" => "ClientRequestToken"}, "id" => %{"shape" => "ProjectId"}, "projectTemplateId" => %{"shape" => "ProjectTemplateId"}}, "required" => ["id", "arn"], "type" => "structure"}, "Role" => %{"pattern" => "^(Owner|Viewer|Contributor)$", "type" => "string"}, "UpdateTeamMemberRequest" => %{"members" => %{"projectId" => %{"shape" => "ProjectId"}, "projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["projectId", "userArn"], "type" => "structure"}, "CreateUserProfileResult" => %{"members" => %{"createdTimestamp" => %{"shape" => "CreatedTimestamp"}, "displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "lastModifiedTimestamp" => %{"shape" => "LastModifiedTimestamp"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "DeleteProjectResult" => %{"members" => %{"projectArn" => %{"shape" => "ProjectArn"}, "stackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "ResourcesResult" => %{"member" => %{"shape" => "Resource"}, "type" => "list"}, "InvalidNextTokenException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidServiceRoleException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "TeamMember" => %{"members" => %{"projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn", "projectRole"], "type" => "structure"}, "DescribeProjectResult" => %{"members" => %{"arn" => %{"shape" => "ProjectArn"}, "clientRequestToken" => %{"shape" => "ClientRequestToken"}, "createdTimeStamp" => %{"shape" => "CreatedTimestamp"}, "description" => %{"shape" => "ProjectDescription"}, "id" => %{"shape" => "ProjectId"}, "name" => %{"shape" => "ProjectName"}, "projectTemplateId" => %{"shape" => "ProjectTemplateId"}, "stackId" => %{"shape" => "StackId"}}, "type" => "structure"}, "ListUserProfilesRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "DisassociateTeamMemberRequest" => %{"members" => %{"projectId" => %{"shape" => "ProjectId"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["projectId", "userArn"], "type" => "structure"}, "ListTeamMembersRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}, "projectId" => %{"shape" => "ProjectId"}}, "required" => ["projectId"], "type" => "structure"}, "Resource" => %{"members" => %{"id" => %{"shape" => "ResourceId"}}, "required" => ["id"], "type" => "structure"}, "UserProfilesList" => %{"member" => %{"shape" => "UserProfileSummary"}, "type" => "list"}, "UpdateUserProfileResult" => %{"members" => %{"createdTimestamp" => %{"shape" => "CreatedTimestamp"}, "displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "lastModifiedTimestamp" => %{"shape" => "LastModifiedTimestamp"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "UpdateProjectRequest" => %{"members" => %{"description" => %{"shape" => "ProjectDescription"}, "id" => %{"shape" => "ProjectId"}, "name" => %{"shape" => "ProjectName"}}, "required" => ["id"], "type" => "structure"}, "StackId" => %{"pattern" => "^arn:aws[^:\\s]*:cloudformation:[^:\\s]+:[0-9]{12}:stack\\/[^:\\s]+\\/[^:\\s]+$", "type" => "string"}, "DeleteStack" => %{"type" => "boolean"}, "UserArn" => %{"max" => 95, "min" => 32, "pattern" => "^arn:aws:iam::\\d{12}:user(?:(\\u002F)|(\\u002F[\\u0021-\\u007E]+\\u002F))[\\w+=,.@-]+$", "type" => "string"}, "DescribeUserProfileResult" => %{"members" => %{"createdTimestamp" => %{"shape" => "CreatedTimestamp"}, "displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "lastModifiedTimestamp" => %{"shape" => "LastModifiedTimestamp"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn", "createdTimestamp", "lastModifiedTimestamp"], "type" => "structure"}, "Email" => %{"max" => 128, "min" => 3, "pattern" => "^[\\w-.+]+@[\\w-.+]+$", "sensitive" => true, "type" => "string"}, "Tags" => %{"key" => %{"shape" => "TagKey"}, "type" => "map", "value" => %{"shape" => "TagValue"}}, "UserProfileSummary" => %{"members" => %{"displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "type" => "structure"}, "UntagProjectResult" => %{"members" => %{}, "type" => "structure"}, "RemoteAccessAllowed" => %{"type" => "boolean"}, "ListTeamMembersResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "teamMembers" => %{"shape" => "TeamMemberResult"}}, "required" => ["teamMembers"], "type" => "structure"}, "ListResourcesRequest" => %{"members" => %{"maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}, "projectId" => %{"shape" => "ProjectId"}}, "required" => ["projectId"], "type" => "structure"}, "MaxResults" => %{"max" => 100, "min" => 1, "type" => "integer"}, "TagValue" => %{"max" => 256, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "ValidationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ProjectConfigurationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ResourceId" => %{"min" => 11, "pattern" => "^arn\\:aws\\:\\S.*\\:.*", "type" => "string"}, "LastModifiedTimestamp" => %{"type" => "timestamp"}, "TeamMemberAlreadyAssociatedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UpdateUserProfileRequest" => %{"members" => %{"displayName" => %{"shape" => "UserProfileDisplayName"}, "emailAddress" => %{"shape" => "Email"}, "sshPublicKey" => %{"shape" => "SshPublicKey"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ListProjectsResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "projects" => %{"shape" => "ProjectsList"}}, "required" => ["projects"], "type" => "structure"}, "ProjectSummary" => %{"members" => %{"projectArn" => %{"shape" => "ProjectArn"}, "projectId" => %{"shape" => "ProjectId"}}, "type" => "structure"}, "ListUserProfilesResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "userProfiles" => %{"shape" => "UserProfilesList"}}, "required" => ["userProfiles"], "type" => "structure"}, "ListResourcesResult" => %{"members" => %{"nextToken" => %{"shape" => "PaginationToken"}, "resources" => %{"shape" => "ResourcesResult"}}, "type" => "structure"}, "ProjectArn" => %{"pattern" => "^arn:aws[^:\\s]*:codestar:[^:\\s]+:[0-9]{12}:project\\/[a-z]([a-z0-9|-])+$", "type" => "string"}, "AssociateTeamMemberResult" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}}, "type" => "structure"}, "PaginationToken" => %{"max" => 512, "min" => 1, "pattern" => "^[\\w/+=]+$", "type" => "string"}, "ClientRequestToken" => %{"max" => 256, "min" => 1, "pattern" => "^[\\w:/-]+$", "type" => "string"}, "ProjectsList" => %{"member" => %{"shape" => "ProjectSummary"}, "type" => "list"}, "ProjectDescription" => %{"max" => 1024, "pattern" => "^$|^\\S(.*\\S)?$", "sensitive" => true, "type" => "string"}, "DescribeProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}}, "required" => ["id"], "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "UserProfileNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UntagProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}, "tags" => %{"shape" => "TagKeys"}}, "required" => ["id", "tags"], "type" => "structure"}, "DeleteProjectRequest" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}, "deleteStack" => %{"shape" => "DeleteStack"}, "id" => %{"shape" => "ProjectId"}}, "required" => ["id"], "type" => "structure"}, "UserProfileDisplayName" => %{"max" => 64, "min" => 1, "pattern" => "^\\S(.*\\S)?$", "type" => "string"}, "AssociateTeamMemberRequest" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}, "projectId" => %{"shape" => "ProjectId"}, "projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "required" => ["projectId", "userArn", "projectRole"], "type" => "structure"}, "ListTagsForProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}, "maxResults" => %{"box" => true, "shape" => "MaxResults"}, "nextToken" => %{"shape" => "PaginationToken"}}, "required" => ["id"], "type" => "structure"}, "DisassociateTeamMemberResult" => %{"members" => %{}, "type" => "structure"}, "TagProjectResult" => %{"members" => %{"tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "CreateProjectRequest" => %{"members" => %{"clientRequestToken" => %{"shape" => "ClientRequestToken"}, "description" => %{"shape" => "ProjectDescription"}, "id" => %{"shape" => "ProjectId"}, "name" => %{"shape" => "ProjectName"}}, "required" => ["name", "id"], "type" => "structure"}, "SshPublicKey" => %{"max" => 16384, "pattern" => "^[\\t\\r\\n\\u0020-\\u00FF]*$", "type" => "string"}, "UpdateTeamMemberResult" => %{"members" => %{"projectRole" => %{"shape" => "Role"}, "remoteAccessAllowed" => %{"box" => true, "shape" => "RemoteAccessAllowed"}, "userArn" => %{"shape" => "UserArn"}}, "type" => "structure"}, "CreatedTimestamp" => %{"type" => "timestamp"}, "TagProjectRequest" => %{"members" => %{"id" => %{"shape" => "ProjectId"}, "tags" => %{"shape" => "Tags"}}, "required" => ["id", "tags"], "type" => "structure"}, "ProjectAlreadyExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UpdateProjectResult" => %{"members" => %{}, "type" => "structure"}, "TeamMemberResult" => %{"member" => %{"shape" => "TeamMember"}, "type" => "list"}, "DeleteUserProfileRequest" => %{"members" => %{"userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ProjectCreationFailedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UserProfileAlreadyExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DescribeUserProfileRequest" => %{"members" => %{"userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ConcurrentModificationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteUserProfileResult" => %{"members" => %{"userArn" => %{"shape" => "UserArn"}}, "required" => ["userArn"], "type" => "structure"}, "ProjectTemplateId" => %{"min" => 1, "pattern" => "^arn:aws[^:\\s]{0,5}:codestar:[^:\\s]+::project-template\\/[a-z0-9-]+$", "type" => "string"}}
   end
 end

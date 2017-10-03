@@ -22,7 +22,7 @@ defmodule Baiji.DynamoDB do
   replicated across multiple Availability Zones in an AWS region, providing
   built-in high availability and data durability.
   """
-  
+
   @doc """
   The `BatchGetItem` operation returns the attributes of one or more items
   from one or more tables. You identify requested items by primary key.
@@ -84,25 +84,17 @@ defmodule Baiji.DynamoDB do
   """
   def batch_get_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "BatchGetItem",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "BatchGetItemInput",
       output_shape:     "BatchGetItemOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The `BatchWriteItem` operation puts or deletes multiple items in one or
   more tables. A single call to `BatchWriteItem` can write up to 16 MB of
@@ -182,25 +174,17 @@ defmodule Baiji.DynamoDB do
   """
   def batch_write_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "BatchWriteItem",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "BatchWriteItemInput",
       output_shape:     "BatchWriteItemOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The `CreateTable` operation adds a new table to your account. In an AWS
   account, table names must be unique within each region. That is, you can
@@ -223,25 +207,17 @@ defmodule Baiji.DynamoDB do
   """
   def create_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateTable",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "CreateTableInput",
       output_shape:     "CreateTableOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes a single item in a table by primary key. You can perform a
   conditional delete operation that deletes the item if it exists, or if it
@@ -260,25 +236,17 @@ defmodule Baiji.DynamoDB do
   """
   def delete_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteItem",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "DeleteItemInput",
       output_shape:     "DeleteItemOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The `DeleteTable` operation deletes a table and all of its items. After a
   `DeleteTable` request, the specified table is in the `DELETING` state until
@@ -303,25 +271,17 @@ defmodule Baiji.DynamoDB do
   """
   def delete_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteTable",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "DeleteTableInput",
       output_shape:     "DeleteTableOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns the current provisioned-capacity limits for your AWS account in a
   region, both for the region as a whole and for any one DynamoDB table that
@@ -388,25 +348,17 @@ defmodule Baiji.DynamoDB do
   """
   def describe_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLimits",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "DescribeLimitsInput",
       output_shape:     "DescribeLimitsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns information about the table, including the current status of the
   table, when it was created, the primary key schema, and any indexes on the
@@ -422,50 +374,34 @@ defmodule Baiji.DynamoDB do
   """
   def describe_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTable",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "DescribeTableInput",
       output_shape:     "DescribeTableOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Gives a description of the Time to Live (TTL) status on the specified
   table.
   """
   def describe_time_to_live(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTimeToLive",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "DescribeTimeToLiveInput",
       output_shape:     "DescribeTimeToLiveOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The `GetItem` operation returns a set of attributes for the item with the
   given primary key. If there is no matching item, `GetItem` does not return
@@ -478,25 +414,17 @@ defmodule Baiji.DynamoDB do
   """
   def get_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "GetItem",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "GetItemInput",
       output_shape:     "GetItemOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Returns an array of table names associated with the current account and
   endpoint. The output from `ListTables` is paginated, with each page
@@ -504,25 +432,17 @@ defmodule Baiji.DynamoDB do
   """
   def list_tables(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTables",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "ListTablesInput",
       output_shape:     "ListTablesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   List all tags on an Amazon DynamoDB resource. You can call
   ListTagsOfResource up to 10 times per second, per account.
@@ -533,25 +453,17 @@ defmodule Baiji.DynamoDB do
   """
   def list_tags_of_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTagsOfResource",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "ListTagsOfResourceInput",
       output_shape:     "ListTagsOfResourceOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a new item, or replaces an old item with a new item. If an item
   that has the same primary key as the new item already exists in the
@@ -613,25 +525,17 @@ defmodule Baiji.DynamoDB do
   """
   def put_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "PutItem",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "PutItemInput",
       output_shape:     "PutItemOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The `Query` operation finds items based on primary key values. You can
   query any table or secondary index that has a composite primary key (a
@@ -690,25 +594,17 @@ defmodule Baiji.DynamoDB do
   """
   def query(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Query",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "QueryInput",
       output_shape:     "QueryOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The `Scan` operation returns one or more items and item attributes by
   accessing every item in a table or a secondary index. To have DynamoDB
@@ -743,25 +639,17 @@ defmodule Baiji.DynamoDB do
   """
   def scan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "Scan",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "ScanInput",
       output_shape:     "ScanOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Associate a set of tags with an Amazon DynamoDB resource. You can then
   activate these user-defined tags so that they appear on the Billing and
@@ -774,25 +662,17 @@ defmodule Baiji.DynamoDB do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "TagResource",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "TagResourceInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes the association of tags from an Amazon DynamoDB resource. You can
   call UntagResource up to 5 times per second, per account.
@@ -803,25 +683,17 @@ defmodule Baiji.DynamoDB do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UntagResource",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "UntagResourceInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Edits an existing item's attributes, or adds a new item to the table if it
   does not already exist. You can put, delete, or add attribute values. You
@@ -834,25 +706,17 @@ defmodule Baiji.DynamoDB do
   """
   def update_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateItem",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "UpdateItemInput",
       output_shape:     "UpdateItemOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the provisioned throughput settings, global secondary indexes, or
   DynamoDB Streams settings for a given table.
@@ -876,25 +740,17 @@ defmodule Baiji.DynamoDB do
   """
   def update_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateTable",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "UpdateTableInput",
       output_shape:     "UpdateTableOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   The UpdateTimeToLive method will enable or disable TTL for the specified
   table. A successful `UpdateTimeToLive` call returns the current
@@ -929,30 +785,36 @@ defmodule Baiji.DynamoDB do
   """
   def update_time_to_live(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "dynamodb",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateTimeToLive",
-      
-      target_prefix:    "DynamoDB_20120810",
-      
-      endpoint_prefix:  "dynamodb",
-      type:             :json,
-      version:          "2012-08-10",
       method:           :post,
       input_shape:      "UpdateTimeToLiveInput",
       output_shape:     "UpdateTimeToLiveOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "dynamodb",
+      target_prefix:    "DynamoDB_20120810",
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"KeyList" => %{"max" => 100, "member" => %{"shape" => "Key"}, "min" => 1, "type" => "list"}, "PutRequest" => %{"members" => %{"Item" => %{"shape" => "PutItemInputAttributeMap"}}, "required" => ["Item"], "type" => "structure"}, "StreamEnabled" => %{"type" => "boolean"}, "AttributeDefinition" => %{"members" => %{"AttributeName" => %{"shape" => "KeySchemaAttributeName"}, "AttributeType" => %{"shape" => "ScalarAttributeType"}}, "required" => ["AttributeName", "AttributeType"], "type" => "structure"}, "StringSetAttributeValue" => %{"member" => %{"shape" => "StringAttributeValue"}, "type" => "list"}, "AttributeValueUpdate" => %{"members" => %{"Action" => %{"shape" => "AttributeAction"}, "Value" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "UpdateTableInput" => %{"members" => %{"AttributeDefinitions" => %{"shape" => "AttributeDefinitions"}, "GlobalSecondaryIndexUpdates" => %{"shape" => "GlobalSecondaryIndexUpdateList"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}, "StreamSpecification" => %{"shape" => "StreamSpecification"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "ProvisionedThroughputExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ItemCollectionMetrics" => %{"members" => %{"ItemCollectionKey" => %{"shape" => "ItemCollectionKeyAttributeMap"}, "SizeEstimateRangeGB" => %{"shape" => "ItemCollectionSizeEstimateRange"}}, "type" => "structure"}, "QueryOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "Count" => %{"shape" => "Integer"}, "Items" => %{"shape" => "ItemList"}, "LastEvaluatedKey" => %{"shape" => "Key"}, "ScannedCount" => %{"shape" => "Integer"}}, "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKeyString"}, "type" => "list"}, "ScanTotalSegments" => %{"max" => 1000000, "min" => 1, "type" => "integer"}, "DeleteItemOutput" => %{"members" => %{"Attributes" => %{"shape" => "AttributeMap"}, "ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetrics"}}, "type" => "structure"}, "TableDescription" => %{"members" => %{"AttributeDefinitions" => %{"shape" => "AttributeDefinitions"}, "CreationDateTime" => %{"shape" => "Date"}, "GlobalSecondaryIndexes" => %{"shape" => "GlobalSecondaryIndexDescriptionList"}, "ItemCount" => %{"shape" => "Long"}, "KeySchema" => %{"shape" => "KeySchema"}, "LatestStreamArn" => %{"shape" => "StreamArn"}, "LatestStreamLabel" => %{"shape" => "String"}, "LocalSecondaryIndexes" => %{"shape" => "LocalSecondaryIndexDescriptionList"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughputDescription"}, "StreamSpecification" => %{"shape" => "StreamSpecification"}, "TableArn" => %{"shape" => "String"}, "TableName" => %{"shape" => "TableName"}, "TableSizeBytes" => %{"shape" => "Long"}, "TableStatus" => %{"shape" => "TableStatus"}}, "type" => "structure"}, "StreamViewType" => %{"enum" => ["NEW_IMAGE", "OLD_IMAGE", "NEW_AND_OLD_IMAGES", "KEYS_ONLY"], "type" => "string"}, "AttributeDefinitions" => %{"member" => %{"shape" => "AttributeDefinition"}, "type" => "list"}, "KeyType" => %{"enum" => ["HASH", "RANGE"], "type" => "string"}, "QueryInput" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExclusiveStartKey" => %{"shape" => "Key"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "FilterExpression" => %{"shape" => "ConditionExpression"}, "IndexName" => %{"shape" => "IndexName"}, "KeyConditionExpression" => %{"shape" => "KeyExpression"}, "KeyConditions" => %{"shape" => "KeyConditions"}, "Limit" => %{"shape" => "PositiveIntegerObject"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}, "QueryFilter" => %{"shape" => "FilterConditionMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ScanIndexForward" => %{"shape" => "BooleanObject"}, "Select" => %{"shape" => "Select"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "String" => %{"type" => "string"}, "GlobalSecondaryIndexList" => %{"member" => %{"shape" => "GlobalSecondaryIndex"}, "type" => "list"}, "UpdateTableOutput" => %{"members" => %{"TableDescription" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "CreateTableOutput" => %{"members" => %{"TableDescription" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "ProjectionType" => %{"enum" => ["ALL", "KEYS_ONLY", "INCLUDE"], "type" => "string"}, "PositiveLongObject" => %{"min" => 1, "type" => "long"}, "ConditionExpression" => %{"type" => "string"}, "DeleteRequest" => %{"members" => %{"Key" => %{"shape" => "Key"}}, "required" => ["Key"], "type" => "structure"}, "StringAttributeValue" => %{"type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "ExpressionAttributeValueVariable" => %{"type" => "string"}, "TableStatus" => %{"enum" => ["CREATING", "UPDATING", "DELETING", "ACTIVE"], "type" => "string"}, "ScalarAttributeType" => %{"enum" => ["S", "N", "B"], "type" => "string"}, "AttributeUpdates" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValueUpdate"}}, "AttributeName" => %{"max" => 65535, "type" => "string"}, "GlobalSecondaryIndex" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}}, "required" => ["IndexName", "KeySchema", "Projection", "ProvisionedThroughput"], "type" => "structure"}, "ReturnConsumedCapacity" => %{"enum" => ["INDEXES", "TOTAL", "NONE"], "type" => "string"}, "PutItemInput" => %{"members" => %{"ConditionExpression" => %{"shape" => "ConditionExpression"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "Expected" => %{"shape" => "ExpectedAttributeMap"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "Item" => %{"shape" => "PutItemInputAttributeMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}, "ReturnValues" => %{"shape" => "ReturnValue"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName", "Item"], "type" => "structure"}, "DeleteGlobalSecondaryIndexAction" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}}, "required" => ["IndexName"], "type" => "structure"}, "UpdateGlobalSecondaryIndexAction" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}}, "required" => ["IndexName", "ProvisionedThroughput"], "type" => "structure"}, "BatchWriteItemInput" => %{"members" => %{"RequestItems" => %{"shape" => "BatchWriteItemRequestMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}}, "required" => ["RequestItems"], "type" => "structure"}, "ItemCollectionSizeEstimateRange" => %{"member" => %{"shape" => "ItemCollectionSizeEstimateBound"}, "type" => "list"}, "DescribeLimitsInput" => %{"members" => %{}, "type" => "structure"}, "BatchGetRequestMap" => %{"key" => %{"shape" => "TableName"}, "max" => 100, "min" => 1, "type" => "map", "value" => %{"shape" => "KeysAndAttributes"}}, "ListTagsOfResourceInput" => %{"members" => %{"NextToken" => %{"shape" => "NextTokenString"}, "ResourceArn" => %{"shape" => "ResourceArnString"}}, "required" => ["ResourceArn"], "type" => "structure"}, "TableName" => %{"max" => 255, "min" => 3, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "BatchWriteItemRequestMap" => %{"key" => %{"shape" => "TableName"}, "max" => 25, "min" => 1, "type" => "map", "value" => %{"shape" => "WriteRequests"}}, "TimeToLiveEnabled" => %{"type" => "boolean"}, "ResourceInUseException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "BatchGetItemOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacityMultiple"}, "Responses" => %{"shape" => "BatchGetResponseMap"}, "UnprocessedKeys" => %{"shape" => "BatchGetRequestMap"}}, "type" => "structure"}, "SecondaryIndexesCapacityMap" => %{"key" => %{"shape" => "IndexName"}, "type" => "map", "value" => %{"shape" => "Capacity"}}, "ExpressionAttributeNameMap" => %{"key" => %{"shape" => "ExpressionAttributeNameVariable"}, "type" => "map", "value" => %{"shape" => "AttributeName"}}, "GlobalSecondaryIndexUpdateList" => %{"member" => %{"shape" => "GlobalSecondaryIndexUpdate"}, "type" => "list"}, "PositiveIntegerObject" => %{"min" => 1, "type" => "integer"}, "Key" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "PutItemOutput" => %{"members" => %{"Attributes" => %{"shape" => "AttributeMap"}, "ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetrics"}}, "type" => "structure"}, "NonKeyAttributeNameList" => %{"max" => 20, "member" => %{"shape" => "NonKeyAttributeName"}, "min" => 1, "type" => "list"}, "UpdateExpression" => %{"type" => "string"}, "ConsistentRead" => %{"type" => "boolean"}, "WriteRequests" => %{"max" => 25, "member" => %{"shape" => "WriteRequest"}, "min" => 1, "type" => "list"}, "BooleanObject" => %{"type" => "boolean"}, "BinaryAttributeValue" => %{"type" => "blob"}, "GetItemInput" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "Key" => %{"shape" => "Key"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName", "Key"], "type" => "structure"}, "ScanSegment" => %{"max" => 999999, "min" => 0, "type" => "integer"}, "ProvisionedThroughputDescription" => %{"members" => %{"LastDecreaseDateTime" => %{"shape" => "Date"}, "LastIncreaseDateTime" => %{"shape" => "Date"}, "NumberOfDecreasesToday" => %{"shape" => "PositiveLongObject"}, "ReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "WriteCapacityUnits" => %{"shape" => "PositiveLongObject"}}, "type" => "structure"}, "AttributeAction" => %{"enum" => ["ADD", "PUT", "DELETE"], "type" => "string"}, "IndexName" => %{"max" => 255, "min" => 3, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "DescribeLimitsOutput" => %{"members" => %{"AccountMaxReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "AccountMaxWriteCapacityUnits" => %{"shape" => "PositiveLongObject"}, "TableMaxReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "TableMaxWriteCapacityUnits" => %{"shape" => "PositiveLongObject"}}, "type" => "structure"}, "NonKeyAttributeName" => %{"max" => 255, "min" => 1, "type" => "string"}, "ScanInput" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExclusiveStartKey" => %{"shape" => "Key"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "FilterExpression" => %{"shape" => "ConditionExpression"}, "IndexName" => %{"shape" => "IndexName"}, "Limit" => %{"shape" => "PositiveIntegerObject"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ScanFilter" => %{"shape" => "FilterConditionMap"}, "Segment" => %{"shape" => "ScanSegment"}, "Select" => %{"shape" => "Select"}, "TableName" => %{"shape" => "TableName"}, "TotalSegments" => %{"shape" => "ScanTotalSegments"}}, "required" => ["TableName"], "type" => "structure"}, "Capacity" => %{"members" => %{"CapacityUnits" => %{"shape" => "ConsumedCapacityUnits"}}, "type" => "structure"}, "ExpressionAttributeValueMap" => %{"key" => %{"shape" => "ExpressionAttributeValueVariable"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "DeleteTableInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "ListTablesInputLimit" => %{"max" => 100, "min" => 1, "type" => "integer"}, "ReturnItemCollectionMetrics" => %{"enum" => ["SIZE", "NONE"], "type" => "string"}, "Date" => %{"type" => "timestamp"}, "ItemCollectionSizeLimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKeyString"}, "Value" => %{"shape" => "TagValueString"}}, "required" => ["Key", "Value"], "type" => "structure"}, "DeleteItemInput" => %{"members" => %{"ConditionExpression" => %{"shape" => "ConditionExpression"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "Expected" => %{"shape" => "ExpectedAttributeMap"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "Key" => %{"shape" => "Key"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}, "ReturnValues" => %{"shape" => "ReturnValue"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName", "Key"], "type" => "structure"}, "MapAttributeValue" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "Select" => %{"enum" => ["ALL_ATTRIBUTES", "ALL_PROJECTED_ATTRIBUTES", "SPECIFIC_ATTRIBUTES", "COUNT"], "type" => "string"}, "Condition" => %{"members" => %{"AttributeValueList" => %{"shape" => "AttributeValueList"}, "ComparisonOperator" => %{"shape" => "ComparisonOperator"}}, "required" => ["ComparisonOperator"], "type" => "structure"}, "DescribeTimeToLiveInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "BatchGetResponseMap" => %{"key" => %{"shape" => "TableName"}, "type" => "map", "value" => %{"shape" => "ItemList"}}, "Backfilling" => %{"type" => "boolean"}, "KeyConditions" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "Condition"}}, "TagList" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "CreateTableInput" => %{"members" => %{"AttributeDefinitions" => %{"shape" => "AttributeDefinitions"}, "GlobalSecondaryIndexes" => %{"shape" => "GlobalSecondaryIndexList"}, "KeySchema" => %{"shape" => "KeySchema"}, "LocalSecondaryIndexes" => %{"shape" => "LocalSecondaryIndexList"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}, "StreamSpecification" => %{"shape" => "StreamSpecification"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["AttributeDefinitions", "TableName", "KeySchema", "ProvisionedThroughput"], "type" => "structure"}, "NumberAttributeValue" => %{"type" => "string"}, "NumberSetAttributeValue" => %{"member" => %{"shape" => "NumberAttributeValue"}, "type" => "list"}, "KeySchemaAttributeName" => %{"max" => 255, "min" => 1, "type" => "string"}, "ItemCollectionMetricsPerTable" => %{"key" => %{"shape" => "TableName"}, "type" => "map", "value" => %{"shape" => "ItemCollectionMetricsMultiple"}}, "BatchWriteItemOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacityMultiple"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetricsPerTable"}, "UnprocessedItems" => %{"shape" => "BatchWriteItemRequestMap"}}, "type" => "structure"}, "DescribeTimeToLiveOutput" => %{"members" => %{"TimeToLiveDescription" => %{"shape" => "TimeToLiveDescription"}}, "type" => "structure"}, "KeyExpression" => %{"type" => "string"}, "ScanOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "Count" => %{"shape" => "Integer"}, "Items" => %{"shape" => "ItemList"}, "LastEvaluatedKey" => %{"shape" => "Key"}, "ScannedCount" => %{"shape" => "Integer"}}, "type" => "structure"}, "StreamArn" => %{"max" => 1024, "min" => 37, "type" => "string"}, "ReturnValue" => %{"enum" => ["NONE", "ALL_OLD", "UPDATED_OLD", "ALL_NEW", "UPDATED_NEW"], "type" => "string"}, "GlobalSecondaryIndexUpdate" => %{"members" => %{"Create" => %{"shape" => "CreateGlobalSecondaryIndexAction"}, "Delete" => %{"shape" => "DeleteGlobalSecondaryIndexAction"}, "Update" => %{"shape" => "UpdateGlobalSecondaryIndexAction"}}, "type" => "structure"}, "IndexStatus" => %{"enum" => ["CREATING", "UPDATING", "DELETING", "ACTIVE"], "type" => "string"}, "ListTagsOfResourceOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextTokenString"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InternalServerError" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ItemCollectionKeyAttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "Long" => %{"type" => "long"}, "BatchGetItemInput" => %{"members" => %{"RequestItems" => %{"shape" => "BatchGetRequestMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}}, "required" => ["RequestItems"], "type" => "structure"}, "ComparisonOperator" => %{"enum" => ["EQ", "NE", "IN", "LE", "LT", "GE", "GT", "BETWEEN", "NOT_NULL", "NULL", "CONTAINS", "NOT_CONTAINS", "BEGINS_WITH"], "type" => "string"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutItemInputAttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "DeleteTableOutput" => %{"members" => %{"TableDescription" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "UpdateItemOutput" => %{"members" => %{"Attributes" => %{"shape" => "AttributeMap"}, "ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetrics"}}, "type" => "structure"}, "BooleanAttributeValue" => %{"type" => "boolean"}, "TimeToLiveSpecification" => %{"members" => %{"AttributeName" => %{"shape" => "TimeToLiveAttributeName"}, "Enabled" => %{"shape" => "TimeToLiveEnabled"}}, "required" => ["Enabled", "AttributeName"], "type" => "structure"}, "ListTablesInput" => %{"members" => %{"ExclusiveStartTableName" => %{"shape" => "TableName"}, "Limit" => %{"shape" => "ListTablesInputLimit"}}, "type" => "structure"}, "DescribeTableInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "UpdateTimeToLiveOutput" => %{"members" => %{"TimeToLiveSpecification" => %{"shape" => "TimeToLiveSpecification"}}, "type" => "structure"}, "WriteRequest" => %{"members" => %{"DeleteRequest" => %{"shape" => "DeleteRequest"}, "PutRequest" => %{"shape" => "PutRequest"}}, "type" => "structure"}, "ListAttributeValue" => %{"member" => %{"shape" => "AttributeValue"}, "type" => "list"}, "ItemList" => %{"member" => %{"shape" => "AttributeMap"}, "type" => "list"}, "ConsumedCapacityUnits" => %{"type" => "double"}, "GlobalSecondaryIndexDescription" => %{"members" => %{"Backfilling" => %{"shape" => "Backfilling"}, "IndexArn" => %{"shape" => "String"}, "IndexName" => %{"shape" => "IndexName"}, "IndexSizeBytes" => %{"shape" => "Long"}, "IndexStatus" => %{"shape" => "IndexStatus"}, "ItemCount" => %{"shape" => "Long"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughputDescription"}}, "type" => "structure"}, "ExpectedAttributeValue" => %{"members" => %{"AttributeValueList" => %{"shape" => "AttributeValueList"}, "ComparisonOperator" => %{"shape" => "ComparisonOperator"}, "Exists" => %{"shape" => "BooleanObject"}, "Value" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "ItemCollectionSizeEstimateBound" => %{"type" => "double"}, "ProvisionedThroughput" => %{"members" => %{"ReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "WriteCapacityUnits" => %{"shape" => "PositiveLongObject"}}, "required" => ["ReadCapacityUnits", "WriteCapacityUnits"], "type" => "structure"}, "StreamSpecification" => %{"members" => %{"StreamEnabled" => %{"shape" => "StreamEnabled"}, "StreamViewType" => %{"shape" => "StreamViewType"}}, "type" => "structure"}, "ExpressionAttributeNameVariable" => %{"type" => "string"}, "LocalSecondaryIndexDescriptionList" => %{"member" => %{"shape" => "LocalSecondaryIndexDescription"}, "type" => "list"}, "TimeToLiveAttributeName" => %{"max" => 255, "min" => 1, "type" => "string"}, "ConditionalCheckFailedException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "AttributeValueList" => %{"member" => %{"shape" => "AttributeValue"}, "type" => "list"}, "ListTablesOutput" => %{"members" => %{"LastEvaluatedTableName" => %{"shape" => "TableName"}, "TableNames" => %{"shape" => "TableNameList"}}, "type" => "structure"}, "LocalSecondaryIndex" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}}, "required" => ["IndexName", "KeySchema", "Projection"], "type" => "structure"}, "UntagResourceInput" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArnString"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["ResourceArn", "TagKeys"], "type" => "structure"}, "AttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "CreateGlobalSecondaryIndexAction" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}}, "required" => ["IndexName", "KeySchema", "Projection", "ProvisionedThroughput"], "type" => "structure"}, "ConsumedCapacity" => %{"members" => %{"CapacityUnits" => %{"shape" => "ConsumedCapacityUnits"}, "GlobalSecondaryIndexes" => %{"shape" => "SecondaryIndexesCapacityMap"}, "LocalSecondaryIndexes" => %{"shape" => "SecondaryIndexesCapacityMap"}, "Table" => %{"shape" => "Capacity"}, "TableName" => %{"shape" => "TableName"}}, "type" => "structure"}, "KeysAndAttributes" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "Keys" => %{"shape" => "KeyList"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}}, "required" => ["Keys"], "type" => "structure"}, "AttributeNameList" => %{"member" => %{"shape" => "AttributeName"}, "min" => 1, "type" => "list"}, "AttributeValue" => %{"members" => %{"B" => %{"shape" => "BinaryAttributeValue"}, "BOOL" => %{"shape" => "BooleanAttributeValue"}, "BS" => %{"shape" => "BinarySetAttributeValue"}, "L" => %{"shape" => "ListAttributeValue"}, "M" => %{"shape" => "MapAttributeValue"}, "N" => %{"shape" => "NumberAttributeValue"}, "NS" => %{"shape" => "NumberSetAttributeValue"}, "NULL" => %{"shape" => "NullAttributeValue"}, "S" => %{"shape" => "StringAttributeValue"}, "SS" => %{"shape" => "StringSetAttributeValue"}}, "type" => "structure"}, "ExpectedAttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "ExpectedAttributeValue"}}, "ResourceArnString" => %{"max" => 1283, "min" => 1, "type" => "string"}, "LocalSecondaryIndexDescription" => %{"members" => %{"IndexArn" => %{"shape" => "String"}, "IndexName" => %{"shape" => "IndexName"}, "IndexSizeBytes" => %{"shape" => "Long"}, "ItemCount" => %{"shape" => "Long"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}}, "type" => "structure"}, "TimeToLiveDescription" => %{"members" => %{"AttributeName" => %{"shape" => "TimeToLiveAttributeName"}, "TimeToLiveStatus" => %{"shape" => "TimeToLiveStatus"}}, "type" => "structure"}, "FilterConditionMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "Condition"}}, "GlobalSecondaryIndexDescriptionList" => %{"member" => %{"shape" => "GlobalSecondaryIndexDescription"}, "type" => "list"}, "TagKeyString" => %{"max" => 128, "min" => 1, "type" => "string"}, "LocalSecondaryIndexList" => %{"member" => %{"shape" => "LocalSecondaryIndex"}, "type" => "list"}, "UpdateTimeToLiveInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}, "TimeToLiveSpecification" => %{"shape" => "TimeToLiveSpecification"}}, "required" => ["TableName", "TimeToLiveSpecification"], "type" => "structure"}, "TableNameList" => %{"member" => %{"shape" => "TableName"}, "type" => "list"}, "GetItemOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "Item" => %{"shape" => "AttributeMap"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "ItemCollectionMetricsMultiple" => %{"member" => %{"shape" => "ItemCollectionMetrics"}, "type" => "list"}, "ConditionalOperator" => %{"enum" => ["AND", "OR"], "type" => "string"}, "BinarySetAttributeValue" => %{"member" => %{"shape" => "BinaryAttributeValue"}, "type" => "list"}, "TimeToLiveStatus" => %{"enum" => ["ENABLING", "DISABLING", "ENABLED", "DISABLED"], "type" => "string"}, "KeySchema" => %{"max" => 2, "member" => %{"shape" => "KeySchemaElement"}, "min" => 1, "type" => "list"}, "TagValueString" => %{"max" => 256, "min" => 0, "type" => "string"}, "ProjectionExpression" => %{"type" => "string"}, "NullAttributeValue" => %{"type" => "boolean"}, "UpdateItemInput" => %{"members" => %{"AttributeUpdates" => %{"shape" => "AttributeUpdates"}, "ConditionExpression" => %{"shape" => "ConditionExpression"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "Expected" => %{"shape" => "ExpectedAttributeMap"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "Key" => %{"shape" => "Key"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}, "ReturnValues" => %{"shape" => "ReturnValue"}, "TableName" => %{"shape" => "TableName"}, "UpdateExpression" => %{"shape" => "UpdateExpression"}}, "required" => ["TableName", "Key"], "type" => "structure"}, "KeySchemaElement" => %{"members" => %{"AttributeName" => %{"shape" => "KeySchemaAttributeName"}, "KeyType" => %{"shape" => "KeyType"}}, "required" => ["AttributeName", "KeyType"], "type" => "structure"}, "Projection" => %{"members" => %{"NonKeyAttributes" => %{"shape" => "NonKeyAttributeNameList"}, "ProjectionType" => %{"shape" => "ProjectionType"}}, "type" => "structure"}, "ConsumedCapacityMultiple" => %{"member" => %{"shape" => "ConsumedCapacity"}, "type" => "list"}, "DescribeTableOutput" => %{"members" => %{"Table" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "TagResourceInput" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArnString"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["ResourceArn", "Tags"], "type" => "structure"}, "NextTokenString" => %{"type" => "string"}}
+		%{"KeyList" => %{"max" => 100, "member" => %{"shape" => "Key"}, "min" => 1, "type" => "list"}, "PutRequest" => %{"members" => %{"Item" => %{"shape" => "PutItemInputAttributeMap"}}, "required" => ["Item"], "type" => "structure"}, "StreamEnabled" => %{"type" => "boolean"}, "AttributeDefinition" => %{"members" => %{"AttributeName" => %{"shape" => "KeySchemaAttributeName"}, "AttributeType" => %{"shape" => "ScalarAttributeType"}}, "required" => ["AttributeName", "AttributeType"], "type" => "structure"}, "StringSetAttributeValue" => %{"member" => %{"shape" => "StringAttributeValue"}, "type" => "list"}, "AttributeValueUpdate" => %{"members" => %{"Action" => %{"shape" => "AttributeAction"}, "Value" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "UpdateTableInput" => %{"members" => %{"AttributeDefinitions" => %{"shape" => "AttributeDefinitions"}, "GlobalSecondaryIndexUpdates" => %{"shape" => "GlobalSecondaryIndexUpdateList"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}, "StreamSpecification" => %{"shape" => "StreamSpecification"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "ProvisionedThroughputExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ItemCollectionMetrics" => %{"members" => %{"ItemCollectionKey" => %{"shape" => "ItemCollectionKeyAttributeMap"}, "SizeEstimateRangeGB" => %{"shape" => "ItemCollectionSizeEstimateRange"}}, "type" => "structure"}, "QueryOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "Count" => %{"shape" => "Integer"}, "Items" => %{"shape" => "ItemList"}, "LastEvaluatedKey" => %{"shape" => "Key"}, "ScannedCount" => %{"shape" => "Integer"}}, "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKeyString"}, "type" => "list"}, "ScanTotalSegments" => %{"max" => 1000000, "min" => 1, "type" => "integer"}, "DeleteItemOutput" => %{"members" => %{"Attributes" => %{"shape" => "AttributeMap"}, "ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetrics"}}, "type" => "structure"}, "TableDescription" => %{"members" => %{"AttributeDefinitions" => %{"shape" => "AttributeDefinitions"}, "CreationDateTime" => %{"shape" => "Date"}, "GlobalSecondaryIndexes" => %{"shape" => "GlobalSecondaryIndexDescriptionList"}, "ItemCount" => %{"shape" => "Long"}, "KeySchema" => %{"shape" => "KeySchema"}, "LatestStreamArn" => %{"shape" => "StreamArn"}, "LatestStreamLabel" => %{"shape" => "String"}, "LocalSecondaryIndexes" => %{"shape" => "LocalSecondaryIndexDescriptionList"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughputDescription"}, "StreamSpecification" => %{"shape" => "StreamSpecification"}, "TableArn" => %{"shape" => "String"}, "TableName" => %{"shape" => "TableName"}, "TableSizeBytes" => %{"shape" => "Long"}, "TableStatus" => %{"shape" => "TableStatus"}}, "type" => "structure"}, "StreamViewType" => %{"enum" => ["NEW_IMAGE", "OLD_IMAGE", "NEW_AND_OLD_IMAGES", "KEYS_ONLY"], "type" => "string"}, "AttributeDefinitions" => %{"member" => %{"shape" => "AttributeDefinition"}, "type" => "list"}, "KeyType" => %{"enum" => ["HASH", "RANGE"], "type" => "string"}, "QueryInput" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExclusiveStartKey" => %{"shape" => "Key"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "FilterExpression" => %{"shape" => "ConditionExpression"}, "IndexName" => %{"shape" => "IndexName"}, "KeyConditionExpression" => %{"shape" => "KeyExpression"}, "KeyConditions" => %{"shape" => "KeyConditions"}, "Limit" => %{"shape" => "PositiveIntegerObject"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}, "QueryFilter" => %{"shape" => "FilterConditionMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ScanIndexForward" => %{"shape" => "BooleanObject"}, "Select" => %{"shape" => "Select"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "String" => %{"type" => "string"}, "GlobalSecondaryIndexList" => %{"member" => %{"shape" => "GlobalSecondaryIndex"}, "type" => "list"}, "UpdateTableOutput" => %{"members" => %{"TableDescription" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "CreateTableOutput" => %{"members" => %{"TableDescription" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "ProjectionType" => %{"enum" => ["ALL", "KEYS_ONLY", "INCLUDE"], "type" => "string"}, "PositiveLongObject" => %{"min" => 1, "type" => "long"}, "ConditionExpression" => %{"type" => "string"}, "DeleteRequest" => %{"members" => %{"Key" => %{"shape" => "Key"}}, "required" => ["Key"], "type" => "structure"}, "StringAttributeValue" => %{"type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "ExpressionAttributeValueVariable" => %{"type" => "string"}, "TableStatus" => %{"enum" => ["CREATING", "UPDATING", "DELETING", "ACTIVE"], "type" => "string"}, "ScalarAttributeType" => %{"enum" => ["S", "N", "B"], "type" => "string"}, "AttributeUpdates" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValueUpdate"}}, "AttributeName" => %{"max" => 65535, "type" => "string"}, "GlobalSecondaryIndex" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}}, "required" => ["IndexName", "KeySchema", "Projection", "ProvisionedThroughput"], "type" => "structure"}, "ReturnConsumedCapacity" => %{"enum" => ["INDEXES", "TOTAL", "NONE"], "type" => "string"}, "PutItemInput" => %{"members" => %{"ConditionExpression" => %{"shape" => "ConditionExpression"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "Expected" => %{"shape" => "ExpectedAttributeMap"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "Item" => %{"shape" => "PutItemInputAttributeMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}, "ReturnValues" => %{"shape" => "ReturnValue"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName", "Item"], "type" => "structure"}, "DeleteGlobalSecondaryIndexAction" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}}, "required" => ["IndexName"], "type" => "structure"}, "UpdateGlobalSecondaryIndexAction" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}}, "required" => ["IndexName", "ProvisionedThroughput"], "type" => "structure"}, "BatchWriteItemInput" => %{"members" => %{"RequestItems" => %{"shape" => "BatchWriteItemRequestMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}}, "required" => ["RequestItems"], "type" => "structure"}, "ItemCollectionSizeEstimateRange" => %{"member" => %{"shape" => "ItemCollectionSizeEstimateBound"}, "type" => "list"}, "DescribeLimitsInput" => %{"members" => %{}, "type" => "structure"}, "BatchGetRequestMap" => %{"key" => %{"shape" => "TableName"}, "max" => 100, "min" => 1, "type" => "map", "value" => %{"shape" => "KeysAndAttributes"}}, "ListTagsOfResourceInput" => %{"members" => %{"NextToken" => %{"shape" => "NextTokenString"}, "ResourceArn" => %{"shape" => "ResourceArnString"}}, "required" => ["ResourceArn"], "type" => "structure"}, "TableName" => %{"max" => 255, "min" => 3, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "BatchWriteItemRequestMap" => %{"key" => %{"shape" => "TableName"}, "max" => 25, "min" => 1, "type" => "map", "value" => %{"shape" => "WriteRequests"}}, "TimeToLiveEnabled" => %{"type" => "boolean"}, "ResourceInUseException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "BatchGetItemOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacityMultiple"}, "Responses" => %{"shape" => "BatchGetResponseMap"}, "UnprocessedKeys" => %{"shape" => "BatchGetRequestMap"}}, "type" => "structure"}, "SecondaryIndexesCapacityMap" => %{"key" => %{"shape" => "IndexName"}, "type" => "map", "value" => %{"shape" => "Capacity"}}, "ExpressionAttributeNameMap" => %{"key" => %{"shape" => "ExpressionAttributeNameVariable"}, "type" => "map", "value" => %{"shape" => "AttributeName"}}, "GlobalSecondaryIndexUpdateList" => %{"member" => %{"shape" => "GlobalSecondaryIndexUpdate"}, "type" => "list"}, "PositiveIntegerObject" => %{"min" => 1, "type" => "integer"}, "Key" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "PutItemOutput" => %{"members" => %{"Attributes" => %{"shape" => "AttributeMap"}, "ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetrics"}}, "type" => "structure"}, "NonKeyAttributeNameList" => %{"max" => 20, "member" => %{"shape" => "NonKeyAttributeName"}, "min" => 1, "type" => "list"}, "UpdateExpression" => %{"type" => "string"}, "ConsistentRead" => %{"type" => "boolean"}, "WriteRequests" => %{"max" => 25, "member" => %{"shape" => "WriteRequest"}, "min" => 1, "type" => "list"}, "BooleanObject" => %{"type" => "boolean"}, "BinaryAttributeValue" => %{"type" => "blob"}, "GetItemInput" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "Key" => %{"shape" => "Key"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName", "Key"], "type" => "structure"}, "ScanSegment" => %{"max" => 999999, "min" => 0, "type" => "integer"}, "ProvisionedThroughputDescription" => %{"members" => %{"LastDecreaseDateTime" => %{"shape" => "Date"}, "LastIncreaseDateTime" => %{"shape" => "Date"}, "NumberOfDecreasesToday" => %{"shape" => "PositiveLongObject"}, "ReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "WriteCapacityUnits" => %{"shape" => "PositiveLongObject"}}, "type" => "structure"}, "AttributeAction" => %{"enum" => ["ADD", "PUT", "DELETE"], "type" => "string"}, "IndexName" => %{"max" => 255, "min" => 3, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "DescribeLimitsOutput" => %{"members" => %{"AccountMaxReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "AccountMaxWriteCapacityUnits" => %{"shape" => "PositiveLongObject"}, "TableMaxReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "TableMaxWriteCapacityUnits" => %{"shape" => "PositiveLongObject"}}, "type" => "structure"}, "NonKeyAttributeName" => %{"max" => 255, "min" => 1, "type" => "string"}, "ScanInput" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExclusiveStartKey" => %{"shape" => "Key"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "FilterExpression" => %{"shape" => "ConditionExpression"}, "IndexName" => %{"shape" => "IndexName"}, "Limit" => %{"shape" => "PositiveIntegerObject"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ScanFilter" => %{"shape" => "FilterConditionMap"}, "Segment" => %{"shape" => "ScanSegment"}, "Select" => %{"shape" => "Select"}, "TableName" => %{"shape" => "TableName"}, "TotalSegments" => %{"shape" => "ScanTotalSegments"}}, "required" => ["TableName"], "type" => "structure"}, "Capacity" => %{"members" => %{"CapacityUnits" => %{"shape" => "ConsumedCapacityUnits"}}, "type" => "structure"}, "ExpressionAttributeValueMap" => %{"key" => %{"shape" => "ExpressionAttributeValueVariable"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "DeleteTableInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "ListTablesInputLimit" => %{"max" => 100, "min" => 1, "type" => "integer"}, "ReturnItemCollectionMetrics" => %{"enum" => ["SIZE", "NONE"], "type" => "string"}, "Date" => %{"type" => "timestamp"}, "ItemCollectionSizeLimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKeyString"}, "Value" => %{"shape" => "TagValueString"}}, "required" => ["Key", "Value"], "type" => "structure"}, "DeleteItemInput" => %{"members" => %{"ConditionExpression" => %{"shape" => "ConditionExpression"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "Expected" => %{"shape" => "ExpectedAttributeMap"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "Key" => %{"shape" => "Key"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}, "ReturnValues" => %{"shape" => "ReturnValue"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["TableName", "Key"], "type" => "structure"}, "MapAttributeValue" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "Select" => %{"enum" => ["ALL_ATTRIBUTES", "ALL_PROJECTED_ATTRIBUTES", "SPECIFIC_ATTRIBUTES", "COUNT"], "type" => "string"}, "Condition" => %{"members" => %{"AttributeValueList" => %{"shape" => "AttributeValueList"}, "ComparisonOperator" => %{"shape" => "ComparisonOperator"}}, "required" => ["ComparisonOperator"], "type" => "structure"}, "DescribeTimeToLiveInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "BatchGetResponseMap" => %{"key" => %{"shape" => "TableName"}, "type" => "map", "value" => %{"shape" => "ItemList"}}, "Backfilling" => %{"type" => "boolean"}, "KeyConditions" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "Condition"}}, "TagList" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "CreateTableInput" => %{"members" => %{"AttributeDefinitions" => %{"shape" => "AttributeDefinitions"}, "GlobalSecondaryIndexes" => %{"shape" => "GlobalSecondaryIndexList"}, "KeySchema" => %{"shape" => "KeySchema"}, "LocalSecondaryIndexes" => %{"shape" => "LocalSecondaryIndexList"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}, "StreamSpecification" => %{"shape" => "StreamSpecification"}, "TableName" => %{"shape" => "TableName"}}, "required" => ["AttributeDefinitions", "TableName", "KeySchema", "ProvisionedThroughput"], "type" => "structure"}, "NumberAttributeValue" => %{"type" => "string"}, "NumberSetAttributeValue" => %{"member" => %{"shape" => "NumberAttributeValue"}, "type" => "list"}, "KeySchemaAttributeName" => %{"max" => 255, "min" => 1, "type" => "string"}, "ItemCollectionMetricsPerTable" => %{"key" => %{"shape" => "TableName"}, "type" => "map", "value" => %{"shape" => "ItemCollectionMetricsMultiple"}}, "BatchWriteItemOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacityMultiple"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetricsPerTable"}, "UnprocessedItems" => %{"shape" => "BatchWriteItemRequestMap"}}, "type" => "structure"}, "DescribeTimeToLiveOutput" => %{"members" => %{"TimeToLiveDescription" => %{"shape" => "TimeToLiveDescription"}}, "type" => "structure"}, "KeyExpression" => %{"type" => "string"}, "ScanOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "Count" => %{"shape" => "Integer"}, "Items" => %{"shape" => "ItemList"}, "LastEvaluatedKey" => %{"shape" => "Key"}, "ScannedCount" => %{"shape" => "Integer"}}, "type" => "structure"}, "StreamArn" => %{"max" => 1024, "min" => 37, "type" => "string"}, "ReturnValue" => %{"enum" => ["NONE", "ALL_OLD", "UPDATED_OLD", "ALL_NEW", "UPDATED_NEW"], "type" => "string"}, "GlobalSecondaryIndexUpdate" => %{"members" => %{"Create" => %{"shape" => "CreateGlobalSecondaryIndexAction"}, "Delete" => %{"shape" => "DeleteGlobalSecondaryIndexAction"}, "Update" => %{"shape" => "UpdateGlobalSecondaryIndexAction"}}, "type" => "structure"}, "IndexStatus" => %{"enum" => ["CREATING", "UPDATING", "DELETING", "ACTIVE"], "type" => "string"}, "ListTagsOfResourceOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextTokenString"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InternalServerError" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ItemCollectionKeyAttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "Long" => %{"type" => "long"}, "BatchGetItemInput" => %{"members" => %{"RequestItems" => %{"shape" => "BatchGetRequestMap"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}}, "required" => ["RequestItems"], "type" => "structure"}, "ComparisonOperator" => %{"enum" => ["EQ", "NE", "IN", "LE", "LT", "GE", "GT", "BETWEEN", "NOT_NULL", "NULL", "CONTAINS", "NOT_CONTAINS", "BEGINS_WITH"], "type" => "string"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutItemInputAttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "DeleteTableOutput" => %{"members" => %{"TableDescription" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "UpdateItemOutput" => %{"members" => %{"Attributes" => %{"shape" => "AttributeMap"}, "ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "ItemCollectionMetrics" => %{"shape" => "ItemCollectionMetrics"}}, "type" => "structure"}, "BooleanAttributeValue" => %{"type" => "boolean"}, "TimeToLiveSpecification" => %{"members" => %{"AttributeName" => %{"shape" => "TimeToLiveAttributeName"}, "Enabled" => %{"shape" => "TimeToLiveEnabled"}}, "required" => ["Enabled", "AttributeName"], "type" => "structure"}, "ListTablesInput" => %{"members" => %{"ExclusiveStartTableName" => %{"shape" => "TableName"}, "Limit" => %{"shape" => "ListTablesInputLimit"}}, "type" => "structure"}, "DescribeTableInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}}, "required" => ["TableName"], "type" => "structure"}, "UpdateTimeToLiveOutput" => %{"members" => %{"TimeToLiveSpecification" => %{"shape" => "TimeToLiveSpecification"}}, "type" => "structure"}, "WriteRequest" => %{"members" => %{"DeleteRequest" => %{"shape" => "DeleteRequest"}, "PutRequest" => %{"shape" => "PutRequest"}}, "type" => "structure"}, "ListAttributeValue" => %{"member" => %{"shape" => "AttributeValue"}, "type" => "list"}, "ItemList" => %{"member" => %{"shape" => "AttributeMap"}, "type" => "list"}, "ConsumedCapacityUnits" => %{"type" => "double"}, "GlobalSecondaryIndexDescription" => %{"members" => %{"Backfilling" => %{"shape" => "Backfilling"}, "IndexArn" => %{"shape" => "String"}, "IndexName" => %{"shape" => "IndexName"}, "IndexSizeBytes" => %{"shape" => "Long"}, "IndexStatus" => %{"shape" => "IndexStatus"}, "ItemCount" => %{"shape" => "Long"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughputDescription"}}, "type" => "structure"}, "ExpectedAttributeValue" => %{"members" => %{"AttributeValueList" => %{"shape" => "AttributeValueList"}, "ComparisonOperator" => %{"shape" => "ComparisonOperator"}, "Exists" => %{"shape" => "BooleanObject"}, "Value" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "ItemCollectionSizeEstimateBound" => %{"type" => "double"}, "ProvisionedThroughput" => %{"members" => %{"ReadCapacityUnits" => %{"shape" => "PositiveLongObject"}, "WriteCapacityUnits" => %{"shape" => "PositiveLongObject"}}, "required" => ["ReadCapacityUnits", "WriteCapacityUnits"], "type" => "structure"}, "StreamSpecification" => %{"members" => %{"StreamEnabled" => %{"shape" => "StreamEnabled"}, "StreamViewType" => %{"shape" => "StreamViewType"}}, "type" => "structure"}, "ExpressionAttributeNameVariable" => %{"type" => "string"}, "LocalSecondaryIndexDescriptionList" => %{"member" => %{"shape" => "LocalSecondaryIndexDescription"}, "type" => "list"}, "TimeToLiveAttributeName" => %{"max" => 255, "min" => 1, "type" => "string"}, "ConditionalCheckFailedException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "AttributeValueList" => %{"member" => %{"shape" => "AttributeValue"}, "type" => "list"}, "ListTablesOutput" => %{"members" => %{"LastEvaluatedTableName" => %{"shape" => "TableName"}, "TableNames" => %{"shape" => "TableNameList"}}, "type" => "structure"}, "LocalSecondaryIndex" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}}, "required" => ["IndexName", "KeySchema", "Projection"], "type" => "structure"}, "UntagResourceInput" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArnString"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["ResourceArn", "TagKeys"], "type" => "structure"}, "AttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "CreateGlobalSecondaryIndexAction" => %{"members" => %{"IndexName" => %{"shape" => "IndexName"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}, "ProvisionedThroughput" => %{"shape" => "ProvisionedThroughput"}}, "required" => ["IndexName", "KeySchema", "Projection", "ProvisionedThroughput"], "type" => "structure"}, "ConsumedCapacity" => %{"members" => %{"CapacityUnits" => %{"shape" => "ConsumedCapacityUnits"}, "GlobalSecondaryIndexes" => %{"shape" => "SecondaryIndexesCapacityMap"}, "LocalSecondaryIndexes" => %{"shape" => "SecondaryIndexesCapacityMap"}, "Table" => %{"shape" => "Capacity"}, "TableName" => %{"shape" => "TableName"}}, "type" => "structure"}, "KeysAndAttributes" => %{"members" => %{"AttributesToGet" => %{"shape" => "AttributeNameList"}, "ConsistentRead" => %{"shape" => "ConsistentRead"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "Keys" => %{"shape" => "KeyList"}, "ProjectionExpression" => %{"shape" => "ProjectionExpression"}}, "required" => ["Keys"], "type" => "structure"}, "AttributeNameList" => %{"member" => %{"shape" => "AttributeName"}, "min" => 1, "type" => "list"}, "AttributeValue" => %{"members" => %{"B" => %{"shape" => "BinaryAttributeValue"}, "BOOL" => %{"shape" => "BooleanAttributeValue"}, "BS" => %{"shape" => "BinarySetAttributeValue"}, "L" => %{"shape" => "ListAttributeValue"}, "M" => %{"shape" => "MapAttributeValue"}, "N" => %{"shape" => "NumberAttributeValue"}, "NS" => %{"shape" => "NumberSetAttributeValue"}, "NULL" => %{"shape" => "NullAttributeValue"}, "S" => %{"shape" => "StringAttributeValue"}, "SS" => %{"shape" => "StringSetAttributeValue"}}, "type" => "structure"}, "ExpectedAttributeMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "ExpectedAttributeValue"}}, "ResourceArnString" => %{"max" => 1283, "min" => 1, "type" => "string"}, "LocalSecondaryIndexDescription" => %{"members" => %{"IndexArn" => %{"shape" => "String"}, "IndexName" => %{"shape" => "IndexName"}, "IndexSizeBytes" => %{"shape" => "Long"}, "ItemCount" => %{"shape" => "Long"}, "KeySchema" => %{"shape" => "KeySchema"}, "Projection" => %{"shape" => "Projection"}}, "type" => "structure"}, "TimeToLiveDescription" => %{"members" => %{"AttributeName" => %{"shape" => "TimeToLiveAttributeName"}, "TimeToLiveStatus" => %{"shape" => "TimeToLiveStatus"}}, "type" => "structure"}, "FilterConditionMap" => %{"key" => %{"shape" => "AttributeName"}, "type" => "map", "value" => %{"shape" => "Condition"}}, "GlobalSecondaryIndexDescriptionList" => %{"member" => %{"shape" => "GlobalSecondaryIndexDescription"}, "type" => "list"}, "TagKeyString" => %{"max" => 128, "min" => 1, "type" => "string"}, "LocalSecondaryIndexList" => %{"member" => %{"shape" => "LocalSecondaryIndex"}, "type" => "list"}, "UpdateTimeToLiveInput" => %{"members" => %{"TableName" => %{"shape" => "TableName"}, "TimeToLiveSpecification" => %{"shape" => "TimeToLiveSpecification"}}, "required" => ["TableName", "TimeToLiveSpecification"], "type" => "structure"}, "TableNameList" => %{"member" => %{"shape" => "TableName"}, "type" => "list"}, "GetItemOutput" => %{"members" => %{"ConsumedCapacity" => %{"shape" => "ConsumedCapacity"}, "Item" => %{"shape" => "AttributeMap"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "ItemCollectionMetricsMultiple" => %{"member" => %{"shape" => "ItemCollectionMetrics"}, "type" => "list"}, "ConditionalOperator" => %{"enum" => ["AND", "OR"], "type" => "string"}, "BinarySetAttributeValue" => %{"member" => %{"shape" => "BinaryAttributeValue"}, "type" => "list"}, "TimeToLiveStatus" => %{"enum" => ["ENABLING", "DISABLING", "ENABLED", "DISABLED"], "type" => "string"}, "KeySchema" => %{"max" => 2, "member" => %{"shape" => "KeySchemaElement"}, "min" => 1, "type" => "list"}, "TagValueString" => %{"max" => 256, "min" => 0, "type" => "string"}, "ProjectionExpression" => %{"type" => "string"}, "NullAttributeValue" => %{"type" => "boolean"}, "UpdateItemInput" => %{"members" => %{"AttributeUpdates" => %{"shape" => "AttributeUpdates"}, "ConditionExpression" => %{"shape" => "ConditionExpression"}, "ConditionalOperator" => %{"shape" => "ConditionalOperator"}, "Expected" => %{"shape" => "ExpectedAttributeMap"}, "ExpressionAttributeNames" => %{"shape" => "ExpressionAttributeNameMap"}, "ExpressionAttributeValues" => %{"shape" => "ExpressionAttributeValueMap"}, "Key" => %{"shape" => "Key"}, "ReturnConsumedCapacity" => %{"shape" => "ReturnConsumedCapacity"}, "ReturnItemCollectionMetrics" => %{"shape" => "ReturnItemCollectionMetrics"}, "ReturnValues" => %{"shape" => "ReturnValue"}, "TableName" => %{"shape" => "TableName"}, "UpdateExpression" => %{"shape" => "UpdateExpression"}}, "required" => ["TableName", "Key"], "type" => "structure"}, "KeySchemaElement" => %{"members" => %{"AttributeName" => %{"shape" => "KeySchemaAttributeName"}, "KeyType" => %{"shape" => "KeyType"}}, "required" => ["AttributeName", "KeyType"], "type" => "structure"}, "Projection" => %{"members" => %{"NonKeyAttributes" => %{"shape" => "NonKeyAttributeNameList"}, "ProjectionType" => %{"shape" => "ProjectionType"}}, "type" => "structure"}, "ConsumedCapacityMultiple" => %{"member" => %{"shape" => "ConsumedCapacity"}, "type" => "list"}, "DescribeTableOutput" => %{"members" => %{"Table" => %{"shape" => "TableDescription"}}, "type" => "structure"}, "TagResourceInput" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArnString"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["ResourceArn", "Tags"], "type" => "structure"}, "NextTokenString" => %{"type" => "string"}}
   end
 end

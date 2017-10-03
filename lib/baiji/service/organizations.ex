@@ -122,7 +122,7 @@ defmodule Baiji.Organizations do
   CloudTrail User
   Guide](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/what_is_cloud_trail_top_level.html).
   """
-  
+
   @doc """
   Retrieves Organizations-related information about the specified account.
 
@@ -130,25 +130,17 @@ defmodule Baiji.Organizations do
   """
   def describe_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeAccount",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DescribeAccountRequest",
       output_shape:     "DescribeAccountResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates an AWS organization. The account whose user is calling the
   CreateOrganization operation automatically becomes the [master
@@ -169,27 +161,19 @@ defmodule Baiji.Organizations do
   """
   def create_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "CreateOrganizationRequest",
       output_shape:     "CreateOrganizationResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
-  Disables an organizational control policy type in a root. A policy of a
+  Disables an organizational control policy type in a root. A poicy of a
   certain type can be attached to entities in a root only if that type is
   enabled in the root. After you perform this operation, you no longer can
   attach policies of the specified type to that root or to any OU or account
@@ -199,25 +183,17 @@ defmodule Baiji.Organizations do
   """
   def disable_policy_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DisablePolicyType",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DisablePolicyTypeRequest",
       output_shape:     "DisablePolicyTypeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the current handshakes that are associated with the account of the
   requesting user.
@@ -230,25 +206,17 @@ defmodule Baiji.Organizations do
   """
   def list_handshakes_for_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListHandshakesForAccount",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListHandshakesForAccountRequest",
       output_shape:     "ListHandshakesForAccountResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves the list of all policies in an organization of a specified type.
 
@@ -256,25 +224,17 @@ defmodule Baiji.Organizations do
   """
   def list_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListPolicies",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListPoliciesRequest",
       output_shape:     "ListPoliciesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Enables all features in an organization. This enables the use of
   organization policies that can restrict the services and actions that can
@@ -308,25 +268,17 @@ defmodule Baiji.Organizations do
   """
   def enable_all_features(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EnableAllFeatures",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "EnableAllFeaturesRequest",
       output_shape:     "EnableAllFeaturesResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the organizational units (OUs) in a parent organizational unit or
   root.
@@ -335,25 +287,17 @@ defmodule Baiji.Organizations do
   """
   def list_organizational_units_for_parent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListOrganizationalUnitsForParent",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListOrganizationalUnitsForParentRequest",
       output_shape:     "ListOrganizationalUnitsForParentResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes an organizational unit from a root or another OU. You must first
   remove all accounts and child OUs from the OU that you want to delete.
@@ -362,25 +306,17 @@ defmodule Baiji.Organizations do
   """
   def delete_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteOrganizationalUnit",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DeleteOrganizationalUnitRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the handshakes that are associated with the organization that the
   requesting user is part of. The `ListHandshakesForOrganization` operation
@@ -395,25 +331,17 @@ defmodule Baiji.Organizations do
   """
   def list_handshakes_for_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListHandshakesForOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListHandshakesForOrganizationRequest",
       output_shape:     "ListHandshakesForOrganizationResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sends an invitation to another account to join your organization as a
   member account. Organizations sends email on your behalf to the email
@@ -440,25 +368,17 @@ defmodule Baiji.Organizations do
   """
   def invite_account_to_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "InviteAccountToOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "InviteAccountToOrganizationRequest",
       output_shape:     "InviteAccountToOrganizationResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Enables a policy type in a root. After you enable a policy type in a root,
   you can attach policies of that type to the root, any OU, or account in
@@ -468,25 +388,17 @@ defmodule Baiji.Organizations do
   """
   def enable_policy_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EnablePolicyType",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "EnablePolicyTypeRequest",
       output_shape:     "EnablePolicyTypeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sends a response to the originator of a handshake agreeing to the action
   proposed by the handshake request.
@@ -514,25 +426,17 @@ defmodule Baiji.Organizations do
   """
   def accept_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AcceptHandshake",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "AcceptHandshakeRequest",
       output_shape:     "AcceptHandshakeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes a member account from its parent organization. This version of the
   operation is performed by the account that wants to leave. To remove a
@@ -572,25 +476,17 @@ defmodule Baiji.Organizations do
   """
   def leave_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "LeaveOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Declines a handshake request. This sets the handshake state to `DECLINED`
   and effectively deactivates the request.
@@ -605,25 +501,17 @@ defmodule Baiji.Organizations do
   """
   def decline_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeclineHandshake",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DeclineHandshakeRequest",
       output_shape:     "DeclineHandshakeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Renames the specified organizational unit (OU). The ID and ARN do not
   change. The child OUs and accounts remain in place, and any attached
@@ -633,25 +521,17 @@ defmodule Baiji.Organizations do
   """
   def update_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdateOrganizationalUnit",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "UpdateOrganizationalUnitRequest",
       output_shape:     "UpdateOrganizationalUnitResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all of the OUs or accounts that are contained in the specified parent
   OU or root. This operation, along with `ListParents` enables you to
@@ -659,25 +539,17 @@ defmodule Baiji.Organizations do
   """
   def list_children(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListChildren",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListChildrenRequest",
       output_shape:     "ListChildrenResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves information about an organizational unit (OU).
 
@@ -685,25 +557,17 @@ defmodule Baiji.Organizations do
   """
   def describe_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeOrganizationalUnit",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DescribeOrganizationalUnitRequest",
       output_shape:     "DescribeOrganizationalUnitResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Cancels a handshake. Canceling a handshake sets the handshake state to
   `CANCELED`.
@@ -718,25 +582,17 @@ defmodule Baiji.Organizations do
   """
   def cancel_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CancelHandshake",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "CancelHandshakeRequest",
       output_shape:     "CancelHandshakeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves information about a policy.
 
@@ -744,25 +600,17 @@ defmodule Baiji.Organizations do
   """
   def describe_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribePolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DescribePolicyRequest",
       output_shape:     "DescribePolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the policies that are directly attached to the specified target root,
   organizational unit (OU), or account. You must specify the policy type that
@@ -772,25 +620,17 @@ defmodule Baiji.Organizations do
   """
   def list_policies_for_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListPoliciesForTarget",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListPoliciesForTargetRequest",
       output_shape:     "ListPoliciesForTargetResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves the current status of an asynchronous request to create an
   account.
@@ -799,25 +639,17 @@ defmodule Baiji.Organizations do
   """
   def describe_create_account_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeCreateAccountStatus",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DescribeCreateAccountStatusRequest",
       output_shape:     "DescribeCreateAccountStatusResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the account creation requests that match the specified status that is
   currently being tracked for the organization.
@@ -826,25 +658,17 @@ defmodule Baiji.Organizations do
   """
   def list_create_account_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListCreateAccountStatus",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListCreateAccountStatusRequest",
       output_shape:     "ListCreateAccountStatusResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a policy of a specified type that you can attach to a root, an
   organizational unit (OU), or an individual AWS account.
@@ -857,25 +681,17 @@ defmodule Baiji.Organizations do
   """
   def create_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreatePolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "CreatePolicyRequest",
       output_shape:     "CreatePolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates an organizational unit (OU) within a root or parent OU. An OU is a
   container for accounts that enables you to organize your accounts to apply
@@ -891,25 +707,17 @@ defmodule Baiji.Organizations do
   """
   def create_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateOrganizationalUnit",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "CreateOrganizationalUnitRequest",
       output_shape:     "CreateOrganizationalUnitResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Detaches a policy from a target root, organizational unit, or account. If
   the policy being detached is a service control policy (SCP), the changes to
@@ -931,25 +739,17 @@ defmodule Baiji.Organizations do
   """
   def detach_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DetachPolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DetachPolicyRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the root or organizational units (OUs) that serve as the immediate
   parent of the specified child OU or account. This operation, along with
@@ -964,25 +764,17 @@ defmodule Baiji.Organizations do
   """
   def list_parents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListParents",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListParentsRequest",
       output_shape:     "ListParentsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all the accounts in the organization. To request only the accounts in
   a root or OU, use the `ListAccountsForParent` operation instead.
@@ -991,25 +783,17 @@ defmodule Baiji.Organizations do
   """
   def list_accounts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListAccounts",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListAccountsRequest",
       output_shape:     "ListAccountsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the roots that are defined in the current organization.
 
@@ -1017,25 +801,17 @@ defmodule Baiji.Organizations do
   """
   def list_roots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListRoots",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListRootsRequest",
       output_shape:     "ListRootsResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Moves an account from its current source parent root or OU to the specified
   destination parent root or OU.
@@ -1044,25 +820,17 @@ defmodule Baiji.Organizations do
   """
   def move_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "MoveAccount",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "MoveAccountRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the organization. You can delete an organization only by using
   credentials from the master account. The organization must be empty of
@@ -1070,25 +838,17 @@ defmodule Baiji.Organizations do
   """
   def delete_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Attaches a policy to a root, an organizational unit, or an individual
   account. How the policy affects accounts depends on the type of policy:
@@ -1136,25 +896,17 @@ defmodule Baiji.Organizations do
   """
   def attach_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AttachPolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "AttachPolicyRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves information about a previously requested handshake. The handshake
   ID comes from the response to the original `InviteAccountToOrganization`
@@ -1168,25 +920,17 @@ defmodule Baiji.Organizations do
   """
   def describe_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeHandshake",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DescribeHandshakeRequest",
       output_shape:     "DescribeHandshakeResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes the specified account from the organization.
 
@@ -1225,25 +969,17 @@ defmodule Baiji.Organizations do
   """
   def remove_account_from_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RemoveAccountFromOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "RemoveAccountFromOrganizationRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified policy from your organization. Before you perform
   this operation, you must first detach the policy from all OUs, roots, and
@@ -1253,25 +989,17 @@ defmodule Baiji.Organizations do
   """
   def delete_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeletePolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "DeletePolicyRequest",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Retrieves information about the organization that the user's account
   belongs to.
@@ -1280,25 +1008,17 @@ defmodule Baiji.Organizations do
   """
   def describe_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeOrganization",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "",
       output_shape:     "DescribeOrganizationResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Updates an existing policy with a new name, description, or content. If any
   parameter is not supplied, that value remains unchanged. Note that you
@@ -1308,25 +1028,17 @@ defmodule Baiji.Organizations do
   """
   def update_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "UpdatePolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "UpdatePolicyRequest",
       output_shape:     "UpdatePolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists all the roots, OUs, and accounts to which the specified policy is
   attached.
@@ -1335,25 +1047,17 @@ defmodule Baiji.Organizations do
   """
   def list_targets_for_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListTargetsForPolicy",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListTargetsForPolicyRequest",
       output_shape:     "ListTargetsForPolicyResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Lists the accounts in an organization that are contained by the specified
   target root or organizational unit (OU). If you specify the root, you get a
@@ -1364,25 +1068,17 @@ defmodule Baiji.Organizations do
   """
   def list_accounts_for_parent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ListAccountsForParent",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "ListAccountsForParentRequest",
       output_shape:     "ListAccountsForParentResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates an AWS account that is automatically a member of the organization
   whose credentials made the request. This is an asynchronous request that
@@ -1434,30 +1130,36 @@ defmodule Baiji.Organizations do
   """
   def create_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "organizations",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateAccount",
-      
-      target_prefix:    "AWSOrganizationsV20161128",
-      
-      endpoint_prefix:  "organizations",
-      type:             :json,
-      version:          "2016-11-28",
       method:           :post,
       input_shape:      "CreateAccountRequest",
       output_shape:     "CreateAccountResponse",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "organizations",
+      target_prefix:    "AWSOrganizationsV20161128",
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"DescribePolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "PolicyTargets" => %{"member" => %{"shape" => "PolicyTargetSummary"}, "type" => "list"}, "CreateOrganizationRequest" => %{"members" => %{"FeatureSet" => %{"shape" => "OrganizationFeatureSet"}}, "type" => "structure"}, "MasterCannotLeaveOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "OrganizationalUnit" => %{"members" => %{"Arn" => %{"shape" => "OrganizationalUnitArn"}, "Id" => %{"shape" => "OrganizationalUnitId"}, "Name" => %{"shape" => "OrganizationalUnitName"}}, "type" => "structure"}, "Child" => %{"members" => %{"Id" => %{"shape" => "ChildId"}, "Type" => %{"shape" => "ChildType"}}, "type" => "structure"}, "CreatePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "OrganizationalUnitId" => %{"pattern" => "^ou-[0-9a-z]{4,32}-[a-z0-9]{8,32}$", "type" => "string"}, "CancelHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "ChildNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListRootsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Roots" => %{"shape" => "Roots"}}, "type" => "structure"}, "PolicyDescription" => %{"max" => 512, "type" => "string"}, "Handshakes" => %{"member" => %{"shape" => "Handshake"}, "type" => "list"}, "CreateAccountStates" => %{"member" => %{"shape" => "CreateAccountState"}, "type" => "list"}, "EnableAllFeaturesResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "DescribeCreateAccountStatusRequest" => %{"members" => %{"CreateAccountRequestId" => %{"shape" => "CreateAccountRequestId"}}, "required" => ["CreateAccountRequestId"], "type" => "structure"}, "UpdatePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "CreateAccountStatusNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "AcceptHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "HandshakePartyId" => %{"max" => 64, "min" => 1, "sensitive" => true, "type" => "string"}, "ListHandshakesForAccountRequest" => %{"members" => %{"Filter" => %{"shape" => "HandshakeFilter"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "HandshakeId" => %{"pattern" => "^h-[0-9a-z]{8,32}$", "type" => "string"}, "ActionType" => %{"enum" => ["INVITE", "ENABLE_ALL_FEATURES", "APPROVE_ALL_FEATURES"], "type" => "string"}, "ServiceException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakePartyType" => %{"enum" => ["ACCOUNT", "ORGANIZATION", "EMAIL"], "type" => "string"}, "InviteAccountToOrganizationRequest" => %{"members" => %{"Notes" => %{"shape" => "HandshakeNotes"}, "Target" => %{"shape" => "HandshakeParty"}}, "required" => ["Target"], "type" => "structure"}, "ListOrganizationalUnitsForParentRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId"], "type" => "structure"}, "ListPoliciesRequest" => %{"members" => %{"Filter" => %{"shape" => "PolicyType"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["Filter"], "type" => "structure"}, "UpdateOrganizationalUnitResponse" => %{"members" => %{"OrganizationalUnit" => %{"shape" => "OrganizationalUnit"}}, "type" => "structure"}, "ListPoliciesForTargetRequest" => %{"members" => %{"Filter" => %{"shape" => "PolicyType"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "TargetId" => %{"shape" => "PolicyTargetId"}}, "required" => ["TargetId", "Filter"], "type" => "structure"}, "ListChildrenRequest" => %{"members" => %{"ChildType" => %{"shape" => "ChildType"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId", "ChildType"], "type" => "structure"}, "DescribeOrganizationalUnitRequest" => %{"members" => %{"OrganizationalUnitId" => %{"shape" => "OrganizationalUnitId"}}, "required" => ["OrganizationalUnitId"], "type" => "structure"}, "PolicyTypes" => %{"member" => %{"shape" => "PolicyTypeSummary"}, "type" => "list"}, "TargetType" => %{"enum" => ["ACCOUNT", "ORGANIZATIONAL_UNIT", "ROOT"], "type" => "string"}, "AccessDeniedException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TargetName" => %{"max" => 128, "min" => 1, "type" => "string"}, "TargetNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeNotes" => %{"max" => 1024, "sensitive" => true, "type" => "string"}, "ListParentsRequest" => %{"members" => %{"ChildId" => %{"shape" => "ChildId"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["ChildId"], "type" => "structure"}, "HandshakeConstraintViolationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Reason" => %{"shape" => "HandshakeConstraintViolationExceptionReason"}}, "type" => "structure"}, "CancelHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "ListAccountsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DuplicateOrganizationalUnitException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "EnableAllFeaturesRequest" => %{"members" => %{}, "type" => "structure"}, "DuplicateAccountException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeConstraintViolationExceptionReason" => %{"enum" => ["ACCOUNT_NUMBER_LIMIT_EXCEEDED", "HANDSHAKE_RATE_LIMIT_EXCEEDED", "ALREADY_IN_AN_ORGANIZATION", "ORGANIZATION_ALREADY_HAS_ALL_FEATURES", "INVITE_DISABLED_DURING_ENABLE_ALL_FEATURES", "PAYMENT_INSTRUMENT_REQUIRED", "ORGANIZATION_FROM_DIFFERENT_SELLER_OF_RECORD", "ORGANIZATION_MEMBERSHIP_CHANGE_RATE_LIMIT_EXCEEDED"], "type" => "string"}, "Parents" => %{"member" => %{"shape" => "Parent"}, "type" => "list"}, "AccountNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyTypeAlreadyEnabledException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateOrganizationalUnitResponse" => %{"members" => %{"OrganizationalUnit" => %{"shape" => "OrganizationalUnit"}}, "type" => "structure"}, "ListTargetsForPolicyRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "AccountId" => %{"pattern" => "^\\d{12}$", "type" => "string"}, "PolicyTargetId" => %{"pattern" => "^(r-[0-9a-z]{4,32})|(\\d{12})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$", "type" => "string"}, "RoleName" => %{"pattern" => "[\\w+=,.@-]{1,64}", "type" => "string"}, "AccountArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:account\\/o-[a-z0-9]{10,32}\\/\\d{12}", "type" => "string"}, "ExceptionType" => %{"type" => "string"}, "MalformedPolicyDocumentException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "AccountStatus" => %{"enum" => ["ACTIVE", "SUSPENDED"], "type" => "string"}, "Account" => %{"members" => %{"Arn" => %{"shape" => "AccountArn"}, "Email" => %{"shape" => "Email"}, "Id" => %{"shape" => "AccountId"}, "JoinedMethod" => %{"shape" => "AccountJoinedMethod"}, "JoinedTimestamp" => %{"shape" => "Timestamp"}, "Name" => %{"shape" => "AccountName"}, "Status" => %{"shape" => "AccountStatus"}}, "type" => "structure"}, "PolicySummary" => %{"members" => %{"Arn" => %{"shape" => "PolicyArn"}, "AwsManaged" => %{"shape" => "AwsManagedPolicy"}, "Description" => %{"shape" => "PolicyDescription"}, "Id" => %{"shape" => "PolicyId"}, "Name" => %{"shape" => "PolicyName"}, "Type" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "TooManyRequestsException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Type" => %{"shape" => "ExceptionType"}}, "type" => "structure"}, "ListTargetsForPolicyResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Targets" => %{"shape" => "PolicyTargets"}}, "type" => "structure"}, "ConstraintViolationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Reason" => %{"shape" => "ConstraintViolationExceptionReason"}}, "type" => "structure"}, "ListHandshakesForOrganizationRequest" => %{"members" => %{"Filter" => %{"shape" => "HandshakeFilter"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DescribePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "ParentNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "Children" => %{"member" => %{"shape" => "Child"}, "type" => "list"}, "ListRootsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DisablePolicyTypeRequest" => %{"members" => %{"PolicyType" => %{"shape" => "PolicyType"}, "RootId" => %{"shape" => "RootId"}}, "required" => ["RootId", "PolicyType"], "type" => "structure"}, "CreateAccountRequest" => %{"members" => %{"AccountName" => %{"shape" => "AccountName"}, "Email" => %{"shape" => "Email"}, "IamUserAccessToBilling" => %{"shape" => "IAMUserAccessToBilling"}, "RoleName" => %{"shape" => "RoleName"}}, "required" => ["Email", "AccountName"], "type" => "structure"}, "ListCreateAccountStatusResponse" => %{"members" => %{"CreateAccountStatuses" => %{"shape" => "CreateAccountStatuses"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Roots" => %{"member" => %{"shape" => "Root"}, "type" => "list"}, "OrganizationArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:organization\\/o-[a-z0-9]{10,32}", "type" => "string"}, "HandshakeResource" => %{"members" => %{"Resources" => %{"shape" => "HandshakeResources"}, "Type" => %{"shape" => "HandshakeResourceType"}, "Value" => %{"shape" => "HandshakeResourceValue"}}, "type" => "structure"}, "DescribeAccountResponse" => %{"members" => %{"Account" => %{"shape" => "Account"}}, "type" => "structure"}, "ListAccountsResponse" => %{"members" => %{"Accounts" => %{"shape" => "Accounts"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CreateAccountRequestId" => %{"pattern" => "^car-[a-z0-9]{8,32}$", "type" => "string"}, "Email" => %{"max" => 64, "min" => 6, "pattern" => "[^\\s@]+@[^\\s@]+\\.[^\\s@]+", "sensitive" => true, "type" => "string"}, "Accounts" => %{"member" => %{"shape" => "Account"}, "type" => "list"}, "ListHandshakesForOrganizationResponse" => %{"members" => %{"Handshakes" => %{"shape" => "Handshakes"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DuplicatePolicyAttachmentException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "SourceParentNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "OrganizationNotEmptyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "OrganizationalUnitNotEmptyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "InviteAccountToOrganizationResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "OrganizationalUnitNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListPoliciesForTargetResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Policies" => %{"shape" => "Policies"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "ListChildrenResponse" => %{"members" => %{"Children" => %{"shape" => "Children"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CreateAccountResponse" => %{"members" => %{"CreateAccountStatus" => %{"shape" => "CreateAccountStatus"}}, "type" => "structure"}, "ChildId" => %{"pattern" => "^(\\d{12})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$", "type" => "string"}, "OrganizationalUnitName" => %{"max" => 128, "min" => 1, "type" => "string"}, "DeclineHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "UpdateOrganizationalUnitRequest" => %{"members" => %{"Name" => %{"shape" => "OrganizationalUnitName"}, "OrganizationalUnitId" => %{"shape" => "OrganizationalUnitId"}}, "required" => ["OrganizationalUnitId"], "type" => "structure"}, "PolicyNotAttachedException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyInUseException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "Policies" => %{"member" => %{"shape" => "PolicySummary"}, "type" => "list"}, "RootName" => %{"max" => 128, "min" => 1, "type" => "string"}, "MaxResults" => %{"box" => true, "max" => 20, "min" => 1, "type" => "integer"}, "DescribeCreateAccountStatusResponse" => %{"members" => %{"CreateAccountStatus" => %{"shape" => "CreateAccountStatus"}}, "type" => "structure"}, "HandshakeFilter" => %{"members" => %{"ActionType" => %{"shape" => "ActionType"}, "ParentHandshakeId" => %{"shape" => "HandshakeId"}}, "type" => "structure"}, "ListPoliciesResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Policies" => %{"shape" => "Policies"}}, "type" => "structure"}, "PolicyTypeSummary" => %{"members" => %{"Status" => %{"shape" => "PolicyTypeStatus"}, "Type" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "Policy" => %{"members" => %{"Content" => %{"shape" => "PolicyContent"}, "PolicySummary" => %{"shape" => "PolicySummary"}}, "type" => "structure"}, "IAMUserAccessToBilling" => %{"enum" => ["ALLOW", "DENY"], "type" => "string"}, "PolicyContent" => %{"max" => 1000000, "min" => 1, "type" => "string"}, "ListCreateAccountStatusRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "States" => %{"shape" => "CreateAccountStates"}}, "type" => "structure"}, "FinalizingOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "Handshake" => %{"members" => %{"Action" => %{"shape" => "ActionType"}, "Arn" => %{"shape" => "HandshakeArn"}, "ExpirationTimestamp" => %{"shape" => "Timestamp"}, "Id" => %{"shape" => "HandshakeId"}, "Parties" => %{"shape" => "HandshakeParties"}, "RequestedTimestamp" => %{"shape" => "Timestamp"}, "Resources" => %{"shape" => "HandshakeResources"}, "State" => %{"shape" => "HandshakeState"}}, "type" => "structure"}, "ConstraintViolationExceptionReason" => %{"enum" => ["ACCOUNT_NUMBER_LIMIT_EXCEEDED", "HANDSHAKE_RATE_LIMIT_EXCEEDED", "OU_NUMBER_LIMIT_EXCEEDED", "OU_DEPTH_LIMIT_EXCEEDED", "POLICY_NUMBER_LIMIT_EXCEEDED", "MAX_POLICY_TYPE_ATTACHMENT_LIMIT_EXCEEDED", "MIN_POLICY_TYPE_ATTACHMENT_LIMIT_EXCEEDED", "ACCOUNT_CANNOT_LEAVE_ORGANIZATION", "ACCOUNT_CANNOT_LEAVE_WITHOUT_EULA", "ACCOUNT_CANNOT_LEAVE_WITHOUT_PHONE_VERIFICATION", "MASTER_ACCOUNT_PAYMENT_INSTRUMENT_REQUIRED", "MEMBER_ACCOUNT_PAYMENT_INSTRUMENT_REQUIRED", "ACCOUNT_CREATION_RATE_LIMIT_EXCEEDED", "MASTER_ACCOUNT_ADDRESS_DOES_NOT_MATCH_MARKETPLACE", "MASTER_ACCOUNT_MISSING_CONTACT_INFO"], "type" => "string"}, "RootNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyTypeNotAvailableForOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeParty" => %{"members" => %{"Id" => %{"shape" => "HandshakePartyId"}, "Type" => %{"shape" => "HandshakePartyType"}}, "type" => "structure"}, "HandshakeState" => %{"enum" => ["REQUESTED", "OPEN", "CANCELED", "ACCEPTED", "DECLINED", "EXPIRED"], "type" => "string"}, "DescribeOrganizationResponse" => %{"members" => %{"Organization" => %{"shape" => "Organization"}}, "type" => "structure"}, "ListParentsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Parents" => %{"shape" => "Parents"}}, "type" => "structure"}, "RootId" => %{"pattern" => "^r-[0-9a-z]{4,32}$", "type" => "string"}, "PolicyTargetSummary" => %{"members" => %{"Arn" => %{"shape" => "GenericArn"}, "Name" => %{"shape" => "TargetName"}, "TargetId" => %{"shape" => "PolicyTargetId"}, "Type" => %{"shape" => "TargetType"}}, "type" => "structure"}, "PolicyTypeStatus" => %{"enum" => ["ENABLED", "PENDING_ENABLE", "PENDING_DISABLE"], "type" => "string"}, "DeletePolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "PolicyTypeNotEnabledException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateAccountState" => %{"enum" => ["IN_PROGRESS", "SUCCEEDED", "FAILED"], "type" => "string"}, "PolicyNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "RemoveAccountFromOrganizationRequest" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}}, "required" => ["AccountId"], "type" => "structure"}, "HandshakeParties" => %{"member" => %{"shape" => "HandshakeParty"}, "type" => "list"}, "GenericArn" => %{"pattern" => "^arn:aws:organizations::.+:.+", "type" => "string"}, "CreateAccountFailureReason" => %{"enum" => ["ACCOUNT_LIMIT_EXCEEDED", "EMAIL_ALREADY_EXISTS", "INVALID_ADDRESS", "INVALID_EMAIL", "INTERNAL_FAILURE"], "type" => "string"}, "DuplicatePolicyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateAccountStatuses" => %{"member" => %{"shape" => "CreateAccountStatus"}, "type" => "list"}, "Organization" => %{"members" => %{"Arn" => %{"shape" => "OrganizationArn"}, "AvailablePolicyTypes" => %{"shape" => "PolicyTypes"}, "FeatureSet" => %{"shape" => "OrganizationFeatureSet"}, "Id" => %{"shape" => "OrganizationId"}, "MasterAccountArn" => %{"shape" => "AccountArn"}, "MasterAccountEmail" => %{"shape" => "Email"}, "MasterAccountId" => %{"shape" => "AccountId"}}, "type" => "structure"}, "ListAccountsForParentRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId"], "type" => "structure"}, "OrganizationId" => %{"pattern" => "^o-[a-z0-9]{10,32}$", "type" => "string"}, "CreateOrganizationResponse" => %{"members" => %{"Organization" => %{"shape" => "Organization"}}, "type" => "structure"}, "DisablePolicyTypeResponse" => %{"members" => %{"Root" => %{"shape" => "Root"}}, "type" => "structure"}, "InvalidHandshakeTransitionException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DeleteOrganizationalUnitRequest" => %{"members" => %{"OrganizationalUnitId" => %{"shape" => "OrganizationalUnitId"}}, "required" => ["OrganizationalUnitId"], "type" => "structure"}, "AccountName" => %{"max" => 50, "min" => 1, "sensitive" => true, "type" => "string"}, "CreatePolicyRequest" => %{"members" => %{"Content" => %{"shape" => "PolicyContent"}, "Description" => %{"shape" => "PolicyDescription"}, "Name" => %{"shape" => "PolicyName"}, "Type" => %{"shape" => "PolicyType"}}, "required" => ["Content", "Description", "Name", "Type"], "type" => "structure"}, "DescribeAccountRequest" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}}, "required" => ["AccountId"], "type" => "structure"}, "ListAccountsForParentResponse" => %{"members" => %{"Accounts" => %{"shape" => "Accounts"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "EnablePolicyTypeResponse" => %{"members" => %{"Root" => %{"shape" => "Root"}}, "type" => "structure"}, "HandshakeAlreadyInStateException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DescribeOrganizationalUnitResponse" => %{"members" => %{"OrganizationalUnit" => %{"shape" => "OrganizationalUnit"}}, "type" => "structure"}, "AcceptHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "ExceptionMessage" => %{"type" => "string"}, "OrganizationalUnitArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:ou\\/o-[a-z0-9]{10,32}\\/ou-[0-9a-z]{4,32}-[0-9a-z]{8,32}", "type" => "string"}, "DeclineHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "Parent" => %{"members" => %{"Id" => %{"shape" => "ParentId"}, "Type" => %{"shape" => "ParentType"}}, "type" => "structure"}, "PolicyId" => %{"pattern" => "^p-[0-9a-zA-Z_]{8,128}$", "type" => "string"}, "ParentType" => %{"enum" => ["ROOT", "ORGANIZATIONAL_UNIT"], "type" => "string"}, "OrganizationalUnits" => %{"member" => %{"shape" => "OrganizationalUnit"}, "type" => "list"}, "AlreadyInOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyName" => %{"max" => 128, "min" => 1, "type" => "string"}, "AWSOrganizationsNotInUseException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DescribeHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "ParentId" => %{"pattern" => "^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$", "type" => "string"}, "AccountJoinedMethod" => %{"enum" => ["INVITED", "CREATED"], "type" => "string"}, "AttachPolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}, "TargetId" => %{"shape" => "PolicyTargetId"}}, "required" => ["PolicyId", "TargetId"], "type" => "structure"}, "HandshakeArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:handshake\\/o-[a-z0-9]{10,32}\\/[a-z_]{1,32}\\/h-[0-9a-z]{8,32}", "type" => "string"}, "ListOrganizationalUnitsForParentResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "OrganizationalUnits" => %{"shape" => "OrganizationalUnits"}}, "type" => "structure"}, "InvalidInputExceptionReason" => %{"enum" => ["INVALID_PARTY_TYPE_TARGET", "INVALID_SYNTAX_ORGANIZATION_ARN", "INVALID_SYNTAX_POLICY_ID", "INVALID_ENUM", "INVALID_LIST_MEMBER", "MAX_LENGTH_EXCEEDED", "MAX_VALUE_EXCEEDED", "MIN_LENGTH_EXCEEDED", "MIN_VALUE_EXCEEDED", "IMMUTABLE_POLICY", "INVALID_PATTERN", "INVALID_PATTERN_TARGET_ID", "INPUT_REQUIRED", "INVALID_NEXT_TOKEN", "MAX_LIMIT_EXCEEDED_FILTER", "MOVING_ACCOUNT_BETWEEN_DIFFERENT_ROOTS", "INVALID_FULL_NAME_TARGET"], "type" => "string"}, "PolicyArn" => %{"pattern" => "^(arn:aws:organizations::\\d{12}:policy\\/o-[a-z0-9]{10,32}\\/[0-9a-z_]+\\/p-[0-9a-z]{10,32})|(arn:aws:organizations::aws:policy\\/[0-9a-z_]+\\/p-[0-9a-zA-Z_]{10,128})", "type" => "string"}, "DuplicateHandshakeException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeResourceValue" => %{"sensitive" => true, "type" => "string"}, "ChildType" => %{"enum" => ["ACCOUNT", "ORGANIZATIONAL_UNIT"], "type" => "string"}, "MoveAccountRequest" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}, "DestinationParentId" => %{"shape" => "ParentId"}, "SourceParentId" => %{"shape" => "ParentId"}}, "required" => ["AccountId", "SourceParentId", "DestinationParentId"], "type" => "structure"}, "HandshakeResourceType" => %{"enum" => ["ACCOUNT", "ORGANIZATION", "ORGANIZATION_FEATURE_SET", "EMAIL", "MASTER_EMAIL", "MASTER_NAME", "NOTES", "PARENT_HANDSHAKE"], "type" => "string"}, "DestinationParentNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "EnablePolicyTypeRequest" => %{"members" => %{"PolicyType" => %{"shape" => "PolicyType"}, "RootId" => %{"shape" => "RootId"}}, "required" => ["RootId", "PolicyType"], "type" => "structure"}, "CreateOrganizationalUnitRequest" => %{"members" => %{"Name" => %{"shape" => "OrganizationalUnitName"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId", "Name"], "type" => "structure"}, "DescribeHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "AwsManagedPolicy" => %{"type" => "boolean"}, "NextToken" => %{"type" => "string"}, "OrganizationFeatureSet" => %{"enum" => ["ALL", "CONSOLIDATED_BILLING"], "type" => "string"}, "CreateAccountStatus" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}, "AccountName" => %{"shape" => "AccountName"}, "CompletedTimestamp" => %{"shape" => "Timestamp"}, "FailureReason" => %{"shape" => "CreateAccountFailureReason"}, "Id" => %{"shape" => "CreateAccountRequestId"}, "RequestedTimestamp" => %{"shape" => "Timestamp"}, "State" => %{"shape" => "CreateAccountState"}}, "type" => "structure"}, "Root" => %{"members" => %{"Arn" => %{"shape" => "RootArn"}, "Id" => %{"shape" => "RootId"}, "Name" => %{"shape" => "RootName"}, "PolicyTypes" => %{"shape" => "PolicyTypes"}}, "type" => "structure"}, "PolicyType" => %{"enum" => ["SERVICE_CONTROL_POLICY"], "type" => "string"}, "ConcurrentModificationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListHandshakesForAccountResponse" => %{"members" => %{"Handshakes" => %{"shape" => "Handshakes"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "UpdatePolicyRequest" => %{"members" => %{"Content" => %{"shape" => "PolicyContent"}, "Description" => %{"shape" => "PolicyDescription"}, "Name" => %{"shape" => "PolicyName"}, "PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "RootArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:root\\/o-[a-z0-9]{10,32}\\/r-[0-9a-z]{4,32}", "type" => "string"}, "DetachPolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}, "TargetId" => %{"shape" => "PolicyTargetId"}}, "required" => ["PolicyId", "TargetId"], "type" => "structure"}, "InvalidInputException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Reason" => %{"shape" => "InvalidInputExceptionReason"}}, "type" => "structure"}, "HandshakeResources" => %{"member" => %{"shape" => "HandshakeResource"}, "type" => "list"}}
+		%{"DescribePolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "PolicyTargets" => %{"member" => %{"shape" => "PolicyTargetSummary"}, "type" => "list"}, "CreateOrganizationRequest" => %{"members" => %{"FeatureSet" => %{"shape" => "OrganizationFeatureSet"}}, "type" => "structure"}, "MasterCannotLeaveOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "OrganizationalUnit" => %{"members" => %{"Arn" => %{"shape" => "OrganizationalUnitArn"}, "Id" => %{"shape" => "OrganizationalUnitId"}, "Name" => %{"shape" => "OrganizationalUnitName"}}, "type" => "structure"}, "Child" => %{"members" => %{"Id" => %{"shape" => "ChildId"}, "Type" => %{"shape" => "ChildType"}}, "type" => "structure"}, "CreatePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "OrganizationalUnitId" => %{"pattern" => "^ou-[0-9a-z]{4,32}-[a-z0-9]{8,32}$", "type" => "string"}, "CancelHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "ChildNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListRootsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Roots" => %{"shape" => "Roots"}}, "type" => "structure"}, "PolicyDescription" => %{"max" => 512, "type" => "string"}, "Handshakes" => %{"member" => %{"shape" => "Handshake"}, "type" => "list"}, "CreateAccountStates" => %{"member" => %{"shape" => "CreateAccountState"}, "type" => "list"}, "EnableAllFeaturesResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "DescribeCreateAccountStatusRequest" => %{"members" => %{"CreateAccountRequestId" => %{"shape" => "CreateAccountRequestId"}}, "required" => ["CreateAccountRequestId"], "type" => "structure"}, "UpdatePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "CreateAccountStatusNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "AcceptHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "HandshakePartyId" => %{"max" => 64, "min" => 1, "sensitive" => true, "type" => "string"}, "ListHandshakesForAccountRequest" => %{"members" => %{"Filter" => %{"shape" => "HandshakeFilter"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "HandshakeId" => %{"pattern" => "^h-[0-9a-z]{8,32}$", "type" => "string"}, "ActionType" => %{"enum" => ["INVITE", "ENABLE_ALL_FEATURES", "APPROVE_ALL_FEATURES"], "type" => "string"}, "ServiceException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakePartyType" => %{"enum" => ["ACCOUNT", "ORGANIZATION", "EMAIL"], "type" => "string"}, "InviteAccountToOrganizationRequest" => %{"members" => %{"Notes" => %{"shape" => "HandshakeNotes"}, "Target" => %{"shape" => "HandshakeParty"}}, "required" => ["Target"], "type" => "structure"}, "ListOrganizationalUnitsForParentRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId"], "type" => "structure"}, "ListPoliciesRequest" => %{"members" => %{"Filter" => %{"shape" => "PolicyType"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["Filter"], "type" => "structure"}, "UpdateOrganizationalUnitResponse" => %{"members" => %{"OrganizationalUnit" => %{"shape" => "OrganizationalUnit"}}, "type" => "structure"}, "ListPoliciesForTargetRequest" => %{"members" => %{"Filter" => %{"shape" => "PolicyType"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "TargetId" => %{"shape" => "PolicyTargetId"}}, "required" => ["TargetId", "Filter"], "type" => "structure"}, "ListChildrenRequest" => %{"members" => %{"ChildType" => %{"shape" => "ChildType"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId", "ChildType"], "type" => "structure"}, "DescribeOrganizationalUnitRequest" => %{"members" => %{"OrganizationalUnitId" => %{"shape" => "OrganizationalUnitId"}}, "required" => ["OrganizationalUnitId"], "type" => "structure"}, "PolicyTypes" => %{"member" => %{"shape" => "PolicyTypeSummary"}, "type" => "list"}, "TargetType" => %{"enum" => ["ACCOUNT", "ORGANIZATIONAL_UNIT", "ROOT"], "type" => "string"}, "AccessDeniedException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TargetName" => %{"max" => 128, "min" => 1, "type" => "string"}, "TargetNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeNotes" => %{"max" => 1024, "sensitive" => true, "type" => "string"}, "ListParentsRequest" => %{"members" => %{"ChildId" => %{"shape" => "ChildId"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["ChildId"], "type" => "structure"}, "HandshakeConstraintViolationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Reason" => %{"shape" => "HandshakeConstraintViolationExceptionReason"}}, "type" => "structure"}, "CancelHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "ListAccountsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DuplicateOrganizationalUnitException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "EnableAllFeaturesRequest" => %{"members" => %{}, "type" => "structure"}, "DuplicateAccountException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeConstraintViolationExceptionReason" => %{"enum" => ["ACCOUNT_NUMBER_LIMIT_EXCEEDED", "HANDSHAKE_RATE_LIMIT_EXCEEDED", "ALREADY_IN_AN_ORGANIZATION", "ORGANIZATION_ALREADY_HAS_ALL_FEATURES", "INVITE_DISABLED_DURING_ENABLE_ALL_FEATURES", "PAYMENT_INSTRUMENT_REQUIRED", "ORGANIZATION_FROM_DIFFERENT_SELLER_OF_RECORD", "ORGANIZATION_MEMBERSHIP_CHANGE_RATE_LIMIT_EXCEEDED"], "type" => "string"}, "Parents" => %{"member" => %{"shape" => "Parent"}, "type" => "list"}, "AccountNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyTypeAlreadyEnabledException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateOrganizationalUnitResponse" => %{"members" => %{"OrganizationalUnit" => %{"shape" => "OrganizationalUnit"}}, "type" => "structure"}, "ListTargetsForPolicyRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "AccountId" => %{"pattern" => "^\\d{12}$", "type" => "string"}, "PolicyTargetId" => %{"pattern" => "^(r-[0-9a-z]{4,32})|(\\d{12})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$", "type" => "string"}, "RoleName" => %{"pattern" => "[\\w+=,.@-]{1,64}", "type" => "string"}, "AccountArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:account\\/o-[a-z0-9]{10,32}\\/\\d{12}", "type" => "string"}, "ExceptionType" => %{"type" => "string"}, "MalformedPolicyDocumentException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "AccountStatus" => %{"enum" => ["ACTIVE", "SUSPENDED"], "type" => "string"}, "Account" => %{"members" => %{"Arn" => %{"shape" => "AccountArn"}, "Email" => %{"shape" => "Email"}, "Id" => %{"shape" => "AccountId"}, "JoinedMethod" => %{"shape" => "AccountJoinedMethod"}, "JoinedTimestamp" => %{"shape" => "Timestamp"}, "Name" => %{"shape" => "AccountName"}, "Status" => %{"shape" => "AccountStatus"}}, "type" => "structure"}, "PolicySummary" => %{"members" => %{"Arn" => %{"shape" => "PolicyArn"}, "AwsManaged" => %{"shape" => "AwsManagedPolicy"}, "Description" => %{"shape" => "PolicyDescription"}, "Id" => %{"shape" => "PolicyId"}, "Name" => %{"shape" => "PolicyName"}, "Type" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "TooManyRequestsException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Type" => %{"shape" => "ExceptionType"}}, "type" => "structure"}, "ListTargetsForPolicyResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Targets" => %{"shape" => "PolicyTargets"}}, "type" => "structure"}, "ConstraintViolationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Reason" => %{"shape" => "ConstraintViolationExceptionReason"}}, "type" => "structure"}, "ListHandshakesForOrganizationRequest" => %{"members" => %{"Filter" => %{"shape" => "HandshakeFilter"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DescribePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "ParentNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "Children" => %{"member" => %{"shape" => "Child"}, "type" => "list"}, "ListRootsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DisablePolicyTypeRequest" => %{"members" => %{"PolicyType" => %{"shape" => "PolicyType"}, "RootId" => %{"shape" => "RootId"}}, "required" => ["RootId", "PolicyType"], "type" => "structure"}, "CreateAccountRequest" => %{"members" => %{"AccountName" => %{"shape" => "AccountName"}, "Email" => %{"shape" => "Email"}, "IamUserAccessToBilling" => %{"shape" => "IAMUserAccessToBilling"}, "RoleName" => %{"shape" => "RoleName"}}, "required" => ["Email", "AccountName"], "type" => "structure"}, "ListCreateAccountStatusResponse" => %{"members" => %{"CreateAccountStatuses" => %{"shape" => "CreateAccountStatuses"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Roots" => %{"member" => %{"shape" => "Root"}, "type" => "list"}, "OrganizationArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:organization\\/o-[a-z0-9]{10,32}", "type" => "string"}, "HandshakeResource" => %{"members" => %{"Resources" => %{"shape" => "HandshakeResources"}, "Type" => %{"shape" => "HandshakeResourceType"}, "Value" => %{"shape" => "HandshakeResourceValue"}}, "type" => "structure"}, "DescribeAccountResponse" => %{"members" => %{"Account" => %{"shape" => "Account"}}, "type" => "structure"}, "ListAccountsResponse" => %{"members" => %{"Accounts" => %{"shape" => "Accounts"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CreateAccountRequestId" => %{"pattern" => "^car-[a-z0-9]{8,32}$", "type" => "string"}, "Email" => %{"max" => 64, "min" => 6, "pattern" => "[^\\s@]+@[^\\s@]+\\.[^\\s@]+", "sensitive" => true, "type" => "string"}, "Accounts" => %{"member" => %{"shape" => "Account"}, "type" => "list"}, "ListHandshakesForOrganizationResponse" => %{"members" => %{"Handshakes" => %{"shape" => "Handshakes"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DuplicatePolicyAttachmentException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "SourceParentNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "OrganizationNotEmptyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "OrganizationalUnitNotEmptyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "InviteAccountToOrganizationResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "OrganizationalUnitNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListPoliciesForTargetResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Policies" => %{"shape" => "Policies"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "ListChildrenResponse" => %{"members" => %{"Children" => %{"shape" => "Children"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CreateAccountResponse" => %{"members" => %{"CreateAccountStatus" => %{"shape" => "CreateAccountStatus"}}, "type" => "structure"}, "ChildId" => %{"pattern" => "^(\\d{12})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$", "type" => "string"}, "OrganizationalUnitName" => %{"max" => 128, "min" => 1, "type" => "string"}, "DeclineHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "UpdateOrganizationalUnitRequest" => %{"members" => %{"Name" => %{"shape" => "OrganizationalUnitName"}, "OrganizationalUnitId" => %{"shape" => "OrganizationalUnitId"}}, "required" => ["OrganizationalUnitId"], "type" => "structure"}, "PolicyNotAttachedException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyInUseException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "Policies" => %{"member" => %{"shape" => "PolicySummary"}, "type" => "list"}, "RootName" => %{"max" => 128, "min" => 1, "type" => "string"}, "MaxResults" => %{"box" => true, "max" => 20, "min" => 1, "type" => "integer"}, "DescribeCreateAccountStatusResponse" => %{"members" => %{"CreateAccountStatus" => %{"shape" => "CreateAccountStatus"}}, "type" => "structure"}, "HandshakeFilter" => %{"members" => %{"ActionType" => %{"shape" => "ActionType"}, "ParentHandshakeId" => %{"shape" => "HandshakeId"}}, "type" => "structure"}, "ListPoliciesResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Policies" => %{"shape" => "Policies"}}, "type" => "structure"}, "PolicyTypeSummary" => %{"members" => %{"Status" => %{"shape" => "PolicyTypeStatus"}, "Type" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "Policy" => %{"members" => %{"Content" => %{"shape" => "PolicyContent"}, "PolicySummary" => %{"shape" => "PolicySummary"}}, "type" => "structure"}, "IAMUserAccessToBilling" => %{"enum" => ["ALLOW", "DENY"], "type" => "string"}, "PolicyContent" => %{"max" => 1000000, "min" => 1, "type" => "string"}, "ListCreateAccountStatusRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "States" => %{"shape" => "CreateAccountStates"}}, "type" => "structure"}, "FinalizingOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "Handshake" => %{"members" => %{"Action" => %{"shape" => "ActionType"}, "Arn" => %{"shape" => "HandshakeArn"}, "ExpirationTimestamp" => %{"shape" => "Timestamp"}, "Id" => %{"shape" => "HandshakeId"}, "Parties" => %{"shape" => "HandshakeParties"}, "RequestedTimestamp" => %{"shape" => "Timestamp"}, "Resources" => %{"shape" => "HandshakeResources"}, "State" => %{"shape" => "HandshakeState"}}, "type" => "structure"}, "ConstraintViolationExceptionReason" => %{"enum" => ["ACCOUNT_NUMBER_LIMIT_EXCEEDED", "HANDSHAKE_RATE_LIMIT_EXCEEDED", "OU_NUMBER_LIMIT_EXCEEDED", "OU_DEPTH_LIMIT_EXCEEDED", "POLICY_NUMBER_LIMIT_EXCEEDED", "MAX_POLICY_TYPE_ATTACHMENT_LIMIT_EXCEEDED", "MIN_POLICY_TYPE_ATTACHMENT_LIMIT_EXCEEDED", "ACCOUNT_CANNOT_LEAVE_ORGANIZATION", "ACCOUNT_CANNOT_LEAVE_WITHOUT_EULA", "ACCOUNT_CANNOT_LEAVE_WITHOUT_PHONE_VERIFICATION", "MASTER_ACCOUNT_PAYMENT_INSTRUMENT_REQUIRED", "MEMBER_ACCOUNT_PAYMENT_INSTRUMENT_REQUIRED", "ACCOUNT_CREATION_RATE_LIMIT_EXCEEDED", "MASTER_ACCOUNT_ADDRESS_DOES_NOT_MATCH_MARKETPLACE", "MASTER_ACCOUNT_MISSING_CONTACT_INFO"], "type" => "string"}, "RootNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyTypeNotAvailableForOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeParty" => %{"members" => %{"Id" => %{"shape" => "HandshakePartyId"}, "Type" => %{"shape" => "HandshakePartyType"}}, "type" => "structure"}, "HandshakeState" => %{"enum" => ["REQUESTED", "OPEN", "CANCELED", "ACCEPTED", "DECLINED", "EXPIRED"], "type" => "string"}, "DescribeOrganizationResponse" => %{"members" => %{"Organization" => %{"shape" => "Organization"}}, "type" => "structure"}, "ListParentsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Parents" => %{"shape" => "Parents"}}, "type" => "structure"}, "RootId" => %{"pattern" => "^r-[0-9a-z]{4,32}$", "type" => "string"}, "PolicyTargetSummary" => %{"members" => %{"Arn" => %{"shape" => "GenericArn"}, "Name" => %{"shape" => "TargetName"}, "TargetId" => %{"shape" => "PolicyTargetId"}, "Type" => %{"shape" => "TargetType"}}, "type" => "structure"}, "PolicyTypeStatus" => %{"enum" => ["ENABLED", "PENDING_ENABLE", "PENDING_DISABLE"], "type" => "string"}, "DeletePolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "PolicyTypeNotEnabledException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateAccountState" => %{"enum" => ["IN_PROGRESS", "SUCCEEDED", "FAILED"], "type" => "string"}, "PolicyNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "RemoveAccountFromOrganizationRequest" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}}, "required" => ["AccountId"], "type" => "structure"}, "HandshakeParties" => %{"member" => %{"shape" => "HandshakeParty"}, "type" => "list"}, "GenericArn" => %{"pattern" => "^arn:aws:organizations::.+:.+", "type" => "string"}, "CreateAccountFailureReason" => %{"enum" => ["ACCOUNT_LIMIT_EXCEEDED", "EMAIL_ALREADY_EXISTS", "INVALID_ADDRESS", "INVALID_EMAIL", "INTERNAL_FAILURE"], "type" => "string"}, "DuplicatePolicyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateAccountStatuses" => %{"member" => %{"shape" => "CreateAccountStatus"}, "type" => "list"}, "Organization" => %{"members" => %{"Arn" => %{"shape" => "OrganizationArn"}, "AvailablePolicyTypes" => %{"shape" => "PolicyTypes"}, "FeatureSet" => %{"shape" => "OrganizationFeatureSet"}, "Id" => %{"shape" => "OrganizationId"}, "MasterAccountArn" => %{"shape" => "AccountArn"}, "MasterAccountEmail" => %{"shape" => "Email"}, "MasterAccountId" => %{"shape" => "AccountId"}}, "type" => "structure"}, "ListAccountsForParentRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId"], "type" => "structure"}, "OrganizationId" => %{"pattern" => "^o-[a-z0-9]{10,32}$", "type" => "string"}, "CreateOrganizationResponse" => %{"members" => %{"Organization" => %{"shape" => "Organization"}}, "type" => "structure"}, "DisablePolicyTypeResponse" => %{"members" => %{"Root" => %{"shape" => "Root"}}, "type" => "structure"}, "InvalidHandshakeTransitionException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DeleteOrganizationalUnitRequest" => %{"members" => %{"OrganizationalUnitId" => %{"shape" => "OrganizationalUnitId"}}, "required" => ["OrganizationalUnitId"], "type" => "structure"}, "AccountName" => %{"max" => 50, "min" => 1, "sensitive" => true, "type" => "string"}, "CreatePolicyRequest" => %{"members" => %{"Content" => %{"shape" => "PolicyContent"}, "Description" => %{"shape" => "PolicyDescription"}, "Name" => %{"shape" => "PolicyName"}, "Type" => %{"shape" => "PolicyType"}}, "required" => ["Content", "Description", "Name", "Type"], "type" => "structure"}, "DescribeAccountRequest" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}}, "required" => ["AccountId"], "type" => "structure"}, "ListAccountsForParentResponse" => %{"members" => %{"Accounts" => %{"shape" => "Accounts"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "EnablePolicyTypeResponse" => %{"members" => %{"Root" => %{"shape" => "Root"}}, "type" => "structure"}, "HandshakeAlreadyInStateException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DescribeOrganizationalUnitResponse" => %{"members" => %{"OrganizationalUnit" => %{"shape" => "OrganizationalUnit"}}, "type" => "structure"}, "AcceptHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "ExceptionMessage" => %{"type" => "string"}, "OrganizationalUnitArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:ou\\/o-[a-z0-9]{10,32}\\/ou-[0-9a-z]{4,32}-[0-9a-z]{8,32}", "type" => "string"}, "DeclineHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "Parent" => %{"members" => %{"Id" => %{"shape" => "ParentId"}, "Type" => %{"shape" => "ParentType"}}, "type" => "structure"}, "PolicyId" => %{"pattern" => "^p-[0-9a-zA-Z_]{8,128}$", "type" => "string"}, "ParentType" => %{"enum" => ["ROOT", "ORGANIZATIONAL_UNIT"], "type" => "string"}, "OrganizationalUnits" => %{"member" => %{"shape" => "OrganizationalUnit"}, "type" => "list"}, "AlreadyInOrganizationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PolicyName" => %{"max" => 128, "min" => 1, "type" => "string"}, "AWSOrganizationsNotInUseException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DescribeHandshakeResponse" => %{"members" => %{"Handshake" => %{"shape" => "Handshake"}}, "type" => "structure"}, "ParentId" => %{"pattern" => "^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$", "type" => "string"}, "AccountJoinedMethod" => %{"enum" => ["INVITED", "CREATED"], "type" => "string"}, "AttachPolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}, "TargetId" => %{"shape" => "PolicyTargetId"}}, "required" => ["PolicyId", "TargetId"], "type" => "structure"}, "HandshakeArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:handshake\\/o-[a-z0-9]{10,32}\\/[a-z_]{1,32}\\/h-[0-9a-z]{8,32}", "type" => "string"}, "ListOrganizationalUnitsForParentResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "OrganizationalUnits" => %{"shape" => "OrganizationalUnits"}}, "type" => "structure"}, "InvalidInputExceptionReason" => %{"enum" => ["INVALID_PARTY_TYPE_TARGET", "INVALID_SYNTAX_ORGANIZATION_ARN", "INVALID_SYNTAX_POLICY_ID", "INVALID_ENUM", "INVALID_LIST_MEMBER", "MAX_LENGTH_EXCEEDED", "MAX_VALUE_EXCEEDED", "MIN_LENGTH_EXCEEDED", "MIN_VALUE_EXCEEDED", "IMMUTABLE_POLICY", "INVALID_PATTERN", "INVALID_PATTERN_TARGET_ID", "INPUT_REQUIRED", "INVALID_NEXT_TOKEN", "MAX_LIMIT_EXCEEDED_FILTER", "MOVING_ACCOUNT_BETWEEN_DIFFERENT_ROOTS", "INVALID_FULL_NAME_TARGET"], "type" => "string"}, "PolicyArn" => %{"pattern" => "^(arn:aws:organizations::\\d{12}:policy\\/o-[a-z0-9]{10,32}\\/[0-9a-z_]+\\/p-[0-9a-z]{10,32})|(arn:aws:organizations::aws:policy\\/[0-9a-z_]+\\/p-[0-9a-zA-Z_]{10,128})", "type" => "string"}, "DuplicateHandshakeException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "HandshakeResourceValue" => %{"sensitive" => true, "type" => "string"}, "ChildType" => %{"enum" => ["ACCOUNT", "ORGANIZATIONAL_UNIT"], "type" => "string"}, "MoveAccountRequest" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}, "DestinationParentId" => %{"shape" => "ParentId"}, "SourceParentId" => %{"shape" => "ParentId"}}, "required" => ["AccountId", "SourceParentId", "DestinationParentId"], "type" => "structure"}, "HandshakeResourceType" => %{"enum" => ["ACCOUNT", "ORGANIZATION", "ORGANIZATION_FEATURE_SET", "EMAIL", "MASTER_EMAIL", "MASTER_NAME", "NOTES", "PARENT_HANDSHAKE"], "type" => "string"}, "DestinationParentNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "EnablePolicyTypeRequest" => %{"members" => %{"PolicyType" => %{"shape" => "PolicyType"}, "RootId" => %{"shape" => "RootId"}}, "required" => ["RootId", "PolicyType"], "type" => "structure"}, "CreateOrganizationalUnitRequest" => %{"members" => %{"Name" => %{"shape" => "OrganizationalUnitName"}, "ParentId" => %{"shape" => "ParentId"}}, "required" => ["ParentId", "Name"], "type" => "structure"}, "DescribeHandshakeRequest" => %{"members" => %{"HandshakeId" => %{"shape" => "HandshakeId"}}, "required" => ["HandshakeId"], "type" => "structure"}, "AwsManagedPolicy" => %{"type" => "boolean"}, "NextToken" => %{"type" => "string"}, "OrganizationFeatureSet" => %{"enum" => ["ALL", "CONSOLIDATED_BILLING"], "type" => "string"}, "CreateAccountStatus" => %{"members" => %{"AccountId" => %{"shape" => "AccountId"}, "AccountName" => %{"shape" => "AccountName"}, "CompletedTimestamp" => %{"shape" => "Timestamp"}, "FailureReason" => %{"shape" => "CreateAccountFailureReason"}, "Id" => %{"shape" => "CreateAccountRequestId"}, "RequestedTimestamp" => %{"shape" => "Timestamp"}, "State" => %{"shape" => "CreateAccountState"}}, "type" => "structure"}, "Root" => %{"members" => %{"Arn" => %{"shape" => "RootArn"}, "Id" => %{"shape" => "RootId"}, "Name" => %{"shape" => "RootName"}, "PolicyTypes" => %{"shape" => "PolicyTypes"}}, "type" => "structure"}, "PolicyType" => %{"enum" => ["SERVICE_CONTROL_POLICY"], "type" => "string"}, "ConcurrentModificationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListHandshakesForAccountResponse" => %{"members" => %{"Handshakes" => %{"shape" => "Handshakes"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "UpdatePolicyRequest" => %{"members" => %{"Content" => %{"shape" => "PolicyContent"}, "Description" => %{"shape" => "PolicyDescription"}, "Name" => %{"shape" => "PolicyName"}, "PolicyId" => %{"shape" => "PolicyId"}}, "required" => ["PolicyId"], "type" => "structure"}, "RootArn" => %{"pattern" => "^arn:aws:organizations::\\d{12}:root\\/o-[a-z0-9]{10,32}\\/r-[0-9a-z]{4,32}", "type" => "string"}, "DetachPolicyRequest" => %{"members" => %{"PolicyId" => %{"shape" => "PolicyId"}, "TargetId" => %{"shape" => "PolicyTargetId"}}, "required" => ["PolicyId", "TargetId"], "type" => "structure"}, "InvalidInputException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Reason" => %{"shape" => "InvalidInputExceptionReason"}}, "type" => "structure"}, "HandshakeResources" => %{"member" => %{"shape" => "HandshakeResource"}, "type" => "list"}}
   end
 end

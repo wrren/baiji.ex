@@ -37,7 +37,7 @@ defmodule Baiji.Glacier do
 
   </li> </ul>
   """
-  
+
   @doc """
   This operation deletes the access policy associated with the specified
   vault. The operation is eventually consistent; that is, it might take some
@@ -52,23 +52,17 @@ defmodule Baiji.Glacier do
   """
   def delete_vault_access_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/access-policy",
+      path:             "/{accountId}/vaults/{vaultName}/access-policy",
       input:            input,
       options:          options,
       action:           "DeleteVaultAccessPolicy",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :delete,
       input_shape:      "DeleteVaultAccessPolicyInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation adds an archive to a vault. This is a synchronous operation,
   and for a successful upload, your data is durably persisted. Amazon Glacier
@@ -114,23 +108,17 @@ defmodule Baiji.Glacier do
   """
   def upload_archive(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/archives",
+      path:             "/{accountId}/vaults/{vaultName}/archives",
       input:            input,
       options:          options,
       action:           "UploadArchive",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "UploadArchiveInput",
       output_shape:     "ArchiveCreationOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation completes the vault locking process by transitioning the
   vault lock from the `InProgress` state to the `Locked` state, which causes
@@ -151,23 +139,17 @@ defmodule Baiji.Glacier do
   """
   def complete_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy/{lockId}",
+      path:             "/{accountId}/vaults/{vaultName}/lock-policy/{lockId}",
       input:            input,
       options:          options,
       action:           "CompleteVaultLock",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CompleteVaultLockInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation lists jobs for a vault, including jobs that are in-progress
   and jobs that have recently finished.
@@ -213,23 +195,17 @@ defmodule Baiji.Glacier do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/jobs",
+      path:             "/{accountId}/vaults/{vaultName}/jobs",
       input:            input,
       options:          options,
       action:           "ListJobs",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "ListJobsInput",
       output_shape:     "ListJobsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation creates a new vault with the specified name. The name of the
   vault must be unique within a region for an AWS account. You can create up
@@ -261,23 +237,17 @@ defmodule Baiji.Glacier do
   """
   def create_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}",
+      path:             "/{accountId}/vaults/{vaultName}",
       input:            input,
       options:          options,
       action:           "CreateVault",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :put,
       input_shape:      "CreateVaultInput",
       output_shape:     "CreateVaultOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation aborts the vault locking process if the vault lock is not in
   the `Locked` state. If the vault lock is in the `Locked` state when this
@@ -301,23 +271,17 @@ defmodule Baiji.Glacier do
   """
   def abort_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy",
+      path:             "/{accountId}/vaults/{vaultName}/lock-policy",
       input:            input,
       options:          options,
       action:           "AbortVaultLock",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :delete,
       input_shape:      "AbortVaultLockInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation lists all vaults owned by the calling user's account. The
   list returned in the response is ASCII-sorted by vault name.
@@ -347,23 +311,17 @@ defmodule Baiji.Glacier do
   """
   def list_vaults(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults",
+      path:             "/{accountId}/vaults",
       input:            input,
       options:          options,
       action:           "ListVaults",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "ListVaultsInput",
       output_shape:     "ListVaultsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation configures an access policy for a vault and will overwrite
   an existing policy. To configure a vault access policy, send a PUT request
@@ -376,23 +334,17 @@ defmodule Baiji.Glacier do
   """
   def set_vault_access_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/access-policy",
+      path:             "/{accountId}/vaults/{vaultName}/access-policy",
       input:            input,
       options:          options,
       action:           "SetVaultAccessPolicy",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :put,
       input_shape:      "SetVaultAccessPolicyInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation retrieves the following attributes from the `lock-policy`
   subresource set on the specified vault:
@@ -422,23 +374,17 @@ defmodule Baiji.Glacier do
   """
   def get_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy",
+      path:             "/{accountId}/vaults/{vaultName}/lock-policy",
       input:            input,
       options:          options,
       action:           "GetVaultLock",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "GetVaultLockInput",
       output_shape:     "GetVaultLockOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation returns information about a vault, including the vault's
   Amazon Resource Name (ARN), the date the vault was created, the number of
@@ -468,45 +414,33 @@ defmodule Baiji.Glacier do
   """
   def describe_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}",
+      path:             "/{accountId}/vaults/{vaultName}",
       input:            input,
       options:          options,
       action:           "DescribeVault",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "DescribeVaultInput",
       output_shape:     "DescribeVaultOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation purchases a provisioned capacity unit for an AWS account.
   """
   def purchase_provisioned_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/provisioned-capacity",
+      path:             "/{accountId}/provisioned-capacity",
       input:            input,
       options:          options,
       action:           "PurchaseProvisionedCapacity",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "PurchaseProvisionedCapacityInput",
       output_shape:     "PurchaseProvisionedCapacityOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation lists all the tags attached to a vault. The operation
   returns an empty map if there are no tags. For more information about tags,
@@ -515,23 +449,17 @@ defmodule Baiji.Glacier do
   """
   def list_tags_for_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/tags",
+      path:             "/{accountId}/vaults/{vaultName}/tags",
       input:            input,
       options:          options,
       action:           "ListTagsForVault",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "ListTagsForVaultInput",
       output_shape:     "ListTagsForVaultOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation adds the specified tags to a vault. Each tag is composed of
   a key and a value. Each vault can have up to 10 tags. If your request would
@@ -543,23 +471,17 @@ defmodule Baiji.Glacier do
   """
   def add_tags_to_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/tags?operation=add",
+      path:             "/{accountId}/vaults/{vaultName}/tags?operation=add",
       input:            input,
       options:          options,
       action:           "AddTagsToVault",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "AddTagsToVaultInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   You call this operation to inform Amazon Glacier that all the archive parts
   have been uploaded and that Amazon Glacier can now assemble the archive
@@ -612,23 +534,17 @@ defmodule Baiji.Glacier do
   """
   def complete_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      path:             "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
       input:            input,
       options:          options,
       action:           "CompleteMultipartUpload",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CompleteMultipartUploadInput",
       output_shape:     "ArchiveCreationOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation sets and then enacts a data retrieval policy in the region
   specified in the PUT request. You can set one policy per region for an AWS
@@ -642,23 +558,17 @@ defmodule Baiji.Glacier do
   """
   def set_data_retrieval_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/policies/data-retrieval",
+      path:             "/{accountId}/policies/data-retrieval",
       input:            input,
       options:          options,
       action:           "SetDataRetrievalPolicy",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :put,
       input_shape:      "SetDataRetrievalPolicyInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation deletes a vault. Amazon Glacier will delete a vault only if
   there are no archives in the vault as of the last inventory and there have
@@ -690,23 +600,17 @@ defmodule Baiji.Glacier do
   """
   def delete_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}",
+      path:             "/{accountId}/vaults/{vaultName}",
       input:            input,
       options:          options,
       action:           "DeleteVault",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :delete,
       input_shape:      "DeleteVaultInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation aborts a multipart upload identified by the upload ID.
 
@@ -735,23 +639,17 @@ defmodule Baiji.Glacier do
   """
   def abort_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      path:             "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
       input:            input,
       options:          options,
       action:           "AbortMultipartUpload",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :delete,
       input_shape:      "AbortMultipartUploadInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation returns information about a job you previously initiated,
   including the job initiation date, the user who initiated the job, the job
@@ -781,23 +679,17 @@ defmodule Baiji.Glacier do
   """
   def describe_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/jobs/{jobId}",
+      path:             "/{accountId}/vaults/{vaultName}/jobs/{jobId}",
       input:            input,
       options:          options,
       action:           "DescribeJob",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "DescribeJobInput",
       output_shape:     "GlacierJobDescription",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation deletes an archive from a vault. Subsequent requests to
   initiate a retrieval of this archive will fail. Archive retrievals that are
@@ -831,23 +723,17 @@ defmodule Baiji.Glacier do
   """
   def delete_archive(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/archives/{archiveId}",
+      path:             "/{accountId}/vaults/{vaultName}/archives/{archiveId}",
       input:            input,
       options:          options,
       action:           "DeleteArchive",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :delete,
       input_shape:      "DeleteArchiveInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation deletes the notification configuration set for a vault. The
   operation is eventually consistent; that is, it might take some time for
@@ -871,23 +757,17 @@ defmodule Baiji.Glacier do
   """
   def delete_vault_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/notification-configuration",
+      path:             "/{accountId}/vaults/{vaultName}/notification-configuration",
       input:            input,
       options:          options,
       action:           "DeleteVaultNotifications",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :delete,
       input_shape:      "DeleteVaultNotificationsInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation retrieves the `access-policy` subresource set on the vault;
   for more information on setting this subresource, see [Set Vault Access
@@ -900,23 +780,17 @@ defmodule Baiji.Glacier do
   """
   def get_vault_access_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/access-policy",
+      path:             "/{accountId}/vaults/{vaultName}/access-policy",
       input:            input,
       options:          options,
       action:           "GetVaultAccessPolicy",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "GetVaultAccessPolicyInput",
       output_shape:     "GetVaultAccessPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation initiates a job of the specified type. In this release, you
   can initiate a job to retrieve either an archive or a vault inventory (a
@@ -1070,46 +944,34 @@ defmodule Baiji.Glacier do
   """
   def initiate_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/jobs",
+      path:             "/{accountId}/vaults/{vaultName}/jobs",
       input:            input,
       options:          options,
       action:           "InitiateJob",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "InitiateJobInput",
       output_shape:     "InitiateJobOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation lists the provisioned capacity for the specified AWS
   account.
   """
   def list_provisioned_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/provisioned-capacity",
+      path:             "/{accountId}/provisioned-capacity",
       input:            input,
       options:          options,
       action:           "ListProvisionedCapacity",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "ListProvisionedCapacityInput",
       output_shape:     "ListProvisionedCapacityOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation removes one or more tags from the set of tags attached to a
   vault. For more information about tags, see [Tagging Amazon Glacier
@@ -1119,23 +981,17 @@ defmodule Baiji.Glacier do
   """
   def remove_tags_from_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/tags?operation=remove",
+      path:             "/{accountId}/vaults/{vaultName}/tags?operation=remove",
       input:            input,
       options:          options,
       action:           "RemoveTagsFromVault",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "RemoveTagsFromVaultInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation downloads the output of the job you initiated using
   `InitiateJob`. Depending on the job type you specified when you initiated
@@ -1189,23 +1045,17 @@ defmodule Baiji.Glacier do
   """
   def get_job_output(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/jobs/{jobId}/output",
+      path:             "/{accountId}/vaults/{vaultName}/jobs/{jobId}/output",
       input:            input,
       options:          options,
       action:           "GetJobOutput",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "GetJobOutputInput",
       output_shape:     "GetJobOutputOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation configures notifications that will be sent when specific
   events happen to a vault. By default, you don't get any notifications.
@@ -1248,23 +1098,17 @@ defmodule Baiji.Glacier do
   """
   def set_vault_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/notification-configuration",
+      path:             "/{accountId}/vaults/{vaultName}/notification-configuration",
       input:            input,
       options:          options,
       action:           "SetVaultNotifications",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :put,
       input_shape:      "SetVaultNotificationsInput",
       output_shape:     "",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation initiates the vault locking process by doing the following:
 
@@ -1302,23 +1146,17 @@ defmodule Baiji.Glacier do
   """
   def initiate_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy",
+      path:             "/{accountId}/vaults/{vaultName}/lock-policy",
       input:            input,
       options:          options,
       action:           "InitiateVaultLock",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "InitiateVaultLockInput",
       output_shape:     "InitiateVaultLockOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation retrieves the `notification-configuration` subresource of
   the specified vault.
@@ -1345,23 +1183,17 @@ defmodule Baiji.Glacier do
   """
   def get_vault_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/notification-configuration",
+      path:             "/{accountId}/vaults/{vaultName}/notification-configuration",
       input:            input,
       options:          options,
       action:           "GetVaultNotifications",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "GetVaultNotificationsInput",
       output_shape:     "GetVaultNotificationsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation returns the current data retrieval policy for the account
   and region specified in the GET request. For more information about data
@@ -1370,23 +1202,17 @@ defmodule Baiji.Glacier do
   """
   def get_data_retrieval_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/policies/data-retrieval",
+      path:             "/{accountId}/policies/data-retrieval",
       input:            input,
       options:          options,
       action:           "GetDataRetrievalPolicy",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "GetDataRetrievalPolicyInput",
       output_shape:     "GetDataRetrievalPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation initiates a multipart upload. Amazon Glacier creates a
   multipart upload resource and returns its ID in the response. The multipart
@@ -1430,23 +1256,17 @@ defmodule Baiji.Glacier do
   """
   def initiate_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads",
+      path:             "/{accountId}/vaults/{vaultName}/multipart-uploads",
       input:            input,
       options:          options,
       action:           "InitiateMultipartUpload",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "InitiateMultipartUploadInput",
       output_shape:     "InitiateMultipartUploadOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation lists in-progress multipart uploads for the specified vault.
   An in-progress multipart upload is a multipart upload that has been
@@ -1485,23 +1305,17 @@ defmodule Baiji.Glacier do
   """
   def list_multipart_uploads(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads",
+      path:             "/{accountId}/vaults/{vaultName}/multipart-uploads",
       input:            input,
       options:          options,
       action:           "ListMultipartUploads",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "ListMultipartUploadsInput",
       output_shape:     "ListMultipartUploadsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation lists the parts of an archive that have been uploaded in a
   specific multipart upload. You can make this request at any time during an
@@ -1535,23 +1349,17 @@ defmodule Baiji.Glacier do
   """
   def list_parts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      path:             "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
       input:            input,
       options:          options,
       action:           "ListParts",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :get,
       input_shape:      "ListPartsInput",
       output_shape:     "ListPartsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   This operation uploads a part of an archive. You can upload archive parts
   in any order. You can also upload them in parallel. You can upload up to
@@ -1605,28 +1413,36 @@ defmodule Baiji.Glacier do
   """
   def upload_multipart_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "glacier",
-      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      path:             "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
       input:            input,
       options:          options,
       action:           "UploadMultipartPart",
-      
-      endpoint_prefix:  "glacier",
-      type:             :rest_json,
-      version:          "2012-06-01",
       method:           :put,
       input_shape:      "UploadMultipartPartInput",
       output_shape:     "UploadMultipartPartOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "glacier",
+      target_prefix:    nil,
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"GetJobOutputInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "jobId" => %{"location" => "uri", "locationName" => "jobId", "shape" => "string"}, "range" => %{"location" => "header", "locationName" => "Range", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "jobId"], "type" => "structure"}, "DeleteArchiveInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveId" => %{"location" => "uri", "locationName" => "archiveId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "archiveId"], "type" => "structure"}, "AbortVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListProvisionedCapacityOutput" => %{"members" => %{"ProvisionedCapacityList" => %{"shape" => "ProvisionedCapacityList"}}, "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "string"}, "type" => "list"}, "CompleteVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "lockId" => %{"location" => "uri", "locationName" => "lockId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "lockId"], "type" => "structure"}, "Size" => %{"type" => "long"}, "ListPartsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "InitiateVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "policy" => %{"shape" => "VaultLockPolicy"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "policy", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListMultipartUploadsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "DataRetrievalRulesList" => %{"member" => %{"shape" => "DataRetrievalRule"}, "type" => "list"}, "ProvisionedCapacityDescription" => %{"members" => %{"CapacityId" => %{"shape" => "string"}, "ExpirationDate" => %{"shape" => "string"}, "StartDate" => %{"shape" => "string"}}, "type" => "structure"}, "VaultNotificationConfig" => %{"members" => %{"Events" => %{"shape" => "NotificationEventList"}, "SNSTopic" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListJobsOutput" => %{"members" => %{"JobList" => %{"shape" => "JobList"}, "Marker" => %{"shape" => "string"}}, "type" => "structure"}, "SetDataRetrievalPolicyInput" => %{"members" => %{"Policy" => %{"shape" => "DataRetrievalPolicy"}, "accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "ListPartsOutput" => %{"members" => %{"ArchiveDescription" => %{"shape" => "string"}, "CreationDate" => %{"shape" => "string"}, "Marker" => %{"shape" => "string"}, "MultipartUploadId" => %{"shape" => "string"}, "PartSizeInBytes" => %{"shape" => "long"}, "Parts" => %{"shape" => "PartList"}, "VaultARN" => %{"shape" => "string"}}, "type" => "structure"}, "DataRetrievalRule" => %{"members" => %{"BytesPerHour" => %{"shape" => "NullableLong"}, "Strategy" => %{"shape" => "string"}}, "type" => "structure"}, "PolicyEnforcedException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "ListProvisionedCapacityInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "CreateVaultOutput" => %{"members" => %{"location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}}, "type" => "structure"}, "boolean" => %{"type" => "boolean"}, "InvalidParameterValueException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "ServiceUnavailableException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "UploadMultipartPartInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "body" => %{"shape" => "Stream"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "range" => %{"location" => "header", "locationName" => "Content-Range", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "body", "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "GetVaultNotificationsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "CreateVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "InitiateMultipartUploadInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveDescription" => %{"location" => "header", "locationName" => "x-amz-archive-description", "shape" => "string"}, "partSize" => %{"location" => "header", "locationName" => "x-amz-part-size", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "VaultLockPolicy" => %{"members" => %{"Policy" => %{"shape" => "string"}}, "type" => "structure"}, "DescribeJobInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "jobId" => %{"location" => "uri", "locationName" => "jobId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "jobId"], "type" => "structure"}, "InsufficientCapacityException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "DescribeVaultOutput" => %{"members" => %{"CreationDate" => %{"shape" => "string"}, "LastInventoryDate" => %{"shape" => "string"}, "NumberOfArchives" => %{"shape" => "long"}, "SizeInBytes" => %{"shape" => "long"}, "VaultARN" => %{"shape" => "string"}, "VaultName" => %{"shape" => "string"}}, "type" => "structure"}, "DataRetrievalPolicy" => %{"members" => %{"Rules" => %{"shape" => "DataRetrievalRulesList"}}, "type" => "structure"}, "RequestTimeoutException" => %{"error" => %{"httpStatusCode" => 408}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "InitiateJobInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "jobParameters" => %{"shape" => "JobParameters"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "jobParameters", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListVaultsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "NotificationEventList" => %{"member" => %{"shape" => "string"}, "type" => "list"}, "StatusCode" => %{"enum" => ["InProgress", "Succeeded", "Failed"], "type" => "string"}, "InventoryRetrievalJobInput" => %{"members" => %{"EndDate" => %{"shape" => "string"}, "Limit" => %{"shape" => "string"}, "Marker" => %{"shape" => "string"}, "StartDate" => %{"shape" => "string"}}, "type" => "structure"}, "InitiateMultipartUploadOutput" => %{"members" => %{"location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}, "uploadId" => %{"location" => "header", "locationName" => "x-amz-multipart-upload-id", "shape" => "string"}}, "type" => "structure"}, "string" => %{"type" => "string"}, "httpstatus" => %{"type" => "integer"}, "long" => %{"type" => "long"}, "GetDataRetrievalPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "MissingParameterValueException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "TagValue" => %{"type" => "string"}, "PurchaseProvisionedCapacityInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "UploadMultipartPartOutput" => %{"members" => %{"checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}}, "type" => "structure"}, "PurchaseProvisionedCapacityOutput" => %{"members" => %{"capacityId" => %{"location" => "header", "locationName" => "x-amz-capacity-id", "shape" => "string"}}, "type" => "structure"}, "CompleteMultipartUploadInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveSize" => %{"location" => "header", "locationName" => "x-amz-archive-size", "shape" => "string"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "AddTagsToVaultInput" => %{"members" => %{"Tags" => %{"shape" => "TagMap"}, "accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "DeleteVaultAccessPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "InventoryRetrievalJobDescription" => %{"members" => %{"EndDate" => %{"shape" => "DateTime"}, "Format" => %{"shape" => "string"}, "Limit" => %{"shape" => "string"}, "Marker" => %{"shape" => "string"}, "StartDate" => %{"shape" => "DateTime"}}, "type" => "structure"}, "UploadListElement" => %{"members" => %{"ArchiveDescription" => %{"shape" => "string"}, "CreationDate" => %{"shape" => "string"}, "MultipartUploadId" => %{"shape" => "string"}, "PartSizeInBytes" => %{"shape" => "long"}, "VaultARN" => %{"shape" => "string"}}, "type" => "structure"}, "JobParameters" => %{"members" => %{"ArchiveId" => %{"shape" => "string"}, "Description" => %{"shape" => "string"}, "Format" => %{"shape" => "string"}, "InventoryRetrievalParameters" => %{"shape" => "InventoryRetrievalJobInput"}, "RetrievalByteRange" => %{"shape" => "string"}, "SNSTopic" => %{"shape" => "string"}, "Tier" => %{"shape" => "string"}, "Type" => %{"shape" => "string"}}, "type" => "structure"}, "NullableLong" => %{"type" => "long"}, "LimitExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "Stream" => %{"streaming" => true, "type" => "blob"}, "AbortMultipartUploadInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "ResourceNotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "RemoveTagsFromVaultInput" => %{"members" => %{"TagKeys" => %{"shape" => "TagKeyList"}, "accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "PartList" => %{"member" => %{"shape" => "PartListElement"}, "type" => "list"}, "InitiateJobOutput" => %{"members" => %{"jobId" => %{"location" => "header", "locationName" => "x-amz-job-id", "shape" => "string"}, "location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}}, "type" => "structure"}, "ProvisionedCapacityList" => %{"member" => %{"shape" => "ProvisionedCapacityDescription"}, "type" => "list"}, "GetVaultLockOutput" => %{"members" => %{"CreationDate" => %{"shape" => "string"}, "ExpirationDate" => %{"shape" => "string"}, "Policy" => %{"shape" => "string"}, "State" => %{"shape" => "string"}}, "type" => "structure"}, "InitiateVaultLockOutput" => %{"members" => %{"lockId" => %{"location" => "header", "locationName" => "x-amz-lock-id", "shape" => "string"}}, "type" => "structure"}, "ListTagsForVaultOutput" => %{"members" => %{"Tags" => %{"shape" => "TagMap"}}, "type" => "structure"}, "UploadsList" => %{"member" => %{"shape" => "UploadListElement"}, "type" => "list"}, "PartListElement" => %{"members" => %{"RangeInBytes" => %{"shape" => "string"}, "SHA256TreeHash" => %{"shape" => "string"}}, "type" => "structure"}, "VaultList" => %{"member" => %{"shape" => "DescribeVaultOutput"}, "type" => "list"}, "GetJobOutputOutput" => %{"members" => %{"acceptRanges" => %{"location" => "header", "locationName" => "Accept-Ranges", "shape" => "string"}, "archiveDescription" => %{"location" => "header", "locationName" => "x-amz-archive-description", "shape" => "string"}, "body" => %{"shape" => "Stream"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "contentRange" => %{"location" => "header", "locationName" => "Content-Range", "shape" => "string"}, "contentType" => %{"location" => "header", "locationName" => "Content-Type", "shape" => "string"}, "status" => %{"location" => "statusCode", "shape" => "httpstatus"}}, "payload" => "body", "type" => "structure"}, "JobList" => %{"member" => %{"shape" => "GlacierJobDescription"}, "type" => "list"}, "ListJobsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "completed" => %{"location" => "querystring", "locationName" => "completed", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}, "statuscode" => %{"location" => "querystring", "locationName" => "statuscode", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "ActionCode" => %{"enum" => ["ArchiveRetrieval", "InventoryRetrieval"], "type" => "string"}, "ListMultipartUploadsOutput" => %{"members" => %{"Marker" => %{"shape" => "string"}, "UploadsList" => %{"shape" => "UploadsList"}}, "type" => "structure"}, "ListVaultsOutput" => %{"members" => %{"Marker" => %{"shape" => "string"}, "VaultList" => %{"shape" => "VaultList"}}, "type" => "structure"}, "DescribeVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GlacierJobDescription" => %{"members" => %{"Action" => %{"shape" => "ActionCode"}, "ArchiveId" => %{"shape" => "string"}, "ArchiveSHA256TreeHash" => %{"shape" => "string"}, "ArchiveSizeInBytes" => %{"shape" => "Size"}, "Completed" => %{"shape" => "boolean"}, "CompletionDate" => %{"shape" => "string"}, "CreationDate" => %{"shape" => "string"}, "InventoryRetrievalParameters" => %{"shape" => "InventoryRetrievalJobDescription"}, "InventorySizeInBytes" => %{"shape" => "Size"}, "JobDescription" => %{"shape" => "string"}, "JobId" => %{"shape" => "string"}, "RetrievalByteRange" => %{"shape" => "string"}, "SHA256TreeHash" => %{"shape" => "string"}, "SNSTopic" => %{"shape" => "string"}, "StatusCode" => %{"shape" => "StatusCode"}, "StatusMessage" => %{"shape" => "string"}, "Tier" => %{"shape" => "string"}, "VaultARN" => %{"shape" => "string"}}, "type" => "structure"}, "TagKey" => %{"type" => "string"}, "SetVaultAccessPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "policy" => %{"shape" => "VaultAccessPolicy"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "policy", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListTagsForVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GetVaultAccessPolicyOutput" => %{"members" => %{"policy" => %{"shape" => "VaultAccessPolicy"}}, "payload" => "policy", "type" => "structure"}, "TagMap" => %{"key" => %{"shape" => "TagKey"}, "type" => "map", "value" => %{"shape" => "TagValue"}}, "DateTime" => %{"type" => "string"}, "GetVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GetVaultAccessPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GetDataRetrievalPolicyOutput" => %{"members" => %{"Policy" => %{"shape" => "DataRetrievalPolicy"}}, "type" => "structure"}, "GetVaultNotificationsOutput" => %{"members" => %{"vaultNotificationConfig" => %{"shape" => "VaultNotificationConfig"}}, "payload" => "vaultNotificationConfig", "type" => "structure"}, "UploadArchiveInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveDescription" => %{"location" => "header", "locationName" => "x-amz-archive-description", "shape" => "string"}, "body" => %{"shape" => "Stream"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "body", "required" => ["vaultName", "accountId"], "type" => "structure"}, "SetVaultNotificationsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}, "vaultNotificationConfig" => %{"shape" => "VaultNotificationConfig"}}, "payload" => "vaultNotificationConfig", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ArchiveCreationOutput" => %{"members" => %{"archiveId" => %{"location" => "header", "locationName" => "x-amz-archive-id", "shape" => "string"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}}, "type" => "structure"}, "VaultAccessPolicy" => %{"members" => %{"Policy" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteVaultNotificationsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}}
+		%{"GetJobOutputInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "jobId" => %{"location" => "uri", "locationName" => "jobId", "shape" => "string"}, "range" => %{"location" => "header", "locationName" => "Range", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "jobId"], "type" => "structure"}, "DeleteArchiveInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveId" => %{"location" => "uri", "locationName" => "archiveId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "archiveId"], "type" => "structure"}, "AbortVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListProvisionedCapacityOutput" => %{"members" => %{"ProvisionedCapacityList" => %{"shape" => "ProvisionedCapacityList"}}, "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "string"}, "type" => "list"}, "CompleteVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "lockId" => %{"location" => "uri", "locationName" => "lockId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "lockId"], "type" => "structure"}, "Size" => %{"type" => "long"}, "ListPartsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "InitiateVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "policy" => %{"shape" => "VaultLockPolicy"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "policy", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListMultipartUploadsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "DataRetrievalRulesList" => %{"member" => %{"shape" => "DataRetrievalRule"}, "type" => "list"}, "ProvisionedCapacityDescription" => %{"members" => %{"CapacityId" => %{"shape" => "string"}, "ExpirationDate" => %{"shape" => "string"}, "StartDate" => %{"shape" => "string"}}, "type" => "structure"}, "VaultNotificationConfig" => %{"members" => %{"Events" => %{"shape" => "NotificationEventList"}, "SNSTopic" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListJobsOutput" => %{"members" => %{"JobList" => %{"shape" => "JobList"}, "Marker" => %{"shape" => "string"}}, "type" => "structure"}, "SetDataRetrievalPolicyInput" => %{"members" => %{"Policy" => %{"shape" => "DataRetrievalPolicy"}, "accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "ListPartsOutput" => %{"members" => %{"ArchiveDescription" => %{"shape" => "string"}, "CreationDate" => %{"shape" => "string"}, "Marker" => %{"shape" => "string"}, "MultipartUploadId" => %{"shape" => "string"}, "PartSizeInBytes" => %{"shape" => "long"}, "Parts" => %{"shape" => "PartList"}, "VaultARN" => %{"shape" => "string"}}, "type" => "structure"}, "DataRetrievalRule" => %{"members" => %{"BytesPerHour" => %{"shape" => "NullableLong"}, "Strategy" => %{"shape" => "string"}}, "type" => "structure"}, "PolicyEnforcedException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "ListProvisionedCapacityInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "CreateVaultOutput" => %{"members" => %{"location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}}, "type" => "structure"}, "boolean" => %{"type" => "boolean"}, "InvalidParameterValueException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "ServiceUnavailableException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "UploadMultipartPartInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "body" => %{"shape" => "Stream"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "range" => %{"location" => "header", "locationName" => "Content-Range", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "body", "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "GetVaultNotificationsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "CreateVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "InitiateMultipartUploadInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveDescription" => %{"location" => "header", "locationName" => "x-amz-archive-description", "shape" => "string"}, "partSize" => %{"location" => "header", "locationName" => "x-amz-part-size", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "VaultLockPolicy" => %{"members" => %{"Policy" => %{"shape" => "string"}}, "type" => "structure"}, "DescribeJobInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "jobId" => %{"location" => "uri", "locationName" => "jobId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "jobId"], "type" => "structure"}, "InsufficientCapacityException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "DescribeVaultOutput" => %{"members" => %{"CreationDate" => %{"shape" => "string"}, "LastInventoryDate" => %{"shape" => "string"}, "NumberOfArchives" => %{"shape" => "long"}, "SizeInBytes" => %{"shape" => "long"}, "VaultARN" => %{"shape" => "string"}, "VaultName" => %{"shape" => "string"}}, "type" => "structure"}, "DataRetrievalPolicy" => %{"members" => %{"Rules" => %{"shape" => "DataRetrievalRulesList"}}, "type" => "structure"}, "RequestTimeoutException" => %{"error" => %{"httpStatusCode" => 408}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "InitiateJobInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "jobParameters" => %{"shape" => "JobParameters"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "jobParameters", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListVaultsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "NotificationEventList" => %{"member" => %{"shape" => "string"}, "type" => "list"}, "StatusCode" => %{"enum" => ["InProgress", "Succeeded", "Failed"], "type" => "string"}, "InventoryRetrievalJobInput" => %{"members" => %{"EndDate" => %{"shape" => "string"}, "Limit" => %{"shape" => "string"}, "Marker" => %{"shape" => "string"}, "StartDate" => %{"shape" => "string"}}, "type" => "structure"}, "InitiateMultipartUploadOutput" => %{"members" => %{"location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}, "uploadId" => %{"location" => "header", "locationName" => "x-amz-multipart-upload-id", "shape" => "string"}}, "type" => "structure"}, "string" => %{"type" => "string"}, "httpstatus" => %{"type" => "integer"}, "long" => %{"type" => "long"}, "GetDataRetrievalPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "MissingParameterValueException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "TagValue" => %{"type" => "string"}, "PurchaseProvisionedCapacityInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}}, "required" => ["accountId"], "type" => "structure"}, "UploadMultipartPartOutput" => %{"members" => %{"checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}}, "type" => "structure"}, "PurchaseProvisionedCapacityOutput" => %{"members" => %{"capacityId" => %{"location" => "header", "locationName" => "x-amz-capacity-id", "shape" => "string"}}, "type" => "structure"}, "CompleteMultipartUploadInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveSize" => %{"location" => "header", "locationName" => "x-amz-archive-size", "shape" => "string"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "AddTagsToVaultInput" => %{"members" => %{"Tags" => %{"shape" => "TagMap"}, "accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "DeleteVaultAccessPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "InventoryRetrievalJobDescription" => %{"members" => %{"EndDate" => %{"shape" => "DateTime"}, "Format" => %{"shape" => "string"}, "Limit" => %{"shape" => "string"}, "Marker" => %{"shape" => "string"}, "StartDate" => %{"shape" => "DateTime"}}, "type" => "structure"}, "UploadListElement" => %{"members" => %{"ArchiveDescription" => %{"shape" => "string"}, "CreationDate" => %{"shape" => "string"}, "MultipartUploadId" => %{"shape" => "string"}, "PartSizeInBytes" => %{"shape" => "long"}, "VaultARN" => %{"shape" => "string"}}, "type" => "structure"}, "JobParameters" => %{"members" => %{"ArchiveId" => %{"shape" => "string"}, "Description" => %{"shape" => "string"}, "Format" => %{"shape" => "string"}, "InventoryRetrievalParameters" => %{"shape" => "InventoryRetrievalJobInput"}, "RetrievalByteRange" => %{"shape" => "string"}, "SNSTopic" => %{"shape" => "string"}, "Tier" => %{"shape" => "string"}, "Type" => %{"shape" => "string"}}, "type" => "structure"}, "NullableLong" => %{"type" => "long"}, "LimitExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "Stream" => %{"streaming" => true, "type" => "blob"}, "AbortMultipartUploadInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "uploadId" => %{"location" => "uri", "locationName" => "uploadId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName", "uploadId"], "type" => "structure"}, "ResourceNotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"code" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "type" => %{"shape" => "string"}}, "type" => "structure"}, "RemoveTagsFromVaultInput" => %{"members" => %{"TagKeys" => %{"shape" => "TagKeyList"}, "accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "PartList" => %{"member" => %{"shape" => "PartListElement"}, "type" => "list"}, "InitiateJobOutput" => %{"members" => %{"jobId" => %{"location" => "header", "locationName" => "x-amz-job-id", "shape" => "string"}, "location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}}, "type" => "structure"}, "ProvisionedCapacityList" => %{"member" => %{"shape" => "ProvisionedCapacityDescription"}, "type" => "list"}, "GetVaultLockOutput" => %{"members" => %{"CreationDate" => %{"shape" => "string"}, "ExpirationDate" => %{"shape" => "string"}, "Policy" => %{"shape" => "string"}, "State" => %{"shape" => "string"}}, "type" => "structure"}, "InitiateVaultLockOutput" => %{"members" => %{"lockId" => %{"location" => "header", "locationName" => "x-amz-lock-id", "shape" => "string"}}, "type" => "structure"}, "ListTagsForVaultOutput" => %{"members" => %{"Tags" => %{"shape" => "TagMap"}}, "type" => "structure"}, "UploadsList" => %{"member" => %{"shape" => "UploadListElement"}, "type" => "list"}, "PartListElement" => %{"members" => %{"RangeInBytes" => %{"shape" => "string"}, "SHA256TreeHash" => %{"shape" => "string"}}, "type" => "structure"}, "VaultList" => %{"member" => %{"shape" => "DescribeVaultOutput"}, "type" => "list"}, "GetJobOutputOutput" => %{"members" => %{"acceptRanges" => %{"location" => "header", "locationName" => "Accept-Ranges", "shape" => "string"}, "archiveDescription" => %{"location" => "header", "locationName" => "x-amz-archive-description", "shape" => "string"}, "body" => %{"shape" => "Stream"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "contentRange" => %{"location" => "header", "locationName" => "Content-Range", "shape" => "string"}, "contentType" => %{"location" => "header", "locationName" => "Content-Type", "shape" => "string"}, "status" => %{"location" => "statusCode", "shape" => "httpstatus"}}, "payload" => "body", "type" => "structure"}, "JobList" => %{"member" => %{"shape" => "GlacierJobDescription"}, "type" => "list"}, "ListJobsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "completed" => %{"location" => "querystring", "locationName" => "completed", "shape" => "string"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "string"}, "marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "string"}, "statuscode" => %{"location" => "querystring", "locationName" => "statuscode", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "ActionCode" => %{"enum" => ["ArchiveRetrieval", "InventoryRetrieval"], "type" => "string"}, "ListMultipartUploadsOutput" => %{"members" => %{"Marker" => %{"shape" => "string"}, "UploadsList" => %{"shape" => "UploadsList"}}, "type" => "structure"}, "ListVaultsOutput" => %{"members" => %{"Marker" => %{"shape" => "string"}, "VaultList" => %{"shape" => "VaultList"}}, "type" => "structure"}, "DescribeVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GlacierJobDescription" => %{"members" => %{"Action" => %{"shape" => "ActionCode"}, "ArchiveId" => %{"shape" => "string"}, "ArchiveSHA256TreeHash" => %{"shape" => "string"}, "ArchiveSizeInBytes" => %{"shape" => "Size"}, "Completed" => %{"shape" => "boolean"}, "CompletionDate" => %{"shape" => "string"}, "CreationDate" => %{"shape" => "string"}, "InventoryRetrievalParameters" => %{"shape" => "InventoryRetrievalJobDescription"}, "InventorySizeInBytes" => %{"shape" => "Size"}, "JobDescription" => %{"shape" => "string"}, "JobId" => %{"shape" => "string"}, "RetrievalByteRange" => %{"shape" => "string"}, "SHA256TreeHash" => %{"shape" => "string"}, "SNSTopic" => %{"shape" => "string"}, "StatusCode" => %{"shape" => "StatusCode"}, "StatusMessage" => %{"shape" => "string"}, "Tier" => %{"shape" => "string"}, "VaultARN" => %{"shape" => "string"}}, "type" => "structure"}, "TagKey" => %{"type" => "string"}, "SetVaultAccessPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "policy" => %{"shape" => "VaultAccessPolicy"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "policy", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ListTagsForVaultInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GetVaultAccessPolicyOutput" => %{"members" => %{"policy" => %{"shape" => "VaultAccessPolicy"}}, "payload" => "policy", "type" => "structure"}, "TagMap" => %{"key" => %{"shape" => "TagKey"}, "type" => "map", "value" => %{"shape" => "TagValue"}}, "DateTime" => %{"type" => "string"}, "GetVaultLockInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GetVaultAccessPolicyInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}, "GetDataRetrievalPolicyOutput" => %{"members" => %{"Policy" => %{"shape" => "DataRetrievalPolicy"}}, "type" => "structure"}, "GetVaultNotificationsOutput" => %{"members" => %{"vaultNotificationConfig" => %{"shape" => "VaultNotificationConfig"}}, "payload" => "vaultNotificationConfig", "type" => "structure"}, "UploadArchiveInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "archiveDescription" => %{"location" => "header", "locationName" => "x-amz-archive-description", "shape" => "string"}, "body" => %{"shape" => "Stream"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "payload" => "body", "required" => ["vaultName", "accountId"], "type" => "structure"}, "SetVaultNotificationsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}, "vaultNotificationConfig" => %{"shape" => "VaultNotificationConfig"}}, "payload" => "vaultNotificationConfig", "required" => ["accountId", "vaultName"], "type" => "structure"}, "ArchiveCreationOutput" => %{"members" => %{"archiveId" => %{"location" => "header", "locationName" => "x-amz-archive-id", "shape" => "string"}, "checksum" => %{"location" => "header", "locationName" => "x-amz-sha256-tree-hash", "shape" => "string"}, "location" => %{"location" => "header", "locationName" => "Location", "shape" => "string"}}, "type" => "structure"}, "VaultAccessPolicy" => %{"members" => %{"Policy" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteVaultNotificationsInput" => %{"members" => %{"accountId" => %{"location" => "uri", "locationName" => "accountId", "shape" => "string"}, "vaultName" => %{"location" => "uri", "locationName" => "vaultName", "shape" => "string"}}, "required" => ["accountId", "vaultName"], "type" => "structure"}}
   end
 end

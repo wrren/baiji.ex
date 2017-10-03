@@ -153,7 +153,7 @@ defmodule Baiji.Request.Sign do
   Generate a string to sign
   """
   def string_to_sign(%Sign{canonical_request: req, time: time, request: %Request{operation: op}} = sign) do
-    sts = string_to_sign(time, op.region, op.service, req)
+    sts = string_to_sign(time, op.region, op.endpoint.service, req)
     Operation.debug(op, "String to Sign: #{inspect sts}")
     %{sign | string_to_sign: sts}
   end
@@ -182,7 +182,7 @@ defmodule Baiji.Request.Sign do
   Generate a signing key using AWS credentials, the target service, time, etc.
   """
   def signing_key(%Sign{request: %Request{operation: op}, time: time} = sign) do
-    %{sign | signing_key: signing_key(op.secret_access_key, time, op.region, op.service)}
+    %{sign | signing_key: signing_key(op.secret_access_key, time, op.region, op.endpoint.service)}
   end
   def signing_key(secret_access_key, time, region, service) do
     "AWS4"
@@ -211,7 +211,7 @@ defmodule Baiji.Request.Sign do
     %{sign | request: %{req | headers: add_authorization_header(
       req.headers,
       op.access_key_id,
-      credential_scope(time, op.region, op.service),
+      credential_scope(time, op.region, op.endpoint.service),
       sign.signed_headers,
       sign.signature
     )}}

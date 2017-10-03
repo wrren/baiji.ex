@@ -33,7 +33,7 @@ defmodule Baiji.ElasticLoadBalancing do
   they complete at most one time. If you repeat an operation, it succeeds
   with a 200 OK response code.
   """
-  
+
   @doc """
   Adds the specified tags to the specified load balancer. Each load balancer
   can have a maximum of 10 tags.
@@ -48,23 +48,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AddTags",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "AddTagsInput",
       output_shape:     "AddTagsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Associates one or more security groups with your load balancer in a virtual
   private cloud (VPC). The specified security groups override the previously
@@ -76,23 +70,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def apply_security_groups_to_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ApplySecurityGroupsToLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "ApplySecurityGroupsToLoadBalancerInput",
       output_shape:     "ApplySecurityGroupsToLoadBalancerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Adds one or more subnets to the set of configured subnets for the specified
   load balancer.
@@ -105,23 +93,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def attach_load_balancer_to_subnets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "AttachLoadBalancerToSubnets",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "AttachLoadBalancerToSubnetsInput",
       output_shape:     "AttachLoadBalancerToSubnetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Specifies the health check settings to use when evaluating the health state
   of your EC2 instances.
@@ -132,23 +114,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def configure_health_check(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ConfigureHealthCheck",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "ConfigureHealthCheckInput",
       output_shape:     "ConfigureHealthCheckOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Generates a stickiness policy with sticky session lifetimes that follow
   that of an application-generated cookie. This policy can be associated only
@@ -170,23 +146,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def create_app_cookie_stickiness_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateAppCookieStickinessPolicy",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CreateAppCookieStickinessPolicyInput",
       output_shape:     "CreateAppCookieStickinessPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Generates a stickiness policy with sticky session lifetimes controlled by
   the lifetime of the browser (user-agent) or a specified expiration period.
@@ -210,23 +180,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def create_l_b_cookie_stickiness_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateLBCookieStickinessPolicy",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CreateLBCookieStickinessPolicyInput",
       output_shape:     "CreateLBCookieStickinessPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a Classic Load Balancer.
 
@@ -247,23 +211,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def create_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CreateAccessPointInput",
       output_shape:     "CreateAccessPointOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates one or more listeners for the specified load balancer. If a
   listener with the specified port does not already exist, it is created;
@@ -276,23 +234,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def create_load_balancer_listeners(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateLoadBalancerListeners",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CreateLoadBalancerListenerInput",
       output_shape:     "CreateLoadBalancerListenerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Creates a policy with the specified attributes for the specified load
   balancer.
@@ -303,23 +255,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def create_load_balancer_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "CreateLoadBalancerPolicy",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "CreateLoadBalancerPolicyInput",
       output_shape:     "CreateLoadBalancerPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified load balancer.
 
@@ -334,68 +280,50 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def delete_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DeleteAccessPointInput",
       output_shape:     "DeleteAccessPointOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified listeners from the specified load balancer.
   """
   def delete_load_balancer_listeners(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteLoadBalancerListeners",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DeleteLoadBalancerListenerInput",
       output_shape:     "DeleteLoadBalancerListenerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deletes the specified policy from the specified load balancer. This policy
   must not be enabled for any listeners.
   """
   def delete_load_balancer_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeleteLoadBalancerPolicy",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DeleteLoadBalancerPolicyInput",
       output_shape:     "DeleteLoadBalancerPolicyOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Deregisters the specified instances from the specified load balancer. After
   the instance is deregistered, it no longer receives traffic from the load
@@ -410,23 +338,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def deregister_instances_from_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DeregisterInstancesFromLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DeregisterEndPointsInput",
       output_shape:     "DeregisterEndPointsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the current Elastic Load Balancing resource limits for your AWS
   account.
@@ -437,23 +359,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def describe_account_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeAccountLimits",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeAccountLimitsInput",
       output_shape:     "DescribeAccountLimitsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the state of the specified instances with respect to the
   specified load balancer. If no instances are specified, the call describes
@@ -464,45 +380,33 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def describe_instance_health(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeInstanceHealth",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeEndPointStateInput",
       output_shape:     "DescribeEndPointStateOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the attributes for the specified load balancer.
   """
   def describe_load_balancer_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLoadBalancerAttributes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeLoadBalancerAttributesInput",
       output_shape:     "DescribeLoadBalancerAttributesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified policies.
 
@@ -516,23 +420,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def describe_load_balancer_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLoadBalancerPolicies",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeLoadBalancerPoliciesInput",
       output_shape:     "DescribeLoadBalancerPoliciesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified load balancer policy types or all load balancer
   policy types.
@@ -549,68 +447,50 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def describe_load_balancer_policy_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLoadBalancerPolicyTypes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeLoadBalancerPolicyTypesInput",
       output_shape:     "DescribeLoadBalancerPolicyTypesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the specified the load balancers. If no load balancers are
   specified, the call describes all of your load balancers.
   """
   def describe_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeLoadBalancers",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeAccessPointsInput",
       output_shape:     "DescribeAccessPointsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Describes the tags associated with the specified load balancers.
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DescribeTags",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DescribeTagsInput",
       output_shape:     "DescribeTagsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes the specified subnets from the set of configured subnets for the
   load balancer.
@@ -621,23 +501,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def detach_load_balancer_from_subnets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DetachLoadBalancerFromSubnets",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "DetachLoadBalancerFromSubnetsInput",
       output_shape:     "DetachLoadBalancerFromSubnetsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes the specified Availability Zones from the set of Availability Zones
   for the specified load balancer.
@@ -654,23 +528,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def disable_availability_zones_for_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "DisableAvailabilityZonesForLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "RemoveAvailabilityZonesInput",
       output_shape:     "RemoveAvailabilityZonesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Adds the specified Availability Zones to the set of Availability Zones for
   the specified load balancer.
@@ -684,23 +552,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def enable_availability_zones_for_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "EnableAvailabilityZonesForLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "AddAvailabilityZonesInput",
       output_shape:     "AddAvailabilityZonesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Modifies the attributes of the specified load balancer.
 
@@ -729,23 +591,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def modify_load_balancer_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "ModifyLoadBalancerAttributes",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "ModifyLoadBalancerAttributesInput",
       output_shape:     "ModifyLoadBalancerAttributesOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Adds the specified instances to the specified load balancer.
 
@@ -775,45 +631,33 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def register_instances_with_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RegisterInstancesWithLoadBalancer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "RegisterEndPointsInput",
       output_shape:     "RegisterEndPointsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Removes one or more tags from the specified load balancer.
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "RemoveTags",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "RemoveTagsInput",
       output_shape:     "RemoveTagsOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Sets the certificate that terminates the specified listener's SSL
   connections. The specified certificate replaces any prior certificate that
@@ -826,23 +670,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def set_load_balancer_listener_s_s_l_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetLoadBalancerListenerSSLCertificate",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "SetLoadBalancerListenerSSLCertificateInput",
       output_shape:     "SetLoadBalancerListenerSSLCertificateOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Replaces the set of policies associated with the specified port on which
   the EC2 instance is listening with a new set of policies. At this time,
@@ -867,23 +705,17 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def set_load_balancer_policies_for_backend_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetLoadBalancerPoliciesForBackendServer",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "SetLoadBalancerPoliciesForBackendServerInput",
       output_shape:     "SetLoadBalancerPoliciesForBackendServerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
   @doc """
   Replaces the current set of policies for the specified load balancer port
   with the specified set of policies.
@@ -902,28 +734,36 @@ defmodule Baiji.ElasticLoadBalancing do
   """
   def set_load_balancer_policies_of_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:          "elasticloadbalancing",
-      endpoint:         "/",
+      path:             "/",
       input:            input,
       options:          options,
       action:           "SetLoadBalancerPoliciesOfListener",
-      
-      endpoint_prefix:  "elasticloadbalancing",
-      type:             :xml,
-      version:          "2012-06-01",
       method:           :post,
       input_shape:      "SetLoadBalancerPoliciesOfListenerInput",
       output_shape:     "SetLoadBalancerPoliciesOfListenerOutput",
-      shapes:           &__MODULE__.__shapes__/0
+      endpoint:         __spec__()
     }
   end
 
-  
+
+  @doc """
+  Outputs values common to all actions
+  """
+  def __spec__ do
+    %Baiji.Endpoint{
+      service:          "elasticloadbalancing",
+      target_prefix:    nil,
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2012-06-01",
+      shapes:           __shapes__()
+    }
+  end
 
   @doc """
   Returns a map containing the input/output shapes for this endpoint
   """
   def __shapes__ do
-    %{"DescribeLoadBalancerPolicyTypesInput" => %{"members" => %{"PolicyTypeNames" => %{"shape" => "PolicyTypeNames"}}, "type" => "structure"}, "PageSize" => %{"max" => 400, "min" => 1, "type" => "integer"}, "TagKeyOnly" => %{"members" => %{"Key" => %{"shape" => "TagKey"}}, "type" => "structure"}, "Listeners" => %{"member" => %{"shape" => "Listener"}, "type" => "list"}, "TagDescriptions" => %{"member" => %{"shape" => "TagDescription"}, "type" => "list"}, "Ports" => %{"member" => %{"shape" => "AccessPointPort"}, "type" => "list"}, "LBCookieStickinessPolicies" => %{"member" => %{"shape" => "LBCookieStickinessPolicy"}, "type" => "list"}, "DescribeLoadBalancerPolicyTypesOutput" => %{"members" => %{"PolicyTypeDescriptions" => %{"shape" => "PolicyTypeDescriptions"}}, "type" => "structure"}, "InvalidSubnetException" => %{"error" => %{"code" => "InvalidSubnet", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKeyOnly"}, "min" => 1, "type" => "list"}, "Subnets" => %{"member" => %{"shape" => "SubnetId"}, "type" => "list"}, "PolicyDescription" => %{"members" => %{"PolicyAttributeDescriptions" => %{"shape" => "PolicyAttributeDescriptions"}, "PolicyName" => %{"shape" => "PolicyName"}, "PolicyTypeName" => %{"shape" => "PolicyTypeName"}}, "type" => "structure"}, "AttachLoadBalancerToSubnetsInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "Subnets" => %{"shape" => "Subnets"}}, "required" => ["LoadBalancerName", "Subnets"], "type" => "structure"}, "BackendServerDescriptions" => %{"member" => %{"shape" => "BackendServerDescription"}, "type" => "list"}, "AddTagsOutput" => %{"members" => %{}, "type" => "structure"}, "SetLoadBalancerPoliciesForBackendServerOutput" => %{"members" => %{}, "type" => "structure"}, "DNSName" => %{"type" => "string"}, "S3BucketName" => %{"type" => "string"}, "CreateLoadBalancerListenerInput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "Listeners"], "type" => "structure"}, "PolicyTypeNames" => %{"member" => %{"shape" => "PolicyTypeName"}, "type" => "list"}, "Listener" => %{"members" => %{"InstancePort" => %{"shape" => "InstancePort"}, "InstanceProtocol" => %{"shape" => "Protocol"}, "LoadBalancerPort" => %{"shape" => "AccessPointPort"}, "Protocol" => %{"shape" => "Protocol"}, "SSLCertificateId" => %{"shape" => "SSLCertificateId"}}, "required" => ["Protocol", "LoadBalancerPort", "InstancePort"], "type" => "structure"}, "CreateLoadBalancerListenerOutput" => %{"members" => %{}, "type" => "structure"}, "SecurityGroupOwnerAlias" => %{"type" => "string"}, "RemoveTagsOutput" => %{"members" => %{}, "type" => "structure"}, "DeleteLoadBalancerListenerInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "LoadBalancerPorts" => %{"shape" => "Ports"}}, "required" => ["LoadBalancerName", "LoadBalancerPorts"], "type" => "structure"}, "PolicyTypeDescriptions" => %{"member" => %{"shape" => "PolicyTypeDescription"}, "type" => "list"}, "CrossZoneLoadBalancingEnabled" => %{"type" => "boolean"}, "TooManyAccessPointsException" => %{"error" => %{"code" => "TooManyLoadBalancers", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AttributeName" => %{"type" => "string"}, "DetachLoadBalancerFromSubnetsOutput" => %{"members" => %{"Subnets" => %{"shape" => "Subnets"}}, "type" => "structure"}, "PolicyAttributeTypeDescription" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeType" => %{"shape" => "AttributeType"}, "Cardinality" => %{"shape" => "Cardinality"}, "DefaultValue" => %{"shape" => "DefaultValue"}, "Description" => %{"shape" => "Description"}}, "type" => "structure"}, "DescribeAccessPointsOutput" => %{"members" => %{"LoadBalancerDescriptions" => %{"shape" => "LoadBalancerDescriptions"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "DeregisterEndPointsOutput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}}, "type" => "structure"}, "PolicyTypeDescription" => %{"members" => %{"Description" => %{"shape" => "Description"}, "PolicyAttributeTypeDescriptions" => %{"shape" => "PolicyAttributeTypeDescriptions"}, "PolicyTypeName" => %{"shape" => "PolicyTypeName"}}, "type" => "structure"}, "PolicyDescriptions" => %{"member" => %{"shape" => "PolicyDescription"}, "type" => "list"}, "DuplicatePolicyNameException" => %{"error" => %{"code" => "DuplicatePolicyName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DeleteLoadBalancerPolicyInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "required" => ["LoadBalancerName", "PolicyName"], "type" => "structure"}, "DetachLoadBalancerFromSubnetsInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "Subnets" => %{"shape" => "Subnets"}}, "required" => ["LoadBalancerName", "Subnets"], "type" => "structure"}, "InvalidConfigurationRequestException" => %{"error" => %{"code" => "InvalidConfigurationRequest", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "LoadBalancerAttributeNotFoundException" => %{"error" => %{"code" => "LoadBalancerAttributeNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AddTagsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNames"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["LoadBalancerNames", "Tags"], "type" => "structure"}, "SetLoadBalancerPoliciesOfListenerOutput" => %{"members" => %{}, "type" => "structure"}, "Cardinality" => %{"type" => "string"}, "CreateLoadBalancerPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeLoadBalancerAttributesInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName"], "type" => "structure"}, "ListenerDescription" => %{"members" => %{"Listener" => %{"shape" => "Listener"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "AddAvailabilityZonesOutput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}}, "type" => "structure"}, "LBCookieStickinessPolicy" => %{"members" => %{"CookieExpirationPeriod" => %{"shape" => "CookieExpirationPeriod"}, "PolicyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "InstanceId" => %{"type" => "string"}, "Name" => %{"type" => "string"}, "CreateAppCookieStickinessPolicyInput" => %{"members" => %{"CookieName" => %{"shape" => "CookieName"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "required" => ["LoadBalancerName", "PolicyName", "CookieName"], "type" => "structure"}, "RemoveAvailabilityZonesOutput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}}, "type" => "structure"}, "Limit" => %{"members" => %{"Max" => %{"shape" => "Max"}, "Name" => %{"shape" => "Name"}}, "type" => "structure"}, "ReasonCode" => %{"type" => "string"}, "AccessPointPort" => %{"type" => "integer"}, "LoadBalancerDescription" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "BackendServerDescriptions" => %{"shape" => "BackendServerDescriptions"}, "CanonicalHostedZoneName" => %{"shape" => "DNSName"}, "CanonicalHostedZoneNameID" => %{"shape" => "DNSName"}, "CreatedTime" => %{"shape" => "CreatedTime"}, "DNSName" => %{"shape" => "DNSName"}, "HealthCheck" => %{"shape" => "HealthCheck"}, "Instances" => %{"shape" => "Instances"}, "ListenerDescriptions" => %{"shape" => "ListenerDescriptions"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "Policies" => %{"shape" => "Policies"}, "Scheme" => %{"shape" => "LoadBalancerScheme"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "SourceSecurityGroup" => %{"shape" => "SourceSecurityGroup"}, "Subnets" => %{"shape" => "Subnets"}, "VPCId" => %{"shape" => "VPCId"}}, "type" => "structure"}, "AdditionalAttributeValue" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9.]+$", "type" => "string"}, "ListenerDescriptions" => %{"member" => %{"shape" => "ListenerDescription"}, "type" => "list"}, "DuplicateTagKeysException" => %{"error" => %{"code" => "DuplicateTagKeys", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "IdleTimeout" => %{"max" => 3600, "min" => 1, "type" => "integer"}, "CreateLBCookieStickinessPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "Description" => %{"type" => "string"}, "AccessLogEnabled" => %{"type" => "boolean"}, "DescribeEndPointStateInput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName"], "type" => "structure"}, "DependencyThrottleException" => %{"error" => %{"code" => "DependencyThrottle", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Limits" => %{"member" => %{"shape" => "Limit"}, "type" => "list"}, "AdditionalAttributes" => %{"max" => 10, "member" => %{"shape" => "AdditionalAttribute"}, "type" => "list"}, "DuplicateAccessPointNameException" => %{"error" => %{"code" => "DuplicateLoadBalancerName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RemoveTagsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNames"}, "Tags" => %{"shape" => "TagKeyList"}}, "required" => ["LoadBalancerNames", "Tags"], "type" => "structure"}, "PolicyTypeNotFoundException" => %{"error" => %{"code" => "PolicyTypeNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SecurityGroups" => %{"member" => %{"shape" => "SecurityGroupId"}, "type" => "list"}, "SubnetNotFoundException" => %{"error" => %{"code" => "SubnetNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ModifyLoadBalancerAttributesInput" => %{"members" => %{"LoadBalancerAttributes" => %{"shape" => "LoadBalancerAttributes"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "LoadBalancerAttributes"], "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key"], "type" => "structure"}, "DefaultValue" => %{"type" => "string"}, "AddAvailabilityZonesInput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "AvailabilityZones"], "type" => "structure"}, "UnsupportedProtocolException" => %{"error" => %{"code" => "UnsupportedProtocol", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "InvalidSchemeException" => %{"error" => %{"code" => "InvalidScheme", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ConnectionDrainingTimeout" => %{"type" => "integer"}, "AppCookieStickinessPolicies" => %{"member" => %{"shape" => "AppCookieStickinessPolicy"}, "type" => "list"}, "RemoveAvailabilityZonesInput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "AvailabilityZones"], "type" => "structure"}, "DescribeLoadBalancerPoliciesOutput" => %{"members" => %{"PolicyDescriptions" => %{"shape" => "PolicyDescriptions"}}, "type" => "structure"}, "LoadBalancerDescriptions" => %{"member" => %{"shape" => "LoadBalancerDescription"}, "type" => "list"}, "SecurityGroupName" => %{"type" => "string"}, "AttributeType" => %{"type" => "string"}, "AttachLoadBalancerToSubnetsOutput" => %{"members" => %{"Subnets" => %{"shape" => "Subnets"}}, "type" => "structure"}, "Policies" => %{"members" => %{"AppCookieStickinessPolicies" => %{"shape" => "AppCookieStickinessPolicies"}, "LBCookieStickinessPolicies" => %{"shape" => "LBCookieStickinessPolicies"}, "OtherPolicies" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 1, "type" => "list"}, "InstancePort" => %{"max" => 65535, "min" => 1, "type" => "integer"}, "HealthCheckTarget" => %{"type" => "string"}, "ListenerNotFoundException" => %{"error" => %{"code" => "ListenerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "LoadBalancerNamesMax20" => %{"max" => 20, "member" => %{"shape" => "AccessPointName"}, "min" => 1, "type" => "list"}, "TagValue" => %{"max" => 256, "min" => 0, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "InvalidSecurityGroupException" => %{"error" => %{"code" => "InvalidSecurityGroup", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AccessLogPrefix" => %{"type" => "string"}, "SecurityGroupId" => %{"type" => "string"}, "DescribeLoadBalancerPoliciesInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "Instances" => %{"member" => %{"shape" => "Instance"}, "type" => "list"}, "AvailabilityZone" => %{"type" => "string"}, "PolicyAttributeDescription" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeValue" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "ConfigureHealthCheckInput" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "HealthCheck"], "type" => "structure"}, "HealthyThreshold" => %{"max" => 10, "min" => 2, "type" => "integer"}, "CertificateNotFoundException" => %{"error" => %{"code" => "CertificateNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeAccountLimitsOutput" => %{"members" => %{"Limits" => %{"shape" => "Limits"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "CreateLoadBalancerPolicyInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyAttributes" => %{"shape" => "PolicyAttributes"}, "PolicyName" => %{"shape" => "PolicyName"}, "PolicyTypeName" => %{"shape" => "PolicyTypeName"}}, "required" => ["LoadBalancerName", "PolicyName", "PolicyTypeName"], "type" => "structure"}, "Max" => %{"type" => "string"}, "TagDescription" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ConnectionDrainingEnabled" => %{"type" => "boolean"}, "AccessLog" => %{"members" => %{"EmitInterval" => %{"shape" => "AccessLogInterval"}, "Enabled" => %{"shape" => "AccessLogEnabled"}, "S3BucketName" => %{"shape" => "S3BucketName"}, "S3BucketPrefix" => %{"shape" => "AccessLogPrefix"}}, "required" => ["Enabled"], "type" => "structure"}, "SetLoadBalancerPoliciesForBackendServerInput" => %{"members" => %{"InstancePort" => %{"shape" => "EndPointPort"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "required" => ["LoadBalancerName", "InstancePort", "PolicyNames"], "type" => "structure"}, "DeregisterEndPointsInput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "Instances"], "type" => "structure"}, "AccessPointNotFoundException" => %{"error" => %{"code" => "LoadBalancerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SubnetId" => %{"type" => "string"}, "DescribeAccountLimitsInput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "CreateAccessPointOutput" => %{"members" => %{"DNSName" => %{"shape" => "DNSName"}}, "type" => "structure"}, "CreateAppCookieStickinessPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "InstanceState" => %{"members" => %{"Description" => %{"shape" => "Description"}, "InstanceId" => %{"shape" => "InstanceId"}, "ReasonCode" => %{"shape" => "ReasonCode"}, "State" => %{"shape" => "State"}}, "type" => "structure"}, "PolicyNotFoundException" => %{"error" => %{"code" => "PolicyNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SetLoadBalancerListenerSSLCertificateOutput" => %{"members" => %{}, "type" => "structure"}, "Protocol" => %{"type" => "string"}, "CreateAccessPointInput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "Listeners" => %{"shape" => "Listeners"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "Scheme" => %{"shape" => "LoadBalancerScheme"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "Subnets" => %{"shape" => "Subnets"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["LoadBalancerName", "Listeners"], "type" => "structure"}, "ApplySecurityGroupsToLoadBalancerOutput" => %{"members" => %{"SecurityGroups" => %{"shape" => "SecurityGroups"}}, "type" => "structure"}, "CreatedTime" => %{"type" => "timestamp"}, "AvailabilityZones" => %{"member" => %{"shape" => "AvailabilityZone"}, "type" => "list"}, "ApplySecurityGroupsToLoadBalancerInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}}, "required" => ["LoadBalancerName", "SecurityGroups"], "type" => "structure"}, "PolicyAttributes" => %{"member" => %{"shape" => "PolicyAttribute"}, "type" => "list"}, "TooManyPoliciesException" => %{"error" => %{"code" => "TooManyPolicies", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "PolicyAttributeDescriptions" => %{"member" => %{"shape" => "PolicyAttributeDescription"}, "type" => "list"}, "DescribeEndPointStateOutput" => %{"members" => %{"InstanceStates" => %{"shape" => "InstanceStates"}}, "type" => "structure"}, "ConfigureHealthCheckOutput" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}}, "type" => "structure"}, "Marker" => %{"type" => "string"}, "AdditionalAttributeKey" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9.]+$", "type" => "string"}, "DescribeLoadBalancerAttributesOutput" => %{"members" => %{"LoadBalancerAttributes" => %{"shape" => "LoadBalancerAttributes"}}, "type" => "structure"}, "VPCId" => %{"type" => "string"}, "InvalidEndPointException" => %{"error" => %{"code" => "InvalidInstance", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "PolicyAttribute" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeValue" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "UnhealthyThreshold" => %{"max" => 10, "min" => 2, "type" => "integer"}, "ModifyLoadBalancerAttributesOutput" => %{"members" => %{"LoadBalancerAttributes" => %{"shape" => "LoadBalancerAttributes"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "type" => "structure"}, "DeleteAccessPointOutput" => %{"members" => %{}, "type" => "structure"}, "DeleteLoadBalancerListenerOutput" => %{"members" => %{}, "type" => "structure"}, "LoadBalancerAttributes" => %{"members" => %{"AccessLog" => %{"shape" => "AccessLog"}, "AdditionalAttributes" => %{"shape" => "AdditionalAttributes"}, "ConnectionDraining" => %{"shape" => "ConnectionDraining"}, "ConnectionSettings" => %{"shape" => "ConnectionSettings"}, "CrossZoneLoadBalancing" => %{"shape" => "CrossZoneLoadBalancing"}}, "type" => "structure"}, "DescribeTagsOutput" => %{"members" => %{"TagDescriptions" => %{"shape" => "TagDescriptions"}}, "type" => "structure"}, "RegisterEndPointsOutput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}}, "type" => "structure"}, "EndPointPort" => %{"type" => "integer"}, "LoadBalancerScheme" => %{"type" => "string"}, "PolicyTypeName" => %{"type" => "string"}, "TooManyTagsException" => %{"error" => %{"code" => "TooManyTags", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "PolicyName" => %{"type" => "string"}, "CrossZoneLoadBalancing" => %{"members" => %{"Enabled" => %{"shape" => "CrossZoneLoadBalancingEnabled"}}, "required" => ["Enabled"], "type" => "structure"}, "SetLoadBalancerListenerSSLCertificateInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "LoadBalancerPort" => %{"shape" => "AccessPointPort"}, "SSLCertificateId" => %{"shape" => "SSLCertificateId"}}, "required" => ["LoadBalancerName", "LoadBalancerPort", "SSLCertificateId"], "type" => "structure"}, "AttributeValue" => %{"type" => "string"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "CookieName" => %{"type" => "string"}, "AccessPointName" => %{"type" => "string"}, "SourceSecurityGroup" => %{"members" => %{"GroupName" => %{"shape" => "SecurityGroupName"}, "OwnerAlias" => %{"shape" => "SecurityGroupOwnerAlias"}}, "type" => "structure"}, "DeleteAccessPointInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName"], "type" => "structure"}, "AdditionalAttribute" => %{"members" => %{"Key" => %{"shape" => "AdditionalAttributeKey"}, "Value" => %{"shape" => "AdditionalAttributeValue"}}, "type" => "structure"}, "ConnectionDraining" => %{"members" => %{"Enabled" => %{"shape" => "ConnectionDrainingEnabled"}, "Timeout" => %{"shape" => "ConnectionDrainingTimeout"}}, "required" => ["Enabled"], "type" => "structure"}, "SetLoadBalancerPoliciesOfListenerInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "LoadBalancerPort" => %{"shape" => "AccessPointPort"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "required" => ["LoadBalancerName", "LoadBalancerPort", "PolicyNames"], "type" => "structure"}, "ConnectionSettings" => %{"members" => %{"IdleTimeout" => %{"shape" => "IdleTimeout"}}, "required" => ["IdleTimeout"], "type" => "structure"}, "LoadBalancerNames" => %{"member" => %{"shape" => "AccessPointName"}, "type" => "list"}, "HealthCheck" => %{"members" => %{"HealthyThreshold" => %{"shape" => "HealthyThreshold"}, "Interval" => %{"shape" => "HealthCheckInterval"}, "Target" => %{"shape" => "HealthCheckTarget"}, "Timeout" => %{"shape" => "HealthCheckTimeout"}, "UnhealthyThreshold" => %{"shape" => "UnhealthyThreshold"}}, "required" => ["Target", "Interval", "Timeout", "UnhealthyThreshold", "HealthyThreshold"], "type" => "structure"}, "DuplicateListenerException" => %{"error" => %{"code" => "DuplicateListener", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "HealthCheckInterval" => %{"max" => 300, "min" => 5, "type" => "integer"}, "DescribeAccessPointsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNames"}, "Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "PolicyNames" => %{"member" => %{"shape" => "PolicyName"}, "type" => "list"}, "AppCookieStickinessPolicy" => %{"members" => %{"CookieName" => %{"shape" => "CookieName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "CookieExpirationPeriod" => %{"type" => "long"}, "CreateLBCookieStickinessPolicyInput" => %{"members" => %{"CookieExpirationPeriod" => %{"shape" => "CookieExpirationPeriod"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "required" => ["LoadBalancerName", "PolicyName"], "type" => "structure"}, "SSLCertificateId" => %{"type" => "string"}, "RegisterEndPointsInput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "Instances"], "type" => "structure"}, "InstanceStates" => %{"member" => %{"shape" => "InstanceState"}, "type" => "list"}, "DeleteLoadBalancerPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "HealthCheckTimeout" => %{"max" => 60, "min" => 2, "type" => "integer"}, "DescribeTagsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNamesMax20"}}, "required" => ["LoadBalancerNames"], "type" => "structure"}, "PolicyAttributeTypeDescriptions" => %{"member" => %{"shape" => "PolicyAttributeTypeDescription"}, "type" => "list"}, "AccessLogInterval" => %{"type" => "integer"}, "BackendServerDescription" => %{"members" => %{"InstancePort" => %{"shape" => "InstancePort"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "State" => %{"type" => "string"}, "Instance" => %{"members" => %{"InstanceId" => %{"shape" => "InstanceId"}}, "type" => "structure"}}
+		%{"DescribeLoadBalancerPolicyTypesInput" => %{"members" => %{"PolicyTypeNames" => %{"shape" => "PolicyTypeNames"}}, "type" => "structure"}, "PageSize" => %{"max" => 400, "min" => 1, "type" => "integer"}, "TagKeyOnly" => %{"members" => %{"Key" => %{"shape" => "TagKey"}}, "type" => "structure"}, "Listeners" => %{"member" => %{"shape" => "Listener"}, "type" => "list"}, "TagDescriptions" => %{"member" => %{"shape" => "TagDescription"}, "type" => "list"}, "Ports" => %{"member" => %{"shape" => "AccessPointPort"}, "type" => "list"}, "LBCookieStickinessPolicies" => %{"member" => %{"shape" => "LBCookieStickinessPolicy"}, "type" => "list"}, "DescribeLoadBalancerPolicyTypesOutput" => %{"members" => %{"PolicyTypeDescriptions" => %{"shape" => "PolicyTypeDescriptions"}}, "type" => "structure"}, "InvalidSubnetException" => %{"error" => %{"code" => "InvalidSubnet", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKeyOnly"}, "min" => 1, "type" => "list"}, "Subnets" => %{"member" => %{"shape" => "SubnetId"}, "type" => "list"}, "PolicyDescription" => %{"members" => %{"PolicyAttributeDescriptions" => %{"shape" => "PolicyAttributeDescriptions"}, "PolicyName" => %{"shape" => "PolicyName"}, "PolicyTypeName" => %{"shape" => "PolicyTypeName"}}, "type" => "structure"}, "AttachLoadBalancerToSubnetsInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "Subnets" => %{"shape" => "Subnets"}}, "required" => ["LoadBalancerName", "Subnets"], "type" => "structure"}, "BackendServerDescriptions" => %{"member" => %{"shape" => "BackendServerDescription"}, "type" => "list"}, "AddTagsOutput" => %{"members" => %{}, "type" => "structure"}, "SetLoadBalancerPoliciesForBackendServerOutput" => %{"members" => %{}, "type" => "structure"}, "DNSName" => %{"type" => "string"}, "S3BucketName" => %{"type" => "string"}, "CreateLoadBalancerListenerInput" => %{"members" => %{"Listeners" => %{"shape" => "Listeners"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "Listeners"], "type" => "structure"}, "PolicyTypeNames" => %{"member" => %{"shape" => "PolicyTypeName"}, "type" => "list"}, "Listener" => %{"members" => %{"InstancePort" => %{"shape" => "InstancePort"}, "InstanceProtocol" => %{"shape" => "Protocol"}, "LoadBalancerPort" => %{"shape" => "AccessPointPort"}, "Protocol" => %{"shape" => "Protocol"}, "SSLCertificateId" => %{"shape" => "SSLCertificateId"}}, "required" => ["Protocol", "LoadBalancerPort", "InstancePort"], "type" => "structure"}, "CreateLoadBalancerListenerOutput" => %{"members" => %{}, "type" => "structure"}, "SecurityGroupOwnerAlias" => %{"type" => "string"}, "RemoveTagsOutput" => %{"members" => %{}, "type" => "structure"}, "DeleteLoadBalancerListenerInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "LoadBalancerPorts" => %{"shape" => "Ports"}}, "required" => ["LoadBalancerName", "LoadBalancerPorts"], "type" => "structure"}, "PolicyTypeDescriptions" => %{"member" => %{"shape" => "PolicyTypeDescription"}, "type" => "list"}, "CrossZoneLoadBalancingEnabled" => %{"type" => "boolean"}, "TooManyAccessPointsException" => %{"error" => %{"code" => "TooManyLoadBalancers", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AttributeName" => %{"type" => "string"}, "DetachLoadBalancerFromSubnetsOutput" => %{"members" => %{"Subnets" => %{"shape" => "Subnets"}}, "type" => "structure"}, "PolicyAttributeTypeDescription" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeType" => %{"shape" => "AttributeType"}, "Cardinality" => %{"shape" => "Cardinality"}, "DefaultValue" => %{"shape" => "DefaultValue"}, "Description" => %{"shape" => "Description"}}, "type" => "structure"}, "DescribeAccessPointsOutput" => %{"members" => %{"LoadBalancerDescriptions" => %{"shape" => "LoadBalancerDescriptions"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "DeregisterEndPointsOutput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}}, "type" => "structure"}, "PolicyTypeDescription" => %{"members" => %{"Description" => %{"shape" => "Description"}, "PolicyAttributeTypeDescriptions" => %{"shape" => "PolicyAttributeTypeDescriptions"}, "PolicyTypeName" => %{"shape" => "PolicyTypeName"}}, "type" => "structure"}, "PolicyDescriptions" => %{"member" => %{"shape" => "PolicyDescription"}, "type" => "list"}, "DuplicatePolicyNameException" => %{"error" => %{"code" => "DuplicatePolicyName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DeleteLoadBalancerPolicyInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "required" => ["LoadBalancerName", "PolicyName"], "type" => "structure"}, "DetachLoadBalancerFromSubnetsInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "Subnets" => %{"shape" => "Subnets"}}, "required" => ["LoadBalancerName", "Subnets"], "type" => "structure"}, "InvalidConfigurationRequestException" => %{"error" => %{"code" => "InvalidConfigurationRequest", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "LoadBalancerAttributeNotFoundException" => %{"error" => %{"code" => "LoadBalancerAttributeNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AddTagsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNames"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["LoadBalancerNames", "Tags"], "type" => "structure"}, "SetLoadBalancerPoliciesOfListenerOutput" => %{"members" => %{}, "type" => "structure"}, "Cardinality" => %{"type" => "string"}, "CreateLoadBalancerPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeLoadBalancerAttributesInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName"], "type" => "structure"}, "ListenerDescription" => %{"members" => %{"Listener" => %{"shape" => "Listener"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "AddAvailabilityZonesOutput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}}, "type" => "structure"}, "LBCookieStickinessPolicy" => %{"members" => %{"CookieExpirationPeriod" => %{"shape" => "CookieExpirationPeriod"}, "PolicyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "InstanceId" => %{"type" => "string"}, "Name" => %{"type" => "string"}, "CreateAppCookieStickinessPolicyInput" => %{"members" => %{"CookieName" => %{"shape" => "CookieName"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "required" => ["LoadBalancerName", "PolicyName", "CookieName"], "type" => "structure"}, "RemoveAvailabilityZonesOutput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}}, "type" => "structure"}, "Limit" => %{"members" => %{"Max" => %{"shape" => "Max"}, "Name" => %{"shape" => "Name"}}, "type" => "structure"}, "ReasonCode" => %{"type" => "string"}, "AccessPointPort" => %{"type" => "integer"}, "LoadBalancerDescription" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "BackendServerDescriptions" => %{"shape" => "BackendServerDescriptions"}, "CanonicalHostedZoneName" => %{"shape" => "DNSName"}, "CanonicalHostedZoneNameID" => %{"shape" => "DNSName"}, "CreatedTime" => %{"shape" => "CreatedTime"}, "DNSName" => %{"shape" => "DNSName"}, "HealthCheck" => %{"shape" => "HealthCheck"}, "Instances" => %{"shape" => "Instances"}, "ListenerDescriptions" => %{"shape" => "ListenerDescriptions"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "Policies" => %{"shape" => "Policies"}, "Scheme" => %{"shape" => "LoadBalancerScheme"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "SourceSecurityGroup" => %{"shape" => "SourceSecurityGroup"}, "Subnets" => %{"shape" => "Subnets"}, "VPCId" => %{"shape" => "VPCId"}}, "type" => "structure"}, "AdditionalAttributeValue" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9.]+$", "type" => "string"}, "ListenerDescriptions" => %{"member" => %{"shape" => "ListenerDescription"}, "type" => "list"}, "DuplicateTagKeysException" => %{"error" => %{"code" => "DuplicateTagKeys", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "IdleTimeout" => %{"max" => 3600, "min" => 1, "type" => "integer"}, "CreateLBCookieStickinessPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "Description" => %{"type" => "string"}, "AccessLogEnabled" => %{"type" => "boolean"}, "DescribeEndPointStateInput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName"], "type" => "structure"}, "DependencyThrottleException" => %{"error" => %{"code" => "DependencyThrottle", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "Limits" => %{"member" => %{"shape" => "Limit"}, "type" => "list"}, "AdditionalAttributes" => %{"max" => 10, "member" => %{"shape" => "AdditionalAttribute"}, "type" => "list"}, "DuplicateAccessPointNameException" => %{"error" => %{"code" => "DuplicateLoadBalancerName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "RemoveTagsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNames"}, "Tags" => %{"shape" => "TagKeyList"}}, "required" => ["LoadBalancerNames", "Tags"], "type" => "structure"}, "PolicyTypeNotFoundException" => %{"error" => %{"code" => "PolicyTypeNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SecurityGroups" => %{"member" => %{"shape" => "SecurityGroupId"}, "type" => "list"}, "SubnetNotFoundException" => %{"error" => %{"code" => "SubnetNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ModifyLoadBalancerAttributesInput" => %{"members" => %{"LoadBalancerAttributes" => %{"shape" => "LoadBalancerAttributes"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "LoadBalancerAttributes"], "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key"], "type" => "structure"}, "DefaultValue" => %{"type" => "string"}, "AddAvailabilityZonesInput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "AvailabilityZones"], "type" => "structure"}, "UnsupportedProtocolException" => %{"error" => %{"code" => "UnsupportedProtocol", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "InvalidSchemeException" => %{"error" => %{"code" => "InvalidScheme", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "ConnectionDrainingTimeout" => %{"type" => "integer"}, "AppCookieStickinessPolicies" => %{"member" => %{"shape" => "AppCookieStickinessPolicy"}, "type" => "list"}, "RemoveAvailabilityZonesInput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "AvailabilityZones"], "type" => "structure"}, "DescribeLoadBalancerPoliciesOutput" => %{"members" => %{"PolicyDescriptions" => %{"shape" => "PolicyDescriptions"}}, "type" => "structure"}, "LoadBalancerDescriptions" => %{"member" => %{"shape" => "LoadBalancerDescription"}, "type" => "list"}, "SecurityGroupName" => %{"type" => "string"}, "AttributeType" => %{"type" => "string"}, "AttachLoadBalancerToSubnetsOutput" => %{"members" => %{"Subnets" => %{"shape" => "Subnets"}}, "type" => "structure"}, "Policies" => %{"members" => %{"AppCookieStickinessPolicies" => %{"shape" => "AppCookieStickinessPolicies"}, "LBCookieStickinessPolicies" => %{"shape" => "LBCookieStickinessPolicies"}, "OtherPolicies" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 1, "type" => "list"}, "InstancePort" => %{"max" => 65535, "min" => 1, "type" => "integer"}, "HealthCheckTarget" => %{"type" => "string"}, "ListenerNotFoundException" => %{"error" => %{"code" => "ListenerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "LoadBalancerNamesMax20" => %{"max" => 20, "member" => %{"shape" => "AccessPointName"}, "min" => 1, "type" => "list"}, "TagValue" => %{"max" => 256, "min" => 0, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "InvalidSecurityGroupException" => %{"error" => %{"code" => "InvalidSecurityGroup", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "AccessLogPrefix" => %{"type" => "string"}, "SecurityGroupId" => %{"type" => "string"}, "DescribeLoadBalancerPoliciesInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "Instances" => %{"member" => %{"shape" => "Instance"}, "type" => "list"}, "AvailabilityZone" => %{"type" => "string"}, "PolicyAttributeDescription" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeValue" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "ConfigureHealthCheckInput" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "HealthCheck"], "type" => "structure"}, "HealthyThreshold" => %{"max" => 10, "min" => 2, "type" => "integer"}, "CertificateNotFoundException" => %{"error" => %{"code" => "CertificateNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "DescribeAccountLimitsOutput" => %{"members" => %{"Limits" => %{"shape" => "Limits"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "CreateLoadBalancerPolicyInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyAttributes" => %{"shape" => "PolicyAttributes"}, "PolicyName" => %{"shape" => "PolicyName"}, "PolicyTypeName" => %{"shape" => "PolicyTypeName"}}, "required" => ["LoadBalancerName", "PolicyName", "PolicyTypeName"], "type" => "structure"}, "Max" => %{"type" => "string"}, "TagDescription" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ConnectionDrainingEnabled" => %{"type" => "boolean"}, "AccessLog" => %{"members" => %{"EmitInterval" => %{"shape" => "AccessLogInterval"}, "Enabled" => %{"shape" => "AccessLogEnabled"}, "S3BucketName" => %{"shape" => "S3BucketName"}, "S3BucketPrefix" => %{"shape" => "AccessLogPrefix"}}, "required" => ["Enabled"], "type" => "structure"}, "SetLoadBalancerPoliciesForBackendServerInput" => %{"members" => %{"InstancePort" => %{"shape" => "EndPointPort"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "required" => ["LoadBalancerName", "InstancePort", "PolicyNames"], "type" => "structure"}, "DeregisterEndPointsInput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "Instances"], "type" => "structure"}, "AccessPointNotFoundException" => %{"error" => %{"code" => "LoadBalancerNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SubnetId" => %{"type" => "string"}, "DescribeAccountLimitsInput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "CreateAccessPointOutput" => %{"members" => %{"DNSName" => %{"shape" => "DNSName"}}, "type" => "structure"}, "CreateAppCookieStickinessPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "InstanceState" => %{"members" => %{"Description" => %{"shape" => "Description"}, "InstanceId" => %{"shape" => "InstanceId"}, "ReasonCode" => %{"shape" => "ReasonCode"}, "State" => %{"shape" => "State"}}, "type" => "structure"}, "PolicyNotFoundException" => %{"error" => %{"code" => "PolicyNotFound", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "SetLoadBalancerListenerSSLCertificateOutput" => %{"members" => %{}, "type" => "structure"}, "Protocol" => %{"type" => "string"}, "CreateAccessPointInput" => %{"members" => %{"AvailabilityZones" => %{"shape" => "AvailabilityZones"}, "Listeners" => %{"shape" => "Listeners"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "Scheme" => %{"shape" => "LoadBalancerScheme"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "Subnets" => %{"shape" => "Subnets"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["LoadBalancerName", "Listeners"], "type" => "structure"}, "ApplySecurityGroupsToLoadBalancerOutput" => %{"members" => %{"SecurityGroups" => %{"shape" => "SecurityGroups"}}, "type" => "structure"}, "CreatedTime" => %{"type" => "timestamp"}, "AvailabilityZones" => %{"member" => %{"shape" => "AvailabilityZone"}, "type" => "list"}, "ApplySecurityGroupsToLoadBalancerInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}}, "required" => ["LoadBalancerName", "SecurityGroups"], "type" => "structure"}, "PolicyAttributes" => %{"member" => %{"shape" => "PolicyAttribute"}, "type" => "list"}, "TooManyPoliciesException" => %{"error" => %{"code" => "TooManyPolicies", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "PolicyAttributeDescriptions" => %{"member" => %{"shape" => "PolicyAttributeDescription"}, "type" => "list"}, "DescribeEndPointStateOutput" => %{"members" => %{"InstanceStates" => %{"shape" => "InstanceStates"}}, "type" => "structure"}, "ConfigureHealthCheckOutput" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}}, "type" => "structure"}, "Marker" => %{"type" => "string"}, "AdditionalAttributeKey" => %{"max" => 256, "pattern" => "^[a-zA-Z0-9.]+$", "type" => "string"}, "DescribeLoadBalancerAttributesOutput" => %{"members" => %{"LoadBalancerAttributes" => %{"shape" => "LoadBalancerAttributes"}}, "type" => "structure"}, "VPCId" => %{"type" => "string"}, "InvalidEndPointException" => %{"error" => %{"code" => "InvalidInstance", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "PolicyAttribute" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeValue" => %{"shape" => "AttributeValue"}}, "type" => "structure"}, "UnhealthyThreshold" => %{"max" => 10, "min" => 2, "type" => "integer"}, "ModifyLoadBalancerAttributesOutput" => %{"members" => %{"LoadBalancerAttributes" => %{"shape" => "LoadBalancerAttributes"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "type" => "structure"}, "DeleteAccessPointOutput" => %{"members" => %{}, "type" => "structure"}, "DeleteLoadBalancerListenerOutput" => %{"members" => %{}, "type" => "structure"}, "LoadBalancerAttributes" => %{"members" => %{"AccessLog" => %{"shape" => "AccessLog"}, "AdditionalAttributes" => %{"shape" => "AdditionalAttributes"}, "ConnectionDraining" => %{"shape" => "ConnectionDraining"}, "ConnectionSettings" => %{"shape" => "ConnectionSettings"}, "CrossZoneLoadBalancing" => %{"shape" => "CrossZoneLoadBalancing"}}, "type" => "structure"}, "DescribeTagsOutput" => %{"members" => %{"TagDescriptions" => %{"shape" => "TagDescriptions"}}, "type" => "structure"}, "RegisterEndPointsOutput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}}, "type" => "structure"}, "EndPointPort" => %{"type" => "integer"}, "LoadBalancerScheme" => %{"type" => "string"}, "PolicyTypeName" => %{"type" => "string"}, "TooManyTagsException" => %{"error" => %{"code" => "TooManyTags", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "PolicyName" => %{"type" => "string"}, "CrossZoneLoadBalancing" => %{"members" => %{"Enabled" => %{"shape" => "CrossZoneLoadBalancingEnabled"}}, "required" => ["Enabled"], "type" => "structure"}, "SetLoadBalancerListenerSSLCertificateInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "LoadBalancerPort" => %{"shape" => "AccessPointPort"}, "SSLCertificateId" => %{"shape" => "SSLCertificateId"}}, "required" => ["LoadBalancerName", "LoadBalancerPort", "SSLCertificateId"], "type" => "structure"}, "AttributeValue" => %{"type" => "string"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "CookieName" => %{"type" => "string"}, "AccessPointName" => %{"type" => "string"}, "SourceSecurityGroup" => %{"members" => %{"GroupName" => %{"shape" => "SecurityGroupName"}, "OwnerAlias" => %{"shape" => "SecurityGroupOwnerAlias"}}, "type" => "structure"}, "DeleteAccessPointInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName"], "type" => "structure"}, "AdditionalAttribute" => %{"members" => %{"Key" => %{"shape" => "AdditionalAttributeKey"}, "Value" => %{"shape" => "AdditionalAttributeValue"}}, "type" => "structure"}, "ConnectionDraining" => %{"members" => %{"Enabled" => %{"shape" => "ConnectionDrainingEnabled"}, "Timeout" => %{"shape" => "ConnectionDrainingTimeout"}}, "required" => ["Enabled"], "type" => "structure"}, "SetLoadBalancerPoliciesOfListenerInput" => %{"members" => %{"LoadBalancerName" => %{"shape" => "AccessPointName"}, "LoadBalancerPort" => %{"shape" => "AccessPointPort"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "required" => ["LoadBalancerName", "LoadBalancerPort", "PolicyNames"], "type" => "structure"}, "ConnectionSettings" => %{"members" => %{"IdleTimeout" => %{"shape" => "IdleTimeout"}}, "required" => ["IdleTimeout"], "type" => "structure"}, "LoadBalancerNames" => %{"member" => %{"shape" => "AccessPointName"}, "type" => "list"}, "HealthCheck" => %{"members" => %{"HealthyThreshold" => %{"shape" => "HealthyThreshold"}, "Interval" => %{"shape" => "HealthCheckInterval"}, "Target" => %{"shape" => "HealthCheckTarget"}, "Timeout" => %{"shape" => "HealthCheckTimeout"}, "UnhealthyThreshold" => %{"shape" => "UnhealthyThreshold"}}, "required" => ["Target", "Interval", "Timeout", "UnhealthyThreshold", "HealthyThreshold"], "type" => "structure"}, "DuplicateListenerException" => %{"error" => %{"code" => "DuplicateListener", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{}, "type" => "structure"}, "HealthCheckInterval" => %{"max" => 300, "min" => 5, "type" => "integer"}, "DescribeAccessPointsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNames"}, "Marker" => %{"shape" => "Marker"}, "PageSize" => %{"shape" => "PageSize"}}, "type" => "structure"}, "PolicyNames" => %{"member" => %{"shape" => "PolicyName"}, "type" => "list"}, "AppCookieStickinessPolicy" => %{"members" => %{"CookieName" => %{"shape" => "CookieName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "CookieExpirationPeriod" => %{"type" => "long"}, "CreateLBCookieStickinessPolicyInput" => %{"members" => %{"CookieExpirationPeriod" => %{"shape" => "CookieExpirationPeriod"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}, "PolicyName" => %{"shape" => "PolicyName"}}, "required" => ["LoadBalancerName", "PolicyName"], "type" => "structure"}, "SSLCertificateId" => %{"type" => "string"}, "RegisterEndPointsInput" => %{"members" => %{"Instances" => %{"shape" => "Instances"}, "LoadBalancerName" => %{"shape" => "AccessPointName"}}, "required" => ["LoadBalancerName", "Instances"], "type" => "structure"}, "InstanceStates" => %{"member" => %{"shape" => "InstanceState"}, "type" => "list"}, "DeleteLoadBalancerPolicyOutput" => %{"members" => %{}, "type" => "structure"}, "HealthCheckTimeout" => %{"max" => 60, "min" => 2, "type" => "integer"}, "DescribeTagsInput" => %{"members" => %{"LoadBalancerNames" => %{"shape" => "LoadBalancerNamesMax20"}}, "required" => ["LoadBalancerNames"], "type" => "structure"}, "PolicyAttributeTypeDescriptions" => %{"member" => %{"shape" => "PolicyAttributeTypeDescription"}, "type" => "list"}, "AccessLogInterval" => %{"type" => "integer"}, "BackendServerDescription" => %{"members" => %{"InstancePort" => %{"shape" => "InstancePort"}, "PolicyNames" => %{"shape" => "PolicyNames"}}, "type" => "structure"}, "State" => %{"type" => "string"}, "Instance" => %{"members" => %{"InstanceId" => %{"shape" => "InstanceId"}}, "type" => "structure"}}
   end
 end
