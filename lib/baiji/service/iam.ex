@@ -102,9 +102,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRolePolicyRequest",
+      output_shape:     "GetRolePolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Simulate how a set of IAM policies attached to an IAM entity works with a
@@ -148,9 +152,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "SimulatePrincipalPolicyRequest",
+      output_shape:     "SimulatePolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the specified inline policy document that is embedded in the
@@ -183,9 +191,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetUserPolicyRequest",
+      output_shape:     "GetUserPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about the specified instance profile, including the
@@ -205,9 +217,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceProfileRequest",
+      output_shape:     "GetInstanceProfileResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified service-specific credential.
@@ -223,9 +239,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteServiceSpecificCredentialRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all managed policies that are attached to the specified IAM user.
@@ -253,9 +273,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAttachedUserPoliciesRequest",
+      output_shape:     "ListAttachedUserPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Synchronizes the specified MFA device with its IAM resource object on the
@@ -277,9 +301,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ResyncMFADeviceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified AWS account alias. For information about using an AWS
@@ -298,9 +326,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteAccountAliasRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches the specified managed policy to the specified user.
@@ -323,9 +355,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "AttachUserPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the IAM roles that have the specified path prefix. If there are none,
@@ -346,9 +382,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListRolesRequest",
+      output_shape:     "ListRolesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all the managed policies that are available in your AWS account,
@@ -378,9 +418,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListPoliciesRequest",
+      output_shape:     "ListPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about IAM entity usage and IAM quotas in the AWS
@@ -401,9 +445,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "GetAccountSummaryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes the password of the IAM user who is calling this action. The root
@@ -425,9 +473,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ChangePasswordRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists information about the IAM OpenID Connect (OIDC) provider resource
@@ -444,9 +496,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListOpenIDConnectProvidersRequest",
+      output_shape:     "ListOpenIDConnectProvidersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of all of the context keys referenced in all of the IAM
@@ -479,9 +535,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetContextKeysForPrincipalPolicyRequest",
+      output_shape:     "GetContextKeysForPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all managed policies that are attached to the specified IAM role.
@@ -509,9 +569,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAttachedRolePoliciesRequest",
+      output_shape:     "ListAttachedRolePoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the names of the inline policies that are embedded in the specified
@@ -539,9 +603,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListRolePoliciesRequest",
+      output_shape:     "ListRolePoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the IAM groups that the specified IAM user belongs to.
@@ -559,9 +627,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListGroupsForUserRequest",
+      output_shape:     "ListGroupsForUserResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified managed policy from the specified user.
@@ -583,9 +655,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DetachUserPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an alias for your AWS account. For information about using an AWS
@@ -604,9 +680,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateAccountAliasRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the specified OpenID Connect (OIDC) provider
@@ -623,9 +703,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetOpenIDConnectProviderRequest",
+      output_shape:     "GetOpenIDConnectProviderResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists information about the versions of the specified managed policy,
@@ -648,9 +732,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListPolicyVersionsRequest",
+      output_shape:     "ListPolicyVersionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about the specified IAM user, including the user's
@@ -670,9 +758,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetUserRequest",
+      output_shape:     "GetUserResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Modifies the description of a role.
@@ -688,9 +780,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRoleDescriptionRequest",
+      output_shape:     "UpdateRoleDescriptionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified server certificate.
@@ -724,9 +820,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteServerCertificateRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an IAM resource that describes an identity provider (IdP) that
@@ -766,9 +866,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateSAMLProviderRequest",
+      output_shape:     "CreateSAMLProviderResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds the specified user to the specified group.
@@ -784,9 +888,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddUserToGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified version from the specified managed policy.
@@ -812,9 +920,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeletePolicyVersionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the name and/or the path of the specified IAM user.
@@ -846,9 +958,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateUserRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the status of a service-specific credential to `Active` or `Inactive`.
@@ -867,9 +983,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateServiceSpecificCredentialRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an IAM entity to describe an identity provider (IdP) that supports
@@ -904,9 +1024,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateOpenIDConnectProviderRequest",
+      output_shape:     "CreateOpenIDConnectProviderResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches the specified managed policy to the specified IAM role. When you
@@ -935,9 +1059,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "AttachRolePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deactivates the specified MFA device and removes it from association with
@@ -959,9 +1087,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeactivateMFADeviceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an OpenID Connect identity provider (IdP) resource object in IAM.
@@ -984,9 +1116,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteOpenIDConnectProviderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the SSH public keys associated with the specified
@@ -1013,9 +1149,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListSSHPublicKeysRequest",
+      output_shape:     "ListSSHPublicKeysResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a virtual MFA device.
@@ -1037,9 +1177,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteVirtualMFADeviceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified IAM group. The group must not contain any users or
@@ -1056,9 +1200,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes the password for the specified IAM user.
@@ -1079,9 +1227,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateLoginProfileRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches the specified managed policy to the specified IAM group.
@@ -1104,9 +1256,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "AttachGroupPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Generates a credential report for the AWS account. For more information
@@ -1125,9 +1281,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "GenerateCredentialReportResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the name and/or the path of the specified server certificate stored
@@ -1166,9 +1326,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateServerCertificateRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds the specified IAM role to the specified instance profile. An instance
@@ -1193,9 +1357,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddRoleToInstanceProfileRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Resets the password for a service-specific credential. The new password is
@@ -1214,9 +1382,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ResetServiceSpecificCredentialRequest",
+      output_shape:     "ResetServiceSpecificCredentialResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the specified version of the specified policy as the policy's default
@@ -1241,9 +1413,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "SetDefaultPolicyVersionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the metadata document for an existing SAML provider resource
@@ -1265,9 +1441,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateSAMLProviderRequest",
+      output_shape:     "UpdateSAMLProviderResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new IAM user for your AWS account.
@@ -1288,9 +1468,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateUserRequest",
+      output_shape:     "CreateUserResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the SAML provider metadocument that was uploaded when the IAM SAML
@@ -1312,9 +1496,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetSAMLProviderRequest",
+      output_shape:     "GetSAMLProviderResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified inline policy that is embedded in the specified IAM
@@ -1337,9 +1525,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteRolePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new managed policy for your AWS account.
@@ -1366,9 +1558,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreatePolicyRequest",
+      output_shape:     "CreatePolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the instance profiles that have the specified path prefix. If there
@@ -1389,9 +1585,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListInstanceProfilesRequest",
+      output_shape:     "ListInstanceProfilesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the password policy for the AWS account. There are no parameters.
@@ -1407,9 +1607,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified inline policy that is embedded in the specified IAM
@@ -1432,9 +1636,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteGroupPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds or updates an inline policy document that is embedded in the specified
@@ -1471,9 +1679,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutUserPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the MFA devices for an IAM user. If the request includes a IAM user
@@ -1495,9 +1707,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListMFADevicesRequest",
+      output_shape:     "ListMFADevicesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of IAM users that are in the specified IAM group. You can
@@ -1514,9 +1730,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetGroupRequest",
+      output_shape:     "GetGroupResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the user name and password-creation date for the specified IAM
@@ -1534,9 +1754,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetLoginProfileRequest",
+      output_shape:     "GetLoginProfileResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the password policy for the AWS account. For more information
@@ -1554,9 +1778,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "GetAccountPasswordPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the service-specific credentials associated with
@@ -1579,9 +1807,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListServiceSpecificCredentialsRequest",
+      output_shape:     "ListServiceSpecificCredentialsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an IAM role that is linked to a specific AWS service. The service
@@ -1610,9 +1842,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateServiceLinkedRoleRequest",
+      output_shape:     "CreateServiceLinkedRoleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all IAM users, groups, and roles that the specified managed policy is
@@ -1636,9 +1872,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListEntitiesForPolicyRequest",
+      output_shape:     "ListEntitiesForPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about the specified version of the specified managed
@@ -1679,9 +1919,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetPolicyVersionRequest",
+      output_shape:     "GetPolicyVersionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Generates a set of credentials consisting of a user name and password that
@@ -1713,9 +1957,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateServiceSpecificCredentialRequest",
+      output_shape:     "CreateServiceSpecificCredentialResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified client ID (also known as audience) from the list of
@@ -1736,9 +1984,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "RemoveClientIDFromOpenIDConnectProviderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Simulate how a set of IAM policies and optionally a resource-based policy
@@ -1772,9 +2024,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "SimulateCustomPolicyRequest",
+      output_shape:     "SimulatePolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified managed policy from the specified IAM group.
@@ -1796,9 +2052,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DetachGroupPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the virtual MFA devices defined in the AWS account by assignment
@@ -1819,9 +2079,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListVirtualMFADevicesRequest",
+      output_shape:     "ListVirtualMFADevicesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Replaces the existing list of server certificate thumbprints associated
@@ -1855,9 +2119,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateOpenIDConnectProviderThumbprintRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified role. The role must not have any policies attached.
@@ -1882,9 +2150,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteRoleRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified IAM role from the specified EC2 instance profile.
@@ -1910,9 +2182,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "RemoveRoleFromInstanceProfileRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the server certificates stored in IAM that have the specified path
@@ -1937,9 +2213,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListServerCertificatesRequest",
+      output_shape:     "ListServerCertificatesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the SAML provider resource objects defined in IAM in the account.
@@ -1960,9 +2240,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListSAMLProvidersRequest",
+      output_shape:     "ListSAMLProvidersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds or updates an inline policy document that is embedded in the specified
@@ -2006,9 +2290,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutRolePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified IAM user. The user must not belong to any groups or
@@ -2025,9 +2313,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteUserRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Uploads an SSH public key and associates it with the specified IAM user.
@@ -2050,9 +2342,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UploadSSHPublicKeyRequest",
+      output_shape:     "UploadSSHPublicKeyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Uploads a server certificate entity for the AWS account. The server
@@ -2101,9 +2397,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UploadServerCertificateRequest",
+      output_shape:     "UploadServerCertificateResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about the specified role, including the role's path,
@@ -2131,9 +2431,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRoleRequest",
+      output_shape:     "GetRoleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the IAM users that have the specified path prefix. If no path prefix
@@ -2153,9 +2457,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListUsersRequest",
+      output_shape:     "ListUsersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the access key pair associated with the specified IAM user.
@@ -2176,9 +2484,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteAccessKeyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the IAM groups that have the specified path prefix.
@@ -2196,9 +2508,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListGroupsRequest",
+      output_shape:     "ListGroupsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a credential report for the AWS account. For more information
@@ -2217,9 +2533,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "GetCredentialReportResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Enables the specified MFA device and associates it with the specified IAM
@@ -2237,9 +2557,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "EnableMFADeviceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified user from the specified group.
@@ -2255,9 +2579,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "RemoveUserFromGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new role for your AWS account. For more information about roles,
@@ -2279,9 +2607,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateRoleRequest",
+      output_shape:     "CreateRoleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes the status of the specified access key from Active to Inactive, or
@@ -2309,9 +2641,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateAccessKeyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a SAML provider resource in IAM.
@@ -2337,9 +2673,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSAMLProviderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about all IAM users, groups, roles, and policies in
@@ -2361,9 +2701,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetAccountAuthorizationDetailsRequest",
+      output_shape:     "GetAccountAuthorizationDetailsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the specified inline policy document that is embedded in the
@@ -2396,9 +2740,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetGroupPolicyRequest",
+      output_shape:     "GetGroupPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the names of the inline policies embedded in the specified IAM user.
@@ -2425,9 +2773,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListUserPoliciesRequest",
+      output_shape:     "ListUserPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the password policy settings for the AWS account.
@@ -2453,9 +2805,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateAccountPasswordPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new instance profile. For information about instance profiles, go
@@ -2478,9 +2834,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateInstanceProfileRequest",
+      output_shape:     "CreateInstanceProfileResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified inline policy that is embedded in the specified IAM
@@ -2503,9 +2863,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteUserPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified instance profile. The instance profile must not have
@@ -2531,9 +2895,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteInstanceProfileRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the names of the inline policies that are embedded in the specified
@@ -2561,9 +2929,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListGroupPoliciesRequest",
+      output_shape:     "ListGroupPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the specified SSH public key, including metadata about the key.
@@ -2586,9 +2958,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetSSHPublicKeyRequest",
+      output_shape:     "GetSSHPublicKeyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the policy that grants an IAM entity permission to assume a role.
@@ -2608,9 +2984,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateAssumeRolePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of all of the context keys referenced in the input policies.
@@ -2637,9 +3017,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetContextKeysForCustomPolicyRequest",
+      output_shape:     "GetContextKeysForPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about when the specified access key was last used.
@@ -2658,9 +3042,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetAccessKeyLastUsedRequest",
+      output_shape:     "GetAccessKeyLastUsedResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the account alias associated with the AWS account (Note: you can have
@@ -2680,9 +3068,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAccountAliasesRequest",
+      output_shape:     "ListAccountAliasesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new AWS secret access key and corresponding AWS access key ID for
@@ -2717,9 +3109,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateAccessKeyRequest",
+      output_shape:     "CreateAccessKeyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified managed policy.
@@ -2759,9 +3155,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeletePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the name and/or the path of the specified IAM group.
@@ -2791,9 +3191,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all managed policies that are attached to the specified IAM group.
@@ -2821,9 +3225,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAttachedGroupPoliciesRequest",
+      output_shape:     "ListAttachedGroupPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about the specified managed policy, including the
@@ -2854,9 +3262,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetPolicyRequest",
+      output_shape:     "GetPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new group.
@@ -2877,9 +3289,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateGroupRequest",
+      output_shape:     "CreateGroupResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a new client ID (also known as audience) to the list of client IDs
@@ -2900,9 +3316,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddClientIDToOpenIDConnectProviderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new version of the specified managed policy. To update a managed
@@ -2930,9 +3350,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreatePolicyVersionRequest",
+      output_shape:     "CreatePolicyVersionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the password for the specified IAM user, which terminates the
@@ -2957,9 +3381,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteLoginProfileRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes the status of the specified user signing certificate from active to
@@ -2983,9 +3411,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateSigningCertificateRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a signing certificate associated with the specified IAM user.
@@ -3007,9 +3439,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSigningCertificateRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds or updates an inline policy document that is embedded in the specified
@@ -3046,9 +3482,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutGroupPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the access key IDs associated with the specified
@@ -3079,9 +3519,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAccessKeysRequest",
+      output_shape:     "ListAccessKeysResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the instance profiles that have the specified associated IAM role. If
@@ -3102,9 +3546,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListInstanceProfilesForRoleRequest",
+      output_shape:     "ListInstanceProfilesForRoleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the status of an IAM user's SSH public key to active or inactive. SSH
@@ -3130,9 +3578,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateSSHPublicKeyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new virtual MFA device for the AWS account. After creating the
@@ -3166,9 +3618,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateVirtualMFADeviceRequest",
+      output_shape:     "CreateVirtualMFADeviceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified managed policy from the specified role.
@@ -3190,9 +3646,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DetachRolePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about the specified server certificate stored in IAM.
@@ -3214,9 +3674,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetServerCertificateRequest",
+      output_shape:     "GetServerCertificateResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the signing certificates associated with the
@@ -3243,9 +3707,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListSigningCertificatesRequest",
+      output_shape:     "ListSigningCertificatesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Uploads an X.509 signing certificate and associates it with the specified
@@ -3282,9 +3750,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "UploadSigningCertificateRequest",
+      output_shape:     "UploadSigningCertificateResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified SSH public key.
@@ -3307,9 +3779,13 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSSHPublicKeyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a password for the specified user, giving the user the ability to
@@ -3329,8 +3805,19 @@ defmodule Baiji.IAM do
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateLoginProfileRequest",
+      output_shape:     "CreateLoginProfileResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"AccessKeyMetadata" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}, "CreateDate" => %{"shape" => "dateType"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "userNameType"}}, "type" => "structure"}, "policyDescriptionType" => %{"max" => 1000, "type" => "string"}, "ListAttachedUserPoliciesResponse" => %{"members" => %{"AttachedPolicies" => %{"shape" => "attachedPoliciesListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "type" => "structure"}, "DeleteOpenIDConnectProviderRequest" => %{"members" => %{"OpenIDConnectProviderArn" => %{"shape" => "arnType"}}, "required" => ["OpenIDConnectProviderArn"], "type" => "structure"}, "clientIDType" => %{"max" => 255, "min" => 1, "type" => "string"}, "maxItemsType" => %{"max" => 1000, "min" => 1, "type" => "integer"}, "UpdateSSHPublicKeyRequest" => %{"members" => %{"SSHPublicKeyId" => %{"shape" => "publicKeyIdType"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SSHPublicKeyId", "Status"], "type" => "structure"}, "booleanObjectType" => %{"box" => true, "type" => "boolean"}, "UpdateServerCertificateRequest" => %{"members" => %{"NewPath" => %{"shape" => "pathType"}, "NewServerCertificateName" => %{"shape" => "serverCertificateNameType"}, "ServerCertificateName" => %{"shape" => "serverCertificateNameType"}}, "required" => ["ServerCertificateName"], "type" => "structure"}, "pathPrefixType" => %{"max" => 512, "min" => 1, "pattern" => "\\u002F[\\u0021-\\u007F]*", "type" => "string"}, "CreateVirtualMFADeviceResponse" => %{"members" => %{"VirtualMFADevice" => %{"shape" => "VirtualMFADevice"}}, "required" => ["VirtualMFADevice"], "type" => "structure"}, "UpdateRoleDescriptionRequest" => %{"members" => %{"Description" => %{"shape" => "roleDescriptionType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "Description"], "type" => "structure"}, "ListSSHPublicKeysRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "UserName" => %{"shape" => "userNameType"}}, "type" => "structure"}, "CreateSAMLProviderResponse" => %{"members" => %{"SAMLProviderArn" => %{"shape" => "arnType"}}, "type" => "structure"}, "GetSSHPublicKeyResponse" => %{"members" => %{"SSHPublicKey" => %{"shape" => "SSHPublicKey"}}, "type" => "structure"}, "CreatePolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "accessKeyIdType" => %{"max" => 128, "min" => 16, "pattern" => "[\\w]+", "type" => "string"}, "RemoveRoleFromInstanceProfileRequest" => %{"members" => %{"InstanceProfileName" => %{"shape" => "instanceProfileNameType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["InstanceProfileName", "RoleName"], "type" => "structure"}, "GetCredentialReportResponse" => %{"members" => %{"Content" => %{"shape" => "ReportContentType"}, "GeneratedTime" => %{"shape" => "dateType"}, "ReportFormat" => %{"shape" => "ReportFormatType"}}, "type" => "structure"}, "CreateUserResponse" => %{"members" => %{"User" => %{"shape" => "User"}}, "type" => "structure"}, "ContextKeyNamesResultListType" => %{"member" => %{"shape" => "ContextKeyNameType"}, "type" => "list"}, "DeleteGroupPolicyRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "required" => ["GroupName", "PolicyName"], "type" => "structure"}, "ResourceNameType" => %{"max" => 2048, "min" => 1, "type" => "string"}, "ServiceFailureException" => %{"error" => %{"code" => "ServiceFailure", "httpStatusCode" => 500}, "exception" => true, "members" => %{"message" => %{"shape" => "serviceFailureExceptionMessage"}}, "type" => "structure"}, "UpdateGroupRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "NewGroupName" => %{"shape" => "groupNameType"}, "NewPath" => %{"shape" => "pathType"}}, "required" => ["GroupName"], "type" => "structure"}, "thumbprintType" => %{"max" => 40, "min" => 40, "type" => "string"}, "pathType" => %{"max" => 512, "min" => 1, "pattern" => "(\\u002F)|(\\u002F[\\u0021-\\u007F]+\\u002F)", "type" => "string"}, "arnType" => %{"max" => 2048, "min" => 20, "type" => "string"}, "ListPolicyVersionsRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PolicyArn" => %{"shape" => "arnType"}}, "required" => ["PolicyArn"], "type" => "structure"}, "passwordType" => %{"max" => 128, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "sensitive" => true, "type" => "string"}, "malformedCertificateMessage" => %{"type" => "string"}, "invalidInputMessage" => %{"type" => "string"}, "ManagedPolicyDetailListType" => %{"member" => %{"shape" => "ManagedPolicyDetail"}, "type" => "list"}, "UpdateAssumeRolePolicyRequest" => %{"members" => %{"PolicyDocument" => %{"shape" => "policyDocumentType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyDocument"], "type" => "structure"}, "GetRoleRequest" => %{"members" => %{"RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName"], "type" => "structure"}, "privateKeyType" => %{"max" => 16384, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "sensitive" => true, "type" => "string"}, "AttachGroupPolicyRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "PolicyArn" => %{"shape" => "arnType"}}, "required" => ["GroupName", "PolicyArn"], "type" => "structure"}, "DeleteSigningCertificateRequest" => %{"members" => %{"CertificateId" => %{"shape" => "certificateIdType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["CertificateId"], "type" => "structure"}, "ContextEntry" => %{"members" => %{"ContextKeyName" => %{"shape" => "ContextKeyNameType"}, "ContextKeyType" => %{"shape" => "ContextKeyTypeEnum"}, "ContextKeyValues" => %{"shape" => "ContextKeyValueListType"}}, "type" => "structure"}, "CreateServiceLinkedRoleRequest" => %{"members" => %{"AWSServiceName" => %{"shape" => "groupNameType"}, "CustomSuffix" => %{"shape" => "customSuffixType"}, "Description" => %{"shape" => "roleDescriptionType"}}, "required" => ["AWSServiceName"], "type" => "structure"}, "UpdateLoginProfileRequest" => %{"members" => %{"Password" => %{"shape" => "passwordType"}, "PasswordResetRequired" => %{"shape" => "booleanObjectType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName"], "type" => "structure"}, "SimulatePrincipalPolicyRequest" => %{"members" => %{"ActionNames" => %{"shape" => "ActionNameListType"}, "CallerArn" => %{"shape" => "ResourceNameType"}, "ContextEntries" => %{"shape" => "ContextEntryListType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PolicyInputList" => %{"shape" => "SimulationPolicyListType"}, "PolicySourceArn" => %{"shape" => "arnType"}, "ResourceArns" => %{"shape" => "ResourceNameListType"}, "ResourceHandlingOption" => %{"shape" => "ResourceHandlingOptionType"}, "ResourceOwner" => %{"shape" => "ResourceNameType"}, "ResourcePolicy" => %{"shape" => "policyDocumentType"}}, "required" => ["PolicySourceArn", "ActionNames"], "type" => "structure"}, "ListAccessKeysRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "type" => "structure"}, "ListInstanceProfilesResponse" => %{"members" => %{"InstanceProfiles" => %{"shape" => "instanceProfileListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["InstanceProfiles"], "type" => "structure"}, "Role" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AssumeRolePolicyDocument" => %{"shape" => "policyDocumentType"}, "CreateDate" => %{"shape" => "dateType"}, "Description" => %{"shape" => "roleDescriptionType"}, "Path" => %{"shape" => "pathType"}, "RoleId" => %{"shape" => "idType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["Path", "RoleName", "RoleId", "Arn", "CreateDate"], "type" => "structure"}, "ListPoliciesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "OnlyAttached" => %{"shape" => "booleanType"}, "PathPrefix" => %{"shape" => "policyPathType"}, "Scope" => %{"shape" => "policyScopeType"}}, "type" => "structure"}, "CreateRoleResponse" => %{"members" => %{"Role" => %{"shape" => "Role"}}, "required" => ["Role"], "type" => "structure"}, "UnrecognizedPublicKeyEncodingException" => %{"error" => %{"code" => "UnrecognizedPublicKeyEncoding", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "unrecognizedPublicKeyEncodingMessage"}}, "type" => "structure"}, "DeleteGroupRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}}, "required" => ["GroupName"], "type" => "structure"}, "CreateServiceSpecificCredentialResponse" => %{"members" => %{"ServiceSpecificCredential" => %{"shape" => "ServiceSpecificCredential"}}, "type" => "structure"}, "policyEvaluationErrorMessage" => %{"type" => "string"}, "ActionNameListType" => %{"member" => %{"shape" => "ActionNameType"}, "type" => "list"}, "CreateInstanceProfileResponse" => %{"members" => %{"InstanceProfile" => %{"shape" => "InstanceProfile"}}, "required" => ["InstanceProfile"], "type" => "structure"}, "certificateChainType" => %{"max" => 2097152, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "User" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "CreateDate" => %{"shape" => "dateType"}, "PasswordLastUsed" => %{"shape" => "dateType"}, "Path" => %{"shape" => "pathType"}, "UserId" => %{"shape" => "idType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["Path", "UserName", "UserId", "Arn", "CreateDate"], "type" => "structure"}, "EntityTemporarilyUnmodifiableException" => %{"error" => %{"code" => "EntityTemporarilyUnmodifiable", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "entityTemporarilyUnmodifiableMessage"}}, "type" => "structure"}, "SSHPublicKeyMetadata" => %{"members" => %{"SSHPublicKeyId" => %{"shape" => "publicKeyIdType"}, "Status" => %{"shape" => "statusType"}, "UploadDate" => %{"shape" => "dateType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SSHPublicKeyId", "Status", "UploadDate"], "type" => "structure"}, "serialNumberType" => %{"max" => 256, "min" => 9, "pattern" => "[\\w+=/:,.@-]+", "type" => "string"}, "UpdateOpenIDConnectProviderThumbprintRequest" => %{"members" => %{"OpenIDConnectProviderArn" => %{"shape" => "arnType"}, "ThumbprintList" => %{"shape" => "thumbprintListType"}}, "required" => ["OpenIDConnectProviderArn", "ThumbprintList"], "type" => "structure"}, "PutGroupPolicyRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "required" => ["GroupName", "PolicyName", "PolicyDocument"], "type" => "structure"}, "GetInstanceProfileResponse" => %{"members" => %{"InstanceProfile" => %{"shape" => "InstanceProfile"}}, "required" => ["InstanceProfile"], "type" => "structure"}, "ListPolicyVersionsResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "Versions" => %{"shape" => "policyDocumentVersionListType"}}, "type" => "structure"}, "GetContextKeysForCustomPolicyRequest" => %{"members" => %{"PolicyInputList" => %{"shape" => "SimulationPolicyListType"}}, "required" => ["PolicyInputList"], "type" => "structure"}, "serviceName" => %{"type" => "string"}, "UploadSSHPublicKeyRequest" => %{"members" => %{"SSHPublicKeyBody" => %{"shape" => "publicKeyMaterialType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SSHPublicKeyBody"], "type" => "structure"}, "CreateServiceLinkedRoleResponse" => %{"members" => %{"Role" => %{"shape" => "Role"}}, "type" => "structure"}, "policyDocumentType" => %{"max" => 131072, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "RemoveClientIDFromOpenIDConnectProviderRequest" => %{"members" => %{"ClientID" => %{"shape" => "clientIDType"}, "OpenIDConnectProviderArn" => %{"shape" => "arnType"}}, "required" => ["OpenIDConnectProviderArn", "ClientID"], "type" => "structure"}, "CreateRoleRequest" => %{"members" => %{"AssumeRolePolicyDocument" => %{"shape" => "policyDocumentType"}, "Description" => %{"shape" => "roleDescriptionType"}, "Path" => %{"shape" => "pathType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "AssumeRolePolicyDocument"], "type" => "structure"}, "groupNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "UserDetail" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AttachedManagedPolicies" => %{"shape" => "attachedPoliciesListType"}, "CreateDate" => %{"shape" => "dateType"}, "GroupList" => %{"shape" => "groupNameListType"}, "Path" => %{"shape" => "pathType"}, "UserId" => %{"shape" => "idType"}, "UserName" => %{"shape" => "userNameType"}, "UserPolicyList" => %{"shape" => "policyDetailListType"}}, "type" => "structure"}, "policyScopeType" => %{"enum" => ["All", "AWS", "Local"], "type" => "string"}, "EvalDecisionDetailsType" => %{"key" => %{"shape" => "EvalDecisionSourceType"}, "type" => "map", "value" => %{"shape" => "PolicyEvaluationDecisionType"}}, "DeleteVirtualMFADeviceRequest" => %{"members" => %{"SerialNumber" => %{"shape" => "serialNumberType"}}, "required" => ["SerialNumber"], "type" => "structure"}, "PolicyUserListType" => %{"member" => %{"shape" => "PolicyUser"}, "type" => "list"}, "GetRolePolicyResponse" => %{"members" => %{"PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyName", "PolicyDocument"], "type" => "structure"}, "ListGroupPoliciesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "PolicyNames" => %{"shape" => "policyNameListType"}}, "required" => ["PolicyNames"], "type" => "structure"}, "PolicyGroup" => %{"members" => %{"GroupId" => %{"shape" => "idType"}, "GroupName" => %{"shape" => "groupNameType"}}, "type" => "structure"}, "policyListType" => %{"member" => %{"shape" => "Policy"}, "type" => "list"}, "GetSAMLProviderRequest" => %{"members" => %{"SAMLProviderArn" => %{"shape" => "arnType"}}, "required" => ["SAMLProviderArn"], "type" => "structure"}, "ListAttachedRolePoliciesResponse" => %{"members" => %{"AttachedPolicies" => %{"shape" => "attachedPoliciesListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "type" => "structure"}, "summaryMapType" => %{"key" => %{"shape" => "summaryKeyType"}, "type" => "map", "value" => %{"shape" => "summaryValueType"}}, "ServerCertificateMetadata" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "Expiration" => %{"shape" => "dateType"}, "Path" => %{"shape" => "pathType"}, "ServerCertificateId" => %{"shape" => "idType"}, "ServerCertificateName" => %{"shape" => "serverCertificateNameType"}, "UploadDate" => %{"shape" => "dateType"}}, "required" => ["Path", "ServerCertificateName", "ServerCertificateId", "Arn"], "type" => "structure"}, "CredentialReportNotReadyException" => %{"error" => %{"code" => "ReportInProgress", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "credentialReportNotReadyExceptionMessage"}}, "type" => "structure"}, "CreateVirtualMFADeviceRequest" => %{"members" => %{"Path" => %{"shape" => "pathType"}, "VirtualMFADeviceName" => %{"shape" => "virtualMFADeviceName"}}, "required" => ["VirtualMFADeviceName"], "type" => "structure"}, "InvalidUserTypeException" => %{"error" => %{"code" => "InvalidUserType", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidUserTypeMessage"}}, "type" => "structure"}, "GetOpenIDConnectProviderRequest" => %{"members" => %{"OpenIDConnectProviderArn" => %{"shape" => "arnType"}}, "required" => ["OpenIDConnectProviderArn"], "type" => "structure"}, "Position" => %{"members" => %{"Column" => %{"shape" => "ColumnNumber"}, "Line" => %{"shape" => "LineNumber"}}, "type" => "structure"}, "accessKeySecretType" => %{"sensitive" => true, "type" => "string"}, "policyDetailListType" => %{"member" => %{"shape" => "PolicyDetail"}, "type" => "list"}, "GetGroupPolicyResponse" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "required" => ["GroupName", "PolicyName", "PolicyDocument"], "type" => "structure"}, "ListGroupsForUserResponse" => %{"members" => %{"Groups" => %{"shape" => "groupListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["Groups"], "type" => "structure"}, "ResourceSpecificResult" => %{"members" => %{"EvalDecisionDetails" => %{"shape" => "EvalDecisionDetailsType"}, "EvalResourceDecision" => %{"shape" => "PolicyEvaluationDecisionType"}, "EvalResourceName" => %{"shape" => "ResourceNameType"}, "MatchedStatements" => %{"shape" => "StatementListType"}, "MissingContextValues" => %{"shape" => "ContextKeyNamesResultListType"}}, "required" => ["EvalResourceName", "EvalResourceDecision"], "type" => "structure"}, "ReportStateDescriptionType" => %{"type" => "string"}, "GetAccountPasswordPolicyResponse" => %{"members" => %{"PasswordPolicy" => %{"shape" => "PasswordPolicy"}}, "required" => ["PasswordPolicy"], "type" => "structure"}, "CredentialReportExpiredException" => %{"error" => %{"code" => "ReportExpired", "httpStatusCode" => 410, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "credentialReportExpiredExceptionMessage"}}, "type" => "structure"}, "ServiceNotSupportedException" => %{"error" => %{"code" => "NotSupportedService", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "serviceNotSupportedMessage"}}, "type" => "structure"}, "ContextEntryListType" => %{"member" => %{"shape" => "ContextEntry"}, "type" => "list"}, "GetUserRequest" => %{"members" => %{"UserName" => %{"shape" => "existingUserNameType"}}, "type" => "structure"}, "ListSAMLProvidersRequest" => %{"members" => %{}, "type" => "structure"}, "CreateOpenIDConnectProviderRequest" => %{"members" => %{"ClientIDList" => %{"shape" => "clientIDListType"}, "ThumbprintList" => %{"shape" => "thumbprintListType"}, "Url" => %{"shape" => "OpenIDConnectProviderUrlType"}}, "required" => ["Url", "ThumbprintList"], "type" => "structure"}, "statusType" => %{"enum" => ["Active", "Inactive"], "type" => "string"}, "malformedPolicyDocumentMessage" => %{"type" => "string"}, "GetInstanceProfileRequest" => %{"members" => %{"InstanceProfileName" => %{"shape" => "instanceProfileNameType"}}, "required" => ["InstanceProfileName"], "type" => "structure"}, "maxPasswordAgeType" => %{"box" => true, "max" => 1095, "min" => 1, "type" => "integer"}, "CreateOpenIDConnectProviderResponse" => %{"members" => %{"OpenIDConnectProviderArn" => %{"shape" => "arnType"}}, "type" => "structure"}, "SSHPublicKey" => %{"members" => %{"Fingerprint" => %{"shape" => "publicKeyFingerprintType"}, "SSHPublicKeyBody" => %{"shape" => "publicKeyMaterialType"}, "SSHPublicKeyId" => %{"shape" => "publicKeyIdType"}, "Status" => %{"shape" => "statusType"}, "UploadDate" => %{"shape" => "dateType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SSHPublicKeyId", "Fingerprint", "SSHPublicKeyBody", "Status"], "type" => "structure"}, "MalformedPolicyDocumentException" => %{"error" => %{"code" => "MalformedPolicyDocument", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "malformedPolicyDocumentMessage"}}, "type" => "structure"}, "ListGroupsResponse" => %{"members" => %{"Groups" => %{"shape" => "groupListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["Groups"], "type" => "structure"}, "roleDetailListType" => %{"member" => %{"shape" => "RoleDetail"}, "type" => "list"}, "DeleteServiceSpecificCredentialRequest" => %{"members" => %{"ServiceSpecificCredentialId" => %{"shape" => "serviceSpecificCredentialId"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["ServiceSpecificCredentialId"], "type" => "structure"}, "CreatePolicyVersionRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "PolicyDocument" => %{"shape" => "policyDocumentType"}, "SetAsDefault" => %{"shape" => "booleanType"}}, "required" => ["PolicyArn", "PolicyDocument"], "type" => "structure"}, "existingUserNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "userDetailListType" => %{"member" => %{"shape" => "UserDetail"}, "type" => "list"}, "ReportStateType" => %{"enum" => ["STARTED", "INPROGRESS", "COMPLETE"], "type" => "string"}, "ListServerCertificatesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "ServerCertificateMetadataList" => %{"shape" => "serverCertificateMetadataListType"}}, "required" => ["ServerCertificateMetadataList"], "type" => "structure"}, "PolicyVersion" => %{"members" => %{"CreateDate" => %{"shape" => "dateType"}, "Document" => %{"shape" => "policyDocumentType"}, "IsDefaultVersion" => %{"shape" => "booleanType"}, "VersionId" => %{"shape" => "policyVersionIdType"}}, "type" => "structure"}, "GetAccessKeyLastUsedRequest" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}}, "required" => ["AccessKeyId"], "type" => "structure"}, "LoginProfile" => %{"members" => %{"CreateDate" => %{"shape" => "dateType"}, "PasswordResetRequired" => %{"shape" => "booleanType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "CreateDate"], "type" => "structure"}, "summaryValueType" => %{"type" => "integer"}, "VirtualMFADevice" => %{"members" => %{"Base32StringSeed" => %{"shape" => "BootstrapDatum"}, "EnableDate" => %{"shape" => "dateType"}, "QRCodePNG" => %{"shape" => "BootstrapDatum"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "User" => %{"shape" => "User"}}, "required" => ["SerialNumber"], "type" => "structure"}, "GetSAMLProviderResponse" => %{"members" => %{"CreateDate" => %{"shape" => "dateType"}, "SAMLMetadataDocument" => %{"shape" => "SAMLMetadataDocumentType"}, "ValidUntil" => %{"shape" => "dateType"}}, "type" => "structure"}, "dateType" => %{"type" => "timestamp"}, "GetServerCertificateResponse" => %{"members" => %{"ServerCertificate" => %{"shape" => "ServerCertificate"}}, "required" => ["ServerCertificate"], "type" => "structure"}, "ListRolePoliciesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "PolicyNames" => %{"shape" => "policyNameListType"}}, "required" => ["PolicyNames"], "type" => "structure"}, "policyNameListType" => %{"member" => %{"shape" => "policyNameType"}, "type" => "list"}, "groupNameListType" => %{"member" => %{"shape" => "groupNameType"}, "type" => "list"}, "DeleteUserPolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "policyNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "PolicyName"], "type" => "structure"}, "GetGroupRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}}, "required" => ["GroupName"], "type" => "structure"}, "DeleteLoginProfileRequest" => %{"members" => %{"UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName"], "type" => "structure"}, "AddClientIDToOpenIDConnectProviderRequest" => %{"members" => %{"ClientID" => %{"shape" => "clientIDType"}, "OpenIDConnectProviderArn" => %{"shape" => "arnType"}}, "required" => ["OpenIDConnectProviderArn", "ClientID"], "type" => "structure"}, "SAMLProviderNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w._-]+", "type" => "string"}, "attachmentCountType" => %{"type" => "integer"}, "entityTemporarilyUnmodifiableMessage" => %{"type" => "string"}, "CreateGroupRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "Path" => %{"shape" => "pathType"}}, "required" => ["GroupName"], "type" => "structure"}, "ListInstanceProfilesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "pathPrefixType"}}, "type" => "structure"}, "GetSSHPublicKeyRequest" => %{"members" => %{"Encoding" => %{"shape" => "encodingType"}, "SSHPublicKeyId" => %{"shape" => "publicKeyIdType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SSHPublicKeyId", "Encoding"], "type" => "structure"}, "mfaDeviceListType" => %{"member" => %{"shape" => "MFADevice"}, "type" => "list"}, "summaryKeyType" => %{"enum" => ["Users", "UsersQuota", "Groups", "GroupsQuota", "ServerCertificates", "ServerCertificatesQuota", "UserPolicySizeQuota", "GroupPolicySizeQuota", "GroupsPerUserQuota", "SigningCertificatesPerUserQuota", "AccessKeysPerUserQuota", "MFADevices", "MFADevicesInUse", "AccountMFAEnabled", "AccountAccessKeysPresent", "AccountSigningCertificatesPresent", "AttachedPoliciesPerGroupQuota", "AttachedPoliciesPerRoleQuota", "AttachedPoliciesPerUserQuota", "Policies", "PoliciesQuota", "PolicySizeQuota", "PolicyVersionsInUse", "PolicyVersionsInUseQuota", "VersionsPerPolicyQuota"], "type" => "string"}, "SAMLMetadataDocumentType" => %{"max" => 10000000, "min" => 1000, "type" => "string"}, "entityListType" => %{"member" => %{"shape" => "EntityType"}, "type" => "list"}, "DeleteRolePolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "policyNameType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyName"], "type" => "structure"}, "UploadSigningCertificateRequest" => %{"members" => %{"CertificateBody" => %{"shape" => "certificateBodyType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["CertificateBody"], "type" => "structure"}, "PolicyGroupListType" => %{"member" => %{"shape" => "PolicyGroup"}, "type" => "list"}, "CreateLoginProfileResponse" => %{"members" => %{"LoginProfile" => %{"shape" => "LoginProfile"}}, "required" => ["LoginProfile"], "type" => "structure"}, "serviceNotSupportedMessage" => %{"type" => "string"}, "serviceSpecificCredentialId" => %{"max" => 128, "min" => 20, "pattern" => "[\\w]+", "type" => "string"}, "invalidAuthenticationCodeMessage" => %{"type" => "string"}, "PolicyIdentifierType" => %{"type" => "string"}, "ListServiceSpecificCredentialsRequest" => %{"members" => %{"ServiceName" => %{"shape" => "serviceName"}, "UserName" => %{"shape" => "userNameType"}}, "type" => "structure"}, "GetUserResponse" => %{"members" => %{"User" => %{"shape" => "User"}}, "required" => ["User"], "type" => "structure"}, "GetContextKeysForPrincipalPolicyRequest" => %{"members" => %{"PolicyInputList" => %{"shape" => "SimulationPolicyListType"}, "PolicySourceArn" => %{"shape" => "arnType"}}, "required" => ["PolicySourceArn"], "type" => "structure"}, "ListGroupsForUserRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName"], "type" => "structure"}, "PolicyDetail" => %{"members" => %{"PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "type" => "structure"}, "noSuchEntityMessage" => %{"type" => "string"}, "ContextKeyValueType" => %{"type" => "string"}, "servicePassword" => %{"sensitive" => true, "type" => "string"}, "PolicySourceType" => %{"enum" => ["user", "group", "role", "aws-managed", "user-managed", "resource", "none"], "type" => "string"}, "ListRolePoliciesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName"], "type" => "structure"}, "ListRolesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "Roles" => %{"shape" => "roleListType"}}, "required" => ["Roles"], "type" => "structure"}, "ContextKeyNameType" => %{"max" => 256, "min" => 5, "type" => "string"}, "SimulationPolicyListType" => %{"member" => %{"shape" => "policyDocumentType"}, "type" => "list"}, "CreateAccessKeyResponse" => %{"members" => %{"AccessKey" => %{"shape" => "AccessKey"}}, "required" => ["AccessKey"], "type" => "structure"}, "ManagedPolicyDetail" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AttachmentCount" => %{"shape" => "attachmentCountType"}, "CreateDate" => %{"shape" => "dateType"}, "DefaultVersionId" => %{"shape" => "policyVersionIdType"}, "Description" => %{"shape" => "policyDescriptionType"}, "IsAttachable" => %{"shape" => "booleanType"}, "Path" => %{"shape" => "policyPathType"}, "PolicyId" => %{"shape" => "idType"}, "PolicyName" => %{"shape" => "policyNameType"}, "PolicyVersionList" => %{"shape" => "policyDocumentVersionListType"}, "UpdateDate" => %{"shape" => "dateType"}}, "type" => "structure"}, "virtualMFADeviceName" => %{"min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "ResourceSpecificResultListType" => %{"member" => %{"shape" => "ResourceSpecificResult"}, "type" => "list"}, "GetUserPolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "policyNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "PolicyName"], "type" => "structure"}, "minimumPasswordLengthType" => %{"max" => 128, "min" => 6, "type" => "integer"}, "Statement" => %{"members" => %{"EndPosition" => %{"shape" => "Position"}, "SourcePolicyId" => %{"shape" => "PolicyIdentifierType"}, "SourcePolicyType" => %{"shape" => "PolicySourceType"}, "StartPosition" => %{"shape" => "Position"}}, "type" => "structure"}, "EvaluationResultsListType" => %{"member" => %{"shape" => "EvaluationResult"}, "type" => "list"}, "RoleDetail" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AssumeRolePolicyDocument" => %{"shape" => "policyDocumentType"}, "AttachedManagedPolicies" => %{"shape" => "attachedPoliciesListType"}, "CreateDate" => %{"shape" => "dateType"}, "InstanceProfileList" => %{"shape" => "instanceProfileListType"}, "Path" => %{"shape" => "pathType"}, "RoleId" => %{"shape" => "idType"}, "RoleName" => %{"shape" => "roleNameType"}, "RolePolicyList" => %{"shape" => "policyDetailListType"}}, "type" => "structure"}, "RemoveUserFromGroupRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["GroupName", "UserName"], "type" => "structure"}, "PasswordPolicy" => %{"members" => %{"AllowUsersToChangePassword" => %{"shape" => "booleanType"}, "ExpirePasswords" => %{"shape" => "booleanType"}, "HardExpiry" => %{"shape" => "booleanObjectType"}, "MaxPasswordAge" => %{"shape" => "maxPasswordAgeType"}, "MinimumPasswordLength" => %{"shape" => "minimumPasswordLengthType"}, "PasswordReusePrevention" => %{"shape" => "passwordReusePreventionType"}, "RequireLowercaseCharacters" => %{"shape" => "booleanType"}, "RequireNumbers" => %{"shape" => "booleanType"}, "RequireSymbols" => %{"shape" => "booleanType"}, "RequireUppercaseCharacters" => %{"shape" => "booleanType"}}, "type" => "structure"}, "ListGroupPoliciesRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}}, "required" => ["GroupName"], "type" => "structure"}, "ListEntitiesForPolicyResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "PolicyGroups" => %{"shape" => "PolicyGroupListType"}, "PolicyRoles" => %{"shape" => "PolicyRoleListType"}, "PolicyUsers" => %{"shape" => "PolicyUserListType"}}, "type" => "structure"}, "ServiceSpecificCredentialsListType" => %{"member" => %{"shape" => "ServiceSpecificCredentialMetadata"}, "type" => "list"}, "ActionNameType" => %{"max" => 128, "min" => 3, "type" => "string"}, "duplicateCertificateMessage" => %{"type" => "string"}, "GetAccountSummaryResponse" => %{"members" => %{"SummaryMap" => %{"shape" => "summaryMapType"}}, "type" => "structure"}, "ResyncMFADeviceRequest" => %{"members" => %{"AuthenticationCode1" => %{"shape" => "authenticationCodeType"}, "AuthenticationCode2" => %{"shape" => "authenticationCodeType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "SerialNumber", "AuthenticationCode1", "AuthenticationCode2"], "type" => "structure"}, "certificateIdType" => %{"max" => 128, "min" => 24, "pattern" => "[\\w]+", "type" => "string"}, "ListVirtualMFADevicesRequest" => %{"members" => %{"AssignmentStatus" => %{"shape" => "assignmentStatusType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}}, "type" => "structure"}, "GetGroupResponse" => %{"members" => %{"Group" => %{"shape" => "Group"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "Users" => %{"shape" => "userListType"}}, "required" => ["Group", "Users"], "type" => "structure"}, "serviceFailureExceptionMessage" => %{"type" => "string"}, "StatementListType" => %{"member" => %{"shape" => "Statement"}, "type" => "list"}, "InstanceProfile" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "CreateDate" => %{"shape" => "dateType"}, "InstanceProfileId" => %{"shape" => "idType"}, "InstanceProfileName" => %{"shape" => "instanceProfileNameType"}, "Path" => %{"shape" => "pathType"}, "Roles" => %{"shape" => "roleListType"}}, "required" => ["Path", "InstanceProfileName", "InstanceProfileId", "Arn", "CreateDate", "Roles"], "type" => "structure"}, "ListSigningCertificatesResponse" => %{"members" => %{"Certificates" => %{"shape" => "certificateListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["Certificates"], "type" => "structure"}, "DetachUserPolicyRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "PolicyArn"], "type" => "structure"}, "SSHPublicKeyListType" => %{"member" => %{"shape" => "SSHPublicKeyMetadata"}, "type" => "list"}, "virtualMFADeviceListType" => %{"member" => %{"shape" => "VirtualMFADevice"}, "type" => "list"}, "DeleteAccessKeyRequest" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["AccessKeyId"], "type" => "structure"}, "AddUserToGroupRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["GroupName", "UserName"], "type" => "structure"}, "UploadSSHPublicKeyResponse" => %{"members" => %{"SSHPublicKey" => %{"shape" => "SSHPublicKey"}}, "type" => "structure"}, "ListPoliciesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "Policies" => %{"shape" => "policyListType"}}, "type" => "structure"}, "credentialReportExpiredExceptionMessage" => %{"type" => "string"}, "DeleteSAMLProviderRequest" => %{"members" => %{"SAMLProviderArn" => %{"shape" => "arnType"}}, "required" => ["SAMLProviderArn"], "type" => "structure"}, "GetAccessKeyLastUsedResponse" => %{"members" => %{"AccessKeyLastUsed" => %{"shape" => "AccessKeyLastUsed"}, "UserName" => %{"shape" => "existingUserNameType"}}, "type" => "structure"}, "OrganizationsDecisionDetail" => %{"members" => %{"AllowedByOrganizations" => %{"shape" => "booleanType"}}, "type" => "structure"}, "ListSSHPublicKeysResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "SSHPublicKeys" => %{"shape" => "SSHPublicKeyListType"}}, "type" => "structure"}, "attachedPoliciesListType" => %{"member" => %{"shape" => "AttachedPolicy"}, "type" => "list"}, "ListMFADevicesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "type" => "structure"}, "EvaluationResult" => %{"members" => %{"EvalActionName" => %{"shape" => "ActionNameType"}, "EvalDecision" => %{"shape" => "PolicyEvaluationDecisionType"}, "EvalDecisionDetails" => %{"shape" => "EvalDecisionDetailsType"}, "EvalResourceName" => %{"shape" => "ResourceNameType"}, "MatchedStatements" => %{"shape" => "StatementListType"}, "MissingContextValues" => %{"shape" => "ContextKeyNamesResultListType"}, "OrganizationsDecisionDetail" => %{"shape" => "OrganizationsDecisionDetail"}, "ResourceSpecificResults" => %{"shape" => "ResourceSpecificResultListType"}}, "required" => ["EvalActionName", "EvalDecision"], "type" => "structure"}, "deleteConflictMessage" => %{"type" => "string"}, "ListSAMLProvidersResponse" => %{"members" => %{"SAMLProviderList" => %{"shape" => "SAMLProviderListType"}}, "type" => "structure"}, "Policy" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AttachmentCount" => %{"shape" => "attachmentCountType"}, "CreateDate" => %{"shape" => "dateType"}, "DefaultVersionId" => %{"shape" => "policyVersionIdType"}, "Description" => %{"shape" => "policyDescriptionType"}, "IsAttachable" => %{"shape" => "booleanType"}, "Path" => %{"shape" => "policyPathType"}, "PolicyId" => %{"shape" => "idType"}, "PolicyName" => %{"shape" => "policyNameType"}, "UpdateDate" => %{"shape" => "dateType"}}, "type" => "structure"}, "invalidPublicKeyMessage" => %{"type" => "string"}, "ListAccountAliasesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}}, "type" => "structure"}, "DetachGroupPolicyRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "PolicyArn" => %{"shape" => "arnType"}}, "required" => ["GroupName", "PolicyArn"], "type" => "structure"}, "AccessKey" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}, "CreateDate" => %{"shape" => "dateType"}, "SecretAccessKey" => %{"shape" => "accessKeySecretType"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "AccessKeyId", "Status", "SecretAccessKey"], "type" => "structure"}, "GetContextKeysForPolicyResponse" => %{"members" => %{"ContextKeyNames" => %{"shape" => "ContextKeyNamesResultListType"}}, "type" => "structure"}, "unrecognizedPublicKeyEncodingMessage" => %{"type" => "string"}, "AttachUserPolicyRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "PolicyArn"], "type" => "structure"}, "ListOpenIDConnectProvidersResponse" => %{"members" => %{"OpenIDConnectProviderList" => %{"shape" => "OpenIDConnectProviderListType"}}, "type" => "structure"}, "GetPolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "Policy"}}, "type" => "structure"}, "UnmodifiableEntityException" => %{"error" => %{"code" => "UnmodifiableEntity", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "unmodifiableEntityMessage"}}, "type" => "structure"}, "ColumnNumber" => %{"type" => "integer"}, "UpdateAccountPasswordPolicyRequest" => %{"members" => %{"AllowUsersToChangePassword" => %{"shape" => "booleanType"}, "HardExpiry" => %{"shape" => "booleanObjectType"}, "MaxPasswordAge" => %{"shape" => "maxPasswordAgeType"}, "MinimumPasswordLength" => %{"shape" => "minimumPasswordLengthType"}, "PasswordReusePrevention" => %{"shape" => "passwordReusePreventionType"}, "RequireLowercaseCharacters" => %{"shape" => "booleanType"}, "RequireNumbers" => %{"shape" => "booleanType"}, "RequireSymbols" => %{"shape" => "booleanType"}, "RequireUppercaseCharacters" => %{"shape" => "booleanType"}}, "type" => "structure"}, "EvalDecisionSourceType" => %{"max" => 256, "min" => 3, "type" => "string"}, "LineNumber" => %{"type" => "integer"}, "ChangePasswordRequest" => %{"members" => %{"NewPassword" => %{"shape" => "passwordType"}, "OldPassword" => %{"shape" => "passwordType"}}, "required" => ["OldPassword", "NewPassword"], "type" => "structure"}, "DeleteConflictException" => %{"error" => %{"code" => "DeleteConflict", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "deleteConflictMessage"}}, "type" => "structure"}, "ListUsersResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "Users" => %{"shape" => "userListType"}}, "required" => ["Users"], "type" => "structure"}, "DeleteRoleRequest" => %{"members" => %{"RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName"], "type" => "structure"}, "thumbprintListType" => %{"member" => %{"shape" => "thumbprintType"}, "type" => "list"}, "LimitExceededException" => %{"error" => %{"code" => "LimitExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "limitExceededMessage"}}, "type" => "structure"}, "DetachRolePolicyRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyArn"], "type" => "structure"}, "PolicyEvaluationDecisionType" => %{"enum" => ["allowed", "explicitDeny", "implicitDeny"], "type" => "string"}, "DeleteUserRequest" => %{"members" => %{"UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName"], "type" => "structure"}, "ListInstanceProfilesForRoleRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName"], "type" => "structure"}, "customSuffixType" => %{"max" => 64, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "keyPairMismatchMessage" => %{"type" => "string"}, "EntityType" => %{"enum" => ["User", "Role", "Group", "LocalManagedPolicy", "AWSManagedPolicy"], "type" => "string"}, "UpdateRoleDescriptionResponse" => %{"members" => %{"Role" => %{"shape" => "Role"}}, "type" => "structure"}, "EnableMFADeviceRequest" => %{"members" => %{"AuthenticationCode1" => %{"shape" => "authenticationCodeType"}, "AuthenticationCode2" => %{"shape" => "authenticationCodeType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "SerialNumber", "AuthenticationCode1", "AuthenticationCode2"], "type" => "structure"}, "SetDefaultPolicyVersionRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "VersionId" => %{"shape" => "policyVersionIdType"}}, "required" => ["PolicyArn", "VersionId"], "type" => "structure"}, "DeletePolicyRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}}, "required" => ["PolicyArn"], "type" => "structure"}, "DuplicateCertificateException" => %{"error" => %{"code" => "DuplicateCertificate", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "duplicateCertificateMessage"}}, "type" => "structure"}, "SigningCertificate" => %{"members" => %{"CertificateBody" => %{"shape" => "certificateBodyType"}, "CertificateId" => %{"shape" => "certificateIdType"}, "Status" => %{"shape" => "statusType"}, "UploadDate" => %{"shape" => "dateType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "CertificateId", "CertificateBody", "Status"], "type" => "structure"}, "publicKeyMaterialType" => %{"max" => 16384, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "ContextKeyTypeEnum" => %{"enum" => ["string", "stringList", "numeric", "numericList", "boolean", "booleanList", "ip", "ipList", "binary", "binaryList", "date", "dateList"], "type" => "string"}, "authenticationCodeType" => %{"max" => 6, "min" => 6, "pattern" => "[\\d]+", "type" => "string"}, "invalidCertificateMessage" => %{"type" => "string"}, "clientIDListType" => %{"member" => %{"shape" => "clientIDType"}, "type" => "list"}, "serviceUserName" => %{"max" => 200, "min" => 17, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "accountAliasListType" => %{"member" => %{"shape" => "accountAliasType"}, "type" => "list"}, "groupListType" => %{"member" => %{"shape" => "Group"}, "type" => "list"}, "unmodifiableEntityMessage" => %{"type" => "string"}, "MalformedCertificateException" => %{"error" => %{"code" => "MalformedCertificate", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "malformedCertificateMessage"}}, "type" => "structure"}, "CreateAccountAliasRequest" => %{"members" => %{"AccountAlias" => %{"shape" => "accountAliasType"}}, "required" => ["AccountAlias"], "type" => "structure"}, "ListUserPoliciesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "PolicyNames" => %{"shape" => "policyNameListType"}}, "required" => ["PolicyNames"], "type" => "structure"}, "BootstrapDatum" => %{"sensitive" => true, "type" => "blob"}, "ListRolesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "pathPrefixType"}}, "type" => "structure"}, "CreateLoginProfileRequest" => %{"members" => %{"Password" => %{"shape" => "passwordType"}, "PasswordResetRequired" => %{"shape" => "booleanType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "Password"], "type" => "structure"}, "ListServerCertificatesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "pathPrefixType"}}, "type" => "structure"}, "GetRolePolicyRequest" => %{"members" => %{"PolicyName" => %{"shape" => "policyNameType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyName"], "type" => "structure"}, "OpenIDConnectProviderListEntry" => %{"members" => %{"Arn" => %{"shape" => "arnType"}}, "type" => "structure"}, "DeletePolicyVersionRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "VersionId" => %{"shape" => "policyVersionIdType"}}, "required" => ["PolicyArn", "VersionId"], "type" => "structure"}, "ListGroupsRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "pathPrefixType"}}, "type" => "structure"}, "CreateSAMLProviderRequest" => %{"members" => %{"Name" => %{"shape" => "SAMLProviderNameType"}, "SAMLMetadataDocument" => %{"shape" => "SAMLMetadataDocumentType"}}, "required" => ["SAMLMetadataDocument", "Name"], "type" => "structure"}, "PolicyEvaluationException" => %{"error" => %{"code" => "PolicyEvaluation", "httpStatusCode" => 500}, "exception" => true, "members" => %{"message" => %{"shape" => "policyEvaluationErrorMessage"}}, "type" => "structure"}, "ListUsersRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "pathPrefixType"}}, "type" => "structure"}, "ListServiceSpecificCredentialsResponse" => %{"members" => %{"ServiceSpecificCredentials" => %{"shape" => "ServiceSpecificCredentialsListType"}}, "type" => "structure"}, "SimulatePolicyResponse" => %{"members" => %{"EvaluationResults" => %{"shape" => "EvaluationResultsListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "type" => "structure"}, "ContextKeyValueListType" => %{"member" => %{"shape" => "ContextKeyValueType"}, "type" => "list"}, "CreatePolicyRequest" => %{"members" => %{"Description" => %{"shape" => "policyDescriptionType"}, "Path" => %{"shape" => "policyPathType"}, "PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "required" => ["PolicyName", "PolicyDocument"], "type" => "structure"}, "CredentialReportNotPresentException" => %{"error" => %{"code" => "ReportNotPresent", "httpStatusCode" => 410, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "credentialReportNotPresentExceptionMessage"}}, "type" => "structure"}, "UpdateSAMLProviderResponse" => %{"members" => %{"SAMLProviderArn" => %{"shape" => "arnType"}}, "type" => "structure"}, "ReportFormatType" => %{"enum" => ["text/csv"], "type" => "string"}, "instanceProfileListType" => %{"member" => %{"shape" => "InstanceProfile"}, "type" => "list"}, "stringType" => %{"type" => "string"}, "accessKeyMetadataListType" => %{"member" => %{"shape" => "AccessKeyMetadata"}, "type" => "list"}, "PolicyUser" => %{"members" => %{"UserId" => %{"shape" => "idType"}, "UserName" => %{"shape" => "userNameType"}}, "type" => "structure"}, "ListAccountAliasesResponse" => %{"members" => %{"AccountAliases" => %{"shape" => "accountAliasListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["AccountAliases"], "type" => "structure"}, "ResetServiceSpecificCredentialResponse" => %{"members" => %{"ServiceSpecificCredential" => %{"shape" => "ServiceSpecificCredential"}}, "type" => "structure"}, "ResourceHandlingOptionType" => %{"max" => 64, "min" => 1, "type" => "string"}, "GetAccountAuthorizationDetailsRequest" => %{"members" => %{"Filter" => %{"shape" => "entityListType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}}, "type" => "structure"}, "instanceProfileNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "groupDetailListType" => %{"member" => %{"shape" => "GroupDetail"}, "type" => "list"}, "AttachRolePolicyRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyArn"], "type" => "structure"}, "DeleteAccountAliasRequest" => %{"members" => %{"AccountAlias" => %{"shape" => "accountAliasType"}}, "required" => ["AccountAlias"], "type" => "structure"}, "GetServerCertificateRequest" => %{"members" => %{"ServerCertificateName" => %{"shape" => "serverCertificateNameType"}}, "required" => ["ServerCertificateName"], "type" => "structure"}, "serverCertificateMetadataListType" => %{"member" => %{"shape" => "ServerCertificateMetadata"}, "type" => "list"}, "InvalidAuthenticationCodeException" => %{"error" => %{"code" => "InvalidAuthenticationCode", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidAuthenticationCodeMessage"}}, "type" => "structure"}, "GetPolicyRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}}, "required" => ["PolicyArn"], "type" => "structure"}, "AddRoleToInstanceProfileRequest" => %{"members" => %{"InstanceProfileName" => %{"shape" => "instanceProfileNameType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["InstanceProfileName", "RoleName"], "type" => "structure"}, "limitExceededMessage" => %{"type" => "string"}, "certificateBodyType" => %{"max" => 16384, "min" => 1, "pattern" => "[\\u0009\\u000A\\u000D\\u0020-\\u00FF]+", "type" => "string"}, "UpdateServiceSpecificCredentialRequest" => %{"members" => %{"ServiceSpecificCredentialId" => %{"shape" => "serviceSpecificCredentialId"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["ServiceSpecificCredentialId", "Status"], "type" => "structure"}, "publicKeyIdType" => %{"max" => 128, "min" => 20, "pattern" => "[\\w]+", "type" => "string"}, "SAMLProviderListType" => %{"member" => %{"shape" => "SAMLProviderListEntry"}, "type" => "list"}, "duplicateSSHPublicKeyMessage" => %{"type" => "string"}, "ResetServiceSpecificCredentialRequest" => %{"members" => %{"ServiceSpecificCredentialId" => %{"shape" => "serviceSpecificCredentialId"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["ServiceSpecificCredentialId"], "type" => "structure"}, "GetLoginProfileResponse" => %{"members" => %{"LoginProfile" => %{"shape" => "LoginProfile"}}, "required" => ["LoginProfile"], "type" => "structure"}, "ListAccessKeysResponse" => %{"members" => %{"AccessKeyMetadata" => %{"shape" => "accessKeyMetadataListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["AccessKeyMetadata"], "type" => "structure"}, "userListType" => %{"member" => %{"shape" => "User"}, "type" => "list"}, "AttachedPolicy" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "type" => "structure"}, "passwordPolicyViolationMessage" => %{"type" => "string"}, "entityAlreadyExistsMessage" => %{"type" => "string"}, "markerType" => %{"max" => 320, "min" => 1, "pattern" => "[\\u0020-\\u00FF]+", "type" => "string"}, "ListSigningCertificatesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "type" => "structure"}, "GetPolicyVersionResponse" => %{"members" => %{"PolicyVersion" => %{"shape" => "PolicyVersion"}}, "type" => "structure"}, "GetRoleResponse" => %{"members" => %{"Role" => %{"shape" => "Role"}}, "required" => ["Role"], "type" => "structure"}, "DeleteSSHPublicKeyRequest" => %{"members" => %{"SSHPublicKeyId" => %{"shape" => "publicKeyIdType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SSHPublicKeyId"], "type" => "structure"}, "roleListType" => %{"member" => %{"shape" => "Role"}, "type" => "list"}, "ListVirtualMFADevicesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "VirtualMFADevices" => %{"shape" => "virtualMFADeviceListType"}}, "required" => ["VirtualMFADevices"], "type" => "structure"}, "passwordReusePreventionType" => %{"box" => true, "max" => 24, "min" => 1, "type" => "integer"}, "PutRolePolicyRequest" => %{"members" => %{"PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName", "PolicyName", "PolicyDocument"], "type" => "structure"}, "UpdateSigningCertificateRequest" => %{"members" => %{"CertificateId" => %{"shape" => "certificateIdType"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["CertificateId", "Status"], "type" => "structure"}, "UpdateSAMLProviderRequest" => %{"members" => %{"SAMLMetadataDocument" => %{"shape" => "SAMLMetadataDocumentType"}, "SAMLProviderArn" => %{"shape" => "arnType"}}, "required" => ["SAMLMetadataDocument", "SAMLProviderArn"], "type" => "structure"}, "UpdateUserRequest" => %{"members" => %{"NewPath" => %{"shape" => "pathType"}, "NewUserName" => %{"shape" => "userNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName"], "type" => "structure"}, "ReportContentType" => %{"type" => "blob"}, "UploadServerCertificateRequest" => %{"members" => %{"CertificateBody" => %{"shape" => "certificateBodyType"}, "CertificateChain" => %{"shape" => "certificateChainType"}, "Path" => %{"shape" => "pathType"}, "PrivateKey" => %{"shape" => "privateKeyType"}, "ServerCertificateName" => %{"shape" => "serverCertificateNameType"}}, "required" => ["ServerCertificateName", "CertificateBody", "PrivateKey"], "type" => "structure"}, "PolicyRole" => %{"members" => %{"RoleId" => %{"shape" => "idType"}, "RoleName" => %{"shape" => "roleNameType"}}, "type" => "structure"}, "accountAliasType" => %{"max" => 63, "min" => 3, "pattern" => "^[a-z0-9](([a-z0-9]|-(?!-))*[a-z0-9])?$", "type" => "string"}, "UpdateAccessKeyRequest" => %{"members" => %{"AccessKeyId" => %{"shape" => "accessKeyIdType"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["AccessKeyId", "Status"], "type" => "structure"}, "ListEntitiesForPolicyRequest" => %{"members" => %{"EntityFilter" => %{"shape" => "EntityType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "pathType"}, "PolicyArn" => %{"shape" => "arnType"}}, "required" => ["PolicyArn"], "type" => "structure"}, "roleDescriptionType" => %{"max" => 1000, "pattern" => "[\\p{L}\\p{M}\\p{Z}\\p{S}\\p{N}\\p{P}]*", "type" => "string"}, "assignmentStatusType" => %{"enum" => ["Assigned", "Unassigned", "Any"], "type" => "string"}, "PasswordPolicyViolationException" => %{"error" => %{"code" => "PasswordPolicyViolation", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "passwordPolicyViolationMessage"}}, "type" => "structure"}, "invalidUserTypeMessage" => %{"type" => "string"}, "policyDocumentVersionListType" => %{"member" => %{"shape" => "PolicyVersion"}, "type" => "list"}, "UploadServerCertificateResponse" => %{"members" => %{"ServerCertificateMetadata" => %{"shape" => "ServerCertificateMetadata"}}, "type" => "structure"}, "UploadSigningCertificateResponse" => %{"members" => %{"Certificate" => %{"shape" => "SigningCertificate"}}, "required" => ["Certificate"], "type" => "structure"}, "credentialReportNotPresentExceptionMessage" => %{"type" => "string"}, "InvalidPublicKeyException" => %{"error" => %{"code" => "InvalidPublicKey", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidPublicKeyMessage"}}, "type" => "structure"}, "NoSuchEntityException" => %{"error" => %{"code" => "NoSuchEntity", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "noSuchEntityMessage"}}, "type" => "structure"}, "ServiceSpecificCredential" => %{"members" => %{"CreateDate" => %{"shape" => "dateType"}, "ServiceName" => %{"shape" => "serviceName"}, "ServicePassword" => %{"shape" => "servicePassword"}, "ServiceSpecificCredentialId" => %{"shape" => "serviceSpecificCredentialId"}, "ServiceUserName" => %{"shape" => "serviceUserName"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["CreateDate", "ServiceName", "ServiceUserName", "ServicePassword", "ServiceSpecificCredentialId", "UserName", "Status"], "type" => "structure"}, "certificateListType" => %{"member" => %{"shape" => "SigningCertificate"}, "type" => "list"}, "CreateGroupResponse" => %{"members" => %{"Group" => %{"shape" => "Group"}}, "required" => ["Group"], "type" => "structure"}, "ListOpenIDConnectProvidersRequest" => %{"members" => %{}, "type" => "structure"}, "ListAttachedGroupPoliciesResponse" => %{"members" => %{"AttachedPolicies" => %{"shape" => "attachedPoliciesListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "type" => "structure"}, "PutUserPolicyRequest" => %{"members" => %{"PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "PolicyName", "PolicyDocument"], "type" => "structure"}, "ListMFADevicesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "booleanType"}, "MFADevices" => %{"shape" => "mfaDeviceListType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["MFADevices"], "type" => "structure"}, "credentialReportNotReadyExceptionMessage" => %{"type" => "string"}, "ServiceSpecificCredentialMetadata" => %{"members" => %{"CreateDate" => %{"shape" => "dateType"}, "ServiceName" => %{"shape" => "serviceName"}, "ServiceSpecificCredentialId" => %{"shape" => "serviceSpecificCredentialId"}, "ServiceUserName" => %{"shape" => "serviceUserName"}, "Status" => %{"shape" => "statusType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "Status", "ServiceUserName", "CreateDate", "ServiceSpecificCredentialId", "ServiceName"], "type" => "structure"}, "ListAttachedGroupPoliciesRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "policyPathType"}}, "required" => ["GroupName"], "type" => "structure"}, "CreateUserRequest" => %{"members" => %{"Path" => %{"shape" => "pathType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName"], "type" => "structure"}, "booleanType" => %{"type" => "boolean"}, "OpenIDConnectProviderUrlType" => %{"max" => 255, "min" => 1, "type" => "string"}, "ResourceNameListType" => %{"member" => %{"shape" => "ResourceNameType"}, "type" => "list"}, "policyVersionIdType" => %{"pattern" => "v[1-9][0-9]*(\\.[A-Za-z0-9-]*)?", "type" => "string"}, "GetGroupPolicyRequest" => %{"members" => %{"GroupName" => %{"shape" => "groupNameType"}, "PolicyName" => %{"shape" => "policyNameType"}}, "required" => ["GroupName", "PolicyName"], "type" => "structure"}, "roleNameType" => %{"max" => 64, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "GetPolicyVersionRequest" => %{"members" => %{"PolicyArn" => %{"shape" => "arnType"}, "VersionId" => %{"shape" => "policyVersionIdType"}}, "required" => ["PolicyArn", "VersionId"], "type" => "structure"}, "GetUserPolicyResponse" => %{"members" => %{"PolicyDocument" => %{"shape" => "policyDocumentType"}, "PolicyName" => %{"shape" => "policyNameType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "PolicyName", "PolicyDocument"], "type" => "structure"}, "EntityAlreadyExistsException" => %{"error" => %{"code" => "EntityAlreadyExists", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "entityAlreadyExistsMessage"}}, "type" => "structure"}, "AccessKeyLastUsed" => %{"members" => %{"LastUsedDate" => %{"shape" => "dateType"}, "Region" => %{"shape" => "stringType"}, "ServiceName" => %{"shape" => "stringType"}}, "required" => ["LastUsedDate", "ServiceName", "Region"], "type" => "structure"}, "idType" => %{"max" => 128, "min" => 16, "pattern" => "[\\w]+", "type" => "string"}, "ListAttachedRolePoliciesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "policyPathType"}, "RoleName" => %{"shape" => "roleNameType"}}, "required" => ["RoleName"], "type" => "structure"}, "SAMLProviderListEntry" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "CreateDate" => %{"shape" => "dateType"}, "ValidUntil" => %{"shape" => "dateType"}}, "type" => "structure"}, "CreateInstanceProfileRequest" => %{"members" => %{"InstanceProfileName" => %{"shape" => "instanceProfileNameType"}, "Path" => %{"shape" => "pathType"}}, "required" => ["InstanceProfileName"], "type" => "structure"}, "ListAttachedUserPoliciesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PathPrefix" => %{"shape" => "policyPathType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName"], "type" => "structure"}, "DeactivateMFADeviceRequest" => %{"members" => %{"SerialNumber" => %{"shape" => "serialNumberType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName", "SerialNumber"], "type" => "structure"}, "GetOpenIDConnectProviderResponse" => %{"members" => %{"ClientIDList" => %{"shape" => "clientIDListType"}, "CreateDate" => %{"shape" => "dateType"}, "ThumbprintList" => %{"shape" => "thumbprintListType"}, "Url" => %{"shape" => "OpenIDConnectProviderUrlType"}}, "type" => "structure"}, "CreatePolicyVersionResponse" => %{"members" => %{"PolicyVersion" => %{"shape" => "PolicyVersion"}}, "type" => "structure"}, "policyPathType" => %{"pattern" => "((/[A-Za-z0-9\\.,\\+@=_-]+)*)/", "type" => "string"}, "SimulateCustomPolicyRequest" => %{"members" => %{"ActionNames" => %{"shape" => "ActionNameListType"}, "CallerArn" => %{"shape" => "ResourceNameType"}, "ContextEntries" => %{"shape" => "ContextEntryListType"}, "Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "PolicyInputList" => %{"shape" => "SimulationPolicyListType"}, "ResourceArns" => %{"shape" => "ResourceNameListType"}, "ResourceHandlingOption" => %{"shape" => "ResourceHandlingOptionType"}, "ResourceOwner" => %{"shape" => "ResourceNameType"}, "ResourcePolicy" => %{"shape" => "policyDocumentType"}}, "required" => ["PolicyInputList", "ActionNames"], "type" => "structure"}, "GetLoginProfileRequest" => %{"members" => %{"UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName"], "type" => "structure"}, "ListInstanceProfilesForRoleResponse" => %{"members" => %{"InstanceProfiles" => %{"shape" => "instanceProfileListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}}, "required" => ["InstanceProfiles"], "type" => "structure"}, "CreateAccessKeyRequest" => %{"members" => %{"UserName" => %{"shape" => "existingUserNameType"}}, "type" => "structure"}, "DeleteInstanceProfileRequest" => %{"members" => %{"InstanceProfileName" => %{"shape" => "instanceProfileNameType"}}, "required" => ["InstanceProfileName"], "type" => "structure"}, "ListUserPoliciesRequest" => %{"members" => %{"Marker" => %{"shape" => "markerType"}, "MaxItems" => %{"shape" => "maxItemsType"}, "UserName" => %{"shape" => "existingUserNameType"}}, "required" => ["UserName"], "type" => "structure"}, "publicKeyFingerprintType" => %{"max" => 48, "min" => 48, "pattern" => "[:\\w]+", "type" => "string"}, "policyNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "ServerCertificate" => %{"members" => %{"CertificateBody" => %{"shape" => "certificateBodyType"}, "CertificateChain" => %{"shape" => "certificateChainType"}, "ServerCertificateMetadata" => %{"shape" => "ServerCertificateMetadata"}}, "required" => ["ServerCertificateMetadata", "CertificateBody"], "type" => "structure"}, "PolicyRoleListType" => %{"member" => %{"shape" => "PolicyRole"}, "type" => "list"}, "encodingType" => %{"enum" => ["SSH", "PEM"], "type" => "string"}, "serverCertificateNameType" => %{"max" => 128, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "Group" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "CreateDate" => %{"shape" => "dateType"}, "GroupId" => %{"shape" => "idType"}, "GroupName" => %{"shape" => "groupNameType"}, "Path" => %{"shape" => "pathType"}}, "required" => ["Path", "GroupName", "GroupId", "Arn", "CreateDate"], "type" => "structure"}, "GetAccountAuthorizationDetailsResponse" => %{"members" => %{"GroupDetailList" => %{"shape" => "groupDetailListType"}, "IsTruncated" => %{"shape" => "booleanType"}, "Marker" => %{"shape" => "markerType"}, "Policies" => %{"shape" => "ManagedPolicyDetailListType"}, "RoleDetailList" => %{"shape" => "roleDetailListType"}, "UserDetailList" => %{"shape" => "userDetailListType"}}, "type" => "structure"}, "userNameType" => %{"max" => 64, "min" => 1, "pattern" => "[\\w+=,.@-]+", "type" => "string"}, "CreateServiceSpecificCredentialRequest" => %{"members" => %{"ServiceName" => %{"shape" => "serviceName"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "ServiceName"], "type" => "structure"}, "GroupDetail" => %{"members" => %{"Arn" => %{"shape" => "arnType"}, "AttachedManagedPolicies" => %{"shape" => "attachedPoliciesListType"}, "CreateDate" => %{"shape" => "dateType"}, "GroupId" => %{"shape" => "idType"}, "GroupName" => %{"shape" => "groupNameType"}, "GroupPolicyList" => %{"shape" => "policyDetailListType"}, "Path" => %{"shape" => "pathType"}}, "type" => "structure"}, "InvalidInputException" => %{"error" => %{"code" => "InvalidInput", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidInputMessage"}}, "type" => "structure"}, "InvalidCertificateException" => %{"error" => %{"code" => "InvalidCertificate", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "invalidCertificateMessage"}}, "type" => "structure"}, "KeyPairMismatchException" => %{"error" => %{"code" => "KeyPairMismatch", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "keyPairMismatchMessage"}}, "type" => "structure"}, "DuplicateSSHPublicKeyException" => %{"error" => %{"code" => "DuplicateSSHPublicKey", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "duplicateSSHPublicKeyMessage"}}, "type" => "structure"}, "GenerateCredentialReportResponse" => %{"members" => %{"Description" => %{"shape" => "ReportStateDescriptionType"}, "State" => %{"shape" => "ReportStateType"}}, "type" => "structure"}, "MFADevice" => %{"members" => %{"EnableDate" => %{"shape" => "dateType"}, "SerialNumber" => %{"shape" => "serialNumberType"}, "UserName" => %{"shape" => "userNameType"}}, "required" => ["UserName", "SerialNumber", "EnableDate"], "type" => "structure"}, "OpenIDConnectProviderListType" => %{"member" => %{"shape" => "OpenIDConnectProviderListEntry"}, "type" => "list"}, "DeleteServerCertificateRequest" => %{"members" => %{"ServerCertificateName" => %{"shape" => "serverCertificateNameType"}}, "required" => ["ServerCertificateName"], "type" => "structure"}}
+  end
 end

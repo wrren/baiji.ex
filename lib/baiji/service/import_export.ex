@@ -25,9 +25,13 @@ defmodule Baiji.ImportExport do
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CancelJobInput",
+      output_shape:     "CancelJobOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   This operation initiates the process of scheduling an upload or download of
@@ -47,9 +51,13 @@ defmodule Baiji.ImportExport do
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateJobInput",
+      output_shape:     "CreateJobOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   This operation generates a pre-paid UPS shipping label that you will use to
@@ -66,9 +74,13 @@ defmodule Baiji.ImportExport do
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetShippingLabelInput",
+      output_shape:     "GetShippingLabelOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   This operation returns information about a job, including where the job is
@@ -87,9 +99,13 @@ defmodule Baiji.ImportExport do
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetStatusInput",
+      output_shape:     "GetStatusOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   This operation returns the jobs associated with the requester. AWS
@@ -109,9 +125,13 @@ defmodule Baiji.ImportExport do
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListJobsInput",
+      output_shape:     "ListJobsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   You use this operation to change the parameters specified in the original
@@ -131,8 +151,19 @@ defmodule Baiji.ImportExport do
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateJobInput",
+      output_shape:     "UpdateJobOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"phoneNumber" => %{"type" => "string"}, "Job" => %{"members" => %{"CreationDate" => %{"shape" => "CreationDate"}, "IsCanceled" => %{"shape" => "IsCanceled"}, "JobId" => %{"shape" => "JobId"}, "JobType" => %{"shape" => "JobType"}}, "type" => "structure"}, "InvalidParameterException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Manifest" => %{"type" => "string"}, "GenericString" => %{"type" => "string"}, "company" => %{"type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "MissingCustomsException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreationDate" => %{"type" => "timestamp"}, "ListJobsOutput" => %{"members" => %{"IsTruncated" => %{"shape" => "IsTruncated"}, "Jobs" => %{"shape" => "JobsList"}}, "type" => "structure"}, "InvalidAddressException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InvalidCustomsException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Artifact" => %{"members" => %{"Description" => %{"shape" => "Description"}, "URL" => %{"shape" => "URL"}}, "type" => "structure"}, "ProgressMessage" => %{"type" => "string"}, "BucketPermissionException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InvalidManifestFieldException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MissingManifestFieldException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "street3" => %{"type" => "string"}, "country" => %{"type" => "string"}, "LocationCode" => %{"type" => "string"}, "TrackingNumber" => %{"type" => "string"}, "Description" => %{"type" => "string"}, "InvalidVersionException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CancelJobInput" => %{"members" => %{"APIVersion" => %{"shape" => "APIVersion"}, "JobId" => %{"shape" => "JobId"}}, "required" => ["JobId"], "type" => "structure"}, "GetShippingLabelOutput" => %{"members" => %{"ShippingLabelURL" => %{"shape" => "GenericString"}, "Warning" => %{"shape" => "GenericString"}}, "type" => "structure"}, "ArtifactList" => %{"member" => %{"shape" => "Artifact"}, "type" => "list"}, "JobType" => %{"enum" => ["Import", "Export"], "type" => "string"}, "JobsList" => %{"member" => %{"shape" => "Job"}, "type" => "list"}, "Success" => %{"type" => "boolean"}, "UnableToCancelJobIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UnableToUpdateJobIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateJobInput" => %{"members" => %{"APIVersion" => %{"shape" => "APIVersion"}, "JobType" => %{"shape" => "JobType"}, "Manifest" => %{"shape" => "Manifest"}, "ManifestAddendum" => %{"shape" => "ManifestAddendum"}, "ValidateOnly" => %{"shape" => "ValidateOnly"}}, "required" => ["JobType", "Manifest", "ValidateOnly"], "type" => "structure"}, "ExpiredJobIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UpdateJobInput" => %{"members" => %{"APIVersion" => %{"shape" => "APIVersion"}, "JobId" => %{"shape" => "JobId"}, "JobType" => %{"shape" => "JobType"}, "Manifest" => %{"shape" => "Manifest"}, "ValidateOnly" => %{"shape" => "ValidateOnly"}}, "required" => ["JobId", "Manifest", "JobType", "ValidateOnly"], "type" => "structure"}, "Carrier" => %{"type" => "string"}, "LocationMessage" => %{"type" => "string"}, "NoSuchBucketException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CurrentManifest" => %{"type" => "string"}, "MissingParameterException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LogBucket" => %{"type" => "string"}, "street2" => %{"type" => "string"}, "GetStatusInput" => %{"members" => %{"APIVersion" => %{"shape" => "APIVersion"}, "JobId" => %{"shape" => "JobId"}}, "required" => ["JobId"], "type" => "structure"}, "IsTruncated" => %{"type" => "boolean"}, "postalCode" => %{"type" => "string"}, "CanceledJobIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CancelJobOutput" => %{"members" => %{"Success" => %{"shape" => "Success"}}, "type" => "structure"}, "LogKey" => %{"type" => "string"}, "GetShippingLabelInput" => %{"members" => %{"APIVersion" => %{"shape" => "APIVersion"}, "city" => %{"shape" => "city"}, "company" => %{"shape" => "company"}, "country" => %{"shape" => "country"}, "jobIds" => %{"shape" => "JobIdList"}, "name" => %{"shape" => "name"}, "phoneNumber" => %{"shape" => "phoneNumber"}, "postalCode" => %{"shape" => "postalCode"}, "stateOrProvince" => %{"shape" => "stateOrProvince"}, "street1" => %{"shape" => "street1"}, "street2" => %{"shape" => "street2"}, "street3" => %{"shape" => "street3"}}, "required" => ["jobIds"], "type" => "structure"}, "name" => %{"type" => "string"}, "APIVersion" => %{"type" => "string"}, "InvalidJobIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MultipleRegionsException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Marker" => %{"type" => "string"}, "city" => %{"type" => "string"}, "WarningMessage" => %{"type" => "string"}, "ManifestAddendum" => %{"type" => "string"}, "ListJobsInput" => %{"members" => %{"APIVersion" => %{"shape" => "APIVersion"}, "Marker" => %{"shape" => "Marker"}, "MaxJobs" => %{"shape" => "MaxJobs"}}, "type" => "structure"}, "InvalidFileSystemException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Signature" => %{"type" => "string"}, "ProgressCode" => %{"type" => "string"}, "CreateJobQuotaExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MaxJobs" => %{"type" => "integer"}, "JobIdList" => %{"member" => %{"shape" => "GenericString"}, "type" => "list"}, "InvalidAccessKeyIdException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "SignatureFileContents" => %{"type" => "string"}, "IsCanceled" => %{"type" => "boolean"}, "UpdateJobOutput" => %{"members" => %{"ArtifactList" => %{"shape" => "ArtifactList"}, "Success" => %{"shape" => "Success"}, "WarningMessage" => %{"shape" => "WarningMessage"}}, "type" => "structure"}, "JobId" => %{"type" => "string"}, "stateOrProvince" => %{"type" => "string"}, "CreateJobOutput" => %{"members" => %{"ArtifactList" => %{"shape" => "ArtifactList"}, "JobId" => %{"shape" => "JobId"}, "JobType" => %{"shape" => "JobType"}, "Signature" => %{"shape" => "Signature"}, "SignatureFileContents" => %{"shape" => "SignatureFileContents"}, "WarningMessage" => %{"shape" => "WarningMessage"}}, "type" => "structure"}, "URL" => %{"type" => "string"}, "MalformedManifestException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetStatusOutput" => %{"members" => %{"ArtifactList" => %{"shape" => "ArtifactList"}, "Carrier" => %{"shape" => "Carrier"}, "CreationDate" => %{"shape" => "CreationDate"}, "CurrentManifest" => %{"shape" => "CurrentManifest"}, "ErrorCount" => %{"shape" => "ErrorCount"}, "JobId" => %{"shape" => "JobId"}, "JobType" => %{"shape" => "JobType"}, "LocationCode" => %{"shape" => "LocationCode"}, "LocationMessage" => %{"shape" => "LocationMessage"}, "LogBucket" => %{"shape" => "LogBucket"}, "LogKey" => %{"shape" => "LogKey"}, "ProgressCode" => %{"shape" => "ProgressCode"}, "ProgressMessage" => %{"shape" => "ProgressMessage"}, "Signature" => %{"shape" => "Signature"}, "SignatureFileContents" => %{"shape" => "Signature"}, "TrackingNumber" => %{"shape" => "TrackingNumber"}}, "type" => "structure"}, "ValidateOnly" => %{"type" => "boolean"}, "street1" => %{"type" => "string"}, "ErrorCount" => %{"type" => "integer"}}
+  end
 end

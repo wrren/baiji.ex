@@ -33,9 +33,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteAlarmsInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes all dashboards that you specify. You may specify up to 100
@@ -53,9 +57,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteDashboardsInput",
+      output_shape:     "DeleteDashboardsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the history for the specified alarm. You can filter the results
@@ -75,9 +83,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeAlarmHistoryInput",
+      output_shape:     "DescribeAlarmHistoryOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the specified alarms. If no alarms are specified, all alarms are
@@ -95,9 +107,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeAlarmsInput",
+      output_shape:     "DescribeAlarmsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the alarms for the specified metric. To filter the results,
@@ -114,9 +130,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeAlarmsForMetricInput",
+      output_shape:     "DescribeAlarmsForMetricOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disables the actions for the specified alarms. When an alarm's actions are
@@ -133,9 +153,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisableAlarmActionsInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Enables the actions for the specified alarms.
@@ -151,9 +175,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "EnableAlarmActionsInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Displays the details of the dashboard that you specify.
@@ -173,9 +201,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetDashboardInput",
+      output_shape:     "GetDashboardOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets statistics for the specified metric.
@@ -244,9 +276,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetMetricStatisticsInput",
+      output_shape:     "GetMetricStatisticsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of the dashboards for your account. If you include
@@ -264,9 +300,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListDashboardsInput",
+      output_shape:     "ListDashboardsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   List the specified metrics. You can use the returned metrics with
@@ -290,9 +330,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListMetricsInput",
+      output_shape:     "ListMetricsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a dashboard if it does not already exist, or updates an existing
@@ -328,9 +372,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutDashboardInput",
+      output_shape:     "PutDashboardOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates an alarm and associates it with the specified metric.
@@ -387,9 +435,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutMetricAlarmInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Publishes metric data points to Amazon CloudWatch. CloudWatch associates
@@ -439,9 +491,13 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutMetricDataInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Temporarily sets the state of an alarm for testing purposes. When the
@@ -464,8 +520,19 @@ defmodule Baiji.CloudWatch do
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "SetAlarmStateInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"Statistic" => %{"enum" => ["SampleCount", "Average", "Sum", "Minimum", "Maximum"], "type" => "string"}, "HistoryItemType" => %{"enum" => ["ConfigurationUpdate", "StateUpdate", "Action"], "type" => "string"}, "PutMetricDataInput" => %{"members" => %{"MetricData" => %{"shape" => "MetricData"}, "Namespace" => %{"shape" => "Namespace"}}, "required" => ["Namespace", "MetricData"], "type" => "structure"}, "Size" => %{"type" => "long"}, "DimensionValue" => %{"max" => 255, "min" => 1, "type" => "string"}, "StatisticSet" => %{"members" => %{"Maximum" => %{"shape" => "DatapointValue"}, "Minimum" => %{"shape" => "DatapointValue"}, "SampleCount" => %{"shape" => "DatapointValue"}, "Sum" => %{"shape" => "DatapointValue"}}, "required" => ["SampleCount", "Sum", "Minimum", "Maximum"], "type" => "structure"}, "ResourceNotFound" => %{"error" => %{"code" => "ResourceNotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Dimensions" => %{"max" => 10, "member" => %{"shape" => "Dimension"}, "type" => "list"}, "DimensionName" => %{"max" => 255, "min" => 1, "type" => "string"}, "DimensionFilters" => %{"max" => 10, "member" => %{"shape" => "DimensionFilter"}, "type" => "list"}, "ErrorMessage" => %{"max" => 255, "min" => 1, "type" => "string"}, "StandardUnit" => %{"enum" => ["Seconds", "Microseconds", "Milliseconds", "Bytes", "Kilobytes", "Megabytes", "Gigabytes", "Terabytes", "Bits", "Kilobits", "Megabits", "Gigabits", "Terabits", "Percent", "Count", "Bytes/Second", "Kilobytes/Second", "Megabytes/Second", "Gigabytes/Second", "Terabytes/Second", "Bits/Second", "Kilobits/Second", "Megabits/Second", "Gigabits/Second", "Terabits/Second", "Count/Second", "None"], "type" => "string"}, "ListDashboardsOutput" => %{"members" => %{"DashboardEntries" => %{"shape" => "DashboardEntries"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "LastModified" => %{"type" => "timestamp"}, "DeleteDashboardsOutput" => %{"members" => %{}, "type" => "structure"}, "DisableAlarmActionsInput" => %{"members" => %{"AlarmNames" => %{"shape" => "AlarmNames"}}, "required" => ["AlarmNames"], "type" => "structure"}, "InternalServiceFault" => %{"error" => %{"code" => "InternalServiceError", "httpStatusCode" => 500}, "exception" => true, "members" => %{"Message" => %{"shape" => "FaultDescription"}}, "type" => "structure", "xmlOrder" => ["Message"]}, "InvalidParameterValueException" => %{"error" => %{"code" => "InvalidParameterValue", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "AwsQueryErrorMessage"}}, "type" => "structure"}, "PutDashboardOutput" => %{"members" => %{"DashboardValidationMessages" => %{"shape" => "DashboardValidationMessages"}}, "type" => "structure"}, "DashboardNamePrefix" => %{"type" => "string"}, "InvalidNextToken" => %{"error" => %{"code" => "InvalidNextToken", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListMetricsInput" => %{"members" => %{"Dimensions" => %{"shape" => "DimensionFilters"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "AlarmArn" => %{"max" => 1600, "min" => 1, "type" => "string"}, "Statistics" => %{"max" => 5, "member" => %{"shape" => "Statistic"}, "min" => 1, "type" => "list"}, "StateReasonData" => %{"max" => 4000, "min" => 0, "type" => "string"}, "DeleteDashboardsInput" => %{"members" => %{"DashboardNames" => %{"shape" => "DashboardNames"}}, "type" => "structure"}, "ActionsEnabled" => %{"type" => "boolean"}, "Datapoint" => %{"members" => %{"Average" => %{"shape" => "DatapointValue"}, "ExtendedStatistics" => %{"shape" => "DatapointValueMap"}, "Maximum" => %{"shape" => "DatapointValue"}, "Minimum" => %{"shape" => "DatapointValue"}, "SampleCount" => %{"shape" => "DatapointValue"}, "Sum" => %{"shape" => "DatapointValue"}, "Timestamp" => %{"shape" => "Timestamp"}, "Unit" => %{"shape" => "StandardUnit"}}, "type" => "structure", "xmlOrder" => ["Timestamp", "SampleCount", "Average", "Sum", "Minimum", "Maximum", "Unit", "ExtendedStatistics"]}, "DashboardInvalidInputError" => %{"error" => %{"code" => "InvalidParameterInput", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"dashboardValidationMessages" => %{"shape" => "DashboardValidationMessages"}, "message" => %{"shape" => "DashboardErrorMessage"}}, "type" => "structure"}, "DescribeAlarmsInput" => %{"members" => %{"ActionPrefix" => %{"shape" => "ActionPrefix"}, "AlarmNamePrefix" => %{"shape" => "AlarmNamePrefix"}, "AlarmNames" => %{"shape" => "AlarmNames"}, "MaxRecords" => %{"shape" => "MaxRecords"}, "NextToken" => %{"shape" => "NextToken"}, "StateValue" => %{"shape" => "StateValue"}}, "type" => "structure"}, "Message" => %{"type" => "string"}, "ListDashboardsInput" => %{"members" => %{"DashboardNamePrefix" => %{"shape" => "DashboardNamePrefix"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "StateReason" => %{"max" => 1023, "min" => 0, "type" => "string"}, "PutMetricAlarmInput" => %{"members" => %{"ActionsEnabled" => %{"shape" => "ActionsEnabled"}, "AlarmActions" => %{"shape" => "ResourceList"}, "AlarmDescription" => %{"shape" => "AlarmDescription"}, "AlarmName" => %{"shape" => "AlarmName"}, "ComparisonOperator" => %{"shape" => "ComparisonOperator"}, "Dimensions" => %{"shape" => "Dimensions"}, "EvaluateLowSampleCountPercentile" => %{"shape" => "EvaluateLowSampleCountPercentile"}, "EvaluationPeriods" => %{"shape" => "EvaluationPeriods"}, "ExtendedStatistic" => %{"shape" => "ExtendedStatistic"}, "InsufficientDataActions" => %{"shape" => "ResourceList"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}, "OKActions" => %{"shape" => "ResourceList"}, "Period" => %{"shape" => "Period"}, "Statistic" => %{"shape" => "Statistic"}, "Threshold" => %{"shape" => "Threshold"}, "TreatMissingData" => %{"shape" => "TreatMissingData"}, "Unit" => %{"shape" => "StandardUnit"}}, "required" => ["AlarmName", "MetricName", "Namespace", "Period", "EvaluationPeriods", "Threshold", "ComparisonOperator"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "MetricDatum" => %{"members" => %{"Dimensions" => %{"shape" => "Dimensions"}, "MetricName" => %{"shape" => "MetricName"}, "StatisticValues" => %{"shape" => "StatisticSet"}, "StorageResolution" => %{"shape" => "StorageResolution"}, "Timestamp" => %{"shape" => "Timestamp"}, "Unit" => %{"shape" => "StandardUnit"}, "Value" => %{"shape" => "DatapointValue"}}, "required" => ["MetricName"], "type" => "structure"}, "LimitExceededFault" => %{"error" => %{"code" => "LimitExceeded", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DashboardNames" => %{"member" => %{"shape" => "DashboardName"}, "type" => "list"}, "DescribeAlarmHistoryOutput" => %{"members" => %{"AlarmHistoryItems" => %{"shape" => "AlarmHistoryItems"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "MetricLabel" => %{"type" => "string"}, "StateValue" => %{"enum" => ["OK", "ALARM", "INSUFFICIENT_DATA"], "type" => "string"}, "MetricName" => %{"max" => 255, "min" => 1, "type" => "string"}, "Metrics" => %{"member" => %{"shape" => "Metric"}, "type" => "list"}, "MaxRecords" => %{"max" => 100, "min" => 1, "type" => "integer"}, "MetricData" => %{"member" => %{"shape" => "MetricDatum"}, "type" => "list"}, "DescribeAlarmsOutput" => %{"members" => %{"MetricAlarms" => %{"shape" => "MetricAlarms"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "HistorySummary" => %{"max" => 255, "min" => 1, "type" => "string"}, "ExtendedStatistics" => %{"max" => 10, "member" => %{"shape" => "ExtendedStatistic"}, "min" => 1, "type" => "list"}, "AlarmNamePrefix" => %{"max" => 255, "min" => 1, "type" => "string"}, "Dimension" => %{"members" => %{"Name" => %{"shape" => "DimensionName"}, "Value" => %{"shape" => "DimensionValue"}}, "required" => ["Name", "Value"], "type" => "structure", "xmlOrder" => ["Name", "Value"]}, "DashboardValidationMessages" => %{"member" => %{"shape" => "DashboardValidationMessage"}, "type" => "list"}, "DashboardEntries" => %{"member" => %{"shape" => "DashboardEntry"}, "type" => "list"}, "MissingRequiredParameterException" => %{"error" => %{"code" => "MissingParameter", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "AwsQueryErrorMessage"}}, "type" => "structure"}, "InvalidFormatFault" => %{"error" => %{"code" => "InvalidFormat", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "FaultDescription" => %{"type" => "string"}, "DescribeAlarmsForMetricInput" => %{"members" => %{"Dimensions" => %{"shape" => "Dimensions"}, "ExtendedStatistic" => %{"shape" => "ExtendedStatistic"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}, "Period" => %{"shape" => "Period"}, "Statistic" => %{"shape" => "Statistic"}, "Unit" => %{"shape" => "StandardUnit"}}, "required" => ["MetricName", "Namespace"], "type" => "structure"}, "ComparisonOperator" => %{"enum" => ["GreaterThanOrEqualToThreshold", "GreaterThanThreshold", "LessThanThreshold", "LessThanOrEqualToThreshold"], "type" => "string"}, "EnableAlarmActionsInput" => %{"members" => %{"AlarmNames" => %{"shape" => "AlarmNames"}}, "required" => ["AlarmNames"], "type" => "structure"}, "Datapoints" => %{"member" => %{"shape" => "Datapoint"}, "type" => "list"}, "Threshold" => %{"type" => "double"}, "StorageResolution" => %{"min" => 1, "type" => "integer"}, "EvaluateLowSampleCountPercentile" => %{"max" => 255, "min" => 1, "type" => "string"}, "DeleteAlarmsInput" => %{"members" => %{"AlarmNames" => %{"shape" => "AlarmNames"}}, "required" => ["AlarmNames"], "type" => "structure"}, "AwsQueryErrorMessage" => %{"type" => "string"}, "MetricAlarm" => %{"members" => %{"ActionsEnabled" => %{"shape" => "ActionsEnabled"}, "AlarmActions" => %{"shape" => "ResourceList"}, "AlarmArn" => %{"shape" => "AlarmArn"}, "AlarmConfigurationUpdatedTimestamp" => %{"shape" => "Timestamp"}, "AlarmDescription" => %{"shape" => "AlarmDescription"}, "AlarmName" => %{"shape" => "AlarmName"}, "ComparisonOperator" => %{"shape" => "ComparisonOperator"}, "Dimensions" => %{"shape" => "Dimensions"}, "EvaluateLowSampleCountPercentile" => %{"shape" => "EvaluateLowSampleCountPercentile"}, "EvaluationPeriods" => %{"shape" => "EvaluationPeriods"}, "ExtendedStatistic" => %{"shape" => "ExtendedStatistic"}, "InsufficientDataActions" => %{"shape" => "ResourceList"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}, "OKActions" => %{"shape" => "ResourceList"}, "Period" => %{"shape" => "Period"}, "StateReason" => %{"shape" => "StateReason"}, "StateReasonData" => %{"shape" => "StateReasonData"}, "StateUpdatedTimestamp" => %{"shape" => "Timestamp"}, "StateValue" => %{"shape" => "StateValue"}, "Statistic" => %{"shape" => "Statistic"}, "Threshold" => %{"shape" => "Threshold"}, "TreatMissingData" => %{"shape" => "TreatMissingData"}, "Unit" => %{"shape" => "StandardUnit"}}, "type" => "structure", "xmlOrder" => ["AlarmName", "AlarmArn", "AlarmDescription", "AlarmConfigurationUpdatedTimestamp", "ActionsEnabled", "OKActions", "AlarmActions", "InsufficientDataActions", "StateValue", "StateReason", "StateReasonData", "StateUpdatedTimestamp", "MetricName", "Namespace", "Statistic", "Dimensions", "Period", "Unit", "EvaluationPeriods", "Threshold", "ComparisonOperator", "ExtendedStatistic", "TreatMissingData", "EvaluateLowSampleCountPercentile"]}, "DashboardName" => %{"type" => "string"}, "Period" => %{"min" => 1, "type" => "integer"}, "ExtendedStatistic" => %{"pattern" => "p(\\d{1,2}(\\.\\d{0,2})?|100)", "type" => "string"}, "Metric" => %{"members" => %{"Dimensions" => %{"shape" => "Dimensions"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}}, "type" => "structure", "xmlOrder" => ["Namespace", "MetricName", "Dimensions"]}, "DashboardEntry" => %{"members" => %{"DashboardArn" => %{"shape" => "DashboardArn"}, "DashboardName" => %{"shape" => "DashboardName"}, "LastModified" => %{"shape" => "LastModified"}, "Size" => %{"shape" => "Size"}}, "type" => "structure"}, "InvalidParameterCombinationException" => %{"error" => %{"code" => "InvalidParameterCombination", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "AwsQueryErrorMessage"}}, "type" => "structure"}, "ActionPrefix" => %{"max" => 1024, "min" => 1, "type" => "string"}, "HistoryData" => %{"max" => 4095, "min" => 1, "type" => "string"}, "SetAlarmStateInput" => %{"members" => %{"AlarmName" => %{"shape" => "AlarmName"}, "StateReason" => %{"shape" => "StateReason"}, "StateReasonData" => %{"shape" => "StateReasonData"}, "StateValue" => %{"shape" => "StateValue"}}, "required" => ["AlarmName", "StateValue", "StateReason"], "type" => "structure"}, "AlarmName" => %{"max" => 255, "min" => 1, "type" => "string"}, "EvaluationPeriods" => %{"min" => 1, "type" => "integer"}, "AlarmHistoryItems" => %{"member" => %{"shape" => "AlarmHistoryItem"}, "type" => "list"}, "GetDashboardOutput" => %{"members" => %{"DashboardArn" => %{"shape" => "DashboardArn"}, "DashboardBody" => %{"shape" => "DashboardBody"}, "DashboardName" => %{"shape" => "DashboardName"}}, "type" => "structure"}, "DimensionFilter" => %{"members" => %{"Name" => %{"shape" => "DimensionName"}, "Value" => %{"shape" => "DimensionValue"}}, "required" => ["Name"], "type" => "structure"}, "MetricAlarms" => %{"member" => %{"shape" => "MetricAlarm"}, "type" => "list"}, "DashboardValidationMessage" => %{"members" => %{"DataPath" => %{"shape" => "DataPath"}, "Message" => %{"shape" => "Message"}}, "type" => "structure"}, "DashboardErrorMessage" => %{"type" => "string"}, "DashboardArn" => %{"type" => "string"}, "GetMetricStatisticsOutput" => %{"members" => %{"Datapoints" => %{"shape" => "Datapoints"}, "Label" => %{"shape" => "MetricLabel"}}, "type" => "structure"}, "Namespace" => %{"max" => 255, "min" => 1, "pattern" => "[^:].*", "type" => "string"}, "ListMetricsOutput" => %{"members" => %{"Metrics" => %{"shape" => "Metrics"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure", "xmlOrder" => ["Metrics", "NextToken"]}, "DataPath" => %{"type" => "string"}, "DatapointValueMap" => %{"key" => %{"shape" => "ExtendedStatistic"}, "type" => "map", "value" => %{"shape" => "DatapointValue"}}, "AlarmNames" => %{"max" => 100, "member" => %{"shape" => "AlarmName"}, "type" => "list"}, "DescribeAlarmsForMetricOutput" => %{"members" => %{"MetricAlarms" => %{"shape" => "MetricAlarms"}}, "type" => "structure"}, "GetMetricStatisticsInput" => %{"members" => %{"Dimensions" => %{"shape" => "Dimensions"}, "EndTime" => %{"shape" => "Timestamp"}, "ExtendedStatistics" => %{"shape" => "ExtendedStatistics"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}, "Period" => %{"shape" => "Period"}, "StartTime" => %{"shape" => "Timestamp"}, "Statistics" => %{"shape" => "Statistics"}, "Unit" => %{"shape" => "StandardUnit"}}, "required" => ["Namespace", "MetricName", "StartTime", "EndTime", "Period"], "type" => "structure"}, "ResourceName" => %{"max" => 1024, "min" => 1, "type" => "string"}, "AlarmHistoryItem" => %{"members" => %{"AlarmName" => %{"shape" => "AlarmName"}, "HistoryData" => %{"shape" => "HistoryData"}, "HistoryItemType" => %{"shape" => "HistoryItemType"}, "HistorySummary" => %{"shape" => "HistorySummary"}, "Timestamp" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "DescribeAlarmHistoryInput" => %{"members" => %{"AlarmName" => %{"shape" => "AlarmName"}, "EndDate" => %{"shape" => "Timestamp"}, "HistoryItemType" => %{"shape" => "HistoryItemType"}, "MaxRecords" => %{"shape" => "MaxRecords"}, "NextToken" => %{"shape" => "NextToken"}, "StartDate" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "PutDashboardInput" => %{"members" => %{"DashboardBody" => %{"shape" => "DashboardBody"}, "DashboardName" => %{"shape" => "DashboardName"}}, "type" => "structure"}, "AlarmDescription" => %{"max" => 1024, "min" => 0, "type" => "string"}, "NextToken" => %{"max" => 1024, "min" => 0, "type" => "string"}, "DashboardNotFoundError" => %{"error" => %{"code" => "ResourceNotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "DashboardErrorMessage"}}, "type" => "structure"}, "GetDashboardInput" => %{"members" => %{"DashboardName" => %{"shape" => "DashboardName"}}, "type" => "structure"}, "DatapointValue" => %{"type" => "double"}, "TreatMissingData" => %{"max" => 255, "min" => 1, "type" => "string"}, "ResourceList" => %{"max" => 5, "member" => %{"shape" => "ResourceName"}, "type" => "list"}, "DashboardBody" => %{"type" => "string"}}
+  end
 end

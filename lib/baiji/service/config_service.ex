@@ -55,9 +55,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteConfigRuleRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the configuration recorder.
@@ -85,9 +89,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteConfigurationRecorderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the delivery channel.
@@ -108,9 +116,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteDeliveryChannelRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the evaluation results for the specified Config rule. You can
@@ -131,9 +143,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteEvaluationResultsRequest",
+      output_shape:     "DeleteEvaluationResultsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Schedules delivery of a configuration snapshot to the Amazon S3 bucket in
@@ -164,9 +180,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeliverConfigSnapshotRequest",
+      output_shape:     "DeliverConfigSnapshotResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Indicates whether the specified AWS Config rules are compliant. If a rule
@@ -209,9 +229,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeComplianceByConfigRuleRequest",
+      output_shape:     "DescribeComplianceByConfigRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Indicates whether the specified AWS resources are compliant. If a resource
@@ -255,9 +279,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeComplianceByResourceRequest",
+      output_shape:     "DescribeComplianceByResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns status information for each of your AWS managed Config rules. The
@@ -278,9 +306,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConfigRuleEvaluationStatusRequest",
+      output_shape:     "DescribeConfigRuleEvaluationStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns details about your AWS Config rules.
@@ -298,9 +330,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConfigRulesRequest",
+      output_shape:     "DescribeConfigRulesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the current status of the specified configuration recorder. If a
@@ -325,9 +361,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConfigurationRecorderStatusRequest",
+      output_shape:     "DescribeConfigurationRecorderStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the details for the specified configuration recorders. If the
@@ -352,9 +392,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConfigurationRecordersRequest",
+      output_shape:     "DescribeConfigurationRecordersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the current status of the specified delivery channel. If a delivery
@@ -379,9 +423,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeDeliveryChannelStatusRequest",
+      output_shape:     "DescribeDeliveryChannelStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns details about the specified delivery channel. If a delivery channel
@@ -406,9 +454,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeDeliveryChannelsRequest",
+      output_shape:     "DescribeDeliveryChannelsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the evaluation results for the specified AWS Config rule. The
@@ -429,9 +481,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetComplianceDetailsByConfigRuleRequest",
+      output_shape:     "GetComplianceDetailsByConfigRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the evaluation results for the specified AWS resource. The results
@@ -451,9 +507,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetComplianceDetailsByResourceRequest",
+      output_shape:     "GetComplianceDetailsByResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the number of AWS Config rules that are compliant and noncompliant,
@@ -472,9 +532,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "GetComplianceSummaryByConfigRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the number of resources that are compliant and the number that are
@@ -494,9 +558,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetComplianceSummaryByResourceTypeRequest",
+      output_shape:     "GetComplianceSummaryByResourceTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the resource types, the number of each resource type, and the total
@@ -552,9 +620,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetDiscoveredResourceCountsRequest",
+      output_shape:     "GetDiscoveredResourceCountsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of configuration items for the specified resource. The list
@@ -586,9 +658,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetResourceConfigHistoryRequest",
+      output_shape:     "GetResourceConfigHistoryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Accepts a resource type and returns a list of resource identifiers for the
@@ -620,9 +696,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListDiscoveredResourcesRequest",
+      output_shape:     "ListDiscoveredResourcesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds or updates an AWS Config rule for evaluating whether your AWS
@@ -678,9 +758,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutConfigRuleRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new configuration recorder to record the selected resource
@@ -711,9 +795,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutConfigurationRecorderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a delivery channel object to deliver configuration information to
@@ -746,9 +834,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutDeliveryChannelRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Used by an AWS Lambda function to deliver evaluation results to AWS Config.
@@ -768,9 +860,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutEvaluationsRequest",
+      output_shape:     "PutEvaluationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Runs an on-demand evaluation for the specified Config rules against the
@@ -824,9 +920,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartConfigRulesEvaluationRequest",
+      output_shape:     "StartConfigRulesEvaluationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Starts recording configurations of the AWS resources you have selected to
@@ -848,9 +948,13 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartConfigurationRecorderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Stops recording configurations of the AWS resources you have selected to
@@ -869,8 +973,19 @@ defmodule Baiji.ConfigService do
       endpoint_prefix:  "config",
       type:             :json,
       version:          "2014-11-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "StopConfigurationRecorderRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"DescribeComplianceByResourceResponse" => %{"members" => %{"ComplianceByResources" => %{"shape" => "ComplianceByResources"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DeliveryChannelNameList" => %{"member" => %{"shape" => "ChannelName"}, "type" => "list"}, "ResourceCounts" => %{"member" => %{"shape" => "ResourceCount"}, "type" => "list"}, "DescribeConfigRuleEvaluationStatusRequest" => %{"members" => %{"ConfigRuleNames" => %{"shape" => "ConfigRuleNames"}, "Limit" => %{"shape" => "RuleLimit"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "GetComplianceSummaryByResourceTypeResponse" => %{"members" => %{"ComplianceSummariesByResourceType" => %{"shape" => "ComplianceSummariesByResourceType"}}, "type" => "structure"}, "ConfigurationStateId" => %{"type" => "string"}, "ConfigurationItemCaptureTime" => %{"type" => "timestamp"}, "ResourceType" => %{"enum" => ["AWS::EC2::CustomerGateway", "AWS::EC2::EIP", "AWS::EC2::Host", "AWS::EC2::Instance", "AWS::EC2::InternetGateway", "AWS::EC2::NetworkAcl", "AWS::EC2::NetworkInterface", "AWS::EC2::RouteTable", "AWS::EC2::SecurityGroup", "AWS::EC2::Subnet", "AWS::CloudTrail::Trail", "AWS::EC2::Volume", "AWS::EC2::VPC", "AWS::EC2::VPNConnection", "AWS::EC2::VPNGateway", "AWS::IAM::Group", "AWS::IAM::Policy", "AWS::IAM::Role", "AWS::IAM::User", "AWS::ACM::Certificate", "AWS::RDS::DBInstance", "AWS::RDS::DBSubnetGroup", "AWS::RDS::DBSecurityGroup", "AWS::RDS::DBSnapshot", "AWS::RDS::EventSubscription", "AWS::ElasticLoadBalancingV2::LoadBalancer", "AWS::S3::Bucket", "AWS::SSM::ManagedInstanceInventory", "AWS::Redshift::Cluster", "AWS::Redshift::ClusterSnapshot", "AWS::Redshift::ClusterParameterGroup", "AWS::Redshift::ClusterSecurityGroup", "AWS::Redshift::ClusterSubnetGroup", "AWS::Redshift::EventSubscription", "AWS::CloudWatch::Alarm", "AWS::CloudFormation::Stack"], "type" => "string"}, "ComplianceSummary" => %{"members" => %{"ComplianceSummaryTimestamp" => %{"shape" => "Date"}, "CompliantResourceCount" => %{"shape" => "ComplianceContributorCount"}, "NonCompliantResourceCount" => %{"shape" => "ComplianceContributorCount"}}, "type" => "structure"}, "ResourceTypes" => %{"max" => 20, "member" => %{"shape" => "StringWithCharLimit256"}, "min" => 0, "type" => "list"}, "GetResourceConfigHistoryResponse" => %{"members" => %{"configurationItems" => %{"shape" => "ConfigurationItemList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "MaximumExecutionFrequency" => %{"enum" => ["One_Hour", "Three_Hours", "Six_Hours", "Twelve_Hours", "TwentyFour_Hours"], "type" => "string"}, "String" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "InsufficientPermissionsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidS3KeyPrefixException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidSNSTopicARNException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ComplianceByConfigRule" => %{"members" => %{"Compliance" => %{"shape" => "Compliance"}, "ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}}, "type" => "structure"}, "Scope" => %{"members" => %{"ComplianceResourceId" => %{"shape" => "BaseResourceId"}, "ComplianceResourceTypes" => %{"shape" => "ComplianceResourceTypes"}, "TagKey" => %{"shape" => "StringWithCharLimit128"}, "TagValue" => %{"shape" => "StringWithCharLimit256"}}, "type" => "structure"}, "DeleteConfigRuleRequest" => %{"members" => %{"ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}}, "required" => ["ConfigRuleName"], "type" => "structure"}, "MaxNumberOfConfigRulesExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ChannelName" => %{"max" => 256, "min" => 1, "type" => "string"}, "RelatedEventList" => %{"member" => %{"shape" => "RelatedEvent"}, "type" => "list"}, "GetDiscoveredResourceCountsRequest" => %{"members" => %{"limit" => %{"shape" => "Limit"}, "nextToken" => %{"shape" => "NextToken"}, "resourceTypes" => %{"shape" => "ResourceTypes"}}, "type" => "structure"}, "ListDiscoveredResourcesRequest" => %{"members" => %{"includeDeletedResources" => %{"shape" => "Boolean"}, "limit" => %{"shape" => "Limit"}, "nextToken" => %{"shape" => "NextToken"}, "resourceIds" => %{"shape" => "ResourceIdList"}, "resourceName" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}}, "required" => ["resourceType"], "type" => "structure"}, "ResourceTypeList" => %{"member" => %{"shape" => "ResourceType"}, "type" => "list"}, "InvalidNextTokenException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RelationshipList" => %{"member" => %{"shape" => "Relationship"}, "type" => "list"}, "ChronologicalOrder" => %{"enum" => ["Reverse", "Forward"], "type" => "string"}, "ConfigurationItemMD5Hash" => %{"type" => "string"}, "SupplementaryConfigurationValue" => %{"type" => "string"}, "ResourceInUseException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ResourceCreationTime" => %{"type" => "timestamp"}, "InvalidParameterValueException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteEvaluationResultsRequest" => %{"members" => %{"ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}}, "required" => ["ConfigRuleName"], "type" => "structure"}, "ARN" => %{"type" => "string"}, "AccountId" => %{"type" => "string"}, "Name" => %{"type" => "string"}, "DescribeDeliveryChannelsResponse" => %{"members" => %{"DeliveryChannels" => %{"shape" => "DeliveryChannelList"}}, "type" => "structure"}, "ComplianceResourceTypes" => %{"max" => 100, "member" => %{"shape" => "StringWithCharLimit256"}, "min" => 0, "type" => "list"}, "Limit" => %{"max" => 100, "min" => 0, "type" => "integer"}, "NoAvailableDeliveryChannelException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "NoSuchConfigurationRecorderException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DescribeConfigurationRecordersResponse" => %{"members" => %{"ConfigurationRecorders" => %{"shape" => "ConfigurationRecorderList"}}, "type" => "structure"}, "ConfigRuleNames" => %{"max" => 25, "member" => %{"shape" => "StringWithCharLimit64"}, "min" => 0, "type" => "list"}, "OrderingTimestamp" => %{"type" => "timestamp"}, "ConfigurationRecorderNameList" => %{"member" => %{"shape" => "RecorderName"}, "type" => "list"}, "DeleteConfigurationRecorderRequest" => %{"members" => %{"ConfigurationRecorderName" => %{"shape" => "RecorderName"}}, "required" => ["ConfigurationRecorderName"], "type" => "structure"}, "StopConfigurationRecorderRequest" => %{"members" => %{"ConfigurationRecorderName" => %{"shape" => "RecorderName"}}, "required" => ["ConfigurationRecorderName"], "type" => "structure"}, "DescribeDeliveryChannelStatusRequest" => %{"members" => %{"DeliveryChannelNames" => %{"shape" => "DeliveryChannelNameList"}}, "type" => "structure"}, "RelatedEvent" => %{"type" => "string"}, "LastDeliveryChannelDeleteFailedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Compliance" => %{"members" => %{"ComplianceContributorCount" => %{"shape" => "ComplianceContributorCount"}, "ComplianceType" => %{"shape" => "ComplianceType"}}, "type" => "structure"}, "ConfigRuleState" => %{"enum" => ["ACTIVE", "DELETING", "DELETING_RESULTS", "EVALUATING"], "type" => "string"}, "DeliveryChannelStatus" => %{"members" => %{"configHistoryDeliveryInfo" => %{"shape" => "ConfigExportDeliveryInfo"}, "configSnapshotDeliveryInfo" => %{"shape" => "ConfigExportDeliveryInfo"}, "configStreamDeliveryInfo" => %{"shape" => "ConfigStreamDeliveryInfo"}, "name" => %{"shape" => "String"}}, "type" => "structure"}, "RecordingGroup" => %{"members" => %{"allSupported" => %{"shape" => "AllSupported"}, "includeGlobalResourceTypes" => %{"shape" => "IncludeGlobalResourceTypes"}, "resourceTypes" => %{"shape" => "ResourceTypeList"}}, "type" => "structure"}, "Version" => %{"type" => "string"}, "Date" => %{"type" => "timestamp"}, "ConfigSnapshotDeliveryProperties" => %{"members" => %{"deliveryFrequency" => %{"shape" => "MaximumExecutionFrequency"}}, "type" => "structure"}, "ConfigRuleEvaluationStatus" => %{"members" => %{"ConfigRuleArn" => %{"shape" => "String"}, "ConfigRuleId" => %{"shape" => "String"}, "ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}, "FirstActivatedTime" => %{"shape" => "Date"}, "FirstEvaluationStarted" => %{"shape" => "Boolean"}, "LastErrorCode" => %{"shape" => "String"}, "LastErrorMessage" => %{"shape" => "String"}, "LastFailedEvaluationTime" => %{"shape" => "Date"}, "LastFailedInvocationTime" => %{"shape" => "Date"}, "LastSuccessfulEvaluationTime" => %{"shape" => "Date"}, "LastSuccessfulInvocationTime" => %{"shape" => "Date"}}, "type" => "structure"}, "Evaluation" => %{"members" => %{"Annotation" => %{"shape" => "StringWithCharLimit256"}, "ComplianceResourceId" => %{"shape" => "BaseResourceId"}, "ComplianceResourceType" => %{"shape" => "StringWithCharLimit256"}, "ComplianceType" => %{"shape" => "ComplianceType"}, "OrderingTimestamp" => %{"shape" => "OrderingTimestamp"}}, "required" => ["ComplianceResourceType", "ComplianceResourceId", "ComplianceType", "OrderingTimestamp"], "type" => "structure"}, "PutConfigRuleRequest" => %{"members" => %{"ConfigRule" => %{"shape" => "ConfigRule"}}, "required" => ["ConfigRule"], "type" => "structure"}, "StringWithCharLimit256" => %{"max" => 256, "min" => 1, "type" => "string"}, "GetDiscoveredResourceCountsResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "resourceCounts" => %{"shape" => "ResourceCounts"}, "totalDiscoveredResources" => %{"shape" => "Long"}}, "type" => "structure"}, "SupplementaryConfigurationName" => %{"type" => "string"}, "EarlierTime" => %{"type" => "timestamp"}, "Tags" => %{"key" => %{"shape" => "Name"}, "type" => "map", "value" => %{"shape" => "Value"}}, "GetComplianceSummaryByConfigRuleResponse" => %{"members" => %{"ComplianceSummary" => %{"shape" => "ComplianceSummary"}}, "type" => "structure"}, "ComplianceTypes" => %{"max" => 3, "member" => %{"shape" => "ComplianceType"}, "min" => 0, "type" => "list"}, "EvaluationResults" => %{"member" => %{"shape" => "EvaluationResult"}, "type" => "list"}, "ListDiscoveredResourcesResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "resourceIdentifiers" => %{"shape" => "ResourceIdentifierList"}}, "type" => "structure"}, "RuleLimit" => %{"max" => 50, "min" => 0, "type" => "integer"}, "ComplianceType" => %{"enum" => ["COMPLIANT", "NON_COMPLIANT", "NOT_APPLICABLE", "INSUFFICIENT_DATA"], "type" => "string"}, "PutEvaluationsResponse" => %{"members" => %{"FailedEvaluations" => %{"shape" => "Evaluations"}}, "type" => "structure"}, "InvalidLimitException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ResourceIdentifierList" => %{"member" => %{"shape" => "ResourceIdentifier"}, "type" => "list"}, "ConfigurationItemList" => %{"member" => %{"shape" => "ConfigurationItem"}, "type" => "list"}, "EmptiableStringWithCharLimit256" => %{"max" => 256, "min" => 0, "type" => "string"}, "PutConfigurationRecorderRequest" => %{"members" => %{"ConfigurationRecorder" => %{"shape" => "ConfigurationRecorder"}}, "required" => ["ConfigurationRecorder"], "type" => "structure"}, "NoSuchConfigRuleException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidConfigurationRecorderNameException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DescribeConfigurationRecorderStatusRequest" => %{"members" => %{"ConfigurationRecorderNames" => %{"shape" => "ConfigurationRecorderNameList"}}, "type" => "structure"}, "Owner" => %{"enum" => ["CUSTOM_LAMBDA", "AWS"], "type" => "string"}, "ValidationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ConfigurationItemStatus" => %{"enum" => ["Ok", "Failed", "Discovered", "Deleted"], "type" => "string"}, "EvaluationResult" => %{"members" => %{"Annotation" => %{"shape" => "StringWithCharLimit256"}, "ComplianceType" => %{"shape" => "ComplianceType"}, "ConfigRuleInvokedTime" => %{"shape" => "Date"}, "EvaluationResultIdentifier" => %{"shape" => "EvaluationResultIdentifier"}, "ResultRecordedTime" => %{"shape" => "Date"}, "ResultToken" => %{"shape" => "String"}}, "type" => "structure"}, "ConfigurationItem" => %{"members" => %{"accountId" => %{"shape" => "AccountId"}, "arn" => %{"shape" => "ARN"}, "availabilityZone" => %{"shape" => "AvailabilityZone"}, "awsRegion" => %{"shape" => "AwsRegion"}, "configuration" => %{"shape" => "Configuration"}, "configurationItemCaptureTime" => %{"shape" => "ConfigurationItemCaptureTime"}, "configurationItemMD5Hash" => %{"shape" => "ConfigurationItemMD5Hash"}, "configurationItemStatus" => %{"shape" => "ConfigurationItemStatus"}, "configurationStateId" => %{"shape" => "ConfigurationStateId"}, "relatedEvents" => %{"shape" => "RelatedEventList"}, "relationships" => %{"shape" => "RelationshipList"}, "resourceCreationTime" => %{"shape" => "ResourceCreationTime"}, "resourceId" => %{"shape" => "ResourceId"}, "resourceName" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}, "supplementaryConfiguration" => %{"shape" => "SupplementaryConfiguration"}, "tags" => %{"shape" => "Tags"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "ConfigurationRecorderList" => %{"member" => %{"shape" => "ConfigurationRecorder"}, "type" => "list"}, "NoSuchBucketException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Relationship" => %{"members" => %{"relationshipName" => %{"shape" => "RelationshipName"}, "resourceId" => %{"shape" => "ResourceId"}, "resourceName" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}}, "type" => "structure"}, "AvailabilityZone" => %{"type" => "string"}, "ConfigStreamDeliveryInfo" => %{"members" => %{"lastErrorCode" => %{"shape" => "String"}, "lastErrorMessage" => %{"shape" => "String"}, "lastStatus" => %{"shape" => "DeliveryStatus"}, "lastStatusChangeTime" => %{"shape" => "Date"}}, "type" => "structure"}, "LaterTime" => %{"type" => "timestamp"}, "ResourceNotDiscoveredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "StringWithCharLimit1024" => %{"max" => 1024, "min" => 1, "type" => "string"}, "RecorderName" => %{"max" => 256, "min" => 1, "type" => "string"}, "InvalidResultTokenException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ResourceId" => %{"type" => "string"}, "PutEvaluationsRequest" => %{"members" => %{"Evaluations" => %{"shape" => "Evaluations"}, "ResultToken" => %{"shape" => "String"}, "TestMode" => %{"shape" => "Boolean"}}, "required" => ["ResultToken"], "type" => "structure"}, "DescribeConfigRulesRequest" => %{"members" => %{"ConfigRuleNames" => %{"shape" => "ConfigRuleNames"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "Long" => %{"type" => "long"}, "EvaluationResultIdentifier" => %{"members" => %{"EvaluationResultQualifier" => %{"shape" => "EvaluationResultQualifier"}, "OrderingTimestamp" => %{"shape" => "Date"}}, "type" => "structure"}, "DeliverConfigSnapshotResponse" => %{"members" => %{"configSnapshotId" => %{"shape" => "String"}}, "type" => "structure"}, "RelationshipName" => %{"type" => "string"}, "EventSource" => %{"enum" => ["aws.config"], "type" => "string"}, "Value" => %{"type" => "string"}, "GetResourceConfigHistoryRequest" => %{"members" => %{"chronologicalOrder" => %{"shape" => "ChronologicalOrder"}, "earlierTime" => %{"shape" => "EarlierTime"}, "laterTime" => %{"shape" => "LaterTime"}, "limit" => %{"shape" => "Limit"}, "nextToken" => %{"shape" => "NextToken"}, "resourceId" => %{"shape" => "ResourceId"}, "resourceType" => %{"shape" => "ResourceType"}}, "required" => ["resourceType", "resourceId"], "type" => "structure"}, "ConfigRuleEvaluationStatusList" => %{"member" => %{"shape" => "ConfigRuleEvaluationStatus"}, "type" => "list"}, "DeliveryChannel" => %{"members" => %{"configSnapshotDeliveryProperties" => %{"shape" => "ConfigSnapshotDeliveryProperties"}, "name" => %{"shape" => "ChannelName"}, "s3BucketName" => %{"shape" => "String"}, "s3KeyPrefix" => %{"shape" => "String"}, "snsTopicARN" => %{"shape" => "String"}}, "type" => "structure"}, "ComplianceByConfigRules" => %{"member" => %{"shape" => "ComplianceByConfigRule"}, "type" => "list"}, "GetComplianceSummaryByResourceTypeRequest" => %{"members" => %{"ResourceTypes" => %{"shape" => "ResourceTypes"}}, "type" => "structure"}, "ResourceCount" => %{"members" => %{"count" => %{"shape" => "Long"}, "resourceType" => %{"shape" => "ResourceType"}}, "type" => "structure"}, "ConfigExportDeliveryInfo" => %{"members" => %{"lastAttemptTime" => %{"shape" => "Date"}, "lastErrorCode" => %{"shape" => "String"}, "lastErrorMessage" => %{"shape" => "String"}, "lastStatus" => %{"shape" => "DeliveryStatus"}, "lastSuccessfulTime" => %{"shape" => "Date"}, "nextDeliveryTime" => %{"shape" => "Date"}}, "type" => "structure"}, "InvalidTimeRangeException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "IncludeGlobalResourceTypes" => %{"type" => "boolean"}, "MaxNumberOfDeliveryChannelsExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ConfigurationRecorderStatus" => %{"members" => %{"lastErrorCode" => %{"shape" => "String"}, "lastErrorMessage" => %{"shape" => "String"}, "lastStartTime" => %{"shape" => "Date"}, "lastStatus" => %{"shape" => "RecorderStatus"}, "lastStatusChangeTime" => %{"shape" => "Date"}, "lastStopTime" => %{"shape" => "Date"}, "name" => %{"shape" => "String"}, "recording" => %{"shape" => "Boolean"}}, "type" => "structure"}, "DescribeDeliveryChannelStatusResponse" => %{"members" => %{"DeliveryChannelsStatus" => %{"shape" => "DeliveryChannelStatusList"}}, "type" => "structure"}, "MessageType" => %{"enum" => ["ConfigurationItemChangeNotification", "ConfigurationSnapshotDeliveryCompleted", "ScheduledNotification", "OversizedConfigurationItemChangeNotification"], "type" => "string"}, "GetComplianceDetailsByConfigRuleResponse" => %{"members" => %{"EvaluationResults" => %{"shape" => "EvaluationResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ConfigRules" => %{"member" => %{"shape" => "ConfigRule"}, "type" => "list"}, "StringWithCharLimit64" => %{"max" => 64, "min" => 1, "type" => "string"}, "DescribeConfigurationRecordersRequest" => %{"members" => %{"ConfigurationRecorderNames" => %{"shape" => "ConfigurationRecorderNameList"}}, "type" => "structure"}, "DeliverConfigSnapshotRequest" => %{"members" => %{"deliveryChannelName" => %{"shape" => "ChannelName"}}, "required" => ["deliveryChannelName"], "type" => "structure"}, "InvalidDeliveryChannelNameException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "AllSupported" => %{"type" => "boolean"}, "SourceDetails" => %{"max" => 25, "member" => %{"shape" => "SourceDetail"}, "min" => 0, "type" => "list"}, "NoSuchDeliveryChannelException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DescribeConfigRuleEvaluationStatusResponse" => %{"members" => %{"ConfigRulesEvaluationStatus" => %{"shape" => "ConfigRuleEvaluationStatusList"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "DescribeComplianceByResourceRequest" => %{"members" => %{"ComplianceTypes" => %{"shape" => "ComplianceTypes"}, "Limit" => %{"shape" => "Limit"}, "NextToken" => %{"shape" => "NextToken"}, "ResourceId" => %{"shape" => "BaseResourceId"}, "ResourceType" => %{"shape" => "StringWithCharLimit256"}}, "type" => "structure"}, "DescribeDeliveryChannelsRequest" => %{"members" => %{"DeliveryChannelNames" => %{"shape" => "DeliveryChannelNameList"}}, "type" => "structure"}, "InvalidRecordingGroupException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InsufficientDeliveryPolicyException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "SourceDetail" => %{"members" => %{"EventSource" => %{"shape" => "EventSource"}, "MaximumExecutionFrequency" => %{"shape" => "MaximumExecutionFrequency"}, "MessageType" => %{"shape" => "MessageType"}}, "type" => "structure"}, "GetComplianceDetailsByConfigRuleRequest" => %{"members" => %{"ComplianceTypes" => %{"shape" => "ComplianceTypes"}, "ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}, "Limit" => %{"shape" => "Limit"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["ConfigRuleName"], "type" => "structure"}, "ReevaluateConfigRuleNames" => %{"max" => 25, "member" => %{"shape" => "StringWithCharLimit64"}, "min" => 1, "type" => "list"}, "InvalidRoleException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "StartConfigRulesEvaluationResponse" => %{"members" => %{}, "type" => "structure"}, "StartConfigurationRecorderRequest" => %{"members" => %{"ConfigurationRecorderName" => %{"shape" => "RecorderName"}}, "required" => ["ConfigurationRecorderName"], "type" => "structure"}, "DeleteDeliveryChannelRequest" => %{"members" => %{"DeliveryChannelName" => %{"shape" => "ChannelName"}}, "required" => ["DeliveryChannelName"], "type" => "structure"}, "PutDeliveryChannelRequest" => %{"members" => %{"DeliveryChannel" => %{"shape" => "DeliveryChannel"}}, "required" => ["DeliveryChannel"], "type" => "structure"}, "DescribeConfigurationRecorderStatusResponse" => %{"members" => %{"ConfigurationRecordersStatus" => %{"shape" => "ConfigurationRecorderStatusList"}}, "type" => "structure"}, "DeliveryChannelStatusList" => %{"member" => %{"shape" => "DeliveryChannelStatus"}, "type" => "list"}, "ConfigRule" => %{"members" => %{"ConfigRuleArn" => %{"shape" => "String"}, "ConfigRuleId" => %{"shape" => "String"}, "ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}, "ConfigRuleState" => %{"shape" => "ConfigRuleState"}, "Description" => %{"shape" => "EmptiableStringWithCharLimit256"}, "InputParameters" => %{"shape" => "StringWithCharLimit1024"}, "MaximumExecutionFrequency" => %{"shape" => "MaximumExecutionFrequency"}, "Scope" => %{"shape" => "Scope"}, "Source" => %{"shape" => "Source"}}, "required" => ["Source"], "type" => "structure"}, "GetComplianceDetailsByResourceRequest" => %{"members" => %{"ComplianceTypes" => %{"shape" => "ComplianceTypes"}, "NextToken" => %{"shape" => "String"}, "ResourceId" => %{"shape" => "BaseResourceId"}, "ResourceType" => %{"shape" => "StringWithCharLimit256"}}, "required" => ["ResourceType", "ResourceId"], "type" => "structure"}, "GetComplianceDetailsByResourceResponse" => %{"members" => %{"EvaluationResults" => %{"shape" => "EvaluationResults"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "StartConfigRulesEvaluationRequest" => %{"members" => %{"ConfigRuleNames" => %{"shape" => "ReevaluateConfigRuleNames"}}, "type" => "structure"}, "ConfigurationRecorder" => %{"members" => %{"name" => %{"shape" => "RecorderName"}, "recordingGroup" => %{"shape" => "RecordingGroup"}, "roleARN" => %{"shape" => "String"}}, "type" => "structure"}, "ComplianceByResource" => %{"members" => %{"Compliance" => %{"shape" => "Compliance"}, "ResourceId" => %{"shape" => "BaseResourceId"}, "ResourceType" => %{"shape" => "StringWithCharLimit256"}}, "type" => "structure"}, "ComplianceByResources" => %{"member" => %{"shape" => "ComplianceByResource"}, "type" => "list"}, "ComplianceSummariesByResourceType" => %{"member" => %{"shape" => "ComplianceSummaryByResourceType"}, "type" => "list"}, "MaxNumberOfConfigurationRecordersExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ResourceDeletionTime" => %{"type" => "timestamp"}, "RecorderStatus" => %{"enum" => ["Pending", "Success", "Failure"], "type" => "string"}, "DescribeComplianceByConfigRuleResponse" => %{"members" => %{"ComplianceByConfigRules" => %{"shape" => "ComplianceByConfigRules"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "Source" => %{"members" => %{"Owner" => %{"shape" => "Owner"}, "SourceDetails" => %{"shape" => "SourceDetails"}, "SourceIdentifier" => %{"shape" => "StringWithCharLimit256"}}, "required" => ["Owner", "SourceIdentifier"], "type" => "structure"}, "ResourceName" => %{"type" => "string"}, "ComplianceContributorCount" => %{"members" => %{"CapExceeded" => %{"shape" => "Boolean"}, "CappedCount" => %{"shape" => "Integer"}}, "type" => "structure"}, "NoAvailableConfigurationRecorderException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DescribeComplianceByConfigRuleRequest" => %{"members" => %{"ComplianceTypes" => %{"shape" => "ComplianceTypes"}, "ConfigRuleNames" => %{"shape" => "ConfigRuleNames"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "DeliveryChannelList" => %{"member" => %{"shape" => "DeliveryChannel"}, "type" => "list"}, "Evaluations" => %{"max" => 100, "member" => %{"shape" => "Evaluation"}, "min" => 0, "type" => "list"}, "Integer" => %{"type" => "integer"}, "DeliveryStatus" => %{"enum" => ["Success", "Failure", "Not_Applicable"], "type" => "string"}, "ResourceIdList" => %{"member" => %{"shape" => "ResourceId"}, "type" => "list"}, "StringWithCharLimit128" => %{"max" => 128, "min" => 1, "type" => "string"}, "Configuration" => %{"type" => "string"}, "BaseResourceId" => %{"max" => 768, "min" => 1, "type" => "string"}, "SupplementaryConfiguration" => %{"key" => %{"shape" => "SupplementaryConfigurationName"}, "type" => "map", "value" => %{"shape" => "SupplementaryConfigurationValue"}}, "NextToken" => %{"type" => "string"}, "ConfigurationRecorderStatusList" => %{"member" => %{"shape" => "ConfigurationRecorderStatus"}, "type" => "list"}, "NoRunningConfigurationRecorderException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "AwsRegion" => %{"type" => "string"}, "EvaluationResultQualifier" => %{"members" => %{"ConfigRuleName" => %{"shape" => "StringWithCharLimit64"}, "ResourceId" => %{"shape" => "BaseResourceId"}, "ResourceType" => %{"shape" => "StringWithCharLimit256"}}, "type" => "structure"}, "DeleteEvaluationResultsResponse" => %{"members" => %{}, "type" => "structure"}, "ResourceIdentifier" => %{"members" => %{"resourceDeletionTime" => %{"shape" => "ResourceDeletionTime"}, "resourceId" => %{"shape" => "ResourceId"}, "resourceName" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}}, "type" => "structure"}, "DescribeConfigRulesResponse" => %{"members" => %{"ConfigRules" => %{"shape" => "ConfigRules"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "ComplianceSummaryByResourceType" => %{"members" => %{"ComplianceSummary" => %{"shape" => "ComplianceSummary"}, "ResourceType" => %{"shape" => "StringWithCharLimit256"}}, "type" => "structure"}}
+  end
 end

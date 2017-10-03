@@ -22,9 +22,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddApplicationCloudWatchLoggingOptionRequest",
+      output_shape:     "AddApplicationCloudWatchLoggingOptionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a streaming source to your Amazon Kinesis application. For conceptual
@@ -55,9 +59,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddApplicationInputRequest",
+      output_shape:     "AddApplicationInputResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds an external destination to your Amazon Kinesis Analytics application.
@@ -100,9 +108,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddApplicationOutputRequest",
+      output_shape:     "AddApplicationOutputResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a reference data source to an existing application.
@@ -135,9 +147,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddApplicationReferenceDataSourceRequest",
+      output_shape:     "AddApplicationReferenceDataSourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an Amazon Kinesis Analytics application. You can configure each
@@ -183,9 +199,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateApplicationRequest",
+      output_shape:     "CreateApplicationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified application. Amazon Kinesis Analytics halts
@@ -209,9 +229,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteApplicationRequest",
+      output_shape:     "DeleteApplicationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a CloudWatch log stream from an application. For more information
@@ -232,9 +256,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteApplicationCloudWatchLoggingOptionRequest",
+      output_shape:     "DeleteApplicationCloudWatchLoggingOptionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes output destination configuration from your application
@@ -257,9 +285,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteApplicationOutputRequest",
+      output_shape:     "DeleteApplicationOutputResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a reference data source configuration from the specified
@@ -285,9 +317,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteApplicationReferenceDataSourceRequest",
+      output_shape:     "DeleteApplicationReferenceDataSourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific Amazon Kinesis Analytics application.
@@ -313,9 +349,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeApplicationRequest",
+      output_shape:     "DescribeApplicationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Infers a schema by evaluating sample records on the specified streaming
@@ -346,9 +386,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "DiscoverInputSchemaRequest",
+      output_shape:     "DiscoverInputSchemaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of Amazon Kinesis Analytics applications in your account.
@@ -377,9 +421,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListApplicationsRequest",
+      output_shape:     "ListApplicationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Starts the specified Amazon Kinesis Analytics application. After creating
@@ -412,9 +460,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartApplicationRequest",
+      output_shape:     "StartApplicationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Stops the application from processing input data. You can stop an
@@ -440,9 +492,13 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "StopApplicationRequest",
+      output_shape:     "StopApplicationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates an existing Amazon Kinesis Analytics application. Using this API,
@@ -468,8 +524,19 @@ defmodule Baiji.KinesisAnalytics do
       endpoint_prefix:  "kinesisanalytics",
       type:             :json,
       version:          "2015-08-14",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateApplicationRequest",
+      output_shape:     "UpdateApplicationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"RawInputRecord" => %{"type" => "string"}, "RecordFormatType" => %{"enum" => ["JSON", "CSV"], "type" => "string"}, "InputConfigurations" => %{"member" => %{"shape" => "InputConfiguration"}, "type" => "list"}, "DiscoverInputSchemaRequest" => %{"members" => %{"InputStartingPositionConfiguration" => %{"shape" => "InputStartingPositionConfiguration"}, "ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["ResourceARN", "RoleARN", "InputStartingPositionConfiguration"], "type" => "structure"}, "ListApplicationsInputLimit" => %{"max" => 50, "min" => 1, "type" => "integer"}, "UpdateApplicationResponse" => %{"members" => %{}, "type" => "structure"}, "RecordFormat" => %{"members" => %{"MappingParameters" => %{"shape" => "MappingParameters"}, "RecordFormatType" => %{"shape" => "RecordFormatType"}}, "required" => ["RecordFormatType"], "type" => "structure"}, "DiscoverInputSchemaResponse" => %{"members" => %{"InputSchema" => %{"shape" => "SourceSchema"}, "ParsedInputRecords" => %{"shape" => "ParsedInputRecords"}, "RawInputRecords" => %{"shape" => "RawInputRecords"}}, "type" => "structure"}, "StartApplicationRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "InputConfigurations" => %{"shape" => "InputConfigurations"}}, "required" => ["ApplicationName", "InputConfigurations"], "type" => "structure"}, "InputParallelismUpdate" => %{"members" => %{"CountUpdate" => %{"shape" => "InputParallelismCount"}}, "type" => "structure"}, "DeleteApplicationReferenceDataSourceResponse" => %{"members" => %{}, "type" => "structure"}, "Id" => %{"max" => 50, "min" => 1, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "CloudWatchLoggingOption" => %{"members" => %{"LogStreamARN" => %{"shape" => "LogStreamARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["LogStreamARN", "RoleARN"], "type" => "structure"}, "FileKey" => %{"type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "RecordEncoding" => %{"pattern" => "UTF-8", "type" => "string"}, "CloudWatchLoggingOptionUpdate" => %{"members" => %{"CloudWatchLoggingOptionId" => %{"shape" => "Id"}, "LogStreamARNUpdate" => %{"shape" => "LogStreamARN"}, "RoleARNUpdate" => %{"shape" => "RoleARN"}}, "required" => ["CloudWatchLoggingOptionId"], "type" => "structure"}, "KinesisFirehoseInputDescription" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "InputParallelismCount" => %{"max" => 64, "min" => 1, "type" => "integer"}, "ListApplicationsRequest" => %{"members" => %{"ExclusiveStartApplicationName" => %{"shape" => "ApplicationName"}, "Limit" => %{"shape" => "ListApplicationsInputLimit"}}, "type" => "structure"}, "ParsedInputRecords" => %{"member" => %{"shape" => "ParsedInputRecord"}, "type" => "list"}, "OutputDescriptions" => %{"member" => %{"shape" => "OutputDescription"}, "type" => "list"}, "DestinationSchema" => %{"members" => %{"RecordFormatType" => %{"shape" => "RecordFormatType"}}, "type" => "structure"}, "AddApplicationOutputRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}, "Output" => %{"shape" => "Output"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "Output"], "type" => "structure"}, "InputDescriptions" => %{"member" => %{"shape" => "InputDescription"}, "type" => "list"}, "RecordColumns" => %{"max" => 1000, "member" => %{"shape" => "RecordColumn"}, "min" => 1, "type" => "list"}, "KinesisFirehoseInputUpdate" => %{"members" => %{"ResourceARNUpdate" => %{"shape" => "ResourceARN"}, "RoleARNUpdate" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "AddApplicationOutputResponse" => %{"members" => %{}, "type" => "structure"}, "OutputUpdate" => %{"members" => %{"DestinationSchemaUpdate" => %{"shape" => "DestinationSchema"}, "KinesisFirehoseOutputUpdate" => %{"shape" => "KinesisFirehoseOutputUpdate"}, "KinesisStreamsOutputUpdate" => %{"shape" => "KinesisStreamsOutputUpdate"}, "NameUpdate" => %{"shape" => "InAppStreamName"}, "OutputId" => %{"shape" => "Id"}}, "required" => ["OutputId"], "type" => "structure"}, "ApplicationDetail" => %{"members" => %{"ApplicationARN" => %{"shape" => "ResourceARN"}, "ApplicationCode" => %{"shape" => "ApplicationCode"}, "ApplicationDescription" => %{"shape" => "ApplicationDescription"}, "ApplicationName" => %{"shape" => "ApplicationName"}, "ApplicationStatus" => %{"shape" => "ApplicationStatus"}, "ApplicationVersionId" => %{"shape" => "ApplicationVersionId"}, "CloudWatchLoggingOptionDescriptions" => %{"shape" => "CloudWatchLoggingOptionDescriptions"}, "CreateTimestamp" => %{"shape" => "Timestamp"}, "InputDescriptions" => %{"shape" => "InputDescriptions"}, "LastUpdateTimestamp" => %{"shape" => "Timestamp"}, "OutputDescriptions" => %{"shape" => "OutputDescriptions"}, "ReferenceDataSourceDescriptions" => %{"shape" => "ReferenceDataSourceDescriptions"}}, "required" => ["ApplicationName", "ApplicationARN", "ApplicationStatus", "ApplicationVersionId"], "type" => "structure"}, "DeleteApplicationCloudWatchLoggingOptionRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CloudWatchLoggingOptionId" => %{"shape" => "Id"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "CloudWatchLoggingOptionId"], "type" => "structure"}, "ResourceInUseException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "KinesisFirehoseInput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["ResourceARN", "RoleARN"], "type" => "structure"}, "KinesisStreamsOutputDescription" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "InputDescription" => %{"members" => %{"InAppStreamNames" => %{"shape" => "InAppStreamNames"}, "InputId" => %{"shape" => "Id"}, "InputParallelism" => %{"shape" => "InputParallelism"}, "InputSchema" => %{"shape" => "SourceSchema"}, "InputStartingPositionConfiguration" => %{"shape" => "InputStartingPositionConfiguration"}, "KinesisFirehoseInputDescription" => %{"shape" => "KinesisFirehoseInputDescription"}, "KinesisStreamsInputDescription" => %{"shape" => "KinesisStreamsInputDescription"}, "NamePrefix" => %{"shape" => "InAppStreamName"}}, "type" => "structure"}, "InvalidApplicationConfigurationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "KinesisFirehoseOutput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["ResourceARN", "RoleARN"], "type" => "structure"}, "ServiceUnavailableException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "JSONMappingParameters" => %{"members" => %{"RecordRowPath" => %{"shape" => "RecordRowPath"}}, "required" => ["RecordRowPath"], "type" => "structure"}, "BooleanObject" => %{"type" => "boolean"}, "OutputDescription" => %{"members" => %{"DestinationSchema" => %{"shape" => "DestinationSchema"}, "KinesisFirehoseOutputDescription" => %{"shape" => "KinesisFirehoseOutputDescription"}, "KinesisStreamsOutputDescription" => %{"shape" => "KinesisStreamsOutputDescription"}, "Name" => %{"shape" => "InAppStreamName"}, "OutputId" => %{"shape" => "Id"}}, "type" => "structure"}, "RecordColumn" => %{"members" => %{"Mapping" => %{"shape" => "RecordColumnMapping"}, "Name" => %{"shape" => "RecordColumnName"}, "SqlType" => %{"shape" => "RecordColumnSqlType"}}, "required" => ["Name", "SqlType"], "type" => "structure"}, "OutputUpdates" => %{"member" => %{"shape" => "OutputUpdate"}, "type" => "list"}, "ApplicationVersionId" => %{"max" => 999999999, "min" => 1, "type" => "long"}, "InAppTableName" => %{"max" => 32, "min" => 1, "pattern" => "[a-zA-Z][a-zA-Z0-9_]+", "type" => "string"}, "DeleteApplicationReferenceDataSourceRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}, "ReferenceId" => %{"shape" => "Id"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "ReferenceId"], "type" => "structure"}, "RoleARN" => %{"max" => 2048, "min" => 1, "pattern" => "arn:aws:iam::\\d{12}:role/?[a-zA-Z_0-9+=,.@\\-_/]+", "type" => "string"}, "AddApplicationCloudWatchLoggingOptionResponse" => %{"members" => %{}, "type" => "structure"}, "ApplicationUpdate" => %{"members" => %{"ApplicationCodeUpdate" => %{"shape" => "ApplicationCode"}, "CloudWatchLoggingOptionUpdates" => %{"shape" => "CloudWatchLoggingOptionUpdates"}, "InputUpdates" => %{"shape" => "InputUpdates"}, "OutputUpdates" => %{"shape" => "OutputUpdates"}, "ReferenceDataSourceUpdates" => %{"shape" => "ReferenceDataSourceUpdates"}}, "type" => "structure"}, "InputParallelism" => %{"members" => %{"Count" => %{"shape" => "InputParallelismCount"}}, "type" => "structure"}, "ResourceARN" => %{"max" => 2048, "min" => 1, "pattern" => "arn:[a-zA-Z0-9\\-]+:[a-zA-Z0-9\\-]+:[a-zA-Z0-9\\-]*:\\d{12}:[a-zA-Z_0-9+=,.@\\-_/:]+", "type" => "string"}, "KinesisFirehoseOutputUpdate" => %{"members" => %{"ResourceARNUpdate" => %{"shape" => "ResourceARN"}, "RoleARNUpdate" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "DeleteApplicationOutputResponse" => %{"members" => %{}, "type" => "structure"}, "CreateApplicationRequest" => %{"members" => %{"ApplicationCode" => %{"shape" => "ApplicationCode"}, "ApplicationDescription" => %{"shape" => "ApplicationDescription"}, "ApplicationName" => %{"shape" => "ApplicationName"}, "CloudWatchLoggingOptions" => %{"shape" => "CloudWatchLoggingOptions"}, "Inputs" => %{"shape" => "Inputs"}, "Outputs" => %{"shape" => "Outputs"}}, "required" => ["ApplicationName"], "type" => "structure"}, "ApplicationSummaries" => %{"member" => %{"shape" => "ApplicationSummary"}, "type" => "list"}, "ParsedInputRecord" => %{"member" => %{"shape" => "ParsedInputRecordField"}, "type" => "list"}, "CreateApplicationResponse" => %{"members" => %{"ApplicationSummary" => %{"shape" => "ApplicationSummary"}}, "required" => ["ApplicationSummary"], "type" => "structure"}, "ReferenceDataSourceUpdates" => %{"member" => %{"shape" => "ReferenceDataSourceUpdate"}, "type" => "list"}, "KinesisStreamsOutputUpdate" => %{"members" => %{"ResourceARNUpdate" => %{"shape" => "ResourceARN"}, "RoleARNUpdate" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "KinesisStreamsInput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["ResourceARN", "RoleARN"], "type" => "structure"}, "InAppStreamName" => %{"max" => 32, "min" => 1, "pattern" => "[a-zA-Z][a-zA-Z0-9_]+", "type" => "string"}, "InputUpdates" => %{"member" => %{"shape" => "InputUpdate"}, "type" => "list"}, "RawInputRecords" => %{"member" => %{"shape" => "RawInputRecord"}, "type" => "list"}, "BucketARN" => %{"max" => 2048, "min" => 1, "pattern" => "arn:.*", "type" => "string"}, "ApplicationStatus" => %{"enum" => ["DELETING", "STARTING", "STOPPING", "READY", "RUNNING", "UPDATING"], "type" => "string"}, "ReferenceDataSourceDescriptions" => %{"member" => %{"shape" => "ReferenceDataSourceDescription"}, "type" => "list"}, "ResourceProvisionedThroughputExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListApplicationsResponse" => %{"members" => %{"ApplicationSummaries" => %{"shape" => "ApplicationSummaries"}, "HasMoreApplications" => %{"shape" => "BooleanObject"}}, "required" => ["ApplicationSummaries", "HasMoreApplications"], "type" => "structure"}, "DescribeApplicationResponse" => %{"members" => %{"ApplicationDetail" => %{"shape" => "ApplicationDetail"}}, "required" => ["ApplicationDetail"], "type" => "structure"}, "KinesisStreamsInputDescription" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "InvalidArgumentException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CodeValidationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InAppStreamNames" => %{"member" => %{"shape" => "InAppStreamName"}, "type" => "list"}, "UnableToDetectSchemaException" => %{"exception" => true, "members" => %{"RawInputRecords" => %{"shape" => "RawInputRecords"}, "message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DeleteApplicationRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CreateTimestamp" => %{"shape" => "Timestamp"}}, "required" => ["ApplicationName", "CreateTimestamp"], "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "RecordColumnMapping" => %{"type" => "string"}, "LogStreamARN" => %{"max" => 2048, "min" => 1, "pattern" => "arn:.*", "type" => "string"}, "InputStartingPosition" => %{"enum" => ["NOW", "TRIM_HORIZON", "LAST_STOPPED_POINT"], "type" => "string"}, "DeleteApplicationCloudWatchLoggingOptionResponse" => %{"members" => %{}, "type" => "structure"}, "Inputs" => %{"member" => %{"shape" => "Input"}, "type" => "list"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ReferenceDataSourceUpdate" => %{"members" => %{"ReferenceId" => %{"shape" => "Id"}, "ReferenceSchemaUpdate" => %{"shape" => "SourceSchema"}, "S3ReferenceDataSourceUpdate" => %{"shape" => "S3ReferenceDataSourceUpdate"}, "TableNameUpdate" => %{"shape" => "InAppTableName"}}, "required" => ["ReferenceId"], "type" => "structure"}, "AddApplicationReferenceDataSourceRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}, "ReferenceDataSource" => %{"shape" => "ReferenceDataSource"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "ReferenceDataSource"], "type" => "structure"}, "AddApplicationReferenceDataSourceResponse" => %{"members" => %{}, "type" => "structure"}, "ReferenceDataSource" => %{"members" => %{"ReferenceSchema" => %{"shape" => "SourceSchema"}, "S3ReferenceDataSource" => %{"shape" => "S3ReferenceDataSource"}, "TableName" => %{"shape" => "InAppTableName"}}, "required" => ["TableName", "ReferenceSchema"], "type" => "structure"}, "CloudWatchLoggingOptionDescription" => %{"members" => %{"CloudWatchLoggingOptionId" => %{"shape" => "Id"}, "LogStreamARN" => %{"shape" => "LogStreamARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["LogStreamARN", "RoleARN"], "type" => "structure"}, "CloudWatchLoggingOptions" => %{"member" => %{"shape" => "CloudWatchLoggingOption"}, "type" => "list"}, "DescribeApplicationRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}}, "required" => ["ApplicationName"], "type" => "structure"}, "AddApplicationInputResponse" => %{"members" => %{}, "type" => "structure"}, "Outputs" => %{"member" => %{"shape" => "Output"}, "type" => "list"}, "S3ReferenceDataSource" => %{"members" => %{"BucketARN" => %{"shape" => "BucketARN"}, "FileKey" => %{"shape" => "FileKey"}, "ReferenceRoleARN" => %{"shape" => "RoleARN"}}, "required" => ["BucketARN", "FileKey", "ReferenceRoleARN"], "type" => "structure"}, "RecordRowPath" => %{"type" => "string"}, "AddApplicationCloudWatchLoggingOptionRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CloudWatchLoggingOption" => %{"shape" => "CloudWatchLoggingOption"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "CloudWatchLoggingOption"], "type" => "structure"}, "ApplicationSummary" => %{"members" => %{"ApplicationARN" => %{"shape" => "ResourceARN"}, "ApplicationName" => %{"shape" => "ApplicationName"}, "ApplicationStatus" => %{"shape" => "ApplicationStatus"}}, "required" => ["ApplicationName", "ApplicationARN", "ApplicationStatus"], "type" => "structure"}, "DeleteApplicationOutputRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}, "OutputId" => %{"shape" => "Id"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "OutputId"], "type" => "structure"}, "InputConfiguration" => %{"members" => %{"Id" => %{"shape" => "Id"}, "InputStartingPositionConfiguration" => %{"shape" => "InputStartingPositionConfiguration"}}, "required" => ["Id", "InputStartingPositionConfiguration"], "type" => "structure"}, "CloudWatchLoggingOptionDescriptions" => %{"member" => %{"shape" => "CloudWatchLoggingOptionDescription"}, "type" => "list"}, "RecordColumnName" => %{"pattern" => "[a-zA-Z_][a-zA-Z0-9_]*", "type" => "string"}, "SourceSchema" => %{"members" => %{"RecordColumns" => %{"shape" => "RecordColumns"}, "RecordEncoding" => %{"shape" => "RecordEncoding"}, "RecordFormat" => %{"shape" => "RecordFormat"}}, "required" => ["RecordFormat", "RecordColumns"], "type" => "structure"}, "CSVMappingParameters" => %{"members" => %{"RecordColumnDelimiter" => %{"shape" => "RecordColumnDelimiter"}, "RecordRowDelimiter" => %{"shape" => "RecordRowDelimiter"}}, "required" => ["RecordRowDelimiter", "RecordColumnDelimiter"], "type" => "structure"}, "ApplicationName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_.-]+", "type" => "string"}, "S3ReferenceDataSourceUpdate" => %{"members" => %{"BucketARNUpdate" => %{"shape" => "BucketARN"}, "FileKeyUpdate" => %{"shape" => "FileKey"}, "ReferenceRoleARNUpdate" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "ParsedInputRecordField" => %{"type" => "string"}, "Input" => %{"members" => %{"InputParallelism" => %{"shape" => "InputParallelism"}, "InputSchema" => %{"shape" => "SourceSchema"}, "KinesisFirehoseInput" => %{"shape" => "KinesisFirehoseInput"}, "KinesisStreamsInput" => %{"shape" => "KinesisStreamsInput"}, "NamePrefix" => %{"shape" => "InAppStreamName"}}, "required" => ["NamePrefix", "InputSchema"], "type" => "structure"}, "MappingParameters" => %{"members" => %{"CSVMappingParameters" => %{"shape" => "CSVMappingParameters"}, "JSONMappingParameters" => %{"shape" => "JSONMappingParameters"}}, "type" => "structure"}, "S3ReferenceDataSourceDescription" => %{"members" => %{"BucketARN" => %{"shape" => "BucketARN"}, "FileKey" => %{"shape" => "FileKey"}, "ReferenceRoleARN" => %{"shape" => "RoleARN"}}, "required" => ["BucketARN", "FileKey", "ReferenceRoleARN"], "type" => "structure"}, "AddApplicationInputRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}, "Input" => %{"shape" => "Input"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "Input"], "type" => "structure"}, "ApplicationDescription" => %{"max" => 1024, "min" => 0, "type" => "string"}, "KinesisStreamsInputUpdate" => %{"members" => %{"ResourceARNUpdate" => %{"shape" => "ResourceARN"}, "RoleARNUpdate" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "ApplicationCode" => %{"max" => 51200, "min" => 0, "type" => "string"}, "StartApplicationResponse" => %{"members" => %{}, "type" => "structure"}, "StopApplicationRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}}, "required" => ["ApplicationName"], "type" => "structure"}, "Output" => %{"members" => %{"DestinationSchema" => %{"shape" => "DestinationSchema"}, "KinesisFirehoseOutput" => %{"shape" => "KinesisFirehoseOutput"}, "KinesisStreamsOutput" => %{"shape" => "KinesisStreamsOutput"}, "Name" => %{"shape" => "InAppStreamName"}}, "required" => ["Name", "DestinationSchema"], "type" => "structure"}, "RecordColumnDelimiter" => %{"min" => 1, "type" => "string"}, "DeleteApplicationResponse" => %{"members" => %{}, "type" => "structure"}, "KinesisStreamsOutput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "required" => ["ResourceARN", "RoleARN"], "type" => "structure"}, "RecordRowDelimiter" => %{"min" => 1, "type" => "string"}, "CloudWatchLoggingOptionUpdates" => %{"member" => %{"shape" => "CloudWatchLoggingOptionUpdate"}, "type" => "list"}, "InputStartingPositionConfiguration" => %{"members" => %{"InputStartingPosition" => %{"shape" => "InputStartingPosition"}}, "type" => "structure"}, "ReferenceDataSourceDescription" => %{"members" => %{"ReferenceId" => %{"shape" => "Id"}, "ReferenceSchema" => %{"shape" => "SourceSchema"}, "S3ReferenceDataSourceDescription" => %{"shape" => "S3ReferenceDataSourceDescription"}, "TableName" => %{"shape" => "InAppTableName"}}, "required" => ["ReferenceId", "TableName", "S3ReferenceDataSourceDescription"], "type" => "structure"}, "InputSchemaUpdate" => %{"members" => %{"RecordColumnUpdates" => %{"shape" => "RecordColumns"}, "RecordEncodingUpdate" => %{"shape" => "RecordEncoding"}, "RecordFormatUpdate" => %{"shape" => "RecordFormat"}}, "type" => "structure"}, "KinesisFirehoseOutputDescription" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "RoleARN" => %{"shape" => "RoleARN"}}, "type" => "structure"}, "RecordColumnSqlType" => %{"type" => "string"}, "ConcurrentModificationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UpdateApplicationRequest" => %{"members" => %{"ApplicationName" => %{"shape" => "ApplicationName"}, "ApplicationUpdate" => %{"shape" => "ApplicationUpdate"}, "CurrentApplicationVersionId" => %{"shape" => "ApplicationVersionId"}}, "required" => ["ApplicationName", "CurrentApplicationVersionId", "ApplicationUpdate"], "type" => "structure"}, "InputUpdate" => %{"members" => %{"InputId" => %{"shape" => "Id"}, "InputParallelismUpdate" => %{"shape" => "InputParallelismUpdate"}, "InputSchemaUpdate" => %{"shape" => "InputSchemaUpdate"}, "KinesisFirehoseInputUpdate" => %{"shape" => "KinesisFirehoseInputUpdate"}, "KinesisStreamsInputUpdate" => %{"shape" => "KinesisStreamsInputUpdate"}, "NamePrefixUpdate" => %{"shape" => "InAppStreamName"}}, "required" => ["InputId"], "type" => "structure"}, "StopApplicationResponse" => %{"members" => %{}, "type" => "structure"}}
+  end
 end

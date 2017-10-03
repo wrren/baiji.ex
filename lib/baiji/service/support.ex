@@ -84,9 +84,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddAttachmentsToSetRequest",
+      output_shape:     "AddAttachmentsToSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds additional customer communication to an AWS Support case. You use the
@@ -113,9 +117,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddCommunicationToCaseRequest",
+      output_shape:     "AddCommunicationToCaseResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new case in the AWS Support Center. This operation is modeled on
@@ -182,9 +190,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateCaseRequest",
+      output_shape:     "CreateCaseResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the attachment that has the specified ID. Attachment IDs are
@@ -206,9 +218,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeAttachmentRequest",
+      output_shape:     "DescribeAttachmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of cases that you specify by passing one or more case IDs.
@@ -242,9 +258,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeCasesRequest",
+      output_shape:     "DescribeCasesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns communications (and attachments) for one or more support cases. You
@@ -273,9 +293,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeCommunicationsRequest",
+      output_shape:     "DescribeCommunicationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the current list of AWS services and a list of service categories
@@ -305,9 +329,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeServicesRequest",
+      output_shape:     "DescribeServicesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the list of severity levels that you can assign to an AWS Support
@@ -327,9 +355,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeSeverityLevelsRequest",
+      output_shape:     "DescribeSeverityLevelsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the refresh status of the Trusted Advisor checks that have the
@@ -356,9 +388,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTrustedAdvisorCheckRefreshStatusesRequest",
+      output_shape:     "DescribeTrustedAdvisorCheckRefreshStatusesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the results of the Trusted Advisor check that has the specified
@@ -398,9 +434,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTrustedAdvisorCheckResultRequest",
+      output_shape:     "DescribeTrustedAdvisorCheckResultResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the summaries of the results of the Trusted Advisor checks that
@@ -422,9 +462,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTrustedAdvisorCheckSummariesRequest",
+      output_shape:     "DescribeTrustedAdvisorCheckSummariesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about all available Trusted Advisor checks, including
@@ -445,9 +489,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTrustedAdvisorChecksRequest",
+      output_shape:     "DescribeTrustedAdvisorChecksResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Requests a refresh of the Trusted Advisor check that has the specified
@@ -484,9 +532,13 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "RefreshTrustedAdvisorCheckRequest",
+      output_shape:     "RefreshTrustedAdvisorCheckResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Takes a `caseId` and returns the initial state of the case along with the
@@ -505,8 +557,19 @@ defmodule Baiji.Support do
       endpoint_prefix:  "support",
       type:             :json,
       version:          "2013-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "ResolveCaseRequest",
+      output_shape:     "ResolveCaseResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"SeverityLevelName" => %{"type" => "string"}, "DescribeTrustedAdvisorCheckResultRequest" => %{"members" => %{"checkId" => %{"shape" => "String"}, "language" => %{"shape" => "String"}}, "required" => ["checkId"], "type" => "structure"}, "ExpiryTime" => %{"type" => "string"}, "Language" => %{"type" => "string"}, "DescribeTrustedAdvisorChecksResponse" => %{"members" => %{"checks" => %{"shape" => "TrustedAdvisorCheckList"}}, "required" => ["checks"], "type" => "structure"}, "AttachmentId" => %{"type" => "string"}, "DescribeSeverityLevelsResponse" => %{"members" => %{"severityLevels" => %{"shape" => "SeverityLevelsList"}}, "type" => "structure"}, "TimeCreated" => %{"type" => "string"}, "Subject" => %{"type" => "string"}, "String" => %{"type" => "string"}, "CommunicationBody" => %{"max" => 8000, "min" => 1, "type" => "string"}, "ServiceName" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "ErrorMessage" => %{"type" => "string"}, "CcEmailAddressList" => %{"max" => 10, "member" => %{"shape" => "CcEmailAddress"}, "min" => 0, "type" => "list"}, "Category" => %{"members" => %{"code" => %{"shape" => "CategoryCode"}, "name" => %{"shape" => "CategoryName"}}, "type" => "structure"}, "RecentCaseCommunications" => %{"members" => %{"communications" => %{"shape" => "CommunicationList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Service" => %{"members" => %{"categories" => %{"shape" => "CategoryList"}, "code" => %{"shape" => "ServiceCode"}, "name" => %{"shape" => "ServiceName"}}, "type" => "structure"}, "DescribeServicesResponse" => %{"members" => %{"services" => %{"shape" => "ServiceList"}}, "type" => "structure"}, "Attachments" => %{"member" => %{"shape" => "Attachment"}, "type" => "list"}, "AddCommunicationToCaseResponse" => %{"members" => %{"result" => %{"shape" => "Result"}}, "type" => "structure"}, "TrustedAdvisorCheckResult" => %{"members" => %{"categorySpecificSummary" => %{"shape" => "TrustedAdvisorCategorySpecificSummary"}, "checkId" => %{"shape" => "String"}, "flaggedResources" => %{"shape" => "TrustedAdvisorResourceDetailList"}, "resourcesSummary" => %{"shape" => "TrustedAdvisorResourcesSummary"}, "status" => %{"shape" => "String"}, "timestamp" => %{"shape" => "String"}}, "required" => ["checkId", "timestamp", "status", "resourcesSummary", "categorySpecificSummary", "flaggedResources"], "type" => "structure"}, "AddAttachmentsToSetRequest" => %{"members" => %{"attachmentSetId" => %{"shape" => "AttachmentSetId"}, "attachments" => %{"shape" => "Attachments"}}, "required" => ["attachments"], "type" => "structure"}, "RefreshTrustedAdvisorCheckRequest" => %{"members" => %{"checkId" => %{"shape" => "String"}}, "required" => ["checkId"], "type" => "structure"}, "CaseCreationLimitExceeded" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TrustedAdvisorResourcesSummary" => %{"members" => %{"resourcesFlagged" => %{"shape" => "Long"}, "resourcesIgnored" => %{"shape" => "Long"}, "resourcesProcessed" => %{"shape" => "Long"}, "resourcesSuppressed" => %{"shape" => "Long"}}, "required" => ["resourcesProcessed", "resourcesFlagged", "resourcesIgnored", "resourcesSuppressed"], "type" => "structure"}, "ResolveCaseResponse" => %{"members" => %{"finalCaseStatus" => %{"shape" => "CaseStatus"}, "initialCaseStatus" => %{"shape" => "CaseStatus"}}, "type" => "structure"}, "StringList" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "CaseStatus" => %{"type" => "string"}, "AttachmentSetId" => %{"type" => "string"}, "CategoryList" => %{"member" => %{"shape" => "Category"}, "type" => "list"}, "IncludeCommunications" => %{"type" => "boolean"}, "DescribeAttachmentLimitExceeded" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "AttachmentDetails" => %{"members" => %{"attachmentId" => %{"shape" => "AttachmentId"}, "fileName" => %{"shape" => "FileName"}}, "type" => "structure"}, "SeverityLevelsList" => %{"member" => %{"shape" => "SeverityLevel"}, "type" => "list"}, "TrustedAdvisorCostOptimizingSummary" => %{"members" => %{"estimatedMonthlySavings" => %{"shape" => "Double"}, "estimatedPercentMonthlySavings" => %{"shape" => "Double"}}, "required" => ["estimatedMonthlySavings", "estimatedPercentMonthlySavings"], "type" => "structure"}, "DescribeSeverityLevelsRequest" => %{"members" => %{"language" => %{"shape" => "Language"}}, "type" => "structure"}, "CreateCaseRequest" => %{"members" => %{"attachmentSetId" => %{"shape" => "AttachmentSetId"}, "categoryCode" => %{"shape" => "CategoryCode"}, "ccEmailAddresses" => %{"shape" => "CcEmailAddressList"}, "communicationBody" => %{"shape" => "CommunicationBody"}, "issueType" => %{"shape" => "IssueType"}, "language" => %{"shape" => "Language"}, "serviceCode" => %{"shape" => "ServiceCode"}, "severityCode" => %{"shape" => "SeverityCode"}, "subject" => %{"shape" => "Subject"}}, "required" => ["subject", "communicationBody"], "type" => "structure"}, "DescribeCommunicationsRequest" => %{"members" => %{"afterTime" => %{"shape" => "AfterTime"}, "beforeTime" => %{"shape" => "BeforeTime"}, "caseId" => %{"shape" => "CaseId"}, "maxResults" => %{"shape" => "MaxResults"}, "nextToken" => %{"shape" => "NextToken"}}, "required" => ["caseId"], "type" => "structure"}, "AttachmentLimitExceeded" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "AttachmentSet" => %{"member" => %{"shape" => "AttachmentDetails"}, "type" => "list"}, "TrustedAdvisorResourceDetail" => %{"members" => %{"isSuppressed" => %{"shape" => "Boolean"}, "metadata" => %{"shape" => "StringList"}, "region" => %{"shape" => "String"}, "resourceId" => %{"shape" => "String"}, "status" => %{"shape" => "String"}}, "required" => ["status", "resourceId", "metadata"], "type" => "structure"}, "AttachmentSetIdNotFound" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MaxResults" => %{"max" => 100, "min" => 10, "type" => "integer"}, "TrustedAdvisorCheckRefreshStatus" => %{"members" => %{"checkId" => %{"shape" => "String"}, "millisUntilNextRefreshable" => %{"shape" => "Long"}, "status" => %{"shape" => "String"}}, "required" => ["checkId", "status", "millisUntilNextRefreshable"], "type" => "structure"}, "TrustedAdvisorCheckSummary" => %{"members" => %{"categorySpecificSummary" => %{"shape" => "TrustedAdvisorCategorySpecificSummary"}, "checkId" => %{"shape" => "String"}, "hasFlaggedResources" => %{"shape" => "Boolean"}, "resourcesSummary" => %{"shape" => "TrustedAdvisorResourcesSummary"}, "status" => %{"shape" => "String"}, "timestamp" => %{"shape" => "String"}}, "required" => ["checkId", "timestamp", "status", "resourcesSummary", "categorySpecificSummary"], "type" => "structure"}, "DescribeAttachmentResponse" => %{"members" => %{"attachment" => %{"shape" => "Attachment"}}, "type" => "structure"}, "DescribeServicesRequest" => %{"members" => %{"language" => %{"shape" => "Language"}, "serviceCodeList" => %{"shape" => "ServiceCodeList"}}, "type" => "structure"}, "AttachmentSetExpired" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "IssueType" => %{"type" => "string"}, "IncludeResolvedCases" => %{"type" => "boolean"}, "FileName" => %{"type" => "string"}, "Double" => %{"type" => "double"}, "Communication" => %{"members" => %{"attachmentSet" => %{"shape" => "AttachmentSet"}, "body" => %{"shape" => "CommunicationBody"}, "caseId" => %{"shape" => "CaseId"}, "submittedBy" => %{"shape" => "SubmittedBy"}, "timeCreated" => %{"shape" => "TimeCreated"}}, "type" => "structure"}, "CategoryName" => %{"type" => "string"}, "Result" => %{"type" => "boolean"}, "TrustedAdvisorCheckSummaryList" => %{"member" => %{"shape" => "TrustedAdvisorCheckSummary"}, "type" => "list"}, "TrustedAdvisorCheckRefreshStatusList" => %{"member" => %{"shape" => "TrustedAdvisorCheckRefreshStatus"}, "type" => "list"}, "InternalServerError" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "AttachmentSetSizeLimitExceeded" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Status" => %{"type" => "string"}, "CaseDetails" => %{"members" => %{"caseId" => %{"shape" => "CaseId"}, "categoryCode" => %{"shape" => "CategoryCode"}, "ccEmailAddresses" => %{"shape" => "CcEmailAddressList"}, "displayId" => %{"shape" => "DisplayId"}, "language" => %{"shape" => "Language"}, "recentCommunications" => %{"shape" => "RecentCaseCommunications"}, "serviceCode" => %{"shape" => "ServiceCode"}, "severityCode" => %{"shape" => "SeverityCode"}, "status" => %{"shape" => "Status"}, "subject" => %{"shape" => "Subject"}, "submittedBy" => %{"shape" => "SubmittedBy"}, "timeCreated" => %{"shape" => "TimeCreated"}}, "type" => "structure"}, "SeverityLevel" => %{"members" => %{"code" => %{"shape" => "SeverityLevelCode"}, "name" => %{"shape" => "SeverityLevelName"}}, "type" => "structure"}, "Long" => %{"type" => "long"}, "CategoryCode" => %{"type" => "string"}, "DescribeTrustedAdvisorChecksRequest" => %{"members" => %{"language" => %{"shape" => "String"}}, "required" => ["language"], "type" => "structure"}, "RefreshTrustedAdvisorCheckResponse" => %{"members" => %{"status" => %{"shape" => "TrustedAdvisorCheckRefreshStatus"}}, "required" => ["status"], "type" => "structure"}, "ServiceList" => %{"member" => %{"shape" => "Service"}, "type" => "list"}, "DescribeTrustedAdvisorCheckSummariesResponse" => %{"members" => %{"summaries" => %{"shape" => "TrustedAdvisorCheckSummaryList"}}, "required" => ["summaries"], "type" => "structure"}, "CaseList" => %{"member" => %{"shape" => "CaseDetails"}, "type" => "list"}, "TrustedAdvisorCategorySpecificSummary" => %{"members" => %{"costOptimizing" => %{"shape" => "TrustedAdvisorCostOptimizingSummary"}}, "type" => "structure"}, "AddAttachmentsToSetResponse" => %{"members" => %{"attachmentSetId" => %{"shape" => "AttachmentSetId"}, "expiryTime" => %{"shape" => "ExpiryTime"}}, "type" => "structure"}, "TrustedAdvisorCheckDescription" => %{"members" => %{"category" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "id" => %{"shape" => "String"}, "metadata" => %{"shape" => "StringList"}, "name" => %{"shape" => "String"}}, "required" => ["id", "name", "description", "category", "metadata"], "type" => "structure"}, "SeverityLevelCode" => %{"type" => "string"}, "Data" => %{"type" => "blob"}, "CaseId" => %{"type" => "string"}, "DescribeTrustedAdvisorCheckRefreshStatusesResponse" => %{"members" => %{"statuses" => %{"shape" => "TrustedAdvisorCheckRefreshStatusList"}}, "required" => ["statuses"], "type" => "structure"}, "CaseIdNotFound" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CcEmailAddress" => %{"type" => "string"}, "ServiceCodeList" => %{"max" => 100, "member" => %{"shape" => "ServiceCode"}, "min" => 0, "type" => "list"}, "ResolveCaseRequest" => %{"members" => %{"caseId" => %{"shape" => "CaseId"}}, "type" => "structure"}, "DescribeCasesResponse" => %{"members" => %{"cases" => %{"shape" => "CaseList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DescribeTrustedAdvisorCheckResultResponse" => %{"members" => %{"result" => %{"shape" => "TrustedAdvisorCheckResult"}}, "type" => "structure"}, "AddCommunicationToCaseRequest" => %{"members" => %{"attachmentSetId" => %{"shape" => "AttachmentSetId"}, "caseId" => %{"shape" => "CaseId"}, "ccEmailAddresses" => %{"shape" => "CcEmailAddressList"}, "communicationBody" => %{"shape" => "CommunicationBody"}}, "required" => ["communicationBody"], "type" => "structure"}, "AttachmentIdNotFound" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateCaseResponse" => %{"members" => %{"caseId" => %{"shape" => "CaseId"}}, "type" => "structure"}, "Attachment" => %{"members" => %{"data" => %{"shape" => "Data"}, "fileName" => %{"shape" => "FileName"}}, "type" => "structure"}, "BeforeTime" => %{"type" => "string"}, "DescribeAttachmentRequest" => %{"members" => %{"attachmentId" => %{"shape" => "AttachmentId"}}, "required" => ["attachmentId"], "type" => "structure"}, "SubmittedBy" => %{"type" => "string"}, "CaseIdList" => %{"max" => 100, "member" => %{"shape" => "CaseId"}, "min" => 0, "type" => "list"}, "CommunicationList" => %{"member" => %{"shape" => "Communication"}, "type" => "list"}, "DescribeCasesRequest" => %{"members" => %{"afterTime" => %{"shape" => "AfterTime"}, "beforeTime" => %{"shape" => "BeforeTime"}, "caseIdList" => %{"shape" => "CaseIdList"}, "displayId" => %{"shape" => "DisplayId"}, "includeCommunications" => %{"shape" => "IncludeCommunications"}, "includeResolvedCases" => %{"shape" => "IncludeResolvedCases"}, "language" => %{"shape" => "Language"}, "maxResults" => %{"shape" => "MaxResults"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ServiceCode" => %{"type" => "string"}, "NextToken" => %{"type" => "string"}, "TrustedAdvisorCheckList" => %{"member" => %{"shape" => "TrustedAdvisorCheckDescription"}, "type" => "list"}, "DisplayId" => %{"type" => "string"}, "DescribeTrustedAdvisorCheckSummariesRequest" => %{"members" => %{"checkIds" => %{"shape" => "StringList"}}, "required" => ["checkIds"], "type" => "structure"}, "DescribeTrustedAdvisorCheckRefreshStatusesRequest" => %{"members" => %{"checkIds" => %{"shape" => "StringList"}}, "required" => ["checkIds"], "type" => "structure"}, "DescribeCommunicationsResponse" => %{"members" => %{"communications" => %{"shape" => "CommunicationList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "TrustedAdvisorResourceDetailList" => %{"member" => %{"shape" => "TrustedAdvisorResourceDetail"}, "type" => "list"}, "SeverityCode" => %{"type" => "string"}, "AfterTime" => %{"type" => "string"}}
+  end
 end

@@ -38,9 +38,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreatePublicVirtualInterfaceRequest",
+      output_shape:     "VirtualInterface",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Associates an existing connection with a link aggregation group (LAG). The
@@ -75,9 +79,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateConnectionWithLagRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the LOA-CFA for a connection, interconnect, or link aggregation
@@ -103,9 +111,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeLoaRequest",
+      output_shape:     "Loa",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Associates a virtual interface with a specified link aggregation group
@@ -135,9 +147,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateVirtualInterfaceRequest",
+      output_shape:     "VirtualInterface",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds the specified tags to the specified Direct Connect resource. Each
@@ -160,9 +176,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "TagResourceRequest",
+      output_shape:     "TagResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deprecated in favor of `DescribeLoa`.
@@ -189,9 +209,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeInterconnectLoaRequest",
+      output_shape:     "DescribeInterconnectLoaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a BGP peer on the specified virtual interface that matches the
@@ -211,9 +235,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteBGPPeerRequest",
+      output_shape:     "DeleteBGPPeerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deprecated in favor of `AllocateHostedConnection`.
@@ -240,9 +268,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AllocateConnectionOnInterconnectRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a virtual interface.
@@ -260,9 +292,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteVirtualInterfaceRequest",
+      output_shape:     "DeleteVirtualInterfaceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a link aggregation group (LAG). You cannot delete a LAG if it has
@@ -281,9 +317,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteLagRequest",
+      output_shape:     "Lag",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes the link aggregation groups (LAGs) in your account.
@@ -304,9 +344,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeLagsRequest",
+      output_shape:     "Lags",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of hosted connections that have been provisioned on the
@@ -329,9 +373,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeHostedConnectionsRequest",
+      output_shape:     "Connections",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deprecated in favor of `DescribeHostedConnections`.
@@ -356,9 +404,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConnectionsOnInterconnectRequest",
+      output_shape:     "Connections",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes one or more tags from the specified Direct Connect resource.
@@ -376,9 +428,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "UntagResourceRequest",
+      output_shape:     "UntagResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Associates a hosted connection and its virtual interfaces with a link
@@ -404,9 +460,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateHostedConnectionRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the list of AWS Direct Connect locations in the current AWS region.
@@ -426,9 +486,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "Locations",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new connection between the customer network and a specific AWS
@@ -461,9 +525,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateConnectionRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new link aggregation group (LAG) with the specified number of
@@ -506,9 +574,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateLagRequest",
+      output_shape:     "Lag",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disassociates a connection from a link aggregation group (LAG). The
@@ -538,9 +610,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateConnectionFromLagRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of virtual private gateways owned by the AWS account.
@@ -564,9 +640,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "",
+      output_shape:     "VirtualGateways",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Accept ownership of a public virtual interface created by another customer.
@@ -587,9 +667,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "ConfirmPublicVirtualInterfaceRequest",
+      output_shape:     "ConfirmPublicVirtualInterfaceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified interconnect.
@@ -611,9 +695,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteInterconnectRequest",
+      output_shape:     "DeleteInterconnectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Displays all connections in this region.
@@ -634,9 +722,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConnectionsRequest",
+      output_shape:     "Connections",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of interconnects owned by the AWS account.
@@ -657,9 +749,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeInterconnectsRequest",
+      output_shape:     "Interconnects",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the connection.
@@ -682,9 +778,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteConnectionRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Accept ownership of a private virtual interface created by another
@@ -707,9 +807,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "ConfirmPrivateVirtualInterfaceRequest",
+      output_shape:     "ConfirmPrivateVirtualInterfaceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the attributes of a link aggregation group (LAG).
@@ -742,9 +846,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateLagRequest",
+      output_shape:     "Lag",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Provisions a public virtual interface to be owned by a different customer.
@@ -775,9 +883,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AllocatePublicVirtualInterfaceRequest",
+      output_shape:     "VirtualInterface",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes the tags associated with the specified Direct Connect resources.
@@ -795,9 +907,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTagsRequest",
+      output_shape:     "DescribeTagsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a hosted connection on an interconnect or a link aggregation group
@@ -823,9 +939,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AllocateHostedConnectionRequest",
+      output_shape:     "Connection",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new interconnect between a AWS Direct Connect partner's network
@@ -869,9 +989,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateInterconnectRequest",
+      output_shape:     "Interconnect",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Provisions a private virtual interface to be owned by another AWS customer.
@@ -894,9 +1018,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "AllocatePrivateVirtualInterfaceRequest",
+      output_shape:     "VirtualInterface",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Confirm the creation of a hosted connection on an interconnect.
@@ -918,9 +1046,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "ConfirmConnectionRequest",
+      output_shape:     "ConfirmConnectionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deprecated in favor of `DescribeLoa`.
@@ -947,9 +1079,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeConnectionLoaRequest",
+      output_shape:     "DescribeConnectionLoaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Displays all virtual interfaces for an AWS account. Virtual interfaces
@@ -974,9 +1110,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeVirtualInterfacesRequest",
+      output_shape:     "VirtualInterfaces",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new private virtual interface. A virtual interface is the VLAN
@@ -996,9 +1136,13 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreatePrivateVirtualInterfaceRequest",
+      output_shape:     "VirtualInterface",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new BGP peer on a specified virtual interface. The BGP peer
@@ -1028,8 +1172,19 @@ defmodule Baiji.DirectConnect do
       endpoint_prefix:  "directconnect",
       type:             :json,
       version:          "2012-10-25",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateBGPPeerRequest",
+      output_shape:     "CreateBGPPeerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"ConfirmPublicVirtualInterfaceRequest" => %{"members" => %{"virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "required" => ["virtualInterfaceId"], "type" => "structure"}, "InterconnectList" => %{"member" => %{"shape" => "Interconnect"}, "type" => "list"}, "NewPublicVirtualInterface" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "customerAddress" => %{"shape" => "CustomerAddress"}, "routeFilterPrefixes" => %{"shape" => "RouteFilterPrefixList"}, "virtualInterfaceName" => %{"shape" => "VirtualInterfaceName"}, "vlan" => %{"shape" => "VLAN"}}, "required" => ["virtualInterfaceName", "vlan", "asn"], "type" => "structure"}, "DeleteLagRequest" => %{"members" => %{"lagId" => %{"shape" => "LagId"}}, "required" => ["lagId"], "type" => "structure"}, "ResourceTagList" => %{"member" => %{"shape" => "ResourceTag"}, "type" => "list"}, "TagKeyList" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "VirtualGatewayState" => %{"type" => "string"}, "CreatePrivateVirtualInterfaceRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "newPrivateVirtualInterface" => %{"shape" => "NewPrivateVirtualInterface"}}, "required" => ["connectionId", "newPrivateVirtualInterface"], "type" => "structure"}, "AwsDevice" => %{"type" => "string"}, "LagName" => %{"type" => "string"}, "DescribeHostedConnectionsRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}}, "required" => ["connectionId"], "type" => "structure"}, "AssociateHostedConnectionRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "parentConnectionId" => %{"shape" => "ConnectionId"}}, "required" => ["connectionId", "parentConnectionId"], "type" => "structure"}, "RouterConfig" => %{"type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "LagState" => %{"enum" => ["requested", "pending", "available", "down", "deleting", "deleted"], "type" => "string"}, "DeleteVirtualInterfaceResponse" => %{"members" => %{"virtualInterfaceState" => %{"shape" => "VirtualInterfaceState"}}, "type" => "structure"}, "Interconnect" => %{"members" => %{"awsDevice" => %{"shape" => "AwsDevice"}, "bandwidth" => %{"shape" => "Bandwidth"}, "interconnectId" => %{"shape" => "InterconnectId"}, "interconnectName" => %{"shape" => "InterconnectName"}, "interconnectState" => %{"shape" => "InterconnectState"}, "lagId" => %{"shape" => "LagId"}, "loaIssueTime" => %{"shape" => "LoaIssueTime"}, "location" => %{"shape" => "LocationCode"}, "region" => %{"shape" => "Region"}}, "type" => "structure"}, "Count" => %{"type" => "integer"}, "ConnectionState" => %{"enum" => ["ordering", "requested", "pending", "available", "down", "deleting", "deleted", "rejected"], "type" => "string"}, "NewBGPPeer" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "customerAddress" => %{"shape" => "CustomerAddress"}}, "type" => "structure"}, "DescribeInterconnectLoaRequest" => %{"members" => %{"interconnectId" => %{"shape" => "InterconnectId"}, "loaContentType" => %{"shape" => "LoaContentType"}, "providerName" => %{"shape" => "ProviderName"}}, "required" => ["interconnectId"], "type" => "structure"}, "CIDR" => %{"type" => "string"}, "ConnectionId" => %{"type" => "string"}, "BGPPeerList" => %{"member" => %{"shape" => "BGPPeer"}, "type" => "list"}, "BGPAuthKey" => %{"type" => "string"}, "DescribeInterconnectLoaResponse" => %{"members" => %{"loa" => %{"shape" => "Loa"}}, "type" => "structure"}, "ConfirmPublicVirtualInterfaceResponse" => %{"members" => %{"virtualInterfaceState" => %{"shape" => "VirtualInterfaceState"}}, "type" => "structure"}, "UpdateLagRequest" => %{"members" => %{"lagId" => %{"shape" => "LagId"}, "lagName" => %{"shape" => "LagName"}, "minimumLinks" => %{"shape" => "Count"}}, "required" => ["lagId"], "type" => "structure"}, "LoaContentType" => %{"enum" => ["application/pdf"], "type" => "string"}, "LoaContent" => %{"type" => "blob"}, "ConfirmPrivateVirtualInterfaceResponse" => %{"members" => %{"virtualInterfaceState" => %{"shape" => "VirtualInterfaceState"}}, "type" => "structure"}, "DeleteBGPPeerResponse" => %{"members" => %{"virtualInterface" => %{"shape" => "VirtualInterface"}}, "type" => "structure"}, "AssociateVirtualInterfaceRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "required" => ["virtualInterfaceId", "connectionId"], "type" => "structure"}, "LocationCode" => %{"type" => "string"}, "DescribeInterconnectsRequest" => %{"members" => %{"interconnectId" => %{"shape" => "InterconnectId"}}, "type" => "structure"}, "DeleteBGPPeerRequest" => %{"members" => %{"asn" => %{"shape" => "ASN"}, "customerAddress" => %{"shape" => "CustomerAddress"}, "virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "type" => "structure"}, "ConnectionName" => %{"type" => "string"}, "Region" => %{"type" => "string"}, "DuplicateTagKeysException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DirectConnectServerException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateBGPPeerRequest" => %{"members" => %{"newBGPPeer" => %{"shape" => "NewBGPPeer"}, "virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "type" => "structure"}, "ConfirmPrivateVirtualInterfaceRequest" => %{"members" => %{"virtualGatewayId" => %{"shape" => "VirtualGatewayId"}, "virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "required" => ["virtualInterfaceId", "virtualGatewayId"], "type" => "structure"}, "BGPStatus" => %{"enum" => ["up", "down"], "type" => "string"}, "LocationList" => %{"member" => %{"shape" => "Location"}, "type" => "list"}, "CreateLagRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "connectionsBandwidth" => %{"shape" => "Bandwidth"}, "lagName" => %{"shape" => "LagName"}, "location" => %{"shape" => "LocationCode"}, "numberOfConnections" => %{"shape" => "Count"}}, "required" => ["numberOfConnections", "location", "connectionsBandwidth", "lagName"], "type" => "structure"}, "NewPublicVirtualInterfaceAllocation" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "customerAddress" => %{"shape" => "CustomerAddress"}, "routeFilterPrefixes" => %{"shape" => "RouteFilterPrefixList"}, "virtualInterfaceName" => %{"shape" => "VirtualInterfaceName"}, "vlan" => %{"shape" => "VLAN"}}, "required" => ["virtualInterfaceName", "vlan", "asn"], "type" => "structure"}, "DeleteInterconnectResponse" => %{"members" => %{"interconnectState" => %{"shape" => "InterconnectState"}}, "type" => "structure"}, "ResourceTag" => %{"members" => %{"resourceArn" => %{"shape" => "ResourceArn"}, "tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "VLAN" => %{"type" => "integer"}, "Lags" => %{"members" => %{"lags" => %{"shape" => "LagList"}}, "type" => "structure"}, "VirtualInterfaces" => %{"members" => %{"virtualInterfaces" => %{"shape" => "VirtualInterfaceList"}}, "type" => "structure"}, "UntagResourceRequest" => %{"members" => %{"resourceArn" => %{"shape" => "ResourceArn"}, "tagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["resourceArn", "tagKeys"], "type" => "structure"}, "ResourceArnList" => %{"member" => %{"shape" => "ResourceArn"}, "type" => "list"}, "VirtualInterfaceType" => %{"type" => "string"}, "Tag" => %{"members" => %{"key" => %{"shape" => "TagKey"}, "value" => %{"shape" => "TagValue"}}, "required" => ["key"], "type" => "structure"}, "Lag" => %{"members" => %{"allowsHostedConnections" => %{"shape" => "BooleanFlag"}, "awsDevice" => %{"shape" => "AwsDevice"}, "connections" => %{"shape" => "ConnectionList"}, "connectionsBandwidth" => %{"shape" => "Bandwidth"}, "lagId" => %{"shape" => "LagId"}, "lagName" => %{"shape" => "LagName"}, "lagState" => %{"shape" => "LagState"}, "location" => %{"shape" => "LocationCode"}, "minimumLinks" => %{"shape" => "Count"}, "numberOfConnections" => %{"shape" => "Count"}, "ownerAccount" => %{"shape" => "OwnerAccount"}, "region" => %{"shape" => "Region"}}, "type" => "structure"}, "InterconnectName" => %{"type" => "string"}, "OwnerAccount" => %{"type" => "string"}, "InterconnectState" => %{"enum" => ["requested", "pending", "available", "down", "deleting", "deleted"], "type" => "string"}, "RouteFilterPrefix" => %{"members" => %{"cidr" => %{"shape" => "CIDR"}}, "type" => "structure"}, "ConfirmConnectionRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}}, "required" => ["connectionId"], "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "min" => 1, "type" => "list"}, "TagValue" => %{"max" => 256, "min" => 0, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "AddressFamily" => %{"enum" => ["ipv4", "ipv6"], "type" => "string"}, "NewPrivateVirtualInterface" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "customerAddress" => %{"shape" => "CustomerAddress"}, "virtualGatewayId" => %{"shape" => "VirtualGatewayId"}, "virtualInterfaceName" => %{"shape" => "VirtualInterfaceName"}, "vlan" => %{"shape" => "VLAN"}}, "required" => ["virtualInterfaceName", "vlan", "asn", "virtualGatewayId"], "type" => "structure"}, "VirtualInterfaceId" => %{"type" => "string"}, "AllocatePrivateVirtualInterfaceRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "newPrivateVirtualInterfaceAllocation" => %{"shape" => "NewPrivateVirtualInterfaceAllocation"}, "ownerAccount" => %{"shape" => "OwnerAccount"}}, "required" => ["connectionId", "ownerAccount", "newPrivateVirtualInterfaceAllocation"], "type" => "structure"}, "DescribeConnectionLoaResponse" => %{"members" => %{"loa" => %{"shape" => "Loa"}}, "type" => "structure"}, "VirtualGatewayId" => %{"type" => "string"}, "BGPPeer" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "bgpPeerState" => %{"shape" => "BGPPeerState"}, "bgpStatus" => %{"shape" => "BGPStatus"}, "customerAddress" => %{"shape" => "CustomerAddress"}}, "type" => "structure"}, "DescribeTagsRequest" => %{"members" => %{"resourceArns" => %{"shape" => "ResourceArnList"}}, "required" => ["resourceArns"], "type" => "structure"}, "AllocateHostedConnectionRequest" => %{"members" => %{"bandwidth" => %{"shape" => "Bandwidth"}, "connectionId" => %{"shape" => "ConnectionId"}, "connectionName" => %{"shape" => "ConnectionName"}, "ownerAccount" => %{"shape" => "OwnerAccount"}, "vlan" => %{"shape" => "VLAN"}}, "required" => ["connectionId", "ownerAccount", "bandwidth", "connectionName", "vlan"], "type" => "structure"}, "InterconnectId" => %{"type" => "string"}, "UntagResourceResponse" => %{"members" => %{}, "type" => "structure"}, "DescribeTagsResponse" => %{"members" => %{"resourceTags" => %{"shape" => "ResourceTagList"}}, "type" => "structure"}, "Location" => %{"members" => %{"locationCode" => %{"shape" => "LocationCode"}, "locationName" => %{"shape" => "LocationName"}}, "type" => "structure"}, "LoaIssueTime" => %{"type" => "timestamp"}, "DescribeLoaRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "loaContentType" => %{"shape" => "LoaContentType"}, "providerName" => %{"shape" => "ProviderName"}}, "required" => ["connectionId"], "type" => "structure"}, "BGPPeerState" => %{"enum" => ["verifying", "pending", "available", "deleting", "deleted"], "type" => "string"}, "ResourceArn" => %{"type" => "string"}, "PartnerName" => %{"type" => "string"}, "NewPrivateVirtualInterfaceAllocation" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "customerAddress" => %{"shape" => "CustomerAddress"}, "virtualInterfaceName" => %{"shape" => "VirtualInterfaceName"}, "vlan" => %{"shape" => "VLAN"}}, "required" => ["virtualInterfaceName", "vlan", "asn"], "type" => "structure"}, "TagResourceRequest" => %{"members" => %{"resourceArn" => %{"shape" => "ResourceArn"}, "tags" => %{"shape" => "TagList"}}, "required" => ["resourceArn", "tags"], "type" => "structure"}, "AllocatePublicVirtualInterfaceRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "newPublicVirtualInterfaceAllocation" => %{"shape" => "NewPublicVirtualInterfaceAllocation"}, "ownerAccount" => %{"shape" => "OwnerAccount"}}, "required" => ["connectionId", "ownerAccount", "newPublicVirtualInterfaceAllocation"], "type" => "structure"}, "LagId" => %{"type" => "string"}, "AmazonAddress" => %{"type" => "string"}, "Loa" => %{"members" => %{"loaContent" => %{"shape" => "LoaContent"}, "loaContentType" => %{"shape" => "LoaContentType"}}, "type" => "structure"}, "DescribeLagsRequest" => %{"members" => %{"lagId" => %{"shape" => "LagId"}}, "type" => "structure"}, "VirtualInterfaceList" => %{"member" => %{"shape" => "VirtualInterface"}, "type" => "list"}, "AssociateConnectionWithLagRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "lagId" => %{"shape" => "LagId"}}, "required" => ["connectionId", "lagId"], "type" => "structure"}, "DirectConnectClientException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ConnectionList" => %{"member" => %{"shape" => "Connection"}, "type" => "list"}, "Locations" => %{"members" => %{"locations" => %{"shape" => "LocationList"}}, "type" => "structure"}, "VirtualGateway" => %{"members" => %{"virtualGatewayId" => %{"shape" => "VirtualGatewayId"}, "virtualGatewayState" => %{"shape" => "VirtualGatewayState"}}, "type" => "structure"}, "VirtualGateways" => %{"members" => %{"virtualGateways" => %{"shape" => "VirtualGatewayList"}}, "type" => "structure"}, "DeleteInterconnectRequest" => %{"members" => %{"interconnectId" => %{"shape" => "InterconnectId"}}, "required" => ["interconnectId"], "type" => "structure"}, "RouteFilterPrefixList" => %{"member" => %{"shape" => "RouteFilterPrefix"}, "type" => "list"}, "ASN" => %{"type" => "integer"}, "CreateInterconnectRequest" => %{"members" => %{"bandwidth" => %{"shape" => "Bandwidth"}, "interconnectName" => %{"shape" => "InterconnectName"}, "lagId" => %{"shape" => "LagId"}, "location" => %{"shape" => "LocationCode"}}, "required" => ["interconnectName", "bandwidth", "location"], "type" => "structure"}, "CreateConnectionRequest" => %{"members" => %{"bandwidth" => %{"shape" => "Bandwidth"}, "connectionName" => %{"shape" => "ConnectionName"}, "lagId" => %{"shape" => "LagId"}, "location" => %{"shape" => "LocationCode"}}, "required" => ["location", "bandwidth", "connectionName"], "type" => "structure"}, "DeleteConnectionRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}}, "required" => ["connectionId"], "type" => "structure"}, "LocationName" => %{"type" => "string"}, "ProviderName" => %{"type" => "string"}, "TooManyTagsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CustomerAddress" => %{"type" => "string"}, "TagResourceResponse" => %{"members" => %{}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "VirtualInterface" => %{"members" => %{"addressFamily" => %{"shape" => "AddressFamily"}, "amazonAddress" => %{"shape" => "AmazonAddress"}, "asn" => %{"shape" => "ASN"}, "authKey" => %{"shape" => "BGPAuthKey"}, "bgpPeers" => %{"shape" => "BGPPeerList"}, "connectionId" => %{"shape" => "ConnectionId"}, "customerAddress" => %{"shape" => "CustomerAddress"}, "customerRouterConfig" => %{"shape" => "RouterConfig"}, "location" => %{"shape" => "LocationCode"}, "ownerAccount" => %{"shape" => "OwnerAccount"}, "routeFilterPrefixes" => %{"shape" => "RouteFilterPrefixList"}, "virtualGatewayId" => %{"shape" => "VirtualGatewayId"}, "virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}, "virtualInterfaceName" => %{"shape" => "VirtualInterfaceName"}, "virtualInterfaceState" => %{"shape" => "VirtualInterfaceState"}, "virtualInterfaceType" => %{"shape" => "VirtualInterfaceType"}, "vlan" => %{"shape" => "VLAN"}}, "type" => "structure"}, "VirtualGatewayList" => %{"member" => %{"shape" => "VirtualGateway"}, "type" => "list"}, "DescribeConnectionsOnInterconnectRequest" => %{"members" => %{"interconnectId" => %{"shape" => "InterconnectId"}}, "required" => ["interconnectId"], "type" => "structure"}, "Bandwidth" => %{"type" => "string"}, "CreateBGPPeerResponse" => %{"members" => %{"virtualInterface" => %{"shape" => "VirtualInterface"}}, "type" => "structure"}, "ConfirmConnectionResponse" => %{"members" => %{"connectionState" => %{"shape" => "ConnectionState"}}, "type" => "structure"}, "Interconnects" => %{"members" => %{"interconnects" => %{"shape" => "InterconnectList"}}, "type" => "structure"}, "VirtualInterfaceState" => %{"enum" => ["confirming", "verifying", "pending", "available", "down", "deleting", "deleted", "rejected"], "type" => "string"}, "Connection" => %{"members" => %{"awsDevice" => %{"shape" => "AwsDevice"}, "bandwidth" => %{"shape" => "Bandwidth"}, "connectionId" => %{"shape" => "ConnectionId"}, "connectionName" => %{"shape" => "ConnectionName"}, "connectionState" => %{"shape" => "ConnectionState"}, "lagId" => %{"shape" => "LagId"}, "loaIssueTime" => %{"shape" => "LoaIssueTime"}, "location" => %{"shape" => "LocationCode"}, "ownerAccount" => %{"shape" => "OwnerAccount"}, "partnerName" => %{"shape" => "PartnerName"}, "region" => %{"shape" => "Region"}, "vlan" => %{"shape" => "VLAN"}}, "type" => "structure"}, "LagList" => %{"member" => %{"shape" => "Lag"}, "type" => "list"}, "DeleteVirtualInterfaceRequest" => %{"members" => %{"virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "required" => ["virtualInterfaceId"], "type" => "structure"}, "DescribeVirtualInterfacesRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "virtualInterfaceId" => %{"shape" => "VirtualInterfaceId"}}, "type" => "structure"}, "Connections" => %{"members" => %{"connections" => %{"shape" => "ConnectionList"}}, "type" => "structure"}, "AllocateConnectionOnInterconnectRequest" => %{"members" => %{"bandwidth" => %{"shape" => "Bandwidth"}, "connectionName" => %{"shape" => "ConnectionName"}, "interconnectId" => %{"shape" => "InterconnectId"}, "ownerAccount" => %{"shape" => "OwnerAccount"}, "vlan" => %{"shape" => "VLAN"}}, "required" => ["bandwidth", "connectionName", "ownerAccount", "interconnectId", "vlan"], "type" => "structure"}, "VirtualInterfaceName" => %{"type" => "string"}, "DescribeConnectionLoaRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "loaContentType" => %{"shape" => "LoaContentType"}, "providerName" => %{"shape" => "ProviderName"}}, "required" => ["connectionId"], "type" => "structure"}, "BooleanFlag" => %{"type" => "boolean"}, "DescribeConnectionsRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}}, "type" => "structure"}, "DisassociateConnectionFromLagRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "lagId" => %{"shape" => "LagId"}}, "required" => ["connectionId", "lagId"], "type" => "structure"}, "CreatePublicVirtualInterfaceRequest" => %{"members" => %{"connectionId" => %{"shape" => "ConnectionId"}, "newPublicVirtualInterface" => %{"shape" => "NewPublicVirtualInterface"}}, "required" => ["connectionId", "newPublicVirtualInterface"], "type" => "structure"}}
+  end
 end

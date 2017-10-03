@@ -23,9 +23,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateTrafficPolicyInstanceRequest",
+      output_shape:     "CreateTrafficPolicyInstanceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a list of your hosted zones in lexicographic order. The response
@@ -95,9 +99,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListHostedZonesByNameRequest",
+      output_shape:     "ListHostedZonesByNameResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a health check.
@@ -125,9 +133,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteHealthCheckRequest",
+      output_shape:     "DeleteHealthCheckResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the resource record sets in a specified hosted zone that were
@@ -164,9 +176,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateTrafficPolicyInstanceRequest",
+      output_shape:     "UpdateTrafficPolicyInstanceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Associates an Amazon VPC with a private hosted zone.
@@ -195,9 +211,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateVPCWithHostedZoneRequest",
+      output_shape:     "AssociateVPCWithHostedZoneResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new health check.
@@ -247,9 +267,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateHealthCheckRequest",
+      output_shape:     "CreateHealthCheckResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about all of the versions for a specified traffic policy.
@@ -267,9 +291,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTrafficPolicyVersionsRequest",
+      output_shape:     "ListTrafficPolicyVersionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the traffic policy instances that you created in a
@@ -295,9 +323,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTrafficPolicyInstancesByHostedZoneRequest",
+      output_shape:     "ListTrafficPolicyInstancesByHostedZoneResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists tags for one health check or hosted zone.
@@ -318,9 +350,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTagsForResourceRequest",
+      output_shape:     "ListTagsForResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds, edits, or deletes tags for a health check or a hosted zone.
@@ -341,9 +377,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ChangeTagsForResourceRequest",
+      output_shape:     "ChangeTagsForResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new public hosted zone, which you use to specify how the Domain
@@ -395,9 +435,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateHostedZoneRequest",
+      output_shape:     "CreateHostedZoneResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a configuration for DNS query logging. After you create a query
@@ -518,9 +562,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateQueryLoggingConfigRequest",
+      output_shape:     "CreateQueryLoggingConfigResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the configurations for DNS query logging that are associated with the
@@ -544,9 +592,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListQueryLoggingConfigsRequest",
+      output_shape:     "ListQueryLoggingConfigsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieve a list of the health checks that are associated with the current
@@ -563,9 +615,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListHealthChecksRequest",
+      output_shape:     "ListHealthChecksResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a list of the public and private hosted zones that are associated
@@ -587,9 +643,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListHostedZonesRequest",
+      output_shape:     "ListHostedZonesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a list of supported geo locations.
@@ -610,9 +670,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListGeoLocationsRequest",
+      output_shape:     "ListGeoLocationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the comment for a specified traffic policy version.
@@ -628,9 +692,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateTrafficPolicyCommentRequest",
+      output_shape:     "UpdateTrafficPolicyCommentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the latest version for every traffic policy that is
@@ -648,9 +716,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTrafficPoliciesRequest",
+      output_shape:     "ListTrafficPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the resource record sets in a specified hosted zone.
@@ -707,9 +779,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListResourceRecordSetsRequest",
+      output_shape:     "ListResourceRecordSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the current status of a change batch request. The status is one of
@@ -735,9 +811,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetChangeRequest",
+      output_shape:     "GetChangeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes authorization to submit an `AssociateVPCWithHostedZone` request to
@@ -765,9 +845,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteVPCAssociationAuthorizationRequest",
+      output_shape:     "DeleteVPCAssociationAuthorizationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the value that Amazon Route 53 returns in response to a DNS request
@@ -786,9 +870,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "TestDNSAnswerRequest",
+      output_shape:     "TestDNSAnswerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of the VPCs that were created by other accounts and that can be
@@ -809,9 +897,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListVPCAssociationAuthorizationsRequest",
+      output_shape:     "ListVPCAssociationAuthorizationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a reusable delegation set.
@@ -834,9 +926,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteReusableDelegationSetRequest",
+      output_shape:     "DeleteReusableDelegationSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the comment for a specified hosted zone.
@@ -852,9 +948,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateHostedZoneCommentRequest",
+      output_shape:     "UpdateHostedZoneCommentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a delegation set (a group of four name servers) that can be reused
@@ -880,9 +980,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateReusableDelegationSetRequest",
+      output_shape:     "CreateReusableDelegationSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Authorizes the AWS account that created a specified VPC to submit an
@@ -910,9 +1014,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateVPCAssociationAuthorizationRequest",
+      output_shape:     "CreateVPCAssociationAuthorizationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the traffic policy instances that you created by
@@ -938,9 +1046,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTrafficPolicyInstancesRequest",
+      output_shape:     "ListTrafficPolicyInstancesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a traffic policy instance and all of the resource record sets that
@@ -962,9 +1074,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteTrafficPolicyInstanceRequest",
+      output_shape:     "DeleteTrafficPolicyInstanceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a traffic policy.
@@ -980,9 +1096,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteTrafficPolicyRequest",
+      output_shape:     "DeleteTrafficPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a specific traffic policy version.
@@ -998,9 +1118,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetTrafficPolicyRequest",
+      output_shape:     "GetTrafficPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists tags for up to 10 health checks or hosted zones.
@@ -1021,9 +1145,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTagsForResourcesRequest",
+      output_shape:     "ListTagsForResourcesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the reason that a specified health check failed most recently.
@@ -1039,9 +1167,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetHealthCheckLastFailureReasonRequest",
+      output_shape:     "GetHealthCheckLastFailureReasonResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the number of traffic policy instances that are associated with the
@@ -1058,9 +1190,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetTrafficPolicyInstanceCountRequest",
+      output_shape:     "GetTrafficPolicyInstanceCountResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates, changes, or deletes a resource record set, which contains
@@ -1161,9 +1297,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ChangeResourceRecordSetsRequest",
+      output_shape:     "ChangeResourceRecordSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a specified health check.
@@ -1179,9 +1319,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetHealthCheckRequest",
+      output_shape:     "GetHealthCheckResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the number of health checks that are associated with the current
@@ -1198,9 +1342,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetHealthCheckCountRequest",
+      output_shape:     "GetHealthCheckCountResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about whether a specified geographic location is supported
@@ -1234,9 +1382,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetGeoLocationRequest",
+      output_shape:     "GetGeoLocationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new version of an existing traffic policy. When you create a new
@@ -1259,9 +1411,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateTrafficPolicyVersionRequest",
+      output_shape:     "CreateTrafficPolicyVersionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates an existing health check. Note that some values can't be updated.
@@ -1282,9 +1438,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateHealthCheckRequest",
+      output_shape:     "UpdateHealthCheckResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a configuration for DNS query logging. If you delete a
@@ -1305,9 +1465,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteQueryLoggingConfigRequest",
+      output_shape:     "DeleteQueryLoggingConfigResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a specified configuration for DNS query logging.
@@ -1327,9 +1491,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetQueryLoggingConfigRequest",
+      output_shape:     "GetQueryLoggingConfigResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about a specified reusable delegation set, including
@@ -1346,9 +1514,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetReusableDelegationSetRequest",
+      output_shape:     "GetReusableDelegationSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disassociates a VPC from a Amazon Route 53 private hosted zone.
@@ -1372,9 +1544,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateVPCFromHostedZoneRequest",
+      output_shape:     "DisassociateVPCFromHostedZoneResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a specified hosted zone including the four name
@@ -1391,9 +1567,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetHostedZoneRequest",
+      output_shape:     "GetHostedZoneResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a specified traffic policy instance.
@@ -1419,9 +1599,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetTrafficPolicyInstanceRequest",
+      output_shape:     "GetTrafficPolicyInstanceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets status of a specified health check.
@@ -1437,9 +1621,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetHealthCheckStatusRequest",
+      output_shape:     "GetHealthCheckStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a hosted zone.
@@ -1487,9 +1675,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteHostedZoneRequest",
+      output_shape:     "DeleteHostedZoneResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a list of the reusable delegation sets that are associated with
@@ -1506,9 +1698,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListReusableDelegationSetsRequest",
+      output_shape:     "ListReusableDelegationSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a traffic policy, which you use to create multiple DNS resource
@@ -1526,9 +1722,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateTrafficPolicyRequest",
+      output_shape:     "CreateTrafficPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the number of hosted zones that are associated with the current
@@ -1545,9 +1745,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetHostedZoneCountRequest",
+      output_shape:     "GetHostedZoneCountResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the traffic policy instances that you created by
@@ -1573,9 +1777,13 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTrafficPolicyInstancesByPolicyRequest",
+      output_shape:     "ListTrafficPolicyInstancesByPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   `GetCheckerIpRanges` still works, but we recommend that you download
@@ -1595,8 +1803,19 @@ defmodule Baiji.Route53 do
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetCheckerIpRangesRequest",
+      output_shape:     "GetCheckerIpRangesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"TestDNSAnswerRequest" => %{"members" => %{"EDNS0ClientSubnetIP" => %{"location" => "querystring", "locationName" => "edns0clientsubnetip", "shape" => "IPAddress"}, "EDNS0ClientSubnetMask" => %{"location" => "querystring", "locationName" => "edns0clientsubnetmask", "shape" => "SubnetMask"}, "HostedZoneId" => %{"location" => "querystring", "locationName" => "hostedzoneid", "shape" => "ResourceId"}, "RecordName" => %{"location" => "querystring", "locationName" => "recordname", "shape" => "DNSName"}, "RecordType" => %{"location" => "querystring", "locationName" => "recordtype", "shape" => "RRType"}, "ResolverIP" => %{"location" => "querystring", "locationName" => "resolverip", "shape" => "IPAddress"}}, "required" => ["HostedZoneId", "RecordName", "RecordType"], "type" => "structure"}, "NoSuchHealthCheck" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UpdateTrafficPolicyInstanceRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyInstanceId"}, "TTL" => %{"shape" => "TTL"}, "TrafficPolicyId" => %{"shape" => "TrafficPolicyId"}, "TrafficPolicyVersion" => %{"shape" => "TrafficPolicyVersion"}}, "required" => ["Id", "TTL", "TrafficPolicyId", "TrafficPolicyVersion"], "type" => "structure"}, "HealthCheckRegionList" => %{"max" => 64, "member" => %{"locationName" => "Region", "shape" => "HealthCheckRegion"}, "min" => 3, "type" => "list"}, "HealthCheckRegion" => %{"enum" => ["us-east-1", "us-west-1", "us-west-2", "eu-west-1", "ap-southeast-1", "ap-southeast-2", "ap-northeast-1", "sa-east-1"], "max" => 64, "min" => 1, "type" => "string"}, "ListTagsForResourcesRequest" => %{"members" => %{"ResourceIds" => %{"shape" => "TagResourceIdList"}, "ResourceType" => %{"location" => "uri", "locationName" => "ResourceType", "shape" => "TagResourceType"}}, "required" => ["ResourceType", "ResourceIds"], "type" => "structure"}, "RequestInterval" => %{"max" => 30, "min" => 10, "type" => "integer"}, "ListTagsForResourceResponse" => %{"members" => %{"ResourceTagSet" => %{"shape" => "ResourceTagSet"}}, "required" => ["ResourceTagSet"], "type" => "structure"}, "TrafficPolicyDocument" => %{"max" => 102400, "type" => "string"}, "Statistic" => %{"enum" => ["Average", "Sum", "SampleCount", "Maximum", "Minimum"], "type" => "string"}, "ListQueryLoggingConfigsRequest" => %{"members" => %{"HostedZoneId" => %{"location" => "querystring", "locationName" => "hostedzoneid", "shape" => "ResourceId"}, "MaxResults" => %{"location" => "querystring", "locationName" => "maxresults", "shape" => "MaxResults"}, "NextToken" => %{"location" => "querystring", "locationName" => "nexttoken", "shape" => "PaginationToken"}}, "type" => "structure"}, "IPAddressCidr" => %{"type" => "string"}, "InsufficientCloudWatchLogsResourcePolicy" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetTrafficPolicyInstanceCountResponse" => %{"members" => %{"TrafficPolicyInstanceCount" => %{"shape" => "TrafficPolicyInstanceCount"}}, "required" => ["TrafficPolicyInstanceCount"], "type" => "structure"}, "IsPrivateZone" => %{"type" => "boolean"}, "AlarmIdentifier" => %{"members" => %{"Name" => %{"shape" => "AlarmName"}, "Region" => %{"shape" => "CloudWatchRegion"}}, "required" => ["Region", "Name"], "type" => "structure"}, "GeoLocationCountryName" => %{"max" => 64, "min" => 1, "type" => "string"}, "ListTrafficPolicyInstancesRequest" => %{"members" => %{"HostedZoneIdMarker" => %{"location" => "querystring", "locationName" => "hostedzoneid", "shape" => "ResourceId"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "TrafficPolicyInstanceNameMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyinstancename", "shape" => "DNSName"}, "TrafficPolicyInstanceTypeMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyinstancetype", "shape" => "RRType"}}, "type" => "structure"}, "GetChangeRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["Id"], "type" => "structure"}, "ChangeAction" => %{"enum" => ["CREATE", "DELETE", "UPSERT"], "type" => "string"}, "TagKeyList" => %{"max" => 10, "member" => %{"locationName" => "Key", "shape" => "TagKey"}, "min" => 1, "type" => "list"}, "CloudWatchRegion" => %{"enum" => ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "ca-central-1", "eu-central-1", "eu-west-1", "eu-west-2", "ap-south-1", "ap-southeast-1", "ap-southeast-2", "ap-northeast-1", "ap-northeast-2", "sa-east-1"], "max" => 64, "min" => 1, "type" => "string"}, "ErrorMessages" => %{"member" => %{"locationName" => "Message", "shape" => "ErrorMessage"}, "type" => "list"}, "DNSName" => %{"max" => 1024, "type" => "string"}, "ChangeTagsForResourceRequest" => %{"members" => %{"AddTags" => %{"shape" => "TagList"}, "RemoveTagKeys" => %{"shape" => "TagKeyList"}, "ResourceId" => %{"location" => "uri", "locationName" => "ResourceId", "shape" => "TagResourceId"}, "ResourceType" => %{"location" => "uri", "locationName" => "ResourceType", "shape" => "TagResourceType"}}, "required" => ["ResourceType", "ResourceId"], "type" => "structure"}, "DeleteHostedZoneRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["Id"], "type" => "structure"}, "ListTrafficPoliciesRequest" => %{"members" => %{"MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "TrafficPolicyIdMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyid", "shape" => "TrafficPolicyId"}}, "type" => "structure"}, "ListHealthChecksRequest" => %{"members" => %{"Marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "PageMarker"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}}, "type" => "structure"}, "ChangeBatch" => %{"members" => %{"Changes" => %{"shape" => "Changes"}, "Comment" => %{"shape" => "ResourceDescription"}}, "required" => ["Changes"], "type" => "structure"}, "VPCs" => %{"member" => %{"locationName" => "VPC", "shape" => "VPC"}, "min" => 1, "type" => "list"}, "PageTruncated" => %{"type" => "boolean"}, "ListVPCAssociationAuthorizationsResponse" => %{"members" => %{"HostedZoneId" => %{"shape" => "ResourceId"}, "NextToken" => %{"shape" => "PaginationToken"}, "VPCs" => %{"shape" => "VPCs"}}, "required" => ["HostedZoneId", "VPCs"], "type" => "structure"}, "DisassociateVPCFromHostedZoneResponse" => %{"members" => %{"ChangeInfo" => %{"shape" => "ChangeInfo"}}, "required" => ["ChangeInfo"], "type" => "structure"}, "TestDNSAnswerResponse" => %{"members" => %{"Nameserver" => %{"shape" => "Nameserver"}, "Protocol" => %{"shape" => "TransportProtocol"}, "RecordData" => %{"shape" => "RecordData"}, "RecordName" => %{"shape" => "DNSName"}, "RecordType" => %{"shape" => "RRType"}, "ResponseCode" => %{"shape" => "DNSRCode"}}, "required" => ["Nameserver", "RecordName", "RecordType", "RecordData", "ResponseCode", "Protocol"], "type" => "structure"}, "GetHostedZoneCountRequest" => %{"members" => %{}, "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "ResourceRecordSet" => %{"members" => %{"AliasTarget" => %{"shape" => "AliasTarget"}, "Failover" => %{"shape" => "ResourceRecordSetFailover"}, "GeoLocation" => %{"shape" => "GeoLocation"}, "HealthCheckId" => %{"shape" => "HealthCheckId"}, "MultiValueAnswer" => %{"shape" => "ResourceRecordSetMultiValueAnswer"}, "Name" => %{"shape" => "DNSName"}, "Region" => %{"shape" => "ResourceRecordSetRegion"}, "ResourceRecords" => %{"shape" => "ResourceRecords"}, "SetIdentifier" => %{"shape" => "ResourceRecordSetIdentifier"}, "TTL" => %{"shape" => "TTL"}, "TrafficPolicyInstanceId" => %{"shape" => "TrafficPolicyInstanceId"}, "Type" => %{"shape" => "RRType"}, "Weight" => %{"shape" => "ResourceRecordSetWeight"}}, "required" => ["Name", "Type"], "type" => "structure"}, "GeoLocationSubdivisionCode" => %{"max" => 3, "min" => 1, "type" => "string"}, "InvalidInput" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "QueryLoggingConfigId" => %{"max" => 36, "min" => 1, "type" => "string"}, "HealthChecks" => %{"member" => %{"locationName" => "HealthCheck", "shape" => "HealthCheck"}, "type" => "list"}, "InvalidArgument" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DeleteVPCAssociationAuthorizationResponse" => %{"members" => %{}, "type" => "structure"}, "ListTrafficPolicyVersionsResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "TrafficPolicies" => %{"shape" => "TrafficPolicies"}, "TrafficPolicyVersionMarker" => %{"shape" => "TrafficPolicyVersionMarker"}}, "required" => ["TrafficPolicies", "IsTruncated", "TrafficPolicyVersionMarker", "MaxItems"], "type" => "structure"}, "DeleteTrafficPolicyInstanceResponse" => %{"members" => %{}, "type" => "structure"}, "TrafficPolicyInstanceCount" => %{"type" => "integer"}, "HostedZoneConfig" => %{"members" => %{"Comment" => %{"shape" => "ResourceDescription"}, "PrivateZone" => %{"shape" => "IsPrivateZone"}}, "type" => "structure"}, "Changes" => %{"member" => %{"locationName" => "Change", "shape" => "Change"}, "min" => 1, "type" => "list"}, "TagResourceType" => %{"enum" => ["healthcheck", "hostedzone"], "type" => "string"}, "GetHostedZoneRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["Id"], "type" => "structure"}, "InvalidVPCId" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TrafficPolicy" => %{"members" => %{"Comment" => %{"shape" => "TrafficPolicyComment"}, "Document" => %{"shape" => "TrafficPolicyDocument"}, "Id" => %{"shape" => "TrafficPolicyId"}, "Name" => %{"shape" => "TrafficPolicyName"}, "Type" => %{"shape" => "RRType"}, "Version" => %{"shape" => "TrafficPolicyVersion"}}, "required" => ["Id", "Version", "Name", "Type", "Document"], "type" => "structure"}, "HealthThreshold" => %{"max" => 256, "min" => 0, "type" => "integer"}, "ListTrafficPoliciesResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "TrafficPolicyIdMarker" => %{"shape" => "TrafficPolicyId"}, "TrafficPolicySummaries" => %{"shape" => "TrafficPolicySummaries"}}, "required" => ["TrafficPolicySummaries", "IsTruncated", "TrafficPolicyIdMarker", "MaxItems"], "type" => "structure"}, "DeleteReusableDelegationSetRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["Id"], "type" => "structure"}, "TimeStamp" => %{"type" => "timestamp"}, "DimensionList" => %{"max" => 10, "member" => %{"locationName" => "Dimension", "shape" => "Dimension"}, "type" => "list"}, "DeleteHealthCheckRequest" => %{"members" => %{"HealthCheckId" => %{"location" => "uri", "locationName" => "HealthCheckId", "shape" => "HealthCheckId"}}, "required" => ["HealthCheckId"], "type" => "structure"}, "DeleteVPCAssociationAuthorizationRequest" => %{"members" => %{"HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["HostedZoneId", "VPC"], "type" => "structure"}, "DisassociateVPCComment" => %{"type" => "string"}, "HealthCheckCount" => %{"type" => "long"}, "InvalidTrafficPolicyDocument" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "HostedZoneRRSetCount" => %{"type" => "long"}, "Port" => %{"max" => 65535, "min" => 1, "type" => "integer"}, "GetGeoLocationResponse" => %{"members" => %{"GeoLocationDetails" => %{"shape" => "GeoLocationDetails"}}, "required" => ["GeoLocationDetails"], "type" => "structure"}, "GetQueryLoggingConfigResponse" => %{"members" => %{"QueryLoggingConfig" => %{"shape" => "QueryLoggingConfig"}}, "required" => ["QueryLoggingConfig"], "type" => "structure"}, "DelegationSetNameServers" => %{"member" => %{"locationName" => "NameServer", "shape" => "DNSName"}, "min" => 1, "type" => "list"}, "GetHealthCheckLastFailureReasonResponse" => %{"members" => %{"HealthCheckObservations" => %{"shape" => "HealthCheckObservations"}}, "required" => ["HealthCheckObservations"], "type" => "structure"}, "DNSRCode" => %{"type" => "string"}, "TooManyHostedZones" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ChangeResourceRecordSetsRequest" => %{"members" => %{"ChangeBatch" => %{"shape" => "ChangeBatch"}, "HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["HostedZoneId", "ChangeBatch"], "type" => "structure"}, "ChangeStatus" => %{"enum" => ["PENDING", "INSYNC"], "type" => "string"}, "SearchString" => %{"max" => 255, "type" => "string"}, "GetHealthCheckLastFailureReasonRequest" => %{"members" => %{"HealthCheckId" => %{"location" => "uri", "locationName" => "HealthCheckId", "shape" => "HealthCheckId"}}, "required" => ["HealthCheckId"], "type" => "structure"}, "ListVPCAssociationAuthorizationsRequest" => %{"members" => %{"HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}, "MaxResults" => %{"location" => "querystring", "locationName" => "maxresults", "shape" => "MaxResults"}, "NextToken" => %{"location" => "querystring", "locationName" => "nexttoken", "shape" => "PaginationToken"}}, "required" => ["HostedZoneId"], "type" => "structure"}, "ListHealthChecksResponse" => %{"members" => %{"HealthChecks" => %{"shape" => "HealthChecks"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "Marker" => %{"shape" => "PageMarker"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "NextMarker" => %{"shape" => "PageMarker"}}, "required" => ["HealthChecks", "Marker", "IsTruncated", "MaxItems"], "type" => "structure"}, "UpdateTrafficPolicyInstanceResponse" => %{"members" => %{"TrafficPolicyInstance" => %{"shape" => "TrafficPolicyInstance"}}, "required" => ["TrafficPolicyInstance"], "type" => "structure"}, "DeleteReusableDelegationSetResponse" => %{"members" => %{}, "type" => "structure"}, "ListTagsForResourcesResponse" => %{"members" => %{"ResourceTagSets" => %{"shape" => "ResourceTagSetList"}}, "required" => ["ResourceTagSets"], "type" => "structure"}, "InvalidChangeBatch" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}, "messages" => %{"shape" => "ErrorMessages"}}, "type" => "structure"}, "GetGeoLocationRequest" => %{"members" => %{"ContinentCode" => %{"location" => "querystring", "locationName" => "continentcode", "shape" => "GeoLocationContinentCode"}, "CountryCode" => %{"location" => "querystring", "locationName" => "countrycode", "shape" => "GeoLocationCountryCode"}, "SubdivisionCode" => %{"location" => "querystring", "locationName" => "subdivisioncode", "shape" => "GeoLocationSubdivisionCode"}}, "type" => "structure"}, "IncompatibleVersion" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListHostedZonesRequest" => %{"members" => %{"DelegationSetId" => %{"location" => "querystring", "locationName" => "delegationsetid", "shape" => "ResourceId"}, "Marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "PageMarker"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}}, "type" => "structure"}, "ResourceTagSetList" => %{"member" => %{"locationName" => "ResourceTagSet", "shape" => "ResourceTagSet"}, "type" => "list"}, "DeleteTrafficPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "ListTagsForResourceRequest" => %{"members" => %{"ResourceId" => %{"location" => "uri", "locationName" => "ResourceId", "shape" => "TagResourceId"}, "ResourceType" => %{"location" => "uri", "locationName" => "ResourceType", "shape" => "TagResourceType"}}, "required" => ["ResourceType", "ResourceId"], "type" => "structure"}, "DelegationSetNotReusable" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ResourceTagSet" => %{"members" => %{"ResourceId" => %{"shape" => "TagResourceId"}, "ResourceType" => %{"shape" => "TagResourceType"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "DeleteHostedZoneResponse" => %{"members" => %{"ChangeInfo" => %{"shape" => "ChangeInfo"}}, "required" => ["ChangeInfo"], "type" => "structure"}, "TrafficPolicyInUse" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DisassociateVPCFromHostedZoneRequest" => %{"members" => %{"Comment" => %{"shape" => "DisassociateVPCComment"}, "HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["HostedZoneId", "VPC"], "type" => "structure"}, "TrafficPolicyAlreadyExists" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateReusableDelegationSetRequest" => %{"members" => %{"CallerReference" => %{"shape" => "Nonce"}, "HostedZoneId" => %{"shape" => "ResourceId"}}, "required" => ["CallerReference"], "type" => "structure"}, "DelegationSet" => %{"members" => %{"CallerReference" => %{"shape" => "Nonce"}, "Id" => %{"shape" => "ResourceId"}, "NameServers" => %{"shape" => "DelegationSetNameServers"}}, "required" => ["NameServers"], "type" => "structure"}, "ListTrafficPolicyVersionsRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyId"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "TrafficPolicyVersionMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyversion", "shape" => "TrafficPolicyVersionMarker"}}, "required" => ["Id"], "type" => "structure"}, "CreateQueryLoggingConfigResponse" => %{"members" => %{"Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}, "QueryLoggingConfig" => %{"shape" => "QueryLoggingConfig"}}, "required" => ["QueryLoggingConfig", "Location"], "type" => "structure"}, "GetReusableDelegationSetResponse" => %{"members" => %{"DelegationSet" => %{"shape" => "DelegationSet"}}, "required" => ["DelegationSet"], "type" => "structure"}, "GetTrafficPolicyInstanceCountRequest" => %{"members" => %{}, "type" => "structure"}, "IPAddress" => %{"max" => 45, "pattern" => "(^((([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]))$|^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))$)", "type" => "string"}, "DeleteTrafficPolicyInstanceRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyInstanceId"}}, "required" => ["Id"], "type" => "structure"}, "TrafficPolicyInstanceAlreadyExists" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LimitsExceeded" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NoSuchGeoLocation" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetCheckerIpRangesRequest" => %{"members" => %{}, "type" => "structure"}, "ResourceDescription" => %{"max" => 256, "type" => "string"}, "FailureThreshold" => %{"max" => 10, "min" => 1, "type" => "integer"}, "ListTrafficPolicyInstancesResponse" => %{"members" => %{"HostedZoneIdMarker" => %{"shape" => "ResourceId"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "TrafficPolicyInstanceNameMarker" => %{"shape" => "DNSName"}, "TrafficPolicyInstanceTypeMarker" => %{"shape" => "RRType"}, "TrafficPolicyInstances" => %{"shape" => "TrafficPolicyInstances"}}, "required" => ["TrafficPolicyInstances", "IsTruncated", "MaxItems"], "type" => "structure"}, "NoSuchQueryLoggingConfig" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GeoLocationContinentCode" => %{"max" => 2, "min" => 2, "type" => "string"}, "GetTrafficPolicyRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyId"}, "Version" => %{"location" => "uri", "locationName" => "Version", "shape" => "TrafficPolicyVersion"}}, "required" => ["Id", "Version"], "type" => "structure"}, "TrafficPolicyInstanceState" => %{"type" => "string"}, "ResourceRecordSetRegion" => %{"enum" => ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "ca-central-1", "eu-west-1", "eu-west-2", "eu-central-1", "ap-southeast-1", "ap-southeast-2", "ap-northeast-1", "ap-northeast-2", "sa-east-1", "cn-north-1", "ap-south-1"], "max" => 64, "min" => 1, "type" => "string"}, "UpdateHostedZoneCommentResponse" => %{"members" => %{"HostedZone" => %{"shape" => "HostedZone"}}, "required" => ["HostedZone"], "type" => "structure"}, "VPCRegion" => %{"enum" => ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "eu-west-1", "eu-west-2", "eu-central-1", "ap-southeast-1", "ap-southeast-2", "ap-south-1", "ap-northeast-1", "ap-northeast-2", "sa-east-1", "ca-central-1", "cn-north-1"], "max" => 64, "min" => 1, "type" => "string"}, "TrafficPolicyInstanceId" => %{"max" => 36, "min" => 1, "type" => "string"}, "CreateHostedZoneResponse" => %{"members" => %{"ChangeInfo" => %{"shape" => "ChangeInfo"}, "DelegationSet" => %{"shape" => "DelegationSet"}, "HostedZone" => %{"shape" => "HostedZone"}, "Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["HostedZone", "ChangeInfo", "DelegationSet", "Location"], "type" => "structure"}, "TrafficPolicyId" => %{"max" => 36, "min" => 1, "type" => "string"}, "CreateTrafficPolicyVersionResponse" => %{"members" => %{"Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}, "TrafficPolicy" => %{"shape" => "TrafficPolicy"}}, "required" => ["TrafficPolicy", "Location"], "type" => "structure"}, "Message" => %{"max" => 1024, "type" => "string"}, "FullyQualifiedDomainName" => %{"max" => 255, "type" => "string"}, "GetTrafficPolicyInstanceResponse" => %{"members" => %{"TrafficPolicyInstance" => %{"shape" => "TrafficPolicyInstance"}}, "required" => ["TrafficPolicyInstance"], "type" => "structure"}, "InvalidDomainName" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetHealthCheckResponse" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}}, "required" => ["HealthCheck"], "type" => "structure"}, "UpdateHealthCheckResponse" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}}, "required" => ["HealthCheck"], "type" => "structure"}, "QueryLoggingConfigs" => %{"member" => %{"locationName" => "QueryLoggingConfig", "shape" => "QueryLoggingConfig"}, "type" => "list"}, "HealthCheckId" => %{"max" => 64, "type" => "string"}, "InvalidPaginationToken" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ResourceRecordSetIdentifier" => %{"max" => 128, "min" => 1, "type" => "string"}, "GetHealthCheckCountRequest" => %{"members" => %{}, "type" => "structure"}, "CreateTrafficPolicyResponse" => %{"members" => %{"Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}, "TrafficPolicy" => %{"shape" => "TrafficPolicy"}}, "required" => ["TrafficPolicy", "Location"], "type" => "structure"}, "UpdateTrafficPolicyCommentResponse" => %{"members" => %{"TrafficPolicy" => %{"shape" => "TrafficPolicy"}}, "required" => ["TrafficPolicy"], "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "type" => "structure"}, "Inverted" => %{"type" => "boolean"}, "PublicZoneVPCAssociation" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TagResourceId" => %{"max" => 64, "type" => "string"}, "TrafficPolicyInstances" => %{"member" => %{"locationName" => "TrafficPolicyInstance", "shape" => "TrafficPolicyInstance"}, "type" => "list"}, "TrafficPolicyInstance" => %{"members" => %{"HostedZoneId" => %{"shape" => "ResourceId"}, "Id" => %{"shape" => "TrafficPolicyInstanceId"}, "Message" => %{"shape" => "Message"}, "Name" => %{"shape" => "DNSName"}, "State" => %{"shape" => "TrafficPolicyInstanceState"}, "TTL" => %{"shape" => "TTL"}, "TrafficPolicyId" => %{"shape" => "TrafficPolicyId"}, "TrafficPolicyType" => %{"shape" => "RRType"}, "TrafficPolicyVersion" => %{"shape" => "TrafficPolicyVersion"}}, "required" => ["Id", "HostedZoneId", "Name", "TTL", "State", "Message", "TrafficPolicyId", "TrafficPolicyVersion", "TrafficPolicyType"], "type" => "structure"}, "CreateHealthCheckResponse" => %{"members" => %{"HealthCheck" => %{"shape" => "HealthCheck"}, "Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}}, "required" => ["HealthCheck", "Location"], "type" => "structure"}, "HostedZoneCount" => %{"type" => "long"}, "ResourceRecordSetFailover" => %{"enum" => ["PRIMARY", "SECONDARY"], "type" => "string"}, "ResourcePath" => %{"max" => 255, "type" => "string"}, "NoSuchChange" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UpdateTrafficPolicyCommentRequest" => %{"members" => %{"Comment" => %{"shape" => "TrafficPolicyComment"}, "Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyId"}, "Version" => %{"location" => "uri", "locationName" => "Version", "shape" => "TrafficPolicyVersion"}}, "required" => ["Id", "Version", "Comment"], "type" => "structure"}, "ListHostedZonesResponse" => %{"members" => %{"HostedZones" => %{"shape" => "HostedZones"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "Marker" => %{"shape" => "PageMarker"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "NextMarker" => %{"shape" => "PageMarker"}}, "required" => ["HostedZones", "Marker", "IsTruncated", "MaxItems"], "type" => "structure"}, "HealthCheckObservations" => %{"member" => %{"locationName" => "HealthCheckObservation", "shape" => "HealthCheckObservation"}, "type" => "list"}, "RecordData" => %{"member" => %{"locationName" => "RecordDataEntry", "shape" => "RecordDataEntry"}, "type" => "list"}, "TagList" => %{"max" => 10, "member" => %{"locationName" => "Tag", "shape" => "Tag"}, "min" => 1, "type" => "list"}, "MaxResults" => %{"type" => "string"}, "RRType" => %{"enum" => ["SOA", "A", "TXT", "NS", "CNAME", "MX", "NAPTR", "PTR", "SRV", "SPF", "AAAA", "CAA"], "type" => "string"}, "TagValue" => %{"max" => 256, "type" => "string"}, "TrafficPolicyComment" => %{"max" => 1024, "type" => "string"}, "GetHealthCheckStatusRequest" => %{"members" => %{"HealthCheckId" => %{"location" => "uri", "locationName" => "HealthCheckId", "shape" => "HealthCheckId"}}, "required" => ["HealthCheckId"], "type" => "structure"}, "MetricName" => %{"max" => 255, "min" => 1, "type" => "string"}, "RData" => %{"max" => 4000, "type" => "string"}, "GetHostedZoneResponse" => %{"members" => %{"DelegationSet" => %{"shape" => "DelegationSet"}, "HostedZone" => %{"shape" => "HostedZone"}, "VPCs" => %{"shape" => "VPCs"}}, "required" => ["HostedZone"], "type" => "structure"}, "AliasTarget" => %{"members" => %{"DNSName" => %{"shape" => "DNSName"}, "EvaluateTargetHealth" => %{"shape" => "AliasHealthEnabled"}, "HostedZoneId" => %{"shape" => "ResourceId"}}, "required" => ["HostedZoneId", "DNSName", "EvaluateTargetHealth"], "type" => "structure"}, "GeoLocation" => %{"members" => %{"ContinentCode" => %{"shape" => "GeoLocationContinentCode"}, "CountryCode" => %{"shape" => "GeoLocationCountryCode"}, "SubdivisionCode" => %{"shape" => "GeoLocationSubdivisionCode"}}, "type" => "structure"}, "ChildHealthCheckList" => %{"max" => 256, "member" => %{"locationName" => "ChildHealthCheck", "shape" => "HealthCheckId"}, "type" => "list"}, "GetHealthCheckStatusResponse" => %{"members" => %{"HealthCheckObservations" => %{"shape" => "HealthCheckObservations"}}, "required" => ["HealthCheckObservations"], "type" => "structure"}, "StatusReport" => %{"members" => %{"CheckedTime" => %{"shape" => "TimeStamp"}, "Status" => %{"shape" => "Status"}}, "type" => "structure"}, "TooManyHealthChecks" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ThrottlingException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NotAuthorizedException" => %{"error" => %{"httpStatusCode" => 401}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetChangeResponse" => %{"members" => %{"ChangeInfo" => %{"shape" => "ChangeInfo"}}, "required" => ["ChangeInfo"], "type" => "structure"}, "CreateTrafficPolicyInstanceRequest" => %{"members" => %{"HostedZoneId" => %{"shape" => "ResourceId"}, "Name" => %{"shape" => "DNSName"}, "TTL" => %{"shape" => "TTL"}, "TrafficPolicyId" => %{"shape" => "TrafficPolicyId"}, "TrafficPolicyVersion" => %{"shape" => "TrafficPolicyVersion"}}, "required" => ["HostedZoneId", "Name", "TTL", "TrafficPolicyId", "TrafficPolicyVersion"], "type" => "structure"}, "AssociateVPCComment" => %{"type" => "string"}, "InsufficientDataHealthStatus" => %{"enum" => ["Healthy", "Unhealthy", "LastKnownStatus"], "type" => "string"}, "Dimension" => %{"members" => %{"Name" => %{"shape" => "DimensionField"}, "Value" => %{"shape" => "DimensionField"}}, "required" => ["Name", "Value"], "type" => "structure"}, "CloudWatchAlarmConfiguration" => %{"members" => %{"ComparisonOperator" => %{"shape" => "ComparisonOperator"}, "Dimensions" => %{"shape" => "DimensionList"}, "EvaluationPeriods" => %{"shape" => "EvaluationPeriods"}, "MetricName" => %{"shape" => "MetricName"}, "Namespace" => %{"shape" => "Namespace"}, "Period" => %{"shape" => "Period"}, "Statistic" => %{"shape" => "Statistic"}, "Threshold" => %{"shape" => "Threshold"}}, "required" => ["EvaluationPeriods", "Threshold", "ComparisonOperator", "Period", "MetricName", "Namespace", "Statistic"], "type" => "structure"}, "TransportProtocol" => %{"type" => "string"}, "HostedZoneNotEmpty" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "EnableSNI" => %{"type" => "boolean"}, "ListHostedZonesByNameResponse" => %{"members" => %{"DNSName" => %{"shape" => "DNSName"}, "HostedZoneId" => %{"shape" => "ResourceId"}, "HostedZones" => %{"shape" => "HostedZones"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "NextDNSName" => %{"shape" => "DNSName"}, "NextHostedZoneId" => %{"shape" => "ResourceId"}}, "required" => ["HostedZones", "IsTruncated", "MaxItems"], "type" => "structure"}, "VPCAssociationNotFound" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GeoLocationDetails" => %{"members" => %{"ContinentCode" => %{"shape" => "GeoLocationContinentCode"}, "ContinentName" => %{"shape" => "GeoLocationContinentName"}, "CountryCode" => %{"shape" => "GeoLocationCountryCode"}, "CountryName" => %{"shape" => "GeoLocationCountryName"}, "SubdivisionCode" => %{"shape" => "GeoLocationSubdivisionCode"}, "SubdivisionName" => %{"shape" => "GeoLocationSubdivisionName"}}, "type" => "structure"}, "TrafficPolicies" => %{"member" => %{"locationName" => "TrafficPolicy", "shape" => "TrafficPolicy"}, "type" => "list"}, "CreateReusableDelegationSetResponse" => %{"members" => %{"DelegationSet" => %{"shape" => "DelegationSet"}, "Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}}, "required" => ["DelegationSet", "Location"], "type" => "structure"}, "VPCAssociationAuthorizationNotFound" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetHealthCheckRequest" => %{"members" => %{"HealthCheckId" => %{"location" => "uri", "locationName" => "HealthCheckId", "shape" => "HealthCheckId"}}, "required" => ["HealthCheckId"], "type" => "structure"}, "ResourceId" => %{"max" => 32, "type" => "string"}, "ResourceRecords" => %{"member" => %{"locationName" => "ResourceRecord", "shape" => "ResourceRecord"}, "min" => 1, "type" => "list"}, "ListTrafficPolicyInstancesByHostedZoneRequest" => %{"members" => %{"HostedZoneId" => %{"location" => "querystring", "locationName" => "id", "shape" => "ResourceId"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "TrafficPolicyInstanceNameMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyinstancename", "shape" => "DNSName"}, "TrafficPolicyInstanceTypeMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyinstancetype", "shape" => "RRType"}}, "required" => ["HostedZoneId"], "type" => "structure"}, "PriorRequestNotComplete" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TooManyVPCAssociationAuthorizations" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Status" => %{"type" => "string"}, "Change" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "ResourceRecordSet" => %{"shape" => "ResourceRecordSet"}}, "required" => ["Action", "ResourceRecordSet"], "type" => "structure"}, "GeoLocationDetailsList" => %{"member" => %{"locationName" => "GeoLocationDetails", "shape" => "GeoLocationDetails"}, "type" => "list"}, "GetTrafficPolicyInstanceRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyInstanceId"}}, "required" => ["Id"], "type" => "structure"}, "QueryLoggingConfig" => %{"members" => %{"CloudWatchLogsLogGroupArn" => %{"shape" => "CloudWatchLogsLogGroupArn"}, "HostedZoneId" => %{"shape" => "ResourceId"}, "Id" => %{"shape" => "QueryLoggingConfigId"}}, "required" => ["Id", "HostedZoneId", "CloudWatchLogsLogGroupArn"], "type" => "structure"}, "DelegationSetNotAvailable" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DelegationSets" => %{"member" => %{"locationName" => "DelegationSet", "shape" => "DelegationSet"}, "type" => "list"}, "LastVPCAssociation" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "AssociateVPCWithHostedZoneRequest" => %{"members" => %{"Comment" => %{"shape" => "AssociateVPCComment"}, "HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["HostedZoneId", "VPC"], "type" => "structure"}, "HealthCheckVersionMismatch" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListGeoLocationsRequest" => %{"members" => %{"MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "StartContinentCode" => %{"location" => "querystring", "locationName" => "startcontinentcode", "shape" => "GeoLocationContinentCode"}, "StartCountryCode" => %{"location" => "querystring", "locationName" => "startcountrycode", "shape" => "GeoLocationCountryCode"}, "StartSubdivisionCode" => %{"location" => "querystring", "locationName" => "startsubdivisioncode", "shape" => "GeoLocationSubdivisionCode"}}, "type" => "structure"}, "HostedZones" => %{"member" => %{"locationName" => "HostedZone", "shape" => "HostedZone"}, "type" => "list"}, "ComparisonOperator" => %{"enum" => ["GreaterThanOrEqualToThreshold", "GreaterThanThreshold", "LessThanThreshold", "LessThanOrEqualToThreshold"], "type" => "string"}, "GetQueryLoggingConfigRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "QueryLoggingConfigId"}}, "required" => ["Id"], "type" => "structure"}, "GeoLocationContinentName" => %{"max" => 32, "min" => 1, "type" => "string"}, "GetCheckerIpRangesResponse" => %{"members" => %{"CheckerIpRanges" => %{"shape" => "CheckerIpRanges"}}, "required" => ["CheckerIpRanges"], "type" => "structure"}, "AliasHealthEnabled" => %{"type" => "boolean"}, "CreateHostedZoneRequest" => %{"members" => %{"CallerReference" => %{"shape" => "Nonce"}, "DelegationSetId" => %{"shape" => "ResourceId"}, "HostedZoneConfig" => %{"shape" => "HostedZoneConfig"}, "Name" => %{"shape" => "DNSName"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["Name", "CallerReference"], "type" => "structure"}, "ListGeoLocationsResponse" => %{"members" => %{"GeoLocationDetailsList" => %{"shape" => "GeoLocationDetailsList"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "NextContinentCode" => %{"shape" => "GeoLocationContinentCode"}, "NextCountryCode" => %{"shape" => "GeoLocationCountryCode"}, "NextSubdivisionCode" => %{"shape" => "GeoLocationSubdivisionCode"}}, "required" => ["GeoLocationDetailsList", "IsTruncated", "MaxItems"], "type" => "structure"}, "NoSuchDelegationSet" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NoSuchTrafficPolicy" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "HealthCheckType" => %{"enum" => ["HTTP", "HTTPS", "HTTP_STR_MATCH", "HTTPS_STR_MATCH", "TCP", "CALCULATED", "CLOUDWATCH_METRIC"], "type" => "string"}, "CreateVPCAssociationAuthorizationResponse" => %{"members" => %{"HostedZoneId" => %{"shape" => "ResourceId"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["HostedZoneId", "VPC"], "type" => "structure"}, "RecordDataEntry" => %{"max" => 512, "min" => 0, "type" => "string"}, "Threshold" => %{"type" => "double"}, "UpdateHealthCheckRequest" => %{"members" => %{"AlarmIdentifier" => %{"shape" => "AlarmIdentifier"}, "ChildHealthChecks" => %{"shape" => "ChildHealthCheckList"}, "EnableSNI" => %{"shape" => "EnableSNI"}, "FailureThreshold" => %{"shape" => "FailureThreshold"}, "FullyQualifiedDomainName" => %{"shape" => "FullyQualifiedDomainName"}, "HealthCheckId" => %{"location" => "uri", "locationName" => "HealthCheckId", "shape" => "HealthCheckId"}, "HealthCheckVersion" => %{"shape" => "HealthCheckVersion"}, "HealthThreshold" => %{"shape" => "HealthThreshold"}, "IPAddress" => %{"shape" => "IPAddress"}, "InsufficientDataHealthStatus" => %{"shape" => "InsufficientDataHealthStatus"}, "Inverted" => %{"shape" => "Inverted"}, "Port" => %{"shape" => "Port"}, "Regions" => %{"shape" => "HealthCheckRegionList"}, "ResourcePath" => %{"shape" => "ResourcePath"}, "SearchString" => %{"shape" => "SearchString"}}, "required" => ["HealthCheckId"], "type" => "structure"}, "ListTrafficPolicyInstancesByPolicyResponse" => %{"members" => %{"HostedZoneIdMarker" => %{"shape" => "ResourceId"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "TrafficPolicyInstanceNameMarker" => %{"shape" => "DNSName"}, "TrafficPolicyInstanceTypeMarker" => %{"shape" => "RRType"}, "TrafficPolicyInstances" => %{"shape" => "TrafficPolicyInstances"}}, "required" => ["TrafficPolicyInstances", "IsTruncated", "MaxItems"], "type" => "structure"}, "TooManyTrafficPolicies" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DimensionField" => %{"max" => 255, "min" => 1, "type" => "string"}, "HealthCheckInUse" => %{"deprecated" => true, "error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateVPCAssociationAuthorizationRequest" => %{"members" => %{"HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}, "VPC" => %{"shape" => "VPC"}}, "required" => ["HostedZoneId", "VPC"], "type" => "structure"}, "QueryLoggingConfigAlreadyExists" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateHealthCheckRequest" => %{"members" => %{"CallerReference" => %{"shape" => "HealthCheckNonce"}, "HealthCheckConfig" => %{"shape" => "HealthCheckConfig"}}, "required" => ["CallerReference", "HealthCheckConfig"], "type" => "structure"}, "Nameserver" => %{"max" => 255, "min" => 0, "type" => "string"}, "ResourceURI" => %{"max" => 1024, "type" => "string"}, "VPCId" => %{"max" => 1024, "type" => "string"}, "HealthCheckConfig" => %{"members" => %{"AlarmIdentifier" => %{"shape" => "AlarmIdentifier"}, "ChildHealthChecks" => %{"shape" => "ChildHealthCheckList"}, "EnableSNI" => %{"shape" => "EnableSNI"}, "FailureThreshold" => %{"shape" => "FailureThreshold"}, "FullyQualifiedDomainName" => %{"shape" => "FullyQualifiedDomainName"}, "HealthThreshold" => %{"shape" => "HealthThreshold"}, "IPAddress" => %{"shape" => "IPAddress"}, "InsufficientDataHealthStatus" => %{"shape" => "InsufficientDataHealthStatus"}, "Inverted" => %{"shape" => "Inverted"}, "MeasureLatency" => %{"shape" => "MeasureLatency"}, "Port" => %{"shape" => "Port"}, "Regions" => %{"shape" => "HealthCheckRegionList"}, "RequestInterval" => %{"shape" => "RequestInterval"}, "ResourcePath" => %{"shape" => "ResourcePath"}, "SearchString" => %{"shape" => "SearchString"}, "Type" => %{"shape" => "HealthCheckType"}}, "required" => ["Type"], "type" => "structure"}, "GeoLocationCountryCode" => %{"max" => 2, "min" => 1, "type" => "string"}, "SubnetMask" => %{"max" => 3, "min" => 0, "type" => "string"}, "HealthCheckVersion" => %{"min" => 1, "type" => "long"}, "CloudWatchLogsLogGroupArn" => %{"type" => "string"}, "GetHealthCheckCountResponse" => %{"members" => %{"HealthCheckCount" => %{"shape" => "HealthCheckCount"}}, "required" => ["HealthCheckCount"], "type" => "structure"}, "CreateTrafficPolicyInstanceResponse" => %{"members" => %{"Location" => %{"location" => "header", "locationName" => "Location", "shape" => "ResourceURI"}, "TrafficPolicyInstance" => %{"shape" => "TrafficPolicyInstance"}}, "required" => ["TrafficPolicyInstance", "Location"], "type" => "structure"}, "PaginationToken" => %{"max" => 256, "type" => "string"}, "ListReusableDelegationSetsResponse" => %{"members" => %{"DelegationSets" => %{"shape" => "DelegationSets"}, "IsTruncated" => %{"shape" => "PageTruncated"}, "Marker" => %{"shape" => "PageMarker"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "NextMarker" => %{"shape" => "PageMarker"}}, "required" => ["DelegationSets", "Marker", "IsTruncated", "MaxItems"], "type" => "structure"}, "TTL" => %{"max" => 2147483647, "min" => 0, "type" => "long"}, "Period" => %{"min" => 60, "type" => "integer"}, "GetReusableDelegationSetRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["Id"], "type" => "structure"}, "ChangeInfo" => %{"members" => %{"Comment" => %{"shape" => "ResourceDescription"}, "Id" => %{"shape" => "ResourceId"}, "Status" => %{"shape" => "ChangeStatus"}, "SubmittedAt" => %{"shape" => "TimeStamp"}}, "required" => ["Id", "Status", "SubmittedAt"], "type" => "structure"}, "TrafficPolicyVersion" => %{"max" => 1000, "min" => 1, "type" => "integer"}, "GeoLocationSubdivisionName" => %{"max" => 64, "min" => 1, "type" => "string"}, "MeasureLatency" => %{"type" => "boolean"}, "ListReusableDelegationSetsRequest" => %{"members" => %{"Marker" => %{"location" => "querystring", "locationName" => "marker", "shape" => "PageMarker"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}}, "type" => "structure"}, "ListResourceRecordSetsRequest" => %{"members" => %{"HostedZoneId" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "StartRecordIdentifier" => %{"location" => "querystring", "locationName" => "identifier", "shape" => "ResourceRecordSetIdentifier"}, "StartRecordName" => %{"location" => "querystring", "locationName" => "name", "shape" => "DNSName"}, "StartRecordType" => %{"location" => "querystring", "locationName" => "type", "shape" => "RRType"}}, "required" => ["HostedZoneId"], "type" => "structure"}, "GetHostedZoneCountResponse" => %{"members" => %{"HostedZoneCount" => %{"shape" => "HostedZoneCount"}}, "required" => ["HostedZoneCount"], "type" => "structure"}, "ListHostedZonesByNameRequest" => %{"members" => %{"DNSName" => %{"location" => "querystring", "locationName" => "dnsname", "shape" => "DNSName"}, "HostedZoneId" => %{"location" => "querystring", "locationName" => "hostedzoneid", "shape" => "ResourceId"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}}, "type" => "structure"}, "TrafficPolicyVersionMarker" => %{"max" => 4, "type" => "string"}, "ChangeResourceRecordSetsResponse" => %{"members" => %{"ChangeInfo" => %{"shape" => "ChangeInfo"}}, "required" => ["ChangeInfo"], "type" => "structure"}, "ListTrafficPolicyInstancesByPolicyRequest" => %{"members" => %{"HostedZoneIdMarker" => %{"location" => "querystring", "locationName" => "hostedzoneid", "shape" => "ResourceId"}, "MaxItems" => %{"location" => "querystring", "locationName" => "maxitems", "shape" => "PageMaxItems"}, "TrafficPolicyId" => %{"location" => "querystring", "locationName" => "id", "shape" => "TrafficPolicyId"}, "TrafficPolicyInstanceNameMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyinstancename", "shape" => "DNSName"}, "TrafficPolicyInstanceTypeMarker" => %{"location" => "querystring", "locationName" => "trafficpolicyinstancetype", "shape" => "RRType"}, "TrafficPolicyVersion" => %{"location" => "querystring", "locationName" => "version", "shape" => "TrafficPolicyVersion"}}, "required" => ["TrafficPolicyId", "TrafficPolicyVersion"], "type" => "structure"}, "TagKey" => %{"max" => 128, "type" => "string"}, "ResourceRecordSetWeight" => %{"max" => 255, "min" => 0, "type" => "long"}, "TrafficPolicySummary" => %{"members" => %{"Id" => %{"shape" => "TrafficPolicyId"}, "LatestVersion" => %{"shape" => "TrafficPolicyVersion"}, "Name" => %{"shape" => "TrafficPolicyName"}, "TrafficPolicyCount" => %{"shape" => "TrafficPolicyVersion"}, "Type" => %{"shape" => "RRType"}}, "required" => ["Id", "Name", "Type", "LatestVersion", "TrafficPolicyCount"], "type" => "structure"}, "ChangeTagsForResourceResponse" => %{"members" => %{}, "type" => "structure"}, "HealthCheckNonce" => %{"max" => 64, "min" => 1, "type" => "string"}, "AlarmName" => %{"max" => 256, "min" => 1, "type" => "string"}, "ConcurrentModification" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "EvaluationPeriods" => %{"min" => 1, "type" => "integer"}, "HealthCheckObservation" => %{"members" => %{"IPAddress" => %{"shape" => "IPAddress"}, "Region" => %{"shape" => "HealthCheckRegion"}, "StatusReport" => %{"shape" => "StatusReport"}}, "type" => "structure"}, "TrafficPolicyName" => %{"max" => 512, "type" => "string"}, "CheckerIpRanges" => %{"member" => %{"shape" => "IPAddressCidr"}, "type" => "list"}, "ResourceRecordSetMultiValueAnswer" => %{"type" => "boolean"}, "HostedZoneNotFound" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NoSuchHostedZone" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateTrafficPolicyVersionRequest" => %{"members" => %{"Comment" => %{"shape" => "TrafficPolicyComment"}, "Document" => %{"shape" => "TrafficPolicyDocument"}, "Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyId"}}, "required" => ["Id", "Document"], "type" => "structure"}, "HostedZone" => %{"members" => %{"CallerReference" => %{"shape" => "Nonce"}, "Config" => %{"shape" => "HostedZoneConfig"}, "Id" => %{"shape" => "ResourceId"}, "Name" => %{"shape" => "DNSName"}, "ResourceRecordSetCount" => %{"shape" => "HostedZoneRRSetCount"}}, "required" => ["Id", "Name", "CallerReference"], "type" => "structure"}, "Nonce" => %{"max" => 128, "min" => 1, "type" => "string"}, "DelegationSetAlreadyReusable" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Namespace" => %{"max" => 255, "min" => 1, "type" => "string"}, "ListTrafficPolicyInstancesByHostedZoneResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "TrafficPolicyInstanceNameMarker" => %{"shape" => "DNSName"}, "TrafficPolicyInstanceTypeMarker" => %{"shape" => "RRType"}, "TrafficPolicyInstances" => %{"shape" => "TrafficPolicyInstances"}}, "required" => ["TrafficPolicyInstances", "IsTruncated", "MaxItems"], "type" => "structure"}, "TagResourceIdList" => %{"max" => 10, "member" => %{"locationName" => "ResourceId", "shape" => "TagResourceId"}, "min" => 1, "type" => "list"}, "AssociateVPCWithHostedZoneResponse" => %{"members" => %{"ChangeInfo" => %{"shape" => "ChangeInfo"}}, "required" => ["ChangeInfo"], "type" => "structure"}, "CreateQueryLoggingConfigRequest" => %{"members" => %{"CloudWatchLogsLogGroupArn" => %{"shape" => "CloudWatchLogsLogGroupArn"}, "HostedZoneId" => %{"shape" => "ResourceId"}}, "required" => ["HostedZoneId", "CloudWatchLogsLogGroupArn"], "type" => "structure"}, "DelegationSetAlreadyCreated" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PageMarker" => %{"max" => 64, "type" => "string"}, "HealthCheck" => %{"members" => %{"CallerReference" => %{"shape" => "HealthCheckNonce"}, "CloudWatchAlarmConfiguration" => %{"shape" => "CloudWatchAlarmConfiguration"}, "HealthCheckConfig" => %{"shape" => "HealthCheckConfig"}, "HealthCheckVersion" => %{"shape" => "HealthCheckVersion"}, "Id" => %{"shape" => "HealthCheckId"}}, "required" => ["Id", "CallerReference", "HealthCheckConfig", "HealthCheckVersion"], "type" => "structure"}, "NoSuchCloudWatchLogsLogGroup" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "VPC" => %{"members" => %{"VPCId" => %{"shape" => "VPCId"}, "VPCRegion" => %{"shape" => "VPCRegion"}}, "type" => "structure"}, "UpdateHostedZoneCommentRequest" => %{"members" => %{"Comment" => %{"shape" => "ResourceDescription"}, "Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "ResourceId"}}, "required" => ["Id"], "type" => "structure"}, "DeleteTrafficPolicyRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "TrafficPolicyId"}, "Version" => %{"location" => "uri", "locationName" => "Version", "shape" => "TrafficPolicyVersion"}}, "required" => ["Id", "Version"], "type" => "structure"}, "PageMaxItems" => %{"type" => "string"}, "ResourceRecordSets" => %{"member" => %{"locationName" => "ResourceRecordSet", "shape" => "ResourceRecordSet"}, "type" => "list"}, "DeleteQueryLoggingConfigResponse" => %{"members" => %{}, "type" => "structure"}, "HostedZoneAlreadyExists" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ResourceRecord" => %{"members" => %{"Value" => %{"shape" => "RData"}}, "required" => ["Value"], "type" => "structure"}, "DeleteHealthCheckResponse" => %{"members" => %{}, "type" => "structure"}, "DeleteQueryLoggingConfigRequest" => %{"members" => %{"Id" => %{"location" => "uri", "locationName" => "Id", "shape" => "QueryLoggingConfigId"}}, "required" => ["Id"], "type" => "structure"}, "TooManyTrafficPolicyInstances" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListQueryLoggingConfigsResponse" => %{"members" => %{"NextToken" => %{"shape" => "PaginationToken"}, "QueryLoggingConfigs" => %{"shape" => "QueryLoggingConfigs"}}, "required" => ["QueryLoggingConfigs"], "type" => "structure"}, "HealthCheckAlreadyExists" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NoSuchTrafficPolicyInstance" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateTrafficPolicyRequest" => %{"members" => %{"Comment" => %{"shape" => "TrafficPolicyComment"}, "Document" => %{"shape" => "TrafficPolicyDocument"}, "Name" => %{"shape" => "TrafficPolicyName"}}, "required" => ["Name", "Document"], "type" => "structure"}, "ListResourceRecordSetsResponse" => %{"members" => %{"IsTruncated" => %{"shape" => "PageTruncated"}, "MaxItems" => %{"shape" => "PageMaxItems"}, "NextRecordIdentifier" => %{"shape" => "ResourceRecordSetIdentifier"}, "NextRecordName" => %{"shape" => "DNSName"}, "NextRecordType" => %{"shape" => "RRType"}, "ResourceRecordSets" => %{"shape" => "ResourceRecordSets"}}, "required" => ["ResourceRecordSets", "IsTruncated", "MaxItems"], "type" => "structure"}, "ConflictingDomainExists" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DelegationSetInUse" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetTrafficPolicyResponse" => %{"members" => %{"TrafficPolicy" => %{"shape" => "TrafficPolicy"}}, "required" => ["TrafficPolicy"], "type" => "structure"}, "ConflictingTypes" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TrafficPolicySummaries" => %{"member" => %{"locationName" => "TrafficPolicySummary", "shape" => "TrafficPolicySummary"}, "type" => "list"}}
+  end
 end

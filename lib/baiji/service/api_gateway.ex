@@ -23,9 +23,13 @@ defmodule Baiji.ApiGateway do
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateApiKeyRequest",
+      output_shape:     "ApiKey",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists information about a collection of `Resource` resources.
@@ -41,9 +45,13 @@ defmodule Baiji.ApiGateway do
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetResourcesRequest",
+      output_shape:     "Resources",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the `DomainName` resource.
@@ -59,9 +67,13 @@ defmodule Baiji.ApiGateway do
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteDomainNameRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a `Deployments` collection.
@@ -77,9 +89,13 @@ defmodule Baiji.ApiGateway do
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDeploymentsRequest",
+      output_shape:     "Deployments",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -95,9 +111,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetSdkTypesRequest",
+      output_shape:     "SdkTypes",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a usage plan of a given plan Id.
@@ -113,9 +133,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateUsagePlanRequest",
+      output_shape:     "UsagePlan",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Exports a deployed version of a `RestApi` in a specified format.
@@ -131,9 +155,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetExportRequest",
+      output_shape:     "ExportResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Simulate the execution of an `Authorizer` in your `RestApi` with headers,
@@ -154,9 +182,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "TestInvokeAuthorizerRequest",
+      output_shape:     "TestInvokeAuthorizerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates an existing `Method` resource.
@@ -172,9 +204,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateMethodRequest",
+      output_shape:     "Method",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Generates a client SDK for a `RestApi` and `Stage`.
@@ -190,9 +226,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetSdkRequest",
+      output_shape:     "SdkResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a `RequestValidator` of a given `RestApi`.
@@ -208,9 +248,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteRequestValidatorRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a get integration response.
@@ -226,9 +270,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetIntegrationResponseRequest",
+      output_shape:     "IntegrationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a collection of `BasePathMapping` resources.
@@ -244,9 +292,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBasePathMappingsRequest",
+      output_shape:     "BasePathMappings",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Import API keys from an external source, such as a CSV-formatted file.
@@ -262,9 +314,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "ImportApiKeysRequest",
+      output_shape:     "ApiKeyIds",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a `Stage` resource.
@@ -280,9 +336,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetStageRequest",
+      output_shape:     "Stage",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describe a `BasePathMapping` resource.
@@ -298,9 +358,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBasePathMappingRequest",
+      output_shape:     "BasePathMapping",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -316,9 +380,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "ImportDocumentationPartsRequest",
+      output_shape:     "DocumentationPartIds",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Clears any customization of a `GatewayResponse` of a specified response
@@ -335,9 +403,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteGatewayResponseRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describe an existing `Authorizers` resource.
@@ -356,9 +428,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetAuthorizersRequest",
+      output_shape:     "Authorizers",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about one or more `Stage` resources.
@@ -374,9 +450,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetStagesRequest",
+      output_shape:     "Stages",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about the `DomainName` resource.
@@ -392,9 +472,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateDomainNameRequest",
+      output_shape:     "DomainName",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -410,9 +494,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDocumentationVersionRequest",
+      output_shape:     "DocumentationVersion",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the current `Account` resource.
@@ -428,9 +516,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetAccountRequest",
+      output_shape:     "Account",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the `RestApis` resources for your collection.
@@ -446,9 +538,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetRestApisRequest",
+      output_shape:     "RestApis",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a put integration.
@@ -464,9 +560,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutIntegrationResponseRequest",
+      output_shape:     "IntegrationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about an `ClientCertificate` resource.
@@ -482,9 +582,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateClientCertificateRequest",
+      output_shape:     "ClientCertificate",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a `RequestValidator` of a given `RestApi`.
@@ -500,9 +604,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetRequestValidatorRequest",
+      output_shape:     "RequestValidator",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the `ClientCertificate` resource.
@@ -518,9 +626,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteClientCertificateRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents an update integration response.
@@ -536,9 +648,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateIntegrationResponseRequest",
+      output_shape:     "IntegrationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a delete integration.
@@ -554,9 +670,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteIntegrationRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about the current `Account` resource.
@@ -572,9 +692,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateAccountRequest",
+      output_shape:     "Account",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -590,9 +714,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateDocumentationPartRequest",
+      output_shape:     "DocumentationPart",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -608,9 +736,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDocumentationPartsRequest",
+      output_shape:     "DocumentationParts",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Flushes all authorizer cache entries on a stage.
@@ -626,9 +758,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "FlushStageAuthorizersCacheRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -644,9 +780,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteDocumentationVersionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -662,9 +802,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDocumentationVersionsRequest",
+      output_shape:     "DocumentationVersions",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about a `Deployment` resource.
@@ -680,9 +824,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateDeploymentRequest",
+      output_shape:     "Deployment",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `Deployment` resource, which makes a specified `RestApi` callable
@@ -699,9 +847,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDeploymentRequest",
+      output_shape:     "Deployment",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new `BasePathMapping` resource.
@@ -717,9 +869,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateBasePathMappingRequest",
+      output_shape:     "BasePathMapping",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -735,9 +891,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDocumentationVersionRequest",
+      output_shape:     "DocumentationVersion",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a `RequestValidator` of a given `RestApi`.
@@ -753,9 +913,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateRequestValidatorRequest",
+      output_shape:     "RequestValidator",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Grants a temporary extension to the remaining quota of a usage plan
@@ -772,9 +936,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateUsageRequest",
+      output_shape:     "Usage",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -790,9 +958,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDocumentationPartRequest",
+      output_shape:     "DocumentationPart",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a usage plan of a given plan identifier.
@@ -808,9 +980,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetUsagePlanRequest",
+      output_shape:     "UsagePlan",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an existing `Authorizer` resource.
@@ -829,9 +1005,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteAuthorizerRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -847,9 +1027,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetSdkTypeRequest",
+      output_shape:     "SdkType",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a `Deployment` resource. Deleting a deployment will only succeed if
@@ -866,9 +1050,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteDeploymentRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new domain name.
@@ -884,9 +1072,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDomainNameRequest",
+      output_shape:     "DomainName",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a usage plan key of a given key identifier.
@@ -902,9 +1094,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetUsagePlanKeyRequest",
+      output_shape:     "UsagePlanKey",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about a `Resource` resource.
@@ -920,9 +1116,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateResourceRequest",
+      output_shape:     "Resource",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describe an existing `Method` resource.
@@ -938,9 +1138,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetMethodRequest",
+      output_shape:     "Method",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a usage plan key and remove the underlying API key from the
@@ -957,9 +1161,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteUsagePlanKeyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes existing `Models` defined for a `RestApi` resource.
@@ -975,9 +1183,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetModelsRequest",
+      output_shape:     "Models",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a `Resource` resource.
@@ -993,9 +1205,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteResourceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the `RestApi` resource in the collection.
@@ -1011,9 +1227,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetRestApiRequest",
+      output_shape:     "RestApi",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a customization of a `GatewayResponse` of a specified response type
@@ -1030,9 +1250,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutGatewayResponseRequest",
+      output_shape:     "GatewayResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a new `Authorizer` resource to an existing `RestApi` resource.
@@ -1051,9 +1275,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateAuthorizerRequest",
+      output_shape:     "Authorizer",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets up a method's integration.
@@ -1069,9 +1297,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutIntegrationRequest",
+      output_shape:     "Integration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the `ApiKey` resource.
@@ -1087,9 +1319,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteApiKeyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about a `Stage` resource.
@@ -1105,9 +1341,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateStageRequest",
+      output_shape:     "Stage",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a `GatewayResponse` of a specified response type on the given
@@ -1124,9 +1364,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateGatewayResponseRequest",
+      output_shape:     "GatewayResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the current `ClientCertificate` resource.
@@ -1142,9 +1386,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetClientCertificateRequest",
+      output_shape:     "ClientCertificate",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates an existing `Authorizer` resource.
@@ -1163,9 +1411,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateAuthorizerRequest",
+      output_shape:     "Authorizer",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a delete integration response.
@@ -1181,9 +1433,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteIntegrationResponseRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes an existing model defined for a `RestApi` resource.
@@ -1199,9 +1455,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetModelRequest",
+      output_shape:     "Model",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes a `MethodResponse` resource.
@@ -1217,9 +1477,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetMethodResponseRequest",
+      output_shape:     "MethodResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the `GatewayResponses` collection on the given `RestApi`. If an API
@@ -1238,9 +1502,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetGatewayResponsesRequest",
+      output_shape:     "GatewayResponses",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the `RequestValidators` collection of a given `RestApi`.
@@ -1256,9 +1524,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetRequestValidatorsRequest",
+      output_shape:     "RequestValidators",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the current `ApiKey` resource.
@@ -1274,9 +1546,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetApiKeyRequest",
+      output_shape:     "ApiKey",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new `RestApi` resource.
@@ -1292,9 +1568,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateRestApiRequest",
+      output_shape:     "RestApi",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a `MethodResponse` to an existing `Method` resource.
@@ -1310,9 +1590,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutMethodResponseRequest",
+      output_shape:     "MethodResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `Resource` resource.
@@ -1328,9 +1612,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateResourceRequest",
+      output_shape:     "Resource",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about a model.
@@ -1346,9 +1634,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateModelRequest",
+      output_shape:     "Model",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents an update integration.
@@ -1364,9 +1656,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateIntegrationRequest",
+      output_shape:     "Integration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Simulate the execution of a `Method` in your `RestApi` with headers,
@@ -1383,9 +1679,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "TestInvokeMethodRequest",
+      output_shape:     "TestInvokeMethodResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a `GatewayResponse` of a specified response type on the given
@@ -1402,9 +1702,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetGatewayResponseRequest",
+      output_shape:     "GatewayResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   A feature of the Amazon API Gateway control service for updating an
@@ -1423,9 +1727,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutRestApiRequest",
+      output_shape:     "RestApi",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Add a method to an existing `Resource` resource.
@@ -1441,9 +1749,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutMethodRequest",
+      output_shape:     "Method",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `ReqeustValidator` of a given `RestApi`.
@@ -1459,9 +1771,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateRequestValidatorRequest",
+      output_shape:     "RequestValidator",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a collection of `DomainName` resources.
@@ -1477,9 +1793,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDomainNamesRequest",
+      output_shape:     "DomainNames",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists information about a resource.
@@ -1495,9 +1815,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetResourceRequest",
+      output_shape:     "Resource",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about a `Deployment` resource.
@@ -1513,9 +1837,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDeploymentRequest",
+      output_shape:     "Deployment",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an existing `MethodResponse` resource.
@@ -1531,9 +1859,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteMethodResponseRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a `Stage` resource.
@@ -1549,9 +1881,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteStageRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a collection of `ClientCertificate` resources.
@@ -1567,9 +1903,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetClientCertificatesRequest",
+      output_shape:     "ClientCertificates",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new `Stage` resource that references a pre-existing `Deployment`
@@ -1586,9 +1926,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateStageRequest",
+      output_shape:     "Stage",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -1604,9 +1948,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateDocumentationVersionRequest",
+      output_shape:     "DocumentationVersion",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a usage plan with the throttle and quota limits, as well as the
@@ -1623,9 +1971,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateUsagePlanRequest",
+      output_shape:     "UsagePlan",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a new `Model` resource to an existing `RestApi` resource.
@@ -1641,9 +1993,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateModelRequest",
+      output_shape:     "Model",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a model.
@@ -1659,9 +2015,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteModelRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about the specified API.
@@ -1677,9 +2037,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateRestApiRequest",
+      output_shape:     "RestApi",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Generates a sample mapping template that can be used to transform a payload
@@ -1696,9 +2060,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetModelTemplateRequest",
+      output_shape:     "Template",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets all the usage plan keys representing the API keys added to a specified
@@ -1715,9 +2083,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetUsagePlanKeysRequest",
+      output_shape:     "UsagePlanKeys",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Generates a `ClientCertificate` resource.
@@ -1733,9 +2105,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "GenerateClientCertificateRequest",
+      output_shape:     "ClientCertificate",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about the current `ApiKeys` resource.
@@ -1751,9 +2127,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetApiKeysRequest",
+      output_shape:     "ApiKeys",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets all the usage plans of the caller's account.
@@ -1769,9 +2149,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetUsagePlansRequest",
+      output_shape:     "UsagePlans",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the `BasePathMapping` resource.
@@ -1787,9 +2171,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteBasePathMappingRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describe an existing `Authorizer` resource.
@@ -1808,9 +2196,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetAuthorizerRequest",
+      output_shape:     "Authorizer",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a domain name that is contained in a simpler, more intuitive URL
@@ -1827,9 +2219,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDomainNameRequest",
+      output_shape:     "DomainName",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates an existing `MethodResponse` resource.
@@ -1845,9 +2241,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateMethodResponseRequest",
+      output_shape:     "MethodResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Changes information about the `BasePathMapping` resource.
@@ -1863,9 +2263,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :patch
+      method:           :patch,
+      input_shape:      "UpdateBasePathMappingRequest",
+      output_shape:     "BasePathMapping",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Create an `ApiKey` resource.
@@ -1884,9 +2288,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateApiKeyRequest",
+      output_shape:     "ApiKey",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the usage data of a usage plan in a specified time interval.
@@ -1902,9 +2310,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetUsageRequest",
+      output_shape:     "Usage",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified API.
@@ -1920,9 +2332,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteRestApiRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Flushes a stage's cache.
@@ -1938,9 +2354,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "FlushStageCacheRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Represents a get integration.
@@ -1956,9 +2376,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetIntegrationRequest",
+      output_shape:     "Integration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a usage plan of a given plan Id.
@@ -1974,9 +2398,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteUsagePlanRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -1992,9 +2420,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteDocumentationPartRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a usage plan key for adding an existing API key to a usage plan.
@@ -2010,9 +2442,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateUsagePlanKeyRequest",
+      output_shape:     "UsagePlanKey",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   A feature of the Amazon API Gateway control service for creating a new API
@@ -2029,9 +2465,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :post
+      method:           :post,
+      input_shape:      "ImportRestApiRequest",
+      output_shape:     "RestApi",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an existing `Method` resource.
@@ -2047,9 +2487,13 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteMethodRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
 No Documentation Availabale
@@ -2065,8 +2509,19 @@ No Documentation Availabale
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetDocumentationPartRequest",
+      output_shape:     "DocumentationPart",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"GetBasePathMappingRequest" => %{"members" => %{"basePath" => %{"location" => "uri", "locationName" => "base_path", "shape" => "String"}, "domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}}, "required" => ["domainName", "basePath"], "type" => "structure"}, "UpdateMethodResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "ExportResponse" => %{"members" => %{"body" => %{"shape" => "Blob"}, "contentDisposition" => %{"location" => "header", "locationName" => "Content-Disposition", "shape" => "String"}, "contentType" => %{"location" => "header", "locationName" => "Content-Type", "shape" => "String"}}, "payload" => "body", "type" => "structure"}, "IntegrationType" => %{"enum" => ["HTTP", "AWS", "MOCK", "HTTP_PROXY", "AWS_PROXY"], "type" => "string"}, "GetUsagePlansRequest" => %{"members" => %{"keyId" => %{"location" => "querystring", "locationName" => "keyId", "shape" => "String"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "type" => "structure"}, "ApiKeys" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfApiKey"}, "position" => %{"shape" => "String"}, "warnings" => %{"shape" => "ListOfString"}}, "type" => "structure"}, "Models" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfModel"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "GetAccountRequest" => %{"members" => %{}, "type" => "structure"}, "CacheClusterStatus" => %{"enum" => ["CREATE_IN_PROGRESS", "AVAILABLE", "DELETE_IN_PROGRESS", "NOT_AVAILABLE", "FLUSH_IN_PROGRESS"], "type" => "string"}, "ListOfGatewayResponse" => %{"member" => %{"shape" => "GatewayResponse"}, "type" => "list"}, "Model" => %{"members" => %{"contentType" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "id" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "schema" => %{"shape" => "String"}}, "type" => "structure"}, "PatchOperation" => %{"members" => %{"from" => %{"shape" => "String"}, "op" => %{"shape" => "Op"}, "path" => %{"shape" => "String"}, "value" => %{"shape" => "String"}}, "type" => "structure"}, "GetDocumentationPartRequest" => %{"members" => %{"documentationPartId" => %{"location" => "uri", "locationName" => "part_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "documentationPartId"], "type" => "structure"}, "ListOfBasePathMapping" => %{"member" => %{"shape" => "BasePathMapping"}, "type" => "list"}, "ImportDocumentationPartsRequest" => %{"members" => %{"body" => %{"shape" => "Blob"}, "failOnWarnings" => %{"location" => "querystring", "locationName" => "failonwarnings", "shape" => "Boolean"}, "mode" => %{"location" => "querystring", "locationName" => "mode", "shape" => "PutMode"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "payload" => "body", "required" => ["restApiId", "body"], "type" => "structure"}, "ListOfSdkConfigurationProperty" => %{"member" => %{"shape" => "SdkConfigurationProperty"}, "type" => "list"}, "GetDocumentationPartsRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "nameQuery" => %{"location" => "querystring", "locationName" => "name", "shape" => "String"}, "path" => %{"location" => "querystring", "locationName" => "path", "shape" => "String"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "type" => %{"location" => "querystring", "locationName" => "type", "shape" => "DocumentationPartType"}}, "required" => ["restApiId"], "type" => "structure"}, "CreateStageRequest" => %{"members" => %{"cacheClusterEnabled" => %{"shape" => "Boolean"}, "cacheClusterSize" => %{"shape" => "CacheClusterSize"}, "deploymentId" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "documentationVersion" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"shape" => "String"}, "variables" => %{"shape" => "MapOfStringToString"}}, "required" => ["restApiId", "stageName", "deploymentId"], "type" => "structure"}, "MapOfIntegrationResponse" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "IntegrationResponse"}}, "DeleteApiKeyRequest" => %{"members" => %{"apiKey" => %{"location" => "uri", "locationName" => "api_Key", "shape" => "String"}}, "required" => ["apiKey"], "type" => "structure"}, "ClientCertificate" => %{"members" => %{"clientCertificateId" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "String"}, "expirationDate" => %{"shape" => "Timestamp"}, "pemEncodedCertificate" => %{"shape" => "String"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "StageKey" => %{"members" => %{"restApiId" => %{"shape" => "String"}, "stageName" => %{"shape" => "String"}}, "type" => "structure"}, "Boolean" => %{"type" => "boolean"}, "MapOfMethodSnapshot" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "MethodSnapshot"}}, "CreateDeploymentRequest" => %{"members" => %{"cacheClusterEnabled" => %{"shape" => "NullableBoolean"}, "cacheClusterSize" => %{"shape" => "CacheClusterSize"}, "description" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageDescription" => %{"shape" => "String"}, "stageName" => %{"shape" => "String"}, "variables" => %{"shape" => "MapOfStringToString"}}, "required" => ["restApiId"], "type" => "structure"}, "GetGatewayResponsesRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "DeleteDomainNameRequest" => %{"members" => %{"domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}}, "required" => ["domainName"], "type" => "structure"}, "ListOfRestApi" => %{"member" => %{"shape" => "RestApi"}, "type" => "list"}, "GetUsagePlanKeyRequest" => %{"members" => %{"keyId" => %{"location" => "uri", "locationName" => "keyId", "shape" => "String"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId", "keyId"], "type" => "structure"}, "UpdateClientCertificateRequest" => %{"members" => %{"clientCertificateId" => %{"location" => "uri", "locationName" => "clientcertificate_id", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}}, "required" => ["clientCertificateId"], "type" => "structure"}, "UpdateDeploymentRequest" => %{"members" => %{"deploymentId" => %{"location" => "uri", "locationName" => "deployment_id", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "deploymentId"], "type" => "structure"}, "ListOfPatchOperation" => %{"member" => %{"shape" => "PatchOperation"}, "type" => "list"}, "BasePathMappings" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfBasePathMapping"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "GetClientCertificateRequest" => %{"members" => %{"clientCertificateId" => %{"location" => "uri", "locationName" => "clientcertificate_id", "shape" => "String"}}, "required" => ["clientCertificateId"], "type" => "structure"}, "ListOfApiStage" => %{"member" => %{"shape" => "ApiStage"}, "type" => "list"}, "RestApis" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfRestApi"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "CreateResourceRequest" => %{"members" => %{"parentId" => %{"location" => "uri", "locationName" => "parent_id", "shape" => "String"}, "pathPart" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "parentId", "pathPart"], "type" => "structure"}, "MapOfStringToBoolean" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "NullableBoolean"}}, "ListOfApiKey" => %{"member" => %{"shape" => "ApiKey"}, "type" => "list"}, "Authorizers" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfAuthorizer"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "UsagePlanKeys" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfUsagePlanKey"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteIntegrationResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "RestApi" => %{"members" => %{"binaryMediaTypes" => %{"shape" => "ListOfString"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "String"}, "id" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "version" => %{"shape" => "String"}, "warnings" => %{"shape" => "ListOfString"}}, "type" => "structure"}, "ConflictException" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "MapOfStringToList" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "ListOfString"}}, "DeleteRestApiRequest" => %{"members" => %{"restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "UpdateApiKeyRequest" => %{"members" => %{"apiKey" => %{"location" => "uri", "locationName" => "api_Key", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}}, "required" => ["apiKey"], "type" => "structure"}, "MapOfMethodResponse" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "MethodResponse"}}, "UpdateIntegrationResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "GetStagesRequest" => %{"members" => %{"deploymentId" => %{"location" => "querystring", "locationName" => "deploymentId", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "GetMethodResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "QuotaPeriodType" => %{"enum" => ["DAY", "WEEK", "MONTH"], "type" => "string"}, "SdkTypes" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfSdkType"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "GetRequestValidatorsRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "CreateModelRequest" => %{"members" => %{"contentType" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "schema" => %{"shape" => "String"}}, "required" => ["restApiId", "name", "contentType"], "type" => "structure"}, "UnauthorizedException" => %{"error" => %{"httpStatusCode" => 401}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "GetMethodRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}, "ListOfSdkType" => %{"member" => %{"shape" => "SdkType"}, "type" => "list"}, "GetIntegrationResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "ClientCertificates" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfClientCertificate"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "GetClientCertificatesRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "type" => "structure"}, "BasePathMapping" => %{"members" => %{"basePath" => %{"shape" => "String"}, "restApiId" => %{"shape" => "String"}, "stage" => %{"shape" => "String"}}, "type" => "structure"}, "GetModelTemplateRequest" => %{"members" => %{"modelName" => %{"location" => "uri", "locationName" => "model_name", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "modelName"], "type" => "structure"}, "FlushStageAuthorizersCacheRequest" => %{"members" => %{"restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName"], "type" => "structure"}, "SdkResponse" => %{"members" => %{"body" => %{"shape" => "Blob"}, "contentDisposition" => %{"location" => "header", "locationName" => "Content-Disposition", "shape" => "String"}, "contentType" => %{"location" => "header", "locationName" => "Content-Type", "shape" => "String"}}, "payload" => "body", "type" => "structure"}, "TestInvokeMethodResponse" => %{"members" => %{"body" => %{"shape" => "String"}, "headers" => %{"shape" => "MapOfHeaderValues"}, "latency" => %{"shape" => "Long"}, "log" => %{"shape" => "String"}, "status" => %{"shape" => "Integer"}}, "type" => "structure"}, "ServiceUnavailableException" => %{"error" => %{"httpStatusCode" => 503}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "String"}, "retryAfterSeconds" => %{"location" => "header", "locationName" => "Retry-After", "shape" => "String"}}, "type" => "structure"}, "ListOfClientCertificate" => %{"member" => %{"shape" => "ClientCertificate"}, "type" => "list"}, "UpdateStageRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName"], "type" => "structure"}, "GatewayResponses" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfGatewayResponse"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "UpdateBasePathMappingRequest" => %{"members" => %{"basePath" => %{"location" => "uri", "locationName" => "base_path", "shape" => "String"}, "domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}}, "required" => ["domainName", "basePath"], "type" => "structure"}, "Resource" => %{"members" => %{"id" => %{"shape" => "String"}, "parentId" => %{"shape" => "String"}, "path" => %{"shape" => "String"}, "pathPart" => %{"shape" => "String"}, "resourceMethods" => %{"shape" => "MapOfMethod"}}, "type" => "structure"}, "Method" => %{"members" => %{"apiKeyRequired" => %{"shape" => "NullableBoolean"}, "authorizationType" => %{"shape" => "String"}, "authorizerId" => %{"shape" => "String"}, "httpMethod" => %{"shape" => "String"}, "methodIntegration" => %{"shape" => "Integration"}, "methodResponses" => %{"shape" => "MapOfMethodResponse"}, "operationName" => %{"shape" => "String"}, "requestModels" => %{"shape" => "MapOfStringToString"}, "requestParameters" => %{"shape" => "MapOfStringToBoolean"}, "requestValidatorId" => %{"shape" => "String"}}, "type" => "structure"}, "GetDocumentationVersionsRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "Usage" => %{"members" => %{"endDate" => %{"shape" => "String"}, "items" => %{"locationName" => "values", "shape" => "MapOfKeyUsages"}, "position" => %{"shape" => "String"}, "startDate" => %{"shape" => "String"}, "usagePlanId" => %{"shape" => "String"}}, "type" => "structure"}, "TestInvokeAuthorizerRequest" => %{"members" => %{"additionalContext" => %{"shape" => "MapOfStringToString"}, "authorizerId" => %{"location" => "uri", "locationName" => "authorizer_id", "shape" => "String"}, "body" => %{"shape" => "String"}, "headers" => %{"shape" => "MapOfHeaderValues"}, "pathWithQueryString" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageVariables" => %{"shape" => "MapOfStringToString"}}, "required" => ["restApiId", "authorizerId"], "type" => "structure"}, "UpdateRestApiRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "DocumentationPartIds" => %{"members" => %{"ids" => %{"shape" => "ListOfString"}, "warnings" => %{"shape" => "ListOfString"}}, "type" => "structure"}, "Account" => %{"members" => %{"apiKeyVersion" => %{"shape" => "String"}, "cloudwatchRoleArn" => %{"shape" => "String"}, "features" => %{"shape" => "ListOfString"}, "throttleSettings" => %{"shape" => "ThrottleSettings"}}, "type" => "structure"}, "UpdateGatewayResponseRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}, "responseType" => %{"location" => "uri", "locationName" => "response_type", "shape" => "GatewayResponseType"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "responseType"], "type" => "structure"}, "ImportRestApiRequest" => %{"members" => %{"body" => %{"shape" => "Blob"}, "failOnWarnings" => %{"location" => "querystring", "locationName" => "failonwarnings", "shape" => "Boolean"}, "parameters" => %{"location" => "querystring", "shape" => "MapOfStringToString"}}, "payload" => "body", "required" => ["body"], "type" => "structure"}, "TooManyRequestsException" => %{"error" => %{"httpStatusCode" => 429}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}, "retryAfterSeconds" => %{"location" => "header", "locationName" => "Retry-After", "shape" => "String"}}, "type" => "structure"}, "DocumentationPart" => %{"members" => %{"id" => %{"shape" => "String"}, "location" => %{"shape" => "DocumentationPartLocation"}, "properties" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteUsagePlanRequest" => %{"members" => %{"usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId"], "type" => "structure"}, "CreateUsagePlanRequest" => %{"members" => %{"apiStages" => %{"shape" => "ListOfApiStage"}, "description" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "quota" => %{"shape" => "QuotaSettings"}, "throttle" => %{"shape" => "ThrottleSettings"}}, "required" => ["name"], "type" => "structure"}, "MethodResponse" => %{"members" => %{"responseModels" => %{"shape" => "MapOfStringToString"}, "responseParameters" => %{"shape" => "MapOfStringToBoolean"}, "statusCode" => %{"shape" => "StatusCode"}}, "type" => "structure"}, "PutGatewayResponseRequest" => %{"members" => %{"responseParameters" => %{"shape" => "MapOfStringToString"}, "responseTemplates" => %{"shape" => "MapOfStringToString"}, "responseType" => %{"location" => "uri", "locationName" => "response_type", "shape" => "GatewayResponseType"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"shape" => "StatusCode"}}, "required" => ["restApiId", "responseType"], "type" => "structure"}, "GetSdkRequest" => %{"members" => %{"parameters" => %{"location" => "querystring", "shape" => "MapOfStringToString"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "sdkType" => %{"location" => "uri", "locationName" => "sdk_type", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName", "sdkType"], "type" => "structure"}, "ApiStage" => %{"members" => %{"apiId" => %{"shape" => "String"}, "stage" => %{"shape" => "String"}}, "type" => "structure"}, "NullableInteger" => %{"type" => "integer"}, "GetDeploymentsRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "DeleteStageRequest" => %{"members" => %{"restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName"], "type" => "structure"}, "UpdateAuthorizerRequest" => %{"members" => %{"authorizerId" => %{"location" => "uri", "locationName" => "authorizer_id", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "authorizerId"], "type" => "structure"}, "Deployment" => %{"members" => %{"apiSummary" => %{"shape" => "PathToMapOfMethodSnapshot"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "String"}, "id" => %{"shape" => "String"}}, "type" => "structure"}, "UsagePlan" => %{"members" => %{"apiStages" => %{"shape" => "ListOfApiStage"}, "description" => %{"shape" => "String"}, "id" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "productCode" => %{"shape" => "String"}, "quota" => %{"shape" => "QuotaSettings"}, "throttle" => %{"shape" => "ThrottleSettings"}}, "type" => "structure"}, "DocumentationPartType" => %{"enum" => ["API", "AUTHORIZER", "MODEL", "RESOURCE", "METHOD", "PATH_PARAMETER", "QUERY_PARAMETER", "REQUEST_HEADER", "REQUEST_BODY", "RESPONSE", "RESPONSE_HEADER", "RESPONSE_BODY"], "type" => "string"}, "ListOfUsage" => %{"member" => %{"shape" => "ListOfLong"}, "type" => "list"}, "DocumentationVersions" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfDocumentationVersion"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "DocumentationParts" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfDocumentationPart"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "Template" => %{"members" => %{"value" => %{"shape" => "String"}}, "type" => "structure"}, "DomainName" => %{"members" => %{"certificateArn" => %{"shape" => "String"}, "certificateName" => %{"shape" => "String"}, "certificateUploadDate" => %{"shape" => "Timestamp"}, "distributionDomainName" => %{"shape" => "String"}, "domainName" => %{"shape" => "String"}}, "type" => "structure"}, "MapOfMethodSettings" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "MethodSetting"}}, "StatusCode" => %{"pattern" => "[1-5]\\d\\d", "type" => "string"}, "UpdateUsageRequest" => %{"members" => %{"keyId" => %{"location" => "uri", "locationName" => "keyId", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId", "keyId"], "type" => "structure"}, "GenerateClientCertificateRequest" => %{"members" => %{"description" => %{"shape" => "String"}}, "type" => "structure"}, "GetUsageRequest" => %{"members" => %{"endDate" => %{"location" => "querystring", "locationName" => "endDate", "shape" => "String"}, "keyId" => %{"location" => "querystring", "locationName" => "keyId", "shape" => "String"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "startDate" => %{"location" => "querystring", "locationName" => "startDate", "shape" => "String"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId", "startDate", "endDate"], "type" => "structure"}, "ApiKeyIds" => %{"members" => %{"ids" => %{"shape" => "ListOfString"}, "warnings" => %{"shape" => "ListOfString"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "MethodSetting" => %{"members" => %{"cacheDataEncrypted" => %{"shape" => "Boolean"}, "cacheTtlInSeconds" => %{"shape" => "Integer"}, "cachingEnabled" => %{"shape" => "Boolean"}, "dataTraceEnabled" => %{"shape" => "Boolean"}, "loggingLevel" => %{"shape" => "String"}, "metricsEnabled" => %{"shape" => "Boolean"}, "requireAuthorizationForCacheControl" => %{"shape" => "Boolean"}, "throttlingBurstLimit" => %{"shape" => "Integer"}, "throttlingRateLimit" => %{"shape" => "Double"}, "unauthorizedCacheControlHeaderStrategy" => %{"shape" => "UnauthorizedCacheControlHeaderStrategy"}}, "type" => "structure"}, "CreateApiKeyRequest" => %{"members" => %{"customerId" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "enabled" => %{"shape" => "Boolean"}, "generateDistinctId" => %{"shape" => "Boolean"}, "name" => %{"shape" => "String"}, "stageKeys" => %{"shape" => "ListOfStageKeys"}, "value" => %{"shape" => "String"}}, "type" => "structure"}, "GetStageRequest" => %{"members" => %{"restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName"], "type" => "structure"}, "DeleteAuthorizerRequest" => %{"members" => %{"authorizerId" => %{"location" => "uri", "locationName" => "authorizer_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "authorizerId"], "type" => "structure"}, "MapOfKeyUsages" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "ListOfUsage"}}, "ListOfDomainName" => %{"member" => %{"shape" => "DomainName"}, "type" => "list"}, "GetBasePathMappingsRequest" => %{"members" => %{"domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "required" => ["domainName"], "type" => "structure"}, "PathToMapOfMethodSnapshot" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "MapOfMethodSnapshot"}}, "ListOfResource" => %{"member" => %{"shape" => "Resource"}, "type" => "list"}, "UpdateResourceRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId"], "type" => "structure"}, "NotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "ListOfString" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "DeleteRequestValidatorRequest" => %{"members" => %{"requestValidatorId" => %{"location" => "uri", "locationName" => "requestvalidator_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "requestValidatorId"], "type" => "structure"}, "UpdateDocumentationVersionRequest" => %{"members" => %{"documentationVersion" => %{"location" => "uri", "locationName" => "doc_version", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "documentationVersion"], "type" => "structure"}, "DeleteGatewayResponseRequest" => %{"members" => %{"responseType" => %{"location" => "uri", "locationName" => "response_type", "shape" => "GatewayResponseType"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "responseType"], "type" => "structure"}, "PutIntegrationRequest" => %{"members" => %{"cacheKeyParameters" => %{"shape" => "ListOfString"}, "cacheNamespace" => %{"shape" => "String"}, "contentHandling" => %{"shape" => "ContentHandlingStrategy"}, "credentials" => %{"shape" => "String"}, "httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "integrationHttpMethod" => %{"locationName" => "httpMethod", "shape" => "String"}, "passthroughBehavior" => %{"shape" => "String"}, "requestParameters" => %{"shape" => "MapOfStringToString"}, "requestTemplates" => %{"shape" => "MapOfStringToString"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "type" => %{"shape" => "IntegrationType"}, "uri" => %{"shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod", "type"], "type" => "structure"}, "SdkType" => %{"members" => %{"configurationProperties" => %{"shape" => "ListOfSdkConfigurationProperty"}, "description" => %{"shape" => "String"}, "friendlyName" => %{"shape" => "String"}, "id" => %{"shape" => "String"}}, "type" => "structure"}, "UpdateUsagePlanRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId"], "type" => "structure"}, "ThrottleSettings" => %{"members" => %{"burstLimit" => %{"shape" => "Integer"}, "rateLimit" => %{"shape" => "Double"}}, "type" => "structure"}, "GetSdkTypesRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "type" => "structure"}, "CacheClusterSize" => %{"enum" => ["0.5", "1.6", "6.1", "13.5", "28.4", "58.2", "118", "237"], "type" => "string"}, "ListOfDocumentationPart" => %{"member" => %{"shape" => "DocumentationPart"}, "type" => "list"}, "GetAuthorizerRequest" => %{"members" => %{"authorizerId" => %{"location" => "uri", "locationName" => "authorizer_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "authorizerId"], "type" => "structure"}, "NullableBoolean" => %{"type" => "boolean"}, "CreateRestApiRequest" => %{"members" => %{"binaryMediaTypes" => %{"shape" => "ListOfString"}, "cloneFrom" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "version" => %{"shape" => "String"}}, "required" => ["name"], "type" => "structure"}, "Double" => %{"type" => "double"}, "GetSdkTypeRequest" => %{"members" => %{"id" => %{"location" => "uri", "locationName" => "sdktype_id", "shape" => "String"}}, "required" => ["id"], "type" => "structure"}, "BadRequestException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "ApiKey" => %{"members" => %{"createdDate" => %{"shape" => "Timestamp"}, "customerId" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "enabled" => %{"shape" => "Boolean"}, "id" => %{"shape" => "String"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "String"}, "stageKeys" => %{"shape" => "ListOfString"}, "value" => %{"shape" => "String"}}, "type" => "structure"}, "GetModelRequest" => %{"members" => %{"flatten" => %{"location" => "querystring", "locationName" => "flatten", "shape" => "Boolean"}, "modelName" => %{"location" => "uri", "locationName" => "model_name", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "modelName"], "type" => "structure"}, "CreateDocumentationVersionRequest" => %{"members" => %{"description" => %{"shape" => "String"}, "documentationVersion" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"shape" => "String"}}, "required" => ["restApiId", "documentationVersion"], "type" => "structure"}, "Stages" => %{"members" => %{"item" => %{"shape" => "ListOfStage"}}, "type" => "structure"}, "GetDocumentationVersionRequest" => %{"members" => %{"documentationVersion" => %{"location" => "uri", "locationName" => "doc_version", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "documentationVersion"], "type" => "structure"}, "ListOfStage" => %{"member" => %{"shape" => "Stage"}, "type" => "list"}, "PutMode" => %{"enum" => ["merge", "overwrite"], "type" => "string"}, "LimitExceededException" => %{"error" => %{"httpStatusCode" => 429}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}, "retryAfterSeconds" => %{"location" => "header", "locationName" => "Retry-After", "shape" => "String"}}, "type" => "structure"}, "ListOfDeployment" => %{"member" => %{"shape" => "Deployment"}, "type" => "list"}, "ListOfModel" => %{"member" => %{"shape" => "Model"}, "type" => "list"}, "UpdateIntegrationRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}, "Long" => %{"type" => "long"}, "ProviderARN" => %{"type" => "string"}, "IntegrationResponse" => %{"members" => %{"contentHandling" => %{"shape" => "ContentHandlingStrategy"}, "responseParameters" => %{"shape" => "MapOfStringToString"}, "responseTemplates" => %{"shape" => "MapOfStringToString"}, "selectionPattern" => %{"shape" => "String"}, "statusCode" => %{"shape" => "StatusCode"}}, "type" => "structure"}, "AuthorizerType" => %{"enum" => ["TOKEN", "COGNITO_USER_POOLS"], "type" => "string"}, "PutMethodResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "responseModels" => %{"shape" => "MapOfStringToString"}, "responseParameters" => %{"shape" => "MapOfStringToBoolean"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "RequestValidators" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfRequestValidator"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "GetIntegrationRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}, "DeleteMethodRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}, "DocumentationPartLocationStatusCode" => %{"pattern" => "^([1-5]\\d\\d|\\*|\\s*)$", "type" => "string"}, "GetDomainNamesRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "type" => "structure"}, "GatewayResponse" => %{"members" => %{"defaultResponse" => %{"shape" => "Boolean"}, "responseParameters" => %{"shape" => "MapOfStringToString"}, "responseTemplates" => %{"shape" => "MapOfStringToString"}, "responseType" => %{"shape" => "GatewayResponseType"}, "statusCode" => %{"shape" => "StatusCode"}}, "type" => "structure"}, "UnauthorizedCacheControlHeaderStrategy" => %{"enum" => ["FAIL_WITH_403", "SUCCEED_WITH_RESPONSE_HEADER", "SUCCEED_WITHOUT_RESPONSE_HEADER"], "type" => "string"}, "UsagePlans" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfUsagePlan"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "PutRestApiRequest" => %{"members" => %{"body" => %{"shape" => "Blob"}, "failOnWarnings" => %{"location" => "querystring", "locationName" => "failonwarnings", "shape" => "Boolean"}, "mode" => %{"location" => "querystring", "locationName" => "mode", "shape" => "PutMode"}, "parameters" => %{"location" => "querystring", "shape" => "MapOfStringToString"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "payload" => "body", "required" => ["restApiId", "body"], "type" => "structure"}, "CreateDocumentationPartRequest" => %{"members" => %{"location" => %{"shape" => "DocumentationPartLocation"}, "properties" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "location", "properties"], "type" => "structure"}, "GetModelsRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "UpdateModelRequest" => %{"members" => %{"modelName" => %{"location" => "uri", "locationName" => "model_name", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "modelName"], "type" => "structure"}, "Resources" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfResource"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "UpdateRequestValidatorRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}, "requestValidatorId" => %{"location" => "uri", "locationName" => "requestvalidator_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "requestValidatorId"], "type" => "structure"}, "ContentHandlingStrategy" => %{"enum" => ["CONVERT_TO_BINARY", "CONVERT_TO_TEXT"], "type" => "string"}, "QuotaSettings" => %{"members" => %{"limit" => %{"shape" => "Integer"}, "offset" => %{"shape" => "Integer"}, "period" => %{"shape" => "QuotaPeriodType"}}, "type" => "structure"}, "GetRestApiRequest" => %{"members" => %{"restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "DeleteDocumentationVersionRequest" => %{"members" => %{"documentationVersion" => %{"location" => "uri", "locationName" => "doc_version", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "documentationVersion"], "type" => "structure"}, "DeleteResourceRequest" => %{"members" => %{"resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId"], "type" => "structure"}, "Integration" => %{"members" => %{"cacheKeyParameters" => %{"shape" => "ListOfString"}, "cacheNamespace" => %{"shape" => "String"}, "contentHandling" => %{"shape" => "ContentHandlingStrategy"}, "credentials" => %{"shape" => "String"}, "httpMethod" => %{"shape" => "String"}, "integrationResponses" => %{"shape" => "MapOfIntegrationResponse"}, "passthroughBehavior" => %{"shape" => "String"}, "requestParameters" => %{"shape" => "MapOfStringToString"}, "requestTemplates" => %{"shape" => "MapOfStringToString"}, "type" => %{"shape" => "IntegrationType"}, "uri" => %{"shape" => "String"}}, "type" => "structure"}, "GetGatewayResponseRequest" => %{"members" => %{"responseType" => %{"location" => "uri", "locationName" => "response_type", "shape" => "GatewayResponseType"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "responseType"], "type" => "structure"}, "ListOfAuthorizer" => %{"member" => %{"shape" => "Authorizer"}, "type" => "list"}, "ListOfDocumentationVersion" => %{"member" => %{"shape" => "DocumentationVersion"}, "type" => "list"}, "GetDomainNameRequest" => %{"members" => %{"domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}}, "required" => ["domainName"], "type" => "structure"}, "MapOfHeaderValues" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "String"}}, "DeleteModelRequest" => %{"members" => %{"modelName" => %{"location" => "uri", "locationName" => "model_name", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "modelName"], "type" => "structure"}, "DeleteClientCertificateRequest" => %{"members" => %{"clientCertificateId" => %{"location" => "uri", "locationName" => "clientcertificate_id", "shape" => "String"}}, "required" => ["clientCertificateId"], "type" => "structure"}, "CreateDomainNameRequest" => %{"members" => %{"certificateArn" => %{"shape" => "String"}, "certificateBody" => %{"shape" => "String"}, "certificateChain" => %{"shape" => "String"}, "certificateName" => %{"shape" => "String"}, "certificatePrivateKey" => %{"shape" => "String"}, "domainName" => %{"shape" => "String"}}, "required" => ["domainName"], "type" => "structure"}, "ListOfUsagePlanKey" => %{"member" => %{"shape" => "UsagePlanKey"}, "type" => "list"}, "GetUsagePlanRequest" => %{"members" => %{"usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId"], "type" => "structure"}, "Stage" => %{"members" => %{"cacheClusterEnabled" => %{"shape" => "Boolean"}, "cacheClusterSize" => %{"shape" => "CacheClusterSize"}, "cacheClusterStatus" => %{"shape" => "CacheClusterStatus"}, "clientCertificateId" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "deploymentId" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "documentationVersion" => %{"shape" => "String"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "methodSettings" => %{"shape" => "MapOfMethodSettings"}, "stageName" => %{"shape" => "String"}, "variables" => %{"shape" => "MapOfStringToString"}}, "type" => "structure"}, "GetResourceRequest" => %{"members" => %{"embed" => %{"location" => "querystring", "locationName" => "embed", "shape" => "ListOfString"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId"], "type" => "structure"}, "DomainNames" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfDomainName"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteMethodResponseRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "UsagePlanKey" => %{"members" => %{"id" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "type" => %{"shape" => "String"}, "value" => %{"shape" => "String"}}, "type" => "structure"}, "ImportApiKeysRequest" => %{"members" => %{"body" => %{"shape" => "Blob"}, "failOnWarnings" => %{"location" => "querystring", "locationName" => "failonwarnings", "shape" => "Boolean"}, "format" => %{"location" => "querystring", "locationName" => "format", "shape" => "ApiKeysFormat"}}, "payload" => "body", "required" => ["body", "format"], "type" => "structure"}, "Deployments" => %{"members" => %{"items" => %{"locationName" => "item", "shape" => "ListOfDeployment"}, "position" => %{"shape" => "String"}}, "type" => "structure"}, "MapOfStringToString" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "String"}}, "DeleteDocumentationPartRequest" => %{"members" => %{"documentationPartId" => %{"location" => "uri", "locationName" => "part_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "documentationPartId"], "type" => "structure"}, "GetApiKeysRequest" => %{"members" => %{"customerId" => %{"location" => "querystring", "locationName" => "customerId", "shape" => "String"}, "includeValues" => %{"location" => "querystring", "locationName" => "includeValues", "shape" => "NullableBoolean"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "nameQuery" => %{"location" => "querystring", "locationName" => "name", "shape" => "String"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "type" => "structure"}, "UpdateMethodRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}, "DeleteUsagePlanKeyRequest" => %{"members" => %{"keyId" => %{"location" => "uri", "locationName" => "keyId", "shape" => "String"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId", "keyId"], "type" => "structure"}, "CreateAuthorizerRequest" => %{"members" => %{"authType" => %{"shape" => "String"}, "authorizerCredentials" => %{"shape" => "String"}, "authorizerResultTtlInSeconds" => %{"shape" => "NullableInteger"}, "authorizerUri" => %{"shape" => "String"}, "identitySource" => %{"shape" => "String"}, "identityValidationExpression" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "providerARNs" => %{"shape" => "ListOfARNs"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "type" => %{"shape" => "AuthorizerType"}}, "required" => ["restApiId", "name", "type", "identitySource"], "type" => "structure"}, "MethodSnapshot" => %{"members" => %{"apiKeyRequired" => %{"shape" => "Boolean"}, "authorizationType" => %{"shape" => "String"}}, "type" => "structure"}, "GetRestApisRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}}, "type" => "structure"}, "DocumentationVersion" => %{"members" => %{"createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "String"}, "version" => %{"shape" => "String"}}, "type" => "structure"}, "ListOfRequestValidator" => %{"member" => %{"shape" => "RequestValidator"}, "type" => "list"}, "ListOfARNs" => %{"member" => %{"shape" => "ProviderARN"}, "type" => "list"}, "SdkConfigurationProperty" => %{"members" => %{"defaultValue" => %{"shape" => "String"}, "description" => %{"shape" => "String"}, "friendlyName" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "required" => %{"shape" => "Boolean"}}, "type" => "structure"}, "ListOfStageKeys" => %{"member" => %{"shape" => "StageKey"}, "type" => "list"}, "GetRequestValidatorRequest" => %{"members" => %{"requestValidatorId" => %{"location" => "uri", "locationName" => "requestvalidator_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "requestValidatorId"], "type" => "structure"}, "PutIntegrationResponseRequest" => %{"members" => %{"contentHandling" => %{"shape" => "ContentHandlingStrategy"}, "httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "responseParameters" => %{"shape" => "MapOfStringToString"}, "responseTemplates" => %{"shape" => "MapOfStringToString"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "selectionPattern" => %{"shape" => "String"}, "statusCode" => %{"location" => "uri", "locationName" => "status_code", "shape" => "StatusCode"}}, "required" => ["restApiId", "resourceId", "httpMethod", "statusCode"], "type" => "structure"}, "ListOfUsagePlan" => %{"member" => %{"shape" => "UsagePlan"}, "type" => "list"}, "GetExportRequest" => %{"members" => %{"accepts" => %{"location" => "header", "locationName" => "Accept", "shape" => "String"}, "exportType" => %{"location" => "uri", "locationName" => "export_type", "shape" => "String"}, "parameters" => %{"location" => "querystring", "shape" => "MapOfStringToString"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName", "exportType"], "type" => "structure"}, "GetDeploymentRequest" => %{"members" => %{"deploymentId" => %{"location" => "uri", "locationName" => "deployment_id", "shape" => "String"}, "embed" => %{"location" => "querystring", "locationName" => "embed", "shape" => "ListOfString"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "deploymentId"], "type" => "structure"}, "ApiKeysFormat" => %{"enum" => ["csv"], "type" => "string"}, "ListOfLong" => %{"member" => %{"shape" => "Long"}, "type" => "list"}, "UpdateAccountRequest" => %{"members" => %{"patchOperations" => %{"shape" => "ListOfPatchOperation"}}, "type" => "structure"}, "CreateUsagePlanKeyRequest" => %{"members" => %{"keyId" => %{"shape" => "String"}, "keyType" => %{"shape" => "String"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId", "keyId", "keyType"], "type" => "structure"}, "CreateBasePathMappingRequest" => %{"members" => %{"basePath" => %{"shape" => "String"}, "domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}, "restApiId" => %{"shape" => "String"}, "stage" => %{"shape" => "String"}}, "required" => ["domainName", "restApiId"], "type" => "structure"}, "Integer" => %{"type" => "integer"}, "GatewayResponseType" => %{"enum" => ["DEFAULT_4XX", "DEFAULT_5XX", "RESOURCE_NOT_FOUND", "UNAUTHORIZED", "INVALID_API_KEY", "ACCESS_DENIED", "AUTHORIZER_FAILURE", "AUTHORIZER_CONFIGURATION_ERROR", "INVALID_SIGNATURE", "EXPIRED_TOKEN", "MISSING_AUTHENTICATION_TOKEN", "INTEGRATION_FAILURE", "INTEGRATION_TIMEOUT", "API_CONFIGURATION_ERROR", "UNSUPPORTED_MEDIA_TYPE", "BAD_REQUEST_PARAMETERS", "BAD_REQUEST_BODY", "REQUEST_TOO_LARGE", "THROTTLED", "QUOTA_EXCEEDED"], "type" => "string"}, "TestInvokeAuthorizerResponse" => %{"members" => %{"authorization" => %{"shape" => "MapOfStringToList"}, "claims" => %{"shape" => "MapOfStringToString"}, "clientStatus" => %{"shape" => "Integer"}, "latency" => %{"shape" => "Long"}, "log" => %{"shape" => "String"}, "policy" => %{"shape" => "String"}, "principalId" => %{"shape" => "String"}}, "type" => "structure"}, "GetUsagePlanKeysRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "nameQuery" => %{"location" => "querystring", "locationName" => "name", "shape" => "String"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "usagePlanId" => %{"location" => "uri", "locationName" => "usageplanId", "shape" => "String"}}, "required" => ["usagePlanId"], "type" => "structure"}, "PutMethodRequest" => %{"members" => %{"apiKeyRequired" => %{"shape" => "Boolean"}, "authorizationType" => %{"shape" => "String"}, "authorizerId" => %{"shape" => "String"}, "httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "operationName" => %{"shape" => "String"}, "requestModels" => %{"shape" => "MapOfStringToString"}, "requestParameters" => %{"shape" => "MapOfStringToBoolean"}, "requestValidatorId" => %{"shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod", "authorizationType"], "type" => "structure"}, "DeleteDeploymentRequest" => %{"members" => %{"deploymentId" => %{"location" => "uri", "locationName" => "deployment_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "deploymentId"], "type" => "structure"}, "Op" => %{"enum" => ["add", "remove", "replace", "move", "copy", "test"], "type" => "string"}, "Authorizer" => %{"members" => %{"authType" => %{"shape" => "String"}, "authorizerCredentials" => %{"shape" => "String"}, "authorizerResultTtlInSeconds" => %{"shape" => "NullableInteger"}, "authorizerUri" => %{"shape" => "String"}, "id" => %{"shape" => "String"}, "identitySource" => %{"shape" => "String"}, "identityValidationExpression" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "providerARNs" => %{"shape" => "ListOfARNs"}, "type" => %{"shape" => "AuthorizerType"}}, "type" => "structure"}, "GetAuthorizersRequest" => %{"members" => %{"limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "GetApiKeyRequest" => %{"members" => %{"apiKey" => %{"location" => "uri", "locationName" => "api_Key", "shape" => "String"}, "includeValue" => %{"location" => "querystring", "locationName" => "includeValue", "shape" => "NullableBoolean"}}, "required" => ["apiKey"], "type" => "structure"}, "DocumentationPartLocation" => %{"members" => %{"method" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "path" => %{"shape" => "String"}, "statusCode" => %{"shape" => "DocumentationPartLocationStatusCode"}, "type" => %{"shape" => "DocumentationPartType"}}, "required" => ["type"], "type" => "structure"}, "RequestValidator" => %{"members" => %{"id" => %{"shape" => "String"}, "name" => %{"shape" => "String"}, "validateRequestBody" => %{"shape" => "Boolean"}, "validateRequestParameters" => %{"shape" => "Boolean"}}, "type" => "structure"}, "MapOfMethod" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "Method"}}, "FlushStageCacheRequest" => %{"members" => %{"restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageName" => %{"location" => "uri", "locationName" => "stage_name", "shape" => "String"}}, "required" => ["restApiId", "stageName"], "type" => "structure"}, "GetResourcesRequest" => %{"members" => %{"embed" => %{"location" => "querystring", "locationName" => "embed", "shape" => "ListOfString"}, "limit" => %{"location" => "querystring", "locationName" => "limit", "shape" => "NullableInteger"}, "position" => %{"location" => "querystring", "locationName" => "position", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId"], "type" => "structure"}, "UpdateDomainNameRequest" => %{"members" => %{"domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}}, "required" => ["domainName"], "type" => "structure"}, "Blob" => %{"type" => "blob"}, "CreateRequestValidatorRequest" => %{"members" => %{"name" => %{"shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "validateRequestBody" => %{"shape" => "Boolean"}, "validateRequestParameters" => %{"shape" => "Boolean"}}, "required" => ["restApiId"], "type" => "structure"}, "UpdateDocumentationPartRequest" => %{"members" => %{"documentationPartId" => %{"location" => "uri", "locationName" => "part_id", "shape" => "String"}, "patchOperations" => %{"shape" => "ListOfPatchOperation"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "documentationPartId"], "type" => "structure"}, "TestInvokeMethodRequest" => %{"members" => %{"body" => %{"shape" => "String"}, "clientCertificateId" => %{"shape" => "String"}, "headers" => %{"shape" => "MapOfHeaderValues"}, "httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "pathWithQueryString" => %{"shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}, "stageVariables" => %{"shape" => "MapOfStringToString"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}, "DeleteBasePathMappingRequest" => %{"members" => %{"basePath" => %{"location" => "uri", "locationName" => "base_path", "shape" => "String"}, "domainName" => %{"location" => "uri", "locationName" => "domain_name", "shape" => "String"}}, "required" => ["domainName", "basePath"], "type" => "structure"}, "DeleteIntegrationRequest" => %{"members" => %{"httpMethod" => %{"location" => "uri", "locationName" => "http_method", "shape" => "String"}, "resourceId" => %{"location" => "uri", "locationName" => "resource_id", "shape" => "String"}, "restApiId" => %{"location" => "uri", "locationName" => "restapi_id", "shape" => "String"}}, "required" => ["restApiId", "resourceId", "httpMethod"], "type" => "structure"}}
+  end
 end

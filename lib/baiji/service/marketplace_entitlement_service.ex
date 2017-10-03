@@ -36,8 +36,19 @@ defmodule Baiji.MarketplaceEntitlementService do
       endpoint_prefix:  "entitlement.marketplace",
       type:             :json,
       version:          "2017-01-11",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetEntitlementsRequest",
+      output_shape:     "GetEntitlementsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"Boolean" => %{"type" => "boolean"}, "Double" => %{"type" => "double"}, "Entitlement" => %{"members" => %{"CustomerIdentifier" => %{"shape" => "NonEmptyString"}, "Dimension" => %{"shape" => "NonEmptyString"}, "ExpirationDate" => %{"shape" => "Timestamp"}, "ProductCode" => %{"shape" => "ProductCode"}, "Value" => %{"shape" => "EntitlementValue"}}, "type" => "structure"}, "EntitlementList" => %{"member" => %{"shape" => "Entitlement"}, "min" => 0, "type" => "list"}, "EntitlementValue" => %{"members" => %{"BooleanValue" => %{"shape" => "Boolean"}, "DoubleValue" => %{"shape" => "Double"}, "IntegerValue" => %{"shape" => "Integer"}, "StringValue" => %{"shape" => "String"}}, "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "FilterValue" => %{"type" => "string"}, "FilterValueList" => %{"member" => %{"shape" => "FilterValue"}, "min" => 1, "type" => "list"}, "GetEntitlementFilterName" => %{"enum" => ["CUSTOMER_IDENTIFIER", "DIMENSION"], "type" => "string"}, "GetEntitlementFilters" => %{"key" => %{"shape" => "GetEntitlementFilterName"}, "type" => "map", "value" => %{"shape" => "FilterValueList"}}, "GetEntitlementsRequest" => %{"members" => %{"Filter" => %{"shape" => "GetEntitlementFilters"}, "MaxResults" => %{"shape" => "Integer"}, "NextToken" => %{"shape" => "NonEmptyString"}, "ProductCode" => %{"shape" => "ProductCode"}}, "required" => ["ProductCode"], "type" => "structure"}, "GetEntitlementsResult" => %{"members" => %{"Entitlements" => %{"shape" => "EntitlementList"}, "NextToken" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "InternalServiceErrorException" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InvalidParameterException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NonEmptyString" => %{"pattern" => "\\S+", "type" => "string"}, "ProductCode" => %{"max" => 255, "min" => 1, "type" => "string"}, "String" => %{"type" => "string"}, "ThrottlingException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}}
+  end
 end

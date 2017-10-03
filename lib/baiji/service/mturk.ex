@@ -40,9 +40,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ApproveAssignmentRequest",
+      output_shape:     "ApproveAssignmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `DisassociateQualificationFromWorker` revokes a previously granted
@@ -64,9 +68,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateQualificationFromWorkerRequest",
+      output_shape:     "DisassociateQualificationFromWorkerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateHIT` operation creates a new Human Intelligence Task (HIT). The
@@ -109,9 +117,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateHITRequest",
+      output_shape:     "CreateHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `NotifyWorkers` operation sends an email to one or more Workers that
@@ -133,9 +145,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "NotifyWorkersRequest",
+      output_shape:     "NotifyWorkersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListQualificationRequests` operation retrieves requests for
@@ -156,9 +172,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListQualificationRequestsRequest",
+      output_shape:     "ListQualificationRequestsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListQualificationRequests` operation retrieves requests for
@@ -179,9 +199,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListQualificationTypesRequest",
+      output_shape:     "ListQualificationTypesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateHITWithHITType` operation creates a new Human Intelligence Task
@@ -216,9 +240,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateHITWithHITTypeRequest",
+      output_shape:     "CreateHITWithHITTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `AssociateQualificationWithWorker` operation gives a Worker a
@@ -252,9 +280,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateQualificationWithWorkerRequest",
+      output_shape:     "AssociateQualificationWithWorkerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `GetAccountBalance` operation retrieves the amount of money in your
@@ -273,9 +305,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetAccountBalanceRequest",
+      output_shape:     "GetAccountBalanceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListWorkersBlocks` operation retrieves a list of Workers who are
@@ -294,9 +330,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListWorkerBlocksRequest",
+      output_shape:     "ListWorkerBlocksResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListWorkersWithQualificationType` operation returns all of the Workers
@@ -315,9 +355,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListWorkersWithQualificationTypeRequest",
+      output_shape:     "ListWorkersWithQualificationTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListReviewPolicyResultsForHIT` operation retrieves the computed
@@ -340,9 +384,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListReviewPolicyResultsForHITRequest",
+      output_shape:     "ListReviewPolicyResultsForHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `GetHIT` operation retrieves the details of the specified HIT.
@@ -360,9 +408,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetHITRequest",
+      output_shape:     "GetHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `RejectAssignment` operation rejects the results of a completed
@@ -390,9 +442,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "RejectAssignmentRequest",
+      output_shape:     "RejectAssignmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListBonusPayments` operation retrieves the amounts of bonuses you have
@@ -411,9 +467,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListBonusPaymentsRequest",
+      output_shape:     "ListBonusPaymentsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateWorkerBlock` operation allows you to prevent a Worker from
@@ -433,9 +493,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateWorkerBlockRequest",
+      output_shape:     "CreateWorkerBlockResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `DeleteHIT` operation is used to delete HIT that is no longer needed.
@@ -474,9 +538,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteHITRequest",
+      output_shape:     "DeleteHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `UpdateHITReviewStatus` operation updates the status of a HIT. If the
@@ -496,9 +564,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateHITReviewStatusRequest",
+      output_shape:     "UpdateHITReviewStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `GetQualificationType`operation retrieves information about a
@@ -517,9 +589,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetQualificationTypeRequest",
+      output_shape:     "GetQualificationTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `GetAssignment` operation retrieves the details of the specified
@@ -538,9 +614,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetAssignmentRequest",
+      output_shape:     "GetAssignmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `SendBonus` operation issues a payment of money from your account to a
@@ -566,9 +646,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "SendBonusRequest",
+      output_shape:     "SendBonusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateHITType` operation creates a new HIT type. This operation allows
@@ -589,9 +673,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateHITTypeRequest",
+      output_shape:     "CreateHITTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `UpdateQualificationType` operation modifies the attributes of an
@@ -642,9 +730,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateQualificationTypeRequest",
+      output_shape:     "UpdateQualificationTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `RejectQualificationRequest` operation rejects a user's request for a
@@ -666,9 +758,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "RejectQualificationRequestRequest",
+      output_shape:     "RejectQualificationRequestResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `GetQualificationScore` operation returns the value of a Worker's
@@ -694,9 +790,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetQualificationScoreRequest",
+      output_shape:     "GetQualificationScoreResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListHITsForQualificationType` operation returns the HITs that use the
@@ -717,9 +817,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListHITsForQualificationTypeRequest",
+      output_shape:     "ListHITsForQualificationTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateAdditionalAssignmentsForHIT` operation increases the maximum
@@ -753,9 +857,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateAdditionalAssignmentsForHITRequest",
+      output_shape:     "CreateAdditionalAssignmentsForHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `DeleteQualificationType` deletes a Qualification type and deletes any
@@ -787,9 +895,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteQualificationTypeRequest",
+      output_shape:     "DeleteQualificationTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `DeleteWorkerBlock` operation allows you to reinstate a blocked Worker
@@ -812,9 +924,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteWorkerBlockRequest",
+      output_shape:     "DeleteWorkerBlockResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListHITs` operation returns all of a Requester's HITs. The operation
@@ -834,9 +950,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListHITsRequest",
+      output_shape:     "ListHITsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListAssignmentsForHIT` operation retrieves completed assignments for a
@@ -874,9 +994,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAssignmentsForHITRequest",
+      output_shape:     "ListAssignmentsForHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `AcceptQualificationRequest` operation approves a Worker's request for
@@ -901,9 +1025,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "AcceptQualificationRequestRequest",
+      output_shape:     "AcceptQualificationRequestResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `UpdateExpirationForHIT` operation allows you update the expiration
@@ -923,9 +1051,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateExpirationForHITRequest",
+      output_shape:     "UpdateExpirationForHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListReviewableHITs` operation retrieves the HITs with Status equal to
@@ -945,9 +1077,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListReviewableHITsRequest",
+      output_shape:     "ListReviewableHITsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `GetFileUploadURL` operation generates and returns a temporary URL. You
@@ -971,9 +1107,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetFileUploadURLRequest",
+      output_shape:     "GetFileUploadURLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `UpdateNotificationSettings` operation creates, updates, disables or
@@ -1001,9 +1141,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateNotificationSettingsRequest",
+      output_shape:     "UpdateNotificationSettingsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateQualificationType` operation creates a new Qualification type,
@@ -1022,9 +1166,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateQualificationTypeRequest",
+      output_shape:     "CreateQualificationTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `UpdateHITTypeOfHIT` operation allows you to change the HITType
@@ -1045,9 +1193,13 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateHITTypeOfHITRequest",
+      output_shape:     "UpdateHITTypeOfHITResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `SendTestEventNotification` operation causes Amazon Mechanical Turk to
@@ -1070,8 +1222,19 @@ defmodule Baiji.MTurk do
       endpoint_prefix:  "mturk-requester",
       type:             :json,
       version:          "2017-01-17",
-      method:           :post
+      method:           :post,
+      input_shape:      "SendTestEventNotificationRequest",
+      output_shape:     "SendTestEventNotificationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"RejectQualificationRequestResponse" => %{"members" => %{}, "type" => "structure"}, "CustomerId" => %{"max" => 64, "min" => 1, "pattern" => "^A[A-Z0-9]+$", "type" => "string"}, "NotificationSpecification" => %{"members" => %{"Destination" => %{"shape" => "String"}, "EventTypes" => %{"shape" => "EventTypeList"}, "Transport" => %{"shape" => "NotificationTransport"}, "Version" => %{"shape" => "String"}}, "required" => ["Destination", "Transport"], "type" => "structure"}, "ListReviewPolicyResultsForHITRequest" => %{"members" => %{"HITId" => %{"shape" => "EntityId"}, "MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}, "PolicyLevels" => %{"shape" => "ReviewPolicyLevelList"}, "RetrieveActions" => %{"shape" => "Boolean"}, "RetrieveResults" => %{"shape" => "Boolean"}}, "required" => ["HITId"], "type" => "structure"}, "ResultSize" => %{"max" => 100, "min" => 1, "type" => "integer"}, "DeleteWorkerBlockResponse" => %{"members" => %{}, "type" => "structure"}, "AssignmentStatusList" => %{"member" => %{"shape" => "AssignmentStatus"}, "type" => "list"}, "SendBonusResponse" => %{"members" => %{}, "type" => "structure"}, "EntityId" => %{"max" => 64, "min" => 1, "pattern" => "^[A-Z0-9]+$", "type" => "string"}, "ListBonusPaymentsRequest" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}, "HITId" => %{"shape" => "EntityId"}, "MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "DeleteHITRequest" => %{"members" => %{"HITId" => %{"shape" => "EntityId"}}, "required" => ["HITId"], "type" => "structure"}, "RejectQualificationRequestRequest" => %{"members" => %{"QualificationRequestId" => %{"shape" => "String"}, "Reason" => %{"shape" => "String"}}, "required" => ["QualificationRequestId"], "type" => "structure"}, "QualificationStatus" => %{"enum" => ["Granted", "Revoked"], "type" => "string"}, "QualificationType" => %{"members" => %{"AnswerKey" => %{"shape" => "String"}, "AutoGranted" => %{"shape" => "Boolean"}, "AutoGrantedValue" => %{"shape" => "Integer"}, "CreationTime" => %{"shape" => "Timestamp"}, "Description" => %{"shape" => "String"}, "IsRequestable" => %{"shape" => "Boolean"}, "Keywords" => %{"shape" => "String"}, "Name" => %{"shape" => "String"}, "QualificationTypeId" => %{"shape" => "EntityId"}, "QualificationTypeStatus" => %{"shape" => "QualificationTypeStatus"}, "RetryDelayInSeconds" => %{"shape" => "Long"}, "Test" => %{"shape" => "String"}, "TestDurationInSeconds" => %{"shape" => "Long"}}, "type" => "structure"}, "SendTestEventNotificationResponse" => %{"members" => %{}, "type" => "structure"}, "String" => %{"type" => "string"}, "QualificationRequirement" => %{"members" => %{"Comparator" => %{"shape" => "Comparator"}, "IntegerValues" => %{"shape" => "IntegerList"}, "LocaleValues" => %{"shape" => "LocaleList"}, "QualificationTypeId" => %{"shape" => "String"}, "RequiredToPreview" => %{"shape" => "Boolean"}}, "required" => ["QualificationTypeId", "Comparator"], "type" => "structure"}, "Boolean" => %{"type" => "boolean"}, "GetAccountBalanceRequest" => %{"members" => %{}, "type" => "structure"}, "ListHITsResponse" => %{"members" => %{"HITs" => %{"shape" => "HITList"}, "NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}}, "type" => "structure"}, "UpdateNotificationSettingsResponse" => %{"members" => %{}, "type" => "structure"}, "PolicyParameterList" => %{"member" => %{"shape" => "PolicyParameter"}, "type" => "list"}, "ReviewActionDetail" => %{"members" => %{"ActionId" => %{"shape" => "EntityId"}, "ActionName" => %{"shape" => "String"}, "CompleteTime" => %{"shape" => "Timestamp"}, "ErrorCode" => %{"shape" => "String"}, "Result" => %{"shape" => "String"}, "Status" => %{"shape" => "ReviewActionStatus"}, "TargetId" => %{"shape" => "EntityId"}, "TargetType" => %{"shape" => "String"}}, "type" => "structure"}, "ReviewableHITStatus" => %{"enum" => ["Reviewable", "Reviewing"], "type" => "string"}, "AcceptQualificationRequestRequest" => %{"members" => %{"IntegerValue" => %{"shape" => "Integer"}, "QualificationRequestId" => %{"shape" => "String"}}, "required" => ["QualificationRequestId"], "type" => "structure"}, "HITList" => %{"member" => %{"shape" => "HIT"}, "type" => "list"}, "ServiceFault" => %{"exception" => true, "fault" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "TurkErrorCode" => %{"shape" => "TurkErrorCode"}}, "type" => "structure"}, "ParameterMapEntry" => %{"members" => %{"Key" => %{"shape" => "String"}, "Values" => %{"shape" => "StringList"}}, "type" => "structure"}, "Assignment" => %{"members" => %{"AcceptTime" => %{"shape" => "Timestamp"}, "Answer" => %{"shape" => "String"}, "ApprovalTime" => %{"shape" => "Timestamp"}, "AssignmentId" => %{"shape" => "EntityId"}, "AssignmentStatus" => %{"shape" => "AssignmentStatus"}, "AutoApprovalTime" => %{"shape" => "Timestamp"}, "Deadline" => %{"shape" => "Timestamp"}, "HITId" => %{"shape" => "EntityId"}, "RejectionTime" => %{"shape" => "Timestamp"}, "RequesterFeedback" => %{"shape" => "String"}, "SubmitTime" => %{"shape" => "Timestamp"}, "WorkerId" => %{"shape" => "CustomerId"}}, "type" => "structure"}, "LocaleList" => %{"member" => %{"shape" => "Locale"}, "type" => "list"}, "NumericValue" => %{"pattern" => "^[0-9]+(\\.)?[0-9]*$", "type" => "string"}, "GetHITResponse" => %{"members" => %{"HIT" => %{"shape" => "HIT"}}, "type" => "structure"}, "DeleteQualificationTypeResponse" => %{"members" => %{}, "type" => "structure"}, "CreateHITResponse" => %{"members" => %{"HIT" => %{"shape" => "HIT"}}, "type" => "structure"}, "NotifyWorkersFailureStatus" => %{"members" => %{"NotifyWorkersFailureCode" => %{"shape" => "NotifyWorkersFailureCode"}, "NotifyWorkersFailureMessage" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "type" => "structure"}, "CreateAdditionalAssignmentsForHITResponse" => %{"members" => %{}, "type" => "structure"}, "ReviewResultDetail" => %{"members" => %{"ActionId" => %{"shape" => "EntityId"}, "Key" => %{"shape" => "String"}, "QuestionId" => %{"shape" => "EntityId"}, "SubjectId" => %{"shape" => "EntityId"}, "SubjectType" => %{"shape" => "String"}, "Value" => %{"shape" => "String"}}, "type" => "structure"}, "QualificationTypeList" => %{"member" => %{"shape" => "QualificationType"}, "type" => "list"}, "GetQualificationTypeResponse" => %{"members" => %{"QualificationType" => %{"shape" => "QualificationType"}}, "type" => "structure"}, "UpdateHITTypeOfHITResponse" => %{"members" => %{}, "type" => "structure"}, "StringList" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "GetHITRequest" => %{"members" => %{"HITId" => %{"shape" => "EntityId"}}, "required" => ["HITId"], "type" => "structure"}, "AssociateQualificationWithWorkerRequest" => %{"members" => %{"IntegerValue" => %{"shape" => "Integer"}, "QualificationTypeId" => %{"shape" => "EntityId"}, "SendNotification" => %{"shape" => "Boolean"}, "WorkerId" => %{"shape" => "CustomerId"}}, "required" => ["QualificationTypeId", "WorkerId"], "type" => "structure"}, "ApproveAssignmentResponse" => %{"members" => %{}, "type" => "structure"}, "NotifyWorkersFailureCode" => %{"enum" => ["SoftFailure", "HardFailure"], "type" => "string"}, "QualificationTypeStatus" => %{"enum" => ["Active", "Inactive"], "type" => "string"}, "ListQualificationTypesResponse" => %{"members" => %{"NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}, "QualificationTypes" => %{"shape" => "QualificationTypeList"}}, "type" => "structure"}, "DisassociateQualificationFromWorkerRequest" => %{"members" => %{"QualificationTypeId" => %{"shape" => "EntityId"}, "Reason" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "required" => ["WorkerId", "QualificationTypeId"], "type" => "structure"}, "GetQualificationScoreRequest" => %{"members" => %{"QualificationTypeId" => %{"shape" => "EntityId"}, "WorkerId" => %{"shape" => "CustomerId"}}, "required" => ["QualificationTypeId", "WorkerId"], "type" => "structure"}, "ReviewPolicyLevelList" => %{"member" => %{"shape" => "ReviewPolicyLevel"}, "type" => "list"}, "EventTypeList" => %{"member" => %{"shape" => "EventType"}, "type" => "list"}, "ListHITsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "QualificationRequest" => %{"members" => %{"Answer" => %{"shape" => "String"}, "QualificationRequestId" => %{"shape" => "String"}, "QualificationTypeId" => %{"shape" => "EntityId"}, "SubmitTime" => %{"shape" => "Timestamp"}, "Test" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "type" => "structure"}, "AssociateQualificationWithWorkerResponse" => %{"members" => %{}, "type" => "structure"}, "CreateWorkerBlockResponse" => %{"members" => %{}, "type" => "structure"}, "GetAssignmentRequest" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}}, "required" => ["AssignmentId"], "type" => "structure"}, "QualificationRequestList" => %{"member" => %{"shape" => "QualificationRequest"}, "type" => "list"}, "ListQualificationRequestsResponse" => %{"members" => %{"NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}, "QualificationRequests" => %{"shape" => "QualificationRequestList"}}, "type" => "structure"}, "ReviewPolicyLevel" => %{"enum" => ["Assignment", "HIT"], "type" => "string"}, "AcceptQualificationRequestResponse" => %{"members" => %{}, "type" => "structure"}, "UpdateNotificationSettingsRequest" => %{"members" => %{"Active" => %{"shape" => "Boolean"}, "HITTypeId" => %{"shape" => "EntityId"}, "Notification" => %{"shape" => "NotificationSpecification"}}, "required" => ["HITTypeId"], "type" => "structure"}, "PolicyParameter" => %{"members" => %{"Key" => %{"shape" => "String"}, "MapEntries" => %{"shape" => "ParameterMapEntryList"}, "Values" => %{"shape" => "StringList"}}, "type" => "structure"}, "CreateHITWithHITTypeResponse" => %{"members" => %{"HIT" => %{"shape" => "HIT"}}, "type" => "structure"}, "UpdateHITTypeOfHITRequest" => %{"members" => %{"HITId" => %{"shape" => "EntityId"}, "HITTypeId" => %{"shape" => "EntityId"}}, "required" => ["HITId", "HITTypeId"], "type" => "structure"}, "CreateAdditionalAssignmentsForHITRequest" => %{"members" => %{"HITId" => %{"shape" => "EntityId"}, "NumberOfAdditionalAssignments" => %{"shape" => "Integer"}, "UniqueRequestToken" => %{"shape" => "IdempotencyToken"}}, "required" => ["HITId"], "type" => "structure"}, "AssignmentList" => %{"member" => %{"shape" => "Assignment"}, "type" => "list"}, "QualificationList" => %{"member" => %{"shape" => "Qualification"}, "type" => "list"}, "ListWorkerBlocksRequest" => %{"members" => %{"MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "HITLayoutParameterList" => %{"member" => %{"shape" => "HITLayoutParameter"}, "type" => "list"}, "HITLayoutParameter" => %{"members" => %{"Name" => %{"shape" => "String"}, "Value" => %{"shape" => "String"}}, "type" => "structure"}, "ListHITsForQualificationTypeRequest" => %{"members" => %{"MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}, "QualificationTypeId" => %{"shape" => "EntityId"}}, "required" => ["QualificationTypeId"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "UpdateQualificationTypeRequest" => %{"members" => %{"AnswerKey" => %{"shape" => "String"}, "AutoGranted" => %{"shape" => "Boolean"}, "AutoGrantedValue" => %{"shape" => "Integer"}, "Description" => %{"shape" => "String"}, "QualificationTypeId" => %{"shape" => "EntityId"}, "QualificationTypeStatus" => %{"shape" => "QualificationTypeStatus"}, "RetryDelayInSeconds" => %{"shape" => "Long"}, "Test" => %{"shape" => "String"}, "TestDurationInSeconds" => %{"shape" => "Long"}}, "required" => ["QualificationTypeId"], "type" => "structure"}, "AssignmentStatus" => %{"enum" => ["Submitted", "Approved", "Rejected"], "type" => "string"}, "GetFileUploadURLRequest" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}, "QuestionIdentifier" => %{"shape" => "String"}}, "required" => ["AssignmentId", "QuestionIdentifier"], "type" => "structure"}, "GetFileUploadURLResponse" => %{"members" => %{"FileUploadURL" => %{"shape" => "String"}}, "type" => "structure"}, "UpdateExpirationForHITRequest" => %{"members" => %{"ExpireAt" => %{"shape" => "Timestamp"}, "HITId" => %{"shape" => "EntityId"}}, "required" => ["HITId"], "type" => "structure"}, "RequestError" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "TurkErrorCode" => %{"shape" => "TurkErrorCode"}}, "type" => "structure"}, "Comparator" => %{"enum" => ["LessThan", "LessThanOrEqualTo", "GreaterThan", "GreaterThanOrEqualTo", "EqualTo", "NotEqualTo", "Exists", "DoesNotExist", "In", "NotIn"], "type" => "string"}, "NotifyWorkersRequest" => %{"members" => %{"MessageText" => %{"shape" => "String"}, "Subject" => %{"shape" => "String"}, "WorkerIds" => %{"shape" => "CustomerIdList"}}, "required" => ["Subject", "MessageText", "WorkerIds"], "type" => "structure"}, "SendTestEventNotificationRequest" => %{"members" => %{"Notification" => %{"shape" => "NotificationSpecification"}, "TestEventType" => %{"shape" => "EventType"}}, "required" => ["Notification", "TestEventType"], "type" => "structure"}, "GetQualificationScoreResponse" => %{"members" => %{"Qualification" => %{"shape" => "Qualification"}}, "type" => "structure"}, "ListBonusPaymentsResponse" => %{"members" => %{"BonusPayments" => %{"shape" => "BonusPaymentList"}, "NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}}, "type" => "structure"}, "CreateHITTypeRequest" => %{"members" => %{"AssignmentDurationInSeconds" => %{"shape" => "Long"}, "AutoApprovalDelayInSeconds" => %{"shape" => "Long"}, "Description" => %{"shape" => "String"}, "Keywords" => %{"shape" => "String"}, "QualificationRequirements" => %{"shape" => "QualificationRequirementList"}, "Reward" => %{"shape" => "NumericValue"}, "Title" => %{"shape" => "String"}}, "required" => ["AssignmentDurationInSeconds", "Reward", "Title", "Description"], "type" => "structure"}, "ListAssignmentsForHITResponse" => %{"members" => %{"Assignments" => %{"shape" => "AssignmentList"}, "NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}}, "type" => "structure"}, "ListWorkerBlocksResponse" => %{"members" => %{"NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}, "WorkerBlocks" => %{"shape" => "WorkerBlockList"}}, "type" => "structure"}, "ListReviewableHITsRequest" => %{"members" => %{"HITTypeId" => %{"shape" => "EntityId"}, "MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}, "Status" => %{"shape" => "ReviewableHITStatus"}}, "type" => "structure"}, "ParameterMapEntryList" => %{"member" => %{"shape" => "ParameterMapEntry"}, "type" => "list"}, "CustomerIdList" => %{"member" => %{"shape" => "CustomerId"}, "type" => "list"}, "CreateHITWithHITTypeRequest" => %{"members" => %{"AssignmentReviewPolicy" => %{"shape" => "ReviewPolicy"}, "HITLayoutId" => %{"shape" => "EntityId"}, "HITLayoutParameters" => %{"shape" => "HITLayoutParameterList"}, "HITReviewPolicy" => %{"shape" => "ReviewPolicy"}, "HITTypeId" => %{"shape" => "EntityId"}, "LifetimeInSeconds" => %{"shape" => "Long"}, "MaxAssignments" => %{"shape" => "Integer"}, "Question" => %{"shape" => "String"}, "RequesterAnnotation" => %{"shape" => "String"}, "UniqueRequestToken" => %{"shape" => "IdempotencyToken"}}, "required" => ["HITTypeId", "LifetimeInSeconds"], "type" => "structure"}, "DeleteQualificationTypeRequest" => %{"members" => %{"QualificationTypeId" => %{"shape" => "EntityId"}}, "required" => ["QualificationTypeId"], "type" => "structure"}, "CreateHITTypeResponse" => %{"members" => %{"HITTypeId" => %{"shape" => "EntityId"}}, "type" => "structure"}, "GetAccountBalanceResponse" => %{"members" => %{"AvailableBalance" => %{"shape" => "NumericValue"}, "OnHoldBalance" => %{"shape" => "NumericValue"}}, "type" => "structure"}, "ReviewReport" => %{"members" => %{"ReviewActions" => %{"shape" => "ReviewActionDetailList"}, "ReviewResults" => %{"shape" => "ReviewResultDetailList"}}, "type" => "structure"}, "UpdateExpirationForHITResponse" => %{"members" => %{}, "type" => "structure"}, "NotifyWorkersResponse" => %{"members" => %{"NotifyWorkersFailureStatuses" => %{"shape" => "NotifyWorkersFailureStatusList"}}, "type" => "structure"}, "Long" => %{"type" => "long"}, "DisassociateQualificationFromWorkerResponse" => %{"members" => %{}, "type" => "structure"}, "Locale" => %{"members" => %{"Country" => %{"shape" => "CountryParameters"}, "Subdivision" => %{"shape" => "CountryParameters"}}, "required" => ["Country"], "type" => "structure"}, "GetAssignmentResponse" => %{"members" => %{"Assignment" => %{"shape" => "Assignment"}, "HIT" => %{"shape" => "HIT"}}, "type" => "structure"}, "TurkErrorCode" => %{"type" => "string"}, "GetQualificationTypeRequest" => %{"members" => %{"QualificationTypeId" => %{"shape" => "EntityId"}}, "required" => ["QualificationTypeId"], "type" => "structure"}, "Qualification" => %{"members" => %{"GrantTime" => %{"shape" => "Timestamp"}, "IntegerValue" => %{"shape" => "Integer"}, "LocaleValue" => %{"shape" => "Locale"}, "QualificationTypeId" => %{"shape" => "EntityId"}, "Status" => %{"shape" => "QualificationStatus"}, "WorkerId" => %{"shape" => "CustomerId"}}, "type" => "structure"}, "HIT" => %{"members" => %{"AssignmentDurationInSeconds" => %{"shape" => "Long"}, "AutoApprovalDelayInSeconds" => %{"shape" => "Long"}, "CreationTime" => %{"shape" => "Timestamp"}, "Description" => %{"shape" => "String"}, "Expiration" => %{"shape" => "Timestamp"}, "HITGroupId" => %{"shape" => "EntityId"}, "HITId" => %{"shape" => "EntityId"}, "HITLayoutId" => %{"shape" => "EntityId"}, "HITReviewStatus" => %{"shape" => "HITReviewStatus"}, "HITStatus" => %{"shape" => "HITStatus"}, "HITTypeId" => %{"shape" => "EntityId"}, "Keywords" => %{"shape" => "String"}, "MaxAssignments" => %{"shape" => "Integer"}, "NumberOfAssignmentsAvailable" => %{"shape" => "Integer"}, "NumberOfAssignmentsCompleted" => %{"shape" => "Integer"}, "NumberOfAssignmentsPending" => %{"shape" => "Integer"}, "QualificationRequirements" => %{"shape" => "QualificationRequirementList"}, "Question" => %{"shape" => "String"}, "RequesterAnnotation" => %{"shape" => "String"}, "Reward" => %{"shape" => "NumericValue"}, "Title" => %{"shape" => "String"}}, "type" => "structure"}, "ListQualificationTypesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "ResultSize"}, "MustBeOwnedByCaller" => %{"shape" => "Boolean"}, "MustBeRequestable" => %{"shape" => "Boolean"}, "NextToken" => %{"shape" => "PaginationToken"}, "Query" => %{"shape" => "String"}}, "required" => ["MustBeRequestable"], "type" => "structure"}, "ReviewActionStatus" => %{"enum" => ["Intended", "Succeeded", "Failed", "Cancelled"], "type" => "string"}, "BonusPaymentList" => %{"member" => %{"shape" => "BonusPayment"}, "type" => "list"}, "RejectAssignmentResponse" => %{"members" => %{}, "type" => "structure"}, "ReviewPolicy" => %{"members" => %{"Parameters" => %{"shape" => "PolicyParameterList"}, "PolicyName" => %{"shape" => "String"}}, "type" => "structure"}, "NotificationTransport" => %{"enum" => ["Email", "SQS"], "type" => "string"}, "CreateWorkerBlockRequest" => %{"members" => %{"Reason" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "required" => ["WorkerId", "Reason"], "type" => "structure"}, "PaginationToken" => %{"max" => 255, "min" => 1, "type" => "string"}, "DeleteHITResponse" => %{"members" => %{}, "type" => "structure"}, "ReviewResultDetailList" => %{"member" => %{"shape" => "ReviewResultDetail"}, "type" => "list"}, "ExceptionMessage" => %{"type" => "string"}, "ListAssignmentsForHITRequest" => %{"members" => %{"AssignmentStatuses" => %{"shape" => "AssignmentStatusList"}, "HITId" => %{"shape" => "EntityId"}, "MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}}, "required" => ["HITId"], "type" => "structure"}, "DeleteWorkerBlockRequest" => %{"members" => %{"Reason" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "required" => ["WorkerId"], "type" => "structure"}, "ListWorkersWithQualificationTypeResponse" => %{"members" => %{"NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}, "Qualifications" => %{"shape" => "QualificationList"}}, "type" => "structure"}, "CreateQualificationTypeRequest" => %{"members" => %{"AnswerKey" => %{"shape" => "String"}, "AutoGranted" => %{"shape" => "Boolean"}, "AutoGrantedValue" => %{"shape" => "Integer"}, "Description" => %{"shape" => "String"}, "Keywords" => %{"shape" => "String"}, "Name" => %{"shape" => "String"}, "QualificationTypeStatus" => %{"shape" => "QualificationTypeStatus"}, "RetryDelayInSeconds" => %{"shape" => "Long"}, "Test" => %{"shape" => "String"}, "TestDurationInSeconds" => %{"shape" => "Long"}}, "required" => ["Name", "Description", "QualificationTypeStatus"], "type" => "structure"}, "WorkerBlock" => %{"members" => %{"Reason" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "type" => "structure"}, "BonusPayment" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}, "BonusAmount" => %{"shape" => "NumericValue"}, "GrantTime" => %{"shape" => "Timestamp"}, "Reason" => %{"shape" => "String"}, "WorkerId" => %{"shape" => "CustomerId"}}, "type" => "structure"}, "EventType" => %{"enum" => ["AssignmentAccepted", "AssignmentAbandoned", "AssignmentReturned", "AssignmentSubmitted", "AssignmentRejected", "AssignmentApproved", "HITCreated", "HITExpired", "HITReviewable", "HITExtended", "HITDisposed", "Ping"], "type" => "string"}, "UpdateQualificationTypeResponse" => %{"members" => %{"QualificationType" => %{"shape" => "QualificationType"}}, "type" => "structure"}, "WorkerBlockList" => %{"member" => %{"shape" => "WorkerBlock"}, "type" => "list"}, "CountryParameters" => %{"max" => 2, "min" => 2, "type" => "string"}, "HITStatus" => %{"enum" => ["Assignable", "Unassignable", "Reviewable", "Reviewing", "Disposed"], "type" => "string"}, "ApproveAssignmentRequest" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}, "OverrideRejection" => %{"shape" => "Boolean"}, "RequesterFeedback" => %{"shape" => "String"}}, "required" => ["AssignmentId"], "type" => "structure"}, "ListQualificationRequestsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}, "QualificationTypeId" => %{"shape" => "EntityId"}}, "type" => "structure"}, "ListReviewPolicyResultsForHITResponse" => %{"members" => %{"AssignmentReviewPolicy" => %{"shape" => "ReviewPolicy"}, "AssignmentReviewReport" => %{"shape" => "ReviewReport"}, "HITId" => %{"shape" => "EntityId"}, "HITReviewPolicy" => %{"shape" => "ReviewPolicy"}, "HITReviewReport" => %{"shape" => "ReviewReport"}, "NextToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "QualificationRequirementList" => %{"member" => %{"shape" => "QualificationRequirement"}, "type" => "list"}, "RejectAssignmentRequest" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}, "RequesterFeedback" => %{"shape" => "String"}}, "required" => ["AssignmentId"], "type" => "structure"}, "IntegerList" => %{"member" => %{"shape" => "Integer"}, "type" => "list"}, "ListHITsForQualificationTypeResponse" => %{"members" => %{"HITs" => %{"shape" => "HITList"}, "NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "UpdateHITReviewStatusResponse" => %{"members" => %{}, "type" => "structure"}, "ListWorkersWithQualificationTypeRequest" => %{"members" => %{"MaxResults" => %{"shape" => "ResultSize"}, "NextToken" => %{"shape" => "PaginationToken"}, "QualificationTypeId" => %{"shape" => "EntityId"}, "Status" => %{"shape" => "QualificationStatus"}}, "required" => ["QualificationTypeId"], "type" => "structure"}, "CreateQualificationTypeResponse" => %{"members" => %{"QualificationType" => %{"shape" => "QualificationType"}}, "type" => "structure"}, "NotifyWorkersFailureStatusList" => %{"member" => %{"shape" => "NotifyWorkersFailureStatus"}, "type" => "list"}, "CreateHITRequest" => %{"members" => %{"AssignmentDurationInSeconds" => %{"shape" => "Long"}, "AssignmentReviewPolicy" => %{"shape" => "ReviewPolicy"}, "AutoApprovalDelayInSeconds" => %{"shape" => "Long"}, "Description" => %{"shape" => "String"}, "HITLayoutId" => %{"shape" => "EntityId"}, "HITLayoutParameters" => %{"shape" => "HITLayoutParameterList"}, "HITReviewPolicy" => %{"shape" => "ReviewPolicy"}, "Keywords" => %{"shape" => "String"}, "LifetimeInSeconds" => %{"shape" => "Long"}, "MaxAssignments" => %{"shape" => "Integer"}, "QualificationRequirements" => %{"shape" => "QualificationRequirementList"}, "Question" => %{"shape" => "String"}, "RequesterAnnotation" => %{"shape" => "String"}, "Reward" => %{"shape" => "NumericValue"}, "Title" => %{"shape" => "String"}, "UniqueRequestToken" => %{"shape" => "IdempotencyToken"}}, "required" => ["LifetimeInSeconds", "AssignmentDurationInSeconds", "Reward", "Title", "Description"], "type" => "structure"}, "ReviewActionDetailList" => %{"member" => %{"shape" => "ReviewActionDetail"}, "type" => "list"}, "ListReviewableHITsResponse" => %{"members" => %{"HITs" => %{"shape" => "HITList"}, "NextToken" => %{"shape" => "PaginationToken"}, "NumResults" => %{"shape" => "Integer"}}, "type" => "structure"}, "IdempotencyToken" => %{"max" => 64, "min" => 1, "type" => "string"}, "UpdateHITReviewStatusRequest" => %{"members" => %{"HITId" => %{"shape" => "EntityId"}, "Revert" => %{"shape" => "Boolean"}}, "required" => ["HITId"], "type" => "structure"}, "HITReviewStatus" => %{"enum" => ["NotReviewed", "MarkedForReview", "ReviewedAppropriate", "ReviewedInappropriate"], "type" => "string"}, "SendBonusRequest" => %{"members" => %{"AssignmentId" => %{"shape" => "EntityId"}, "BonusAmount" => %{"shape" => "NumericValue"}, "Reason" => %{"shape" => "String"}, "UniqueRequestToken" => %{"shape" => "IdempotencyToken"}, "WorkerId" => %{"shape" => "CustomerId"}}, "required" => ["WorkerId", "BonusAmount", "AssignmentId"], "type" => "structure"}}
+  end
 end

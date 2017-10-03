@@ -84,9 +84,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteChapCredentialsInput",
+      output_shape:     "DeleteChapCredentialsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after
@@ -106,9 +110,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CancelArchivalInput",
+      output_shape:     "CancelArchivalOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Resets all cache disks that have encountered a error and makes the disks
@@ -141,9 +149,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ResetCacheInput",
+      output_shape:     "ResetCacheOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the bandwidth rate limits of a gateway. You can delete either the
@@ -165,9 +177,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteBandwidthRateLimitInput",
+      output_shape:     "DeleteBandwidthRateLimitOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists virtual tapes in your virtual tape library (VTL) and your virtual
@@ -196,9 +212,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTapesInput",
+      output_shape:     "ListTapesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes the snapshot schedule for the specified gateway volume. The
@@ -219,9 +239,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeSnapshotScheduleInput",
+      output_shape:     "DescribeSnapshotScheduleOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the cache of a gateway. This operation is only
@@ -243,9 +267,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeCacheInput",
+      output_shape:     "DescribeCacheOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists iSCSI initiators that are connected to a volume. You can use this
@@ -266,9 +294,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListVolumeInitiatorsInput",
+      output_shape:     "ListVolumeInitiatorsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the gateway virtual machine (VM) software. The request immediately
@@ -304,9 +336,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateGatewaySoftwareNowInput",
+      output_shape:     "UpdateGatewaySoftwareNowOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes one or more tags from the specified resource. This operation is
@@ -326,9 +362,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "RemoveTagsFromResourceInput",
+      output_shape:     "RemoveTagsFromResourceOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a virtual tape by using your own barcode. You write data to the
@@ -356,9 +396,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateTapeWithBarcodeInput",
+      output_shape:     "CreateTapeWithBarcodeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of the file shares for a specific file gateway, or the list of
@@ -378,9 +422,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListFileSharesInput",
+      output_shape:     "ListFileSharesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the tags that have been added to the specified resource. This
@@ -400,9 +448,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTagsForResourceInput",
+      output_shape:     "ListTagsForResourceOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the iSCSI stored volumes of a gateway. Results are sorted by volume
@@ -431,9 +483,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListVolumesInput",
+      output_shape:     "ListVolumesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified virtual tape from the virtual tape shelf (VTS). This
@@ -452,9 +508,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteTapeArchiveInput",
+      output_shape:     "DeleteTapeArchiveOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the bandwidth rate limits of a gateway. By default, these limits
@@ -479,9 +539,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeBandwidthRateLimitInput",
+      output_shape:     "DescribeBandwidthRateLimitOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a file share on an existing file gateway. In Storage Gateway, a
@@ -515,9 +579,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateNFSFileShareInput",
+      output_shape:     "CreateNFSFileShareOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Starts a gateway that you previously shut down (see `ShutdownGateway`).
@@ -547,9 +615,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartGatewayInput",
+      output_shape:     "StartGatewayOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Initiates a snapshot of a volume.
@@ -595,9 +667,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateSnapshotInput",
+      output_shape:     "CreateSnapshotOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a description for one or more file shares from a file gateway. This
@@ -616,9 +692,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeNFSFileSharesInput",
+      output_shape:     "DescribeNFSFileSharesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disables a tape gateway when the gateway is no longer functioning. For
@@ -646,9 +726,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisableGatewayInput",
+      output_shape:     "DisableGatewayOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the recovery point for the specified virtual tape. This operation
@@ -677,9 +761,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "RetrieveTapeRecoveryPointInput",
+      output_shape:     "RetrieveTapeRecoveryPointOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a volume on a specified gateway. This operation is only supported
@@ -709,9 +797,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateStorediSCSIVolumeInput",
+      output_shape:     "CreateStorediSCSIVolumeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a file share. This operation is only supported in the file gateway
@@ -751,9 +843,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateNFSFileShareInput",
+      output_shape:     "UpdateNFSFileShareOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns metadata about a gateway such as its name, network interfaces,
@@ -774,9 +870,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeGatewayInformationInput",
+      output_shape:     "DescribeGatewayInformationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a gateway. To specify which gateway to delete, use the Amazon
@@ -812,9 +912,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteGatewayInput",
+      output_shape:     "DeleteGatewayOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified storage volume that you previously created using the
@@ -848,9 +952,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteVolumeInput",
+      output_shape:     "DeleteVolumeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the upload buffer of a gateway. This operation is
@@ -873,9 +981,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeUploadBufferInput",
+      output_shape:     "DescribeUploadBufferOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the working storage of a gateway. This operation
@@ -903,9 +1015,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeWorkingStorageInput",
+      output_shape:     "DescribeWorkingStorageOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the recovery points for a specified gateway. This operation is only
@@ -930,9 +1046,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListVolumeRecoveryPointsInput",
+      output_shape:     "ListVolumeRecoveryPointsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a description of the specified Amazon Resource Name (ARN) of
@@ -953,9 +1073,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTapesInput",
+      output_shape:     "DescribeTapesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a cached volume on a specified cached volume gateway. This
@@ -990,9 +1114,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateCachediSCSIVolumeInput",
+      output_shape:     "CreateCachediSCSIVolumeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the bandwidth rate limits of a gateway. You can update both the
@@ -1019,9 +1147,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateBandwidthRateLimitInput",
+      output_shape:     "UpdateBandwidthRateLimitOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Shuts down a gateway. To specify which gateway to shut down, use the Amazon
@@ -1061,9 +1193,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ShutdownGatewayInput",
+      output_shape:     "ShutdownGatewayOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists gateways owned by an AWS account in a region specified in the
@@ -1092,9 +1228,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListGatewaysInput",
+      output_shape:     "ListGatewaysOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Configures one or more gateway local disks as working storage for a
@@ -1123,9 +1263,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddWorkingStorageInput",
+      output_shape:     "AddWorkingStorageOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves an archived virtual tape from the virtual tape shelf (VTS) to a
@@ -1152,9 +1296,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "RetrieveTapeArchiveInput",
+      output_shape:     "RetrieveTapeArchiveOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the type of medium changer in a tape gateway. When you activate a
@@ -1176,9 +1324,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateVTLDeviceTypeInput",
+      output_shape:     "UpdateVTLDeviceTypeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds one or more tags to the specified resource. You use tags to add
@@ -1210,9 +1362,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddTagsToResourceInput",
+      output_shape:     "AddTagsToResourceOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a description of specified virtual tapes in the virtual tape shelf
@@ -1235,9 +1391,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTapeArchivesInput",
+      output_shape:     "DescribeTapeArchivesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the password for your VM local console. When you log in to the local
@@ -1258,9 +1418,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "SetLocalConsolePasswordInput",
+      output_shape:     "SetLocalConsolePasswordOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates one or more virtual tapes. You write data to the virtual tapes and
@@ -1286,9 +1450,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateTapesInput",
+      output_shape:     "CreateTapesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Activates the gateway you previously deployed on your host. For more
@@ -1318,9 +1486,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ActivateGatewayInput",
+      output_shape:     "ActivateGatewayOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials
@@ -1346,9 +1518,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateChapCredentialsInput",
+      output_shape:     "UpdateChapCredentialsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a snapshot schedule configured for a gateway volume. This operation
@@ -1376,9 +1552,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateSnapshotScheduleInput",
+      output_shape:     "UpdateSnapshotScheduleOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a description of the gateway volumes specified in the request. This
@@ -1401,9 +1581,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeCachediSCSIVolumesInput",
+      output_shape:     "DescribeCachediSCSIVolumesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Initiates a snapshot of a gateway from a volume recovery point. This
@@ -1440,9 +1624,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateSnapshotFromVolumeRecoveryPointInput",
+      output_shape:     "CreateSnapshotFromVolumeRecoveryPointOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Configures one or more gateway local disks as upload buffer for a specified
@@ -1466,9 +1654,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddUploadBufferInput",
+      output_shape:     "AddUploadBufferOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the description of the gateway volumes specified in the request.
@@ -1490,9 +1682,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeStorediSCSIVolumesInput",
+      output_shape:     "DescribeStorediSCSIVolumesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns your gateway's weekly maintenance start time including the day and
@@ -1511,9 +1707,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeMaintenanceStartTimeInput",
+      output_shape:     "DescribeMaintenanceStartTimeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of the gateway's local disks. To specify which gateway to
@@ -1540,9 +1740,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListLocalDisksInput",
+      output_shape:     "ListLocalDisksOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a snapshot of a volume.
@@ -1572,9 +1776,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSnapshotScheduleInput",
+      output_shape:     "DeleteSnapshotScheduleOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a description of virtual tape library (VTL) devices for the
@@ -1596,9 +1804,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeVTLDevicesInput",
+      output_shape:     "DescribeVTLDevicesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a
@@ -1618,9 +1830,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "CancelRetrievalInput",
+      output_shape:     "CancelRetrievalOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a gateway's metadata, which includes the gateway's name and time
@@ -1646,9 +1862,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateGatewayInformationInput",
+      output_shape:     "UpdateGatewayInformationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a gateway's weekly maintenance start time information, including
@@ -1668,9 +1888,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateMaintenanceStartTimeInput",
+      output_shape:     "UpdateMaintenanceStartTimeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Refreshes the cache for the specified file share. This operation finds
@@ -1690,9 +1914,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "RefreshCacheInput",
+      output_shape:     "RefreshCacheOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a file share from a file gateway. This operation is only supported
@@ -1711,9 +1939,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteFileShareInput",
+      output_shape:     "DeleteFileShareOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified virtual tape. This operation is only supported in the
@@ -1732,9 +1964,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteTapeInput",
+      output_shape:     "DeleteTapeOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of Challenge-Handshake Authentication Protocol (CHAP)
@@ -1754,9 +1990,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeChapCredentialsInput",
+      output_shape:     "DescribeChapCredentialsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of virtual tape recovery points that are available for the
@@ -1780,9 +2020,13 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeTapeRecoveryPointsInput",
+      output_shape:     "DescribeTapeRecoveryPointsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Configures one or more gateway local disks as cache for a gateway. This
@@ -1807,8 +2051,19 @@ defmodule Baiji.StorageGateway do
       endpoint_prefix:  "storagegateway",
       type:             :json,
       version:          "2013-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddCacheInput",
+      output_shape:     "AddCacheOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"CreateSnapshotFromVolumeRecoveryPointInput" => %{"members" => %{"SnapshotDescription" => %{"shape" => "SnapshotDescription"}, "VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN", "SnapshotDescription"], "type" => "structure"}, "AddUploadBufferOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "HourOfDay" => %{"max" => 23, "min" => 0, "type" => "integer"}, "DisableGatewayInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "ActivationKey" => %{"max" => 50, "min" => 1, "type" => "string"}, "DescribeTapeRecoveryPointsOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Marker" => %{"shape" => "Marker"}, "TapeRecoveryPointInfos" => %{"shape" => "TapeRecoveryPointInfos"}}, "type" => "structure"}, "ResetCacheInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "DeleteChapCredentialsOutput" => %{"members" => %{"InitiatorName" => %{"shape" => "IqnName"}, "TargetARN" => %{"shape" => "TargetARN"}}, "type" => "structure"}, "TagKeys" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "BandwidthDownloadRateLimit" => %{"min" => 102400, "type" => "long"}, "DescribeStorediSCSIVolumesInput" => %{"members" => %{"VolumeARNs" => %{"shape" => "VolumeARNs"}}, "required" => ["VolumeARNs"], "type" => "structure"}, "ListTagsForResourceInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}, "ResourceARN" => %{"shape" => "ResourceARN"}}, "required" => ["ResourceARN"], "type" => "structure"}, "SnapshotDescription" => %{"max" => 255, "min" => 1, "type" => "string"}, "ListFileSharesOutput" => %{"members" => %{"FileShareInfoList" => %{"shape" => "FileShareInfoList"}, "Marker" => %{"shape" => "Marker"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "AddTagsToResourceInput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "Tags" => %{"shape" => "Tags"}}, "required" => ["ResourceARN", "Tags"], "type" => "structure"}, "DescribeCacheOutput" => %{"members" => %{"CacheAllocatedInBytes" => %{"shape" => "long"}, "CacheDirtyPercentage" => %{"shape" => "double"}, "CacheHitPercentage" => %{"shape" => "double"}, "CacheMissPercentage" => %{"shape" => "double"}, "CacheUsedPercentage" => %{"shape" => "double"}, "DiskIds" => %{"shape" => "DiskIds"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "CreateSnapshotOutput" => %{"members" => %{"SnapshotId" => %{"shape" => "SnapshotId"}, "VolumeARN" => %{"shape" => "VolumeARN"}}, "type" => "structure"}, "RemoveTagsFromResourceOutput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}}, "type" => "structure"}, "StartGatewayInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "UpdateNFSFileShareInput" => %{"members" => %{"ClientList" => %{"shape" => "FileShareClientList"}, "DefaultStorageClass" => %{"shape" => "StorageClass"}, "FileShareARN" => %{"shape" => "FileShareARN"}, "KMSEncrypted" => %{"shape" => "Boolean"}, "KMSKey" => %{"shape" => "KMSKey"}, "NFSFileShareDefaults" => %{"shape" => "NFSFileShareDefaults"}, "ReadOnly" => %{"shape" => "Boolean"}, "Squash" => %{"shape" => "Squash"}}, "required" => ["FileShareARN"], "type" => "structure"}, "ListFileSharesInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}}, "type" => "structure"}, "CancelRetrievalOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "TapeDriveType" => %{"max" => 50, "min" => 2, "type" => "string"}, "DeleteTapeArchiveInput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "required" => ["TapeARN"], "type" => "structure"}, "PermissionMode" => %{"max" => 4, "min" => 1, "pattern" => "^[0-7]{4}$", "type" => "string"}, "Disk" => %{"members" => %{"DiskAllocationResource" => %{"shape" => "string"}, "DiskAllocationType" => %{"shape" => "DiskAllocationType"}, "DiskId" => %{"shape" => "DiskId"}, "DiskNode" => %{"shape" => "string"}, "DiskPath" => %{"shape" => "string"}, "DiskSizeInBytes" => %{"shape" => "long"}, "DiskStatus" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteTapeArchiveOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "Boolean" => %{"type" => "boolean"}, "DescribeTapeRecoveryPointsInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}}, "required" => ["GatewayARN"], "type" => "structure"}, "NFSFileShareInfo" => %{"members" => %{"ClientList" => %{"shape" => "FileShareClientList"}, "DefaultStorageClass" => %{"shape" => "StorageClass"}, "FileShareARN" => %{"shape" => "FileShareARN"}, "FileShareId" => %{"shape" => "FileShareId"}, "FileShareStatus" => %{"shape" => "FileShareStatus"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "KMSEncrypted" => %{"shape" => "boolean"}, "KMSKey" => %{"shape" => "KMSKey"}, "LocationARN" => %{"shape" => "LocationARN"}, "NFSFileShareDefaults" => %{"shape" => "NFSFileShareDefaults"}, "Path" => %{"shape" => "Path"}, "ReadOnly" => %{"shape" => "Boolean"}, "Role" => %{"shape" => "Role"}, "Squash" => %{"shape" => "Squash"}}, "type" => "structure"}, "DeleteFileShareOutput" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}}, "type" => "structure"}, "LocalConsolePassword" => %{"max" => 512, "min" => 6, "pattern" => "^[ -~]+$", "sensitive" => true, "type" => "string"}, "RegionId" => %{"max" => 25, "min" => 1, "type" => "string"}, "AddCacheOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "Role" => %{"max" => 2048, "min" => 20, "type" => "string"}, "DeleteGatewayOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "RecurrenceInHours" => %{"max" => 24, "min" => 1, "type" => "integer"}, "Tapes" => %{"member" => %{"shape" => "Tape"}, "type" => "list"}, "ShutdownGatewayInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "TargetName" => %{"max" => 200, "min" => 1, "pattern" => "^[-\\.;a-z0-9]+$", "type" => "string"}, "Disks" => %{"member" => %{"shape" => "Disk"}, "type" => "list"}, "UpdateNFSFileShareOutput" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}}, "type" => "structure"}, "DeviceType" => %{"max" => 50, "min" => 2, "type" => "string"}, "StorageGatewayError" => %{"members" => %{"errorCode" => %{"shape" => "ErrorCode"}, "errorDetails" => %{"shape" => "errorDetails"}}, "type" => "structure"}, "DayOfWeek" => %{"max" => 6, "min" => 0, "type" => "integer"}, "CreatedDate" => %{"type" => "timestamp"}, "DescribeUploadBufferInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "CreateTapeWithBarcodeOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "DescribeSnapshotScheduleOutput" => %{"members" => %{"Description" => %{"shape" => "Description"}, "RecurrenceInHours" => %{"shape" => "RecurrenceInHours"}, "StartAt" => %{"shape" => "HourOfDay"}, "Timezone" => %{"shape" => "GatewayTimezone"}, "VolumeARN" => %{"shape" => "VolumeARN"}}, "type" => "structure"}, "DescribeUploadBufferOutput" => %{"members" => %{"DiskIds" => %{"shape" => "DiskIds"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "UploadBufferAllocatedInBytes" => %{"shape" => "long"}, "UploadBufferUsedInBytes" => %{"shape" => "long"}}, "type" => "structure"}, "boolean" => %{"type" => "boolean"}, "ChapSecret" => %{"max" => 100, "min" => 1, "type" => "string"}, "CreateSnapshotFromVolumeRecoveryPointOutput" => %{"members" => %{"SnapshotId" => %{"shape" => "SnapshotId"}, "VolumeARN" => %{"shape" => "VolumeARN"}, "VolumeRecoveryPointTime" => %{"shape" => "string"}}, "type" => "structure"}, "CancelRetrievalInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}}, "required" => ["GatewayARN", "TapeARN"], "type" => "structure"}, "FileShareInfo" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}, "FileShareId" => %{"shape" => "FileShareId"}, "FileShareStatus" => %{"shape" => "FileShareStatus"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "DescribeMaintenanceStartTimeOutput" => %{"members" => %{"DayOfWeek" => %{"shape" => "DayOfWeek"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "HourOfDay" => %{"shape" => "HourOfDay"}, "MinuteOfHour" => %{"shape" => "MinuteOfHour"}, "Timezone" => %{"shape" => "GatewayTimezone"}}, "type" => "structure"}, "VTLDeviceProductIdentifier" => %{"type" => "string"}, "ClientToken" => %{"max" => 100, "min" => 5, "type" => "string"}, "DescribeTapeArchivesOutput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "TapeArchives" => %{"shape" => "TapeArchives"}}, "type" => "structure"}, "DeleteBandwidthRateLimitInput" => %{"members" => %{"BandwidthType" => %{"shape" => "BandwidthType"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN", "BandwidthType"], "type" => "structure"}, "IPV4AddressCIDR" => %{"pattern" => "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/([0-9]|[1-2][0-9]|3[0-2]))?$", "type" => "string"}, "DescribeVTLDevicesInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}, "VTLDeviceARNs" => %{"shape" => "VTLDeviceARNs"}}, "required" => ["GatewayARN"], "type" => "structure"}, "BandwidthType" => %{"max" => 25, "min" => 3, "type" => "string"}, "CreateStorediSCSIVolumeOutput" => %{"members" => %{"TargetARN" => %{"shape" => "TargetARN"}, "VolumeARN" => %{"shape" => "VolumeARN"}, "VolumeSizeInBytes" => %{"shape" => "long"}}, "type" => "structure"}, "FileShareId" => %{"max" => 30, "min" => 12, "type" => "string"}, "FileShareARN" => %{"max" => 500, "min" => 50, "type" => "string"}, "CachediSCSIVolume" => %{"members" => %{"CreatedDate" => %{"shape" => "CreatedDate"}, "SourceSnapshotId" => %{"shape" => "SnapshotId"}, "VolumeARN" => %{"shape" => "VolumeARN"}, "VolumeId" => %{"shape" => "VolumeId"}, "VolumeProgress" => %{"shape" => "DoubleObject"}, "VolumeSizeInBytes" => %{"shape" => "long"}, "VolumeStatus" => %{"shape" => "VolumeStatus"}, "VolumeType" => %{"shape" => "VolumeType"}, "VolumeiSCSIAttributes" => %{"shape" => "VolumeiSCSIAttributes"}}, "type" => "structure"}, "NextUpdateAvailabilityDate" => %{"max" => 25, "min" => 1, "type" => "string"}, "DeviceiSCSIAttributes" => %{"members" => %{"ChapEnabled" => %{"shape" => "boolean"}, "NetworkInterfaceId" => %{"shape" => "NetworkInterfaceId"}, "NetworkInterfacePort" => %{"shape" => "integer"}, "TargetARN" => %{"shape" => "TargetARN"}}, "type" => "structure"}, "DescribeSnapshotScheduleInput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN"], "type" => "structure"}, "VTLDeviceARN" => %{"max" => 500, "min" => 50, "type" => "string"}, "Gateways" => %{"member" => %{"shape" => "GatewayInfo"}, "type" => "list"}, "UpdateChapCredentialsOutput" => %{"members" => %{"InitiatorName" => %{"shape" => "IqnName"}, "TargetARN" => %{"shape" => "TargetARN"}}, "type" => "structure"}, "DescribeWorkingStorageOutput" => %{"members" => %{"DiskIds" => %{"shape" => "DiskIds"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "WorkingStorageAllocatedInBytes" => %{"shape" => "long"}, "WorkingStorageUsedInBytes" => %{"shape" => "long"}}, "type" => "structure"}, "NFSFileShareDefaults" => %{"members" => %{"DirectoryMode" => %{"shape" => "PermissionMode"}, "FileMode" => %{"shape" => "PermissionMode"}, "GroupId" => %{"shape" => "PermissionId"}, "OwnerId" => %{"shape" => "PermissionId"}}, "type" => "structure"}, "UpdateGatewayInformationOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "GatewayName" => %{"shape" => "string"}}, "type" => "structure"}, "RemoveTagsFromResourceInput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "TagKeys" => %{"shape" => "TagKeys"}}, "required" => ["ResourceARN", "TagKeys"], "type" => "structure"}, "GatewayInfo" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "GatewayId" => %{"shape" => "GatewayId"}, "GatewayName" => %{"shape" => "string"}, "GatewayOperationalState" => %{"shape" => "GatewayOperationalState"}, "GatewayType" => %{"shape" => "GatewayType"}}, "type" => "structure"}, "TapeUsage" => %{"type" => "long"}, "ShutdownGatewayOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "RefreshCacheOutput" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}}, "type" => "structure"}, "AddTagsToResourceOutput" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}}, "type" => "structure"}, "LocationARN" => %{"max" => 310, "min" => 16, "type" => "string"}, "Description" => %{"max" => 255, "min" => 1, "type" => "string"}, "CreateSnapshotInput" => %{"members" => %{"SnapshotDescription" => %{"shape" => "SnapshotDescription"}, "VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN", "SnapshotDescription"], "type" => "structure"}, "NetworkInterfaceId" => %{"pattern" => "\\A(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)(\\.(25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}\\z", "type" => "string"}, "ChapInfo" => %{"members" => %{"InitiatorName" => %{"shape" => "IqnName"}, "SecretToAuthenticateInitiator" => %{"shape" => "ChapSecret"}, "SecretToAuthenticateTarget" => %{"shape" => "ChapSecret"}, "TargetARN" => %{"shape" => "TargetARN"}}, "type" => "structure"}, "UpdateChapCredentialsInput" => %{"members" => %{"InitiatorName" => %{"shape" => "IqnName"}, "SecretToAuthenticateInitiator" => %{"shape" => "ChapSecret"}, "SecretToAuthenticateTarget" => %{"shape" => "ChapSecret"}, "TargetARN" => %{"shape" => "TargetARN"}}, "required" => ["TargetARN", "SecretToAuthenticateInitiator", "InitiatorName"], "type" => "structure"}, "ErrorCode" => %{"enum" => ["ActivationKeyExpired", "ActivationKeyInvalid", "ActivationKeyNotFound", "GatewayInternalError", "GatewayNotConnected", "GatewayNotFound", "GatewayProxyNetworkConnectionBusy", "AuthenticationFailure", "BandwidthThrottleScheduleNotFound", "Blocked", "CannotExportSnapshot", "ChapCredentialNotFound", "DiskAlreadyAllocated", "DiskDoesNotExist", "DiskSizeGreaterThanVolumeMaxSize", "DiskSizeLessThanVolumeSize", "DiskSizeNotGigAligned", "DuplicateCertificateInfo", "DuplicateSchedule", "EndpointNotFound", "IAMNotSupported", "InitiatorInvalid", "InitiatorNotFound", "InternalError", "InvalidGateway", "InvalidEndpoint", "InvalidParameters", "InvalidSchedule", "LocalStorageLimitExceeded", "LunAlreadyAllocated ", "LunInvalid", "MaximumContentLengthExceeded", "MaximumTapeCartridgeCountExceeded", "MaximumVolumeCountExceeded", "NetworkConfigurationChanged", "NoDisksAvailable", "NotImplemented", "NotSupported", "OperationAborted", "OutdatedGateway", "ParametersNotImplemented", "RegionInvalid", "RequestTimeout", "ServiceUnavailable", "SnapshotDeleted", "SnapshotIdInvalid", "SnapshotInProgress", "SnapshotNotFound", "SnapshotScheduleNotFound", "StagingAreaFull", "StorageFailure", "TapeCartridgeNotFound", "TargetAlreadyExists", "TargetInvalid", "TargetNotFound", "UnauthorizedOperation", "VolumeAlreadyExists", "VolumeIdInvalid", "VolumeInUse", "VolumeNotFound", "VolumeNotReady"], "type" => "string"}, "GatewayARN" => %{"max" => 500, "min" => 50, "type" => "string"}, "Tape" => %{"members" => %{"Progress" => %{"shape" => "DoubleObject"}, "TapeARN" => %{"shape" => "TapeARN"}, "TapeBarcode" => %{"shape" => "TapeBarcode"}, "TapeCreatedDate" => %{"shape" => "Time"}, "TapeSizeInBytes" => %{"shape" => "TapeSize"}, "TapeStatus" => %{"shape" => "TapeStatus"}, "TapeUsedInBytes" => %{"shape" => "TapeUsage"}, "VTLDevice" => %{"shape" => "VTLDeviceARN"}}, "type" => "structure"}, "Path" => %{"type" => "string"}, "ResourceARN" => %{"max" => 500, "min" => 50, "type" => "string"}, "DescribeVTLDevicesOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Marker" => %{"shape" => "Marker"}, "VTLDevices" => %{"shape" => "VTLDevices"}}, "type" => "structure"}, "DoubleObject" => %{"type" => "double"}, "double" => %{"type" => "double"}, "VTLDevices" => %{"member" => %{"shape" => "VTLDevice"}, "type" => "list"}, "StorediSCSIVolumes" => %{"member" => %{"shape" => "StorediSCSIVolume"}, "type" => "list"}, "DescribeChapCredentialsInput" => %{"members" => %{"TargetARN" => %{"shape" => "TargetARN"}}, "required" => ["TargetARN"], "type" => "structure"}, "SnapshotId" => %{"pattern" => "\\Asnap-([0-9A-Fa-f]{8}|[0-9A-Fa-f]{17})\\z", "type" => "string"}, "Tags" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "VTLDeviceType" => %{"type" => "string"}, "ActivateGatewayInput" => %{"members" => %{"ActivationKey" => %{"shape" => "ActivationKey"}, "GatewayName" => %{"shape" => "GatewayName"}, "GatewayRegion" => %{"shape" => "RegionId"}, "GatewayTimezone" => %{"shape" => "GatewayTimezone"}, "GatewayType" => %{"shape" => "GatewayType"}, "MediumChangerType" => %{"shape" => "MediumChangerType"}, "TapeDriveType" => %{"shape" => "TapeDriveType"}}, "required" => ["ActivationKey", "GatewayName", "GatewayTimezone", "GatewayRegion"], "type" => "structure"}, "MediumChangerType" => %{"max" => 50, "min" => 2, "type" => "string"}, "ListTagsForResourceOutput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "ResourceARN" => %{"shape" => "ResourceARN"}, "Tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "RetrieveTapeArchiveInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}}, "required" => ["TapeARN", "GatewayARN"], "type" => "structure"}, "DescribeTapeArchivesInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}, "TapeARNs" => %{"shape" => "TapeARNs"}}, "type" => "structure"}, "VTLDeviceVendor" => %{"type" => "string"}, "InvalidGatewayRequestException" => %{"exception" => true, "members" => %{"error" => %{"shape" => "StorageGatewayError"}, "message" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteChapCredentialsInput" => %{"members" => %{"InitiatorName" => %{"shape" => "IqnName"}, "TargetARN" => %{"shape" => "TargetARN"}}, "required" => ["TargetARN", "InitiatorName"], "type" => "structure"}, "ListTapesInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}, "TapeARNs" => %{"shape" => "TapeARNs"}}, "type" => "structure"}, "BandwidthUploadRateLimit" => %{"min" => 51200, "type" => "long"}, "string" => %{"type" => "string"}, "TapeArchives" => %{"member" => %{"shape" => "TapeArchive"}, "type" => "list"}, "DescribeTapesInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}, "TapeARNs" => %{"shape" => "TapeARNs"}}, "required" => ["GatewayARN"], "type" => "structure"}, "long" => %{"type" => "long"}, "TapeSize" => %{"type" => "long"}, "CachediSCSIVolumes" => %{"member" => %{"shape" => "CachediSCSIVolume"}, "type" => "list"}, "TapeBarcode" => %{"max" => 16, "min" => 7, "pattern" => "^[A-Z0-9]*$", "type" => "string"}, "VolumeStatus" => %{"max" => 50, "min" => 3, "type" => "string"}, "Initiator" => %{"max" => 50, "min" => 1, "type" => "string"}, "TagValue" => %{"max" => 256, "type" => "string"}, "TapeARNs" => %{"member" => %{"shape" => "TapeARN"}, "type" => "list"}, "UpdateMaintenanceStartTimeOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "FileShareStatus" => %{"max" => 50, "min" => 3, "type" => "string"}, "DescribeBandwidthRateLimitOutput" => %{"members" => %{"AverageDownloadRateLimitInBitsPerSec" => %{"shape" => "BandwidthDownloadRateLimit"}, "AverageUploadRateLimitInBitsPerSec" => %{"shape" => "BandwidthUploadRateLimit"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "UpdateVTLDeviceTypeOutput" => %{"members" => %{"VTLDeviceARN" => %{"shape" => "VTLDeviceARN"}}, "type" => "structure"}, "VolumeId" => %{"max" => 30, "min" => 12, "type" => "string"}, "FileShareARNList" => %{"max" => 10, "member" => %{"shape" => "FileShareARN"}, "min" => 1, "type" => "list"}, "VolumeInfos" => %{"member" => %{"shape" => "VolumeInfo"}, "type" => "list"}, "errorDetails" => %{"key" => %{"shape" => "string"}, "type" => "map", "value" => %{"shape" => "string"}}, "TargetARN" => %{"max" => 800, "min" => 50, "type" => "string"}, "DescribeNFSFileSharesOutput" => %{"members" => %{"NFSFileShareInfoList" => %{"shape" => "NFSFileShareInfoList"}}, "type" => "structure"}, "TapeArchiveStatus" => %{"type" => "string"}, "RetrieveTapeRecoveryPointInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}}, "required" => ["TapeARN", "GatewayARN"], "type" => "structure"}, "DescribeMaintenanceStartTimeInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "CreateCachediSCSIVolumeOutput" => %{"members" => %{"TargetARN" => %{"shape" => "TargetARN"}, "VolumeARN" => %{"shape" => "VolumeARN"}}, "type" => "structure"}, "UpdateSnapshotScheduleInput" => %{"members" => %{"Description" => %{"shape" => "Description"}, "RecurrenceInHours" => %{"shape" => "RecurrenceInHours"}, "StartAt" => %{"shape" => "HourOfDay"}, "VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN", "StartAt", "RecurrenceInHours"], "type" => "structure"}, "TapeRecoveryPointStatus" => %{"type" => "string"}, "GatewayName" => %{"max" => 255, "min" => 2, "pattern" => "^[ -\\.0-\\[\\]-~]*[!-\\.0-\\[\\]-~][ -\\.0-\\[\\]-~]*$", "type" => "string"}, "TapeBarcodePrefix" => %{"max" => 4, "min" => 1, "pattern" => "^[A-Z]*$", "type" => "string"}, "VTLDeviceARNs" => %{"member" => %{"shape" => "VTLDeviceARN"}, "type" => "list"}, "TapeStatus" => %{"type" => "string"}, "TapeRecoveryPointInfos" => %{"member" => %{"shape" => "TapeRecoveryPointInfo"}, "type" => "list"}, "AddCacheInput" => %{"members" => %{"DiskIds" => %{"shape" => "DiskIds"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN", "DiskIds"], "type" => "structure"}, "DeleteTapeOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "InternalServerError" => %{"exception" => true, "members" => %{"error" => %{"shape" => "StorageGatewayError"}, "message" => %{"shape" => "string"}}, "type" => "structure"}, "DescribeCachediSCSIVolumesOutput" => %{"members" => %{"CachediSCSIVolumes" => %{"shape" => "CachediSCSIVolumes"}}, "type" => "structure"}, "DescribeCacheInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "CreateNFSFileShareInput" => %{"members" => %{"ClientList" => %{"shape" => "FileShareClientList"}, "ClientToken" => %{"shape" => "ClientToken"}, "DefaultStorageClass" => %{"shape" => "StorageClass"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "KMSEncrypted" => %{"shape" => "Boolean"}, "KMSKey" => %{"shape" => "KMSKey"}, "LocationARN" => %{"shape" => "LocationARN"}, "NFSFileShareDefaults" => %{"shape" => "NFSFileShareDefaults"}, "ReadOnly" => %{"shape" => "Boolean"}, "Role" => %{"shape" => "Role"}, "Squash" => %{"shape" => "Squash"}}, "required" => ["ClientToken", "GatewayARN", "Role", "LocationARN"], "type" => "structure"}, "DescribeGatewayInformationOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "GatewayId" => %{"shape" => "GatewayId"}, "GatewayName" => %{"shape" => "string"}, "GatewayNetworkInterfaces" => %{"shape" => "GatewayNetworkInterfaces"}, "GatewayState" => %{"shape" => "GatewayState"}, "GatewayTimezone" => %{"shape" => "GatewayTimezone"}, "GatewayType" => %{"shape" => "GatewayType"}, "LastSoftwareUpdate" => %{"shape" => "LastSoftwareUpdate"}, "NextUpdateAvailabilityDate" => %{"shape" => "NextUpdateAvailabilityDate"}}, "type" => "structure"}, "CreateCachediSCSIVolumeInput" => %{"members" => %{"ClientToken" => %{"shape" => "ClientToken"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "NetworkInterfaceId" => %{"shape" => "NetworkInterfaceId"}, "SnapshotId" => %{"shape" => "SnapshotId"}, "SourceVolumeARN" => %{"shape" => "VolumeARN"}, "TargetName" => %{"shape" => "TargetName"}, "VolumeSizeInBytes" => %{"shape" => "long"}}, "required" => ["GatewayARN", "VolumeSizeInBytes", "TargetName", "NetworkInterfaceId", "ClientToken"], "type" => "structure"}, "ListVolumesOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Marker" => %{"shape" => "Marker"}, "VolumeInfos" => %{"shape" => "VolumeInfos"}}, "type" => "structure"}, "GatewayType" => %{"max" => 20, "min" => 2, "type" => "string"}, "DescribeGatewayInformationInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "DeleteBandwidthRateLimitOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "CreateNFSFileShareOutput" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}}, "type" => "structure"}, "UpdateGatewaySoftwareNowOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "VolumeARN" => %{"max" => 500, "min" => 50, "type" => "string"}, "AddUploadBufferInput" => %{"members" => %{"DiskIds" => %{"shape" => "DiskIds"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN", "DiskIds"], "type" => "structure"}, "StorageClass" => %{"max" => 20, "min" => 5, "type" => "string"}, "UpdateBandwidthRateLimitOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "ListGatewaysInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}}, "type" => "structure"}, "FileShareInfoList" => %{"member" => %{"shape" => "FileShareInfo"}, "type" => "list"}, "DescribeTapesOutput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "Tapes" => %{"shape" => "Tapes"}}, "type" => "structure"}, "StartGatewayOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "UpdateSnapshotScheduleOutput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "type" => "structure"}, "DiskIds" => %{"member" => %{"shape" => "DiskId"}, "type" => "list"}, "RefreshCacheInput" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}}, "required" => ["FileShareARN"], "type" => "structure"}, "UpdateGatewaySoftwareNowInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "CreateTapeWithBarcodeInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeBarcode" => %{"shape" => "TapeBarcode"}, "TapeSizeInBytes" => %{"shape" => "TapeSize"}}, "required" => ["GatewayARN", "TapeSizeInBytes", "TapeBarcode"], "type" => "structure"}, "VolumeARNs" => %{"member" => %{"shape" => "VolumeARN"}, "type" => "list"}, "ListVolumeInitiatorsInput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN"], "type" => "structure"}, "DescribeChapCredentialsOutput" => %{"members" => %{"ChapCredentials" => %{"shape" => "ChapCredentials"}}, "type" => "structure"}, "DeleteSnapshotScheduleOutput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "type" => "structure"}, "DeleteSnapshotScheduleInput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN"], "type" => "structure"}, "ServiceUnavailableError" => %{"exception" => true, "members" => %{"error" => %{"shape" => "StorageGatewayError"}, "message" => %{"shape" => "string"}}, "type" => "structure"}, "Marker" => %{"max" => 1000, "min" => 1, "type" => "string"}, "DisableGatewayOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "AddWorkingStorageOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "CreateStorediSCSIVolumeInput" => %{"members" => %{"DiskId" => %{"shape" => "DiskId"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "NetworkInterfaceId" => %{"shape" => "NetworkInterfaceId"}, "PreserveExistingData" => %{"shape" => "boolean"}, "SnapshotId" => %{"shape" => "SnapshotId"}, "TargetName" => %{"shape" => "TargetName"}}, "required" => ["GatewayARN", "DiskId", "PreserveExistingData", "TargetName", "NetworkInterfaceId"], "type" => "structure"}, "DeleteVolumeOutput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "type" => "structure"}, "GatewayId" => %{"max" => 30, "min" => 12, "type" => "string"}, "CreateTapesInput" => %{"members" => %{"ClientToken" => %{"shape" => "ClientToken"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "NumTapesToCreate" => %{"shape" => "NumTapesToCreate"}, "TapeBarcodePrefix" => %{"shape" => "TapeBarcodePrefix"}, "TapeSizeInBytes" => %{"shape" => "TapeSize"}}, "required" => ["GatewayARN", "TapeSizeInBytes", "ClientToken", "NumTapesToCreate", "TapeBarcodePrefix"], "type" => "structure"}, "StorediSCSIVolume" => %{"members" => %{"CreatedDate" => %{"shape" => "CreatedDate"}, "PreservedExistingData" => %{"shape" => "boolean"}, "SourceSnapshotId" => %{"shape" => "SnapshotId"}, "VolumeARN" => %{"shape" => "VolumeARN"}, "VolumeDiskId" => %{"shape" => "DiskId"}, "VolumeId" => %{"shape" => "VolumeId"}, "VolumeProgress" => %{"shape" => "DoubleObject"}, "VolumeSizeInBytes" => %{"shape" => "long"}, "VolumeStatus" => %{"shape" => "VolumeStatus"}, "VolumeType" => %{"shape" => "VolumeType"}, "VolumeiSCSIAttributes" => %{"shape" => "VolumeiSCSIAttributes"}}, "type" => "structure"}, "IqnName" => %{"max" => 255, "min" => 1, "pattern" => "[0-9a-z:.-]+", "type" => "string"}, "VolumeInfo" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "GatewayId" => %{"shape" => "GatewayId"}, "VolumeARN" => %{"shape" => "VolumeARN"}, "VolumeId" => %{"shape" => "VolumeId"}, "VolumeSizeInBytes" => %{"shape" => "long"}, "VolumeType" => %{"shape" => "VolumeType"}}, "type" => "structure"}, "RetrieveTapeRecoveryPointOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "ChapCredentials" => %{"member" => %{"shape" => "ChapInfo"}, "type" => "list"}, "GatewayState" => %{"max" => 25, "min" => 2, "type" => "string"}, "DescribeStorediSCSIVolumesOutput" => %{"members" => %{"StorediSCSIVolumes" => %{"shape" => "StorediSCSIVolumes"}}, "type" => "structure"}, "CancelArchivalInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}}, "required" => ["GatewayARN", "TapeARN"], "type" => "structure"}, "UpdateVTLDeviceTypeInput" => %{"members" => %{"DeviceType" => %{"shape" => "DeviceType"}, "VTLDeviceARN" => %{"shape" => "VTLDeviceARN"}}, "required" => ["VTLDeviceARN", "DeviceType"], "type" => "structure"}, "ListLocalDisksOutput" => %{"members" => %{"Disks" => %{"shape" => "Disks"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "ListVolumeRecoveryPointsOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "VolumeRecoveryPointInfos" => %{"shape" => "VolumeRecoveryPointInfos"}}, "type" => "structure"}, "DeleteGatewayInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "Time" => %{"type" => "timestamp"}, "ResetCacheOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "ListVolumeInitiatorsOutput" => %{"members" => %{"Initiators" => %{"shape" => "Initiators"}}, "type" => "structure"}, "DeleteTapeInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}}, "required" => ["GatewayARN", "TapeARN"], "type" => "structure"}, "Initiators" => %{"member" => %{"shape" => "Initiator"}, "type" => "list"}, "PermissionId" => %{"max" => 4294967294, "min" => 0, "type" => "long"}, "TapeRecoveryPointInfo" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}, "TapeRecoveryPointTime" => %{"shape" => "Time"}, "TapeSizeInBytes" => %{"shape" => "TapeSize"}, "TapeStatus" => %{"shape" => "TapeRecoveryPointStatus"}}, "type" => "structure"}, "VolumeType" => %{"max" => 100, "min" => 3, "type" => "string"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-%@]*)$", "type" => "string"}, "GatewayTimezone" => %{"max" => 10, "min" => 3, "type" => "string"}, "DiskAllocationType" => %{"max" => 100, "min" => 3, "type" => "string"}, "DescribeBandwidthRateLimitInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "UpdateBandwidthRateLimitInput" => %{"members" => %{"AverageDownloadRateLimitInBitsPerSec" => %{"shape" => "BandwidthDownloadRateLimit"}, "AverageUploadRateLimitInBitsPerSec" => %{"shape" => "BandwidthUploadRateLimit"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "VolumeRecoveryPointInfo" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}, "VolumeRecoveryPointTime" => %{"shape" => "string"}, "VolumeSizeInBytes" => %{"shape" => "long"}, "VolumeUsageInBytes" => %{"shape" => "long"}}, "type" => "structure"}, "ListLocalDisksInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "AddWorkingStorageInput" => %{"members" => %{"DiskIds" => %{"shape" => "DiskIds"}, "GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN", "DiskIds"], "type" => "structure"}, "DeleteFileShareInput" => %{"members" => %{"FileShareARN" => %{"shape" => "FileShareARN"}, "ForceDelete" => %{"shape" => "boolean"}}, "required" => ["FileShareARN"], "type" => "structure"}, "CreateTapesOutput" => %{"members" => %{"TapeARNs" => %{"shape" => "TapeARNs"}}, "type" => "structure"}, "TapeArchive" => %{"members" => %{"CompletionTime" => %{"shape" => "Time"}, "RetrievedTo" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}, "TapeBarcode" => %{"shape" => "TapeBarcode"}, "TapeCreatedDate" => %{"shape" => "Time"}, "TapeSizeInBytes" => %{"shape" => "TapeSize"}, "TapeStatus" => %{"shape" => "TapeArchiveStatus"}, "TapeUsedInBytes" => %{"shape" => "TapeUsage"}}, "type" => "structure"}, "Squash" => %{"max" => 15, "min" => 5, "type" => "string"}, "SetLocalConsolePasswordOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "ActivateGatewayOutput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "type" => "structure"}, "DescribeWorkingStorageInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "DeleteVolumeInput" => %{"members" => %{"VolumeARN" => %{"shape" => "VolumeARN"}}, "required" => ["VolumeARN"], "type" => "structure"}, "ListGatewaysOutput" => %{"members" => %{"Gateways" => %{"shape" => "Gateways"}, "Marker" => %{"shape" => "Marker"}}, "type" => "structure"}, "UpdateGatewayInformationInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "GatewayName" => %{"shape" => "GatewayName"}, "GatewayTimezone" => %{"shape" => "GatewayTimezone"}}, "required" => ["GatewayARN"], "type" => "structure"}, "LastSoftwareUpdate" => %{"max" => 25, "min" => 1, "type" => "string"}, "TapeInfos" => %{"member" => %{"shape" => "TapeInfo"}, "type" => "list"}, "MinuteOfHour" => %{"max" => 59, "min" => 0, "type" => "integer"}, "KMSKey" => %{"max" => 2048, "min" => 20, "type" => "string"}, "CancelArchivalOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "TapeInfo" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "TapeARN" => %{"shape" => "TapeARN"}, "TapeBarcode" => %{"shape" => "TapeBarcode"}, "TapeSizeInBytes" => %{"shape" => "TapeSize"}, "TapeStatus" => %{"shape" => "TapeStatus"}}, "type" => "structure"}, "FileShareClientList" => %{"max" => 100, "member" => %{"shape" => "IPV4AddressCIDR"}, "min" => 1, "type" => "list"}, "RetrieveTapeArchiveOutput" => %{"members" => %{"TapeARN" => %{"shape" => "TapeARN"}}, "type" => "structure"}, "ListVolumesInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "Limit" => %{"shape" => "PositiveIntObject"}, "Marker" => %{"shape" => "Marker"}}, "type" => "structure"}, "PositiveIntObject" => %{"min" => 1, "type" => "integer"}, "ListTapesOutput" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "TapeInfos" => %{"shape" => "TapeInfos"}}, "type" => "structure"}, "integer" => %{"type" => "integer"}, "DiskId" => %{"max" => 300, "min" => 1, "type" => "string"}, "GatewayNetworkInterfaces" => %{"member" => %{"shape" => "NetworkInterface"}, "type" => "list"}, "VolumeRecoveryPointInfos" => %{"member" => %{"shape" => "VolumeRecoveryPointInfo"}, "type" => "list"}, "SetLocalConsolePasswordInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}, "LocalConsolePassword" => %{"shape" => "LocalConsolePassword"}}, "required" => ["GatewayARN", "LocalConsolePassword"], "type" => "structure"}, "VTLDevice" => %{"members" => %{"DeviceiSCSIAttributes" => %{"shape" => "DeviceiSCSIAttributes"}, "VTLDeviceARN" => %{"shape" => "VTLDeviceARN"}, "VTLDeviceProductIdentifier" => %{"shape" => "VTLDeviceProductIdentifier"}, "VTLDeviceType" => %{"shape" => "VTLDeviceType"}, "VTLDeviceVendor" => %{"shape" => "VTLDeviceVendor"}}, "type" => "structure"}, "NFSFileShareInfoList" => %{"member" => %{"shape" => "NFSFileShareInfo"}, "type" => "list"}, "ListVolumeRecoveryPointsInput" => %{"members" => %{"GatewayARN" => %{"shape" => "GatewayARN"}}, "required" => ["GatewayARN"], "type" => "structure"}, "DescribeNFSFileSharesInput" => %{"members" => %{"FileShareARNList" => %{"shape" => "FileShareARNList"}}, "required" => ["FileShareARNList"], "type" => "structure"}, "GatewayOperationalState" => %{"max" => 25, "min" => 2, "type" => "string"}, "VolumeiSCSIAttributes" => %{"members" => %{"ChapEnabled" => %{"shape" => "boolean"}, "LunNumber" => %{"shape" => "PositiveIntObject"}, "NetworkInterfaceId" => %{"shape" => "NetworkInterfaceId"}, "NetworkInterfacePort" => %{"shape" => "integer"}, "TargetARN" => %{"shape" => "TargetARN"}}, "type" => "structure"}, "TapeARN" => %{"max" => 500, "min" => 50, "pattern" => "^arn:(aws|aws-cn):storagegateway:[a-z\\-0-9]+:[0-9]+:tape\\/[0-9A-Z]{7,16}$", "type" => "string"}, "NetworkInterface" => %{"members" => %{"Ipv4Address" => %{"shape" => "string"}, "Ipv6Address" => %{"shape" => "string"}, "MacAddress" => %{"shape" => "string"}}, "type" => "structure"}, "DescribeCachediSCSIVolumesInput" => %{"members" => %{"VolumeARNs" => %{"shape" => "VolumeARNs"}}, "required" => ["VolumeARNs"], "type" => "structure"}, "NumTapesToCreate" => %{"max" => 10, "min" => 1, "type" => "integer"}, "UpdateMaintenanceStartTimeInput" => %{"members" => %{"DayOfWeek" => %{"shape" => "DayOfWeek"}, "GatewayARN" => %{"shape" => "GatewayARN"}, "HourOfDay" => %{"shape" => "HourOfDay"}, "MinuteOfHour" => %{"shape" => "MinuteOfHour"}}, "required" => ["GatewayARN", "HourOfDay", "MinuteOfHour", "DayOfWeek"], "type" => "structure"}}
+  end
 end

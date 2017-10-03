@@ -346,9 +346,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeGameSessionQueuesInput",
+      output_shape:     "DescribeGameSessionQueuesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Cancels a game session placement that is in `PENDING` status. To stop a
@@ -392,9 +396,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "StopGameSessionPlacementInput",
+      output_shape:     "StopGameSessionPlacementOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently removes a FlexMatch matchmaking configuration. To delete,
@@ -432,9 +440,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteMatchmakingConfigurationInput",
+      output_shape:     "DeleteMatchmakingConfigurationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   *This API call is not currently in use. * Retrieves a fresh set of upload
@@ -455,9 +467,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "RequestUploadCredentialsInput",
+      output_shape:     "RequestUploadCredentialsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves properties, including the protection policy in force, for one or
@@ -509,9 +525,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeGameSessionDetailsInput",
+      output_shape:     "DescribeGameSessionDetailsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates a scaling policy for a fleet. An active scaling policy
@@ -598,9 +618,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutScalingPolicyInput",
+      output_shape:     "PutScalingPolicyOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves properties for an alias. This operation returns all alias
@@ -639,9 +663,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeAliasInput",
+      output_shape:     "DescribeAliasOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates settings for a game session queue, which determines how new game
@@ -674,9 +702,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateGameSessionQueueInput",
+      output_shape:     "UpdateGameSessionQueueOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the following information for the specified EC2 instance type:
@@ -749,9 +781,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeEC2InstanceLimitsInput",
+      output_shape:     "DescribeEC2InstanceLimitsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Requests remote access to a fleet instance. Remote access is useful for
@@ -785,9 +821,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceAccessInput",
+      output_shape:     "GetInstanceAccessOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Validates the syntax of a matchmaking rule or rule set. This operation
@@ -826,9 +866,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ValidateMatchmakingRuleSetInput",
+      output_shape:     "ValidateMatchmakingRuleSetOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the details of FlexMatch matchmaking configurations. with this
@@ -871,9 +915,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeMatchmakingConfigurationsInput",
+      output_shape:     "DescribeMatchmakingConfigurationsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes a VPC peering connection. To delete the connection, you must have a
@@ -916,9 +964,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteVpcPeeringConnectionInput",
+      output_shape:     "DeleteVpcPeeringConnectionOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Cancels a matchmaking ticket that is currently being processed. To stop the
@@ -950,9 +1002,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "StopMatchmakingInput",
+      output_shape:     "StopMatchmakingOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Establishes a VPC peering connection between a virtual private cloud (VPC)
@@ -1010,9 +1066,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateVpcPeeringConnectionInput",
+      output_shape:     "CreateVpcPeeringConnectionOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a multiplayer game session for players. This action creates a game
@@ -1086,9 +1146,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateGameSessionInput",
+      output_shape:     "CreateGameSessionOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new rule set for FlexMatch matchmaking. A rule set describes the
@@ -1146,9 +1210,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateMatchmakingRuleSetInput",
+      output_shape:     "CreateMatchmakingRuleSetOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates game session properties. This includes the session name, maximum
@@ -1196,9 +1264,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateGameSessionInput",
+      output_shape:     "UpdateGameSessionOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an alias for a fleet. In most situations, you can use an alias ID
@@ -1251,9 +1323,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateAliasInput",
+      output_shape:     "CreateAliasOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a group of players to a game session. This action is useful with a
@@ -1300,9 +1376,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreatePlayerSessionsInput",
+      output_shape:     "CreatePlayerSessionsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a game session queue. This action means that any
@@ -1334,9 +1414,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteGameSessionQueueInput",
+      output_shape:     "DeleteGameSessionQueueOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves fleet properties, including metadata, status, and configuration,
@@ -1410,9 +1494,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeFleetAttributesInput",
+      output_shape:     "DescribeFleetAttributesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a set of game sessions that match a set of search criteria and
@@ -1499,9 +1587,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "SearchGameSessionsInput",
+      output_shape:     "SearchGameSessionsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates capacity settings for a fleet. Use this action to specify the
@@ -1580,9 +1672,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateFleetCapacityInput",
+      output_shape:     "UpdateFleetCapacityOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Places a request for a new game session in a queue (see
@@ -1665,9 +1761,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartGameSessionPlacementInput",
+      output_shape:     "StartGameSessionPlacementOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates fleet properties, including name and description, for a fleet. To
@@ -1733,9 +1833,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateFleetAttributesInput",
+      output_shape:     "UpdateFleetAttributesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an alias. This action removes all record of the alias. Game clients
@@ -1771,9 +1875,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteAliasInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates settings for a FlexMatch matchmaking configuration. To update
@@ -1811,9 +1919,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateMatchmakingConfigurationInput",
+      output_shape:     "UpdateMatchmakingConfigurationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a build. This action permanently deletes the build record and any
@@ -1850,9 +1962,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteBuildInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a fleet scaling policy. This action means that the policy is no
@@ -1919,9 +2035,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteScalingPolicyInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a set of one or more matchmaking tickets. Use this operation to
@@ -1963,9 +2083,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeMatchmakingInput",
+      output_shape:     "DescribeMatchmakingOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates properties for an alias. To update properties, specify the alias ID
@@ -2002,9 +2126,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateAliasInput",
+      output_shape:     "UpdateAliasOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information on VPC peering connections. Use this operation to get
@@ -2046,9 +2174,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeVpcPeeringConnectionsInput",
+      output_shape:     "DescribeVpcPeeringConnectionsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Uses FlexMatch to create a game match for a group of players based on
@@ -2140,9 +2272,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartMatchmakingInput",
+      output_shape:     "StartMatchmakingOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves all scaling policies applied to a fleet.
@@ -2212,9 +2348,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeScalingPoliciesInput",
+      output_shape:     "DescribeScalingPoliciesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the current status of fleet capacity for one or more fleets. This
@@ -2289,9 +2429,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeFleetCapacityInput",
+      output_shape:     "DescribeFleetCapacityOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the fleet ID that a specified alias is currently pointing to.
@@ -2325,9 +2469,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ResolveAliasInput",
+      output_shape:     "ResolveAliasOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Defines a new matchmaking configuration for use with FlexMatch. A
@@ -2393,9 +2541,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateMatchmakingConfigurationInput",
+      output_shape:     "CreateMatchmakingConfigurationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the details for FlexMatch matchmaking rule sets. You can request
@@ -2435,9 +2587,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeMatchmakingRuleSetsInput",
+      output_shape:     "DescribeMatchmakingRuleSetsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Establishes a new queue for processing requests to place new game sessions.
@@ -2497,9 +2653,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateGameSessionQueueInput",
+      output_shape:     "CreateGameSessionQueueOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves all aliases for this AWS account. You can filter the result set
@@ -2537,9 +2697,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAliasesInput",
+      output_shape:     "ListAliasesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the current run-time configuration for the specified fleet, which
@@ -2619,9 +2783,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRuntimeConfigurationInput",
+      output_shape:     "UpdateRuntimeConfigurationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Cancels a pending VPC peering authorization for the specified VPC. If the
@@ -2657,9 +2825,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteVpcPeeringAuthorizationInput",
+      output_shape:     "DeleteVpcPeeringAuthorizationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates metadata in a build record, including the build name and version.
@@ -2694,9 +2866,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateBuildInput",
+      output_shape:     "UpdateBuildOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Registers a player's acceptance or rejection of a proposed FlexMatch match.
@@ -2748,9 +2924,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "AcceptMatchInput",
+      output_shape:     "AcceptMatchOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a set of one or more game sessions. Request a specific game
@@ -2804,9 +2984,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeGameSessionsInput",
+      output_shape:     "DescribeGameSessionsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves properties for one or more player sessions. This action can be
@@ -2855,9 +3039,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribePlayerSessionsInput",
+      output_shape:     "DescribePlayerSessionsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new fleet to run your game servers. A fleet is a set of Amazon
@@ -2972,9 +3160,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateFleetInput",
+      output_shape:     "CreateFleetOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the inbound connection permissions for a fleet. Connection
@@ -3043,9 +3235,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeFleetPortSettingsInput",
+      output_shape:     "DescribeFleetPortSettingsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves properties and current status of a game session placement
@@ -3089,9 +3285,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeGameSessionPlacementInput",
+      output_shape:     "DescribeGameSessionPlacementOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves utilization statistics for one or more fleets. You can request
@@ -3165,9 +3365,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeFleetUtilizationInput",
+      output_shape:     "DescribeFleetUtilizationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the current run-time configuration for the specified fleet. The
@@ -3233,9 +3437,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeRuntimeConfigurationInput",
+      output_shape:     "DescribeRuntimeConfigurationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes everything related to a fleet. Before deleting a fleet, you must
@@ -3303,9 +3511,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteFleetInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates port settings for a fleet. To update settings, specify the fleet ID
@@ -3374,9 +3586,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateFleetPortSettingsInput",
+      output_shape:     "UpdateFleetPortSettingsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves build records for all builds associated with the AWS account in
@@ -3413,9 +3629,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListBuildsInput",
+      output_shape:     "ListBuildsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves valid VPC peering authorizations that are pending for the AWS
@@ -3451,9 +3671,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeVpcPeeringAuthorizationsInput",
+      output_shape:     "DescribeVpcPeeringAuthorizationsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new Amazon GameLift build from a set of game server binary files
@@ -3505,9 +3729,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateBuildInput",
+      output_shape:     "CreateBuildOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves information about a fleet's instances, including instance IDs.
@@ -3532,9 +3760,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeInstancesInput",
+      output_shape:     "DescribeInstancesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves properties for a build. To get a build record, specify a build
@@ -3567,9 +3799,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeBuildInput",
+      output_shape:     "DescribeBuildOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the location of stored game session logs for a specified game
@@ -3619,9 +3855,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetGameSessionLogUrlInput",
+      output_shape:     "GetGameSessionLogUrlOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a collection of fleet records for this AWS account. You can
@@ -3689,9 +3929,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListFleetsInput",
+      output_shape:     "ListFleetsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Requests authorization to create or delete a peer connection between the
@@ -3753,9 +3997,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateVpcPeeringAuthorizationInput",
+      output_shape:     "CreateVpcPeeringAuthorizationOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a player to a game session and creates a player session record. Before
@@ -3801,9 +4049,13 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreatePlayerSessionInput",
+      output_shape:     "CreatePlayerSessionOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves entries from the specified fleet's event log. You can specify a
@@ -3870,8 +4122,19 @@ defmodule Baiji.Gamelift do
       endpoint_prefix:  "gamelift",
       type:             :json,
       version:          "2015-10-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeFleetEventsInput",
+      output_shape:     "DescribeFleetEventsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"GamePropertyValue" => %{"max" => 96, "type" => "string"}, "DescribeMatchmakingRuleSetsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NonZeroAndMaxString"}, "RuleSets" => %{"shape" => "MatchmakingRuleSetList"}}, "required" => ["RuleSets"], "type" => "structure"}, "UpdateGameSessionOutput" => %{"members" => %{"GameSession" => %{"shape" => "GameSession"}}, "type" => "structure"}, "PlayerSessionStatus" => %{"enum" => ["RESERVED", "ACTIVE", "COMPLETED", "TIMEDOUT"], "type" => "string"}, "MatchmakingRuleSet" => %{"members" => %{"CreationTime" => %{"shape" => "Timestamp"}, "RuleSetBody" => %{"shape" => "RuleSetBody"}, "RuleSetName" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["RuleSetBody"], "type" => "structure"}, "FleetCapacity" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "InstanceCounts" => %{"shape" => "EC2InstanceCounts"}, "InstanceType" => %{"shape" => "EC2InstanceType"}}, "type" => "structure"}, "PlayerIdStringModel" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9-\\.]+", "type" => "string"}, "StopGameSessionPlacementOutput" => %{"members" => %{"GameSessionPlacement" => %{"shape" => "GameSessionPlacement"}}, "type" => "structure"}, "RoutingStrategyType" => %{"enum" => ["SIMPLE", "TERMINAL"], "type" => "string"}, "CreateAliasInput" => %{"members" => %{"Description" => %{"shape" => "NonZeroAndMaxString"}, "Name" => %{"shape" => "NonBlankAndLengthConstraintString"}, "RoutingStrategy" => %{"shape" => "RoutingStrategy"}}, "required" => ["Name", "RoutingStrategy"], "type" => "structure"}, "EC2InstanceType" => %{"enum" => ["t2.micro", "t2.small", "t2.medium", "t2.large", "c3.large", "c3.xlarge", "c3.2xlarge", "c3.4xlarge", "c3.8xlarge", "c4.large", "c4.xlarge", "c4.2xlarge", "c4.4xlarge", "c4.8xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge", "r3.8xlarge", "r4.large", "r4.xlarge", "r4.2xlarge", "r4.4xlarge", "r4.8xlarge", "r4.16xlarge", "m3.medium", "m3.large", "m3.xlarge", "m3.2xlarge", "m4.large", "m4.xlarge", "m4.2xlarge", "m4.4xlarge", "m4.10xlarge"], "type" => "string"}, "GameSessionData" => %{"max" => 4096, "min" => 1, "type" => "string"}, "MatchmakingConfigurationList" => %{"member" => %{"shape" => "MatchmakingConfiguration"}, "type" => "list"}, "DescribeMatchmakingInput" => %{"members" => %{"TicketIds" => %{"shape" => "MatchmakingIdList"}}, "required" => ["TicketIds"], "type" => "structure"}, "NonBlankString" => %{"pattern" => "[^\\s]+", "type" => "string"}, "GameSessionQueueName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9-]+", "type" => "string"}, "StopGameSessionPlacementInput" => %{"members" => %{"PlacementId" => %{"shape" => "IdStringModel"}}, "required" => ["PlacementId"], "type" => "structure"}, "VpcPeeringConnection" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "GameLiftVpcId" => %{"shape" => "NonZeroAndMaxString"}, "IpV4CidrBlock" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcId" => %{"shape" => "NonZeroAndMaxString"}, "Status" => %{"shape" => "VpcPeeringConnectionStatus"}, "VpcPeeringConnectionId" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "GameSessionFullException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "ValidateMatchmakingRuleSetInput" => %{"members" => %{"RuleSetBody" => %{"shape" => "RuleSetBody"}}, "required" => ["RuleSetBody"], "type" => "structure"}, "DeleteVpcPeeringConnectionInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "VpcPeeringConnectionId" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["FleetId", "VpcPeeringConnectionId"], "type" => "structure"}, "ScalingStatusType" => %{"enum" => ["ACTIVE", "UPDATE_REQUESTED", "UPDATING", "DELETE_REQUESTED", "DELETING", "DELETED", "ERROR"], "type" => "string"}, "UpdateFleetAttributesOutput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "type" => "structure"}, "SearchGameSessionsInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}, "FilterExpression" => %{"shape" => "NonZeroAndMaxString"}, "FleetId" => %{"shape" => "FleetId"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "SortExpression" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "RuntimeConfiguration" => %{"members" => %{"GameSessionActivationTimeoutSeconds" => %{"shape" => "GameSessionActivationTimeoutSeconds"}, "MaxConcurrentGameSessionActivations" => %{"shape" => "MaxConcurrentGameSessionActivations"}, "ServerProcesses" => %{"shape" => "ServerProcessList"}}, "type" => "structure"}, "DescribeScalingPoliciesInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "StatusFilter" => %{"shape" => "ScalingStatusType"}}, "required" => ["FleetId"], "type" => "structure"}, "Boolean" => %{"type" => "boolean"}, "MatchmakingIdList" => %{"member" => %{"shape" => "MatchmakingIdStringModel"}, "type" => "list"}, "UpdateBuildInput" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "Version" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["BuildId"], "type" => "structure"}, "FreeText" => %{"type" => "string"}, "DescribeAliasOutput" => %{"members" => %{"Alias" => %{"shape" => "Alias"}}, "type" => "structure"}, "InstanceStatus" => %{"enum" => ["PENDING", "ACTIVE", "TERMINATING"], "type" => "string"}, "Player" => %{"members" => %{"LatencyInMs" => %{"shape" => "LatencyMap"}, "PlayerAttributes" => %{"shape" => "PlayerAttributeMap"}, "PlayerId" => %{"shape" => "PlayerIdStringModel"}, "Team" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "S3Location" => %{"members" => %{"Bucket" => %{"shape" => "NonEmptyString"}, "Key" => %{"shape" => "NonEmptyString"}, "RoleArn" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "OperatingSystem" => %{"enum" => ["WINDOWS_2012", "AMAZON_LINUX"], "type" => "string"}, "GameSessionQueueNameList" => %{"member" => %{"shape" => "GameSessionQueueName"}, "type" => "list"}, "CreateFleetInput" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}, "Description" => %{"shape" => "NonZeroAndMaxString"}, "EC2InboundPermissions" => %{"shape" => "IpPermissionsList"}, "EC2InstanceType" => %{"shape" => "EC2InstanceType"}, "LogPaths" => %{"shape" => "StringList"}, "MetricGroups" => %{"shape" => "MetricGroupList"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "NewGameSessionProtectionPolicy" => %{"shape" => "ProtectionPolicy"}, "PeerVpcAwsAccountId" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcId" => %{"shape" => "NonZeroAndMaxString"}, "ResourceCreationLimitPolicy" => %{"shape" => "ResourceCreationLimitPolicy"}, "RuntimeConfiguration" => %{"shape" => "RuntimeConfiguration"}, "ServerLaunchParameters" => %{"shape" => "NonZeroAndMaxString"}, "ServerLaunchPath" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["Name", "BuildId", "EC2InstanceType"], "type" => "structure"}, "DescribeMatchmakingConfigurationsOutput" => %{"members" => %{"Configurations" => %{"shape" => "MatchmakingConfigurationList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "BuildId" => %{"pattern" => "^build-\\S+", "type" => "string"}, "EventList" => %{"member" => %{"shape" => "Event"}, "type" => "list"}, "GameSessionQueue" => %{"members" => %{"Destinations" => %{"shape" => "GameSessionQueueDestinationList"}, "GameSessionQueueArn" => %{"shape" => "ArnStringModel"}, "Name" => %{"shape" => "GameSessionQueueName"}, "PlayerLatencyPolicies" => %{"shape" => "PlayerLatencyPolicyList"}, "TimeoutInSeconds" => %{"shape" => "WholeNumber"}}, "type" => "structure"}, "PlayerSessionId" => %{"pattern" => "^psess-\\S+", "type" => "string"}, "PlayerLatencyList" => %{"member" => %{"shape" => "PlayerLatency"}, "type" => "list"}, "DescribeVpcPeeringAuthorizationsOutput" => %{"members" => %{"VpcPeeringAuthorizations" => %{"shape" => "VpcPeeringAuthorizationList"}}, "type" => "structure"}, "StopMatchmakingInput" => %{"members" => %{"TicketId" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["TicketId"], "type" => "structure"}, "DeleteMatchmakingConfigurationOutput" => %{"members" => %{}, "type" => "structure"}, "ConflictException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "UnauthorizedException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "UpdateAliasInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}, "Description" => %{"shape" => "NonZeroAndMaxString"}, "Name" => %{"shape" => "NonBlankAndLengthConstraintString"}, "RoutingStrategy" => %{"shape" => "RoutingStrategy"}}, "required" => ["AliasId"], "type" => "structure"}, "InstanceList" => %{"member" => %{"shape" => "Instance"}, "type" => "list"}, "GamePropertyList" => %{"max" => 16, "member" => %{"shape" => "GameProperty"}, "type" => "list"}, "CreateGameSessionQueueInput" => %{"members" => %{"Destinations" => %{"shape" => "GameSessionQueueDestinationList"}, "Name" => %{"shape" => "GameSessionQueueName"}, "PlayerLatencyPolicies" => %{"shape" => "PlayerLatencyPolicyList"}, "TimeoutInSeconds" => %{"shape" => "WholeNumber"}}, "required" => ["Name"], "type" => "structure"}, "DescribeMatchmakingOutput" => %{"members" => %{"TicketList" => %{"shape" => "MatchmakingTicketList"}}, "type" => "structure"}, "FleetIdList" => %{"member" => %{"shape" => "FleetId"}, "min" => 1, "type" => "list"}, "MatchmakingTicket" => %{"members" => %{"ConfigurationName" => %{"shape" => "MatchmakingIdStringModel"}, "EndTime" => %{"shape" => "Timestamp"}, "EstimatedWaitTime" => %{"shape" => "WholeNumber"}, "GameSessionConnectionInfo" => %{"shape" => "GameSessionConnectionInfo"}, "Players" => %{"shape" => "PlayerList"}, "StartTime" => %{"shape" => "Timestamp"}, "Status" => %{"shape" => "MatchmakingConfigurationStatus"}, "StatusMessage" => %{"shape" => "StringModel"}, "StatusReason" => %{"shape" => "StringModel"}, "TicketId" => %{"shape" => "MatchmakingIdStringModel"}}, "type" => "structure"}, "CreateVpcPeeringAuthorizationInput" => %{"members" => %{"GameLiftAwsAccountId" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcId" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["GameLiftAwsAccountId", "PeerVpcId"], "type" => "structure"}, "ResolveAliasInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}}, "required" => ["AliasId"], "type" => "structure"}, "FleetUtilization" => %{"members" => %{"ActiveGameSessionCount" => %{"shape" => "WholeNumber"}, "ActiveServerProcessCount" => %{"shape" => "WholeNumber"}, "CurrentPlayerSessionCount" => %{"shape" => "WholeNumber"}, "FleetId" => %{"shape" => "FleetId"}, "MaximumPlayerSessionCount" => %{"shape" => "WholeNumber"}}, "type" => "structure"}, "ServerProcess" => %{"members" => %{"ConcurrentExecutions" => %{"shape" => "PositiveInteger"}, "LaunchPath" => %{"shape" => "NonZeroAndMaxString"}, "Parameters" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["LaunchPath", "ConcurrentExecutions"], "type" => "structure"}, "PositiveLong" => %{"min" => 1, "type" => "long"}, "CreateMatchmakingConfigurationInput" => %{"members" => %{"AcceptanceRequired" => %{"shape" => "Boolean"}, "AcceptanceTimeoutSeconds" => %{"shape" => "MatchmakingAcceptanceTimeoutInteger"}, "AdditionalPlayerCount" => %{"shape" => "WholeNumber"}, "CustomEventData" => %{"shape" => "CustomEventData"}, "Description" => %{"shape" => "NonZeroAndMaxString"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionQueueArns" => %{"shape" => "QueueArnsList"}, "Name" => %{"shape" => "MatchmakingIdStringModel"}, "NotificationTarget" => %{"shape" => "SnsArnStringModel"}, "RequestTimeoutSeconds" => %{"shape" => "MatchmakingRequestTimeoutInteger"}, "RuleSetName" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["Name", "GameSessionQueueArns", "RequestTimeoutSeconds", "AcceptanceRequired", "RuleSetName"], "type" => "structure"}, "StringList" => %{"member" => %{"shape" => "NonZeroAndMaxString"}, "type" => "list"}, "DescribeFleetPortSettingsOutput" => %{"members" => %{"InboundPermissions" => %{"shape" => "IpPermissionsList"}}, "type" => "structure"}, "CreatePlayerSessionsOutput" => %{"members" => %{"PlayerSessions" => %{"shape" => "PlayerSessionList"}}, "type" => "structure"}, "AcceptMatchInput" => %{"members" => %{"AcceptanceType" => %{"shape" => "AcceptanceType"}, "PlayerIds" => %{"shape" => "MatchmakingPlayerIdList"}, "TicketId" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["TicketId", "PlayerIds", "AcceptanceType"], "type" => "structure"}, "CreateVpcPeeringConnectionInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "PeerVpcAwsAccountId" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcId" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["FleetId", "PeerVpcAwsAccountId", "PeerVpcId"], "type" => "structure"}, "InstanceId" => %{"pattern" => "[a-zA-Z0-9\\.-]+", "type" => "string"}, "DeleteVpcPeeringConnectionOutput" => %{"members" => %{}, "type" => "structure"}, "DescribeFleetEventsInput" => %{"members" => %{"EndTime" => %{"shape" => "Timestamp"}, "FleetId" => %{"shape" => "FleetId"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "StartTime" => %{"shape" => "Timestamp"}}, "required" => ["FleetId"], "type" => "structure"}, "DescribeFleetUtilizationInput" => %{"members" => %{"FleetIds" => %{"shape" => "FleetIdList"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "ListFleetsInput" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "ScalingPolicyList" => %{"member" => %{"shape" => "ScalingPolicy"}, "type" => "list"}, "DescribeEC2InstanceLimitsInput" => %{"members" => %{"EC2InstanceType" => %{"shape" => "EC2InstanceType"}}, "type" => "structure"}, "CreateGameSessionInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}, "CreatorId" => %{"shape" => "NonZeroAndMaxString"}, "FleetId" => %{"shape" => "FleetId"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionId" => %{"shape" => "IdStringModel"}, "IdempotencyToken" => %{"shape" => "IdStringModel"}, "MaximumPlayerSessionCount" => %{"shape" => "WholeNumber"}, "Name" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["MaximumPlayerSessionCount"], "type" => "structure"}, "PositiveInteger" => %{"min" => 1, "type" => "integer"}, "PlayerLatencyPolicyList" => %{"member" => %{"shape" => "PlayerLatencyPolicy"}, "type" => "list"}, "GameSessionQueueDestination" => %{"members" => %{"DestinationArn" => %{"shape" => "ArnStringModel"}}, "type" => "structure"}, "FleetAttributes" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}, "CreationTime" => %{"shape" => "Timestamp"}, "Description" => %{"shape" => "NonZeroAndMaxString"}, "FleetArn" => %{"shape" => "ArnStringModel"}, "FleetId" => %{"shape" => "FleetId"}, "LogPaths" => %{"shape" => "StringList"}, "MetricGroups" => %{"shape" => "MetricGroupList"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "NewGameSessionProtectionPolicy" => %{"shape" => "ProtectionPolicy"}, "OperatingSystem" => %{"shape" => "OperatingSystem"}, "ResourceCreationLimitPolicy" => %{"shape" => "ResourceCreationLimitPolicy"}, "ServerLaunchParameters" => %{"shape" => "NonZeroAndMaxString"}, "ServerLaunchPath" => %{"shape" => "NonZeroAndMaxString"}, "Status" => %{"shape" => "FleetStatus"}, "TerminationTime" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "DescribeRuntimeConfigurationInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "required" => ["FleetId"], "type" => "structure"}, "EventCode" => %{"enum" => ["GENERIC_EVENT", "FLEET_CREATED", "FLEET_DELETED", "FLEET_SCALING_EVENT", "FLEET_STATE_DOWNLOADING", "FLEET_STATE_VALIDATING", "FLEET_STATE_BUILDING", "FLEET_STATE_ACTIVATING", "FLEET_STATE_ACTIVE", "FLEET_STATE_ERROR", "FLEET_INITIALIZATION_FAILED", "FLEET_BINARY_DOWNLOAD_FAILED", "FLEET_VALIDATION_LAUNCH_PATH_NOT_FOUND", "FLEET_VALIDATION_EXECUTABLE_RUNTIME_FAILURE", "FLEET_VALIDATION_TIMED_OUT", "FLEET_ACTIVATION_FAILED", "FLEET_ACTIVATION_FAILED_NO_INSTANCES", "FLEET_NEW_GAME_SESSION_PROTECTION_POLICY_UPDATED", "SERVER_PROCESS_INVALID_PATH", "SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT", "SERVER_PROCESS_PROCESS_READY_TIMEOUT", "SERVER_PROCESS_CRASHED", "SERVER_PROCESS_TERMINATED_UNHEALTHY", "SERVER_PROCESS_FORCE_TERMINATED", "SERVER_PROCESS_PROCESS_EXIT_TIMEOUT", "GAME_SESSION_ACTIVATION_TIMEOUT", "FLEET_CREATION_EXTRACTING_BUILD", "FLEET_CREATION_RUNNING_INSTALLER", "FLEET_CREATION_VALIDATING_RUNTIME_CONFIG", "FLEET_VPC_PEERING_SUCCEEDED", "FLEET_VPC_PEERING_FAILED", "FLEET_VPC_PEERING_DELETED"], "type" => "string"}, "PlayerData" => %{"max" => 2048, "min" => 1, "type" => "string"}, "CreateMatchmakingRuleSetOutput" => %{"members" => %{"RuleSet" => %{"shape" => "MatchmakingRuleSet"}}, "required" => ["RuleSet"], "type" => "structure"}, "SnsArnStringModel" => %{"max" => 300, "min" => 0, "pattern" => "[a-zA-Z0-9:_/-]*", "type" => "string"}, "GameSessionDetail" => %{"members" => %{"GameSession" => %{"shape" => "GameSession"}, "ProtectionPolicy" => %{"shape" => "ProtectionPolicy"}}, "type" => "structure"}, "UpdateFleetPortSettingsInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "InboundPermissionAuthorizations" => %{"shape" => "IpPermissionsList"}, "InboundPermissionRevocations" => %{"shape" => "IpPermissionsList"}}, "required" => ["FleetId"], "type" => "structure"}, "DescribePlayerSessionsOutput" => %{"members" => %{"NextToken" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessions" => %{"shape" => "PlayerSessionList"}}, "type" => "structure"}, "UpdateMatchmakingConfigurationInput" => %{"members" => %{"AcceptanceRequired" => %{"shape" => "Boolean"}, "AcceptanceTimeoutSeconds" => %{"shape" => "MatchmakingAcceptanceTimeoutInteger"}, "AdditionalPlayerCount" => %{"shape" => "WholeNumber"}, "CustomEventData" => %{"shape" => "CustomEventData"}, "Description" => %{"shape" => "NonZeroAndMaxString"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionQueueArns" => %{"shape" => "QueueArnsList"}, "Name" => %{"shape" => "MatchmakingIdStringModel"}, "NotificationTarget" => %{"shape" => "SnsArnStringModel"}, "RequestTimeoutSeconds" => %{"shape" => "MatchmakingRequestTimeoutInteger"}, "RuleSetName" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["Name"], "type" => "structure"}, "IpProtocol" => %{"enum" => ["TCP", "UDP"], "type" => "string"}, "StringDoubleMap" => %{"key" => %{"shape" => "NonZeroAndMaxString"}, "type" => "map", "value" => %{"shape" => "DoubleObject"}}, "VpcPeeringConnectionStatus" => %{"members" => %{"Code" => %{"shape" => "NonZeroAndMaxString"}, "Message" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "MatchmakingPlayerIdList" => %{"member" => %{"shape" => "PlayerIdStringModel"}, "type" => "list"}, "RoutingStrategy" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "Message" => %{"shape" => "FreeText"}, "Type" => %{"shape" => "RoutingStrategyType"}}, "type" => "structure"}, "PlayerSession" => %{"members" => %{"CreationTime" => %{"shape" => "Timestamp"}, "FleetId" => %{"shape" => "FleetId"}, "GameSessionId" => %{"shape" => "NonZeroAndMaxString"}, "IpAddress" => %{"shape" => "IpAddress"}, "PlayerData" => %{"shape" => "PlayerData"}, "PlayerId" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessionId" => %{"shape" => "PlayerSessionId"}, "Port" => %{"shape" => "PortNumber"}, "Status" => %{"shape" => "PlayerSessionStatus"}, "TerminationTime" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "InvalidFleetStatusException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "StartGameSessionPlacementInput" => %{"members" => %{"DesiredPlayerSessions" => %{"shape" => "DesiredPlayerSessionList"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionName" => %{"shape" => "NonZeroAndMaxString"}, "GameSessionQueueName" => %{"shape" => "GameSessionQueueName"}, "MaximumPlayerSessionCount" => %{"shape" => "WholeNumber"}, "PlacementId" => %{"shape" => "IdStringModel"}, "PlayerLatencies" => %{"shape" => "PlayerLatencyList"}}, "required" => ["PlacementId", "GameSessionQueueName", "MaximumPlayerSessionCount"], "type" => "structure"}, "Float" => %{"type" => "float"}, "ListBuildsInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonEmptyString"}, "Status" => %{"shape" => "BuildStatus"}}, "type" => "structure"}, "NonEmptyString" => %{"min" => 1, "type" => "string"}, "IpPermission" => %{"members" => %{"FromPort" => %{"shape" => "PortNumber"}, "IpRange" => %{"shape" => "NonBlankString"}, "Protocol" => %{"shape" => "IpProtocol"}, "ToPort" => %{"shape" => "PortNumber"}}, "required" => ["FromPort", "ToPort", "IpRange", "Protocol"], "type" => "structure"}, "DoubleObject" => %{"type" => "double"}, "WholeNumber" => %{"min" => 0, "type" => "integer"}, "GetInstanceAccessOutput" => %{"members" => %{"InstanceAccess" => %{"shape" => "InstanceAccess"}}, "type" => "structure"}, "QueueArnsList" => %{"member" => %{"shape" => "ArnStringModel"}, "type" => "list"}, "MatchmakingConfiguration" => %{"members" => %{"AcceptanceRequired" => %{"shape" => "Boolean"}, "AcceptanceTimeoutSeconds" => %{"shape" => "MatchmakingAcceptanceTimeoutInteger"}, "AdditionalPlayerCount" => %{"shape" => "WholeNumber"}, "CreationTime" => %{"shape" => "Timestamp"}, "CustomEventData" => %{"shape" => "CustomEventData"}, "Description" => %{"shape" => "NonZeroAndMaxString"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionQueueArns" => %{"shape" => "QueueArnsList"}, "Name" => %{"shape" => "MatchmakingIdStringModel"}, "NotificationTarget" => %{"shape" => "SnsArnStringModel"}, "RequestTimeoutSeconds" => %{"shape" => "MatchmakingRequestTimeoutInteger"}, "RuleSetName" => %{"shape" => "MatchmakingIdStringModel"}}, "type" => "structure"}, "DescribeEC2InstanceLimitsOutput" => %{"members" => %{"EC2InstanceLimits" => %{"shape" => "EC2InstanceLimitList"}}, "type" => "structure"}, "DescribeFleetCapacityInput" => %{"members" => %{"FleetIds" => %{"shape" => "FleetIdList"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DescribeVpcPeeringConnectionsOutput" => %{"members" => %{"VpcPeeringConnections" => %{"shape" => "VpcPeeringConnectionList"}}, "type" => "structure"}, "FleetAttributesList" => %{"member" => %{"shape" => "FleetAttributes"}, "type" => "list"}, "InstanceCredentials" => %{"members" => %{"Secret" => %{"shape" => "NonEmptyString"}, "UserName" => %{"shape" => "NonEmptyString"}}, "sensitive" => true, "type" => "structure"}, "DescribeRuntimeConfigurationOutput" => %{"members" => %{"RuntimeConfiguration" => %{"shape" => "RuntimeConfiguration"}}, "type" => "structure"}, "LatencyMap" => %{"key" => %{"shape" => "NonEmptyString"}, "type" => "map", "value" => %{"shape" => "PositiveInteger"}}, "Timestamp" => %{"type" => "timestamp"}, "MatchmakingRuleSetList" => %{"member" => %{"shape" => "MatchmakingRuleSet"}, "type" => "list"}, "ScalingAdjustmentType" => %{"enum" => ["ChangeInCapacity", "ExactCapacity", "PercentChangeInCapacity"], "type" => "string"}, "CreatePlayerSessionOutput" => %{"members" => %{"PlayerSession" => %{"shape" => "PlayerSession"}}, "type" => "structure"}, "RequestUploadCredentialsOutput" => %{"members" => %{"StorageLocation" => %{"shape" => "S3Location"}, "UploadCredentials" => %{"shape" => "AwsCredentials"}}, "type" => "structure"}, "DeleteMatchmakingConfigurationInput" => %{"members" => %{"Name" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["Name"], "type" => "structure"}, "DescribeFleetUtilizationOutput" => %{"members" => %{"FleetUtilization" => %{"shape" => "FleetUtilizationList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "NotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "CreateMatchmakingConfigurationOutput" => %{"members" => %{"Configuration" => %{"shape" => "MatchmakingConfiguration"}}, "type" => "structure"}, "NonZeroAndMaxString" => %{"max" => 1024, "min" => 1, "type" => "string"}, "DeleteGameSessionQueueInput" => %{"members" => %{"Name" => %{"shape" => "GameSessionQueueName"}}, "required" => ["Name"], "type" => "structure"}, "FleetCapacityExceededException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "AcceptMatchOutput" => %{"members" => %{}, "type" => "structure"}, "IdempotentParameterMismatchException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "GameSessionQueueList" => %{"member" => %{"shape" => "GameSessionQueue"}, "type" => "list"}, "MetricName" => %{"enum" => ["ActivatingGameSessions", "ActiveGameSessions", "ActiveInstances", "AvailableGameSessions", "AvailablePlayerSessions", "CurrentPlayerSessions", "IdleInstances", "PercentAvailableGameSessions", "PercentIdleInstances", "QueueDepth", "WaitTime"], "type" => "string"}, "CreatePlayerSessionsInput" => %{"members" => %{"GameSessionId" => %{"shape" => "ArnStringModel"}, "PlayerDataMap" => %{"shape" => "PlayerDataMap"}, "PlayerIds" => %{"shape" => "PlayerIdList"}}, "required" => ["GameSessionId", "PlayerIds"], "type" => "structure"}, "StopMatchmakingOutput" => %{"members" => %{}, "type" => "structure"}, "PlayerLatencyPolicy" => %{"members" => %{"MaximumIndividualPlayerLatencyMilliseconds" => %{"shape" => "WholeNumber"}, "PolicyDurationSeconds" => %{"shape" => "WholeNumber"}}, "type" => "structure"}, "Alias" => %{"members" => %{"AliasArn" => %{"shape" => "ArnStringModel"}, "AliasId" => %{"shape" => "AliasId"}, "CreationTime" => %{"shape" => "Timestamp"}, "Description" => %{"shape" => "FreeText"}, "LastUpdatedTime" => %{"shape" => "Timestamp"}, "Name" => %{"shape" => "NonBlankAndLengthConstraintString"}, "RoutingStrategy" => %{"shape" => "RoutingStrategy"}}, "type" => "structure"}, "DescribeGameSessionPlacementInput" => %{"members" => %{"PlacementId" => %{"shape" => "IdStringModel"}}, "required" => ["PlacementId"], "type" => "structure"}, "GameSessionDetailList" => %{"member" => %{"shape" => "GameSessionDetail"}, "type" => "list"}, "PlayerLatency" => %{"members" => %{"LatencyInMilliseconds" => %{"shape" => "Float"}, "PlayerId" => %{"shape" => "NonZeroAndMaxString"}, "RegionIdentifier" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "CreateBuildInput" => %{"members" => %{"Name" => %{"shape" => "NonZeroAndMaxString"}, "OperatingSystem" => %{"shape" => "OperatingSystem"}, "StorageLocation" => %{"shape" => "S3Location"}, "Version" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DeleteVpcPeeringAuthorizationInput" => %{"members" => %{"GameLiftAwsAccountId" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcId" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["GameLiftAwsAccountId", "PeerVpcId"], "type" => "structure"}, "AwsCredentials" => %{"members" => %{"AccessKeyId" => %{"shape" => "NonEmptyString"}, "SecretAccessKey" => %{"shape" => "NonEmptyString"}, "SessionToken" => %{"shape" => "NonEmptyString"}}, "sensitive" => true, "type" => "structure"}, "MatchmakingRuleSetNameList" => %{"max" => 10, "member" => %{"shape" => "MatchmakingIdStringModel"}, "min" => 1, "type" => "list"}, "UnsupportedRegionException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "ArnStringModel" => %{"max" => 256, "min" => 1, "pattern" => "[a-zA-Z0-9:/-]+", "type" => "string"}, "GameSession" => %{"members" => %{"CreationTime" => %{"shape" => "Timestamp"}, "CreatorId" => %{"shape" => "NonZeroAndMaxString"}, "CurrentPlayerSessionCount" => %{"shape" => "WholeNumber"}, "FleetId" => %{"shape" => "FleetId"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionId" => %{"shape" => "NonZeroAndMaxString"}, "IpAddress" => %{"shape" => "IpAddress"}, "MaximumPlayerSessionCount" => %{"shape" => "WholeNumber"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessionCreationPolicy" => %{"shape" => "PlayerSessionCreationPolicy"}, "Port" => %{"shape" => "PortNumber"}, "Status" => %{"shape" => "GameSessionStatus"}, "TerminationTime" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "DescribeGameSessionQueuesInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveInteger"}, "Names" => %{"shape" => "GameSessionQueueNameList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "FleetStatus" => %{"enum" => ["NEW", "DOWNLOADING", "VALIDATING", "BUILDING", "ACTIVATING", "ACTIVE", "DELETING", "ERROR", "TERMINATED"], "type" => "string"}, "DescribeGameSessionsInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}, "FleetId" => %{"shape" => "FleetId"}, "GameSessionId" => %{"shape" => "ArnStringModel"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "StatusFilter" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "CreateGameSessionOutput" => %{"members" => %{"GameSession" => %{"shape" => "GameSession"}}, "type" => "structure"}, "DesiredPlayerSessionList" => %{"member" => %{"shape" => "DesiredPlayerSession"}, "type" => "list"}, "Double" => %{"type" => "double"}, "ScalingPolicy" => %{"members" => %{"ComparisonOperator" => %{"shape" => "ComparisonOperatorType"}, "EvaluationPeriods" => %{"shape" => "PositiveInteger"}, "FleetId" => %{"shape" => "FleetId"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "ScalingAdjustment" => %{"shape" => "Integer"}, "ScalingAdjustmentType" => %{"shape" => "ScalingAdjustmentType"}, "Status" => %{"shape" => "ScalingStatusType"}, "Threshold" => %{"shape" => "Double"}}, "type" => "structure"}, "DescribeAliasInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}}, "required" => ["AliasId"], "type" => "structure"}, "Build" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}, "CreationTime" => %{"shape" => "Timestamp"}, "Name" => %{"shape" => "FreeText"}, "OperatingSystem" => %{"shape" => "OperatingSystem"}, "SizeOnDisk" => %{"shape" => "PositiveLong"}, "Status" => %{"shape" => "BuildStatus"}, "Version" => %{"shape" => "FreeText"}}, "type" => "structure"}, "StartMatchmakingOutput" => %{"members" => %{"MatchmakingTicket" => %{"shape" => "MatchmakingTicket"}}, "type" => "structure"}, "UpdateGameSessionQueueOutput" => %{"members" => %{"GameSessionQueue" => %{"shape" => "GameSessionQueue"}}, "type" => "structure"}, "PlacedPlayerSessionList" => %{"member" => %{"shape" => "PlacedPlayerSession"}, "type" => "list"}, "GetGameSessionLogUrlInput" => %{"members" => %{"GameSessionId" => %{"shape" => "ArnStringModel"}}, "required" => ["GameSessionId"], "type" => "structure"}, "ResolveAliasOutput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "type" => "structure"}, "CreateVpcPeeringConnectionOutput" => %{"members" => %{}, "type" => "structure"}, "CustomEventData" => %{"max" => 256, "min" => 0, "type" => "string"}, "ProtectionPolicy" => %{"enum" => ["NoProtection", "FullProtection"], "type" => "string"}, "CreateVpcPeeringAuthorizationOutput" => %{"members" => %{"VpcPeeringAuthorization" => %{"shape" => "VpcPeeringAuthorization"}}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "UpdateGameSessionQueueInput" => %{"members" => %{"Destinations" => %{"shape" => "GameSessionQueueDestinationList"}, "Name" => %{"shape" => "GameSessionQueueName"}, "PlayerLatencyPolicies" => %{"shape" => "PlayerLatencyPolicyList"}, "TimeoutInSeconds" => %{"shape" => "WholeNumber"}}, "required" => ["Name"], "type" => "structure"}, "DescribeFleetAttributesOutput" => %{"members" => %{"FleetAttributes" => %{"shape" => "FleetAttributesList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "EC2InstanceLimitList" => %{"member" => %{"shape" => "EC2InstanceLimit"}, "type" => "list"}, "StringModel" => %{"type" => "string"}, "AcceptanceType" => %{"enum" => ["ACCEPT", "REJECT"], "type" => "string"}, "BuildStatus" => %{"enum" => ["INITIALIZED", "READY", "FAILED"], "type" => "string"}, "DesiredPlayerSession" => %{"members" => %{"PlayerData" => %{"shape" => "PlayerData"}, "PlayerId" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "PlayerSessionList" => %{"member" => %{"shape" => "PlayerSession"}, "type" => "list"}, "DescribeFleetAttributesInput" => %{"members" => %{"FleetIds" => %{"shape" => "FleetIdList"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DescribeFleetPortSettingsInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "required" => ["FleetId"], "type" => "structure"}, "InvalidRequestException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "VpcPeeringConnectionList" => %{"member" => %{"shape" => "VpcPeeringConnection"}, "type" => "list"}, "DeleteFleetInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "required" => ["FleetId"], "type" => "structure"}, "EC2InstanceCounts" => %{"members" => %{"ACTIVE" => %{"shape" => "WholeNumber"}, "DESIRED" => %{"shape" => "WholeNumber"}, "IDLE" => %{"shape" => "WholeNumber"}, "MAXIMUM" => %{"shape" => "WholeNumber"}, "MINIMUM" => %{"shape" => "WholeNumber"}, "PENDING" => %{"shape" => "WholeNumber"}, "TERMINATING" => %{"shape" => "WholeNumber"}}, "type" => "structure"}, "UpdateBuildOutput" => %{"members" => %{"Build" => %{"shape" => "Build"}}, "type" => "structure"}, "DeleteScalingPolicyInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "Name" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["Name", "FleetId"], "type" => "structure"}, "ListAliasesInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveInteger"}, "Name" => %{"shape" => "NonEmptyString"}, "NextToken" => %{"shape" => "NonEmptyString"}, "RoutingStrategyType" => %{"shape" => "RoutingStrategyType"}}, "type" => "structure"}, "InternalServiceException" => %{"exception" => true, "fault" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "MatchmakingIdStringModel" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9-\\.]+", "type" => "string"}, "DescribeFleetCapacityOutput" => %{"members" => %{"FleetCapacity" => %{"shape" => "FleetCapacityList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DeleteVpcPeeringAuthorizationOutput" => %{"members" => %{}, "type" => "structure"}, "IpAddress" => %{"type" => "string"}, "RuleSetLimit" => %{"max" => 10, "min" => 1, "type" => "integer"}, "CreateAliasOutput" => %{"members" => %{"Alias" => %{"shape" => "Alias"}}, "type" => "structure"}, "ComparisonOperatorType" => %{"enum" => ["GreaterThanOrEqualToThreshold", "GreaterThanThreshold", "LessThanThreshold", "LessThanOrEqualToThreshold"], "type" => "string"}, "MatchmakingConfigurationStatus" => %{"enum" => ["CANCELLED", "COMPLETED", "FAILED", "PLACING", "QUEUED", "REQUIRES_ACCEPTANCE", "SEARCHING", "TIMED_OUT"], "type" => "string"}, "UpdateFleetAttributesInput" => %{"members" => %{"Description" => %{"shape" => "NonZeroAndMaxString"}, "FleetId" => %{"shape" => "FleetId"}, "MetricGroups" => %{"shape" => "MetricGroupList"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "NewGameSessionProtectionPolicy" => %{"shape" => "ProtectionPolicy"}, "ResourceCreationLimitPolicy" => %{"shape" => "ResourceCreationLimitPolicy"}}, "required" => ["FleetId"], "type" => "structure"}, "UpdateRuntimeConfigurationInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "RuntimeConfiguration" => %{"shape" => "RuntimeConfiguration"}}, "required" => ["FleetId", "RuntimeConfiguration"], "type" => "structure"}, "FleetId" => %{"pattern" => "^fleet-\\S+", "type" => "string"}, "ListFleetsOutput" => %{"members" => %{"FleetIds" => %{"shape" => "FleetIdList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "UpdateGameSessionInput" => %{"members" => %{"GameSessionId" => %{"shape" => "ArnStringModel"}, "MaximumPlayerSessionCount" => %{"shape" => "WholeNumber"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessionCreationPolicy" => %{"shape" => "PlayerSessionCreationPolicy"}, "ProtectionPolicy" => %{"shape" => "ProtectionPolicy"}}, "required" => ["GameSessionId"], "type" => "structure"}, "GameSessionStatus" => %{"enum" => ["ACTIVE", "ACTIVATING", "TERMINATED", "TERMINATING", "ERROR"], "type" => "string"}, "GameSessionList" => %{"member" => %{"shape" => "GameSession"}, "type" => "list"}, "ListAliasesOutput" => %{"members" => %{"Aliases" => %{"shape" => "AliasList"}, "NextToken" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "StartMatchmakingInput" => %{"members" => %{"ConfigurationName" => %{"shape" => "MatchmakingIdStringModel"}, "Players" => %{"shape" => "PlayerList"}, "TicketId" => %{"shape" => "MatchmakingIdStringModel"}}, "required" => ["ConfigurationName", "Players"], "type" => "structure"}, "PutScalingPolicyOutput" => %{"members" => %{"Name" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "UpdateFleetPortSettingsOutput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "type" => "structure"}, "DescribeMatchmakingConfigurationsInput" => %{"members" => %{"Limit" => %{"shape" => "PositiveInteger"}, "Names" => %{"shape" => "MatchmakingIdList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "RuleSetName" => %{"shape" => "MatchmakingIdStringModel"}}, "type" => "structure"}, "DescribeBuildOutput" => %{"members" => %{"Build" => %{"shape" => "Build"}}, "type" => "structure"}, "DescribeGameSessionsOutput" => %{"members" => %{"GameSessions" => %{"shape" => "GameSessionList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "IpPermissionsList" => %{"max" => 50, "member" => %{"shape" => "IpPermission"}, "type" => "list"}, "PlayerList" => %{"member" => %{"shape" => "Player"}, "type" => "list"}, "MaxConcurrentGameSessionActivations" => %{"max" => 2147483647, "min" => 1, "type" => "integer"}, "EC2InstanceLimit" => %{"members" => %{"CurrentInstances" => %{"shape" => "WholeNumber"}, "EC2InstanceType" => %{"shape" => "EC2InstanceType"}, "InstanceLimit" => %{"shape" => "WholeNumber"}}, "type" => "structure"}, "InstanceAccess" => %{"members" => %{"Credentials" => %{"shape" => "InstanceCredentials"}, "FleetId" => %{"shape" => "FleetId"}, "InstanceId" => %{"shape" => "InstanceId"}, "IpAddress" => %{"shape" => "IpAddress"}, "OperatingSystem" => %{"shape" => "OperatingSystem"}}, "type" => "structure"}, "MetricGroupList" => %{"max" => 1, "member" => %{"shape" => "MetricGroup"}, "type" => "list"}, "DeleteAliasInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}}, "required" => ["AliasId"], "type" => "structure"}, "ResourceCreationLimitPolicy" => %{"members" => %{"NewGameSessionsPerCreator" => %{"shape" => "WholeNumber"}, "PolicyPeriodInMinutes" => %{"shape" => "WholeNumber"}}, "type" => "structure"}, "UpdateRuntimeConfigurationOutput" => %{"members" => %{"RuntimeConfiguration" => %{"shape" => "RuntimeConfiguration"}}, "type" => "structure"}, "PlacedPlayerSession" => %{"members" => %{"PlayerId" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessionId" => %{"shape" => "PlayerSessionId"}}, "type" => "structure"}, "PlayerAttributeMap" => %{"key" => %{"shape" => "NonZeroAndMaxString"}, "type" => "map", "value" => %{"shape" => "AttributeValue"}}, "DescribeFleetEventsOutput" => %{"members" => %{"Events" => %{"shape" => "EventList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "IdStringModel" => %{"max" => 48, "min" => 1, "pattern" => "[a-zA-Z0-9-]+", "type" => "string"}, "VpcPeeringAuthorization" => %{"members" => %{"CreationTime" => %{"shape" => "Timestamp"}, "ExpirationTime" => %{"shape" => "Timestamp"}, "GameLiftAwsAccountId" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcAwsAccountId" => %{"shape" => "NonZeroAndMaxString"}, "PeerVpcId" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DescribeGameSessionPlacementOutput" => %{"members" => %{"GameSessionPlacement" => %{"shape" => "GameSessionPlacement"}}, "type" => "structure"}, "DescribeMatchmakingRuleSetsInput" => %{"members" => %{"Limit" => %{"shape" => "RuleSetLimit"}, "Names" => %{"shape" => "MatchmakingRuleSetNameList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "AliasList" => %{"member" => %{"shape" => "Alias"}, "type" => "list"}, "GameSessionPlacement" => %{"members" => %{"EndTime" => %{"shape" => "Timestamp"}, "GameProperties" => %{"shape" => "GamePropertyList"}, "GameSessionArn" => %{"shape" => "NonZeroAndMaxString"}, "GameSessionData" => %{"shape" => "GameSessionData"}, "GameSessionId" => %{"shape" => "NonZeroAndMaxString"}, "GameSessionName" => %{"shape" => "NonZeroAndMaxString"}, "GameSessionQueueName" => %{"shape" => "GameSessionQueueName"}, "GameSessionRegion" => %{"shape" => "NonZeroAndMaxString"}, "IpAddress" => %{"shape" => "IpAddress"}, "MaximumPlayerSessionCount" => %{"shape" => "WholeNumber"}, "PlacedPlayerSessions" => %{"shape" => "PlacedPlayerSessionList"}, "PlacementId" => %{"shape" => "IdStringModel"}, "PlayerLatencies" => %{"shape" => "PlayerLatencyList"}, "Port" => %{"shape" => "PortNumber"}, "StartTime" => %{"shape" => "Timestamp"}, "Status" => %{"shape" => "GameSessionPlacementState"}}, "type" => "structure"}, "UpdateFleetCapacityInput" => %{"members" => %{"DesiredInstances" => %{"shape" => "WholeNumber"}, "FleetId" => %{"shape" => "FleetId"}, "MaxSize" => %{"shape" => "WholeNumber"}, "MinSize" => %{"shape" => "WholeNumber"}}, "required" => ["FleetId"], "type" => "structure"}, "NonBlankAndLengthConstraintString" => %{"max" => 1024, "min" => 1, "pattern" => ".*\\S.*", "type" => "string"}, "CreatePlayerSessionInput" => %{"members" => %{"GameSessionId" => %{"shape" => "ArnStringModel"}, "PlayerData" => %{"shape" => "PlayerData"}, "PlayerId" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["GameSessionId", "PlayerId"], "type" => "structure"}, "GamePropertyKey" => %{"max" => 32, "type" => "string"}, "GameProperty" => %{"members" => %{"Key" => %{"shape" => "GamePropertyKey"}, "Value" => %{"shape" => "GamePropertyValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "DescribeGameSessionDetailsInput" => %{"members" => %{"AliasId" => %{"shape" => "AliasId"}, "FleetId" => %{"shape" => "FleetId"}, "GameSessionId" => %{"shape" => "ArnStringModel"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "StatusFilter" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "RuleSetBody" => %{"max" => 65535, "min" => 1, "type" => "string"}, "AttributeValue" => %{"members" => %{"N" => %{"shape" => "DoubleObject"}, "S" => %{"shape" => "NonZeroAndMaxString"}, "SDM" => %{"shape" => "StringDoubleMap"}, "SL" => %{"shape" => "StringList"}}, "type" => "structure"}, "PutScalingPolicyInput" => %{"members" => %{"ComparisonOperator" => %{"shape" => "ComparisonOperatorType"}, "EvaluationPeriods" => %{"shape" => "PositiveInteger"}, "FleetId" => %{"shape" => "FleetId"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "NonZeroAndMaxString"}, "ScalingAdjustment" => %{"shape" => "Integer"}, "ScalingAdjustmentType" => %{"shape" => "ScalingAdjustmentType"}, "Threshold" => %{"shape" => "Double"}}, "required" => ["Name", "FleetId", "ScalingAdjustment", "ScalingAdjustmentType", "Threshold", "ComparisonOperator", "EvaluationPeriods", "MetricName"], "type" => "structure"}, "GameSessionPlacementState" => %{"enum" => ["PENDING", "FULFILLED", "CANCELLED", "TIMED_OUT"], "type" => "string"}, "DescribePlayerSessionsInput" => %{"members" => %{"GameSessionId" => %{"shape" => "ArnStringModel"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}, "PlayerId" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessionId" => %{"shape" => "PlayerSessionId"}, "PlayerSessionStatusFilter" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DescribeScalingPoliciesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NonZeroAndMaxString"}, "ScalingPolicies" => %{"shape" => "ScalingPolicyList"}}, "type" => "structure"}, "MatchedPlayerSession" => %{"members" => %{"PlayerId" => %{"shape" => "NonZeroAndMaxString"}, "PlayerSessionId" => %{"shape" => "PlayerSessionId"}}, "type" => "structure"}, "DeleteGameSessionQueueOutput" => %{"members" => %{}, "type" => "structure"}, "CreateGameSessionQueueOutput" => %{"members" => %{"GameSessionQueue" => %{"shape" => "GameSessionQueue"}}, "type" => "structure"}, "ServerProcessList" => %{"max" => 50, "member" => %{"shape" => "ServerProcess"}, "min" => 1, "type" => "list"}, "DescribeVpcPeeringConnectionsInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "type" => "structure"}, "DescribeGameSessionDetailsOutput" => %{"members" => %{"GameSessionDetails" => %{"shape" => "GameSessionDetailList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "GetInstanceAccessInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "InstanceId" => %{"shape" => "InstanceId"}}, "required" => ["FleetId", "InstanceId"], "type" => "structure"}, "SearchGameSessionsOutput" => %{"members" => %{"GameSessions" => %{"shape" => "GameSessionList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "DescribeBuildInput" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}}, "required" => ["BuildId"], "type" => "structure"}, "MatchmakingAcceptanceTimeoutInteger" => %{"max" => 600, "min" => 1, "type" => "integer"}, "Event" => %{"members" => %{"EventCode" => %{"shape" => "EventCode"}, "EventId" => %{"shape" => "NonZeroAndMaxString"}, "EventTime" => %{"shape" => "Timestamp"}, "Message" => %{"shape" => "NonEmptyString"}, "PreSignedLogUrl" => %{"shape" => "NonZeroAndMaxString"}, "ResourceId" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "CreateMatchmakingRuleSetInput" => %{"members" => %{"Name" => %{"shape" => "MatchmakingIdStringModel"}, "RuleSetBody" => %{"shape" => "RuleSetBody"}}, "required" => ["Name", "RuleSetBody"], "type" => "structure"}, "UpdateAliasOutput" => %{"members" => %{"Alias" => %{"shape" => "Alias"}}, "type" => "structure"}, "UpdateFleetCapacityOutput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}}, "type" => "structure"}, "MatchmakingRequestTimeoutInteger" => %{"max" => 43200, "min" => 1, "type" => "integer"}, "VpcPeeringAuthorizationList" => %{"member" => %{"shape" => "VpcPeeringAuthorization"}, "type" => "list"}, "InvalidGameSessionStatusException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "PlayerSessionCreationPolicy" => %{"enum" => ["ACCEPT_ALL", "DENY_ALL"], "type" => "string"}, "TerminalRoutingStrategyException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "RequestUploadCredentialsInput" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}}, "required" => ["BuildId"], "type" => "structure"}, "MatchedPlayerSessionList" => %{"member" => %{"shape" => "MatchedPlayerSession"}, "type" => "list"}, "GameSessionActivationTimeoutSeconds" => %{"max" => 600, "min" => 1, "type" => "integer"}, "FleetCapacityList" => %{"member" => %{"shape" => "FleetCapacity"}, "type" => "list"}, "ListBuildsOutput" => %{"members" => %{"Builds" => %{"shape" => "BuildList"}, "NextToken" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "GetGameSessionLogUrlOutput" => %{"members" => %{"PreSignedUrl" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "DescribeInstancesInput" => %{"members" => %{"FleetId" => %{"shape" => "FleetId"}, "InstanceId" => %{"shape" => "InstanceId"}, "Limit" => %{"shape" => "PositiveInteger"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "required" => ["FleetId"], "type" => "structure"}, "GameSessionConnectionInfo" => %{"members" => %{"GameSessionArn" => %{"shape" => "ArnStringModel"}, "IpAddress" => %{"shape" => "StringModel"}, "MatchedPlayerSessions" => %{"shape" => "MatchedPlayerSessionList"}, "Port" => %{"shape" => "PositiveInteger"}}, "type" => "structure"}, "DescribeGameSessionQueuesOutput" => %{"members" => %{"GameSessionQueues" => %{"shape" => "GameSessionQueueList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "PlayerIdList" => %{"max" => 25, "member" => %{"shape" => "NonZeroAndMaxString"}, "min" => 1, "type" => "list"}, "AliasId" => %{"pattern" => "^alias-\\S+", "type" => "string"}, "GameSessionQueueDestinationList" => %{"member" => %{"shape" => "GameSessionQueueDestination"}, "type" => "list"}, "ValidateMatchmakingRuleSetOutput" => %{"members" => %{"Valid" => %{"shape" => "Boolean"}}, "type" => "structure"}, "BuildList" => %{"member" => %{"shape" => "Build"}, "type" => "list"}, "StartGameSessionPlacementOutput" => %{"members" => %{"GameSessionPlacement" => %{"shape" => "GameSessionPlacement"}}, "type" => "structure"}, "UpdateMatchmakingConfigurationOutput" => %{"members" => %{"Configuration" => %{"shape" => "MatchmakingConfiguration"}}, "type" => "structure"}, "PortNumber" => %{"max" => 60000, "min" => 1, "type" => "integer"}, "CreateBuildOutput" => %{"members" => %{"Build" => %{"shape" => "Build"}, "StorageLocation" => %{"shape" => "S3Location"}, "UploadCredentials" => %{"shape" => "AwsCredentials"}}, "type" => "structure"}, "DescribeVpcPeeringAuthorizationsInput" => %{"members" => %{}, "type" => "structure"}, "MatchmakingTicketList" => %{"member" => %{"shape" => "MatchmakingTicket"}, "type" => "list"}, "FleetUtilizationList" => %{"member" => %{"shape" => "FleetUtilization"}, "type" => "list"}, "DescribeInstancesOutput" => %{"members" => %{"Instances" => %{"shape" => "InstanceList"}, "NextToken" => %{"shape" => "NonZeroAndMaxString"}}, "type" => "structure"}, "CreateFleetOutput" => %{"members" => %{"FleetAttributes" => %{"shape" => "FleetAttributes"}}, "type" => "structure"}, "MetricGroup" => %{"max" => 255, "min" => 1, "type" => "string"}, "Instance" => %{"members" => %{"CreationTime" => %{"shape" => "Timestamp"}, "FleetId" => %{"shape" => "FleetId"}, "InstanceId" => %{"shape" => "InstanceId"}, "IpAddress" => %{"shape" => "IpAddress"}, "OperatingSystem" => %{"shape" => "OperatingSystem"}, "Status" => %{"shape" => "InstanceStatus"}, "Type" => %{"shape" => "EC2InstanceType"}}, "type" => "structure"}, "DeleteBuildInput" => %{"members" => %{"BuildId" => %{"shape" => "BuildId"}}, "required" => ["BuildId"], "type" => "structure"}, "PlayerDataMap" => %{"key" => %{"shape" => "NonZeroAndMaxString"}, "type" => "map", "value" => %{"shape" => "PlayerData"}}}
+  end
 end

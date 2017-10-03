@@ -70,9 +70,13 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       endpoint_prefix:  "tagging",
       type:             :json,
       version:          "2017-01-26",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetResourcesInput",
+      output_shape:     "GetResourcesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns all tag keys in the specified region for the AWS account.
@@ -90,9 +94,13 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       endpoint_prefix:  "tagging",
       type:             :json,
       version:          "2017-01-26",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetTagKeysInput",
+      output_shape:     "GetTagKeysOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns all tag values for the specified key in the specified region for
@@ -111,9 +119,13 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       endpoint_prefix:  "tagging",
       type:             :json,
       version:          "2017-01-26",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetTagValuesInput",
+      output_shape:     "GetTagValuesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Applies one or more tags to the specified resources. Note the following:
@@ -151,9 +163,13 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       endpoint_prefix:  "tagging",
       type:             :json,
       version:          "2017-01-26",
-      method:           :post
+      method:           :post,
+      input_shape:      "TagResourcesInput",
+      output_shape:     "TagResourcesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified tags from the specified resources. When you specify a
@@ -186,8 +202,19 @@ defmodule Baiji.ResourceGroupsTaggingApi do
       endpoint_prefix:  "tagging",
       type:             :json,
       version:          "2017-01-26",
-      method:           :post
+      method:           :post,
+      input_shape:      "UntagResourcesInput",
+      output_shape:     "UntagResourcesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"TagKeyList" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "GetTagValuesInput" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "PaginationToken" => %{"shape" => "PaginationToken"}}, "required" => ["Key"], "type" => "structure"}, "InvalidParameterException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TagFilterList" => %{"max" => 50, "member" => %{"shape" => "TagFilter"}, "min" => 0, "type" => "list"}, "ErrorMessage" => %{"type" => "string"}, "FailedResourcesMap" => %{"key" => %{"shape" => "ResourceARN"}, "type" => "map", "value" => %{"shape" => "FailureInfo"}}, "TagsPerPage" => %{"type" => "integer"}, "ResourceTagMapping" => %{"members" => %{"ResourceARN" => %{"shape" => "ResourceARN"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "ErrorCode" => %{"enum" => ["InternalServiceException", "InvalidParameterException"], "type" => "string"}, "ResourceARN" => %{"max" => 1600, "min" => 1, "type" => "string"}, "StatusCode" => %{"type" => "integer"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "AmazonResourceType" => %{"max" => 256, "min" => 0, "type" => "string"}, "ResourceARNList" => %{"max" => 20, "member" => %{"shape" => "ResourceARN"}, "min" => 1, "type" => "list"}, "TagFilter" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Values" => %{"shape" => "TagValueList"}}, "type" => "structure"}, "ResourceTypeFilterList" => %{"member" => %{"shape" => "AmazonResourceType"}, "type" => "list"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "GetResourcesInput" => %{"members" => %{"PaginationToken" => %{"shape" => "PaginationToken"}, "ResourceTypeFilters" => %{"shape" => "ResourceTypeFilterList"}, "ResourcesPerPage" => %{"shape" => "ResourcesPerPage"}, "TagFilters" => %{"shape" => "TagFilterList"}, "TagsPerPage" => %{"shape" => "TagsPerPage"}}, "type" => "structure"}, "TagValue" => %{"max" => 256, "min" => 0, "type" => "string"}, "TagValuesOutputList" => %{"member" => %{"shape" => "TagValue"}, "type" => "list"}, "GetTagValuesOutput" => %{"members" => %{"PaginationToken" => %{"shape" => "PaginationToken"}, "TagValues" => %{"shape" => "TagValuesOutputList"}}, "type" => "structure"}, "ResourceTagMappingList" => %{"member" => %{"shape" => "ResourceTagMapping"}, "type" => "list"}, "TagResourcesInput" => %{"members" => %{"ResourceARNList" => %{"shape" => "ResourceARNList"}, "Tags" => %{"shape" => "TagMap"}}, "required" => ["ResourceARNList", "Tags"], "type" => "structure"}, "InternalServiceException" => %{"exception" => true, "fault" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "UntagResourcesInput" => %{"members" => %{"ResourceARNList" => %{"shape" => "ResourceARNList"}, "TagKeys" => %{"shape" => "TagKeyListForUntag"}}, "required" => ["ResourceARNList", "TagKeys"], "type" => "structure"}, "FailureInfo" => %{"members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "ErrorMessage" => %{"shape" => "ErrorMessage"}, "StatusCode" => %{"shape" => "StatusCode"}}, "type" => "structure"}, "ResourcesPerPage" => %{"type" => "integer"}, "PaginationToken" => %{"max" => 2048, "min" => 0, "type" => "string"}, "ExceptionMessage" => %{"max" => 2048, "min" => 0, "type" => "string"}, "ThrottledException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TagResourcesOutput" => %{"members" => %{"FailedResourcesMap" => %{"shape" => "FailedResourcesMap"}}, "type" => "structure"}, "PaginationTokenExpiredException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "type" => "string"}, "GetTagKeysOutput" => %{"members" => %{"PaginationToken" => %{"shape" => "PaginationToken"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "type" => "structure"}, "TagMap" => %{"key" => %{"shape" => "TagKey"}, "max" => 50, "min" => 1, "type" => "map", "value" => %{"shape" => "TagValue"}}, "TagValueList" => %{"max" => 20, "member" => %{"shape" => "TagValue"}, "min" => 0, "type" => "list"}, "UntagResourcesOutput" => %{"members" => %{"FailedResourcesMap" => %{"shape" => "FailedResourcesMap"}}, "type" => "structure"}, "GetTagKeysInput" => %{"members" => %{"PaginationToken" => %{"shape" => "PaginationToken"}}, "type" => "structure"}, "GetResourcesOutput" => %{"members" => %{"PaginationToken" => %{"shape" => "PaginationToken"}, "ResourceTagMappingList" => %{"shape" => "ResourceTagMappingList"}}, "type" => "structure"}, "TagKeyListForUntag" => %{"max" => 50, "member" => %{"shape" => "TagKey"}, "min" => 1, "type" => "list"}}
+  end
 end

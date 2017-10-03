@@ -29,9 +29,13 @@ defmodule Baiji.Polly do
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteLexiconInput",
+      output_shape:     "DeleteLexiconOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the list of voices that are available for use when requesting
@@ -66,9 +70,13 @@ defmodule Baiji.Polly do
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeVoicesInput",
+      output_shape:     "DescribeVoicesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the content of the specified pronunciation lexicon stored in an AWS
@@ -86,9 +94,13 @@ defmodule Baiji.Polly do
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetLexiconInput",
+      output_shape:     "GetLexiconOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of pronunciation lexicons stored in an AWS Region. For more
@@ -106,9 +118,13 @@ defmodule Baiji.Polly do
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListLexiconsInput",
+      output_shape:     "ListLexiconsOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Stores a pronunciation lexicon in an AWS Region. If a lexicon with the same
@@ -130,9 +146,13 @@ defmodule Baiji.Polly do
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutLexiconInput",
+      output_shape:     "PutLexiconOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes. SSML
@@ -153,8 +173,19 @@ defmodule Baiji.Polly do
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "SynthesizeSpeechInput",
+      output_shape:     "SynthesizeSpeechOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"LexiconContent" => %{"type" => "string"}, "OutputFormat" => %{"enum" => ["json", "mp3", "ogg_vorbis", "pcm"], "type" => "string"}, "Size" => %{"type" => "integer"}, "ServiceFailureException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LanguageName" => %{"type" => "string"}, "PutLexiconOutput" => %{"members" => %{}, "type" => "structure"}, "LexiconAttributes" => %{"members" => %{"Alphabet" => %{"shape" => "Alphabet"}, "LanguageCode" => %{"shape" => "LanguageCode"}, "LastModified" => %{"shape" => "LastModified"}, "LexemesCount" => %{"shape" => "LexemesCount"}, "LexiconArn" => %{"shape" => "LexiconArn"}, "Size" => %{"shape" => "Size"}}, "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "InvalidSampleRateException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LastModified" => %{"type" => "timestamp"}, "LexiconDescriptionList" => %{"member" => %{"shape" => "LexiconDescription"}, "type" => "list"}, "InvalidNextTokenException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MaxLexemeLengthExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "SynthesizeSpeechInput" => %{"members" => %{"LexiconNames" => %{"shape" => "LexiconNameList"}, "OutputFormat" => %{"shape" => "OutputFormat"}, "SampleRate" => %{"shape" => "SampleRate"}, "SpeechMarkTypes" => %{"shape" => "SpeechMarkTypeList"}, "Text" => %{"shape" => "Text"}, "TextType" => %{"shape" => "TextType"}, "VoiceId" => %{"shape" => "VoiceId"}}, "required" => ["OutputFormat", "Text", "VoiceId"], "type" => "structure"}, "InvalidLexiconException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "TextLengthExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LanguageCode" => %{"enum" => ["cy-GB", "da-DK", "de-DE", "en-AU", "en-GB", "en-GB-WLS", "en-IN", "en-US", "es-ES", "es-US", "fr-CA", "fr-FR", "is-IS", "it-IT", "ja-JP", "nb-NO", "nl-NL", "pl-PL", "pt-BR", "pt-PT", "ro-RO", "ru-RU", "sv-SE", "tr-TR"], "type" => "string"}, "VoiceName" => %{"type" => "string"}, "RequestCharacters" => %{"type" => "integer"}, "VoiceId" => %{"enum" => ["Geraint", "Gwyneth", "Mads", "Naja", "Hans", "Marlene", "Nicole", "Russell", "Amy", "Brian", "Emma", "Raveena", "Ivy", "Joanna", "Joey", "Justin", "Kendra", "Kimberly", "Salli", "Conchita", "Enrique", "Miguel", "Penelope", "Chantal", "Celine", "Mathieu", "Dora", "Karl", "Carla", "Giorgio", "Mizuki", "Liv", "Lotte", "Ruben", "Ewa", "Jacek", "Jan", "Maja", "Ricardo", "Vitoria", "Cristiano", "Ines", "Carmen", "Maxim", "Tatyana", "Astrid", "Filiz", "Vicki"], "type" => "string"}, "GetLexiconInput" => %{"members" => %{"Name" => %{"location" => "uri", "locationName" => "LexiconName", "shape" => "LexiconName"}}, "required" => ["Name"], "type" => "structure"}, "UnsupportedPlsAlphabetException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LexiconNameList" => %{"max" => 5, "member" => %{"shape" => "LexiconName"}, "type" => "list"}, "Alphabet" => %{"type" => "string"}, "SpeechMarkTypeList" => %{"max" => 4, "member" => %{"shape" => "SpeechMarkType"}, "type" => "list"}, "SsmlMarksNotSupportedForTextTypeException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DescribeVoicesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Voices" => %{"shape" => "VoiceList"}}, "type" => "structure"}, "Gender" => %{"enum" => ["Female", "Male"], "type" => "string"}, "ContentType" => %{"type" => "string"}, "Voice" => %{"members" => %{"Gender" => %{"shape" => "Gender"}, "Id" => %{"shape" => "VoiceId"}, "LanguageCode" => %{"shape" => "LanguageCode"}, "LanguageName" => %{"shape" => "LanguageName"}, "Name" => %{"shape" => "VoiceName"}}, "type" => "structure"}, "TextType" => %{"enum" => ["ssml", "text"], "type" => "string"}, "ListLexiconsOutput" => %{"members" => %{"Lexicons" => %{"shape" => "LexiconDescriptionList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DeleteLexiconInput" => %{"members" => %{"Name" => %{"location" => "uri", "locationName" => "LexiconName", "shape" => "LexiconName"}}, "required" => ["Name"], "type" => "structure"}, "SpeechMarkType" => %{"enum" => ["sentence", "ssml", "viseme", "word"], "type" => "string"}, "SynthesizeSpeechOutput" => %{"members" => %{"AudioStream" => %{"shape" => "AudioStream"}, "ContentType" => %{"location" => "header", "locationName" => "Content-Type", "shape" => "ContentType"}, "RequestCharacters" => %{"location" => "header", "locationName" => "x-amzn-RequestCharacters", "shape" => "RequestCharacters"}}, "payload" => "AudioStream", "type" => "structure"}, "LexiconSizeExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MaxLexiconsNumberExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UnsupportedPlsLanguageException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "InvalidSsmlException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LexiconArn" => %{"type" => "string"}, "ListLexiconsInput" => %{"members" => %{"NextToken" => %{"location" => "querystring", "locationName" => "NextToken", "shape" => "NextToken"}}, "type" => "structure"}, "DescribeVoicesInput" => %{"members" => %{"LanguageCode" => %{"location" => "querystring", "locationName" => "LanguageCode", "shape" => "LanguageCode"}, "NextToken" => %{"location" => "querystring", "locationName" => "NextToken", "shape" => "NextToken"}}, "type" => "structure"}, "GetLexiconOutput" => %{"members" => %{"Lexicon" => %{"shape" => "Lexicon"}, "LexiconAttributes" => %{"shape" => "LexiconAttributes"}}, "type" => "structure"}, "Lexicon" => %{"members" => %{"Content" => %{"shape" => "LexiconContent"}, "Name" => %{"shape" => "LexiconName"}}, "type" => "structure"}, "AudioStream" => %{"streaming" => true, "type" => "blob"}, "VoiceList" => %{"member" => %{"shape" => "Voice"}, "type" => "list"}, "LexemesCount" => %{"type" => "integer"}, "Text" => %{"type" => "string"}, "DeleteLexiconOutput" => %{"members" => %{}, "type" => "structure"}, "NextToken" => %{"type" => "string"}, "SampleRate" => %{"type" => "string"}, "LexiconName" => %{"pattern" => "[0-9A-Za-z]{1,20}", "sensitive" => true, "type" => "string"}, "MarksNotSupportedForFormatException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "LexiconNotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutLexiconInput" => %{"members" => %{"Content" => %{"shape" => "LexiconContent"}, "Name" => %{"location" => "uri", "locationName" => "LexiconName", "shape" => "LexiconName"}}, "required" => ["Name", "Content"], "type" => "structure"}, "LexiconDescription" => %{"members" => %{"Attributes" => %{"shape" => "LexiconAttributes"}, "Name" => %{"shape" => "LexiconName"}}, "type" => "structure"}}
+  end
 end

@@ -42,9 +42,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "AddPermissionRequest",
+      output_shape:     "AddPermissionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an alias that points to the specified Lambda function version. For
@@ -65,9 +69,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateAliasRequest",
+      output_shape:     "AliasConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Identifies a stream as an event source for a Lambda function. It can be
@@ -109,9 +117,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateEventSourceMappingRequest",
+      output_shape:     "EventSourceMappingConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new Lambda function. The function metadata is created from the
@@ -137,9 +149,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateFunctionRequest",
+      output_shape:     "FunctionConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified Lambda function alias. For more information, see
@@ -159,9 +175,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteAliasRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes an event source mapping. This means AWS Lambda will no longer
@@ -181,9 +201,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteEventSourceMappingRequest",
+      output_shape:     "EventSourceMappingConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified Lambda function code and configuration.
@@ -212,9 +236,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteFunctionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a customer's account settings.
@@ -237,9 +265,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetAccountSettingsRequest",
+      output_shape:     "GetAccountSettingsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the specified alias information such as the alias ARN, description,
@@ -260,9 +292,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetAliasRequest",
+      output_shape:     "AliasConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns configuration information for the specified event source mapping
@@ -282,9 +318,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetEventSourceMappingRequest",
+      output_shape:     "EventSourceMappingConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the configuration information of the Lambda function and a
@@ -313,9 +353,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetFunctionRequest",
+      output_shape:     "GetFunctionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the configuration information of the Lambda function. This the same
@@ -344,9 +388,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetFunctionConfigurationRequest",
+      output_shape:     "FunctionConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the resource policy associated with the specified Lambda function.
@@ -370,9 +418,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetPolicyRequest",
+      output_shape:     "GetPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Invokes a specific Lambda function. For an example, see [Create the Lambda
@@ -402,9 +454,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "InvocationRequest",
+      output_shape:     "InvocationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   <important> This API is deprecated. We recommend you use `Invoke` API (see
@@ -428,9 +484,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "InvokeAsyncRequest",
+      output_shape:     "InvokeAsyncResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns list of aliases created for a Lambda function. For each alias, the
@@ -452,9 +512,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListAliasesRequest",
+      output_shape:     "ListAliasesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of event source mappings you created using the
@@ -483,9 +547,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListEventSourceMappingsRequest",
+      output_shape:     "ListEventSourceMappingsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of your Lambda functions. For each function, the response
@@ -510,9 +578,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListFunctionsRequest",
+      output_shape:     "ListFunctionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of tags assigned to a function when supplied the function
@@ -529,9 +601,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListTagsRequest",
+      output_shape:     "ListTagsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   List all versions of a function. For information about the versioning
@@ -549,9 +625,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListVersionsByFunctionRequest",
+      output_shape:     "ListVersionsByFunctionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Publishes a version of your function from the current snapshot of $LATEST.
@@ -572,9 +652,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "PublishVersionRequest",
+      output_shape:     "FunctionConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   You can remove individual permissions from an resource policy associated
@@ -603,9 +687,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "RemovePermissionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a list of tags (key-value pairs) on the Lambda function. Requires
@@ -624,9 +712,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "TagResourceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes tags from a Lambda function. Requires the function ARN (Amazon
@@ -643,9 +735,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "UntagResourceRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Using this API you can update the function version to which the alias
@@ -666,9 +762,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateAliasRequest",
+      output_shape:     "AliasConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   You can update an event source mapping. This is useful if you want to
@@ -701,9 +801,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateEventSourceMappingRequest",
+      output_shape:     "EventSourceMappingConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the code for the specified Lambda function. This operation must
@@ -729,9 +833,13 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateFunctionCodeRequest",
+      output_shape:     "FunctionConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the configuration parameters for the specified Lambda function by
@@ -758,8 +866,19 @@ defmodule Baiji.Lambda do
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateFunctionConfigurationRequest",
+      output_shape:     "FunctionConfiguration",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"NamespacedFunctionName" => %{"max" => 170, "min" => 1, "pattern" => "(arn:aws:lambda:)?([a-z]{2}-[a-z]+-\\d{1}:)?(\\d{12}:)?(function:)?([a-zA-Z0-9-_\\.]+)(:(\\$LATEST|[a-zA-Z0-9-_]+))?", "type" => "string"}, "SubnetIds" => %{"max" => 16, "member" => %{"shape" => "SubnetId"}, "type" => "list"}, "MaxListItems" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "InvocationType" => %{"enum" => ["Event", "RequestResponse", "DryRun"], "type" => "string"}, "EnvironmentVariableName" => %{"pattern" => "[a-zA-Z]([a-zA-Z0-9_])+", "sensitive" => true, "type" => "string"}, "TagKeyList" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "Environment" => %{"members" => %{"Variables" => %{"shape" => "EnvironmentVariables"}}, "type" => "structure"}, "SourceOwner" => %{"pattern" => "\\d{12}", "type" => "string"}, "ListFunctionsResponse" => %{"members" => %{"Functions" => %{"shape" => "FunctionList"}, "NextMarker" => %{"shape" => "String"}}, "type" => "structure"}, "TracingMode" => %{"enum" => ["Active", "PassThrough"], "type" => "string"}, "ListVersionsByFunctionRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "NamespacedFunctionName"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "String"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxListItems"}}, "required" => ["FunctionName"], "type" => "structure"}, "String" => %{"type" => "string"}, "DeadLetterConfig" => %{"members" => %{"TargetArn" => %{"shape" => "ResourceArn"}}, "type" => "structure"}, "GetFunctionRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "NamespacedFunctionName"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}}, "required" => ["FunctionName"], "type" => "structure"}, "FunctionName" => %{"max" => 140, "min" => 1, "pattern" => "(arn:aws:lambda:)?([a-z]{2}-[a-z]+-\\d{1}:)?(\\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\\$LATEST|[a-zA-Z0-9-_]+))?", "type" => "string"}, "Boolean" => %{"type" => "boolean"}, "InvocationRequest" => %{"members" => %{"ClientContext" => %{"location" => "header", "locationName" => "X-Amz-Client-Context", "shape" => "String"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "NamespacedFunctionName"}, "InvocationType" => %{"location" => "header", "locationName" => "X-Amz-Invocation-Type", "shape" => "InvocationType"}, "LogType" => %{"location" => "header", "locationName" => "X-Amz-Log-Type", "shape" => "LogType"}, "Payload" => %{"shape" => "Blob"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}}, "payload" => "Payload", "required" => ["FunctionName"], "type" => "structure"}, "SensitiveString" => %{"sensitive" => true, "type" => "string"}, "MemorySize" => %{"max" => 1536, "min" => 128, "type" => "integer"}, "ServiceException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "VpcConfigResponse" => %{"members" => %{"SecurityGroupIds" => %{"shape" => "SecurityGroupIds"}, "SubnetIds" => %{"shape" => "SubnetIds"}, "VpcId" => %{"shape" => "VpcId"}}, "type" => "structure"}, "ListTagsResponse" => %{"members" => %{"Tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "DeleteAliasRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Name" => %{"location" => "uri", "locationName" => "Name", "shape" => "Alias"}}, "required" => ["FunctionName", "Name"], "type" => "structure"}, "AddPermissionRequest" => %{"members" => %{"Action" => %{"shape" => "Action"}, "EventSourceToken" => %{"shape" => "EventSourceToken"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Principal" => %{"shape" => "Principal"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}, "SourceAccount" => %{"shape" => "SourceOwner"}, "SourceArn" => %{"shape" => "Arn"}, "StatementId" => %{"shape" => "StatementId"}}, "required" => ["FunctionName", "StatementId", "Action", "Principal"], "type" => "structure"}, "UpdateFunctionConfigurationRequest" => %{"members" => %{"DeadLetterConfig" => %{"shape" => "DeadLetterConfig"}, "Description" => %{"shape" => "Description"}, "Environment" => %{"shape" => "Environment"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Handler" => %{"shape" => "Handler"}, "KMSKeyArn" => %{"shape" => "KMSKeyArn"}, "MemorySize" => %{"shape" => "MemorySize"}, "Role" => %{"shape" => "RoleArn"}, "Runtime" => %{"shape" => "Runtime"}, "Timeout" => %{"shape" => "Timeout"}, "TracingConfig" => %{"shape" => "TracingConfig"}, "VpcConfig" => %{"shape" => "VpcConfig"}}, "required" => ["FunctionName"], "type" => "structure"}, "InvalidRuntimeException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "KMSKeyArn" => %{"pattern" => "(arn:aws:[a-z0-9-.]+:.*)|()", "type" => "string"}, "ENILimitReachedException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "SecurityGroupIds" => %{"max" => 5, "member" => %{"shape" => "SecurityGroupId"}, "type" => "list"}, "VpcConfig" => %{"members" => %{"SecurityGroupIds" => %{"shape" => "SecurityGroupIds"}, "SubnetIds" => %{"shape" => "SubnetIds"}}, "type" => "structure"}, "InvalidParameterValueException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "CreateEventSourceMappingRequest" => %{"members" => %{"BatchSize" => %{"shape" => "BatchSize"}, "Enabled" => %{"shape" => "Enabled"}, "EventSourceArn" => %{"shape" => "Arn"}, "FunctionName" => %{"shape" => "FunctionName"}, "StartingPosition" => %{"shape" => "EventSourcePosition"}, "StartingPositionTimestamp" => %{"shape" => "Date"}}, "required" => ["EventSourceArn", "FunctionName", "StartingPosition"], "type" => "structure"}, "AliasConfiguration" => %{"members" => %{"AliasArn" => %{"shape" => "FunctionArn"}, "Description" => %{"shape" => "Description"}, "FunctionVersion" => %{"shape" => "Version"}, "Name" => %{"shape" => "Alias"}}, "type" => "structure"}, "ResourceConflictException" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "ThrottleReason" => %{"enum" => ["ConcurrentInvocationLimitExceeded", "FunctionInvocationRateLimitExceeded", "CallerRateLimitExceeded"], "type" => "string"}, "AccountUsage" => %{"members" => %{"FunctionCount" => %{"shape" => "Long"}, "TotalCodeSize" => %{"shape" => "Long"}}, "type" => "structure"}, "PublishVersionRequest" => %{"members" => %{"CodeSha256" => %{"shape" => "String"}, "Description" => %{"shape" => "Description"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}}, "required" => ["FunctionName"], "type" => "structure"}, "TooManyRequestsException" => %{"error" => %{"httpStatusCode" => 429}, "exception" => true, "members" => %{"Reason" => %{"shape" => "ThrottleReason"}, "Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}, "retryAfterSeconds" => %{"location" => "header", "locationName" => "Retry-After", "shape" => "String"}}, "type" => "structure"}, "S3Bucket" => %{"max" => 63, "min" => 3, "pattern" => "^[0-9A-Za-z\\.\\-_]*(?<!\\.)$", "type" => "string"}, "HttpStatus" => %{"type" => "integer"}, "ListAliasesResponse" => %{"members" => %{"Aliases" => %{"shape" => "AliasList"}, "NextMarker" => %{"shape" => "String"}}, "type" => "structure"}, "InvalidZipFileException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "MasterRegion" => %{"pattern" => "ALL|[a-z]{2}(-gov)?-[a-z]+-\\d{1}", "type" => "string"}, "ListTagsRequest" => %{"members" => %{"Resource" => %{"location" => "uri", "locationName" => "ARN", "shape" => "FunctionArn"}}, "required" => ["Resource"], "type" => "structure"}, "ListAliasesRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "FunctionVersion" => %{"location" => "querystring", "locationName" => "FunctionVersion", "shape" => "Version"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "String"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxListItems"}}, "required" => ["FunctionName"], "type" => "structure"}, "InvokeAsyncResponse" => %{"deprecated" => true, "members" => %{"Status" => %{"location" => "statusCode", "shape" => "HttpStatus"}}, "type" => "structure"}, "KMSAccessDeniedException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "Description" => %{"max" => 256, "min" => 0, "type" => "string"}, "UnsupportedMediaTypeException" => %{"error" => %{"httpStatusCode" => 415}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "FunctionCode" => %{"members" => %{"S3Bucket" => %{"shape" => "S3Bucket"}, "S3Key" => %{"shape" => "S3Key"}, "S3ObjectVersion" => %{"shape" => "S3ObjectVersion"}, "ZipFile" => %{"shape" => "Blob"}}, "type" => "structure"}, "VpcId" => %{"type" => "string"}, "FunctionCodeLocation" => %{"members" => %{"Location" => %{"shape" => "String"}, "RepositoryType" => %{"shape" => "String"}}, "type" => "structure"}, "Version" => %{"max" => 1024, "min" => 1, "pattern" => "(\\$LATEST|[0-9]+)", "type" => "string"}, "Action" => %{"pattern" => "(lambda:[*]|lambda:[a-zA-Z]+|[*])", "type" => "string"}, "UpdateEventSourceMappingRequest" => %{"members" => %{"BatchSize" => %{"shape" => "BatchSize"}, "Enabled" => %{"shape" => "Enabled"}, "FunctionName" => %{"shape" => "FunctionName"}, "UUID" => %{"location" => "uri", "locationName" => "UUID", "shape" => "String"}}, "required" => ["UUID"], "type" => "structure"}, "GetAccountSettingsRequest" => %{"members" => %{}, "type" => "structure"}, "CodeStorageExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "Date" => %{"type" => "timestamp"}, "RoleArn" => %{"pattern" => "arn:aws:iam::\\d{12}:role/?[a-zA-Z_0-9+=,.@\\-_/]+", "type" => "string"}, "EventSourceMappingsList" => %{"member" => %{"shape" => "EventSourceMappingConfiguration"}, "type" => "list"}, "S3ObjectVersion" => %{"max" => 1024, "min" => 1, "type" => "string"}, "UntagResourceRequest" => %{"members" => %{"Resource" => %{"location" => "uri", "locationName" => "ARN", "shape" => "FunctionArn"}, "TagKeys" => %{"location" => "querystring", "locationName" => "tagKeys", "shape" => "TagKeyList"}}, "required" => ["Resource", "TagKeys"], "type" => "structure"}, "StatementId" => %{"max" => 100, "min" => 1, "pattern" => "([a-zA-Z0-9-_]+)", "type" => "string"}, "CreateFunctionRequest" => %{"members" => %{"Code" => %{"shape" => "FunctionCode"}, "DeadLetterConfig" => %{"shape" => "DeadLetterConfig"}, "Description" => %{"shape" => "Description"}, "Environment" => %{"shape" => "Environment"}, "FunctionName" => %{"shape" => "FunctionName"}, "Handler" => %{"shape" => "Handler"}, "KMSKeyArn" => %{"shape" => "KMSKeyArn"}, "MemorySize" => %{"shape" => "MemorySize"}, "Publish" => %{"shape" => "Boolean"}, "Role" => %{"shape" => "RoleArn"}, "Runtime" => %{"shape" => "Runtime"}, "Tags" => %{"shape" => "Tags"}, "Timeout" => %{"shape" => "Timeout"}, "TracingConfig" => %{"shape" => "TracingConfig"}, "VpcConfig" => %{"shape" => "VpcConfig"}}, "required" => ["FunctionName", "Runtime", "Role", "Handler", "Code"], "type" => "structure"}, "AccountLimit" => %{"members" => %{"CodeSizeUnzipped" => %{"shape" => "Long"}, "CodeSizeZipped" => %{"shape" => "Long"}, "ConcurrentExecutions" => %{"shape" => "Integer"}, "TotalCodeSize" => %{"shape" => "Long"}}, "type" => "structure"}, "EnvironmentVariables" => %{"key" => %{"shape" => "EnvironmentVariableName"}, "sensitive" => true, "type" => "map", "value" => %{"shape" => "EnvironmentVariableValue"}}, "Tags" => %{"key" => %{"shape" => "TagKey"}, "type" => "map", "value" => %{"shape" => "TagValue"}}, "Timestamp" => %{"type" => "string"}, "NameSpacedFunctionArn" => %{"pattern" => "arn:aws:lambda:[a-z]{2}-[a-z]+-\\d{1}:\\d{12}:function:[a-zA-Z0-9-_\\.]+(:(\\$LATEST|[a-zA-Z0-9-_]+))?", "type" => "string"}, "KMSInvalidStateException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "BlobStream" => %{"streaming" => true, "type" => "blob"}, "EnvironmentError" => %{"members" => %{"ErrorCode" => %{"shape" => "String"}, "Message" => %{"shape" => "SensitiveString"}}, "type" => "structure"}, "DeleteFunctionRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}}, "required" => ["FunctionName"], "type" => "structure"}, "EventSourceMappingConfiguration" => %{"members" => %{"BatchSize" => %{"shape" => "BatchSize"}, "EventSourceArn" => %{"shape" => "Arn"}, "FunctionArn" => %{"shape" => "FunctionArn"}, "LastModified" => %{"shape" => "Date"}, "LastProcessingResult" => %{"shape" => "String"}, "State" => %{"shape" => "String"}, "StateTransitionReason" => %{"shape" => "String"}, "UUID" => %{"shape" => "String"}}, "type" => "structure"}, "PolicyLengthExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "EC2ThrottledException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "EC2AccessDeniedException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "InvalidSecurityGroupIDException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "TagValue" => %{"type" => "string"}, "DeleteEventSourceMappingRequest" => %{"members" => %{"UUID" => %{"location" => "uri", "locationName" => "UUID", "shape" => "String"}}, "required" => ["UUID"], "type" => "structure"}, "RequestTooLargeException" => %{"error" => %{"httpStatusCode" => 413}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "Alias" => %{"max" => 128, "min" => 1, "pattern" => "(?!^[0-9]+$)([a-zA-Z0-9-_]+)", "type" => "string"}, "Qualifier" => %{"max" => 128, "min" => 1, "pattern" => "(|[a-zA-Z0-9$_-]+)", "type" => "string"}, "InvokeAsyncRequest" => %{"deprecated" => true, "members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "NamespacedFunctionName"}, "InvokeArgs" => %{"shape" => "BlobStream"}}, "payload" => "InvokeArgs", "required" => ["FunctionName", "InvokeArgs"], "type" => "structure"}, "GetFunctionConfigurationRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "NamespacedFunctionName"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}}, "required" => ["FunctionName"], "type" => "structure"}, "Arn" => %{"pattern" => "arn:aws:([a-zA-Z0-9\\-])+:([a-z]{2}-[a-z]+-\\d{1})?:(\\d{12})?:(.*)", "type" => "string"}, "SecurityGroupId" => %{"type" => "string"}, "FunctionConfiguration" => %{"members" => %{"CodeSha256" => %{"shape" => "String"}, "CodeSize" => %{"shape" => "Long"}, "DeadLetterConfig" => %{"shape" => "DeadLetterConfig"}, "Description" => %{"shape" => "Description"}, "Environment" => %{"shape" => "EnvironmentResponse"}, "FunctionArn" => %{"shape" => "NameSpacedFunctionArn"}, "FunctionName" => %{"shape" => "NamespacedFunctionName"}, "Handler" => %{"shape" => "Handler"}, "KMSKeyArn" => %{"shape" => "KMSKeyArn"}, "LastModified" => %{"shape" => "Timestamp"}, "MasterArn" => %{"shape" => "FunctionArn"}, "MemorySize" => %{"shape" => "MemorySize"}, "Role" => %{"shape" => "RoleArn"}, "Runtime" => %{"shape" => "Runtime"}, "Timeout" => %{"shape" => "Timeout"}, "TracingConfig" => %{"shape" => "TracingConfigResponse"}, "Version" => %{"shape" => "Version"}, "VpcConfig" => %{"shape" => "VpcConfigResponse"}}, "type" => "structure"}, "GetPolicyResponse" => %{"members" => %{"Policy" => %{"shape" => "String"}}, "type" => "structure"}, "FunctionArn" => %{"pattern" => "arn:aws:lambda:[a-z]{2}-[a-z]+-\\d{1}:\\d{12}:function:[a-zA-Z0-9-_]+(:(\\$LATEST|[a-zA-Z0-9-_]+))?", "type" => "string"}, "GetEventSourceMappingRequest" => %{"members" => %{"UUID" => %{"location" => "uri", "locationName" => "UUID", "shape" => "String"}}, "required" => ["UUID"], "type" => "structure"}, "EventSourcePosition" => %{"enum" => ["TRIM_HORIZON", "LATEST", "AT_TIMESTAMP"], "type" => "string"}, "ResourceArn" => %{"pattern" => "(arn:aws:[a-z0-9-.]+:.*)|()", "type" => "string"}, "TagResourceRequest" => %{"members" => %{"Resource" => %{"location" => "uri", "locationName" => "ARN", "shape" => "FunctionArn"}, "Tags" => %{"shape" => "Tags"}}, "required" => ["Resource", "Tags"], "type" => "structure"}, "Long" => %{"type" => "long"}, "ListVersionsByFunctionResponse" => %{"members" => %{"NextMarker" => %{"shape" => "String"}, "Versions" => %{"shape" => "FunctionList"}}, "type" => "structure"}, "SubnetId" => %{"type" => "string"}, "Handler" => %{"max" => 128, "pattern" => "[^\\s]+", "type" => "string"}, "BatchSize" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "ResourceNotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "ListEventSourceMappingsResponse" => %{"members" => %{"EventSourceMappings" => %{"shape" => "EventSourceMappingsList"}, "NextMarker" => %{"shape" => "String"}}, "type" => "structure"}, "InvocationResponse" => %{"members" => %{"FunctionError" => %{"location" => "header", "locationName" => "X-Amz-Function-Error", "shape" => "String"}, "LogResult" => %{"location" => "header", "locationName" => "X-Amz-Log-Result", "shape" => "String"}, "Payload" => %{"shape" => "Blob"}, "StatusCode" => %{"location" => "statusCode", "shape" => "Integer"}}, "payload" => "Payload", "type" => "structure"}, "UpdateAliasRequest" => %{"members" => %{"Description" => %{"shape" => "Description"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "FunctionVersion" => %{"shape" => "Version"}, "Name" => %{"location" => "uri", "locationName" => "Name", "shape" => "Alias"}}, "required" => ["FunctionName", "Name"], "type" => "structure"}, "ListEventSourceMappingsRequest" => %{"members" => %{"EventSourceArn" => %{"location" => "querystring", "locationName" => "EventSourceArn", "shape" => "Arn"}, "FunctionName" => %{"location" => "querystring", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "String"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxListItems"}}, "type" => "structure"}, "KMSDisabledException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "TracingConfig" => %{"members" => %{"Mode" => %{"shape" => "TracingMode"}}, "type" => "structure"}, "TracingConfigResponse" => %{"members" => %{"Mode" => %{"shape" => "TracingMode"}}, "type" => "structure"}, "GetAccountSettingsResponse" => %{"members" => %{"AccountLimit" => %{"shape" => "AccountLimit"}, "AccountUsage" => %{"shape" => "AccountUsage"}}, "type" => "structure"}, "Runtime" => %{"enum" => ["nodejs", "nodejs4.3", "nodejs6.10", "java8", "python2.7", "python3.6", "dotnetcore1.0", "nodejs4.3-edge"], "type" => "string"}, "FunctionVersion" => %{"enum" => ["ALL"], "type" => "string"}, "Principal" => %{"pattern" => ".*", "type" => "string"}, "RemovePermissionRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}, "StatementId" => %{"location" => "uri", "locationName" => "StatementId", "shape" => "NamespacedStatementId"}}, "required" => ["FunctionName", "StatementId"], "type" => "structure"}, "GetPolicyRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "NamespacedFunctionName"}, "Qualifier" => %{"location" => "querystring", "locationName" => "Qualifier", "shape" => "Qualifier"}}, "required" => ["FunctionName"], "type" => "structure"}, "EnvironmentVariableValue" => %{"sensitive" => true, "type" => "string"}, "GetAliasRequest" => %{"members" => %{"FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Name" => %{"location" => "uri", "locationName" => "Name", "shape" => "Alias"}}, "required" => ["FunctionName", "Name"], "type" => "structure"}, "CreateAliasRequest" => %{"members" => %{"Description" => %{"shape" => "Description"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "FunctionVersion" => %{"shape" => "Version"}, "Name" => %{"shape" => "Alias"}}, "required" => ["FunctionName", "Name", "FunctionVersion"], "type" => "structure"}, "AliasList" => %{"member" => %{"shape" => "AliasConfiguration"}, "type" => "list"}, "FunctionList" => %{"member" => %{"shape" => "FunctionConfiguration"}, "type" => "list"}, "TagKey" => %{"type" => "string"}, "Enabled" => %{"type" => "boolean"}, "InvalidSubnetIDException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "InvalidRequestContentException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Type" => %{"shape" => "String"}, "message" => %{"shape" => "String"}}, "type" => "structure"}, "EnvironmentResponse" => %{"members" => %{"Error" => %{"shape" => "EnvironmentError"}, "Variables" => %{"shape" => "EnvironmentVariables"}}, "type" => "structure"}, "NamespacedStatementId" => %{"max" => 100, "min" => 1, "pattern" => "([a-zA-Z0-9-_.]+)", "type" => "string"}, "UpdateFunctionCodeRequest" => %{"members" => %{"DryRun" => %{"shape" => "Boolean"}, "FunctionName" => %{"location" => "uri", "locationName" => "FunctionName", "shape" => "FunctionName"}, "Publish" => %{"shape" => "Boolean"}, "S3Bucket" => %{"shape" => "S3Bucket"}, "S3Key" => %{"shape" => "S3Key"}, "S3ObjectVersion" => %{"shape" => "S3ObjectVersion"}, "ZipFile" => %{"shape" => "Blob"}}, "required" => ["FunctionName"], "type" => "structure"}, "Integer" => %{"type" => "integer"}, "KMSNotFoundException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "AddPermissionResponse" => %{"members" => %{"Statement" => %{"shape" => "String"}}, "type" => "structure"}, "ListFunctionsRequest" => %{"members" => %{"FunctionVersion" => %{"location" => "querystring", "locationName" => "FunctionVersion", "shape" => "FunctionVersion"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "String"}, "MasterRegion" => %{"location" => "querystring", "locationName" => "MasterRegion", "shape" => "MasterRegion"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxListItems"}}, "type" => "structure"}, "S3Key" => %{"max" => 1024, "min" => 1, "type" => "string"}, "Timeout" => %{"min" => 1, "type" => "integer"}, "EC2UnexpectedException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"EC2ErrorCode" => %{"shape" => "String"}, "Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "Blob" => %{"sensitive" => true, "type" => "blob"}, "SubnetIPAddressLimitReachedException" => %{"error" => %{"httpStatusCode" => 502}, "exception" => true, "members" => %{"Message" => %{"shape" => "String"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "EventSourceToken" => %{"max" => 256, "min" => 0, "pattern" => "[a-zA-Z0-9._\\-]+", "type" => "string"}, "LogType" => %{"enum" => ["None", "Tail"], "type" => "string"}, "GetFunctionResponse" => %{"members" => %{"Code" => %{"shape" => "FunctionCodeLocation"}, "Configuration" => %{"shape" => "FunctionConfiguration"}, "Tags" => %{"shape" => "Tags"}}, "type" => "structure"}}
+  end
 end

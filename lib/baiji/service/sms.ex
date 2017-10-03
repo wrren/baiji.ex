@@ -23,9 +23,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateReplicationJobRequest",
+      output_shape:     "CreateReplicationJobResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The DeleteReplicationJob API is used to delete a ReplicationJob, resulting
@@ -46,9 +50,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteReplicationJobRequest",
+      output_shape:     "DeleteReplicationJobResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The DeleteServerCatalog API clears all servers from your server catalog.
@@ -68,9 +76,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteServerCatalogRequest",
+      output_shape:     "DeleteServerCatalogResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The DisassociateConnector API will disassociate a connector from the Server
@@ -89,9 +101,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateConnectorRequest",
+      output_shape:     "DisassociateConnectorResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The GetConnectors API returns a list of connectors that are registered with
@@ -110,9 +126,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetConnectorsRequest",
+      output_shape:     "GetConnectorsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The GetReplicationJobs API will return all of your ReplicationJobs and
@@ -132,9 +152,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetReplicationJobsRequest",
+      output_shape:     "GetReplicationJobsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The GetReplicationRuns API will return all ReplicationRuns for a given
@@ -155,9 +179,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetReplicationRunsRequest",
+      output_shape:     "GetReplicationRunsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The GetServers API returns a list of all servers in your server catalog.
@@ -177,9 +205,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetServersRequest",
+      output_shape:     "GetServersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The ImportServerCatalog API is used to gather the complete list of
@@ -201,9 +233,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "ImportServerCatalogRequest",
+      output_shape:     "ImportServerCatalogResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The StartOnDemandReplicationRun API is used to start a ReplicationRun on
@@ -225,9 +261,13 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartOnDemandReplicationRunRequest",
+      output_shape:     "StartOnDemandReplicationRunResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The UpdateReplicationJob API is used to change the settings of your
@@ -247,8 +287,19 @@ defmodule Baiji.SMS do
       endpoint_prefix:  "sms",
       type:             :json,
       version:          "2016-10-24",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateReplicationJobRequest",
+      output_shape:     "UpdateReplicationJobResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"VmManagerType" => %{"enum" => ["VSPHERE"], "type" => "string"}, "UnauthorizedOperationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "CreateReplicationJobRequest" => %{"members" => %{"description" => %{"shape" => "Description"}, "frequency" => %{"shape" => "Frequency"}, "licenseType" => %{"shape" => "LicenseType"}, "roleName" => %{"shape" => "RoleName"}, "seedReplicationTime" => %{"shape" => "Timestamp"}, "serverId" => %{"shape" => "ServerId"}}, "required" => ["serverId", "seedReplicationTime", "frequency"], "type" => "structure"}, "DeleteReplicationJobResponse" => %{"members" => %{}, "type" => "structure"}, "ReplicationRun" => %{"members" => %{"amiId" => %{"shape" => "AmiId"}, "completedTime" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "replicationRunId" => %{"shape" => "ReplicationRunId"}, "scheduledStartTime" => %{"shape" => "Timestamp"}, "state" => %{"shape" => "ReplicationRunState"}, "statusMessage" => %{"shape" => "ReplicationRunStatusMessage"}, "type" => %{"shape" => "ReplicationRunType"}}, "type" => "structure"}, "InvalidParameterException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "VmServer" => %{"members" => %{"vmManagerName" => %{"shape" => "VmManagerName"}, "vmManagerType" => %{"shape" => "VmManagerType"}, "vmName" => %{"shape" => "VmName"}, "vmPath" => %{"shape" => "VmPath"}, "vmServerAddress" => %{"shape" => "VmServerAddress"}}, "type" => "structure"}, "ConnectorStatus" => %{"enum" => ["HEALTHY", "UNHEALTHY"], "type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "StartOnDemandReplicationRunRequest" => %{"members" => %{"description" => %{"shape" => "Description"}, "replicationJobId" => %{"shape" => "ReplicationJobId"}}, "required" => ["replicationJobId"], "type" => "structure"}, "ReplicationRunStatusMessage" => %{"type" => "string"}, "ReplicationJobList" => %{"member" => %{"locationName" => "item", "shape" => "ReplicationJob"}, "type" => "list"}, "DeleteServerCatalogRequest" => %{"members" => %{}, "type" => "structure"}, "ReplicationJobTerminated" => %{"type" => "boolean"}, "GetReplicationRunsRequest" => %{"members" => %{"maxResults" => %{"shape" => "MaxResults"}, "nextToken" => %{"shape" => "NextToken"}, "replicationJobId" => %{"shape" => "ReplicationJobId"}}, "required" => ["replicationJobId"], "type" => "structure"}, "DisassociateConnectorResponse" => %{"members" => %{}, "type" => "structure"}, "ServerCannotBeReplicatedException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "RoleName" => %{"type" => "string"}, "ServerList" => %{"member" => %{"locationName" => "item", "shape" => "Server"}, "type" => "list"}, "GetReplicationJobsResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "replicationJobList" => %{"shape" => "ReplicationJobList"}}, "type" => "structure"}, "DeleteReplicationJobRequest" => %{"members" => %{"replicationJobId" => %{"shape" => "ReplicationJobId"}}, "required" => ["replicationJobId"], "type" => "structure"}, "ImportServerCatalogResponse" => %{"members" => %{}, "type" => "structure"}, "VmManagerName" => %{"type" => "string"}, "AmiId" => %{"type" => "string"}, "GetServersRequest" => %{"members" => %{"maxResults" => %{"shape" => "MaxResults"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Description" => %{"type" => "string"}, "LicenseType" => %{"enum" => ["AWS", "BYOL"], "type" => "string"}, "ReplicationJobStatusMessage" => %{"type" => "string"}, "ReplicationJobAlreadyExistsException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ImportServerCatalogRequest" => %{"members" => %{}, "type" => "structure"}, "ConnectorVersion" => %{"type" => "string"}, "VmServerAddress" => %{"members" => %{"vmId" => %{"shape" => "VmId"}, "vmManagerId" => %{"shape" => "VmManagerId"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "GetServersResponse" => %{"members" => %{"lastModifiedOn" => %{"shape" => "Timestamp"}, "nextToken" => %{"shape" => "NextToken"}, "serverCatalogStatus" => %{"shape" => "ServerCatalogStatus"}, "serverList" => %{"shape" => "ServerList"}}, "type" => "structure"}, "StartOnDemandReplicationRunResponse" => %{"members" => %{"replicationRunId" => %{"shape" => "ReplicationRunId"}}, "type" => "structure"}, "ConnectorId" => %{"type" => "string"}, "ReplicationJobId" => %{"type" => "string"}, "ReplicationRunState" => %{"enum" => ["PENDING", "MISSED", "ACTIVE", "FAILED", "COMPLETED", "DELETING", "DELETED"], "type" => "string"}, "DisassociateConnectorRequest" => %{"members" => %{"connectorId" => %{"shape" => "ConnectorId"}}, "required" => ["connectorId"], "type" => "structure"}, "MaxResults" => %{"type" => "integer"}, "CreateReplicationJobResponse" => %{"members" => %{"replicationJobId" => %{"shape" => "ReplicationJobId"}}, "type" => "structure"}, "Server" => %{"members" => %{"replicationJobId" => %{"shape" => "ReplicationJobId"}, "replicationJobTerminated" => %{"shape" => "ReplicationJobTerminated"}, "serverId" => %{"shape" => "ServerId"}, "serverType" => %{"shape" => "ServerType"}, "vmServer" => %{"shape" => "VmServer"}}, "type" => "structure"}, "NoConnectorsAvailableException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "UpdateReplicationJobResponse" => %{"members" => %{}, "type" => "structure"}, "MacAddress" => %{"type" => "string"}, "MissingRequiredParameterException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ReplicationRunId" => %{"type" => "string"}, "ReplicationJobState" => %{"enum" => ["PENDING", "ACTIVE", "FAILED", "DELETING", "DELETED"], "type" => "string"}, "Connector" => %{"members" => %{"associatedOn" => %{"shape" => "Timestamp"}, "capabilityList" => %{"shape" => "ConnectorCapabilityList"}, "connectorId" => %{"shape" => "ConnectorId"}, "ipAddress" => %{"shape" => "IpAddress"}, "macAddress" => %{"shape" => "MacAddress"}, "status" => %{"shape" => "ConnectorStatus"}, "version" => %{"shape" => "ConnectorVersion"}, "vmManagerId" => %{"shape" => "VmManagerId"}, "vmManagerName" => %{"shape" => "VmManagerName"}, "vmManagerType" => %{"shape" => "VmManagerType"}}, "type" => "structure"}, "IpAddress" => %{"type" => "string"}, "OperationNotPermittedException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetReplicationJobsRequest" => %{"members" => %{"maxResults" => %{"shape" => "MaxResults"}, "nextToken" => %{"shape" => "NextToken"}, "replicationJobId" => %{"shape" => "ReplicationJobId"}}, "type" => "structure"}, "ConnectorList" => %{"member" => %{"locationName" => "item", "shape" => "Connector"}, "type" => "list"}, "ReplicationRunList" => %{"member" => %{"locationName" => "item", "shape" => "ReplicationRun"}, "type" => "list"}, "Frequency" => %{"type" => "integer"}, "ServerId" => %{"type" => "string"}, "ConnectorCapability" => %{"enum" => ["VSPHERE"], "type" => "string"}, "GetReplicationRunsResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "replicationJob" => %{"shape" => "ReplicationJob"}, "replicationRunList" => %{"shape" => "ReplicationRunList"}}, "type" => "structure"}, "ReplicationRunType" => %{"enum" => ["ON_DEMAND", "AUTOMATIC"], "type" => "string"}, "GetConnectorsResponse" => %{"members" => %{"connectorList" => %{"shape" => "ConnectorList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ServerCatalogStatus" => %{"enum" => ["NOT_IMPORTED", "IMPORTING", "AVAILABLE", "DELETED", "EXPIRED"], "type" => "string"}, "VmManagerId" => %{"type" => "string"}, "VmId" => %{"type" => "string"}, "UpdateReplicationJobRequest" => %{"members" => %{"description" => %{"shape" => "Description"}, "frequency" => %{"shape" => "Frequency"}, "licenseType" => %{"shape" => "LicenseType"}, "nextReplicationRunStartTime" => %{"shape" => "Timestamp"}, "replicationJobId" => %{"shape" => "ReplicationJobId"}, "roleName" => %{"shape" => "RoleName"}}, "required" => ["replicationJobId"], "type" => "structure"}, "ReplicationJobNotFoundException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ReplicationRunLimitExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ReplicationJob" => %{"members" => %{"description" => %{"shape" => "Description"}, "frequency" => %{"shape" => "Frequency"}, "latestAmiId" => %{"shape" => "AmiId"}, "licenseType" => %{"shape" => "LicenseType"}, "nextReplicationRunStartTime" => %{"shape" => "Timestamp"}, "replicationJobId" => %{"shape" => "ReplicationJobId"}, "replicationRunList" => %{"shape" => "ReplicationRunList"}, "roleName" => %{"shape" => "RoleName"}, "seedReplicationTime" => %{"shape" => "Timestamp"}, "serverId" => %{"shape" => "ServerId"}, "serverType" => %{"shape" => "ServerType"}, "state" => %{"shape" => "ReplicationJobState"}, "statusMessage" => %{"shape" => "ReplicationJobStatusMessage"}, "vmServer" => %{"shape" => "VmServer"}}, "type" => "structure"}, "VmName" => %{"type" => "string"}, "DeleteServerCatalogResponse" => %{"members" => %{}, "type" => "structure"}, "VmPath" => %{"type" => "string"}, "NextToken" => %{"type" => "string"}, "InternalError" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "GetConnectorsRequest" => %{"members" => %{"maxResults" => %{"shape" => "MaxResults"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ServerType" => %{"enum" => ["VIRTUAL_MACHINE"], "type" => "string"}, "ConnectorCapabilityList" => %{"member" => %{"locationName" => "item", "shape" => "ConnectorCapability"}, "type" => "list"}}
+  end
 end

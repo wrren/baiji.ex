@@ -15,6 +15,7 @@ defmodule Baiji.Request.SignTest do
       type:               :ec2,
       target_prefix:      "",
       service:            "ec2", 
+      endpoint_prefix:    "ec2",
       access_key_id:      "AKIAIOSFODNN7EXAMPLE",
       secret_access_key:  "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"}
     

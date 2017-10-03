@@ -52,9 +52,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CancelExportTaskRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an export task, which allows you to efficiently export data from a
@@ -85,9 +89,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateExportTaskRequest",
+      output_shape:     "CreateExportTaskResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a log group with the specified name.
@@ -119,9 +127,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateLogGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a log stream for the specified log group.
@@ -152,9 +164,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateLogStreamRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified destination, and eventually disables all the
@@ -174,9 +190,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteDestinationRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified log group and permanently deletes all the archived
@@ -195,9 +215,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteLogGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified log stream and permanently deletes all the archived
@@ -216,9 +240,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteLogStreamRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified metric filter.
@@ -236,9 +264,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteMetricFilterRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a resource policy from this account. This revokes the access of the
@@ -257,9 +289,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteResourcePolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified retention policy.
@@ -280,9 +316,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteRetentionPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified subscription filter.
@@ -300,9 +340,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSubscriptionFilterRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all your destinations. The results are ASCII-sorted by destination
@@ -321,9 +365,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeDestinationsRequest",
+      output_shape:     "DescribeDestinationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the specified export tasks. You can list all your export tasks or
@@ -342,9 +390,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeExportTasksRequest",
+      output_shape:     "DescribeExportTasksResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the specified log groups. You can list all your log groups or filter
@@ -363,9 +415,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeLogGroupsRequest",
+      output_shape:     "DescribeLogGroupsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the log streams for the specified log group. You can list all the log
@@ -388,9 +444,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeLogStreamsRequest",
+      output_shape:     "DescribeLogStreamsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the specified metric filters. You can list all the metric filters or
@@ -410,9 +470,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeMetricFiltersRequest",
+      output_shape:     "DescribeMetricFiltersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the resource policies in this account.
@@ -430,9 +494,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeResourcePoliciesRequest",
+      output_shape:     "DescribeResourcePoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the subscription filters for the specified log group. You can list
@@ -452,9 +520,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeSubscriptionFiltersRequest",
+      output_shape:     "DescribeSubscriptionFiltersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists log events from the specified log group. You can list all the log
@@ -480,9 +552,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "FilterLogEventsRequest",
+      output_shape:     "FilterLogEventsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists log events from the specified log stream. You can list all the log
@@ -505,9 +581,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetLogEventsRequest",
+      output_shape:     "GetLogEventsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the tags for the specified log group.
@@ -527,9 +607,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTagsLogGroupRequest",
+      output_shape:     "ListTagsLogGroupResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates a destination. A destination encapsulates a physical
@@ -557,9 +641,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutDestinationRequest",
+      output_shape:     "PutDestinationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates an access policy associated with an existing
@@ -581,9 +669,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutDestinationPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Uploads a batch of log events to the specified log stream.
@@ -631,9 +723,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutLogEventsRequest",
+      output_shape:     "PutLogEventsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates a metric filter and associates it with the specified log
@@ -656,9 +752,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutMetricFilterRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates a resource policy allowing other AWS services to put log
@@ -678,9 +778,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutResourcePolicyRequest",
+      output_shape:     "PutResourcePolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the retention of the specified log group. A retention policy allows
@@ -700,9 +804,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutRetentionPolicyRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or updates a subscription filter and associates it with the
@@ -741,9 +849,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutSubscriptionFilterRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds or updates the specified tags for the specified log group.
@@ -768,9 +880,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "TagLogGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Tests the filter pattern of a metric filter against a sample of log event
@@ -790,9 +906,13 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "TestMetricFilterRequest",
+      output_shape:     "TestMetricFilterResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified tags from the specified log group.
@@ -813,8 +933,19 @@ defmodule Baiji.CloudwatchLogs do
       endpoint_prefix:  "logs",
       type:             :json,
       version:          "2014-03-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UntagLogGroupRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"LogGroupName" => %{"max" => 512, "min" => 1, "pattern" => "[\\.\\-_/#A-Za-z0-9]+", "type" => "string"}, "DescribeLogStreamsRequest" => %{"members" => %{"descending" => %{"shape" => "Descending"}, "limit" => %{"shape" => "DescribeLimit"}, "logGroupName" => %{"shape" => "LogGroupName"}, "logStreamNamePrefix" => %{"shape" => "LogStreamName"}, "nextToken" => %{"shape" => "NextToken"}, "orderBy" => %{"shape" => "OrderBy"}}, "required" => ["logGroupName"], "type" => "structure"}, "FilterCount" => %{"type" => "integer"}, "GetLogEventsResponse" => %{"members" => %{"events" => %{"shape" => "OutputLogEvents"}, "nextBackwardToken" => %{"shape" => "NextToken"}, "nextForwardToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "InputLogStreamNames" => %{"max" => 100, "member" => %{"shape" => "LogStreamName"}, "min" => 1, "type" => "list"}, "EventMessage" => %{"min" => 1, "type" => "string"}, "MetricFilterMatches" => %{"member" => %{"shape" => "MetricFilterMatchRecord"}, "type" => "list"}, "FilterLogEventsResponse" => %{"members" => %{"events" => %{"shape" => "FilteredLogEvents"}, "nextToken" => %{"shape" => "NextToken"}, "searchedLogStreams" => %{"shape" => "SearchedLogStreams"}}, "type" => "structure"}, "DescribeSubscriptionFiltersResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "subscriptionFilters" => %{"shape" => "SubscriptionFilters"}}, "type" => "structure"}, "ExportDestinationBucket" => %{"max" => 512, "min" => 1, "type" => "string"}, "InvalidParameterException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "TagLogGroupRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}, "tags" => %{"shape" => "Tags"}}, "required" => ["logGroupName", "tags"], "type" => "structure"}, "DeleteMetricFilterRequest" => %{"members" => %{"filterName" => %{"shape" => "FilterName"}, "logGroupName" => %{"shape" => "LogGroupName"}}, "required" => ["logGroupName", "filterName"], "type" => "structure"}, "FilterName" => %{"max" => 512, "min" => 1, "pattern" => "[^:*]*", "type" => "string"}, "TestEventMessages" => %{"max" => 50, "member" => %{"shape" => "EventMessage"}, "min" => 1, "type" => "list"}, "SearchedLogStreams" => %{"member" => %{"shape" => "SearchedLogStream"}, "type" => "list"}, "ExportTaskName" => %{"max" => 512, "min" => 1, "type" => "string"}, "DeleteRetentionPolicyRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}}, "required" => ["logGroupName"], "type" => "structure"}, "PutRetentionPolicyRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}, "retentionInDays" => %{"shape" => "Days"}}, "required" => ["logGroupName", "retentionInDays"], "type" => "structure"}, "ExportDestinationPrefix" => %{"type" => "string"}, "CreateExportTaskResponse" => %{"members" => %{"taskId" => %{"shape" => "ExportTaskId"}}, "type" => "structure"}, "DescribeDestinationsResponse" => %{"members" => %{"destinations" => %{"shape" => "Destinations"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "LogStream" => %{"members" => %{"arn" => %{"shape" => "Arn"}, "creationTime" => %{"shape" => "Timestamp"}, "firstEventTimestamp" => %{"shape" => "Timestamp"}, "lastEventTimestamp" => %{"shape" => "Timestamp"}, "lastIngestionTime" => %{"shape" => "Timestamp"}, "logStreamName" => %{"shape" => "LogStreamName"}, "storedBytes" => %{"shape" => "StoredBytes"}, "uploadSequenceToken" => %{"shape" => "SequenceToken"}}, "type" => "structure"}, "Days" => %{"type" => "integer"}, "EventNumber" => %{"type" => "long"}, "Destinations" => %{"member" => %{"shape" => "Destination"}, "type" => "list"}, "Interleaved" => %{"type" => "boolean"}, "DeleteLogGroupRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}}, "required" => ["logGroupName"], "type" => "structure"}, "SequenceToken" => %{"min" => 1, "type" => "string"}, "ServiceUnavailableException" => %{"exception" => true, "fault" => true, "members" => %{}, "type" => "structure"}, "DescribeResourcePoliciesResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "resourcePolicies" => %{"shape" => "ResourcePolicies"}}, "type" => "structure"}, "DescribeSubscriptionFiltersRequest" => %{"members" => %{"filterNamePrefix" => %{"shape" => "FilterName"}, "limit" => %{"shape" => "DescribeLimit"}, "logGroupName" => %{"shape" => "LogGroupName"}, "nextToken" => %{"shape" => "NextToken"}}, "required" => ["logGroupName"], "type" => "structure"}, "UntagLogGroupRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}, "tags" => %{"shape" => "TagList"}}, "required" => ["logGroupName", "tags"], "type" => "structure"}, "LogGroup" => %{"members" => %{"arn" => %{"shape" => "Arn"}, "creationTime" => %{"shape" => "Timestamp"}, "logGroupName" => %{"shape" => "LogGroupName"}, "metricFilterCount" => %{"shape" => "FilterCount"}, "retentionInDays" => %{"shape" => "Days"}, "storedBytes" => %{"shape" => "StoredBytes"}}, "type" => "structure"}, "PutResourcePolicyRequest" => %{"members" => %{"policyDocument" => %{"shape" => "PolicyDocument"}, "policyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "Distribution" => %{"enum" => ["Random", "ByLogStream"], "type" => "string"}, "PutLogEventsResponse" => %{"members" => %{"nextSequenceToken" => %{"shape" => "SequenceToken"}, "rejectedLogEventsInfo" => %{"shape" => "RejectedLogEventsInfo"}}, "type" => "structure"}, "EventId" => %{"type" => "string"}, "Token" => %{"type" => "string"}, "PutLogEventsRequest" => %{"members" => %{"logEvents" => %{"shape" => "InputLogEvents"}, "logGroupName" => %{"shape" => "LogGroupName"}, "logStreamName" => %{"shape" => "LogStreamName"}, "sequenceToken" => %{"shape" => "SequenceToken"}}, "required" => ["logGroupName", "logStreamName", "logEvents"], "type" => "structure"}, "DescribeMetricFiltersRequest" => %{"members" => %{"filterNamePrefix" => %{"shape" => "FilterName"}, "limit" => %{"shape" => "DescribeLimit"}, "logGroupName" => %{"shape" => "LogGroupName"}, "metricName" => %{"shape" => "MetricName"}, "metricNamespace" => %{"shape" => "MetricNamespace"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "TestMetricFilterResponse" => %{"members" => %{"matches" => %{"shape" => "MetricFilterMatches"}}, "type" => "structure"}, "DescribeExportTasksRequest" => %{"members" => %{"limit" => %{"shape" => "DescribeLimit"}, "nextToken" => %{"shape" => "NextToken"}, "statusCode" => %{"shape" => "ExportTaskStatusCode"}, "taskId" => %{"shape" => "ExportTaskId"}}, "type" => "structure"}, "RoleArn" => %{"min" => 1, "type" => "string"}, "ExportTaskStatusCode" => %{"enum" => ["CANCELLED", "COMPLETED", "FAILED", "PENDING", "PENDING_CANCEL", "RUNNING"], "type" => "string"}, "LogStreams" => %{"member" => %{"shape" => "LogStream"}, "type" => "list"}, "ExportTask" => %{"members" => %{"destination" => %{"shape" => "ExportDestinationBucket"}, "destinationPrefix" => %{"shape" => "ExportDestinationPrefix"}, "executionInfo" => %{"shape" => "ExportTaskExecutionInfo"}, "from" => %{"shape" => "Timestamp"}, "logGroupName" => %{"shape" => "LogGroupName"}, "status" => %{"shape" => "ExportTaskStatus"}, "taskId" => %{"shape" => "ExportTaskId"}, "taskName" => %{"shape" => "ExportTaskName"}, "to" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "Tags" => %{"key" => %{"shape" => "TagKey"}, "max" => 50, "min" => 1, "type" => "map", "value" => %{"shape" => "TagValue"}}, "DefaultValue" => %{"type" => "double"}, "Timestamp" => %{"min" => 0, "type" => "long"}, "ExportTaskExecutionInfo" => %{"members" => %{"completionTime" => %{"shape" => "Timestamp"}, "creationTime" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "StoredBytes" => %{"min" => 0, "type" => "long"}, "LogStreamSearchedCompletely" => %{"type" => "boolean"}, "PutDestinationPolicyRequest" => %{"members" => %{"accessPolicy" => %{"shape" => "AccessPolicy"}, "destinationName" => %{"shape" => "DestinationName"}}, "required" => ["destinationName", "accessPolicy"], "type" => "structure"}, "ExportTasks" => %{"member" => %{"shape" => "ExportTask"}, "type" => "list"}, "TagList" => %{"member" => %{"shape" => "TagKey"}, "min" => 1, "type" => "list"}, "DestinationName" => %{"max" => 512, "min" => 1, "pattern" => "[^:*]*", "type" => "string"}, "MetricNamespace" => %{"max" => 255, "pattern" => "[^:*$]*", "type" => "string"}, "MetricValue" => %{"max" => 100, "type" => "string"}, "TagValue" => %{"max" => 256, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$", "type" => "string"}, "MetricName" => %{"max" => 255, "pattern" => "[^:*$]*", "type" => "string"}, "InputLogEvent" => %{"members" => %{"message" => %{"shape" => "EventMessage"}, "timestamp" => %{"shape" => "Timestamp"}}, "required" => ["timestamp", "message"], "type" => "structure"}, "ExtractedValues" => %{"key" => %{"shape" => "Token"}, "type" => "map", "value" => %{"shape" => "Value"}}, "DescribeLogGroupsRequest" => %{"members" => %{"limit" => %{"shape" => "DescribeLimit"}, "logGroupNamePrefix" => %{"shape" => "LogGroupName"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "InputLogEvents" => %{"max" => 10000, "member" => %{"shape" => "InputLogEvent"}, "min" => 1, "type" => "list"}, "LogStreamName" => %{"max" => 512, "min" => 1, "pattern" => "[^:*]*", "type" => "string"}, "DescribeLogGroupsResponse" => %{"members" => %{"logGroups" => %{"shape" => "LogGroups"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DeleteLogStreamRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}, "logStreamName" => %{"shape" => "LogStreamName"}}, "required" => ["logGroupName", "logStreamName"], "type" => "structure"}, "OperationAbortedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "FilteredLogEvent" => %{"members" => %{"eventId" => %{"shape" => "EventId"}, "ingestionTime" => %{"shape" => "Timestamp"}, "logStreamName" => %{"shape" => "LogStreamName"}, "message" => %{"shape" => "EventMessage"}, "timestamp" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "Arn" => %{"type" => "string"}, "MetricTransformation" => %{"members" => %{"defaultValue" => %{"shape" => "DefaultValue"}, "metricName" => %{"shape" => "MetricName"}, "metricNamespace" => %{"shape" => "MetricNamespace"}, "metricValue" => %{"shape" => "MetricValue"}}, "required" => ["metricName", "metricNamespace", "metricValue"], "type" => "structure"}, "MetricTransformations" => %{"max" => 1, "member" => %{"shape" => "MetricTransformation"}, "min" => 1, "type" => "list"}, "DeleteSubscriptionFilterRequest" => %{"members" => %{"filterName" => %{"shape" => "FilterName"}, "logGroupName" => %{"shape" => "LogGroupName"}}, "required" => ["logGroupName", "filterName"], "type" => "structure"}, "RejectedLogEventsInfo" => %{"members" => %{"expiredLogEventEndIndex" => %{"shape" => "LogEventIndex"}, "tooNewLogEventStartIndex" => %{"shape" => "LogEventIndex"}, "tooOldLogEventEndIndex" => %{"shape" => "LogEventIndex"}}, "type" => "structure"}, "PutDestinationResponse" => %{"members" => %{"destination" => %{"shape" => "Destination"}}, "type" => "structure"}, "DescribeLogStreamsResponse" => %{"members" => %{"logStreams" => %{"shape" => "LogStreams"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "SubscriptionFilters" => %{"member" => %{"shape" => "SubscriptionFilter"}, "type" => "list"}, "ListTagsLogGroupRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}}, "required" => ["logGroupName"], "type" => "structure"}, "PutResourcePolicyResponse" => %{"members" => %{"resourcePolicy" => %{"shape" => "ResourcePolicy"}}, "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "OutputLogEvents" => %{"member" => %{"shape" => "OutputLogEvent"}, "type" => "list"}, "MetricFilter" => %{"members" => %{"creationTime" => %{"shape" => "Timestamp"}, "filterName" => %{"shape" => "FilterName"}, "filterPattern" => %{"shape" => "FilterPattern"}, "logGroupName" => %{"shape" => "LogGroupName"}, "metricTransformations" => %{"shape" => "MetricTransformations"}}, "type" => "structure"}, "Value" => %{"type" => "string"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CreateExportTaskRequest" => %{"members" => %{"destination" => %{"shape" => "ExportDestinationBucket"}, "destinationPrefix" => %{"shape" => "ExportDestinationPrefix"}, "from" => %{"shape" => "Timestamp"}, "logGroupName" => %{"shape" => "LogGroupName"}, "logStreamNamePrefix" => %{"shape" => "LogStreamName"}, "taskName" => %{"shape" => "ExportTaskName"}, "to" => %{"shape" => "Timestamp"}}, "required" => ["logGroupName", "from", "to", "destination"], "type" => "structure"}, "TestMetricFilterRequest" => %{"members" => %{"filterPattern" => %{"shape" => "FilterPattern"}, "logEventMessages" => %{"shape" => "TestEventMessages"}}, "required" => ["filterPattern", "logEventMessages"], "type" => "structure"}, "OutputLogEvent" => %{"members" => %{"ingestionTime" => %{"shape" => "Timestamp"}, "message" => %{"shape" => "EventMessage"}, "timestamp" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "OrderBy" => %{"enum" => ["LogStreamName", "LastEventTime"], "type" => "string"}, "ResourcePolicies" => %{"member" => %{"shape" => "ResourcePolicy"}, "type" => "list"}, "DeleteDestinationRequest" => %{"members" => %{"destinationName" => %{"shape" => "DestinationName"}}, "required" => ["destinationName"], "type" => "structure"}, "PolicyDocument" => %{"max" => 5120, "min" => 1, "type" => "string"}, "DescribeDestinationsRequest" => %{"members" => %{"DestinationNamePrefix" => %{"shape" => "DestinationName"}, "limit" => %{"shape" => "DescribeLimit"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ResourcePolicy" => %{"members" => %{"lastUpdatedTime" => %{"shape" => "Timestamp"}, "policyDocument" => %{"shape" => "PolicyDocument"}, "policyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "Descending" => %{"type" => "boolean"}, "GetLogEventsRequest" => %{"members" => %{"endTime" => %{"shape" => "Timestamp"}, "limit" => %{"shape" => "EventsLimit"}, "logGroupName" => %{"shape" => "LogGroupName"}, "logStreamName" => %{"shape" => "LogStreamName"}, "nextToken" => %{"shape" => "NextToken"}, "startFromHead" => %{"shape" => "StartFromHead"}, "startTime" => %{"shape" => "Timestamp"}}, "required" => ["logGroupName", "logStreamName"], "type" => "structure"}, "FilteredLogEvents" => %{"member" => %{"shape" => "FilteredLogEvent"}, "type" => "list"}, "ListTagsLogGroupResponse" => %{"members" => %{"tags" => %{"shape" => "Tags"}}, "type" => "structure"}, "DescribeLimit" => %{"max" => 50, "min" => 1, "type" => "integer"}, "Destination" => %{"members" => %{"accessPolicy" => %{"shape" => "AccessPolicy"}, "arn" => %{"shape" => "Arn"}, "creationTime" => %{"shape" => "Timestamp"}, "destinationName" => %{"shape" => "DestinationName"}, "roleArn" => %{"shape" => "RoleArn"}, "targetArn" => %{"shape" => "TargetArn"}}, "type" => "structure"}, "ExportTaskStatusMessage" => %{"type" => "string"}, "PutDestinationRequest" => %{"members" => %{"destinationName" => %{"shape" => "DestinationName"}, "roleArn" => %{"shape" => "RoleArn"}, "targetArn" => %{"shape" => "TargetArn"}}, "required" => ["destinationName", "targetArn", "roleArn"], "type" => "structure"}, "CreateLogGroupRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}, "tags" => %{"shape" => "Tags"}}, "required" => ["logGroupName"], "type" => "structure"}, "DescribeResourcePoliciesRequest" => %{"members" => %{"limit" => %{"shape" => "DescribeLimit"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "InvalidOperationException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "PutSubscriptionFilterRequest" => %{"members" => %{"destinationArn" => %{"shape" => "DestinationArn"}, "distribution" => %{"shape" => "Distribution"}, "filterName" => %{"shape" => "FilterName"}, "filterPattern" => %{"shape" => "FilterPattern"}, "logGroupName" => %{"shape" => "LogGroupName"}, "roleArn" => %{"shape" => "RoleArn"}}, "required" => ["logGroupName", "filterName", "filterPattern", "destinationArn"], "type" => "structure"}, "PolicyName" => %{"type" => "string"}, "FilterLogEventsRequest" => %{"members" => %{"endTime" => %{"shape" => "Timestamp"}, "filterPattern" => %{"shape" => "FilterPattern"}, "interleaved" => %{"shape" => "Interleaved"}, "limit" => %{"shape" => "EventsLimit"}, "logGroupName" => %{"shape" => "LogGroupName"}, "logStreamNames" => %{"shape" => "InputLogStreamNames"}, "nextToken" => %{"shape" => "NextToken"}, "startTime" => %{"shape" => "Timestamp"}}, "required" => ["logGroupName"], "type" => "structure"}, "InvalidSequenceTokenException" => %{"exception" => true, "members" => %{"expectedSequenceToken" => %{"shape" => "SequenceToken"}}, "type" => "structure"}, "TargetArn" => %{"min" => 1, "type" => "string"}, "TagKey" => %{"max" => 128, "min" => 1, "pattern" => "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]+)$", "type" => "string"}, "DataAlreadyAcceptedException" => %{"exception" => true, "members" => %{"expectedSequenceToken" => %{"shape" => "SequenceToken"}}, "type" => "structure"}, "DescribeMetricFiltersResponse" => %{"members" => %{"metricFilters" => %{"shape" => "MetricFilters"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "FilterPattern" => %{"max" => 1024, "min" => 0, "type" => "string"}, "MetricFilters" => %{"member" => %{"shape" => "MetricFilter"}, "type" => "list"}, "ResourceAlreadyExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "StartFromHead" => %{"type" => "boolean"}, "LogEventIndex" => %{"type" => "integer"}, "CreateLogStreamRequest" => %{"members" => %{"logGroupName" => %{"shape" => "LogGroupName"}, "logStreamName" => %{"shape" => "LogStreamName"}}, "required" => ["logGroupName", "logStreamName"], "type" => "structure"}, "DeleteResourcePolicyRequest" => %{"members" => %{"policyName" => %{"shape" => "PolicyName"}}, "type" => "structure"}, "EventsLimit" => %{"max" => 10000, "min" => 1, "type" => "integer"}, "AccessPolicy" => %{"min" => 1, "type" => "string"}, "PutMetricFilterRequest" => %{"members" => %{"filterName" => %{"shape" => "FilterName"}, "filterPattern" => %{"shape" => "FilterPattern"}, "logGroupName" => %{"shape" => "LogGroupName"}, "metricTransformations" => %{"shape" => "MetricTransformations"}}, "required" => ["logGroupName", "filterName", "filterPattern", "metricTransformations"], "type" => "structure"}, "SubscriptionFilter" => %{"members" => %{"creationTime" => %{"shape" => "Timestamp"}, "destinationArn" => %{"shape" => "DestinationArn"}, "distribution" => %{"shape" => "Distribution"}, "filterName" => %{"shape" => "FilterName"}, "filterPattern" => %{"shape" => "FilterPattern"}, "logGroupName" => %{"shape" => "LogGroupName"}, "roleArn" => %{"shape" => "RoleArn"}}, "type" => "structure"}, "ExportTaskStatus" => %{"members" => %{"code" => %{"shape" => "ExportTaskStatusCode"}, "message" => %{"shape" => "ExportTaskStatusMessage"}}, "type" => "structure"}, "DestinationArn" => %{"min" => 1, "type" => "string"}, "MetricFilterMatchRecord" => %{"members" => %{"eventMessage" => %{"shape" => "EventMessage"}, "eventNumber" => %{"shape" => "EventNumber"}, "extractedValues" => %{"shape" => "ExtractedValues"}}, "type" => "structure"}, "NextToken" => %{"min" => 1, "type" => "string"}, "SearchedLogStream" => %{"members" => %{"logStreamName" => %{"shape" => "LogStreamName"}, "searchedCompletely" => %{"shape" => "LogStreamSearchedCompletely"}}, "type" => "structure"}, "LogGroups" => %{"member" => %{"shape" => "LogGroup"}, "type" => "list"}, "DescribeExportTasksResponse" => %{"members" => %{"exportTasks" => %{"shape" => "ExportTasks"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CancelExportTaskRequest" => %{"members" => %{"taskId" => %{"shape" => "ExportTaskId"}}, "required" => ["taskId"], "type" => "structure"}, "ExportTaskId" => %{"max" => 512, "min" => 1, "type" => "string"}}
+  end
 end

@@ -56,9 +56,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "BatchDeleteAttributesRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `BatchPutAttributes` operation creates or replaces attributes within
@@ -117,9 +121,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "BatchPutAttributesRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `CreateDomain` operation creates a new domain. The domain name should
@@ -145,9 +153,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDomainRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes one or more attributes associated with an item. If all attributes
@@ -174,9 +186,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteAttributesRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `DeleteDomain` operation deletes a domain. Any items (and their
@@ -198,9 +214,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteDomainRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the domain, including when the domain was
@@ -218,9 +238,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "DomainMetadataRequest",
+      output_shape:     "DomainMetadataResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns all of the attributes associated with the specified item.
@@ -245,9 +269,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetAttributesRequest",
+      output_shape:     "GetAttributesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `ListDomains` operation lists all domains associated with the Access
@@ -269,9 +297,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListDomainsRequest",
+      output_shape:     "ListDomainsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The PutAttributes operation creates or replaces attributes in an item. The
@@ -320,9 +352,13 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutAttributesRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   The `Select` operation returns a set of attributes for `ItemNames` that
@@ -350,8 +386,19 @@ defmodule Baiji.Simpledb do
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",
-      method:           :post
+      method:           :post,
+      input_shape:      "SelectRequest",
+      output_shape:     "SelectResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"SelectRequest" => %{"members" => %{"ConsistentRead" => %{"shape" => "Boolean"}, "NextToken" => %{"shape" => "String"}, "SelectExpression" => %{"shape" => "String"}}, "required" => ["SelectExpression"], "type" => "structure"}, "DomainNameList" => %{"flattened" => true, "member" => %{"locationName" => "DomainName", "shape" => "String"}, "type" => "list"}, "RequestTimeout" => %{"error" => %{"code" => "RequestTimeout", "httpStatusCode" => 408, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "DomainMetadataResult" => %{"members" => %{"AttributeNameCount" => %{"shape" => "Integer"}, "AttributeNamesSizeBytes" => %{"shape" => "Long"}, "AttributeValueCount" => %{"shape" => "Integer"}, "AttributeValuesSizeBytes" => %{"shape" => "Long"}, "ItemCount" => %{"shape" => "Integer"}, "ItemNamesSizeBytes" => %{"shape" => "Long"}, "Timestamp" => %{"shape" => "Integer"}}, "type" => "structure"}, "ReplaceableItem" => %{"members" => %{"Attributes" => %{"shape" => "ReplaceableAttributeList"}, "Name" => %{"locationName" => "ItemName", "shape" => "String"}}, "required" => ["Name", "Attributes"], "type" => "structure"}, "String" => %{"type" => "string"}, "MissingParameter" => %{"error" => %{"code" => "MissingParameter", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "Boolean" => %{"type" => "boolean"}, "CreateDomainRequest" => %{"members" => %{"DomainName" => %{"shape" => "String"}}, "required" => ["DomainName"], "type" => "structure"}, "Attribute" => %{"members" => %{"AlternateNameEncoding" => %{"shape" => "String"}, "AlternateValueEncoding" => %{"shape" => "String"}, "Name" => %{"shape" => "String"}, "Value" => %{"shape" => "String"}}, "required" => ["Name", "Value"], "type" => "structure"}, "Item" => %{"members" => %{"AlternateNameEncoding" => %{"shape" => "String"}, "Attributes" => %{"shape" => "AttributeList"}, "Name" => %{"shape" => "String"}}, "required" => ["Name", "Attributes"], "type" => "structure"}, "ListDomainsRequest" => %{"members" => %{"MaxNumberOfDomains" => %{"shape" => "Integer"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "NumberDomainBytesExceeded" => %{"error" => %{"code" => "NumberDomainBytesExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "DeletableAttributeList" => %{"flattened" => true, "member" => %{"locationName" => "Attribute", "shape" => "DeletableAttribute"}, "type" => "list"}, "DeletableItem" => %{"members" => %{"Attributes" => %{"shape" => "DeletableAttributeList"}, "Name" => %{"locationName" => "ItemName", "shape" => "String"}}, "required" => ["Name"], "type" => "structure"}, "InvalidNextToken" => %{"error" => %{"code" => "InvalidNextToken", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "NumberDomainAttributesExceeded" => %{"error" => %{"code" => "NumberDomainAttributesExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "GetAttributesResult" => %{"members" => %{"Attributes" => %{"shape" => "AttributeList"}}, "type" => "structure"}, "DeletableAttribute" => %{"members" => %{"Name" => %{"shape" => "String"}, "Value" => %{"shape" => "String"}}, "required" => ["Name"], "type" => "structure"}, "Float" => %{"type" => "float"}, "AttributeList" => %{"flattened" => true, "member" => %{"locationName" => "Attribute", "shape" => "Attribute"}, "type" => "list"}, "InvalidNumberValueTests" => %{"error" => %{"code" => "InvalidNumberValueTests", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "ReplaceableItemList" => %{"flattened" => true, "member" => %{"locationName" => "Item", "shape" => "ReplaceableItem"}, "type" => "list"}, "DeleteAttributesRequest" => %{"members" => %{"Attributes" => %{"shape" => "DeletableAttributeList"}, "DomainName" => %{"shape" => "String"}, "Expected" => %{"shape" => "UpdateCondition"}, "ItemName" => %{"shape" => "String"}}, "required" => ["DomainName", "ItemName"], "type" => "structure"}, "ReplaceableAttributeList" => %{"flattened" => true, "member" => %{"locationName" => "Attribute", "shape" => "ReplaceableAttribute"}, "type" => "list"}, "NoSuchDomain" => %{"error" => %{"code" => "NoSuchDomain", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "NumberItemAttributesExceeded" => %{"error" => %{"code" => "NumberItemAttributesExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "BatchPutAttributesRequest" => %{"members" => %{"DomainName" => %{"shape" => "String"}, "Items" => %{"shape" => "ReplaceableItemList"}}, "required" => ["DomainName", "Items"], "type" => "structure"}, "Long" => %{"type" => "long"}, "BatchDeleteAttributesRequest" => %{"members" => %{"DomainName" => %{"shape" => "String"}, "Items" => %{"shape" => "DeletableItemList"}}, "required" => ["DomainName", "Items"], "type" => "structure"}, "DeleteDomainRequest" => %{"members" => %{"DomainName" => %{"shape" => "String"}}, "required" => ["DomainName"], "type" => "structure"}, "NumberSubmittedAttributesExceeded" => %{"error" => %{"code" => "NumberSubmittedAttributesExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "DuplicateItemName" => %{"error" => %{"code" => "DuplicateItemName", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "SelectResult" => %{"members" => %{"Items" => %{"shape" => "ItemList"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "InvalidNumberPredicates" => %{"error" => %{"code" => "InvalidNumberPredicates", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "ItemList" => %{"flattened" => true, "member" => %{"locationName" => "Item", "shape" => "Item"}, "type" => "list"}, "ReplaceableAttribute" => %{"members" => %{"Name" => %{"shape" => "String"}, "Replace" => %{"shape" => "Boolean"}, "Value" => %{"shape" => "String"}}, "required" => ["Name", "Value"], "type" => "structure"}, "PutAttributesRequest" => %{"members" => %{"Attributes" => %{"shape" => "ReplaceableAttributeList"}, "DomainName" => %{"shape" => "String"}, "Expected" => %{"shape" => "UpdateCondition"}, "ItemName" => %{"shape" => "String"}}, "required" => ["DomainName", "ItemName", "Attributes"], "type" => "structure"}, "NumberSubmittedItemsExceeded" => %{"error" => %{"code" => "NumberSubmittedItemsExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "DeletableItemList" => %{"flattened" => true, "member" => %{"locationName" => "Item", "shape" => "DeletableItem"}, "type" => "list"}, "DomainMetadataRequest" => %{"members" => %{"DomainName" => %{"shape" => "String"}}, "required" => ["DomainName"], "type" => "structure"}, "TooManyRequestedAttributes" => %{"error" => %{"code" => "TooManyRequestedAttributes", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "InvalidParameterValue" => %{"error" => %{"code" => "InvalidParameterValue", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "NumberDomainsExceeded" => %{"error" => %{"code" => "NumberDomainsExceeded", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "GetAttributesRequest" => %{"members" => %{"AttributeNames" => %{"shape" => "AttributeNameList"}, "ConsistentRead" => %{"shape" => "Boolean"}, "DomainName" => %{"shape" => "String"}, "ItemName" => %{"shape" => "String"}}, "required" => ["DomainName", "ItemName"], "type" => "structure"}, "AttributeNameList" => %{"flattened" => true, "member" => %{"locationName" => "AttributeName", "shape" => "String"}, "type" => "list"}, "ListDomainsResult" => %{"members" => %{"DomainNames" => %{"shape" => "DomainNameList"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "AttributeDoesNotExist" => %{"error" => %{"code" => "AttributeDoesNotExist", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "UpdateCondition" => %{"members" => %{"Exists" => %{"shape" => "Boolean"}, "Name" => %{"shape" => "String"}, "Value" => %{"shape" => "String"}}, "type" => "structure"}, "InvalidQueryExpression" => %{"error" => %{"code" => "InvalidQueryExpression", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"BoxUsage" => %{"shape" => "Float"}}, "type" => "structure"}}
+  end
 end

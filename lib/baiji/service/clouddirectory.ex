@@ -26,9 +26,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListFacetAttributesRequest",
+      output_shape:     "ListFacetAttributesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new schema in a development state. A schema can exist in three
@@ -59,9 +63,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "CreateSchemaRequest",
+      output_shape:     "CreateSchemaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a paginated list of all attribute definitions for a particular
@@ -79,9 +87,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTypedLinkFacetAttributesRequest",
+      output_shape:     "ListTypedLinkFacetAttributesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Performs all the read operations in a batch.
@@ -97,9 +109,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "BatchReadRequest",
+      output_shape:     "BatchReadResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns all of the `ObjectIdentifiers` to which a given policy is attached.
@@ -115,9 +131,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListPolicyAttachmentsRequest",
+      output_shape:     "ListPolicyAttachmentsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   An API operation for adding tags to a resource.
@@ -133,9 +153,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "TagResourceRequest",
+      output_shape:     "TagResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `TypedLinkFacet`. For more information, see [Typed
@@ -152,9 +176,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "CreateTypedLinkFacetRequest",
+      output_shape:     "CreateTypedLinkFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Detaches a given object from the parent object. The object that is to be
@@ -171,9 +199,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DetachObjectRequest",
+      output_shape:     "DetachObjectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Detaches a typed link from a specified source and target object. For more
@@ -191,9 +223,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DetachTypedLinkRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a paginated list of `TypedLink` facet names for a particular
@@ -211,9 +247,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTypedLinkFacetNamesRequest",
+      output_shape:     "ListTypedLinkFacetNamesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns policies attached to an object in pagination fashion.
@@ -229,9 +269,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListObjectPoliciesRequest",
+      output_shape:     "ListObjectPoliciesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves metadata about an object.
@@ -247,9 +291,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetObjectInformationRequest",
+      output_shape:     "GetObjectInformationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the identity attribute order for a specific `TypedLinkFacet`. For
@@ -267,9 +315,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetTypedLinkFacetInformationRequest",
+      output_shape:     "GetTypedLinkFacetInformationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns tags for a resource. Tagging is currently supported only for
@@ -287,9 +339,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListTagsForResourceRequest",
+      output_shape:     "ListTagsForResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Does the following:
@@ -313,9 +369,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateFacetRequest",
+      output_shape:     "UpdateFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `Directory` by copying the published schema into the directory. A
@@ -332,9 +392,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "CreateDirectoryRequest",
+      output_shape:     "CreateDirectoryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new `Facet` in a schema. Facet creation is allowed only in
@@ -351,9 +415,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "CreateFacetRequest",
+      output_shape:     "CreateFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all attributes that are associated with an object.
@@ -369,9 +437,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListObjectAttributesRequest",
+      output_shape:     "ListObjectAttributesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves the names of facets that exist in a schema.
@@ -387,9 +459,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListFacetNamesRequest",
+      output_shape:     "ListFacetNamesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disables the specified directory. Disabled directories cannot be read or
@@ -407,9 +483,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DisableDirectoryRequest",
+      output_shape:     "DisableDirectoryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists parent objects that are associated with a given object in pagination
@@ -426,9 +506,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListObjectParentsRequest",
+      output_shape:     "ListObjectParentsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a given object's attributes.
@@ -444,9 +528,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateObjectAttributesRequest",
+      output_shape:     "UpdateObjectAttributesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   An API operation for removing tags from a resource.
@@ -462,9 +550,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "UntagResourceRequest",
+      output_shape:     "UntagResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists schemas applied to a directory.
@@ -480,9 +572,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAppliedSchemaArnsRequest",
+      output_shape:     "ListAppliedSchemaArnsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Copies the input published schema into the `Directory` with the same name
@@ -499,9 +595,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "ApplySchemaRequest",
+      output_shape:     "ApplySchemaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a given `Facet`. All attributes and `Rule`s that are associated
@@ -519,9 +619,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DeleteFacetRequest",
+      output_shape:     "DeleteFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a directory. Only disabled directories can be deleted. A deleted
@@ -539,9 +643,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DeleteDirectoryRequest",
+      output_shape:     "DeleteDirectoryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds a new `Facet` to an object.
@@ -557,9 +665,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "AddFacetToObjectRequest",
+      output_shape:     "AddFacetToObjectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists objects attached to the specified index.
@@ -575,9 +687,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListIndexRequest",
+      output_shape:     "ListIndexResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an index object. See
@@ -595,9 +711,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "CreateIndexRequest",
+      output_shape:     "CreateIndexResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Detaches the specified object from the specified index.
@@ -613,9 +733,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DetachFromIndexRequest",
+      output_shape:     "DetachFromIndexResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Enables the specified directory. Only disabled directories can be enabled.
@@ -632,9 +756,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "EnableDirectoryRequest",
+      output_shape:     "EnableDirectoryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes the specified facet from the specified object.
@@ -650,9 +778,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "RemoveFacetFromObjectRequest",
+      output_shape:     "RemoveFacetFromObjectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Publishes a development schema with a version. If description and
@@ -671,9 +803,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "PublishSchemaRequest",
+      output_shape:     "PublishSchemaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets details of the `Facet`, such as facet name, attributes, `Rule`s, or
@@ -691,9 +827,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetFacetRequest",
+      output_shape:     "GetFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an object and its associated attributes. Only objects with no
@@ -710,9 +850,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DeleteObjectRequest",
+      output_shape:     "DeleteObjectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists indices attached to an object.
@@ -728,9 +872,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListAttachedIndicesRequest",
+      output_shape:     "ListAttachedIndicesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches an existing object to another object. An object can be accessed in
@@ -753,9 +901,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "AttachObjectRequest",
+      output_shape:     "AttachObjectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a `TypedLinkFacet`. For more information, see [Typed
@@ -772,9 +924,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateTypedLinkFacetRequest",
+      output_shape:     "UpdateTypedLinkFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the schema name with a new name. Only development schema names can
@@ -791,9 +947,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "UpdateSchemaRequest",
+      output_shape:     "UpdateSchemaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Detaches a policy from an object.
@@ -809,9 +969,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DetachPolicyRequest",
+      output_shape:     "DetachPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves all available parent paths for any object type such as node, leaf
@@ -838,9 +1002,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListObjectParentPathsRequest",
+      output_shape:     "ListObjectParentPathsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a JSON representation of the schema. See [JSON Schema
@@ -858,9 +1026,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetSchemaAsJsonRequest",
+      output_shape:     "GetSchemaAsJsonResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a paginated list of all the incoming `TypedLinkSpecifier`
@@ -879,9 +1051,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListIncomingTypedLinksRequest",
+      output_shape:     "ListIncomingTypedLinksResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an object in a `Directory`. Additionally attaches the object to a
@@ -901,9 +1077,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "CreateObjectRequest",
+      output_shape:     "CreateObjectResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves metadata about a directory.
@@ -919,9 +1099,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetDirectoryRequest",
+      output_shape:     "GetDirectoryResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a given schema. Schemas in a development and published state can
@@ -938,9 +1122,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DeleteSchemaRequest",
+      output_shape:     "DeleteSchemaResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches the specified object to the specified index.
@@ -956,9 +1144,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "AttachToIndexRequest",
+      output_shape:     "AttachToIndexResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches a policy object to a regular object. An object can have a limited
@@ -975,9 +1167,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "AttachPolicyRequest",
+      output_shape:     "AttachPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches a typed link to a specified source and target object. For more
@@ -995,9 +1191,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "AttachTypedLinkRequest",
+      output_shape:     "AttachTypedLinkResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Performs all the write operations in a batch. Either all the operations
@@ -1014,9 +1214,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "BatchWriteRequest",
+      output_shape:     "BatchWriteResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves each Amazon Resource Name (ARN) of schemas in the development
@@ -1033,9 +1237,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListDevelopmentSchemaArnsRequest",
+      output_shape:     "ListDevelopmentSchemaArnsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a paginated list of child objects that are associated with a given
@@ -1052,9 +1260,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListObjectChildrenRequest",
+      output_shape:     "ListObjectChildrenResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists directories created within an account.
@@ -1070,9 +1282,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListDirectoriesRequest",
+      output_shape:     "ListDirectoriesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Allows a schema to be updated using JSON upload. Only available for
@@ -1091,9 +1307,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutSchemaFromJsonRequest",
+      output_shape:     "PutSchemaFromJsonResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a `TypedLinkFacet`. For more information, see [Typed
@@ -1110,9 +1330,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :put
+      method:           :put,
+      input_shape:      "DeleteTypedLinkFacetRequest",
+      output_shape:     "DeleteTypedLinkFacetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves each published schema Amazon Resource Name (ARN).
@@ -1128,9 +1352,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListPublishedSchemaArnsRequest",
+      output_shape:     "ListPublishedSchemaArnsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a paginated list of all the outgoing `TypedLinkSpecifier`
@@ -1149,9 +1377,13 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListOutgoingTypedLinksRequest",
+      output_shape:     "ListOutgoingTypedLinksResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all policies from the root of the `Directory` to the object
@@ -1174,8 +1406,19 @@ defmodule Baiji.Clouddirectory do
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "LookupPolicyRequest",
+      output_shape:     "LookupPolicyResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"BatchWriteOperationResponse" => %{"members" => %{"AddFacetToObject" => %{"shape" => "BatchAddFacetToObjectResponse"}, "AttachObject" => %{"shape" => "BatchAttachObjectResponse"}, "AttachPolicy" => %{"shape" => "BatchAttachPolicyResponse"}, "AttachToIndex" => %{"shape" => "BatchAttachToIndexResponse"}, "AttachTypedLink" => %{"shape" => "BatchAttachTypedLinkResponse"}, "CreateIndex" => %{"shape" => "BatchCreateIndexResponse"}, "CreateObject" => %{"shape" => "BatchCreateObjectResponse"}, "DeleteObject" => %{"shape" => "BatchDeleteObjectResponse"}, "DetachFromIndex" => %{"shape" => "BatchDetachFromIndexResponse"}, "DetachObject" => %{"shape" => "BatchDetachObjectResponse"}, "DetachPolicy" => %{"shape" => "BatchDetachPolicyResponse"}, "DetachTypedLink" => %{"shape" => "BatchDetachTypedLinkResponse"}, "RemoveFacetFromObject" => %{"shape" => "BatchRemoveFacetFromObjectResponse"}, "UpdateObjectAttributes" => %{"shape" => "BatchUpdateObjectAttributesResponse"}}, "type" => "structure"}, "DeleteDirectoryResponse" => %{"members" => %{"DirectoryArn" => %{"shape" => "Arn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "CreateDirectoryRequest" => %{"members" => %{"Name" => %{"shape" => "DirectoryName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["Name", "SchemaArn"], "type" => "structure"}, "BatchCreateIndexResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "ListTagsForResourceResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Tags" => %{"shape" => "TagList"}}, "type" => "structure"}, "DeleteTypedLinkFacetRequest" => %{"members" => %{"Name" => %{"shape" => "TypedLinkName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "PolicyAttachment" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}, "PolicyId" => %{"shape" => "ObjectIdentifier"}, "PolicyType" => %{"shape" => "PolicyType"}}, "type" => "structure"}, "BatchListIncomingTypedLinks" => %{"members" => %{"FilterAttributeRanges" => %{"shape" => "TypedLinkAttributeRangeList"}, "FilterTypedLink" => %{"shape" => "TypedLinkSchemaAndFacetName"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "BatchAddFacetToObject" => %{"members" => %{"ObjectAttributeList" => %{"shape" => "AttributeKeyAndValueList"}, "ObjectReference" => %{"shape" => "ObjectReference"}, "SchemaFacet" => %{"shape" => "SchemaFacet"}}, "required" => ["SchemaFacet", "ObjectAttributeList", "ObjectReference"], "type" => "structure"}, "FacetValidationException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DeleteSchemaResponse" => %{"members" => %{"SchemaArn" => %{"shape" => "Arn"}}, "type" => "structure"}, "TypedLinkAttributeDefinition" => %{"members" => %{"DefaultValue" => %{"shape" => "TypedAttributeValue"}, "IsImmutable" => %{"shape" => "Bool"}, "Name" => %{"shape" => "AttributeName"}, "RequiredBehavior" => %{"shape" => "RequiredAttributeBehavior"}, "Rules" => %{"shape" => "RuleMap"}, "Type" => %{"shape" => "FacetAttributeType"}}, "required" => ["Name", "Type", "RequiredBehavior"], "type" => "structure"}, "DeleteTypedLinkFacetResponse" => %{"members" => %{}, "type" => "structure"}, "BatchDetachFromIndex" => %{"members" => %{"IndexReference" => %{"shape" => "ObjectReference"}, "TargetReference" => %{"shape" => "ObjectReference"}}, "required" => ["IndexReference", "TargetReference"], "type" => "structure"}, "BatchAttachPolicy" => %{"members" => %{"ObjectReference" => %{"shape" => "ObjectReference"}, "PolicyReference" => %{"shape" => "ObjectReference"}}, "required" => ["PolicyReference", "ObjectReference"], "type" => "structure"}, "TagKeyList" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "RuleParameterKey" => %{"type" => "string"}, "FacetAttributeDefinition" => %{"members" => %{"DefaultValue" => %{"shape" => "TypedAttributeValue"}, "IsImmutable" => %{"shape" => "Bool"}, "Rules" => %{"shape" => "RuleMap"}, "Type" => %{"shape" => "FacetAttributeType"}}, "required" => ["Type"], "type" => "structure"}, "BatchListIndex" => %{"members" => %{"IndexReference" => %{"shape" => "ObjectReference"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "RangesOnIndexedValues" => %{"shape" => "ObjectAttributeRangeList"}}, "required" => ["IndexReference"], "type" => "structure"}, "BatchListObjectPoliciesResponse" => %{"members" => %{"AttachedPolicyIds" => %{"shape" => "ObjectIdentifierList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "FacetAttributeUpdateList" => %{"member" => %{"shape" => "FacetAttributeUpdate"}, "type" => "list"}, "ObjectReference" => %{"members" => %{"Selector" => %{"shape" => "SelectorObjectReference"}}, "type" => "structure"}, "SchemaJsonDocument" => %{"type" => "string"}, "SelectorObjectReference" => %{"type" => "string"}, "CreateSchemaResponse" => %{"members" => %{"SchemaArn" => %{"shape" => "Arn"}}, "type" => "structure"}, "TypedLinkSpecifierList" => %{"member" => %{"shape" => "TypedLinkSpecifier"}, "type" => "list"}, "AttributeKeyAndValue" => %{"members" => %{"Key" => %{"shape" => "AttributeKey"}, "Value" => %{"shape" => "TypedAttributeValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "AttachToIndexRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "IndexReference" => %{"shape" => "ObjectReference"}, "TargetReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "IndexReference", "TargetReference"], "type" => "structure"}, "TagsNumberResults" => %{"min" => 50, "type" => "integer"}, "DirectoryState" => %{"enum" => ["ENABLED", "DISABLED", "DELETED"], "type" => "string"}, "AttributeNameAndValue" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "Value" => %{"shape" => "TypedAttributeValue"}}, "required" => ["AttributeName", "Value"], "type" => "structure"}, "BatchReadOperationResponse" => %{"members" => %{"ExceptionResponse" => %{"shape" => "BatchReadException"}, "SuccessfulResponse" => %{"shape" => "BatchReadSuccessfulResponse"}}, "type" => "structure"}, "StringAttributeValue" => %{"type" => "string"}, "UpdateFacetResponse" => %{"members" => %{}, "type" => "structure"}, "ListIncomingTypedLinksRequest" => %{"members" => %{"ConsistencyLevel" => %{"shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "FilterAttributeRanges" => %{"shape" => "TypedLinkAttributeRangeList"}, "FilterTypedLink" => %{"shape" => "TypedLinkSchemaAndFacetName"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "BatchGetObjectInformation" => %{"members" => %{"ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "ObjectAlreadyDetachedException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "PathString" => %{"type" => "string"}, "CreateTypedLinkFacetResponse" => %{"members" => %{}, "type" => "structure"}, "BatchDetachTypedLinkResponse" => %{"members" => %{}, "type" => "structure"}, "AttributeName" => %{"max" => 64, "min" => 1, "pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "UnsupportedIndexTypeException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TypedAttributeValueRange" => %{"members" => %{"EndMode" => %{"shape" => "RangeMode"}, "EndValue" => %{"shape" => "TypedAttributeValue"}, "StartMode" => %{"shape" => "RangeMode"}, "StartValue" => %{"shape" => "TypedAttributeValue"}}, "required" => ["StartMode", "EndMode"], "type" => "structure"}, "RuleParameterValue" => %{"type" => "string"}, "BatchWriteOperationList" => %{"member" => %{"shape" => "BatchWriteOperation"}, "type" => "list"}, "ListIndexResponse" => %{"members" => %{"IndexAttachments" => %{"shape" => "IndexAttachmentList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "BatchListOutgoingTypedLinks" => %{"members" => %{"FilterAttributeRanges" => %{"shape" => "TypedLinkAttributeRangeList"}, "FilterTypedLink" => %{"shape" => "TypedLinkSchemaAndFacetName"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "AccessDeniedException" => %{"error" => %{"httpStatusCode" => 403}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "InvalidSchemaDocException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "UpdateFacetRequest" => %{"members" => %{"AttributeUpdates" => %{"shape" => "FacetAttributeUpdateList"}, "Name" => %{"shape" => "FacetName"}, "ObjectType" => %{"shape" => "ObjectType"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "BatchListObjectAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "AttributeKeyAndValueList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "BatchListAttachedIndicesResponse" => %{"members" => %{"IndexAttachments" => %{"shape" => "IndexAttachmentList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ListPolicyAttachmentsRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "PolicyReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "PolicyReference"], "type" => "structure"}, "BatchAttachObject" => %{"members" => %{"ChildReference" => %{"shape" => "ObjectReference"}, "LinkName" => %{"shape" => "LinkName"}, "ParentReference" => %{"shape" => "ObjectReference"}}, "required" => ["ParentReference", "ChildReference", "LinkName"], "type" => "structure"}, "InvalidNextTokenException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchReadExceptionType" => %{"enum" => ["ValidationException", "InvalidArnException", "ResourceNotFoundException", "InvalidNextTokenException", "AccessDeniedException", "NotNodeException", "FacetValidationException", "CannotListParentOfRootException", "NotIndexException", "NotPolicyException", "DirectoryNotEnabledException", "LimitExceededException", "InternalServiceException"], "type" => "string"}, "BatchRemoveFacetFromObject" => %{"members" => %{"ObjectReference" => %{"shape" => "ObjectReference"}, "SchemaFacet" => %{"shape" => "SchemaFacet"}}, "required" => ["SchemaFacet", "ObjectReference"], "type" => "structure"}, "UpdateObjectAttributesResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "UpdateTypedLinkFacetResponse" => %{"members" => %{}, "type" => "structure"}, "AddFacetToObjectRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectAttributeList" => %{"shape" => "AttributeKeyAndValueList"}, "ObjectReference" => %{"shape" => "ObjectReference"}, "SchemaFacet" => %{"shape" => "SchemaFacet"}}, "required" => ["DirectoryArn", "SchemaFacet", "ObjectReference"], "type" => "structure"}, "LookupPolicyResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "PolicyToPathList" => %{"shape" => "PolicyToPathList"}}, "type" => "structure"}, "AttachObjectRequest" => %{"members" => %{"ChildReference" => %{"shape" => "ObjectReference"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "LinkName" => %{"shape" => "LinkName"}, "ParentReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ParentReference", "ChildReference", "LinkName"], "type" => "structure"}, "ListDevelopmentSchemaArnsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "SchemaArns" => %{"shape" => "Arns"}}, "type" => "structure"}, "DetachObjectResponse" => %{"members" => %{"DetachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "GetTypedLinkFacetInformationResponse" => %{"members" => %{"IdentityAttributeOrder" => %{"shape" => "AttributeNameList"}}, "type" => "structure"}, "ListObjectPoliciesRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "AttachTypedLinkRequest" => %{"members" => %{"Attributes" => %{"shape" => "AttributeNameAndValueList"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "SourceObjectReference" => %{"shape" => "ObjectReference"}, "TargetObjectReference" => %{"shape" => "ObjectReference"}, "TypedLinkFacet" => %{"shape" => "TypedLinkSchemaAndFacetName"}}, "required" => ["DirectoryArn", "SourceObjectReference", "TargetObjectReference", "TypedLinkFacet", "Attributes"], "type" => "structure"}, "DeleteSchemaRequest" => %{"members" => %{"SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn"], "type" => "structure"}, "BatchReadOperationList" => %{"member" => %{"shape" => "BatchReadOperation"}, "type" => "list"}, "ListAppliedSchemaArnsRequest" => %{"members" => %{"DirectoryArn" => %{"shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "DeleteFacetRequest" => %{"members" => %{"Name" => %{"shape" => "FacetName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "AttributeNameAndValueList" => %{"member" => %{"shape" => "AttributeNameAndValue"}, "type" => "list"}, "BatchWriteOperation" => %{"members" => %{"AddFacetToObject" => %{"shape" => "BatchAddFacetToObject"}, "AttachObject" => %{"shape" => "BatchAttachObject"}, "AttachPolicy" => %{"shape" => "BatchAttachPolicy"}, "AttachToIndex" => %{"shape" => "BatchAttachToIndex"}, "AttachTypedLink" => %{"shape" => "BatchAttachTypedLink"}, "CreateIndex" => %{"shape" => "BatchCreateIndex"}, "CreateObject" => %{"shape" => "BatchCreateObject"}, "DeleteObject" => %{"shape" => "BatchDeleteObject"}, "DetachFromIndex" => %{"shape" => "BatchDetachFromIndex"}, "DetachObject" => %{"shape" => "BatchDetachObject"}, "DetachPolicy" => %{"shape" => "BatchDetachPolicy"}, "DetachTypedLink" => %{"shape" => "BatchDetachTypedLink"}, "RemoveFacetFromObject" => %{"shape" => "BatchRemoveFacetFromObject"}, "UpdateObjectAttributes" => %{"shape" => "BatchUpdateObjectAttributes"}}, "type" => "structure"}, "RetryableConflictException" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ConsistencyLevel" => %{"enum" => ["SERIALIZABLE", "EVENTUAL"], "type" => "string"}, "RuleKey" => %{"max" => 64, "min" => 1, "pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "DirectoryNotEnabledException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListTagsForResourceRequest" => %{"members" => %{"MaxResults" => %{"shape" => "TagsNumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ResourceArn" => %{"shape" => "Arn"}}, "required" => ["ResourceArn"], "type" => "structure"}, "ListObjectAttributesRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "FacetFilter" => %{"shape" => "SchemaFacet"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "BatchRemoveFacetFromObjectResponse" => %{"members" => %{}, "type" => "structure"}, "IndexedAttributeMissingException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "FacetAlreadyExistsException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchWriteExceptionType" => %{"enum" => ["InternalServiceException", "ValidationException", "InvalidArnException", "LinkNameAlreadyInUseException", "StillContainsLinksException", "FacetValidationException", "ObjectNotDetachedException", "ResourceNotFoundException", "AccessDeniedException", "InvalidAttachmentException", "NotIndexException", "IndexedAttributeMissingException", "ObjectAlreadyDetachedException", "NotPolicyException", "DirectoryNotEnabledException", "LimitExceededException", "UnsupportedIndexTypeException"], "type" => "string"}, "BatchDetachTypedLink" => %{"members" => %{"TypedLinkSpecifier" => %{"shape" => "TypedLinkSpecifier"}}, "required" => ["TypedLinkSpecifier"], "type" => "structure"}, "AttributeKeyList" => %{"member" => %{"shape" => "AttributeKey"}, "type" => "list"}, "InvalidRuleException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BinaryAttributeValue" => %{"type" => "blob"}, "DirectoryAlreadyExistsException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateFacetResponse" => %{"members" => %{}, "type" => "structure"}, "GetObjectInformationRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "BatchReadOperationResponseList" => %{"member" => %{"shape" => "BatchReadOperationResponse"}, "type" => "list"}, "ObjectAttributeRange" => %{"members" => %{"AttributeKey" => %{"shape" => "AttributeKey"}, "Range" => %{"shape" => "TypedAttributeValueRange"}}, "type" => "structure"}, "BatchReadSuccessfulResponse" => %{"members" => %{"GetObjectInformation" => %{"shape" => "BatchGetObjectInformationResponse"}, "ListAttachedIndices" => %{"shape" => "BatchListAttachedIndicesResponse"}, "ListIncomingTypedLinks" => %{"shape" => "BatchListIncomingTypedLinksResponse"}, "ListIndex" => %{"shape" => "BatchListIndexResponse"}, "ListObjectAttributes" => %{"shape" => "BatchListObjectAttributesResponse"}, "ListObjectChildren" => %{"shape" => "BatchListObjectChildrenResponse"}, "ListObjectParentPaths" => %{"shape" => "BatchListObjectParentPathsResponse"}, "ListObjectPolicies" => %{"shape" => "BatchListObjectPoliciesResponse"}, "ListOutgoingTypedLinks" => %{"shape" => "BatchListOutgoingTypedLinksResponse"}, "ListPolicyAttachments" => %{"shape" => "BatchListPolicyAttachmentsResponse"}, "LookupPolicy" => %{"shape" => "BatchLookupPolicyResponse"}}, "type" => "structure"}, "DirectoryDeletedException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListIndexRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "IndexReference" => %{"shape" => "ObjectReference"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "RangesOnIndexedValues" => %{"shape" => "ObjectAttributeRangeList"}}, "required" => ["DirectoryArn", "IndexReference"], "type" => "structure"}, "GetSchemaAsJsonRequest" => %{"members" => %{"SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn"], "type" => "structure"}, "ObjectIdentifier" => %{"type" => "string"}, "BatchListObjectAttributes" => %{"members" => %{"FacetFilter" => %{"shape" => "SchemaFacet"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "ListOutgoingTypedLinksRequest" => %{"members" => %{"ConsistencyLevel" => %{"shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "FilterAttributeRanges" => %{"shape" => "TypedLinkAttributeRangeList"}, "FilterTypedLink" => %{"shape" => "TypedLinkSchemaAndFacetName"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "TypedLinkNameList" => %{"member" => %{"shape" => "TypedLinkName"}, "type" => "list"}, "PathToObjectIdentifiers" => %{"members" => %{"ObjectIdentifiers" => %{"shape" => "ObjectIdentifierList"}, "Path" => %{"shape" => "PathString"}}, "type" => "structure"}, "Bool" => %{"type" => "boolean"}, "LinkNameAlreadyInUseException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchListObjectChildrenResponse" => %{"members" => %{"Children" => %{"shape" => "LinkNameToObjectIdentifierMap"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "InvalidFacetUpdateException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "TypedLinkFacet" => %{"members" => %{"Attributes" => %{"shape" => "TypedLinkAttributeDefinitionList"}, "IdentityAttributeOrder" => %{"shape" => "AttributeNameList"}, "Name" => %{"shape" => "TypedLinkName"}}, "required" => ["Name", "Attributes", "IdentityAttributeOrder"], "type" => "structure"}, "BatchOperationIndex" => %{"type" => "integer"}, "Version" => %{"max" => 10, "min" => 1, "pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "PutSchemaFromJsonRequest" => %{"members" => %{"Document" => %{"shape" => "SchemaJsonDocument"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Document"], "type" => "structure"}, "BatchDeleteObjectResponse" => %{"members" => %{}, "type" => "structure"}, "BatchAttachTypedLink" => %{"members" => %{"Attributes" => %{"shape" => "AttributeNameAndValueList"}, "SourceObjectReference" => %{"shape" => "ObjectReference"}, "TargetObjectReference" => %{"shape" => "ObjectReference"}, "TypedLinkFacet" => %{"shape" => "TypedLinkSchemaAndFacetName"}}, "required" => ["SourceObjectReference", "TargetObjectReference", "TypedLinkFacet", "Attributes"], "type" => "structure"}, "Directory" => %{"members" => %{"CreationDateTime" => %{"shape" => "Date"}, "DirectoryArn" => %{"shape" => "DirectoryArn"}, "Name" => %{"shape" => "DirectoryName"}, "State" => %{"shape" => "DirectoryState"}}, "type" => "structure"}, "ListObjectParentPathsRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "Date" => %{"type" => "timestamp"}, "GetFacetRequest" => %{"members" => %{"Name" => %{"shape" => "FacetName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "FacetNotFoundException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ObjectAttributeAction" => %{"members" => %{"ObjectAttributeActionType" => %{"shape" => "UpdateActionType"}, "ObjectAttributeUpdateValue" => %{"shape" => "TypedAttributeValue"}}, "type" => "structure"}, "BatchListPolicyAttachments" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "PolicyReference" => %{"shape" => "ObjectReference"}}, "required" => ["PolicyReference"], "type" => "structure"}, "UntagResourceRequest" => %{"members" => %{"ResourceArn" => %{"shape" => "Arn"}, "TagKeys" => %{"shape" => "TagKeyList"}}, "required" => ["ResourceArn", "TagKeys"], "type" => "structure"}, "ListAttachedIndicesRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "TargetReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "TargetReference"], "type" => "structure"}, "BatchDetachPolicy" => %{"members" => %{"ObjectReference" => %{"shape" => "ObjectReference"}, "PolicyReference" => %{"shape" => "ObjectReference"}}, "required" => ["PolicyReference", "ObjectReference"], "type" => "structure"}, "ListFacetNamesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn"], "type" => "structure"}, "LinkName" => %{"max" => 64, "min" => 1, "pattern" => "[^\\/\\[\\]\\(\\):\\{\\}#@!?\\s\\\\;]+", "type" => "string"}, "FacetAttribute" => %{"members" => %{"AttributeDefinition" => %{"shape" => "FacetAttributeDefinition"}, "AttributeReference" => %{"shape" => "FacetAttributeReference"}, "Name" => %{"shape" => "AttributeName"}, "RequiredBehavior" => %{"shape" => "RequiredAttributeBehavior"}}, "required" => ["Name"], "type" => "structure"}, "ListIncomingTypedLinksResponse" => %{"members" => %{"LinkSpecifiers" => %{"shape" => "TypedLinkSpecifierList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CreateSchemaRequest" => %{"members" => %{"Name" => %{"shape" => "SchemaName"}}, "required" => ["Name"], "type" => "structure"}, "ListObjectPoliciesResponse" => %{"members" => %{"AttachedPolicyIds" => %{"shape" => "ObjectIdentifierList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "type" => "structure"}, "NotNodeException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DirectoryArn" => %{"type" => "string"}, "BatchUpdateObjectAttributes" => %{"members" => %{"AttributeUpdates" => %{"shape" => "ObjectAttributeUpdateList"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference", "AttributeUpdates"], "type" => "structure"}, "AttachTypedLinkResponse" => %{"members" => %{"TypedLinkSpecifier" => %{"shape" => "TypedLinkSpecifier"}}, "type" => "structure"}, "UpdateTypedLinkFacetRequest" => %{"members" => %{"AttributeUpdates" => %{"shape" => "TypedLinkFacetAttributeUpdateList"}, "IdentityAttributeOrder" => %{"shape" => "AttributeNameList"}, "Name" => %{"shape" => "TypedLinkName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name", "AttributeUpdates", "IdentityAttributeOrder"], "type" => "structure"}, "ObjectAttributeUpdateList" => %{"member" => %{"shape" => "ObjectAttributeUpdate"}, "type" => "list"}, "LookupPolicyRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "ObjectAttributeUpdate" => %{"members" => %{"ObjectAttributeAction" => %{"shape" => "ObjectAttributeAction"}, "ObjectAttributeKey" => %{"shape" => "AttributeKey"}}, "type" => "structure"}, "CreateIndexResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "Arns" => %{"member" => %{"shape" => "Arn"}, "type" => "list"}, "ObjectIdentifierList" => %{"member" => %{"shape" => "ObjectIdentifier"}, "type" => "list"}, "TypedLinkAttributeRange" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "Range" => %{"shape" => "TypedAttributeValueRange"}}, "required" => ["Range"], "type" => "structure"}, "StillContainsLinksException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "FacetInUseException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "RuleMap" => %{"key" => %{"shape" => "RuleKey"}, "type" => "map", "value" => %{"shape" => "Rule"}}, "DeleteFacetResponse" => %{"members" => %{}, "type" => "structure"}, "CreateDirectoryResponse" => %{"members" => %{"AppliedSchemaArn" => %{"shape" => "Arn"}, "DirectoryArn" => %{"shape" => "DirectoryArn"}, "Name" => %{"shape" => "DirectoryName"}, "ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "required" => ["DirectoryArn", "Name", "ObjectIdentifier", "AppliedSchemaArn"], "type" => "structure"}, "AddFacetToObjectResponse" => %{"members" => %{}, "type" => "structure"}, "DirectoryList" => %{"member" => %{"shape" => "Directory"}, "type" => "list"}, "ListOutgoingTypedLinksResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "TypedLinkSpecifiers" => %{"shape" => "TypedLinkSpecifierList"}}, "type" => "structure"}, "TagList" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "SchemaAlreadyExistsException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchListIndexResponse" => %{"members" => %{"IndexAttachments" => %{"shape" => "IndexAttachmentList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "AttachObjectResponse" => %{"members" => %{"AttachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "ListObjectParentsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "Parents" => %{"shape" => "ObjectIdentifierToLinkNameMap"}}, "type" => "structure"}, "TagValue" => %{"type" => "string"}, "PolicyAttachmentList" => %{"member" => %{"shape" => "PolicyAttachment"}, "type" => "list"}, "BatchReadRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "Operations" => %{"shape" => "BatchReadOperationList"}}, "required" => ["DirectoryArn", "Operations"], "type" => "structure"}, "NotPolicyException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DetachFromIndexResponse" => %{"members" => %{"DetachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "FacetAttributeReference" => %{"members" => %{"TargetAttributeName" => %{"shape" => "AttributeName"}, "TargetFacetName" => %{"shape" => "FacetName"}}, "required" => ["TargetFacetName", "TargetAttributeName"], "type" => "structure"}, "ValidationException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchReferenceName" => %{"type" => "string"}, "NumberAttributeValue" => %{"type" => "string"}, "PathToObjectIdentifiersList" => %{"member" => %{"shape" => "PathToObjectIdentifiers"}, "type" => "list"}, "RangeMode" => %{"enum" => ["FIRST", "LAST", "LAST_BEFORE_MISSING_VALUES", "INCLUSIVE", "EXCLUSIVE"], "type" => "string"}, "BatchWriteResponse" => %{"members" => %{"Responses" => %{"shape" => "BatchWriteOperationResponseList"}}, "type" => "structure"}, "RequiredAttributeBehavior" => %{"enum" => ["REQUIRED_ALWAYS", "NOT_REQUIRED"], "type" => "string"}, "BatchDeleteObject" => %{"members" => %{"ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "PublishSchemaRequest" => %{"members" => %{"DevelopmentSchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "Name" => %{"shape" => "SchemaName"}, "Version" => %{"shape" => "Version"}}, "required" => ["DevelopmentSchemaArn", "Version"], "type" => "structure"}, "Arn" => %{"type" => "string"}, "FacetNameList" => %{"member" => %{"shape" => "FacetName"}, "type" => "list"}, "GetDirectoryResponse" => %{"members" => %{"Directory" => %{"shape" => "Directory"}}, "required" => ["Directory"], "type" => "structure"}, "DetachObjectRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "LinkName" => %{"shape" => "LinkName"}, "ParentReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ParentReference", "LinkName"], "type" => "structure"}, "ListFacetAttributesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "Name" => %{"shape" => "FacetName"}, "NextToken" => %{"shape" => "NextToken"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "BatchAttachToIndex" => %{"members" => %{"IndexReference" => %{"shape" => "ObjectReference"}, "TargetReference" => %{"shape" => "ObjectReference"}}, "required" => ["IndexReference", "TargetReference"], "type" => "structure"}, "CreateTypedLinkFacetRequest" => %{"members" => %{"Facet" => %{"shape" => "TypedLinkFacet"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Facet"], "type" => "structure"}, "BatchListObjectPolicies" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "DetachTypedLinkRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "TypedLinkSpecifier" => %{"shape" => "TypedLinkSpecifier"}}, "required" => ["DirectoryArn", "TypedLinkSpecifier"], "type" => "structure"}, "BatchLookupPolicyResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "PolicyToPathList" => %{"shape" => "PolicyToPathList"}}, "type" => "structure"}, "ListPolicyAttachmentsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "ObjectIdentifiers" => %{"shape" => "ObjectIdentifierList"}}, "type" => "structure"}, "TypedLinkName" => %{"pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "CreateIndexRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "IsUnique" => %{"shape" => "Bool"}, "LinkName" => %{"shape" => "LinkName"}, "OrderedIndexedAttributeList" => %{"shape" => "AttributeKeyList"}, "ParentReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "OrderedIndexedAttributeList", "IsUnique"], "type" => "structure"}, "CreateFacetRequest" => %{"members" => %{"Attributes" => %{"shape" => "FacetAttributeList"}, "Name" => %{"shape" => "FacetName"}, "ObjectType" => %{"shape" => "ObjectType"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name", "ObjectType"], "type" => "structure"}, "BatchWriteRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "Operations" => %{"shape" => "BatchWriteOperationList"}}, "required" => ["DirectoryArn", "Operations"], "type" => "structure"}, "UntagResourceResponse" => %{"members" => %{}, "type" => "structure"}, "BatchListAttachedIndices" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "TargetReference" => %{"shape" => "ObjectReference"}}, "required" => ["TargetReference"], "type" => "structure"}, "ListDirectoriesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "state" => %{"shape" => "DirectoryState"}}, "type" => "structure"}, "AttributeKey" => %{"members" => %{"FacetName" => %{"shape" => "FacetName"}, "Name" => %{"shape" => "AttributeName"}, "SchemaArn" => %{"shape" => "Arn"}}, "required" => ["SchemaArn", "FacetName", "Name"], "type" => "structure"}, "LimitExceededException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "GetDirectoryRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "DirectoryArn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "UpdateActionType" => %{"enum" => ["CREATE_OR_UPDATE", "DELETE"], "type" => "string"}, "TypedLinkFacetAttributeUpdateList" => %{"member" => %{"shape" => "TypedLinkFacetAttributeUpdate"}, "type" => "list"}, "TagResourceRequest" => %{"members" => %{"ResourceArn" => %{"shape" => "Arn"}, "Tags" => %{"shape" => "TagList"}}, "required" => ["ResourceArn", "Tags"], "type" => "structure"}, "DirectoryName" => %{"max" => 64, "min" => 1, "pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "BatchListObjectParentPathsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "PathToObjectIdentifiersList" => %{"shape" => "PathToObjectIdentifiersList"}}, "type" => "structure"}, "NumberResults" => %{"min" => 1, "type" => "integer"}, "BatchReadResponse" => %{"members" => %{"Responses" => %{"shape" => "BatchReadOperationResponseList"}}, "type" => "structure"}, "PolicyToPath" => %{"members" => %{"Path" => %{"shape" => "PathString"}, "Policies" => %{"shape" => "PolicyAttachmentList"}}, "type" => "structure"}, "SchemaName" => %{"max" => 32, "min" => 1, "pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "ListTypedLinkFacetAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "TypedLinkAttributeDefinitionList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "InvalidTaggingRequestException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ObjectAttributeRangeList" => %{"member" => %{"shape" => "ObjectAttributeRange"}, "type" => "list"}, "DeleteObjectRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "BatchDetachFromIndexResponse" => %{"members" => %{"DetachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "ApplySchemaResponse" => %{"members" => %{"AppliedSchemaArn" => %{"shape" => "Arn"}, "DirectoryArn" => %{"shape" => "Arn"}}, "type" => "structure"}, "ListDevelopmentSchemaArnsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ResourceNotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "GetFacetResponse" => %{"members" => %{"Facet" => %{"shape" => "Facet"}}, "type" => "structure"}, "DisableDirectoryResponse" => %{"members" => %{"DirectoryArn" => %{"shape" => "Arn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "DeleteObjectResponse" => %{"members" => %{}, "type" => "structure"}, "AttachPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "TypedLinkAttributeRangeList" => %{"member" => %{"shape" => "TypedLinkAttributeRange"}, "type" => "list"}, "InternalServiceException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "IndexAttachmentList" => %{"member" => %{"shape" => "IndexAttachment"}, "type" => "list"}, "DirectoryNotDisabledException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "CreateObjectRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "LinkName" => %{"shape" => "LinkName"}, "ObjectAttributeList" => %{"shape" => "AttributeKeyAndValueList"}, "ParentReference" => %{"shape" => "ObjectReference"}, "SchemaFacets" => %{"shape" => "SchemaFacetList"}}, "required" => ["DirectoryArn", "SchemaFacets"], "type" => "structure"}, "BooleanAttributeValue" => %{"type" => "boolean"}, "BatchUpdateObjectAttributesResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "BatchListIncomingTypedLinksResponse" => %{"members" => %{"LinkSpecifiers" => %{"shape" => "TypedLinkSpecifierList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ListAttachedIndicesResponse" => %{"members" => %{"IndexAttachments" => %{"shape" => "IndexAttachmentList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ObjectIdentifierToLinkNameMap" => %{"key" => %{"shape" => "ObjectIdentifier"}, "type" => "map", "value" => %{"shape" => "LinkName"}}, "ApplySchemaRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "PublishedSchemaArn" => %{"shape" => "Arn"}}, "required" => ["PublishedSchemaArn", "DirectoryArn"], "type" => "structure"}, "InvalidArnException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchCreateObjectResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "EnableDirectoryResponse" => %{"members" => %{"DirectoryArn" => %{"shape" => "Arn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "ListAppliedSchemaArnsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "SchemaArns" => %{"shape" => "Arns"}}, "type" => "structure"}, "BatchWriteOperationResponseList" => %{"member" => %{"shape" => "BatchWriteOperationResponse"}, "type" => "list"}, "SchemaFacetList" => %{"member" => %{"shape" => "SchemaFacet"}, "type" => "list"}, "BatchAttachPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "ListObjectParentPathsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "PathToObjectIdentifiersList" => %{"shape" => "PathToObjectIdentifiersList"}}, "type" => "structure"}, "ListPublishedSchemaArnsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ListObjectChildrenRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "BatchReadOperation" => %{"members" => %{"GetObjectInformation" => %{"shape" => "BatchGetObjectInformation"}, "ListAttachedIndices" => %{"shape" => "BatchListAttachedIndices"}, "ListIncomingTypedLinks" => %{"shape" => "BatchListIncomingTypedLinks"}, "ListIndex" => %{"shape" => "BatchListIndex"}, "ListObjectAttributes" => %{"shape" => "BatchListObjectAttributes"}, "ListObjectChildren" => %{"shape" => "BatchListObjectChildren"}, "ListObjectParentPaths" => %{"shape" => "BatchListObjectParentPaths"}, "ListObjectPolicies" => %{"shape" => "BatchListObjectPolicies"}, "ListOutgoingTypedLinks" => %{"shape" => "BatchListOutgoingTypedLinks"}, "ListPolicyAttachments" => %{"shape" => "BatchListPolicyAttachments"}, "LookupPolicy" => %{"shape" => "BatchLookupPolicy"}}, "type" => "structure"}, "AttributeKeyAndValueList" => %{"member" => %{"shape" => "AttributeKeyAndValue"}, "type" => "list"}, "ExceptionMessage" => %{"type" => "string"}, "DisableDirectoryRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "BatchDetachObject" => %{"members" => %{"BatchReferenceName" => %{"shape" => "BatchReferenceName"}, "LinkName" => %{"shape" => "LinkName"}, "ParentReference" => %{"shape" => "ObjectReference"}}, "required" => ["ParentReference", "LinkName", "BatchReferenceName"], "type" => "structure"}, "BatchGetObjectInformationResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}, "SchemaFacets" => %{"shape" => "SchemaFacetList"}}, "type" => "structure"}, "ObjectType" => %{"enum" => ["NODE", "LEAF_NODE", "POLICY", "INDEX"], "type" => "string"}, "CreateObjectResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "UpdateSchemaRequest" => %{"members" => %{"Name" => %{"shape" => "SchemaName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "BatchDetachPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "FacetAttributeType" => %{"enum" => ["STRING", "BINARY", "BOOLEAN", "NUMBER", "DATETIME"], "type" => "string"}, "GetObjectInformationResponse" => %{"members" => %{"ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}, "SchemaFacets" => %{"shape" => "SchemaFacetList"}}, "type" => "structure"}, "UpdateObjectAttributesRequest" => %{"members" => %{"AttributeUpdates" => %{"shape" => "ObjectAttributeUpdateList"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference", "AttributeUpdates"], "type" => "structure"}, "BatchDetachObjectResponse" => %{"members" => %{"detachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "IndexAttachment" => %{"members" => %{"IndexedAttributes" => %{"shape" => "AttributeKeyAndValueList"}, "ObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "BatchListOutgoingTypedLinksResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "TypedLinkSpecifiers" => %{"shape" => "TypedLinkSpecifierList"}}, "type" => "structure"}, "BatchListObjectChildren" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "TypedAttributeValue" => %{"members" => %{"BinaryValue" => %{"shape" => "BinaryAttributeValue"}, "BooleanValue" => %{"shape" => "BooleanAttributeValue"}, "DatetimeValue" => %{"shape" => "DatetimeAttributeValue"}, "NumberValue" => %{"shape" => "NumberAttributeValue"}, "StringValue" => %{"shape" => "StringAttributeValue"}}, "type" => "structure"}, "Rule" => %{"members" => %{"Parameters" => %{"shape" => "RuleParameterMap"}, "Type" => %{"shape" => "RuleType"}}, "type" => "structure"}, "TypedLinkFacetAttributeUpdate" => %{"members" => %{"Action" => %{"shape" => "UpdateActionType"}, "Attribute" => %{"shape" => "TypedLinkAttributeDefinition"}}, "required" => ["Attribute", "Action"], "type" => "structure"}, "TagResourceResponse" => %{"members" => %{}, "type" => "structure"}, "AttributeNameList" => %{"member" => %{"shape" => "AttributeName"}, "type" => "list"}, "ListTypedLinkFacetAttributesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "Name" => %{"shape" => "TypedLinkName"}, "NextToken" => %{"shape" => "NextToken"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}, "TagKey" => %{"type" => "string"}, "PutSchemaFromJsonResponse" => %{"members" => %{"Arn" => %{"shape" => "Arn"}}, "type" => "structure"}, "BatchWriteException" => %{"exception" => true, "members" => %{"Index" => %{"shape" => "BatchOperationIndex"}, "Message" => %{"shape" => "ExceptionMessage"}, "Type" => %{"shape" => "BatchWriteExceptionType"}}, "type" => "structure"}, "DeleteDirectoryRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "AttachPolicyRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectReference" => %{"shape" => "ObjectReference"}, "PolicyReference" => %{"shape" => "ObjectReference"}}, "required" => ["PolicyReference", "ObjectReference"], "type" => "structure"}, "BatchAttachToIndexResponse" => %{"members" => %{"AttachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "RuleParameterMap" => %{"key" => %{"shape" => "RuleParameterKey"}, "type" => "map", "value" => %{"shape" => "RuleParameterValue"}}, "NotIndexException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListObjectAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "AttributeKeyAndValueList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "TypedLinkAttributeDefinitionList" => %{"member" => %{"shape" => "TypedLinkAttributeDefinition"}, "type" => "list"}, "BatchReadException" => %{"members" => %{"Message" => %{"shape" => "ExceptionMessage"}, "Type" => %{"shape" => "BatchReadExceptionType"}}, "type" => "structure"}, "BatchAttachTypedLinkResponse" => %{"members" => %{"TypedLinkSpecifier" => %{"shape" => "TypedLinkSpecifier"}}, "type" => "structure"}, "RemoveFacetFromObjectRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectReference" => %{"shape" => "ObjectReference"}, "SchemaFacet" => %{"shape" => "SchemaFacet"}}, "required" => ["DirectoryArn", "SchemaFacet", "ObjectReference"], "type" => "structure"}, "RuleType" => %{"enum" => ["BINARY_LENGTH", "NUMBER_COMPARISON", "STRING_FROM_SET", "STRING_LENGTH"], "type" => "string"}, "SchemaAlreadyPublishedException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "DetachFromIndexRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "IndexReference" => %{"shape" => "ObjectReference"}, "TargetReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "IndexReference", "TargetReference"], "type" => "structure"}, "LinkNameToObjectIdentifierMap" => %{"key" => %{"shape" => "LinkName"}, "type" => "map", "value" => %{"shape" => "ObjectIdentifier"}}, "BatchCreateObject" => %{"members" => %{"BatchReferenceName" => %{"shape" => "BatchReferenceName"}, "LinkName" => %{"shape" => "LinkName"}, "ObjectAttributeList" => %{"shape" => "AttributeKeyAndValueList"}, "ParentReference" => %{"shape" => "ObjectReference"}, "SchemaFacet" => %{"shape" => "SchemaFacetList"}}, "required" => ["SchemaFacet", "ObjectAttributeList", "ParentReference", "LinkName", "BatchReferenceName"], "type" => "structure"}, "BatchLookupPolicy" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "BatchAddFacetToObjectResponse" => %{"members" => %{}, "type" => "structure"}, "Facet" => %{"members" => %{"Name" => %{"shape" => "FacetName"}, "ObjectType" => %{"shape" => "ObjectType"}}, "type" => "structure"}, "ListDirectoriesResponse" => %{"members" => %{"Directories" => %{"shape" => "DirectoryList"}, "NextToken" => %{"shape" => "NextToken"}}, "required" => ["Directories"], "type" => "structure"}, "TypedLinkSpecifier" => %{"members" => %{"IdentityAttributeValues" => %{"shape" => "AttributeNameAndValueList"}, "SourceObjectReference" => %{"shape" => "ObjectReference"}, "TargetObjectReference" => %{"shape" => "ObjectReference"}, "TypedLinkFacet" => %{"shape" => "TypedLinkSchemaAndFacetName"}}, "required" => ["TypedLinkFacet", "SourceObjectReference", "TargetObjectReference", "IdentityAttributeValues"], "type" => "structure"}, "ObjectNotDetachedException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "ListTypedLinkFacetNamesResponse" => %{"members" => %{"FacetNames" => %{"shape" => "TypedLinkNameList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "FacetAttributeList" => %{"member" => %{"shape" => "FacetAttribute"}, "type" => "list"}, "UpdateSchemaResponse" => %{"members" => %{"SchemaArn" => %{"shape" => "Arn"}}, "type" => "structure"}, "DetachPolicyResponse" => %{"members" => %{}, "type" => "structure"}, "FacetName" => %{"max" => 64, "min" => 1, "pattern" => "^[a-zA-Z0-9._-]*$", "type" => "string"}, "BatchAttachObjectResponse" => %{"members" => %{"attachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "AttachToIndexResponse" => %{"members" => %{"AttachedObjectIdentifier" => %{"shape" => "ObjectIdentifier"}}, "type" => "structure"}, "PublishSchemaResponse" => %{"members" => %{"PublishedSchemaArn" => %{"shape" => "Arn"}}, "type" => "structure"}, "CannotListParentOfRootException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "NextToken" => %{"type" => "string"}, "TypedLinkSchemaAndFacetName" => %{"members" => %{"SchemaArn" => %{"shape" => "Arn"}, "TypedLinkName" => %{"shape" => "TypedLinkName"}}, "required" => ["SchemaArn", "TypedLinkName"], "type" => "structure"}, "BatchCreateIndex" => %{"members" => %{"BatchReferenceName" => %{"shape" => "BatchReferenceName"}, "IsUnique" => %{"shape" => "Bool"}, "LinkName" => %{"shape" => "LinkName"}, "OrderedIndexedAttributeList" => %{"shape" => "AttributeKeyList"}, "ParentReference" => %{"shape" => "ObjectReference"}}, "required" => ["OrderedIndexedAttributeList", "IsUnique"], "type" => "structure"}, "SchemaFacet" => %{"members" => %{"FacetName" => %{"shape" => "FacetName"}, "SchemaArn" => %{"shape" => "Arn"}}, "type" => "structure"}, "ListFacetNamesResponse" => %{"members" => %{"FacetNames" => %{"shape" => "FacetNameList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "PolicyType" => %{"type" => "string"}, "ListPublishedSchemaArnsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "SchemaArns" => %{"shape" => "Arns"}}, "type" => "structure"}, "ListObjectParentsRequest" => %{"members" => %{"ConsistencyLevel" => %{"location" => "header", "locationName" => "x-amz-consistency-level", "shape" => "ConsistencyLevel"}, "DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "ObjectReference"], "type" => "structure"}, "BatchListPolicyAttachmentsResponse" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "ObjectIdentifiers" => %{"shape" => "ObjectIdentifierList"}}, "type" => "structure"}, "RemoveFacetFromObjectResponse" => %{"members" => %{}, "type" => "structure"}, "EnableDirectoryRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["DirectoryArn"], "type" => "structure"}, "InvalidAttachmentException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"Message" => %{"shape" => "ExceptionMessage"}}, "type" => "structure"}, "BatchListObjectParentPaths" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "ObjectReference" => %{"shape" => "ObjectReference"}}, "required" => ["ObjectReference"], "type" => "structure"}, "ListTypedLinkFacetNamesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "NumberResults"}, "NextToken" => %{"shape" => "NextToken"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn"], "type" => "structure"}, "DetachPolicyRequest" => %{"members" => %{"DirectoryArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}, "ObjectReference" => %{"shape" => "ObjectReference"}, "PolicyReference" => %{"shape" => "ObjectReference"}}, "required" => ["DirectoryArn", "PolicyReference", "ObjectReference"], "type" => "structure"}, "ListFacetAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "FacetAttributeList"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "GetSchemaAsJsonResponse" => %{"members" => %{"Document" => %{"shape" => "SchemaJsonDocument"}, "Name" => %{"shape" => "SchemaName"}}, "type" => "structure"}, "FacetAttributeUpdate" => %{"members" => %{"Action" => %{"shape" => "UpdateActionType"}, "Attribute" => %{"shape" => "FacetAttribute"}}, "type" => "structure"}, "DatetimeAttributeValue" => %{"type" => "timestamp"}, "PolicyToPathList" => %{"member" => %{"shape" => "PolicyToPath"}, "type" => "list"}, "ListObjectChildrenResponse" => %{"members" => %{"Children" => %{"shape" => "LinkNameToObjectIdentifierMap"}, "NextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "GetTypedLinkFacetInformationRequest" => %{"members" => %{"Name" => %{"shape" => "TypedLinkName"}, "SchemaArn" => %{"location" => "header", "locationName" => "x-amz-data-partition", "shape" => "Arn"}}, "required" => ["SchemaArn", "Name"], "type" => "structure"}}
+  end
 end

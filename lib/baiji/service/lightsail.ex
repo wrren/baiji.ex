@@ -33,9 +33,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateInstancesFromSnapshotRequest",
+      output_shape:     "CreateInstancesFromSnapshotResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific Amazon Lightsail virtual private server, or *instance*.
@@ -53,9 +57,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteInstanceRequest",
+      output_shape:     "DeleteInstanceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific static IP from your account.
@@ -73,9 +81,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ReleaseStaticIpRequest",
+      output_shape:     "ReleaseStaticIpResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Restarts a specific instance. When your Amazon Lightsail instance is
@@ -96,9 +108,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "RebootInstanceRequest",
+      output_shape:     "RebootInstanceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets operations for a specific resource (e.g., an instance or a static IP).
@@ -116,9 +132,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetOperationsForResourceRequest",
+      output_shape:     "GetOperationsForResourceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific SSH key pair.
@@ -136,9 +156,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteKeyPairRequest",
+      output_shape:     "DeleteKeyPairResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific operation. Operations include events
@@ -158,9 +182,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetOperationRequest",
+      output_shape:     "GetOperationResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific instance snapshot.
@@ -178,9 +206,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceSnapshotRequest",
+      output_shape:     "GetInstanceSnapshotResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Imports a public SSH key from a specific key pair.
@@ -198,9 +230,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ImportKeyPairRequest",
+      output_shape:     "ImportKeyPairResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Tries to peer the Lightsail VPC with the user's default VPC.
@@ -218,9 +254,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PeerVpcRequest",
+      output_shape:     "PeerVpcResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified domain recordset and all of its domain records.
@@ -238,9 +278,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteDomainRequest",
+      output_shape:     "DeleteDomainResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a snapshot of a specific virtual private server, or *instance*. You
@@ -259,9 +303,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateInstanceSnapshotRequest",
+      output_shape:     "CreateInstanceSnapshotResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates one or more Amazon Lightsail virtual private servers, or
@@ -280,9 +328,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateInstancesRequest",
+      output_shape:     "CreateInstancesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Detaches a static IP from the Amazon Lightsail instance to which it is
@@ -301,9 +353,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DetachStaticIpRequest",
+      output_shape:     "DetachStaticIpResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about all operations.
@@ -325,9 +381,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetOperationsRequest",
+      output_shape:     "GetOperationsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the names of all active (not deleted) resources.
@@ -345,9 +405,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetActiveNamesRequest",
+      output_shape:     "GetActiveNamesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a domain resource for the specified domain (e.g., example.com).
@@ -365,9 +429,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDomainRequest",
+      output_shape:     "CreateDomainResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific domain entry.
@@ -385,9 +453,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteDomainEntryRequest",
+      output_shape:     "DeleteDomainEntryResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific static IP.
@@ -405,9 +477,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetStaticIpRequest",
+      output_shape:     "GetStaticIpResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about all static IPs in the user's account.
@@ -425,9 +501,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetStaticIpsRequest",
+      output_shape:     "GetStaticIpsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Allocates a static IP address.
@@ -445,9 +525,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "AllocateStaticIpRequest",
+      output_shape:     "AllocateStaticIpResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about all key pairs in the user's account.
@@ -465,9 +549,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetKeyPairsRequest",
+      output_shape:     "GetKeyPairsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of all domains in the user's account.
@@ -485,9 +573,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetDomainsRequest",
+      output_shape:     "GetDomainsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a Boolean value indicating whether your Lightsail VPC is peered.
@@ -505,9 +597,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "IsVpcPeeredRequest",
+      output_shape:     "IsVpcPeeredResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of all valid regions for Amazon Lightsail. Use the `include
@@ -527,9 +623,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRegionsRequest",
+      output_shape:     "GetRegionsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Downloads the default SSH key pair from the user's account.
@@ -547,9 +647,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DownloadDefaultKeyPairRequest",
+      output_shape:     "DownloadDefaultKeyPairResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Adds public ports to an Amazon Lightsail instance.
@@ -567,9 +671,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "OpenInstancePublicPortsRequest",
+      output_shape:     "OpenInstancePublicPortsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the port states for a specific virtual private server, or
@@ -588,9 +696,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstancePortStatesRequest",
+      output_shape:     "GetInstancePortStatesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attempts to unpeer the Lightsail VPC from the user's default VPC.
@@ -608,9 +720,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UnpeerVpcRequest",
+      output_shape:     "UnpeerVpcResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Stops a specific Amazon Lightsail instance that is currently running.
@@ -628,9 +744,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "StopInstanceRequest",
+      output_shape:     "StopInstanceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the specified open ports for an Amazon Lightsail instance, and closes
@@ -649,9 +769,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutInstancePublicPortsRequest",
+      output_shape:     "PutInstancePublicPortsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates one of the following entry records associated with the domain: A
@@ -670,9 +794,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateDomainEntryRequest",
+      output_shape:     "CreateDomainEntryResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the list of bundles that are available for purchase. A bundle
@@ -691,9 +819,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetBundlesRequest",
+      output_shape:     "GetBundlesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns temporary SSH keys you can use to connect to a specific virtual
@@ -712,9 +844,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceAccessDetailsRequest",
+      output_shape:     "GetInstanceAccessDetailsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Closes the public ports on a specific Amazon Lightsail instance.
@@ -732,9 +868,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CloseInstancePublicPortsRequest",
+      output_shape:     "CloseInstancePublicPortsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the data points for the specified Amazon Lightsail instance metric,
@@ -753,9 +893,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceMetricDataRequest",
+      output_shape:     "GetInstanceMetricDataResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns all instance snapshots for the user's account.
@@ -773,9 +917,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceSnapshotsRequest",
+      output_shape:     "GetInstanceSnapshotsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a domain recordset after it is created.
@@ -793,9 +941,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateDomainEntryRequest",
+      output_shape:     "UpdateDomainEntryResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific key pair.
@@ -813,9 +965,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetKeyPairRequest",
+      output_shape:     "GetKeyPairResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific Amazon Lightsail instance, which is a
@@ -834,9 +990,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceRequest",
+      output_shape:     "GetInstanceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about all Amazon Lightsail virtual private servers, or
@@ -855,9 +1015,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstancesRequest",
+      output_shape:     "GetInstancesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the list of available instance images, or *blueprints*. You can use
@@ -879,9 +1043,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetBlueprintsRequest",
+      output_shape:     "GetBlueprintsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the state of a specific instance. Works on one instance at a time.
@@ -899,9 +1067,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetInstanceStateRequest",
+      output_shape:     "GetInstanceStateResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific domain recordset.
@@ -919,9 +1091,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetDomainRequest",
+      output_shape:     "GetDomainResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Starts a specific Amazon Lightsail instance from a stopped state. To
@@ -940,9 +1116,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartInstanceRequest",
+      output_shape:     "StartInstanceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific snapshot of a virtual private server (or *instance*).
@@ -960,9 +1140,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteInstanceSnapshotRequest",
+      output_shape:     "DeleteInstanceSnapshotResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates sn SSH key pair.
@@ -980,9 +1164,13 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateKeyPairRequest",
+      output_shape:     "CreateKeyPairResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Attaches a static IP address to a specific Amazon Lightsail instance.
@@ -1000,8 +1188,19 @@ defmodule Baiji.Lightsail do
       endpoint_prefix:  "lightsail",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "AttachStaticIpRequest",
+      output_shape:     "AttachStaticIpResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"KeyPair" => %{"members" => %{"arn" => %{"shape" => "NonEmptyString"}, "createdAt" => %{"shape" => "IsoDate"}, "fingerprint" => %{"shape" => "Base64"}, "location" => %{"shape" => "ResourceLocation"}, "name" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}, "supportCode" => %{"shape" => "string"}}, "type" => "structure"}, "StartInstanceResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "AttachStaticIpResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "RegionList" => %{"member" => %{"shape" => "Region"}, "type" => "list"}, "CreateKeyPairRequest" => %{"members" => %{"keyPairName" => %{"shape" => "ResourceName"}}, "required" => ["keyPairName"], "type" => "structure"}, "GetDomainsResult" => %{"members" => %{"domains" => %{"shape" => "DomainList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "InstancePortState" => %{"members" => %{"fromPort" => %{"shape" => "Port"}, "protocol" => %{"shape" => "NetworkProtocol"}, "state" => %{"shape" => "PortState"}, "toPort" => %{"shape" => "Port"}}, "type" => "structure"}, "GetInstancesResult" => %{"members" => %{"instances" => %{"shape" => "InstanceList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "ResourceType" => %{"enum" => ["Instance", "StaticIp", "KeyPair", "InstanceSnapshot", "Domain", "PeeredVpc"], "type" => "string"}, "GetStaticIpsRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "BlueprintType" => %{"enum" => ["os", "app"], "type" => "string"}, "GetInstancePortStatesResult" => %{"members" => %{"portStates" => %{"shape" => "InstancePortStateList"}}, "type" => "structure"}, "AllocateStaticIpRequest" => %{"members" => %{"staticIpName" => %{"shape" => "ResourceName"}}, "required" => ["staticIpName"], "type" => "structure"}, "ResourceLocation" => %{"members" => %{"availabilityZone" => %{"shape" => "string"}, "regionName" => %{"shape" => "RegionName"}}, "type" => "structure"}, "Disk" => %{"members" => %{"arn" => %{"shape" => "NonEmptyString"}, "attachedTo" => %{"shape" => "string"}, "attachmentState" => %{"shape" => "string"}, "createdAt" => %{"shape" => "IsoDate"}, "gbInUse" => %{"shape" => "integer"}, "iops" => %{"shape" => "integer"}, "isAttached" => %{"shape" => "boolean"}, "isSystemDisk" => %{"shape" => "boolean"}, "location" => %{"shape" => "ResourceLocation"}, "name" => %{"shape" => "ResourceName"}, "path" => %{"shape" => "string"}, "resourceType" => %{"shape" => "ResourceType"}, "sizeInGb" => %{"shape" => "integer"}, "supportCode" => %{"shape" => "string"}}, "type" => "structure"}, "IsVpcPeeredRequest" => %{"members" => %{}, "type" => "structure"}, "DomainEntryOptionsKeys" => %{"type" => "string"}, "UpdateDomainEntryRequest" => %{"members" => %{"domainEntry" => %{"shape" => "DomainEntry"}, "domainName" => %{"shape" => "DomainName"}}, "required" => ["domainName", "domainEntry"], "type" => "structure"}, "GetOperationsForResourceRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}, "resourceName" => %{"shape" => "ResourceName"}}, "required" => ["resourceName"], "type" => "structure"}, "DeleteInstanceSnapshotRequest" => %{"members" => %{"instanceSnapshotName" => %{"shape" => "ResourceName"}}, "required" => ["instanceSnapshotName"], "type" => "structure"}, "GetInstancesRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "ServiceException" => %{"exception" => true, "fault" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "GetInstanceSnapshotRequest" => %{"members" => %{"instanceSnapshotName" => %{"shape" => "ResourceName"}}, "required" => ["instanceSnapshotName"], "type" => "structure"}, "InstanceSnapshot" => %{"members" => %{"arn" => %{"shape" => "NonEmptyString"}, "createdAt" => %{"shape" => "IsoDate"}, "fromBlueprintId" => %{"shape" => "string"}, "fromBundleId" => %{"shape" => "string"}, "fromInstanceArn" => %{"shape" => "NonEmptyString"}, "fromInstanceName" => %{"shape" => "ResourceName"}, "location" => %{"shape" => "ResourceLocation"}, "name" => %{"shape" => "ResourceName"}, "progress" => %{"shape" => "string"}, "resourceType" => %{"shape" => "ResourceType"}, "sizeInGb" => %{"shape" => "integer"}, "state" => %{"shape" => "InstanceSnapshotState"}, "supportCode" => %{"shape" => "string"}}, "type" => "structure"}, "CreateDomainRequest" => %{"members" => %{"domainName" => %{"shape" => "DomainName"}}, "required" => ["domainName"], "type" => "structure"}, "GetBundlesResult" => %{"members" => %{"bundles" => %{"shape" => "BundleList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "KeyPairList" => %{"member" => %{"shape" => "KeyPair"}, "type" => "list"}, "BundleList" => %{"member" => %{"shape" => "Bundle"}, "type" => "list"}, "AccessDeniedException" => %{"exception" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "GetInstanceRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "DomainEntryType" => %{"type" => "string"}, "GetBlueprintsResult" => %{"members" => %{"blueprints" => %{"shape" => "BlueprintList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "DeleteDomainEntryResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "GetKeyPairsRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "PutInstancePublicPortsRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}, "portInfos" => %{"shape" => "PortInfoList"}}, "required" => ["portInfos", "instanceName"], "type" => "structure"}, "CreateDomainEntryRequest" => %{"members" => %{"domainEntry" => %{"shape" => "DomainEntry"}, "domainName" => %{"shape" => "DomainName"}}, "required" => ["domainName", "domainEntry"], "type" => "structure"}, "StopInstanceRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "OpenInstancePublicPortsResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "CloseInstancePublicPortsRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}, "portInfo" => %{"shape" => "PortInfo"}}, "required" => ["portInfo", "instanceName"], "type" => "structure"}, "Port" => %{"max" => 65535, "min" => 0, "type" => "integer"}, "InstanceList" => %{"member" => %{"shape" => "Instance"}, "type" => "list"}, "InstanceSnapshotList" => %{"member" => %{"shape" => "InstanceSnapshot"}, "type" => "list"}, "boolean" => %{"type" => "boolean"}, "ImportKeyPairResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "InstanceHardware" => %{"members" => %{"cpuCount" => %{"shape" => "integer"}, "disks" => %{"shape" => "DiskList"}, "ramSizeInGb" => %{"shape" => "float"}}, "type" => "structure"}, "CreateInstancesRequest" => %{"members" => %{"availabilityZone" => %{"shape" => "string"}, "blueprintId" => %{"shape" => "NonEmptyString"}, "bundleId" => %{"shape" => "NonEmptyString"}, "customImageName" => %{"deprecated" => true, "shape" => "ResourceName"}, "instanceNames" => %{"shape" => "StringList"}, "keyPairName" => %{"shape" => "ResourceName"}, "userData" => %{"shape" => "string"}}, "required" => ["instanceNames", "availabilityZone", "blueprintId", "bundleId"], "type" => "structure"}, "StringList" => %{"member" => %{"shape" => "string"}, "type" => "list"}, "GetInstanceAccessDetailsRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}, "protocol" => %{"shape" => "InstanceAccessProtocol"}}, "required" => ["instanceName"], "type" => "structure"}, "GetStaticIpRequest" => %{"members" => %{"staticIpName" => %{"shape" => "ResourceName"}}, "required" => ["staticIpName"], "type" => "structure"}, "PortInfo" => %{"members" => %{"fromPort" => %{"shape" => "Port"}, "protocol" => %{"shape" => "NetworkProtocol"}, "toPort" => %{"shape" => "Port"}}, "type" => "structure"}, "GetActiveNamesResult" => %{"members" => %{"activeNames" => %{"shape" => "StringList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "CreateInstancesFromSnapshotRequest" => %{"members" => %{"availabilityZone" => %{"shape" => "string"}, "bundleId" => %{"shape" => "NonEmptyString"}, "instanceNames" => %{"shape" => "StringList"}, "instanceSnapshotName" => %{"shape" => "ResourceName"}, "keyPairName" => %{"shape" => "ResourceName"}, "userData" => %{"shape" => "string"}}, "required" => ["instanceNames", "availabilityZone", "instanceSnapshotName", "bundleId"], "type" => "structure"}, "GetInstanceMetricDataResult" => %{"members" => %{"metricData" => %{"shape" => "MetricDatapointList"}, "metricName" => %{"shape" => "InstanceMetricName"}}, "type" => "structure"}, "DeleteInstanceSnapshotResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "MetricPeriod" => %{"max" => 86400, "min" => 60, "type" => "integer"}, "CreateInstanceSnapshotRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}, "instanceSnapshotName" => %{"shape" => "ResourceName"}}, "required" => ["instanceSnapshotName", "instanceName"], "type" => "structure"}, "CreateInstancesFromSnapshotResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "AvailabilityZoneList" => %{"member" => %{"shape" => "AvailabilityZone"}, "type" => "list"}, "InstanceAccessDetails" => %{"members" => %{"certKey" => %{"shape" => "string"}, "expiresAt" => %{"shape" => "IsoDate"}, "instanceName" => %{"shape" => "ResourceName"}, "ipAddress" => %{"shape" => "IpAddress"}, "password" => %{"shape" => "string"}, "privateKey" => %{"shape" => "string"}, "protocol" => %{"shape" => "InstanceAccessProtocol"}, "username" => %{"shape" => "string"}}, "type" => "structure"}, "PutInstancePublicPortsResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "Region" => %{"members" => %{"availabilityZones" => %{"shape" => "AvailabilityZoneList"}, "continentCode" => %{"shape" => "string"}, "description" => %{"shape" => "string"}, "displayName" => %{"shape" => "string"}, "name" => %{"shape" => "RegionName"}}, "type" => "structure"}, "GetKeyPairResult" => %{"members" => %{"keyPair" => %{"shape" => "KeyPair"}}, "type" => "structure"}, "PeerVpcRequest" => %{"members" => %{}, "type" => "structure"}, "OperationStatus" => %{"enum" => ["NotStarted", "Started", "Failed", "Completed"], "type" => "string"}, "DomainEntryList" => %{"member" => %{"shape" => "DomainEntry"}, "type" => "list"}, "MonthlyTransfer" => %{"members" => %{"gbPerMonthAllocated" => %{"shape" => "integer"}}, "type" => "structure"}, "DetachStaticIpResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "Operation" => %{"members" => %{"createdAt" => %{"shape" => "IsoDate"}, "errorCode" => %{"shape" => "string"}, "errorDetails" => %{"shape" => "string"}, "id" => %{"shape" => "NonEmptyString"}, "isTerminal" => %{"shape" => "boolean"}, "location" => %{"shape" => "ResourceLocation"}, "operationDetails" => %{"shape" => "string"}, "operationType" => %{"shape" => "OperationType"}, "resourceName" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}, "status" => %{"shape" => "OperationStatus"}, "statusChangedAt" => %{"shape" => "IsoDate"}}, "type" => "structure"}, "AccessDirection" => %{"enum" => ["inbound", "outbound"], "type" => "string"}, "GetKeyPairsResult" => %{"members" => %{"keyPairs" => %{"shape" => "KeyPairList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "DomainEntryOptions" => %{"key" => %{"shape" => "DomainEntryOptionsKeys"}, "type" => "map", "value" => %{"shape" => "string"}}, "Blueprint" => %{"members" => %{"blueprintId" => %{"shape" => "NonEmptyString"}, "description" => %{"shape" => "string"}, "group" => %{"shape" => "NonEmptyString"}, "isActive" => %{"shape" => "boolean"}, "licenseUrl" => %{"shape" => "string"}, "minPower" => %{"shape" => "integer"}, "name" => %{"shape" => "ResourceName"}, "productUrl" => %{"shape" => "string"}, "type" => %{"shape" => "BlueprintType"}, "version" => %{"shape" => "string"}, "versionCode" => %{"shape" => "string"}}, "type" => "structure"}, "InstanceAccessProtocol" => %{"enum" => ["ssh", "rdp"], "type" => "string"}, "GetOperationResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "StopInstanceResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "RebootInstanceResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "PeerVpcResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "NonEmptyString" => %{"pattern" => ".*\\S.*", "type" => "string"}, "double" => %{"type" => "double"}, "GetInstanceStateResult" => %{"members" => %{"state" => %{"shape" => "InstanceState"}}, "type" => "structure"}, "DomainName" => %{"type" => "string"}, "InstancePortInfoList" => %{"member" => %{"shape" => "InstancePortInfo"}, "type" => "list"}, "GetStaticIpsResult" => %{"members" => %{"nextPageToken" => %{"shape" => "string"}, "staticIps" => %{"shape" => "StaticIpList"}}, "type" => "structure"}, "GetInstanceSnapshotsResult" => %{"members" => %{"instanceSnapshots" => %{"shape" => "InstanceSnapshotList"}, "nextPageToken" => %{"shape" => "string"}}, "type" => "structure"}, "InstanceNetworking" => %{"members" => %{"monthlyTransfer" => %{"shape" => "MonthlyTransfer"}, "ports" => %{"shape" => "InstancePortInfoList"}}, "type" => "structure"}, "MetricUnit" => %{"enum" => ["Seconds", "Microseconds", "Milliseconds", "Bytes", "Kilobytes", "Megabytes", "Gigabytes", "Terabytes", "Bits", "Kilobits", "Megabits", "Gigabits", "Terabits", "Percent", "Count", "Bytes/Second", "Kilobytes/Second", "Megabytes/Second", "Gigabytes/Second", "Terabytes/Second", "Bits/Second", "Kilobits/Second", "Megabits/Second", "Gigabits/Second", "Terabits/Second", "Count/Second", "None"], "type" => "string"}, "MetricDatapointList" => %{"member" => %{"shape" => "MetricDatapoint"}, "type" => "list"}, "CreateInstanceSnapshotResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "GetBlueprintsRequest" => %{"members" => %{"includeInactive" => %{"shape" => "boolean"}, "pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "GetActiveNamesRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "DetachStaticIpRequest" => %{"members" => %{"staticIpName" => %{"shape" => "ResourceName"}}, "required" => ["staticIpName"], "type" => "structure"}, "NotFoundException" => %{"exception" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "ImportKeyPairRequest" => %{"members" => %{"keyPairName" => %{"shape" => "ResourceName"}, "publicKeyBase64" => %{"shape" => "Base64"}}, "required" => ["keyPairName", "publicKeyBase64"], "type" => "structure"}, "string" => %{"type" => "string"}, "timestamp" => %{"type" => "timestamp"}, "DeleteInstanceRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "float" => %{"type" => "float"}, "ReleaseStaticIpResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "GetInstanceStateRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "NetworkProtocol" => %{"enum" => ["tcp", "all", "udp"], "type" => "string"}, "GetOperationsResult" => %{"members" => %{"nextPageToken" => %{"shape" => "string"}, "operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "DeleteInstanceResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "PortState" => %{"enum" => ["open", "closed"], "type" => "string"}, "PortAccessType" => %{"enum" => ["Public", "Private"], "type" => "string"}, "PortInfoList" => %{"member" => %{"shape" => "PortInfo"}, "type" => "list"}, "GetInstanceResult" => %{"members" => %{"instance" => %{"shape" => "Instance"}}, "type" => "structure"}, "StartInstanceRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "AvailabilityZone" => %{"members" => %{"state" => %{"shape" => "NonEmptyString"}, "zoneName" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "MetricDatapoint" => %{"members" => %{"average" => %{"shape" => "double"}, "maximum" => %{"shape" => "double"}, "minimum" => %{"shape" => "double"}, "sampleCount" => %{"shape" => "double"}, "sum" => %{"shape" => "double"}, "timestamp" => %{"shape" => "timestamp"}, "unit" => %{"shape" => "MetricUnit"}}, "type" => "structure"}, "UpdateDomainEntryResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "GetInstanceSnapshotResult" => %{"members" => %{"instanceSnapshot" => %{"shape" => "InstanceSnapshot"}}, "type" => "structure"}, "GetKeyPairRequest" => %{"members" => %{"keyPairName" => %{"shape" => "ResourceName"}}, "required" => ["keyPairName"], "type" => "structure"}, "GetRegionsResult" => %{"members" => %{"regions" => %{"shape" => "RegionList"}}, "type" => "structure"}, "InstanceMetricName" => %{"enum" => ["CPUUtilization", "NetworkIn", "NetworkOut", "StatusCheckFailed", "StatusCheckFailed_Instance", "StatusCheckFailed_System"], "type" => "string"}, "GetInstancePortStatesRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "CreateDomainResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "ReleaseStaticIpRequest" => %{"members" => %{"staticIpName" => %{"shape" => "ResourceName"}}, "required" => ["staticIpName"], "type" => "structure"}, "GetDomainResult" => %{"members" => %{"domain" => %{"shape" => "Domain"}}, "type" => "structure"}, "OperationFailureException" => %{"exception" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "OperationType" => %{"enum" => ["DeleteInstance", "CreateInstance", "StopInstance", "StartInstance", "RebootInstance", "OpenInstancePublicPorts", "PutInstancePublicPorts", "CloseInstancePublicPorts", "AllocateStaticIp", "ReleaseStaticIp", "AttachStaticIp", "DetachStaticIp", "UpdateDomainEntry", "DeleteDomainEntry", "CreateDomain", "DeleteDomain", "CreateInstanceSnapshot", "DeleteInstanceSnapshot", "CreateInstancesFromSnapshot"], "type" => "string"}, "GetInstanceMetricDataRequest" => %{"members" => %{"endTime" => %{"shape" => "timestamp"}, "instanceName" => %{"shape" => "ResourceName"}, "metricName" => %{"shape" => "InstanceMetricName"}, "period" => %{"shape" => "MetricPeriod"}, "startTime" => %{"shape" => "timestamp"}, "statistics" => %{"shape" => "MetricStatisticList"}, "unit" => %{"shape" => "MetricUnit"}}, "required" => ["instanceName", "metricName", "period", "startTime", "endTime", "unit", "statistics"], "type" => "structure"}, "DeleteDomainRequest" => %{"members" => %{"domainName" => %{"shape" => "DomainName"}}, "required" => ["domainName"], "type" => "structure"}, "InstanceState" => %{"members" => %{"code" => %{"shape" => "integer"}, "name" => %{"shape" => "string"}}, "type" => "structure"}, "CreateInstancesResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "InstanceSnapshotState" => %{"enum" => ["pending", "error", "available"], "type" => "string"}, "AttachStaticIpRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}, "staticIpName" => %{"shape" => "ResourceName"}}, "required" => ["staticIpName", "instanceName"], "type" => "structure"}, "IpAddress" => %{"pattern" => "([0-9]{1,3}\\.){3}[0-9]{1,3}", "type" => "string"}, "UnauthenticatedException" => %{"exception" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "MetricStatisticList" => %{"member" => %{"shape" => "MetricStatistic"}, "type" => "list"}, "GetInstanceSnapshotsRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "InstancePortInfo" => %{"members" => %{"accessDirection" => %{"shape" => "AccessDirection"}, "accessFrom" => %{"shape" => "string"}, "accessType" => %{"shape" => "PortAccessType"}, "commonName" => %{"shape" => "string"}, "fromPort" => %{"shape" => "Port"}, "protocol" => %{"shape" => "NetworkProtocol"}, "toPort" => %{"shape" => "Port"}}, "type" => "structure"}, "StaticIp" => %{"members" => %{"arn" => %{"shape" => "NonEmptyString"}, "attachedTo" => %{"shape" => "ResourceName"}, "createdAt" => %{"shape" => "IsoDate"}, "ipAddress" => %{"shape" => "IpAddress"}, "isAttached" => %{"shape" => "boolean"}, "location" => %{"shape" => "ResourceLocation"}, "name" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}, "supportCode" => %{"shape" => "string"}}, "type" => "structure"}, "OpenInstancePublicPortsRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}, "portInfo" => %{"shape" => "PortInfo"}}, "required" => ["portInfo", "instanceName"], "type" => "structure"}, "DiskList" => %{"member" => %{"shape" => "Disk"}, "type" => "list"}, "IpV6Address" => %{"pattern" => "([A-F0-9]{1,4}:){7}[A-F0-9]{1,4}", "type" => "string"}, "OperationList" => %{"member" => %{"shape" => "Operation"}, "type" => "list"}, "IsoDate" => %{"type" => "timestamp"}, "GetOperationsRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "Bundle" => %{"members" => %{"bundleId" => %{"shape" => "NonEmptyString"}, "cpuCount" => %{"shape" => "integer"}, "diskSizeInGb" => %{"shape" => "integer"}, "instanceType" => %{"shape" => "string"}, "isActive" => %{"shape" => "boolean"}, "name" => %{"shape" => "string"}, "power" => %{"shape" => "integer"}, "price" => %{"shape" => "float"}, "ramSizeInGb" => %{"shape" => "float"}, "transferPerMonthInGb" => %{"shape" => "integer"}}, "type" => "structure"}, "DeleteKeyPairResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "DeleteDomainResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "BlueprintList" => %{"member" => %{"shape" => "Blueprint"}, "type" => "list"}, "GetBundlesRequest" => %{"members" => %{"includeInactive" => %{"shape" => "boolean"}, "pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "StaticIpList" => %{"member" => %{"shape" => "StaticIp"}, "type" => "list"}, "Base64" => %{"type" => "string"}, "GetInstanceAccessDetailsResult" => %{"members" => %{"accessDetails" => %{"shape" => "InstanceAccessDetails"}}, "type" => "structure"}, "GetDomainsRequest" => %{"members" => %{"pageToken" => %{"shape" => "string"}}, "type" => "structure"}, "GetStaticIpResult" => %{"members" => %{"staticIp" => %{"shape" => "StaticIp"}}, "type" => "structure"}, "DeleteDomainEntryRequest" => %{"members" => %{"domainEntry" => %{"shape" => "DomainEntry"}, "domainName" => %{"shape" => "DomainName"}}, "required" => ["domainName", "domainEntry"], "type" => "structure"}, "DownloadDefaultKeyPairRequest" => %{"members" => %{}, "type" => "structure"}, "CreateDomainEntryResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "GetOperationRequest" => %{"members" => %{"operationId" => %{"shape" => "NonEmptyString"}}, "required" => ["operationId"], "type" => "structure"}, "RebootInstanceRequest" => %{"members" => %{"instanceName" => %{"shape" => "ResourceName"}}, "required" => ["instanceName"], "type" => "structure"}, "IsVpcPeeredResult" => %{"members" => %{"isPeered" => %{"shape" => "boolean"}}, "type" => "structure"}, "RegionName" => %{"enum" => ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "eu-west-1", "eu-central-1", "ap-south-1", "ap-southeast-1", "ap-southeast-2", "ap-northeast-1", "ap-northeast-2"], "type" => "string"}, "ResourceName" => %{"pattern" => "\\w[\\w\\-]*\\w", "type" => "string"}, "DomainEntry" => %{"members" => %{"id" => %{"shape" => "NonEmptyString"}, "name" => %{"shape" => "DomainName"}, "options" => %{"shape" => "DomainEntryOptions"}, "target" => %{"shape" => "string"}, "type" => %{"shape" => "DomainEntryType"}}, "type" => "structure"}, "InstancePortStateList" => %{"member" => %{"shape" => "InstancePortState"}, "type" => "list"}, "UnpeerVpcRequest" => %{"members" => %{}, "type" => "structure"}, "CloseInstancePublicPortsResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "GetRegionsRequest" => %{"members" => %{"includeAvailabilityZones" => %{"shape" => "boolean"}}, "type" => "structure"}, "GetOperationsForResourceResult" => %{"members" => %{"nextPageCount" => %{"deprecated" => true, "shape" => "string"}, "nextPageToken" => %{"shape" => "string"}, "operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "DeleteKeyPairRequest" => %{"members" => %{"keyPairName" => %{"shape" => "ResourceName"}}, "required" => ["keyPairName"], "type" => "structure"}, "integer" => %{"type" => "integer"}, "CreateKeyPairResult" => %{"members" => %{"keyPair" => %{"shape" => "KeyPair"}, "operation" => %{"shape" => "Operation"}, "privateKeyBase64" => %{"shape" => "Base64"}, "publicKeyBase64" => %{"shape" => "Base64"}}, "type" => "structure"}, "DomainList" => %{"member" => %{"shape" => "Domain"}, "type" => "list"}, "AllocateStaticIpResult" => %{"members" => %{"operations" => %{"shape" => "OperationList"}}, "type" => "structure"}, "GetDomainRequest" => %{"members" => %{"domainName" => %{"shape" => "DomainName"}}, "required" => ["domainName"], "type" => "structure"}, "AccountSetupInProgressException" => %{"exception" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "UnpeerVpcResult" => %{"members" => %{"operation" => %{"shape" => "Operation"}}, "type" => "structure"}, "InvalidInputException" => %{"exception" => true, "members" => %{"code" => %{"shape" => "string"}, "docs" => %{"shape" => "string"}, "message" => %{"shape" => "string"}, "tip" => %{"shape" => "string"}}, "type" => "structure"}, "MetricStatistic" => %{"enum" => ["Minimum", "Maximum", "Sum", "Average", "SampleCount"], "type" => "string"}, "DownloadDefaultKeyPairResult" => %{"members" => %{"privateKeyBase64" => %{"shape" => "Base64"}, "publicKeyBase64" => %{"shape" => "Base64"}}, "type" => "structure"}, "Instance" => %{"members" => %{"arn" => %{"shape" => "NonEmptyString"}, "blueprintId" => %{"shape" => "NonEmptyString"}, "blueprintName" => %{"shape" => "NonEmptyString"}, "bundleId" => %{"shape" => "NonEmptyString"}, "createdAt" => %{"shape" => "IsoDate"}, "hardware" => %{"shape" => "InstanceHardware"}, "ipv6Address" => %{"shape" => "IpV6Address"}, "isStaticIp" => %{"shape" => "boolean"}, "location" => %{"shape" => "ResourceLocation"}, "name" => %{"shape" => "ResourceName"}, "networking" => %{"shape" => "InstanceNetworking"}, "privateIpAddress" => %{"shape" => "IpAddress"}, "publicIpAddress" => %{"shape" => "IpAddress"}, "resourceType" => %{"shape" => "ResourceType"}, "sshKeyName" => %{"shape" => "ResourceName"}, "state" => %{"shape" => "InstanceState"}, "supportCode" => %{"shape" => "string"}, "username" => %{"shape" => "NonEmptyString"}}, "type" => "structure"}, "Domain" => %{"members" => %{"arn" => %{"shape" => "NonEmptyString"}, "createdAt" => %{"shape" => "IsoDate"}, "domainEntries" => %{"shape" => "DomainEntryList"}, "location" => %{"shape" => "ResourceLocation"}, "name" => %{"shape" => "ResourceName"}, "resourceType" => %{"shape" => "ResourceType"}, "supportCode" => %{"shape" => "string"}}, "type" => "structure"}}
+  end
 end

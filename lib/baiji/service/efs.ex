@@ -72,9 +72,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateFileSystemRequest",
+      output_shape:     "FileSystemDescription",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a mount target for a file system. You can then mount the file
@@ -196,9 +200,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateMountTargetRequest",
+      output_shape:     "MountTargetDescription",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates or overwrites tags associated with a file system. Each tag is a
@@ -221,9 +229,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateTagsRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a file system, permanently severing access to its contents. Upon
@@ -255,9 +267,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteFileSystemRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified mount target.
@@ -299,9 +315,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteMountTargetRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified tags from a file system. If the `DeleteTags` request
@@ -325,9 +345,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteTagsRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the description of a specific Amazon EFS file system if either the
@@ -369,9 +393,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeFileSystemsRequest",
+      output_shape:     "DescribeFileSystemsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the security groups currently in effect for a mount target. This
@@ -399,9 +427,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeMountTargetSecurityGroupsRequest",
+      output_shape:     "DescribeMountTargetSecurityGroupsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the descriptions of all the current mount targets, or a specific
@@ -425,9 +457,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeMountTargetsRequest",
+      output_shape:     "DescribeMountTargetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the tags associated with a file system. The order of tags returned
@@ -449,9 +485,13 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeTagsRequest",
+      output_shape:     "DescribeTagsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Modifies the set of security groups in effect for a mount target.
@@ -484,8 +524,19 @@ defmodule Baiji.EFS do
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",
-      method:           :put
+      method:           :put,
+      input_shape:      "ModifyMountTargetSecurityGroupsRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"DeleteFileSystemRequest" => %{"members" => %{"FileSystemId" => %{"location" => "uri", "locationName" => "FileSystemId", "shape" => "FileSystemId"}}, "required" => ["FileSystemId"], "type" => "structure"}, "CreationToken" => %{"max" => 64, "min" => 1, "type" => "string"}, "TagKeys" => %{"member" => %{"shape" => "TagKey"}, "type" => "list"}, "MountTargetNotFound" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "FileSystemAlreadyExists" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "FileSystemId" => %{"shape" => "FileSystemId"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode", "FileSystemId"], "type" => "structure"}, "DeleteMountTargetRequest" => %{"members" => %{"MountTargetId" => %{"location" => "uri", "locationName" => "MountTargetId", "shape" => "MountTargetId"}}, "required" => ["MountTargetId"], "type" => "structure"}, "MountTargetDescription" => %{"members" => %{"FileSystemId" => %{"shape" => "FileSystemId"}, "IpAddress" => %{"shape" => "IpAddress"}, "LifeCycleState" => %{"shape" => "LifeCycleState"}, "MountTargetId" => %{"shape" => "MountTargetId"}, "NetworkInterfaceId" => %{"shape" => "NetworkInterfaceId"}, "OwnerId" => %{"shape" => "AwsAccountId"}, "SubnetId" => %{"shape" => "SubnetId"}}, "required" => ["MountTargetId", "FileSystemId", "SubnetId", "LifeCycleState"], "type" => "structure"}, "IncorrectMountTargetState" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "MountTargetConflict" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "DescribeMountTargetSecurityGroupsRequest" => %{"members" => %{"MountTargetId" => %{"location" => "uri", "locationName" => "MountTargetId", "shape" => "MountTargetId"}}, "required" => ["MountTargetId"], "type" => "structure"}, "DescribeFileSystemsResponse" => %{"members" => %{"FileSystems" => %{"shape" => "FileSystemDescriptions"}, "Marker" => %{"shape" => "Marker"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "FileSystemNotFound" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "MountTargetId" => %{"type" => "string"}, "DescribeMountTargetsResponse" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "MountTargets" => %{"shape" => "MountTargetDescriptions"}, "NextMarker" => %{"shape" => "Marker"}}, "type" => "structure"}, "SecurityGroup" => %{"type" => "string"}, "CreateMountTargetRequest" => %{"members" => %{"FileSystemId" => %{"shape" => "FileSystemId"}, "IpAddress" => %{"shape" => "IpAddress"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}, "SubnetId" => %{"shape" => "SubnetId"}}, "required" => ["FileSystemId", "SubnetId"], "type" => "structure"}, "IncorrectFileSystemLifeCycleState" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "SecurityGroupNotFound" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "MountTargetDescriptions" => %{"member" => %{"shape" => "MountTargetDescription"}, "type" => "list"}, "FileSystemInUse" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "SecurityGroupLimitExceeded" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "NetworkInterfaceId" => %{"type" => "string"}, "ErrorCode" => %{"min" => 1, "type" => "string"}, "NoFreeAddressesInSubnet" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "SecurityGroups" => %{"max" => 5, "member" => %{"shape" => "SecurityGroup"}, "type" => "list"}, "KmsKeyId" => %{"max" => 2048, "min" => 1, "type" => "string"}, "Tags" => %{"member" => %{"shape" => "Tag"}, "type" => "list"}, "Tag" => %{"members" => %{"Key" => %{"shape" => "TagKey"}, "Value" => %{"shape" => "TagValue"}}, "required" => ["Key", "Value"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "FileSystemDescriptions" => %{"member" => %{"shape" => "FileSystemDescription"}, "type" => "list"}, "SubnetNotFound" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "TagValue" => %{"max" => 256, "type" => "string"}, "IpAddressInUse" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "Encrypted" => %{"type" => "boolean"}, "LifeCycleState" => %{"enum" => ["creating", "available", "deleting", "deleted"], "type" => "string"}, "DescribeTagsRequest" => %{"members" => %{"FileSystemId" => %{"location" => "uri", "locationName" => "FileSystemId", "shape" => "FileSystemId"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "Marker"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxItems"}}, "required" => ["FileSystemId"], "type" => "structure"}, "DescribeTagsResponse" => %{"members" => %{"Marker" => %{"shape" => "Marker"}, "NextMarker" => %{"shape" => "Marker"}, "Tags" => %{"shape" => "Tags"}}, "required" => ["Tags"], "type" => "structure"}, "InternalServerError" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "SubnetId" => %{"type" => "string"}, "BadRequest" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "IpAddress" => %{"type" => "string"}, "MaxItems" => %{"min" => 1, "type" => "integer"}, "PerformanceMode" => %{"enum" => ["generalPurpose", "maxIO"], "type" => "string"}, "Marker" => %{"type" => "string"}, "ModifyMountTargetSecurityGroupsRequest" => %{"members" => %{"MountTargetId" => %{"location" => "uri", "locationName" => "MountTargetId", "shape" => "MountTargetId"}, "SecurityGroups" => %{"shape" => "SecurityGroups"}}, "required" => ["MountTargetId"], "type" => "structure"}, "AwsAccountId" => %{"type" => "string"}, "DeleteTagsRequest" => %{"members" => %{"FileSystemId" => %{"location" => "uri", "locationName" => "FileSystemId", "shape" => "FileSystemId"}, "TagKeys" => %{"shape" => "TagKeys"}}, "required" => ["FileSystemId", "TagKeys"], "type" => "structure"}, "CreateTagsRequest" => %{"members" => %{"FileSystemId" => %{"location" => "uri", "locationName" => "FileSystemId", "shape" => "FileSystemId"}, "Tags" => %{"shape" => "Tags"}}, "required" => ["FileSystemId", "Tags"], "type" => "structure"}, "DescribeMountTargetSecurityGroupsResponse" => %{"members" => %{"SecurityGroups" => %{"shape" => "SecurityGroups"}}, "required" => ["SecurityGroups"], "type" => "structure"}, "DescribeMountTargetsRequest" => %{"members" => %{"FileSystemId" => %{"location" => "querystring", "locationName" => "FileSystemId", "shape" => "FileSystemId"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "Marker"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxItems"}, "MountTargetId" => %{"location" => "querystring", "locationName" => "MountTargetId", "shape" => "MountTargetId"}}, "type" => "structure"}, "TagKey" => %{"max" => 128, "min" => 1, "type" => "string"}, "NetworkInterfaceLimitExceeded" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "FileSystemSizeValue" => %{"min" => 0, "type" => "long"}, "DependencyTimeout" => %{"error" => %{"httpStatusCode" => 504}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "DescribeFileSystemsRequest" => %{"members" => %{"CreationToken" => %{"location" => "querystring", "locationName" => "CreationToken", "shape" => "CreationToken"}, "FileSystemId" => %{"location" => "querystring", "locationName" => "FileSystemId", "shape" => "FileSystemId"}, "Marker" => %{"location" => "querystring", "locationName" => "Marker", "shape" => "Marker"}, "MaxItems" => %{"location" => "querystring", "locationName" => "MaxItems", "shape" => "MaxItems"}}, "type" => "structure"}, "FileSystemDescription" => %{"members" => %{"CreationTime" => %{"shape" => "Timestamp"}, "CreationToken" => %{"shape" => "CreationToken"}, "Encrypted" => %{"shape" => "Encrypted"}, "FileSystemId" => %{"shape" => "FileSystemId"}, "KmsKeyId" => %{"shape" => "KmsKeyId"}, "LifeCycleState" => %{"shape" => "LifeCycleState"}, "Name" => %{"shape" => "TagValue"}, "NumberOfMountTargets" => %{"shape" => "MountTargetCount"}, "OwnerId" => %{"shape" => "AwsAccountId"}, "PerformanceMode" => %{"shape" => "PerformanceMode"}, "SizeInBytes" => %{"shape" => "FileSystemSize"}}, "required" => ["OwnerId", "CreationToken", "FileSystemId", "CreationTime", "LifeCycleState", "NumberOfMountTargets", "SizeInBytes", "PerformanceMode"], "type" => "structure"}, "MountTargetCount" => %{"min" => 0, "type" => "integer"}, "FileSystemId" => %{"type" => "string"}, "FileSystemLimitExceeded" => %{"error" => %{"httpStatusCode" => 403}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "UnsupportedAvailabilityZone" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"ErrorCode" => %{"shape" => "ErrorCode"}, "Message" => %{"shape" => "ErrorMessage"}}, "required" => ["ErrorCode"], "type" => "structure"}, "FileSystemSize" => %{"members" => %{"Timestamp" => %{"shape" => "Timestamp"}, "Value" => %{"shape" => "FileSystemSizeValue"}}, "required" => ["Value"], "type" => "structure"}, "CreateFileSystemRequest" => %{"members" => %{"CreationToken" => %{"shape" => "CreationToken"}, "Encrypted" => %{"shape" => "Encrypted"}, "KmsKeyId" => %{"shape" => "KmsKeyId"}, "PerformanceMode" => %{"shape" => "PerformanceMode"}}, "required" => ["CreationToken"], "type" => "structure"}}
+  end
 end

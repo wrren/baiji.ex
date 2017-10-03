@@ -20,9 +20,13 @@ defmodule Baiji.XRay do
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "BatchGetTracesRequest",
+      output_shape:     "BatchGetTracesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a document that describes services that process incoming
@@ -42,9 +46,13 @@ defmodule Baiji.XRay do
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetServiceGraphRequest",
+      output_shape:     "GetServiceGraphResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a service graph for one or more specific trace IDs.
@@ -60,9 +68,13 @@ defmodule Baiji.XRay do
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetTraceGraphRequest",
+      output_shape:     "GetTraceGraphResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves IDs and metadata for traces available for a specified time frame
@@ -97,9 +109,13 @@ defmodule Baiji.XRay do
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetTraceSummariesRequest",
+      output_shape:     "GetTraceSummariesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Used by the AWS X-Ray daemon to upload telemetry.
@@ -115,9 +131,13 @@ defmodule Baiji.XRay do
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutTelemetryRecordsRequest",
+      output_shape:     "PutTelemetryRecordsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Uploads segment documents to AWS X-Ray. The X-Ray SDK generates segment
@@ -182,8 +202,19 @@ defmodule Baiji.XRay do
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutTraceSegmentsRequest",
+      output_shape:     "PutTraceSegmentsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"PutTelemetryRecordsResult" => %{"members" => %{}, "type" => "structure"}, "ServiceIds" => %{"member" => %{"shape" => "ServiceId"}, "type" => "list"}, "ValuesWithServiceIds" => %{"member" => %{"shape" => "ValueWithServiceIds"}, "type" => "list"}, "TraceSegmentDocument" => %{"type" => "string"}, "String" => %{"type" => "string"}, "ErrorStatistics" => %{"members" => %{"OtherCount" => %{"shape" => "NullableLong"}, "ThrottleCount" => %{"shape" => "NullableLong"}, "TotalCount" => %{"shape" => "NullableLong"}}, "type" => "structure"}, "UnprocessedTraceIdList" => %{"member" => %{"shape" => "TraceId"}, "type" => "list"}, "Service" => %{"members" => %{"AccountId" => %{"shape" => "String"}, "DurationHistogram" => %{"shape" => "Histogram"}, "Edges" => %{"shape" => "EdgeList"}, "EndTime" => %{"shape" => "Timestamp"}, "Name" => %{"shape" => "String"}, "Names" => %{"shape" => "ServiceNames"}, "ReferenceId" => %{"shape" => "NullableInteger"}, "ResponseTimeHistogram" => %{"shape" => "Histogram"}, "Root" => %{"shape" => "NullableBoolean"}, "StartTime" => %{"shape" => "Timestamp"}, "State" => %{"shape" => "String"}, "SummaryStatistics" => %{"shape" => "ServiceStatistics"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "ServiceStatistics" => %{"members" => %{"ErrorStatistics" => %{"shape" => "ErrorStatistics"}, "FaultStatistics" => %{"shape" => "FaultStatistics"}, "OkCount" => %{"shape" => "NullableLong"}, "TotalCount" => %{"shape" => "NullableLong"}, "TotalResponseTime" => %{"shape" => "NullableDouble"}}, "type" => "structure"}, "TraceIdList" => %{"member" => %{"shape" => "TraceId"}, "type" => "list"}, "FaultStatistics" => %{"members" => %{"OtherCount" => %{"shape" => "NullableLong"}, "TotalCount" => %{"shape" => "NullableLong"}}, "type" => "structure"}, "BackendConnectionErrors" => %{"members" => %{"ConnectionRefusedCount" => %{"shape" => "NullableInteger"}, "HTTPCode4XXCount" => %{"shape" => "NullableInteger"}, "HTTPCode5XXCount" => %{"shape" => "NullableInteger"}, "OtherCount" => %{"shape" => "NullableInteger"}, "TimeoutCount" => %{"shape" => "NullableInteger"}, "UnknownHostCount" => %{"shape" => "NullableInteger"}}, "type" => "structure"}, "SegmentList" => %{"member" => %{"shape" => "Segment"}, "type" => "list"}, "TraceSegmentDocumentList" => %{"member" => %{"shape" => "TraceSegmentDocument"}, "type" => "list"}, "Trace" => %{"members" => %{"Duration" => %{"shape" => "NullableDouble"}, "Id" => %{"shape" => "TraceId"}, "Segments" => %{"shape" => "SegmentList"}}, "type" => "structure"}, "TelemetryRecord" => %{"members" => %{"BackendConnectionErrors" => %{"shape" => "BackendConnectionErrors"}, "SegmentsReceivedCount" => %{"shape" => "NullableInteger"}, "SegmentsRejectedCount" => %{"shape" => "NullableInteger"}, "SegmentsSentCount" => %{"shape" => "NullableInteger"}, "SegmentsSpilloverCount" => %{"shape" => "NullableInteger"}, "Timestamp" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "HistogramEntry" => %{"members" => %{"Count" => %{"shape" => "Integer"}, "Value" => %{"shape" => "Double"}}, "type" => "structure"}, "NullableInteger" => %{"type" => "integer"}, "GetTraceGraphResult" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "Services" => %{"shape" => "ServiceList"}}, "type" => "structure"}, "TraceSummary" => %{"members" => %{"Annotations" => %{"shape" => "Annotations"}, "Duration" => %{"shape" => "NullableDouble"}, "HasError" => %{"shape" => "NullableBoolean"}, "HasFault" => %{"shape" => "NullableBoolean"}, "HasThrottle" => %{"shape" => "NullableBoolean"}, "Http" => %{"shape" => "Http"}, "Id" => %{"shape" => "TraceId"}, "IsPartial" => %{"shape" => "NullableBoolean"}, "ResponseTime" => %{"shape" => "NullableDouble"}, "ServiceIds" => %{"shape" => "ServiceIds"}, "Users" => %{"shape" => "TraceUsers"}}, "type" => "structure"}, "EdgeStatistics" => %{"members" => %{"ErrorStatistics" => %{"shape" => "ErrorStatistics"}, "FaultStatistics" => %{"shape" => "FaultStatistics"}, "OkCount" => %{"shape" => "NullableLong"}, "TotalCount" => %{"shape" => "NullableLong"}, "TotalResponseTime" => %{"shape" => "NullableDouble"}}, "type" => "structure"}, "FilterExpression" => %{"max" => 2000, "min" => 0, "type" => "string"}, "SegmentDocument" => %{"min" => 1, "type" => "string"}, "Histogram" => %{"member" => %{"shape" => "HistogramEntry"}, "type" => "list"}, "AnnotationValue" => %{"members" => %{"BooleanValue" => %{"shape" => "NullableBoolean"}, "NumberValue" => %{"shape" => "NullableDouble"}, "StringValue" => %{"shape" => "String"}}, "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "SegmentId" => %{"max" => 16, "min" => 16, "type" => "string"}, "UnprocessedTraceSegment" => %{"members" => %{"ErrorCode" => %{"shape" => "String"}, "Id" => %{"shape" => "String"}, "Message" => %{"shape" => "String"}}, "type" => "structure"}, "TraceUsers" => %{"member" => %{"shape" => "TraceUser"}, "type" => "list"}, "Alias" => %{"members" => %{"Name" => %{"shape" => "String"}, "Names" => %{"shape" => "AliasNames"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "GetServiceGraphRequest" => %{"members" => %{"EndTime" => %{"shape" => "Timestamp"}, "NextToken" => %{"shape" => "String"}, "StartTime" => %{"shape" => "Timestamp"}}, "required" => ["StartTime", "EndTime"], "type" => "structure"}, "NullableBoolean" => %{"type" => "boolean"}, "ValueWithServiceIds" => %{"members" => %{"AnnotationValue" => %{"shape" => "AnnotationValue"}, "ServiceIds" => %{"shape" => "ServiceIds"}}, "type" => "structure"}, "GetTraceSummariesRequest" => %{"members" => %{"EndTime" => %{"shape" => "Timestamp"}, "FilterExpression" => %{"shape" => "FilterExpression"}, "NextToken" => %{"shape" => "String"}, "Sampling" => %{"shape" => "NullableBoolean"}, "StartTime" => %{"shape" => "Timestamp"}}, "required" => ["StartTime", "EndTime"], "type" => "structure"}, "Double" => %{"type" => "double"}, "NullableLong" => %{"type" => "long"}, "ServiceId" => %{"members" => %{"AccountId" => %{"shape" => "String"}, "Name" => %{"shape" => "String"}, "Names" => %{"shape" => "ServiceNames"}, "Type" => %{"shape" => "String"}}, "type" => "structure"}, "PutTelemetryRecordsRequest" => %{"members" => %{"EC2InstanceId" => %{"shape" => "String"}, "Hostname" => %{"shape" => "String"}, "ResourceARN" => %{"shape" => "String"}, "TelemetryRecords" => %{"shape" => "TelemetryRecordList"}}, "required" => ["TelemetryRecords"], "type" => "structure"}, "InvalidRequestException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "AnnotationKey" => %{"type" => "string"}, "ServiceList" => %{"member" => %{"shape" => "Service"}, "type" => "list"}, "BatchGetTracesResult" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "Traces" => %{"shape" => "TraceList"}, "UnprocessedTraceIds" => %{"shape" => "UnprocessedTraceIdList"}}, "type" => "structure"}, "TraceList" => %{"member" => %{"shape" => "Trace"}, "type" => "list"}, "GetTraceGraphRequest" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "TraceIds" => %{"shape" => "TraceIdList"}}, "required" => ["TraceIds"], "type" => "structure"}, "PutTraceSegmentsResult" => %{"members" => %{"UnprocessedTraceSegments" => %{"shape" => "UnprocessedTraceSegmentList"}}, "type" => "structure"}, "Segment" => %{"members" => %{"Document" => %{"shape" => "SegmentDocument"}, "Id" => %{"shape" => "SegmentId"}}, "type" => "structure"}, "EdgeList" => %{"member" => %{"shape" => "Edge"}, "type" => "list"}, "ThrottledException" => %{"error" => %{"httpStatusCode" => 429}, "exception" => true, "members" => %{}, "type" => "structure"}, "Edge" => %{"members" => %{"Aliases" => %{"shape" => "AliasList"}, "EndTime" => %{"shape" => "Timestamp"}, "ReferenceId" => %{"shape" => "NullableInteger"}, "ResponseTimeHistogram" => %{"shape" => "Histogram"}, "StartTime" => %{"shape" => "Timestamp"}, "SummaryStatistics" => %{"shape" => "EdgeStatistics"}}, "type" => "structure"}, "TraceUser" => %{"members" => %{"ServiceIds" => %{"shape" => "ServiceIds"}, "UserName" => %{"shape" => "String"}}, "type" => "structure"}, "Annotations" => %{"key" => %{"shape" => "AnnotationKey"}, "type" => "map", "value" => %{"shape" => "ValuesWithServiceIds"}}, "AliasList" => %{"member" => %{"shape" => "Alias"}, "type" => "list"}, "NullableDouble" => %{"type" => "double"}, "TraceSummaryList" => %{"member" => %{"shape" => "TraceSummary"}, "type" => "list"}, "Http" => %{"members" => %{"ClientIp" => %{"shape" => "String"}, "HttpMethod" => %{"shape" => "String"}, "HttpStatus" => %{"shape" => "NullableInteger"}, "HttpURL" => %{"shape" => "String"}, "UserAgent" => %{"shape" => "String"}}, "type" => "structure"}, "GetServiceGraphResult" => %{"members" => %{"EndTime" => %{"shape" => "Timestamp"}, "NextToken" => %{"shape" => "String"}, "Services" => %{"shape" => "ServiceList"}, "StartTime" => %{"shape" => "Timestamp"}}, "type" => "structure"}, "GetTraceSummariesResult" => %{"members" => %{"ApproximateTime" => %{"shape" => "Timestamp"}, "NextToken" => %{"shape" => "String"}, "TraceSummaries" => %{"shape" => "TraceSummaryList"}, "TracesProcessedCount" => %{"shape" => "NullableLong"}}, "type" => "structure"}, "UnprocessedTraceSegmentList" => %{"member" => %{"shape" => "UnprocessedTraceSegment"}, "type" => "list"}, "TraceId" => %{"max" => 35, "min" => 35, "type" => "string"}, "Integer" => %{"type" => "integer"}, "TelemetryRecordList" => %{"member" => %{"shape" => "TelemetryRecord"}, "type" => "list"}, "PutTraceSegmentsRequest" => %{"members" => %{"TraceSegmentDocuments" => %{"shape" => "TraceSegmentDocumentList"}}, "required" => ["TraceSegmentDocuments"], "type" => "structure"}, "ServiceNames" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "AliasNames" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "BatchGetTracesRequest" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "TraceIds" => %{"shape" => "TraceIdList"}}, "required" => ["TraceIds"], "type" => "structure"}}
+  end
 end

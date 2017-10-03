@@ -29,9 +29,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListSqlInjectionMatchSetsRequest",
+      output_shape:     "ListSqlInjectionMatchSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes an `IPSet`. You can't delete an `IPSet` if it's still
@@ -64,9 +68,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteIPSetRequest",
+      output_shape:     "DeleteIPSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Associates a web ACL with a resource.
@@ -84,9 +92,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateWebACLRequest",
+      output_shape:     "AssociateWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `RateBasedRule` that is specified by the `RuleId` that you
@@ -105,9 +117,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRateBasedRuleRequest",
+      output_shape:     "GetRateBasedRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `RuleSummary` objects.
@@ -125,9 +141,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListRateBasedRulesRequest",
+      output_shape:     "ListRateBasedRulesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes an `XssMatchSet`. You can't delete an `XssMatchSet` if
@@ -163,9 +183,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteXssMatchSetRequest",
+      output_shape:     "DeleteXssMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of IP addresses currently being blocked by the
@@ -187,9 +211,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRateBasedRuleManagedKeysRequest",
+      output_shape:     "GetRateBasedRuleManagedKeysResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `Rule` that is specified by the `RuleId` that you included in
@@ -208,9 +236,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRuleRequest",
+      output_shape:     "GetRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes a `SizeConstraintSet`. You can't delete a
@@ -245,9 +277,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSizeConstraintSetRequest",
+      output_shape:     "DeleteSizeConstraintSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes a `Rule`. You can't delete a `Rule` if it's still used
@@ -281,9 +317,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteRuleRequest",
+      output_shape:     "DeleteRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `Predicate` objects in a `Rule`. Each `Predicate` object
@@ -338,9 +378,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRuleRequest",
+      output_shape:     "UpdateRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `SqlInjectionMatchSet` that is specified by
@@ -359,9 +403,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetSqlInjectionMatchSetRequest",
+      output_shape:     "GetSqlInjectionMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `SizeConstraintSet`. You then use `UpdateSizeConstraintSet` to
@@ -402,9 +450,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateSizeConstraintSetRequest",
+      output_shape:     "CreateSizeConstraintSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `RateBasedRule`. The `RateBasedRule` contains a `RateLimit`,
@@ -487,9 +539,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateRateBasedRuleRequest",
+      output_shape:     "CreateRateBasedRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `WebACLSummary` objects in the response.
@@ -507,9 +563,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListWebACLsRequest",
+      output_shape:     "ListWebACLsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `SizeConstraintSetSummary` objects.
@@ -527,9 +587,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListSizeConstraintSetsRequest",
+      output_shape:     "ListSizeConstraintSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `RuleSummary` objects.
@@ -547,9 +611,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListRulesRequest",
+      output_shape:     "ListRulesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the status of a `ChangeToken` that you got by calling
@@ -579,9 +647,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetChangeTokenStatusRequest",
+      output_shape:     "GetChangeTokenStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `ActivatedRule` objects in a `WebACL`. Each `Rule`
@@ -650,9 +722,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateWebACLRequest",
+      output_shape:     "UpdateWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `IPSetSummary` objects in the response.
@@ -670,9 +746,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListIPSetsRequest",
+      output_shape:     "ListIPSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes a `WebACL`. You can't delete a `WebACL` if it still
@@ -703,9 +783,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteWebACLRequest",
+      output_shape:     "DeleteWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `SizeConstraintSet` specified by `SizeConstraintSetId`.
@@ -723,9 +807,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetSizeConstraintSetRequest",
+      output_shape:     "GetSizeConstraintSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `Rule`, which contains the `IPSet` objects, `ByteMatchSet`
@@ -781,9 +869,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateRuleRequest",
+      output_shape:     "CreateRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `Predicate` objects in a rule and updates the
@@ -841,9 +933,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRateBasedRuleRequest",
+      output_shape:     "UpdateRateBasedRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `XssMatchTuple` objects (filters) in an `XssMatchSet`.
@@ -896,9 +992,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateXssMatchSetRequest",
+      output_shape:     "UpdateXssMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `SqlInjectionMatchSet`, which you use to allow, block, or count
@@ -938,9 +1038,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateSqlInjectionMatchSetRequest",
+      output_shape:     "CreateSqlInjectionMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `ByteMatchSet`. You then use `UpdateByteMatchSet` to identify the
@@ -981,9 +1085,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateByteMatchSetRequest",
+      output_shape:     "CreateByteMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `SqlInjectionMatchTuple` objects (filters) in a
@@ -1038,9 +1146,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateSqlInjectionMatchSetRequest",
+      output_shape:     "UpdateSqlInjectionMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an `XssMatchSet`, which you use to allow, block, or count requests
@@ -1079,9 +1191,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateXssMatchSetRequest",
+      output_shape:     "CreateXssMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the web ACL for the specified resource.
@@ -1099,9 +1215,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetWebACLForResourceRequest",
+      output_shape:     "GetWebACLForResourceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `ByteMatchTuple` objects (filters) in a `ByteMatchSet`.
@@ -1158,9 +1278,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateByteMatchSetRequest",
+      output_shape:     "UpdateByteMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `XssMatchSet` objects.
@@ -1178,9 +1302,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListXssMatchSetsRequest",
+      output_shape:     "ListXssMatchSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a `WebACL`, which contains the `Rules` that identify the CloudFront
@@ -1230,9 +1358,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateWebACLRequest",
+      output_shape:     "CreateWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `SizeConstraint` objects (filters) in a
@@ -1294,9 +1426,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateSizeConstraintSetRequest",
+      output_shape:     "UpdateSizeConstraintSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Removes a web ACL from the specified resource.
@@ -1314,9 +1450,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateWebACLRequest",
+      output_shape:     "DisassociateWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes a `ByteMatchSet`. You can't delete a `ByteMatchSet` if
@@ -1351,9 +1491,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteByteMatchSetRequest",
+      output_shape:     "DeleteByteMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of `ByteMatchSetSummary` objects.
@@ -1371,9 +1515,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListByteMatchSetsRequest",
+      output_shape:     "ListByteMatchSetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Inserts or deletes `IPSetDescriptor` objects in an `IPSet`. For each
@@ -1443,9 +1591,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateIPSetRequest",
+      output_shape:     "UpdateIPSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns an array of resources associated with the specified web ACL.
@@ -1463,9 +1615,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListResourcesForWebACLRequest",
+      output_shape:     "ListResourcesForWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `XssMatchSet` that is specified by `XssMatchSetId`.
@@ -1483,9 +1639,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetXssMatchSetRequest",
+      output_shape:     "GetXssMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `IPSet` that is specified by `IPSetId`.
@@ -1503,9 +1663,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetIPSetRequest",
+      output_shape:     "GetIPSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes a `SqlInjectionMatchSet`. You can't delete a
@@ -1541,9 +1705,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteSqlInjectionMatchSetRequest",
+      output_shape:     "DeleteSqlInjectionMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `ByteMatchSet` specified by `ByteMatchSetId`.
@@ -1561,9 +1729,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetByteMatchSetRequest",
+      output_shape:     "GetByteMatchSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets detailed information about a specified number of requests--a
@@ -1592,9 +1764,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetSampledRequestsRequest",
+      output_shape:     "GetSampledRequestsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the `WebACL` that is specified by `WebACLId`.
@@ -1612,9 +1788,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetWebACLRequest",
+      output_shape:     "GetWebACLResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   When you want to create, update, or delete AWS WAF objects, get a change
@@ -1646,9 +1826,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetChangeTokenRequest",
+      output_shape:     "GetChangeTokenResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an `IPSet`, which you use to specify which web requests you want to
@@ -1688,9 +1872,13 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateIPSetRequest",
+      output_shape:     "CreateIPSetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Permanently deletes a `RateBasedRule`. You can't delete a rule if it's
@@ -1725,8 +1913,19 @@ defmodule Baiji.WAFRegional do
       endpoint_prefix:  "waf-regional",
       type:             :json,
       version:          "2016-11-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteRateBasedRuleRequest",
+      output_shape:     "DeleteRateBasedRuleResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"SizeConstraintSetUpdates" => %{"member" => %{"shape" => "SizeConstraintSetUpdate"}, "type" => "list"}, "DeleteSizeConstraintSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "IPSetSummary" => %{"members" => %{"IPSetId" => %{"shape" => "ResourceId"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["IPSetId", "Name"], "type" => "structure"}, "WAFNonexistentContainerException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "GetChangeTokenResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "XssMatchSetUpdates" => %{"member" => %{"shape" => "XssMatchSetUpdate"}, "type" => "list"}, "RuleSummary" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId", "Name"], "type" => "structure"}, "DeleteSizeConstraintSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "SizeConstraintSetId" => %{"shape" => "ResourceId"}}, "required" => ["SizeConstraintSetId", "ChangeToken"], "type" => "structure"}, "AssociateWebACLRequest" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArn"}, "WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId", "ResourceArn"], "type" => "structure"}, "DeleteRateBasedRuleResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "WebACLSummary" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId", "Name"], "type" => "structure"}, "ByteMatchSetSummaries" => %{"member" => %{"shape" => "ByteMatchSetSummary"}, "type" => "list"}, "ChangeAction" => %{"enum" => ["INSERT", "DELETE"], "type" => "string"}, "Size" => %{"max" => 21474836480, "min" => 0, "type" => "long"}, "HTTPRequest" => %{"members" => %{"ClientIP" => %{"shape" => "IPString"}, "Country" => %{"shape" => "Country"}, "HTTPVersion" => %{"shape" => "HTTPVersion"}, "Headers" => %{"shape" => "HTTPHeaders"}, "Method" => %{"shape" => "HTTPMethod"}, "URI" => %{"shape" => "URIString"}}, "type" => "structure"}, "IPSetSummaries" => %{"member" => %{"shape" => "IPSetSummary"}, "type" => "list"}, "SizeConstraints" => %{"member" => %{"shape" => "SizeConstraint"}, "type" => "list"}, "XssMatchTuples" => %{"member" => %{"shape" => "XssMatchTuple"}, "type" => "list"}, "ParameterExceptionParameter" => %{"min" => 1, "type" => "string"}, "CreateSqlInjectionMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "SqlInjectionMatchSet" => %{"shape" => "SqlInjectionMatchSet"}}, "type" => "structure"}, "ListXssMatchSetsRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "GetSampledRequestsRequest" => %{"members" => %{"MaxItems" => %{"shape" => "GetSampledRequestsMaxItems"}, "RuleId" => %{"shape" => "ResourceId"}, "TimeWindow" => %{"shape" => "TimeWindow"}, "WebAclId" => %{"shape" => "ResourceId"}}, "required" => ["WebAclId", "RuleId", "TimeWindow", "MaxItems"], "type" => "structure"}, "ByteMatchSet" => %{"members" => %{"ByteMatchSetId" => %{"shape" => "ResourceId"}, "ByteMatchTuples" => %{"shape" => "ByteMatchTuples"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["ByteMatchSetId", "ByteMatchTuples"], "type" => "structure"}, "NextMarker" => %{"min" => 1, "type" => "string"}, "ListSizeConstraintSetsResponse" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "SizeConstraintSets" => %{"shape" => "SizeConstraintSetSummaries"}}, "type" => "structure"}, "SampledHTTPRequests" => %{"member" => %{"shape" => "SampledHTTPRequest"}, "type" => "list"}, "DeleteSqlInjectionMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "SqlInjectionMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["SqlInjectionMatchSetId", "ChangeToken"], "type" => "structure"}, "URIString" => %{"type" => "string"}, "GetRuleRequest" => %{"members" => %{"RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId"], "type" => "structure"}, "CreateSqlInjectionMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "ChangeToken"], "type" => "structure"}, "DeleteByteMatchSetRequest" => %{"members" => %{"ByteMatchSetId" => %{"shape" => "ResourceId"}, "ChangeToken" => %{"shape" => "ChangeToken"}}, "required" => ["ByteMatchSetId", "ChangeToken"], "type" => "structure"}, "GetXssMatchSetResponse" => %{"members" => %{"XssMatchSet" => %{"shape" => "XssMatchSet"}}, "type" => "structure"}, "DeleteXssMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "XssMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["XssMatchSetId", "ChangeToken"], "type" => "structure"}, "DeleteWebACLResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "WAFNonexistentItemException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "CreateIPSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "IPSet" => %{"shape" => "IPSet"}}, "type" => "structure"}, "GetByteMatchSetResponse" => %{"members" => %{"ByteMatchSet" => %{"shape" => "ByteMatchSet"}}, "type" => "structure"}, "SizeConstraintSetUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "SizeConstraint" => %{"shape" => "SizeConstraint"}}, "required" => ["Action", "SizeConstraint"], "type" => "structure"}, "ChangeToken" => %{"min" => 1, "type" => "string"}, "IPSetDescriptor" => %{"members" => %{"Type" => %{"shape" => "IPSetDescriptorType"}, "Value" => %{"shape" => "IPSetDescriptorValue"}}, "required" => ["Type", "Value"], "type" => "structure"}, "ListIPSetsRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "ManagedKey" => %{"type" => "string"}, "SqlInjectionMatchTuples" => %{"member" => %{"shape" => "SqlInjectionMatchTuple"}, "type" => "list"}, "CreateXssMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "ChangeToken"], "type" => "structure"}, "UpdateXssMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "MatchFieldData" => %{"type" => "string"}, "GetSizeConstraintSetResponse" => %{"members" => %{"SizeConstraintSet" => %{"shape" => "SizeConstraintSet"}}, "type" => "structure"}, "ListSqlInjectionMatchSetsResponse" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "SqlInjectionMatchSets" => %{"shape" => "SqlInjectionMatchSetSummaries"}}, "type" => "structure"}, "ListSqlInjectionMatchSetsRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "ParameterExceptionField" => %{"enum" => ["CHANGE_ACTION", "WAF_ACTION", "PREDICATE_TYPE", "IPSET_TYPE", "BYTE_MATCH_FIELD_TYPE", "SQL_INJECTION_MATCH_FIELD_TYPE", "BYTE_MATCH_TEXT_TRANSFORMATION", "BYTE_MATCH_POSITIONAL_CONSTRAINT", "SIZE_CONSTRAINT_COMPARISON_OPERATOR", "RATE_KEY", "RULE_TYPE", "NEXT_MARKER"], "type" => "string"}, "HTTPVersion" => %{"type" => "string"}, "UpdateSqlInjectionMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "SqlInjectionMatchSetId" => %{"shape" => "ResourceId"}, "Updates" => %{"shape" => "SqlInjectionMatchSetUpdates"}}, "required" => ["SqlInjectionMatchSetId", "ChangeToken", "Updates"], "type" => "structure"}, "SqlInjectionMatchSet" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "SqlInjectionMatchSetId" => %{"shape" => "ResourceId"}, "SqlInjectionMatchTuples" => %{"shape" => "SqlInjectionMatchTuples"}}, "required" => ["SqlInjectionMatchSetId", "SqlInjectionMatchTuples"], "type" => "structure"}, "DeleteIPSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "IPSetId" => %{"shape" => "ResourceId"}}, "required" => ["IPSetId", "ChangeToken"], "type" => "structure"}, "SizeConstraintSetSummary" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "SizeConstraintSetId" => %{"shape" => "ResourceId"}}, "required" => ["SizeConstraintSetId", "Name"], "type" => "structure"}, "DeleteIPSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "GetSizeConstraintSetRequest" => %{"members" => %{"SizeConstraintSetId" => %{"shape" => "ResourceId"}}, "required" => ["SizeConstraintSetId"], "type" => "structure"}, "GetSampledRequestsResponse" => %{"members" => %{"PopulationSize" => %{"shape" => "PopulationSize"}, "SampledRequests" => %{"shape" => "SampledHTTPRequests"}, "TimeWindow" => %{"shape" => "TimeWindow"}}, "type" => "structure"}, "ListRulesRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "DeleteByteMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "UpdateRateBasedRuleResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "UpdateWebACLRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "DefaultAction" => %{"shape" => "WafAction"}, "Updates" => %{"shape" => "WebACLUpdates"}, "WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId", "ChangeToken"], "type" => "structure"}, "TimeWindow" => %{"members" => %{"EndTime" => %{"shape" => "Timestamp"}, "StartTime" => %{"shape" => "Timestamp"}}, "required" => ["StartTime", "EndTime"], "type" => "structure"}, "ListRulesResponse" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "Rules" => %{"shape" => "RuleSummaries"}}, "type" => "structure"}, "DeleteSqlInjectionMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "IPSetUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "IPSetDescriptor" => %{"shape" => "IPSetDescriptor"}}, "required" => ["Action", "IPSetDescriptor"], "type" => "structure"}, "RuleSummaries" => %{"member" => %{"shape" => "RuleSummary"}, "type" => "list"}, "WAFInternalErrorException" => %{"exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "ByteMatchTargetString" => %{"type" => "blob"}, "GetWebACLForResourceResponse" => %{"members" => %{"WebACLSummary" => %{"shape" => "WebACLSummary"}}, "type" => "structure"}, "HeaderValue" => %{"type" => "string"}, "GetRateBasedRuleManagedKeysRequest" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId"], "type" => "structure"}, "GetRateBasedRuleManagedKeysResponse" => %{"members" => %{"ManagedKeys" => %{"shape" => "ManagedKeys"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "CreateRateBasedRuleRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "ResourceName"}, "RateKey" => %{"shape" => "RateKey"}, "RateLimit" => %{"shape" => "RateLimit"}}, "required" => ["Name", "MetricName", "RateKey", "RateLimit", "ChangeToken"], "type" => "structure"}, "Action" => %{"type" => "string"}, "WebACLUpdates" => %{"member" => %{"shape" => "WebACLUpdate"}, "type" => "list"}, "errorMessage" => %{"type" => "string"}, "WAFInvalidParameterException" => %{"exception" => true, "members" => %{"field" => %{"shape" => "ParameterExceptionField"}, "parameter" => %{"shape" => "ParameterExceptionParameter"}, "reason" => %{"shape" => "ParameterExceptionReason"}}, "type" => "structure"}, "CreateRuleRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "MetricName", "ChangeToken"], "type" => "structure"}, "WebACL" => %{"members" => %{"DefaultAction" => %{"shape" => "WafAction"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "ResourceName"}, "Rules" => %{"shape" => "ActivatedRules"}, "WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId", "DefaultAction", "Rules"], "type" => "structure"}, "GetChangeTokenStatusRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "required" => ["ChangeToken"], "type" => "structure"}, "ResourceArns" => %{"member" => %{"shape" => "ResourceArn"}, "type" => "list"}, "ByteMatchSetUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "ByteMatchTuple" => %{"shape" => "ByteMatchTuple"}}, "required" => ["Action", "ByteMatchTuple"], "type" => "structure"}, "ChangeTokenStatus" => %{"enum" => ["PROVISIONED", "PENDING", "INSYNC"], "type" => "string"}, "UpdateXssMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Updates" => %{"shape" => "XssMatchSetUpdates"}, "XssMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["XssMatchSetId", "ChangeToken", "Updates"], "type" => "structure"}, "CreateRuleResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Rule" => %{"shape" => "Rule"}}, "type" => "structure"}, "CreateByteMatchSetResponse" => %{"members" => %{"ByteMatchSet" => %{"shape" => "ByteMatchSet"}, "ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "PredicateType" => %{"enum" => ["IPMatch", "ByteMatch", "SqlInjectionMatch", "SizeConstraint", "XssMatch"], "type" => "string"}, "ByteMatchSetSummary" => %{"members" => %{"ByteMatchSetId" => %{"shape" => "ResourceId"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["ByteMatchSetId", "Name"], "type" => "structure"}, "WAFDisallowedNameException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "DeleteWebACLRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId", "ChangeToken"], "type" => "structure"}, "GetRateBasedRuleRequest" => %{"members" => %{"RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "GetIPSetRequest" => %{"members" => %{"IPSetId" => %{"shape" => "ResourceId"}}, "required" => ["IPSetId"], "type" => "structure"}, "CreateSizeConstraintSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "ChangeToken"], "type" => "structure"}, "Country" => %{"type" => "string"}, "ActivatedRules" => %{"member" => %{"shape" => "ActivatedRule"}, "type" => "list"}, "ActivatedRule" => %{"members" => %{"Action" => %{"shape" => "WafAction"}, "Priority" => %{"shape" => "RulePriority"}, "RuleId" => %{"shape" => "ResourceId"}, "Type" => %{"shape" => "WafRuleType"}}, "required" => ["Priority", "RuleId", "Action"], "type" => "structure"}, "ManagedKeys" => %{"member" => %{"shape" => "ManagedKey"}, "type" => "list"}, "Negated" => %{"type" => "boolean"}, "HTTPMethod" => %{"type" => "string"}, "WAFNonEmptyEntityException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "XssMatchSetSummary" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "XssMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["XssMatchSetId", "Name"], "type" => "structure"}, "AssociateWebACLResponse" => %{"members" => %{}, "type" => "structure"}, "HeaderName" => %{"type" => "string"}, "CreateIPSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "ChangeToken"], "type" => "structure"}, "ListWebACLsResponse" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "WebACLs" => %{"shape" => "WebACLSummaries"}}, "type" => "structure"}, "CreateXssMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "XssMatchSet" => %{"shape" => "XssMatchSet"}}, "type" => "structure"}, "CreateSizeConstraintSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "SizeConstraintSet" => %{"shape" => "SizeConstraintSet"}}, "type" => "structure"}, "MetricName" => %{"type" => "string"}, "RuleUpdates" => %{"member" => %{"shape" => "RuleUpdate"}, "type" => "list"}, "IPSetDescriptorType" => %{"enum" => ["IPV4", "IPV6"], "type" => "string"}, "IPSet" => %{"members" => %{"IPSetDescriptors" => %{"shape" => "IPSetDescriptors"}, "IPSetId" => %{"shape" => "ResourceId"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["IPSetId", "IPSetDescriptors"], "type" => "structure"}, "UpdateIPSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "HTTPHeaders" => %{"member" => %{"shape" => "HTTPHeader"}, "type" => "list"}, "UpdateByteMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "WebACLUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "ActivatedRule" => %{"shape" => "ActivatedRule"}}, "required" => ["Action", "ActivatedRule"], "type" => "structure"}, "PositionalConstraint" => %{"enum" => ["EXACTLY", "STARTS_WITH", "ENDS_WITH", "CONTAINS", "CONTAINS_WORD"], "type" => "string"}, "SampledHTTPRequest" => %{"members" => %{"Action" => %{"shape" => "Action"}, "Request" => %{"shape" => "HTTPRequest"}, "Timestamp" => %{"shape" => "Timestamp"}, "Weight" => %{"shape" => "SampleWeight"}}, "required" => ["Request", "Weight"], "type" => "structure"}, "UpdateSizeConstraintSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "SizeConstraintSetId" => %{"shape" => "ResourceId"}, "Updates" => %{"shape" => "SizeConstraintSetUpdates"}}, "required" => ["SizeConstraintSetId", "ChangeToken", "Updates"], "type" => "structure"}, "XssMatchSetUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "XssMatchTuple" => %{"shape" => "XssMatchTuple"}}, "required" => ["Action", "XssMatchTuple"], "type" => "structure"}, "GetIPSetResponse" => %{"members" => %{"IPSet" => %{"shape" => "IPSet"}}, "type" => "structure"}, "DisassociateWebACLRequest" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArn"}}, "required" => ["ResourceArn"], "type" => "structure"}, "MatchFieldType" => %{"enum" => ["URI", "QUERY_STRING", "HEADER", "METHOD", "BODY"], "type" => "string"}, "RuleUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "Predicate" => %{"shape" => "Predicate"}}, "required" => ["Action", "Predicate"], "type" => "structure"}, "GetChangeTokenStatusResponse" => %{"members" => %{"ChangeTokenStatus" => %{"shape" => "ChangeTokenStatus"}}, "type" => "structure"}, "ListResourcesForWebACLResponse" => %{"members" => %{"ResourceArns" => %{"shape" => "ResourceArns"}}, "type" => "structure"}, "PaginationLimit" => %{"max" => 100, "min" => 0, "type" => "integer"}, "UpdateByteMatchSetRequest" => %{"members" => %{"ByteMatchSetId" => %{"shape" => "ResourceId"}, "ChangeToken" => %{"shape" => "ChangeToken"}, "Updates" => %{"shape" => "ByteMatchSetUpdates"}}, "required" => ["ByteMatchSetId", "ChangeToken", "Updates"], "type" => "structure"}, "CreateWebACLResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "WebACL" => %{"shape" => "WebACL"}}, "type" => "structure"}, "FieldToMatch" => %{"members" => %{"Data" => %{"shape" => "MatchFieldData"}, "Type" => %{"shape" => "MatchFieldType"}}, "required" => ["Type"], "type" => "structure"}, "RateBasedRule" => %{"members" => %{"MatchPredicates" => %{"shape" => "Predicates"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "ResourceName"}, "RateKey" => %{"shape" => "RateKey"}, "RateLimit" => %{"shape" => "RateLimit"}, "RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId", "MatchPredicates", "RateKey", "RateLimit"], "type" => "structure"}, "DeleteRateBasedRuleRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId", "ChangeToken"], "type" => "structure"}, "ResourceId" => %{"max" => 128, "min" => 1, "type" => "string"}, "ResourceArn" => %{"max" => 1224, "min" => 1, "type" => "string"}, "ComparisonOperator" => %{"enum" => ["EQ", "NE", "LE", "LT", "GE", "GT"], "type" => "string"}, "SqlInjectionMatchSetSummary" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "SqlInjectionMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["SqlInjectionMatchSetId", "Name"], "type" => "structure"}, "WAFUnavailableEntityException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "ParameterExceptionReason" => %{"enum" => ["INVALID_OPTION", "ILLEGAL_COMBINATION"], "type" => "string"}, "Predicate" => %{"members" => %{"DataId" => %{"shape" => "ResourceId"}, "Negated" => %{"shape" => "Negated"}, "Type" => %{"shape" => "PredicateType"}}, "required" => ["Negated", "Type", "DataId"], "type" => "structure"}, "TextTransformation" => %{"enum" => ["NONE", "COMPRESS_WHITE_SPACE", "HTML_ENTITY_DECODE", "LOWERCASE", "CMD_LINE", "URL_DECODE"], "type" => "string"}, "SqlInjectionMatchTuple" => %{"members" => %{"FieldToMatch" => %{"shape" => "FieldToMatch"}, "TextTransformation" => %{"shape" => "TextTransformation"}}, "required" => ["FieldToMatch", "TextTransformation"], "type" => "structure"}, "GetChangeTokenRequest" => %{"members" => %{}, "type" => "structure"}, "CreateWebACLRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "DefaultAction" => %{"shape" => "WafAction"}, "MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "MetricName", "DefaultAction", "ChangeToken"], "type" => "structure"}, "DisassociateWebACLResponse" => %{"members" => %{}, "type" => "structure"}, "UpdateRuleRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "RuleId" => %{"shape" => "ResourceId"}, "Updates" => %{"shape" => "RuleUpdates"}}, "required" => ["RuleId", "ChangeToken", "Updates"], "type" => "structure"}, "GetSqlInjectionMatchSetRequest" => %{"members" => %{"SqlInjectionMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["SqlInjectionMatchSetId"], "type" => "structure"}, "GetRateBasedRuleResponse" => %{"members" => %{"Rule" => %{"shape" => "RateBasedRule"}}, "type" => "structure"}, "DeleteRuleResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "IPString" => %{"type" => "string"}, "IPSetDescriptorValue" => %{"type" => "string"}, "GetWebACLForResourceRequest" => %{"members" => %{"ResourceArn" => %{"shape" => "ResourceArn"}}, "required" => ["ResourceArn"], "type" => "structure"}, "RateKey" => %{"enum" => ["IP"], "type" => "string"}, "WAFInvalidAccountException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "SqlInjectionMatchSetUpdate" => %{"members" => %{"Action" => %{"shape" => "ChangeAction"}, "SqlInjectionMatchTuple" => %{"shape" => "SqlInjectionMatchTuple"}}, "required" => ["Action", "SqlInjectionMatchTuple"], "type" => "structure"}, "ListWebACLsRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "ListSizeConstraintSetsRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "PopulationSize" => %{"type" => "long"}, "WafActionType" => %{"enum" => ["BLOCK", "ALLOW", "COUNT"], "type" => "string"}, "ByteMatchSetUpdates" => %{"member" => %{"shape" => "ByteMatchSetUpdate"}, "type" => "list"}, "UpdateSizeConstraintSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "GetByteMatchSetRequest" => %{"members" => %{"ByteMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["ByteMatchSetId"], "type" => "structure"}, "SizeConstraintSetSummaries" => %{"member" => %{"shape" => "SizeConstraintSetSummary"}, "type" => "list"}, "ListRateBasedRulesResponse" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "Rules" => %{"shape" => "RuleSummaries"}}, "type" => "structure"}, "DeleteRuleRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId", "ChangeToken"], "type" => "structure"}, "XssMatchSetSummaries" => %{"member" => %{"shape" => "XssMatchSetSummary"}, "type" => "list"}, "UpdateRuleResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "HTTPHeader" => %{"members" => %{"Name" => %{"shape" => "HeaderName"}, "Value" => %{"shape" => "HeaderValue"}}, "type" => "structure"}, "Rule" => %{"members" => %{"MetricName" => %{"shape" => "MetricName"}, "Name" => %{"shape" => "ResourceName"}, "Predicates" => %{"shape" => "Predicates"}, "RuleId" => %{"shape" => "ResourceId"}}, "required" => ["RuleId", "Predicates"], "type" => "structure"}, "ListIPSetsResponse" => %{"members" => %{"IPSets" => %{"shape" => "IPSetSummaries"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "WAFReferencedItemException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "SqlInjectionMatchSetUpdates" => %{"member" => %{"shape" => "SqlInjectionMatchSetUpdate"}, "type" => "list"}, "WAFInvalidOperationException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "DeleteXssMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "SampleWeight" => %{"min" => 0, "type" => "long"}, "WAFLimitsExceededException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "WafRuleType" => %{"enum" => ["REGULAR", "RATE_BASED"], "type" => "string"}, "GetXssMatchSetRequest" => %{"members" => %{"XssMatchSetId" => %{"shape" => "ResourceId"}}, "required" => ["XssMatchSetId"], "type" => "structure"}, "IPSetUpdates" => %{"member" => %{"shape" => "IPSetUpdate"}, "type" => "list"}, "GetWebACLResponse" => %{"members" => %{"WebACL" => %{"shape" => "WebACL"}}, "type" => "structure"}, "GetRuleResponse" => %{"members" => %{"Rule" => %{"shape" => "Rule"}}, "type" => "structure"}, "SqlInjectionMatchSetSummaries" => %{"member" => %{"shape" => "SqlInjectionMatchSetSummary"}, "type" => "list"}, "WAFStaleDataException" => %{"exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "GetSqlInjectionMatchSetResponse" => %{"members" => %{"SqlInjectionMatchSet" => %{"shape" => "SqlInjectionMatchSet"}}, "type" => "structure"}, "XssMatchTuple" => %{"members" => %{"FieldToMatch" => %{"shape" => "FieldToMatch"}, "TextTransformation" => %{"shape" => "TextTransformation"}}, "required" => ["FieldToMatch", "TextTransformation"], "type" => "structure"}, "CreateByteMatchSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Name" => %{"shape" => "ResourceName"}}, "required" => ["Name", "ChangeToken"], "type" => "structure"}, "ListXssMatchSetsResponse" => %{"members" => %{"NextMarker" => %{"shape" => "NextMarker"}, "XssMatchSets" => %{"shape" => "XssMatchSetSummaries"}}, "type" => "structure"}, "UpdateIPSetRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "IPSetId" => %{"shape" => "ResourceId"}, "Updates" => %{"shape" => "IPSetUpdates"}}, "required" => ["IPSetId", "ChangeToken", "Updates"], "type" => "structure"}, "UpdateWebACLResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "ResourceName" => %{"max" => 128, "min" => 1, "type" => "string"}, "SizeConstraint" => %{"members" => %{"ComparisonOperator" => %{"shape" => "ComparisonOperator"}, "FieldToMatch" => %{"shape" => "FieldToMatch"}, "Size" => %{"shape" => "Size"}, "TextTransformation" => %{"shape" => "TextTransformation"}}, "required" => ["FieldToMatch", "TextTransformation", "ComparisonOperator", "Size"], "type" => "structure"}, "RateLimit" => %{"min" => 2000, "type" => "long"}, "IPSetDescriptors" => %{"member" => %{"shape" => "IPSetDescriptor"}, "type" => "list"}, "WebACLSummaries" => %{"member" => %{"shape" => "WebACLSummary"}, "type" => "list"}, "WafAction" => %{"members" => %{"Type" => %{"shape" => "WafActionType"}}, "required" => ["Type"], "type" => "structure"}, "ByteMatchTuples" => %{"member" => %{"shape" => "ByteMatchTuple"}, "type" => "list"}, "UpdateRateBasedRuleRequest" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "RateLimit" => %{"shape" => "RateLimit"}, "RuleId" => %{"shape" => "ResourceId"}, "Updates" => %{"shape" => "RuleUpdates"}}, "required" => ["RuleId", "ChangeToken", "Updates", "RateLimit"], "type" => "structure"}, "ByteMatchTuple" => %{"members" => %{"FieldToMatch" => %{"shape" => "FieldToMatch"}, "PositionalConstraint" => %{"shape" => "PositionalConstraint"}, "TargetString" => %{"shape" => "ByteMatchTargetString"}, "TextTransformation" => %{"shape" => "TextTransformation"}}, "required" => ["FieldToMatch", "TargetString", "TextTransformation", "PositionalConstraint"], "type" => "structure"}, "ListByteMatchSetsRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "SizeConstraintSet" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "SizeConstraintSetId" => %{"shape" => "ResourceId"}, "SizeConstraints" => %{"shape" => "SizeConstraints"}}, "required" => ["SizeConstraintSetId", "SizeConstraints"], "type" => "structure"}, "CreateRateBasedRuleResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}, "Rule" => %{"shape" => "RateBasedRule"}}, "type" => "structure"}, "XssMatchSet" => %{"members" => %{"Name" => %{"shape" => "ResourceName"}, "XssMatchSetId" => %{"shape" => "ResourceId"}, "XssMatchTuples" => %{"shape" => "XssMatchTuples"}}, "required" => ["XssMatchSetId", "XssMatchTuples"], "type" => "structure"}, "ListRateBasedRulesRequest" => %{"members" => %{"Limit" => %{"shape" => "PaginationLimit"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "GetSampledRequestsMaxItems" => %{"max" => 500, "min" => 1, "type" => "long"}, "ListResourcesForWebACLRequest" => %{"members" => %{"WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId"], "type" => "structure"}, "RulePriority" => %{"type" => "integer"}, "GetWebACLRequest" => %{"members" => %{"WebACLId" => %{"shape" => "ResourceId"}}, "required" => ["WebACLId"], "type" => "structure"}, "ListByteMatchSetsResponse" => %{"members" => %{"ByteMatchSets" => %{"shape" => "ByteMatchSetSummaries"}, "NextMarker" => %{"shape" => "NextMarker"}}, "type" => "structure"}, "UpdateSqlInjectionMatchSetResponse" => %{"members" => %{"ChangeToken" => %{"shape" => "ChangeToken"}}, "type" => "structure"}, "Predicates" => %{"member" => %{"shape" => "Predicate"}, "type" => "list"}}
+  end
 end

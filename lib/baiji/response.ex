@@ -8,11 +8,14 @@ defmodule Baiji.Response do
   Parse, decode and return the response to a request made with the given operation
   """
   def parse({:error, error}, _), do: {:error, error}
+  def parse(response, %Operation{parser: nil} = op) do
+    parse(response, %{op | parser: &__MODULE__.parse/2})
+  end
   def parse({:ok, response}, %Operation{parser: parser} = op) do
     parser.(response, op)
   end
-  def parse(response, %Operation{type: type} = op) when type == :xml or type == :rest_xml or type == :ec2 do
-    Baiji.Response.Parser.XML.parse(response, op)
+  def parse(%{body: body}, %Operation{type: type} = op) when type == :xml or type == :rest_xml or type == :ec2 do
+    Baiji.Response.Parser.XML.parse(body, op)
   end
   def parse(%{body: body}, %Operation{type: type}) when type == :json or type == :rest_json do
     Poison.decode(body)

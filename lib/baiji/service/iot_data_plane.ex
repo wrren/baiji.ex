@@ -28,9 +28,13 @@ defmodule Baiji.IotDataPlane do
       endpoint_prefix:  "data.iot",
       type:             :rest_json,
       version:          "2015-05-28",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteThingShadowRequest",
+      output_shape:     "DeleteThingShadowResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the thing shadow for the specified thing.
@@ -50,9 +54,13 @@ defmodule Baiji.IotDataPlane do
       endpoint_prefix:  "data.iot",
       type:             :rest_json,
       version:          "2015-05-28",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetThingShadowRequest",
+      output_shape:     "GetThingShadowResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Publishes state information.
@@ -72,9 +80,13 @@ defmodule Baiji.IotDataPlane do
       endpoint_prefix:  "data.iot",
       type:             :rest_json,
       version:          "2015-05-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "PublishRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates the thing shadow for the specified thing.
@@ -94,8 +106,19 @@ defmodule Baiji.IotDataPlane do
       endpoint_prefix:  "data.iot",
       type:             :rest_json,
       version:          "2015-05-28",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateThingShadowRequest",
+      output_shape:     "UpdateThingShadowResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"ConflictException" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DeleteThingShadowRequest" => %{"members" => %{"thingName" => %{"location" => "uri", "locationName" => "thingName", "shape" => "ThingName"}}, "required" => ["thingName"], "type" => "structure"}, "DeleteThingShadowResponse" => %{"members" => %{"payload" => %{"shape" => "JsonDocument"}}, "payload" => "payload", "required" => ["payload"], "type" => "structure"}, "ErrorMessage" => %{"type" => "string"}, "GetThingShadowRequest" => %{"members" => %{"thingName" => %{"location" => "uri", "locationName" => "thingName", "shape" => "ThingName"}}, "required" => ["thingName"], "type" => "structure"}, "GetThingShadowResponse" => %{"members" => %{"payload" => %{"shape" => "JsonDocument"}}, "payload" => "payload", "type" => "structure"}, "InternalFailureException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "InvalidRequestException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "JsonDocument" => %{"type" => "blob"}, "MethodNotAllowedException" => %{"error" => %{"httpStatusCode" => 405}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Payload" => %{"type" => "blob"}, "PublishRequest" => %{"members" => %{"payload" => %{"shape" => "Payload"}, "qos" => %{"location" => "querystring", "locationName" => "qos", "shape" => "Qos"}, "topic" => %{"location" => "uri", "locationName" => "topic", "shape" => "Topic"}}, "payload" => "payload", "required" => ["topic"], "type" => "structure"}, "Qos" => %{"max" => 1, "min" => 0, "type" => "integer"}, "RequestEntityTooLargeException" => %{"error" => %{"httpStatusCode" => 413}, "exception" => true, "members" => %{"message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ResourceNotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "ServiceUnavailableException" => %{"error" => %{"httpStatusCode" => 503}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "ThingName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_-]+", "type" => "string"}, "ThrottlingException" => %{"error" => %{"httpStatusCode" => 429}, "exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "Topic" => %{"type" => "string"}, "UnauthorizedException" => %{"error" => %{"httpStatusCode" => 401}, "exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "UnsupportedDocumentEncodingException" => %{"error" => %{"httpStatusCode" => 415}, "exception" => true, "members" => %{"message" => %{"shape" => "errorMessage"}}, "type" => "structure"}, "UpdateThingShadowRequest" => %{"members" => %{"payload" => %{"shape" => "JsonDocument"}, "thingName" => %{"location" => "uri", "locationName" => "thingName", "shape" => "ThingName"}}, "payload" => "payload", "required" => ["thingName", "payload"], "type" => "structure"}, "UpdateThingShadowResponse" => %{"members" => %{"payload" => %{"shape" => "JsonDocument"}}, "payload" => "payload", "type" => "structure"}, "errorMessage" => %{"type" => "string"}}
+  end
 end

@@ -32,9 +32,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetIntentVersionsRequest",
+      output_shape:     "GetIntentVersionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Exports the contents of a Amazon Lex resource in a specified format.
@@ -50,9 +54,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetExportRequest",
+      output_shape:     "GetExportResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns metadata information for a specific bot. You must provide the bot
@@ -71,9 +79,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotRequest",
+      output_shape:     "GetBotResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific version of a slot type. To delete all versions of a slot
@@ -93,9 +105,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteSlotTypeVersionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new version of the bot based on the `$LATEST` version. If the
@@ -124,9 +140,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateBotVersionRequest",
+      output_shape:     "CreateBotVersionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an Amazon Lex conversational bot or replaces an existing bot. When
@@ -158,9 +178,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutBotRequest",
+      output_shape:     "PutBotResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns intent information as follows:
@@ -185,9 +209,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetIntentsRequest",
+      output_shape:     "GetIntentsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a built-in intent.
@@ -205,9 +233,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBuiltinIntentRequest",
+      output_shape:     "GetBuiltinIntentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes all versions of the intent, including the `$LATEST` version. To
@@ -238,9 +270,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteIntentRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an alias for the specified version of the bot or replaces an alias
@@ -261,9 +297,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutBotAliasRequest",
+      output_shape:     "PutBotAliasResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about an Amazon Lex bot alias. For more information
@@ -282,9 +322,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotAliasRequest",
+      output_shape:     "GetBotAliasResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of built-in slot types that meet the specified criteria.
@@ -307,9 +351,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBuiltinSlotTypesRequest",
+      output_shape:     "GetBuiltinSlotTypesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about an intent. In addition to the intent name, you
@@ -328,9 +376,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetIntentRequest",
+      output_shape:     "GetIntentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new version of an intent based on the `$LATEST` version of the
@@ -360,9 +412,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateIntentVersionRequest",
+      output_shape:     "CreateIntentVersionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific version of an intent. To delete all versions of a
@@ -382,9 +438,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteIntentVersionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns slot type information as follows:
@@ -409,9 +469,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetSlotTypesRequest",
+      output_shape:     "GetSlotTypesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes all versions of the bot, including the `$LATEST` version. To delete
@@ -436,9 +500,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteBotRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the association between an Amazon Lex bot and a messaging platform.
@@ -457,9 +525,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteBotChannelAssociationRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about all of the versions of a bot.
@@ -485,9 +557,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotVersionsRequest",
+      output_shape:     "GetBotVersionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes stored utterances.
@@ -514,9 +590,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteUtterancesRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about all versions of a slot type.
@@ -544,9 +624,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetSlotTypeVersionsRequest",
+      output_shape:     "GetSlotTypeVersionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the association between an Amazon Lex bot and a
@@ -566,9 +650,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotChannelAssociationRequest",
+      output_shape:     "GetBotChannelAssociationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes all versions of the slot type, including the `$LATEST` version. To
@@ -600,9 +688,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteSlotTypeRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Use the `GetUtterancesView` operation to get information about the
@@ -641,9 +733,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetUtterancesViewRequest",
+      output_shape:     "GetUtterancesViewResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns bot information as follows:
@@ -669,9 +765,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotsRequest",
+      output_shape:     "GetBotsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a specific version of a bot. To delete all versions of a bot, use
@@ -690,9 +790,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteBotVersionRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of built-in intents that meet the specified criteria.
@@ -710,9 +814,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBuiltinIntentsRequest",
+      output_shape:     "GetBuiltinIntentsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an alias for the specified bot.
@@ -736,9 +844,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteBotAliasRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of all of the channels associated with the specified bot.
@@ -757,9 +869,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotChannelAssociationsRequest",
+      output_shape:     "GetBotChannelAssociationsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of aliases for a specified Amazon Lex bot.
@@ -777,9 +893,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetBotAliasesRequest",
+      output_shape:     "GetBotAliasesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an intent or replaces an existing intent.
@@ -841,9 +961,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutIntentRequest",
+      output_shape:     "PutIntentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a specific version of a slot type. In addition to
@@ -862,9 +986,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetSlotTypeRequest",
+      output_shape:     "GetSlotTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new version of a slot type based on the `$LATEST` version of the
@@ -894,9 +1022,13 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateSlotTypeVersionRequest",
+      output_shape:     "CreateSlotTypeVersionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a custom slot type or replaces an existing custom slot type.
@@ -923,8 +1055,19 @@ defmodule Baiji.LexModelBuildingService do
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",
-      method:           :put
+      method:           :put,
+      input_shape:      "PutSlotTypeRequest",
+      output_shape:     "PutSlotTypeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"InternalFailureException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "PutBotResponse" => %{"members" => %{"abortStatement" => %{"shape" => "Statement"}, "checksum" => %{"shape" => "String"}, "childDirected" => %{"shape" => "Boolean"}, "clarificationPrompt" => %{"shape" => "Prompt"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "failureReason" => %{"shape" => "String"}, "idleSessionTTLInSeconds" => %{"shape" => "SessionTTL"}, "intents" => %{"shape" => "IntentList"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "locale" => %{"shape" => "Locale"}, "name" => %{"shape" => "BotName"}, "status" => %{"shape" => "Status"}, "version" => %{"shape" => "Version"}, "voiceId" => %{"shape" => "String"}}, "type" => "structure"}, "GetBotAliasesRequest" => %{"members" => %{"botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nameContains" => %{"location" => "querystring", "locationName" => "nameContains", "shape" => "AliasName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "required" => ["botName"], "type" => "structure"}, "GetSlotTypeVersionsRequest" => %{"members" => %{"maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "SlotTypeName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "required" => ["name"], "type" => "structure"}, "GetBuiltinSlotTypesRequest" => %{"members" => %{"locale" => %{"location" => "querystring", "locationName" => "locale", "shape" => "Locale"}, "maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}, "signatureContains" => %{"location" => "querystring", "locationName" => "signatureContains", "shape" => "String"}}, "type" => "structure"}, "GetBotRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotName"}, "versionOrAlias" => %{"location" => "uri", "locationName" => "versionoralias", "shape" => "String"}}, "required" => ["name", "versionOrAlias"], "type" => "structure"}, "PutSlotTypeRequest" => %{"members" => %{"checksum" => %{"shape" => "String"}, "description" => %{"shape" => "Description"}, "enumerationValues" => %{"shape" => "EnumerationValues"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "SlotTypeName"}, "valueSelectionStrategy" => %{"shape" => "SlotValueSelectionStrategy"}}, "required" => ["name"], "type" => "structure"}, "PreconditionFailedException" => %{"error" => %{"httpStatusCode" => 412}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteIntentVersionRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "IntentName"}, "version" => %{"location" => "uri", "locationName" => "version", "shape" => "NumericalVersion"}}, "required" => ["name", "version"], "type" => "structure"}, "GetIntentRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "IntentName"}, "version" => %{"location" => "uri", "locationName" => "version", "shape" => "Version"}}, "required" => ["name", "version"], "type" => "structure"}, "ResourceType" => %{"enum" => ["BOT"], "type" => "string"}, "AliasName" => %{"max" => 100, "min" => 1, "pattern" => "^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_)", "type" => "string"}, "Utterance" => %{"max" => 200, "min" => 1, "type" => "string"}, "GetSlotTypeVersionsResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "slotTypes" => %{"shape" => "SlotTypeMetadataList"}}, "type" => "structure"}, "PutIntentResponse" => %{"members" => %{"checksum" => %{"shape" => "String"}, "conclusionStatement" => %{"shape" => "Statement"}, "confirmationPrompt" => %{"shape" => "Prompt"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "dialogCodeHook" => %{"shape" => "CodeHook"}, "followUpPrompt" => %{"shape" => "FollowUpPrompt"}, "fulfillmentActivity" => %{"shape" => "FulfillmentActivity"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "IntentName"}, "parentIntentSignature" => %{"shape" => "BuiltinIntentSignature"}, "rejectionStatement" => %{"shape" => "Statement"}, "sampleUtterances" => %{"shape" => "IntentUtteranceList"}, "slots" => %{"shape" => "SlotList"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "GetBuiltinSlotTypesResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "slotTypes" => %{"shape" => "BuiltinSlotTypeMetadataList"}}, "type" => "structure"}, "SlotName" => %{"max" => 100, "min" => 1, "pattern" => "^[a-zA-Z]+(((_|.)[a-zA-Z]+)*|([a-zA-Z]+(_|.))*|(_|.))", "type" => "string"}, "Boolean" => %{"type" => "boolean"}, "Prompt" => %{"members" => %{"maxAttempts" => %{"shape" => "PromptMaxAttempts"}, "messages" => %{"shape" => "MessageList"}, "responseCard" => %{"shape" => "ResponseCard"}}, "required" => ["messages", "maxAttempts"], "type" => "structure"}, "CreateSlotTypeVersionRequest" => %{"members" => %{"checksum" => %{"shape" => "String"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "SlotTypeName"}}, "required" => ["name"], "type" => "structure"}, "SessionTTL" => %{"max" => 86400, "min" => 60, "type" => "integer"}, "PutIntentRequest" => %{"members" => %{"checksum" => %{"shape" => "String"}, "conclusionStatement" => %{"shape" => "Statement"}, "confirmationPrompt" => %{"shape" => "Prompt"}, "description" => %{"shape" => "Description"}, "dialogCodeHook" => %{"shape" => "CodeHook"}, "followUpPrompt" => %{"shape" => "FollowUpPrompt"}, "fulfillmentActivity" => %{"shape" => "FulfillmentActivity"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "IntentName"}, "parentIntentSignature" => %{"shape" => "BuiltinIntentSignature"}, "rejectionStatement" => %{"shape" => "Statement"}, "sampleUtterances" => %{"shape" => "IntentUtteranceList"}, "slots" => %{"shape" => "SlotList"}}, "required" => ["name"], "type" => "structure"}, "Count" => %{"type" => "integer"}, "ResponseCard" => %{"max" => 50000, "min" => 1, "type" => "string"}, "DeleteBotRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotName"}}, "required" => ["name"], "type" => "structure"}, "UtteranceList" => %{"members" => %{"botVersion" => %{"shape" => "Version"}, "utterances" => %{"shape" => "ListOfUtterance"}}, "type" => "structure"}, "GetBotChannelAssociationsResponse" => %{"members" => %{"botChannelAssociations" => %{"shape" => "BotChannelAssociationList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "ReferenceType" => %{"enum" => ["Intent", "Bot", "BotAlias", "BotChannel"], "type" => "string"}, "SlotValueSelectionStrategy" => %{"enum" => ["ORIGINAL_VALUE", "TOP_RESOLUTION"], "type" => "string"}, "LocaleList" => %{"member" => %{"shape" => "Locale"}, "type" => "list"}, "ConflictException" => %{"error" => %{"httpStatusCode" => 409}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "FollowUpPrompt" => %{"members" => %{"prompt" => %{"shape" => "Prompt"}, "rejectionStatement" => %{"shape" => "Statement"}}, "required" => ["prompt", "rejectionStatement"], "type" => "structure"}, "GetBotChannelAssociationsRequest" => %{"members" => %{"botAlias" => %{"location" => "uri", "locationName" => "aliasName", "shape" => "AliasNameOrListAll"}, "botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nameContains" => %{"location" => "querystring", "locationName" => "nameContains", "shape" => "BotChannelName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "required" => ["botName", "botAlias"], "type" => "structure"}, "GetSlotTypesResponse" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "slotTypes" => %{"shape" => "SlotTypeMetadataList"}}, "type" => "structure"}, "ListsOfUtterances" => %{"member" => %{"shape" => "UtteranceList"}, "type" => "list"}, "DeleteSlotTypeVersionRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "SlotTypeName"}, "version" => %{"location" => "uri", "locationName" => "version", "shape" => "NumericalVersion"}}, "required" => ["name", "version"], "type" => "structure"}, "GetBuiltinIntentsResponse" => %{"members" => %{"intents" => %{"shape" => "BuiltinIntentMetadataList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "StatusType" => %{"enum" => ["Detected", "Missed"], "type" => "string"}, "ResourceInUseException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"exampleReference" => %{"shape" => "ResourceReference"}, "referenceType" => %{"shape" => "ReferenceType"}}, "type" => "structure"}, "BuiltinIntentMetadata" => %{"members" => %{"signature" => %{"shape" => "BuiltinIntentSignature"}, "supportedLocales" => %{"shape" => "LocaleList"}}, "type" => "structure"}, "SlotTypeMetadata" => %{"members" => %{"createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "SlotTypeName"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "Name" => %{"max" => 64, "min" => 1, "pattern" => "[a-zA-Z_]+", "type" => "string"}, "GetBuiltinIntentResponse" => %{"members" => %{"signature" => %{"shape" => "BuiltinIntentSignature"}, "slots" => %{"shape" => "BuiltinIntentSlotList"}, "supportedLocales" => %{"shape" => "LocaleList"}}, "type" => "structure"}, "SlotTypeName" => %{"max" => 100, "min" => 1, "pattern" => "^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_)", "type" => "string"}, "GetSlotTypesRequest" => %{"members" => %{"maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nameContains" => %{"location" => "querystring", "locationName" => "nameContains", "shape" => "SlotTypeName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "type" => "structure"}, "GetBotsRequest" => %{"members" => %{"maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nameContains" => %{"location" => "querystring", "locationName" => "nameContains", "shape" => "BotName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "type" => "structure"}, "CreateBotVersionRequest" => %{"members" => %{"checksum" => %{"shape" => "String"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotName"}}, "required" => ["name"], "type" => "structure"}, "ListOfUtterance" => %{"member" => %{"shape" => "UtteranceData"}, "type" => "list"}, "CreateIntentVersionResponse" => %{"members" => %{"checksum" => %{"shape" => "String"}, "conclusionStatement" => %{"shape" => "Statement"}, "confirmationPrompt" => %{"shape" => "Prompt"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "dialogCodeHook" => %{"shape" => "CodeHook"}, "followUpPrompt" => %{"shape" => "FollowUpPrompt"}, "fulfillmentActivity" => %{"shape" => "FulfillmentActivity"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "IntentName"}, "parentIntentSignature" => %{"shape" => "BuiltinIntentSignature"}, "rejectionStatement" => %{"shape" => "Statement"}, "sampleUtterances" => %{"shape" => "IntentUtteranceList"}, "slots" => %{"shape" => "SlotList"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "Description" => %{"max" => 200, "min" => 0, "type" => "string"}, "Version" => %{"max" => 64, "min" => 1, "pattern" => "\\$LATEST|[0-9]+", "type" => "string"}, "EnumerationValue" => %{"members" => %{"synonyms" => %{"shape" => "SynonymList"}, "value" => %{"shape" => "Value"}}, "required" => ["value"], "type" => "structure"}, "Message" => %{"members" => %{"content" => %{"shape" => "ContentString"}, "contentType" => %{"shape" => "ContentType"}}, "required" => ["contentType", "content"], "type" => "structure"}, "ExportStatus" => %{"enum" => ["IN_PROGRESS", "READY", "FAILED"], "type" => "string"}, "UtteranceString" => %{"max" => 2000, "min" => 1, "type" => "string"}, "DeleteBotAliasRequest" => %{"members" => %{"botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "AliasName"}}, "required" => ["name", "botName"], "type" => "structure"}, "Timestamp" => %{"type" => "timestamp"}, "GetIntentsRequest" => %{"members" => %{"maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nameContains" => %{"location" => "querystring", "locationName" => "nameContains", "shape" => "IntentName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "type" => "structure"}, "ProcessBehavior" => %{"enum" => ["SAVE", "BUILD"], "type" => "string"}, "PutBotRequest" => %{"members" => %{"abortStatement" => %{"shape" => "Statement"}, "checksum" => %{"shape" => "String"}, "childDirected" => %{"shape" => "Boolean"}, "clarificationPrompt" => %{"shape" => "Prompt"}, "description" => %{"shape" => "Description"}, "idleSessionTTLInSeconds" => %{"shape" => "SessionTTL"}, "intents" => %{"shape" => "IntentList"}, "locale" => %{"shape" => "Locale"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotName"}, "processBehavior" => %{"shape" => "ProcessBehavior"}, "voiceId" => %{"shape" => "String"}}, "required" => ["name", "locale", "childDirected"], "type" => "structure"}, "Statement" => %{"members" => %{"messages" => %{"shape" => "MessageList"}, "responseCard" => %{"shape" => "ResponseCard"}}, "required" => ["messages"], "type" => "structure"}, "ChannelConfigurationMap" => %{"key" => %{"shape" => "String"}, "max" => 10, "min" => 1, "sensitive" => true, "type" => "map", "value" => %{"shape" => "String"}}, "ChannelType" => %{"enum" => ["Facebook", "Slack", "Twilio-Sms"], "type" => "string"}, "CreateIntentVersionRequest" => %{"members" => %{"checksum" => %{"shape" => "String"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "IntentName"}}, "required" => ["name"], "type" => "structure"}, "NotFoundException" => %{"error" => %{"httpStatusCode" => 404}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "BuiltinSlotTypeMetadataList" => %{"member" => %{"shape" => "BuiltinSlotTypeMetadata"}, "type" => "list"}, "GetBotVersionsResponse" => %{"members" => %{"bots" => %{"shape" => "BotMetadataList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "NumericalVersion" => %{"max" => 64, "min" => 1, "pattern" => "[0-9]+", "type" => "string"}, "Intent" => %{"members" => %{"intentName" => %{"shape" => "IntentName"}, "intentVersion" => %{"shape" => "Version"}}, "required" => ["intentName", "intentVersion"], "type" => "structure"}, "MaxResults" => %{"box" => true, "max" => 50, "min" => 1, "type" => "integer"}, "PutBotAliasResponse" => %{"members" => %{"botName" => %{"shape" => "BotName"}, "botVersion" => %{"shape" => "Version"}, "checksum" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "AliasName"}}, "type" => "structure"}, "GetSlotTypeRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "SlotTypeName"}, "version" => %{"location" => "uri", "locationName" => "version", "shape" => "Version"}}, "required" => ["name", "version"], "type" => "structure"}, "UtteranceData" => %{"members" => %{"count" => %{"shape" => "Count"}, "distinctUsers" => %{"shape" => "Count"}, "firstUtteredDate" => %{"shape" => "Timestamp"}, "lastUtteredDate" => %{"shape" => "Timestamp"}, "utteranceString" => %{"shape" => "UtteranceString"}}, "type" => "structure"}, "BotMetadata" => %{"members" => %{"createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "BotName"}, "status" => %{"shape" => "Status"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "BuiltinIntentSlotList" => %{"member" => %{"shape" => "BuiltinIntentSlot"}, "type" => "list"}, "BuiltinIntentSlot" => %{"members" => %{"name" => %{"shape" => "String"}}, "type" => "structure"}, "SlotTypeMetadataList" => %{"member" => %{"shape" => "SlotTypeMetadata"}, "type" => "list"}, "GetExportResponse" => %{"members" => %{"exportStatus" => %{"shape" => "ExportStatus"}, "exportType" => %{"shape" => "ExportType"}, "failureReason" => %{"shape" => "String"}, "name" => %{"shape" => "Name"}, "resourceType" => %{"shape" => "ResourceType"}, "url" => %{"shape" => "String"}, "version" => %{"shape" => "NumericalVersion"}}, "type" => "structure"}, "BadRequestException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "ContentType" => %{"enum" => ["PlainText", "SSML"], "type" => "string"}, "DeleteBotVersionRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotName"}, "version" => %{"location" => "uri", "locationName" => "version", "shape" => "NumericalVersion"}}, "required" => ["name", "version"], "type" => "structure"}, "CreateSlotTypeVersionResponse" => %{"members" => %{"checksum" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "enumerationValues" => %{"shape" => "EnumerationValues"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "SlotTypeName"}, "valueSelectionStrategy" => %{"shape" => "SlotValueSelectionStrategy"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "LimitExceededException" => %{"error" => %{"httpStatusCode" => 429}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}, "retryAfterSeconds" => %{"location" => "header", "locationName" => "Retry-After", "shape" => "String"}}, "type" => "structure"}, "GetBuiltinIntentsRequest" => %{"members" => %{"locale" => %{"location" => "querystring", "locationName" => "locale", "shape" => "Locale"}, "maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}, "signatureContains" => %{"location" => "querystring", "locationName" => "signatureContains", "shape" => "String"}}, "type" => "structure"}, "Status" => %{"enum" => ["BUILDING", "READY", "FAILED", "NOT_BUILT"], "type" => "string"}, "GetBotAliasResponse" => %{"members" => %{"botName" => %{"shape" => "BotName"}, "botVersion" => %{"shape" => "Version"}, "checksum" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "AliasName"}}, "type" => "structure"}, "ExportType" => %{"enum" => ["ALEXA_SKILLS_KIT"], "type" => "string"}, "BuiltinSlotTypeMetadata" => %{"members" => %{"signature" => %{"shape" => "BuiltinSlotTypeSignature"}, "supportedLocales" => %{"shape" => "LocaleList"}}, "type" => "structure"}, "SynonymList" => %{"member" => %{"shape" => "Value"}, "type" => "list"}, "GetIntentResponse" => %{"members" => %{"checksum" => %{"shape" => "String"}, "conclusionStatement" => %{"shape" => "Statement"}, "confirmationPrompt" => %{"shape" => "Prompt"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "dialogCodeHook" => %{"shape" => "CodeHook"}, "followUpPrompt" => %{"shape" => "FollowUpPrompt"}, "fulfillmentActivity" => %{"shape" => "FulfillmentActivity"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "IntentName"}, "parentIntentSignature" => %{"shape" => "BuiltinIntentSignature"}, "rejectionStatement" => %{"shape" => "Statement"}, "sampleUtterances" => %{"shape" => "IntentUtteranceList"}, "slots" => %{"shape" => "SlotList"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "Locale" => %{"enum" => ["en-US"], "type" => "string"}, "Value" => %{"max" => 140, "min" => 1, "type" => "string"}, "GetBuiltinIntentRequest" => %{"members" => %{"signature" => %{"location" => "uri", "locationName" => "signature", "shape" => "BuiltinIntentSignature"}}, "required" => ["signature"], "type" => "structure"}, "CustomOrBuiltinSlotTypeName" => %{"max" => 100, "min" => 1, "pattern" => "^([a-zA-Z]|AMAZON.)+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_)", "type" => "string"}, "GetBotsResponse" => %{"members" => %{"bots" => %{"shape" => "BotMetadataList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "AliasNameOrListAll" => %{"max" => 100, "min" => 1, "pattern" => "^(-|^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*))$", "type" => "string"}, "CodeHook" => %{"members" => %{"messageVersion" => %{"shape" => "MessageVersion"}, "uri" => %{"shape" => "LambdaARN"}}, "required" => ["uri", "messageVersion"], "type" => "structure"}, "SlotList" => %{"max" => 100, "member" => %{"shape" => "Slot"}, "min" => 0, "type" => "list"}, "GetBotAliasesResponse" => %{"members" => %{"BotAliases" => %{"shape" => "BotAliasMetadataList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "CreateBotVersionResponse" => %{"members" => %{"abortStatement" => %{"shape" => "Statement"}, "checksum" => %{"shape" => "String"}, "childDirected" => %{"shape" => "Boolean"}, "clarificationPrompt" => %{"shape" => "Prompt"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "failureReason" => %{"shape" => "String"}, "idleSessionTTLInSeconds" => %{"shape" => "SessionTTL"}, "intents" => %{"shape" => "IntentList"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "locale" => %{"shape" => "Locale"}, "name" => %{"shape" => "BotName"}, "status" => %{"shape" => "Status"}, "version" => %{"shape" => "Version"}, "voiceId" => %{"shape" => "String"}}, "type" => "structure"}, "MessageList" => %{"max" => 5, "member" => %{"shape" => "Message"}, "min" => 1, "type" => "list"}, "FulfillmentActivity" => %{"members" => %{"codeHook" => %{"shape" => "CodeHook"}, "type" => %{"shape" => "FulfillmentActivityType"}}, "required" => ["type"], "type" => "structure"}, "Priority" => %{"max" => 100, "min" => 0, "type" => "integer"}, "Slot" => %{"members" => %{"description" => %{"shape" => "Description"}, "name" => %{"shape" => "SlotName"}, "priority" => %{"shape" => "Priority"}, "responseCard" => %{"shape" => "ResponseCard"}, "sampleUtterances" => %{"shape" => "SlotUtteranceList"}, "slotConstraint" => %{"shape" => "SlotConstraint"}, "slotType" => %{"shape" => "CustomOrBuiltinSlotTypeName"}, "slotTypeVersion" => %{"shape" => "Version"}, "valueElicitationPrompt" => %{"shape" => "Prompt"}}, "required" => ["name", "slotConstraint"], "type" => "structure"}, "GetBotChannelAssociationRequest" => %{"members" => %{"botAlias" => %{"location" => "uri", "locationName" => "aliasName", "shape" => "AliasName"}, "botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotChannelName"}}, "required" => ["name", "botName", "botAlias"], "type" => "structure"}, "BotVersions" => %{"max" => 5, "member" => %{"shape" => "Version"}, "min" => 1, "type" => "list"}, "GetBotChannelAssociationResponse" => %{"members" => %{"botAlias" => %{"shape" => "AliasName"}, "botConfiguration" => %{"shape" => "ChannelConfigurationMap"}, "botName" => %{"shape" => "BotName"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "name" => %{"shape" => "BotChannelName"}, "type" => %{"shape" => "ChannelType"}}, "type" => "structure"}, "GetSlotTypeResponse" => %{"members" => %{"checksum" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "enumerationValues" => %{"shape" => "EnumerationValues"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "SlotTypeName"}, "valueSelectionStrategy" => %{"shape" => "SlotValueSelectionStrategy"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "GetBotVersionsRequest" => %{"members" => %{"maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "required" => ["name"], "type" => "structure"}, "BotChannelAssociation" => %{"members" => %{"botAlias" => %{"shape" => "AliasName"}, "botConfiguration" => %{"shape" => "ChannelConfigurationMap"}, "botName" => %{"shape" => "BotName"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "name" => %{"shape" => "BotChannelName"}, "type" => %{"shape" => "ChannelType"}}, "type" => "structure"}, "IntentName" => %{"max" => 100, "min" => 1, "pattern" => "^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_)", "type" => "string"}, "GetBotResponse" => %{"members" => %{"abortStatement" => %{"shape" => "Statement"}, "checksum" => %{"shape" => "String"}, "childDirected" => %{"shape" => "Boolean"}, "clarificationPrompt" => %{"shape" => "Prompt"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "failureReason" => %{"shape" => "String"}, "idleSessionTTLInSeconds" => %{"shape" => "SessionTTL"}, "intents" => %{"shape" => "IntentList"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "locale" => %{"shape" => "Locale"}, "name" => %{"shape" => "BotName"}, "status" => %{"shape" => "Status"}, "version" => %{"shape" => "Version"}, "voiceId" => %{"shape" => "String"}}, "type" => "structure"}, "BuiltinIntentMetadataList" => %{"member" => %{"shape" => "BuiltinIntentMetadata"}, "type" => "list"}, "LambdaARN" => %{"max" => 2048, "min" => 20, "pattern" => "arn:aws:lambda:[a-z]+-[a-z]+-[0-9]:[0-9]{12}:function:[a-zA-Z0-9-_]+(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})?(:[a-zA-Z0-9-_]+)?", "type" => "string"}, "GetUtterancesViewRequest" => %{"members" => %{"botName" => %{"location" => "uri", "locationName" => "botname", "shape" => "BotName"}, "botVersions" => %{"location" => "querystring", "locationName" => "bot_versions", "shape" => "BotVersions"}, "statusType" => %{"location" => "querystring", "locationName" => "status_type", "shape" => "StatusType"}}, "required" => ["botName", "botVersions", "statusType"], "type" => "structure"}, "PutSlotTypeResponse" => %{"members" => %{"checksum" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "enumerationValues" => %{"shape" => "EnumerationValues"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "SlotTypeName"}, "valueSelectionStrategy" => %{"shape" => "SlotValueSelectionStrategy"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "ResourceReference" => %{"members" => %{"name" => %{"shape" => "Name"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "UserId" => %{"max" => 100, "min" => 2, "type" => "string"}, "SlotUtteranceList" => %{"max" => 10, "member" => %{"shape" => "Utterance"}, "min" => 0, "type" => "list"}, "IntentMetadataList" => %{"member" => %{"shape" => "IntentMetadata"}, "type" => "list"}, "GetIntentVersionsResponse" => %{"members" => %{"intents" => %{"shape" => "IntentMetadataList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "DeleteUtterancesRequest" => %{"members" => %{"botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "userId" => %{"location" => "uri", "locationName" => "userId", "shape" => "UserId"}}, "required" => ["botName", "userId"], "type" => "structure"}, "DeleteBotChannelAssociationRequest" => %{"members" => %{"botAlias" => %{"location" => "uri", "locationName" => "aliasName", "shape" => "AliasName"}, "botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "BotChannelName"}}, "required" => ["name", "botName", "botAlias"], "type" => "structure"}, "PromptMaxAttempts" => %{"max" => 5, "min" => 1, "type" => "integer"}, "ContentString" => %{"max" => 1000, "min" => 1, "type" => "string"}, "BotChannelAssociationList" => %{"member" => %{"shape" => "BotChannelAssociation"}, "type" => "list"}, "GetIntentsResponse" => %{"members" => %{"intents" => %{"shape" => "IntentMetadataList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "PutBotAliasRequest" => %{"members" => %{"botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "botVersion" => %{"shape" => "Version"}, "checksum" => %{"shape" => "String"}, "description" => %{"shape" => "Description"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "AliasName"}}, "required" => ["name", "botVersion", "botName"], "type" => "structure"}, "IntentMetadata" => %{"members" => %{"createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "IntentName"}, "version" => %{"shape" => "Version"}}, "type" => "structure"}, "FulfillmentActivityType" => %{"enum" => ["ReturnIntent", "CodeHook"], "type" => "string"}, "GetExportRequest" => %{"members" => %{"exportType" => %{"location" => "querystring", "locationName" => "exportType", "shape" => "ExportType"}, "name" => %{"location" => "querystring", "locationName" => "name", "shape" => "Name"}, "resourceType" => %{"location" => "querystring", "locationName" => "resourceType", "shape" => "ResourceType"}, "version" => %{"location" => "querystring", "locationName" => "version", "shape" => "NumericalVersion"}}, "required" => ["name", "version", "resourceType", "exportType"], "type" => "structure"}, "BuiltinIntentSignature" => %{"type" => "string"}, "EnumerationValues" => %{"max" => 10000, "member" => %{"shape" => "EnumerationValue"}, "min" => 1, "type" => "list"}, "BotChannelName" => %{"max" => 100, "min" => 1, "pattern" => "^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_)", "type" => "string"}, "BotName" => %{"max" => 50, "min" => 2, "pattern" => "^[a-zA-Z]+((_[a-zA-Z]+)*|([a-zA-Z]+_)*|_)", "type" => "string"}, "BotMetadataList" => %{"member" => %{"shape" => "BotMetadata"}, "type" => "list"}, "GetBotAliasRequest" => %{"members" => %{"botName" => %{"location" => "uri", "locationName" => "botName", "shape" => "BotName"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "AliasName"}}, "required" => ["name", "botName"], "type" => "structure"}, "IntentList" => %{"member" => %{"shape" => "Intent"}, "type" => "list"}, "NextToken" => %{"type" => "string"}, "IntentUtteranceList" => %{"max" => 1500, "member" => %{"shape" => "Utterance"}, "min" => 0, "type" => "list"}, "GetIntentVersionsRequest" => %{"members" => %{"maxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "MaxResults"}, "name" => %{"location" => "uri", "locationName" => "name", "shape" => "IntentName"}, "nextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "NextToken"}}, "required" => ["name"], "type" => "structure"}, "DeleteSlotTypeRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "SlotTypeName"}}, "required" => ["name"], "type" => "structure"}, "DeleteIntentRequest" => %{"members" => %{"name" => %{"location" => "uri", "locationName" => "name", "shape" => "IntentName"}}, "required" => ["name"], "type" => "structure"}, "MessageVersion" => %{"max" => 5, "min" => 1, "type" => "string"}, "SlotConstraint" => %{"enum" => ["Required", "Optional"], "type" => "string"}, "BotAliasMetadata" => %{"members" => %{"botName" => %{"shape" => "BotName"}, "botVersion" => %{"shape" => "Version"}, "checksum" => %{"shape" => "String"}, "createdDate" => %{"shape" => "Timestamp"}, "description" => %{"shape" => "Description"}, "lastUpdatedDate" => %{"shape" => "Timestamp"}, "name" => %{"shape" => "AliasName"}}, "type" => "structure"}, "BuiltinSlotTypeSignature" => %{"type" => "string"}, "GetUtterancesViewResponse" => %{"members" => %{"botName" => %{"shape" => "BotName"}, "utterances" => %{"shape" => "ListsOfUtterances"}}, "type" => "structure"}, "BotAliasMetadataList" => %{"member" => %{"shape" => "BotAliasMetadata"}, "type" => "list"}}
+  end
 end

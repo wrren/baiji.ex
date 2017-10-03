@@ -46,9 +46,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "BulkPublishRequest",
+      output_shape:     "BulkPublishResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specific dataset. The dataset will be deleted permanently, and
@@ -70,9 +74,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "DeleteDatasetRequest",
+      output_shape:     "DeleteDatasetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets meta data about a dataset by identity and dataset name. With Amazon
@@ -95,9 +103,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeDatasetRequest",
+      output_shape:     "DescribeDatasetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets usage details (for example, data storage) about a particular identity
@@ -117,9 +129,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeIdentityPoolUsageRequest",
+      output_shape:     "DescribeIdentityPoolUsageResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets usage information for an identity, including number of datasets and
@@ -139,9 +155,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "DescribeIdentityUsageRequest",
+      output_shape:     "DescribeIdentityUsageResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Get the status of the last BulkPublish operation for an identity pool.
@@ -160,9 +180,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetBulkPublishDetailsRequest",
+      output_shape:     "GetBulkPublishDetailsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the events and the corresponding Lambda functions associated with an
@@ -182,9 +206,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetCognitoEventsRequest",
+      output_shape:     "GetCognitoEventsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the configuration settings of an identity pool.
@@ -203,9 +231,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "GetIdentityPoolConfigurationRequest",
+      output_shape:     "GetIdentityPoolConfigurationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists datasets for an identity. With Amazon Cognito Sync, each identity has
@@ -227,9 +259,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListDatasetsRequest",
+      output_shape:     "ListDatasetsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets a list of identity pools registered with Cognito.
@@ -249,9 +285,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListIdentityPoolUsageRequest",
+      output_shape:     "ListIdentityPoolUsageResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets paginated records, optionally changed after a particular sync count
@@ -274,9 +314,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :get
+      method:           :get,
+      input_shape:      "ListRecordsRequest",
+      output_shape:     "ListRecordsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Registers a device to receive push sync notifications.
@@ -295,9 +339,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "RegisterDeviceRequest",
+      output_shape:     "RegisterDeviceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the AWS Lambda function for a given event type for an identity pool.
@@ -319,9 +367,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "SetCognitoEventsRequest",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the necessary configuration for push sync.
@@ -340,9 +392,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "SetIdentityPoolConfigurationRequest",
+      output_shape:     "SetIdentityPoolConfigurationResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Subscribes to receive notifications when a dataset is modified by another
@@ -362,9 +418,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "SubscribeToDatasetRequest",
+      output_shape:     "SubscribeToDatasetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Unsubscribes from receiving notifications when a dataset is modified by
@@ -384,9 +444,13 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :delete
+      method:           :delete,
+      input_shape:      "UnsubscribeFromDatasetRequest",
+      output_shape:     "UnsubscribeFromDatasetResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Posts updates to records and adds and deletes records for a dataset and
@@ -419,8 +483,19 @@ defmodule Baiji.CognitoSync do
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRecordsRequest",
+      output_shape:     "UpdateRecordsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"DescribeIdentityPoolUsageRequest" => %{"members" => %{"IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId"], "type" => "structure"}, "SetIdentityPoolConfigurationRequest" => %{"members" => %{"CognitoStreams" => %{"shape" => "CognitoStreams"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}, "PushSync" => %{"shape" => "PushSync"}}, "required" => ["IdentityPoolId"], "type" => "structure"}, "GetBulkPublishDetailsRequest" => %{"members" => %{"IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId"], "type" => "structure"}, "InvalidConfigurationException" => %{"error" => %{"code" => "InvalidConfiguration", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "InvalidParameterException" => %{"error" => %{"code" => "InvalidParameter", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "ListIdentityPoolUsageResponse" => %{"members" => %{"Count" => %{"shape" => "Integer"}, "IdentityPoolUsages" => %{"shape" => "IdentityPoolUsageList"}, "MaxResults" => %{"shape" => "Integer"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "StreamName" => %{"max" => 128, "min" => 1, "type" => "string"}, "SyncSessionToken" => %{"type" => "string"}, "RegisterDeviceRequest" => %{"members" => %{"IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}, "Platform" => %{"shape" => "Platform"}, "Token" => %{"shape" => "PushToken"}}, "required" => ["IdentityPoolId", "IdentityId", "Platform", "Token"], "type" => "structure"}, "UpdateRecordsResponse" => %{"members" => %{"Records" => %{"shape" => "RecordList"}}, "type" => "structure"}, "BulkPublishRequest" => %{"members" => %{"IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId"], "type" => "structure"}, "IdentityPoolUsageList" => %{"member" => %{"shape" => "IdentityPoolUsage"}, "type" => "list"}, "Record" => %{"members" => %{"DeviceLastModifiedDate" => %{"shape" => "Date"}, "Key" => %{"shape" => "RecordKey"}, "LastModifiedBy" => %{"shape" => "String"}, "LastModifiedDate" => %{"shape" => "Date"}, "SyncCount" => %{"shape" => "Long"}, "Value" => %{"shape" => "RecordValue"}}, "type" => "structure"}, "ClientContext" => %{"type" => "string"}, "LambdaFunctionArn" => %{"type" => "string"}, "MergedDatasetNameList" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "GetBulkPublishDetailsResponse" => %{"members" => %{"BulkPublishCompleteTime" => %{"shape" => "Date"}, "BulkPublishStartTime" => %{"shape" => "Date"}, "BulkPublishStatus" => %{"shape" => "BulkPublishStatus"}, "FailureMessage" => %{"shape" => "String"}, "IdentityPoolId" => %{"shape" => "IdentityPoolId"}}, "type" => "structure"}, "GetCognitoEventsResponse" => %{"members" => %{"Events" => %{"shape" => "Events"}}, "type" => "structure"}, "ResourceConflictException" => %{"error" => %{"code" => "ResourceConflict", "httpStatusCode" => 409, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "DuplicateRequestException" => %{"error" => %{"code" => "DuplicateRequest", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "Dataset" => %{"members" => %{"CreationDate" => %{"shape" => "Date"}, "DataStorage" => %{"shape" => "Long"}, "DatasetName" => %{"shape" => "DatasetName"}, "IdentityId" => %{"shape" => "IdentityId"}, "LastModifiedBy" => %{"shape" => "String"}, "LastModifiedDate" => %{"shape" => "Date"}, "NumRecords" => %{"shape" => "Long"}}, "type" => "structure"}, "DescribeIdentityUsageRequest" => %{"members" => %{"IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId", "IdentityId"], "type" => "structure"}, "TooManyRequestsException" => %{"error" => %{"code" => "TooManyRequests", "httpStatusCode" => 429, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "GetCognitoEventsRequest" => %{"members" => %{"IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId"], "type" => "structure"}, "RecordValue" => %{"max" => 1048575, "type" => "string"}, "LambdaThrottledException" => %{"error" => %{"code" => "LambdaThrottled", "httpStatusCode" => 429, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "CognitoEventType" => %{"type" => "string"}, "Operation" => %{"enum" => ["replace", "remove"], "type" => "string"}, "DatasetName" => %{"max" => 128, "min" => 1, "pattern" => "[a-zA-Z0-9_.:-]+", "type" => "string"}, "DescribeIdentityUsageResponse" => %{"members" => %{"IdentityUsage" => %{"shape" => "IdentityUsage"}}, "type" => "structure"}, "Date" => %{"type" => "timestamp"}, "BulkPublishResponse" => %{"members" => %{"IdentityPoolId" => %{"shape" => "IdentityPoolId"}}, "type" => "structure"}, "IdentityId" => %{"max" => 55, "min" => 1, "pattern" => "[\\w-]+:[0-9a-f-]+", "type" => "string"}, "GetIdentityPoolConfigurationRequest" => %{"members" => %{"IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId"], "type" => "structure"}, "InternalErrorException" => %{"error" => %{"code" => "InternalError", "httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "GetIdentityPoolConfigurationResponse" => %{"members" => %{"CognitoStreams" => %{"shape" => "CognitoStreams"}, "IdentityPoolId" => %{"shape" => "IdentityPoolId"}, "PushSync" => %{"shape" => "PushSync"}}, "type" => "structure"}, "DatasetList" => %{"member" => %{"shape" => "Dataset"}, "type" => "list"}, "BulkPublishStatus" => %{"enum" => ["NOT_STARTED", "IN_PROGRESS", "FAILED", "SUCCEEDED"], "type" => "string"}, "UpdateRecordsRequest" => %{"members" => %{"ClientContext" => %{"location" => "header", "locationName" => "x-amz-Client-Context", "shape" => "ClientContext"}, "DatasetName" => %{"location" => "uri", "locationName" => "DatasetName", "shape" => "DatasetName"}, "DeviceId" => %{"shape" => "DeviceId"}, "IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}, "RecordPatches" => %{"shape" => "RecordPatchList"}, "SyncSessionToken" => %{"shape" => "SyncSessionToken"}}, "required" => ["IdentityPoolId", "IdentityId", "DatasetName", "SyncSessionToken"], "type" => "structure"}, "IdentityUsage" => %{"members" => %{"DataStorage" => %{"shape" => "Long"}, "DatasetCount" => %{"shape" => "Integer"}, "IdentityId" => %{"shape" => "IdentityId"}, "IdentityPoolId" => %{"shape" => "IdentityPoolId"}, "LastModifiedDate" => %{"shape" => "Date"}}, "type" => "structure"}, "Platform" => %{"enum" => ["APNS", "APNS_SANDBOX", "GCM", "ADM"], "type" => "string"}, "DeleteDatasetResponse" => %{"members" => %{"Dataset" => %{"shape" => "Dataset"}}, "type" => "structure"}, "IdentityPoolId" => %{"max" => 55, "min" => 1, "pattern" => "[\\w-]+:[0-9a-f-]+", "type" => "string"}, "SetIdentityPoolConfigurationResponse" => %{"members" => %{"CognitoStreams" => %{"shape" => "CognitoStreams"}, "IdentityPoolId" => %{"shape" => "IdentityPoolId"}, "PushSync" => %{"shape" => "PushSync"}}, "type" => "structure"}, "PushSync" => %{"members" => %{"ApplicationArns" => %{"shape" => "ApplicationArnList"}, "RoleArn" => %{"shape" => "AssumeRoleArn"}}, "type" => "structure"}, "ListRecordsRequest" => %{"members" => %{"DatasetName" => %{"location" => "uri", "locationName" => "DatasetName", "shape" => "DatasetName"}, "IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}, "LastSyncCount" => %{"location" => "querystring", "locationName" => "lastSyncCount", "shape" => "Long"}, "MaxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "IntegerString"}, "NextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "String"}, "SyncSessionToken" => %{"location" => "querystring", "locationName" => "syncSessionToken", "shape" => "SyncSessionToken"}}, "required" => ["IdentityPoolId", "IdentityId", "DatasetName"], "type" => "structure"}, "RecordKey" => %{"max" => 1024, "min" => 1, "type" => "string"}, "NotAuthorizedException" => %{"error" => %{"code" => "NotAuthorizedError", "httpStatusCode" => 403, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "RecordPatch" => %{"members" => %{"DeviceLastModifiedDate" => %{"shape" => "Date"}, "Key" => %{"shape" => "RecordKey"}, "Op" => %{"shape" => "Operation"}, "SyncCount" => %{"shape" => "Long"}, "Value" => %{"shape" => "RecordValue"}}, "required" => ["Op", "Key", "SyncCount"], "type" => "structure"}, "AssumeRoleArn" => %{"max" => 2048, "min" => 20, "pattern" => "arn:aws:iam::\\d+:role/.*", "type" => "string"}, "UnsubscribeFromDatasetRequest" => %{"members" => %{"DatasetName" => %{"location" => "uri", "locationName" => "DatasetName", "shape" => "DatasetName"}, "DeviceId" => %{"location" => "uri", "locationName" => "DeviceId", "shape" => "DeviceId"}, "IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId", "IdentityId", "DatasetName", "DeviceId"], "type" => "structure"}, "DescribeIdentityPoolUsageResponse" => %{"members" => %{"IdentityPoolUsage" => %{"shape" => "IdentityPoolUsage"}}, "type" => "structure"}, "ListDatasetsResponse" => %{"members" => %{"Count" => %{"shape" => "Integer"}, "Datasets" => %{"shape" => "DatasetList"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "DeleteDatasetRequest" => %{"members" => %{"DatasetName" => %{"location" => "uri", "locationName" => "DatasetName", "shape" => "DatasetName"}, "IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId", "IdentityId", "DatasetName"], "type" => "structure"}, "LimitExceededException" => %{"error" => %{"code" => "LimitExceeded", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "Long" => %{"type" => "long"}, "ListRecordsResponse" => %{"members" => %{"Count" => %{"shape" => "Integer"}, "DatasetDeletedAfterRequestedSyncCount" => %{"shape" => "Boolean"}, "DatasetExists" => %{"shape" => "Boolean"}, "DatasetSyncCount" => %{"shape" => "Long"}, "LastModifiedBy" => %{"shape" => "String"}, "MergedDatasetNames" => %{"shape" => "MergedDatasetNameList"}, "NextToken" => %{"shape" => "String"}, "Records" => %{"shape" => "RecordList"}, "SyncSessionToken" => %{"shape" => "String"}}, "type" => "structure"}, "PushToken" => %{"type" => "string"}, "ResourceNotFoundException" => %{"error" => %{"code" => "ResourceNotFound", "httpStatusCode" => 404, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "SubscribeToDatasetResponse" => %{"members" => %{}, "type" => "structure"}, "InvalidLambdaFunctionOutputException" => %{"error" => %{"code" => "InvalidLambdaFunctionOutput", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "RecordList" => %{"member" => %{"shape" => "Record"}, "type" => "list"}, "DeviceId" => %{"max" => 256, "min" => 1, "type" => "string"}, "AlreadyStreamedException" => %{"error" => %{"code" => "AlreadyStreamed", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "ExceptionMessage"}}, "required" => ["message"], "type" => "structure"}, "ExceptionMessage" => %{"type" => "string"}, "UnsubscribeFromDatasetResponse" => %{"members" => %{}, "type" => "structure"}, "IdentityPoolUsage" => %{"members" => %{"DataStorage" => %{"shape" => "Long"}, "IdentityPoolId" => %{"shape" => "IdentityPoolId"}, "LastModifiedDate" => %{"shape" => "Date"}, "SyncSessionsCount" => %{"shape" => "Long"}}, "type" => "structure"}, "DescribeDatasetResponse" => %{"members" => %{"Dataset" => %{"shape" => "Dataset"}}, "type" => "structure"}, "DescribeDatasetRequest" => %{"members" => %{"DatasetName" => %{"location" => "uri", "locationName" => "DatasetName", "shape" => "DatasetName"}, "IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId", "IdentityId", "DatasetName"], "type" => "structure"}, "SubscribeToDatasetRequest" => %{"members" => %{"DatasetName" => %{"location" => "uri", "locationName" => "DatasetName", "shape" => "DatasetName"}, "DeviceId" => %{"location" => "uri", "locationName" => "DeviceId", "shape" => "DeviceId"}, "IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId", "IdentityId", "DatasetName", "DeviceId"], "type" => "structure"}, "ListIdentityPoolUsageRequest" => %{"members" => %{"MaxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "IntegerString"}, "NextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "String"}}, "type" => "structure"}, "ListDatasetsRequest" => %{"members" => %{"IdentityId" => %{"location" => "uri", "locationName" => "IdentityId", "shape" => "IdentityId"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}, "MaxResults" => %{"location" => "querystring", "locationName" => "maxResults", "shape" => "IntegerString"}, "NextToken" => %{"location" => "querystring", "locationName" => "nextToken", "shape" => "String"}}, "required" => ["IdentityId", "IdentityPoolId"], "type" => "structure"}, "StreamingStatus" => %{"enum" => ["ENABLED", "DISABLED"], "type" => "string"}, "ApplicationArnList" => %{"member" => %{"shape" => "ApplicationArn"}, "type" => "list"}, "Events" => %{"key" => %{"shape" => "CognitoEventType"}, "max" => 1, "type" => "map", "value" => %{"shape" => "LambdaFunctionArn"}}, "Integer" => %{"type" => "integer"}, "IntegerString" => %{"type" => "integer"}, "RecordPatchList" => %{"member" => %{"shape" => "RecordPatch"}, "type" => "list"}, "ConcurrentModificationException" => %{"error" => %{"code" => "ConcurrentModification", "httpStatusCode" => 400, "senderFault" => true}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "required" => ["message"], "type" => "structure"}, "SetCognitoEventsRequest" => %{"members" => %{"Events" => %{"shape" => "Events"}, "IdentityPoolId" => %{"location" => "uri", "locationName" => "IdentityPoolId", "shape" => "IdentityPoolId"}}, "required" => ["IdentityPoolId", "Events"], "type" => "structure"}, "ApplicationArn" => %{"pattern" => "arn:aws:sns:[-0-9a-z]+:\\d+:app/[A-Z_]+/[a-zA-Z0-9_.-]+", "type" => "string"}, "RegisterDeviceResponse" => %{"members" => %{"DeviceId" => %{"shape" => "DeviceId"}}, "type" => "structure"}, "CognitoStreams" => %{"members" => %{"RoleArn" => %{"shape" => "AssumeRoleArn"}, "StreamName" => %{"shape" => "StreamName"}, "StreamingStatus" => %{"shape" => "StreamingStatus"}}, "type" => "structure"}}
+  end
 end

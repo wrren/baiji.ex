@@ -38,9 +38,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "CancelJobRequest",
+      output_shape:     "CancelJobResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an AWS Batch compute environment. You can create `MANAGED` or
@@ -80,9 +84,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateComputeEnvironmentRequest",
+      output_shape:     "CreateComputeEnvironmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an AWS Batch job queue. When you create a job queue, you associate
@@ -106,9 +114,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateJobQueueRequest",
+      output_shape:     "CreateJobQueueResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes an AWS Batch compute environment.
@@ -129,9 +141,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteComputeEnvironmentRequest",
+      output_shape:     "DeleteComputeEnvironmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the specified job queue. You must first disable submissions for a
@@ -152,9 +168,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteJobQueueRequest",
+      output_shape:     "DeleteJobQueueResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deregisters an AWS Batch job definition.
@@ -170,9 +190,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeregisterJobDefinitionRequest",
+      output_shape:     "DeregisterJobDefinitionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes one or more of your compute environments.
@@ -192,9 +216,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeComputeEnvironmentsRequest",
+      output_shape:     "DescribeComputeEnvironmentsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes a list of job definitions. You can specify a `status` (such as
@@ -211,9 +239,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeJobDefinitionsRequest",
+      output_shape:     "DescribeJobDefinitionsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes one or more of your job queues.
@@ -229,9 +261,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeJobQueuesRequest",
+      output_shape:     "DescribeJobQueuesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes a list of AWS Batch jobs.
@@ -247,9 +283,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeJobsRequest",
+      output_shape:     "DescribeJobsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns a list of task jobs for a specified job queue. You can filter the
@@ -267,9 +307,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListJobsRequest",
+      output_shape:     "ListJobsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Registers an AWS Batch job definition.
@@ -285,9 +329,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "RegisterJobDefinitionRequest",
+      output_shape:     "RegisterJobDefinitionResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Submits an AWS Batch job from a job definition. Parameters specified during
@@ -304,9 +352,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "SubmitJobRequest",
+      output_shape:     "SubmitJobResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Terminates jobs in a job queue. Jobs that are in the `STARTING` or
@@ -325,9 +377,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "TerminateJobRequest",
+      output_shape:     "TerminateJobResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates an AWS Batch compute environment.
@@ -343,9 +399,13 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateComputeEnvironmentRequest",
+      output_shape:     "UpdateComputeEnvironmentResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates a job queue.
@@ -361,8 +421,19 @@ defmodule Baiji.Batch do
       endpoint_prefix:  "batch",
       type:             :json,
       version:          "2016-08-10",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateJobQueueRequest",
+      output_shape:     "UpdateJobQueueResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"ComputeEnvironmentDetail" => %{"members" => %{"computeEnvironmentArn" => %{"shape" => "String"}, "computeEnvironmentName" => %{"shape" => "String"}, "computeResources" => %{"shape" => "ComputeResource"}, "ecsClusterArn" => %{"shape" => "String"}, "serviceRole" => %{"shape" => "String"}, "state" => %{"shape" => "CEState"}, "status" => %{"shape" => "CEStatus"}, "statusReason" => %{"shape" => "String"}, "type" => %{"shape" => "CEType"}}, "required" => ["computeEnvironmentName", "computeEnvironmentArn", "ecsClusterArn"], "type" => "structure"}, "CEStatus" => %{"enum" => ["CREATING", "UPDATING", "DELETING", "DELETED", "VALID", "INVALID"], "type" => "string"}, "DeleteJobQueueResponse" => %{"members" => %{}, "type" => "structure"}, "CRType" => %{"enum" => ["EC2", "SPOT"], "type" => "string"}, "ClientException" => %{"error" => %{"httpStatusCode" => 400}, "exception" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "String" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "MountPoints" => %{"member" => %{"shape" => "MountPoint"}, "type" => "list"}, "Volumes" => %{"member" => %{"shape" => "Volume"}, "type" => "list"}, "UpdateComputeEnvironmentRequest" => %{"members" => %{"computeEnvironment" => %{"shape" => "String"}, "computeResources" => %{"shape" => "ComputeResourceUpdate"}, "serviceRole" => %{"shape" => "String"}, "state" => %{"shape" => "CEState"}}, "required" => ["computeEnvironment"], "type" => "structure"}, "RegisterJobDefinitionResponse" => %{"members" => %{"jobDefinitionArn" => %{"shape" => "String"}, "jobDefinitionName" => %{"shape" => "String"}, "revision" => %{"shape" => "Integer"}}, "required" => ["jobDefinitionName", "jobDefinitionArn", "revision"], "type" => "structure"}, "ComputeResourceUpdate" => %{"members" => %{"desiredvCpus" => %{"shape" => "Integer"}, "maxvCpus" => %{"shape" => "Integer"}, "minvCpus" => %{"shape" => "Integer"}}, "type" => "structure"}, "CancelJobRequest" => %{"members" => %{"jobId" => %{"shape" => "String"}, "reason" => %{"shape" => "String"}}, "required" => ["jobId", "reason"], "type" => "structure"}, "CreateJobQueueResponse" => %{"members" => %{"jobQueueArn" => %{"shape" => "String"}, "jobQueueName" => %{"shape" => "String"}}, "required" => ["jobQueueName", "jobQueueArn"], "type" => "structure"}, "RetryStrategy" => %{"members" => %{"attempts" => %{"shape" => "Integer"}}, "type" => "structure"}, "JobDefinition" => %{"members" => %{"containerProperties" => %{"shape" => "ContainerProperties"}, "jobDefinitionArn" => %{"shape" => "String"}, "jobDefinitionName" => %{"shape" => "String"}, "parameters" => %{"shape" => "ParametersMap"}, "retryStrategy" => %{"shape" => "RetryStrategy"}, "revision" => %{"shape" => "Integer"}, "status" => %{"shape" => "String"}, "type" => %{"shape" => "String"}}, "required" => ["jobDefinitionName", "jobDefinitionArn", "revision", "type"], "type" => "structure"}, "JQStatus" => %{"enum" => ["CREATING", "UPDATING", "DELETING", "DELETED", "VALID", "INVALID"], "type" => "string"}, "TagsMap" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "String"}}, "ComputeEnvironmentOrders" => %{"member" => %{"shape" => "ComputeEnvironmentOrder"}, "type" => "list"}, "JobStatus" => %{"enum" => ["SUBMITTED", "PENDING", "RUNNABLE", "STARTING", "RUNNING", "SUCCEEDED", "FAILED"], "type" => "string"}, "Ulimits" => %{"member" => %{"shape" => "Ulimit"}, "type" => "list"}, "DeleteComputeEnvironmentResponse" => %{"members" => %{}, "type" => "structure"}, "DeregisterJobDefinitionRequest" => %{"members" => %{"jobDefinition" => %{"shape" => "String"}}, "required" => ["jobDefinition"], "type" => "structure"}, "Ulimit" => %{"members" => %{"hardLimit" => %{"shape" => "Integer"}, "name" => %{"shape" => "String"}, "softLimit" => %{"shape" => "Integer"}}, "required" => ["hardLimit", "name", "softLimit"], "type" => "structure"}, "StringList" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "JobQueueDetail" => %{"members" => %{"computeEnvironmentOrder" => %{"shape" => "ComputeEnvironmentOrders"}, "jobQueueArn" => %{"shape" => "String"}, "jobQueueName" => %{"shape" => "String"}, "priority" => %{"shape" => "Integer"}, "state" => %{"shape" => "JQState"}, "status" => %{"shape" => "JQStatus"}, "statusReason" => %{"shape" => "String"}}, "required" => ["jobQueueName", "jobQueueArn", "state", "priority", "computeEnvironmentOrder"], "type" => "structure"}, "ContainerProperties" => %{"members" => %{"command" => %{"shape" => "StringList"}, "environment" => %{"shape" => "EnvironmentVariables"}, "image" => %{"shape" => "String"}, "jobRoleArn" => %{"shape" => "String"}, "memory" => %{"shape" => "Integer"}, "mountPoints" => %{"shape" => "MountPoints"}, "privileged" => %{"shape" => "Boolean"}, "readonlyRootFilesystem" => %{"shape" => "Boolean"}, "ulimits" => %{"shape" => "Ulimits"}, "user" => %{"shape" => "String"}, "vcpus" => %{"shape" => "Integer"}, "volumes" => %{"shape" => "Volumes"}}, "required" => ["image", "vcpus", "memory"], "type" => "structure"}, "DescribeJobQueuesRequest" => %{"members" => %{"jobQueues" => %{"shape" => "StringList"}, "maxResults" => %{"shape" => "Integer"}, "nextToken" => %{"shape" => "String"}}, "type" => "structure"}, "UpdateComputeEnvironmentResponse" => %{"members" => %{"computeEnvironmentArn" => %{"shape" => "String"}, "computeEnvironmentName" => %{"shape" => "String"}}, "type" => "structure"}, "ComputeResource" => %{"members" => %{"bidPercentage" => %{"shape" => "Integer"}, "desiredvCpus" => %{"shape" => "Integer"}, "ec2KeyPair" => %{"shape" => "String"}, "imageId" => %{"shape" => "String"}, "instanceRole" => %{"shape" => "String"}, "instanceTypes" => %{"shape" => "StringList"}, "maxvCpus" => %{"shape" => "Integer"}, "minvCpus" => %{"shape" => "Integer"}, "securityGroupIds" => %{"shape" => "StringList"}, "spotIamFleetRole" => %{"shape" => "String"}, "subnets" => %{"shape" => "StringList"}, "tags" => %{"shape" => "TagsMap"}, "type" => %{"shape" => "CRType"}}, "required" => ["type", "minvCpus", "maxvCpus", "instanceTypes", "subnets", "securityGroupIds", "instanceRole"], "type" => "structure"}, "AttemptDetail" => %{"members" => %{"container" => %{"shape" => "AttemptContainerDetail"}, "startedAt" => %{"shape" => "Long"}, "statusReason" => %{"shape" => "String"}, "stoppedAt" => %{"shape" => "Long"}}, "type" => "structure"}, "Host" => %{"members" => %{"sourcePath" => %{"shape" => "String"}}, "type" => "structure"}, "JobSummaryList" => %{"member" => %{"shape" => "JobSummary"}, "type" => "list"}, "DescribeComputeEnvironmentsRequest" => %{"members" => %{"computeEnvironments" => %{"shape" => "StringList"}, "maxResults" => %{"shape" => "Integer"}, "nextToken" => %{"shape" => "String"}}, "type" => "structure"}, "EnvironmentVariables" => %{"member" => %{"shape" => "KeyValuePair"}, "type" => "list"}, "JQState" => %{"enum" => ["ENABLED", "DISABLED"], "type" => "string"}, "ContainerOverrides" => %{"members" => %{"command" => %{"shape" => "StringList"}, "environment" => %{"shape" => "EnvironmentVariables"}, "memory" => %{"shape" => "Integer"}, "vcpus" => %{"shape" => "Integer"}}, "type" => "structure"}, "CreateJobQueueRequest" => %{"members" => %{"computeEnvironmentOrder" => %{"shape" => "ComputeEnvironmentOrders"}, "jobQueueName" => %{"shape" => "String"}, "priority" => %{"shape" => "Integer"}, "state" => %{"shape" => "JQState"}}, "required" => ["jobQueueName", "priority", "computeEnvironmentOrder"], "type" => "structure"}, "JobDependencyList" => %{"member" => %{"shape" => "JobDependency"}, "type" => "list"}, "MountPoint" => %{"members" => %{"containerPath" => %{"shape" => "String"}, "readOnly" => %{"shape" => "Boolean"}, "sourceVolume" => %{"shape" => "String"}}, "type" => "structure"}, "DescribeJobsResponse" => %{"members" => %{"jobs" => %{"shape" => "JobDetailList"}}, "type" => "structure"}, "DeleteJobQueueRequest" => %{"members" => %{"jobQueue" => %{"shape" => "String"}}, "required" => ["jobQueue"], "type" => "structure"}, "TerminateJobResponse" => %{"members" => %{}, "type" => "structure"}, "DescribeComputeEnvironmentsResponse" => %{"members" => %{"computeEnvironments" => %{"shape" => "ComputeEnvironmentDetailList"}, "nextToken" => %{"shape" => "String"}}, "type" => "structure"}, "JobDefinitionType" => %{"enum" => ["container"], "type" => "string"}, "UpdateJobQueueResponse" => %{"members" => %{"jobQueueArn" => %{"shape" => "String"}, "jobQueueName" => %{"shape" => "String"}}, "type" => "structure"}, "JobQueueDetailList" => %{"member" => %{"shape" => "JobQueueDetail"}, "type" => "list"}, "KeyValuePair" => %{"members" => %{"name" => %{"shape" => "String"}, "value" => %{"shape" => "String"}}, "type" => "structure"}, "Long" => %{"type" => "long"}, "CreateComputeEnvironmentRequest" => %{"members" => %{"computeEnvironmentName" => %{"shape" => "String"}, "computeResources" => %{"shape" => "ComputeResource"}, "serviceRole" => %{"shape" => "String"}, "state" => %{"shape" => "CEState"}, "type" => %{"shape" => "CEType"}}, "required" => ["computeEnvironmentName", "type", "serviceRole"], "type" => "structure"}, "DescribeJobQueuesResponse" => %{"members" => %{"jobQueues" => %{"shape" => "JobQueueDetailList"}, "nextToken" => %{"shape" => "String"}}, "type" => "structure"}, "DeregisterJobDefinitionResponse" => %{"members" => %{}, "type" => "structure"}, "JobDetailList" => %{"member" => %{"shape" => "JobDetail"}, "type" => "list"}, "ComputeEnvironmentOrder" => %{"members" => %{"computeEnvironment" => %{"shape" => "String"}, "order" => %{"shape" => "Integer"}}, "required" => ["order", "computeEnvironment"], "type" => "structure"}, "CancelJobResponse" => %{"members" => %{}, "type" => "structure"}, "ComputeEnvironmentDetailList" => %{"member" => %{"shape" => "ComputeEnvironmentDetail"}, "type" => "list"}, "AttemptContainerDetail" => %{"members" => %{"containerInstanceArn" => %{"shape" => "String"}, "exitCode" => %{"shape" => "Integer"}, "logStreamName" => %{"shape" => "String"}, "reason" => %{"shape" => "String"}, "taskArn" => %{"shape" => "String"}}, "type" => "structure"}, "DescribeJobsRequest" => %{"members" => %{"jobs" => %{"shape" => "StringList"}}, "required" => ["jobs"], "type" => "structure"}, "SubmitJobRequest" => %{"members" => %{"containerOverrides" => %{"shape" => "ContainerOverrides"}, "dependsOn" => %{"shape" => "JobDependencyList"}, "jobDefinition" => %{"shape" => "String"}, "jobName" => %{"shape" => "String"}, "jobQueue" => %{"shape" => "String"}, "parameters" => %{"shape" => "ParametersMap"}, "retryStrategy" => %{"shape" => "RetryStrategy"}}, "required" => ["jobName", "jobQueue", "jobDefinition"], "type" => "structure"}, "ContainerDetail" => %{"members" => %{"command" => %{"shape" => "StringList"}, "containerInstanceArn" => %{"shape" => "String"}, "environment" => %{"shape" => "EnvironmentVariables"}, "exitCode" => %{"shape" => "Integer"}, "image" => %{"shape" => "String"}, "jobRoleArn" => %{"shape" => "String"}, "logStreamName" => %{"shape" => "String"}, "memory" => %{"shape" => "Integer"}, "mountPoints" => %{"shape" => "MountPoints"}, "privileged" => %{"shape" => "Boolean"}, "readonlyRootFilesystem" => %{"shape" => "Boolean"}, "reason" => %{"shape" => "String"}, "taskArn" => %{"shape" => "String"}, "ulimits" => %{"shape" => "Ulimits"}, "user" => %{"shape" => "String"}, "vcpus" => %{"shape" => "Integer"}, "volumes" => %{"shape" => "Volumes"}}, "type" => "structure"}, "ListJobsRequest" => %{"members" => %{"jobQueue" => %{"shape" => "String"}, "jobStatus" => %{"shape" => "JobStatus"}, "maxResults" => %{"shape" => "Integer"}, "nextToken" => %{"shape" => "String"}}, "required" => ["jobQueue"], "type" => "structure"}, "CEType" => %{"enum" => ["MANAGED", "UNMANAGED"], "type" => "string"}, "SubmitJobResponse" => %{"members" => %{"jobId" => %{"shape" => "String"}, "jobName" => %{"shape" => "String"}}, "required" => ["jobName", "jobId"], "type" => "structure"}, "CreateComputeEnvironmentResponse" => %{"members" => %{"computeEnvironmentArn" => %{"shape" => "String"}, "computeEnvironmentName" => %{"shape" => "String"}}, "type" => "structure"}, "DescribeJobDefinitionsResponse" => %{"members" => %{"jobDefinitions" => %{"shape" => "JobDefinitionList"}, "nextToken" => %{"shape" => "String"}}, "type" => "structure"}, "AttemptDetails" => %{"member" => %{"shape" => "AttemptDetail"}, "type" => "list"}, "CEState" => %{"enum" => ["ENABLED", "DISABLED"], "type" => "string"}, "JobDetail" => %{"members" => %{"attempts" => %{"shape" => "AttemptDetails"}, "container" => %{"shape" => "ContainerDetail"}, "createdAt" => %{"shape" => "Long"}, "dependsOn" => %{"shape" => "JobDependencyList"}, "jobDefinition" => %{"shape" => "String"}, "jobId" => %{"shape" => "String"}, "jobName" => %{"shape" => "String"}, "jobQueue" => %{"shape" => "String"}, "parameters" => %{"shape" => "ParametersMap"}, "retryStrategy" => %{"shape" => "RetryStrategy"}, "startedAt" => %{"shape" => "Long"}, "status" => %{"shape" => "JobStatus"}, "statusReason" => %{"shape" => "String"}, "stoppedAt" => %{"shape" => "Long"}}, "required" => ["jobName", "jobId", "jobQueue", "status", "startedAt", "jobDefinition"], "type" => "structure"}, "JobDefinitionList" => %{"member" => %{"shape" => "JobDefinition"}, "type" => "list"}, "DeleteComputeEnvironmentRequest" => %{"members" => %{"computeEnvironment" => %{"shape" => "String"}}, "required" => ["computeEnvironment"], "type" => "structure"}, "ParametersMap" => %{"key" => %{"shape" => "String"}, "type" => "map", "value" => %{"shape" => "String"}}, "Integer" => %{"type" => "integer"}, "UpdateJobQueueRequest" => %{"members" => %{"computeEnvironmentOrder" => %{"shape" => "ComputeEnvironmentOrders"}, "jobQueue" => %{"shape" => "String"}, "priority" => %{"shape" => "Integer"}, "state" => %{"shape" => "JQState"}}, "required" => ["jobQueue"], "type" => "structure"}, "RegisterJobDefinitionRequest" => %{"members" => %{"containerProperties" => %{"shape" => "ContainerProperties"}, "jobDefinitionName" => %{"shape" => "String"}, "parameters" => %{"shape" => "ParametersMap"}, "retryStrategy" => %{"shape" => "RetryStrategy"}, "type" => %{"shape" => "JobDefinitionType"}}, "required" => ["jobDefinitionName", "type"], "type" => "structure"}, "JobSummary" => %{"members" => %{"jobId" => %{"shape" => "String"}, "jobName" => %{"shape" => "String"}}, "required" => ["jobId", "jobName"], "type" => "structure"}, "TerminateJobRequest" => %{"members" => %{"jobId" => %{"shape" => "String"}, "reason" => %{"shape" => "String"}}, "required" => ["jobId", "reason"], "type" => "structure"}, "Volume" => %{"members" => %{"host" => %{"shape" => "Host"}, "name" => %{"shape" => "String"}}, "type" => "structure"}, "ServerException" => %{"error" => %{"httpStatusCode" => 500}, "exception" => true, "fault" => true, "members" => %{"message" => %{"shape" => "String"}}, "type" => "structure"}, "JobDependency" => %{"members" => %{"jobId" => %{"shape" => "String"}}, "type" => "structure"}, "ListJobsResponse" => %{"members" => %{"jobSummaryList" => %{"shape" => "JobSummaryList"}, "nextToken" => %{"shape" => "String"}}, "required" => ["jobSummaryList"], "type" => "structure"}, "DescribeJobDefinitionsRequest" => %{"members" => %{"jobDefinitionName" => %{"shape" => "String"}, "jobDefinitions" => %{"shape" => "StringList"}, "maxResults" => %{"shape" => "Integer"}, "nextToken" => %{"shape" => "String"}, "status" => %{"shape" => "String"}}, "type" => "structure"}}
+  end
 end

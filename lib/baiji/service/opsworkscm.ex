@@ -85,9 +85,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateNodeRequest",
+      output_shape:     "AssociateNodeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates an application-level backup of a server. While the server is in the
@@ -119,9 +123,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateBackupRequest",
+      output_shape:     "CreateBackupResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates and immedately starts a new server. The server is ready to use when
@@ -161,9 +169,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateServerRequest",
+      output_shape:     "CreateServerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a backup. You can delete both manual and automated backups. This
@@ -187,9 +199,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteBackupRequest",
+      output_shape:     "DeleteBackupResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes the server and the underlying AWS CloudFormation stack (including
@@ -218,9 +234,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteServerRequest",
+      output_shape:     "DeleteServerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes your account attributes, and creates requests to increase limits
@@ -241,9 +261,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeAccountAttributesRequest",
+      output_shape:     "DescribeAccountAttributesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes backups. The results are ordered by time, with newest backups
@@ -269,9 +293,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeBackupsRequest",
+      output_shape:     "DescribeBackupsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Describes events for a specified server. Results are ordered by time, with
@@ -296,9 +324,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeEventsRequest",
+      output_shape:     "DescribeEventsResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the current status of an existing association or disassociation
@@ -322,9 +354,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeNodeAssociationStatusRequest",
+      output_shape:     "DescribeNodeAssociationStatusResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all configuration management servers that are identified with your
@@ -350,9 +386,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeServersRequest",
+      output_shape:     "DescribeServersResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disassociates a node from a Chef server, and removes the node from the Chef
@@ -379,9 +419,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateNodeRequest",
+      output_shape:     "DisassociateNodeResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Restores a backup to a server that is in a `CONNECTION_LOST`, `HEALTHY`,
@@ -410,9 +454,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "RestoreServerRequest",
+      output_shape:     "RestoreServerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Manually starts server maintenance. This command can be useful if an
@@ -439,9 +487,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "StartMaintenanceRequest",
+      output_shape:     "StartMaintenanceResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates settings for a server.
@@ -461,9 +513,13 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateServerRequest",
+      output_shape:     "UpdateServerResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Updates engine-specific attributes on a specified server. The server enters
@@ -492,8 +548,19 @@ defmodule Baiji.OpsWorksCM do
       endpoint_prefix:  "opsworks-cm",
       type:             :json,
       version:          "2016-11-01",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateServerEngineAttributesRequest",
+      output_shape:     "UpdateServerEngineAttributesResponse",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"KeyPair" => %{"type" => "string"}, "DisassociateNodeRequest" => %{"members" => %{"EngineAttributes" => %{"shape" => "EngineAttributes"}, "NodeName" => %{"shape" => "NodeName"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName", "NodeName"], "type" => "structure"}, "CreateBackupResponse" => %{"members" => %{"Backup" => %{"shape" => "Backup"}}, "type" => "structure"}, "EngineAttributes" => %{"member" => %{"shape" => "EngineAttribute"}, "type" => "list"}, "AccountAttribute" => %{"members" => %{"Maximum" => %{"shape" => "Integer"}, "Name" => %{"shape" => "String"}, "Used" => %{"shape" => "Integer"}}, "type" => "structure"}, "DeleteServerResponse" => %{"members" => %{}, "type" => "structure"}, "String" => %{"type" => "string"}, "Boolean" => %{"type" => "boolean"}, "CreateServerResponse" => %{"members" => %{"Server" => %{"shape" => "Server"}}, "type" => "structure"}, "EngineAttribute" => %{"members" => %{"Name" => %{"shape" => "EngineAttributeName"}, "Value" => %{"shape" => "EngineAttributeValue"}}, "type" => "structure"}, "AttributeName" => %{"max" => 64, "min" => 1, "pattern" => "[A-Z][A-Z0-9_]*", "type" => "string"}, "ServiceRoleArn" => %{"pattern" => "arn:aws:iam::[0-9]{12}:role/.*", "type" => "string"}, "MaintenanceStatus" => %{"enum" => ["SUCCESS", "FAILED"], "type" => "string"}, "InvalidNextTokenException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "String"}}, "type" => "structure"}, "Strings" => %{"member" => %{"shape" => "String"}, "type" => "list"}, "DescribeAccountAttributesRequest" => %{"members" => %{}, "type" => "structure"}, "BackupType" => %{"enum" => ["AUTOMATED", "MANUAL"], "type" => "string"}, "RestoreServerRequest" => %{"members" => %{"BackupId" => %{"shape" => "BackupId"}, "InstanceType" => %{"shape" => "String"}, "KeyPair" => %{"shape" => "KeyPair"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["BackupId", "ServerName"], "type" => "structure"}, "UpdateServerRequest" => %{"members" => %{"BackupRetentionCount" => %{"shape" => "Integer"}, "DisableAutomatedBackup" => %{"shape" => "Boolean"}, "PreferredBackupWindow" => %{"shape" => "TimeWindowDefinition"}, "PreferredMaintenanceWindow" => %{"shape" => "TimeWindowDefinition"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName"], "type" => "structure"}, "CreateBackupRequest" => %{"members" => %{"Description" => %{"shape" => "String"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName"], "type" => "structure"}, "DescribeEventsResponse" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "ServerEvents" => %{"shape" => "ServerEvents"}}, "type" => "structure"}, "AssociateNodeRequest" => %{"members" => %{"EngineAttributes" => %{"shape" => "EngineAttributes"}, "NodeName" => %{"shape" => "NodeName"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName", "NodeName", "EngineAttributes"], "type" => "structure"}, "ServerStatus" => %{"enum" => ["BACKING_UP", "CONNECTION_LOST", "CREATING", "DELETING", "MODIFYING", "FAILED", "HEALTHY", "RUNNING", "RESTORING", "SETUP", "UNDER_MAINTENANCE", "UNHEALTHY", "TERMINATED"], "type" => "string"}, "UpdateServerResponse" => %{"members" => %{"Server" => %{"shape" => "Server"}}, "type" => "structure"}, "DescribeEventsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName"], "type" => "structure"}, "NodeAssociationStatusToken" => %{"type" => "string"}, "InstanceProfileArn" => %{"pattern" => "arn:aws:iam::[0-9]{12}:instance-profile/.*", "type" => "string"}, "DeleteBackupResponse" => %{"members" => %{}, "type" => "structure"}, "ServerEvent" => %{"members" => %{"CreatedAt" => %{"shape" => "Timestamp"}, "LogUrl" => %{"shape" => "String"}, "Message" => %{"shape" => "String"}, "ServerName" => %{"shape" => "String"}}, "type" => "structure"}, "BackupId" => %{"max" => 79, "type" => "string"}, "Timestamp" => %{"type" => "timestamp"}, "DescribeNodeAssociationStatusResponse" => %{"members" => %{"NodeAssociationStatus" => %{"shape" => "NodeAssociationStatus"}}, "type" => "structure"}, "Servers" => %{"member" => %{"shape" => "Server"}, "type" => "list"}, "MaxResults" => %{"min" => 1, "type" => "integer"}, "DescribeBackupsResponse" => %{"members" => %{"Backups" => %{"shape" => "Backups"}, "NextToken" => %{"shape" => "String"}}, "type" => "structure"}, "Backups" => %{"member" => %{"shape" => "Backup"}, "type" => "list"}, "ValidationException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "String"}}, "type" => "structure"}, "EngineAttributeValue" => %{"sensitive" => true, "type" => "string"}, "Server" => %{"members" => %{"AssociatePublicIpAddress" => %{"shape" => "Boolean"}, "BackupRetentionCount" => %{"shape" => "Integer"}, "CloudFormationStackArn" => %{"shape" => "String"}, "CreatedAt" => %{"shape" => "Timestamp"}, "DisableAutomatedBackup" => %{"shape" => "Boolean"}, "Endpoint" => %{"shape" => "String"}, "Engine" => %{"shape" => "String"}, "EngineAttributes" => %{"shape" => "EngineAttributes"}, "EngineModel" => %{"shape" => "String"}, "EngineVersion" => %{"shape" => "String"}, "InstanceProfileArn" => %{"shape" => "String"}, "InstanceType" => %{"shape" => "String"}, "KeyPair" => %{"shape" => "String"}, "MaintenanceStatus" => %{"shape" => "MaintenanceStatus"}, "PreferredBackupWindow" => %{"shape" => "TimeWindowDefinition"}, "PreferredMaintenanceWindow" => %{"shape" => "TimeWindowDefinition"}, "SecurityGroupIds" => %{"shape" => "Strings"}, "ServerArn" => %{"shape" => "String"}, "ServerName" => %{"shape" => "String"}, "ServiceRoleArn" => %{"shape" => "String"}, "Status" => %{"shape" => "ServerStatus"}, "StatusReason" => %{"shape" => "String"}, "SubnetIds" => %{"shape" => "Strings"}}, "type" => "structure"}, "InvalidStateException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "String"}}, "type" => "structure"}, "DescribeNodeAssociationStatusRequest" => %{"members" => %{"NodeAssociationStatusToken" => %{"shape" => "NodeAssociationStatusToken"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["NodeAssociationStatusToken", "ServerName"], "type" => "structure"}, "LimitExceededException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "String"}}, "type" => "structure"}, "StartMaintenanceResponse" => %{"members" => %{"Server" => %{"shape" => "Server"}}, "type" => "structure"}, "ServerEvents" => %{"member" => %{"shape" => "ServerEvent"}, "type" => "list"}, "AssociateNodeResponse" => %{"members" => %{"NodeAssociationStatusToken" => %{"shape" => "NodeAssociationStatusToken"}}, "type" => "structure"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "String"}}, "type" => "structure"}, "Backup" => %{"members" => %{"BackupArn" => %{"shape" => "String"}, "BackupId" => %{"shape" => "BackupId"}, "BackupType" => %{"shape" => "BackupType"}, "CreatedAt" => %{"shape" => "Timestamp"}, "Description" => %{"shape" => "String"}, "Engine" => %{"shape" => "String"}, "EngineModel" => %{"shape" => "String"}, "EngineVersion" => %{"shape" => "String"}, "InstanceProfileArn" => %{"shape" => "String"}, "InstanceType" => %{"shape" => "String"}, "KeyPair" => %{"shape" => "String"}, "PreferredBackupWindow" => %{"shape" => "TimeWindowDefinition"}, "PreferredMaintenanceWindow" => %{"shape" => "TimeWindowDefinition"}, "S3DataSize" => %{"deprecated" => true, "shape" => "Integer"}, "S3DataUrl" => %{"deprecated" => true, "shape" => "String"}, "S3LogUrl" => %{"shape" => "String"}, "SecurityGroupIds" => %{"shape" => "Strings"}, "ServerName" => %{"shape" => "ServerName"}, "ServiceRoleArn" => %{"shape" => "String"}, "Status" => %{"shape" => "BackupStatus"}, "StatusDescription" => %{"shape" => "String"}, "SubnetIds" => %{"shape" => "Strings"}, "ToolsVersion" => %{"shape" => "String"}, "UserArn" => %{"shape" => "String"}}, "type" => "structure"}, "StartMaintenanceRequest" => %{"members" => %{"ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName"], "type" => "structure"}, "TimeWindowDefinition" => %{"pattern" => "^((Mon|Tue|Wed|Thu|Fri|Sat|Sun):)?([0-1][0-9]|2[0-3]):[0-5][0-9]$", "type" => "string"}, "BackupRetentionCountDefinition" => %{"min" => 1, "type" => "integer"}, "DescribeServersResponse" => %{"members" => %{"NextToken" => %{"shape" => "String"}, "Servers" => %{"shape" => "Servers"}}, "type" => "structure"}, "UpdateServerEngineAttributesRequest" => %{"members" => %{"AttributeName" => %{"shape" => "AttributeName"}, "AttributeValue" => %{"shape" => "AttributeValue"}, "ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName", "AttributeName"], "type" => "structure"}, "RestoreServerResponse" => %{"members" => %{}, "type" => "structure"}, "DeleteBackupRequest" => %{"members" => %{"BackupId" => %{"shape" => "BackupId"}}, "required" => ["BackupId"], "type" => "structure"}, "BackupStatus" => %{"enum" => ["IN_PROGRESS", "OK", "FAILED", "DELETING"], "type" => "string"}, "AccountAttributes" => %{"member" => %{"shape" => "AccountAttribute"}, "type" => "list"}, "DescribeBackupsRequest" => %{"members" => %{"BackupId" => %{"shape" => "BackupId"}, "MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ServerName" => %{"shape" => "ServerName"}}, "type" => "structure"}, "AttributeValue" => %{"type" => "string"}, "DescribeServersRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "NextToken"}, "ServerName" => %{"shape" => "ServerName"}}, "type" => "structure"}, "ResourceAlreadyExistsException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "String"}}, "type" => "structure"}, "EngineAttributeName" => %{"type" => "string"}, "CreateServerRequest" => %{"members" => %{"AssociatePublicIpAddress" => %{"shape" => "Boolean"}, "BackupId" => %{"shape" => "BackupId"}, "BackupRetentionCount" => %{"shape" => "BackupRetentionCountDefinition"}, "DisableAutomatedBackup" => %{"shape" => "Boolean"}, "Engine" => %{"shape" => "String"}, "EngineAttributes" => %{"shape" => "EngineAttributes"}, "EngineModel" => %{"shape" => "String"}, "EngineVersion" => %{"shape" => "String"}, "InstanceProfileArn" => %{"shape" => "InstanceProfileArn"}, "InstanceType" => %{"shape" => "String"}, "KeyPair" => %{"shape" => "KeyPair"}, "PreferredBackupWindow" => %{"shape" => "TimeWindowDefinition"}, "PreferredMaintenanceWindow" => %{"shape" => "TimeWindowDefinition"}, "SecurityGroupIds" => %{"shape" => "Strings"}, "ServerName" => %{"shape" => "ServerName"}, "ServiceRoleArn" => %{"shape" => "ServiceRoleArn"}, "SubnetIds" => %{"shape" => "Strings"}}, "required" => ["ServerName", "InstanceProfileArn", "InstanceType", "ServiceRoleArn"], "type" => "structure"}, "UpdateServerEngineAttributesResponse" => %{"members" => %{"Server" => %{"shape" => "Server"}}, "type" => "structure"}, "DescribeAccountAttributesResponse" => %{"members" => %{"Attributes" => %{"shape" => "AccountAttributes"}}, "type" => "structure"}, "Integer" => %{"type" => "integer"}, "DeleteServerRequest" => %{"members" => %{"ServerName" => %{"shape" => "ServerName"}}, "required" => ["ServerName"], "type" => "structure"}, "ServerName" => %{"max" => 40, "min" => 1, "pattern" => "[a-zA-Z][a-zA-Z0-9\\-]*", "type" => "string"}, "NextToken" => %{"type" => "string"}, "NodeName" => %{"pattern" => "^[\\-\\p{Alnum}_:.]+$", "type" => "string"}, "DisassociateNodeResponse" => %{"members" => %{"NodeAssociationStatusToken" => %{"shape" => "NodeAssociationStatusToken"}}, "type" => "structure"}, "NodeAssociationStatus" => %{"enum" => ["SUCCESS", "FAILED", "IN_PROGRESS"], "type" => "string"}}
+  end
 end

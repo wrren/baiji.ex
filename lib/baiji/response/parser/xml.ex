@@ -10,98 +10,65 @@ defmodule Baiji.Response.Parser.XML do
   Record.defrecord :xmlElement, Record.extract(:xmlElement, from_lib: "xmerl/include/xmerl.hrl")
   Record.defrecord :xmlText,    Record.extract(:xmlText, from_lib: "xmerl/include/xmerl.hrl")
 
-  def parse_response!(response) when is_binary(response) do
-    {parsed_doc, _} = :xmerl_scan.string(:erlang.binary_to_list(response), [])
-    
-    parsed_doc
-    |> to_map(%{})
+  def value(xmlText(value: value)) do
+    value
+    |> :erlang.list_to_binary
+    |> String.trim
   end
 
-  def to_map([text], _parent) when Record.is_record(text, :xmlText) do
-    text
-    |> content
-    |> convert
+  @doc """
+  Parse the XML output of an API call and generate a response in the form of a map
+  """
+  def parse(response, %Operation{shapes: shapes_func, output_shape: shape}) do
+    {xml, _} = :xmerl_scan.string(:erlang.binary_to_list(response), [space: :normalize])
+    parse(xml, shape, shapes_func.())
   end
 
-  def to_map(elements, parent) when is_list(elements) do
-    if dummy_names?(elements) do
-      elements
-      |> Enum.map(fn(element) -> to_map(element, %{}) end)
-      |> Enum.filter(fn nil -> false; _ -> true end)
-    else
-      elements
-      |> Enum.reduce(parent, fn(element, out) -> 
-        case to_map(element, out) do
-          val when is_map(val) -> 
-            val
-          _ -> 
-            out
-        end
-      end)
-    end
+  def parse(xml, shape_name, shapes) when is_binary(shape_name) do
+    parse(xml, shapes[shape_name], shapes)  
   end
-
-  def to_map(element, parent) when Record.is_record(element, :xmlElement) do
-    name    = xmlElement(element, :name)
-    content = xmlElement(element, :content)
-    Map.put(parent, Atom.to_string(name), to_map(content, %{}))
-  end
-
-  def to_map(element, _parent) when Record.is_record(element, :xmlText) do
-    case String.trim(content(element)) do
-      ""    -> nil
-      value -> convert(value)
-    end
-  end
-
-  def convert(value) do
-    [
-      &:erlang.binary_to_integer/1,
-      &:erlang.binary_to_float/1,
-      &NaiveDateTime.from_iso8601!/1,
-      fn "true" -> true; "false" -> false; _ -> raise ArgumentError end
-    ]
-    |> Enum.reduce_while(value, fn(converter, val) ->
-      try do
-        {:halt, converter.(val)}
-      rescue
-        _ -> {:cont, val}
-      catch
-        _ -> {:cont, val}
+  
+  def parse(xmlElement(content: content), "String", shapes),        do: parse(content, "String", shapes)
+  def parse(xmlElement(content: content), "Boolean", shapes),       do: parse(content, "Boolean", shapes)
+  def parse(xmlElement(content: content), "Integer", shapes),       do: parse(content, "Integer", shapes)
+  def parse(xmlText() = text, "String", _shapes),                   do: value(text)
+  def parse(xmlText() = text, "Boolean", _shapes),                  do: value(text) |> String.to_existing_atom
+  def parse(xmlText() = text, "Integer", _shapes),                  do: value(text) |> String.to_integer
+  def parse(xmlText() = text, %{"type" => "string"}, _shapes),      do: value(text)
+  def parse(xmlText() = text, %{"type" => "boolean"}, _shapes),     do: value(text) |> String.to_existing_atom
+  def parse(xmlText() = text, %{"type" => "integer"}, _shapes),     do: value(text) |> String.to_integer
+  def parse(xmlText() = text, %{"type" => "timestamp"}, _shapes),   do: value(text) |> NaiveDateTime.from_iso8601!
+  def parse([xmlText() = text], %{"type" => "string"}, _shapes),    do: value(text)
+  def parse([xmlText() = text], %{"type" => "boolean"}, _shapes),   do: value(text) |> String.to_existing_atom
+  def parse([xmlText() = text], %{"type" => "integer"}, _shapes),   do: value(text) |> String.to_integer
+  def parse([xmlText() = text], %{"type" => "timestamp"}, _shapes), do: value(text) |> NaiveDateTime.from_iso8601!
+  def parse([], %{"type" => "string"},    _shapes),                 do: nil
+  def parse([], %{"type" => "boolean"},   _shapes),                 do: nil
+  def parse([], %{"type" => "integer"},   _shapes),                 do: nil
+  def parse([], %{"type" => "timestamp"}, _shapes),                 do: nil
+  def parse(xmlElement(content: content), %{"type" => "structure", "members" => members}, shapes) do
+    members
+    |> Map.to_list
+    |> Enum.map(fn {name, %{"shape" => shape, "locationName" => location}} ->
+      case Enum.find(content, fn xmlElement(name: name) -> name == String.to_atom(location); _ -> false end) do
+        xmlElement(content: c) ->
+          {location, parse(c, shape, shapes)}
+        _ ->
+          {location, nil}
       end
     end)
+    |> Enum.filter(fn {_, nil} -> false; _ -> true end)
+    |> Map.new
   end
-
-  def name(element) when Record.is_record(element, :xmlElement) do
-    Atom.to_string(xmlElement(element, :name))
+  def parse(content, %{"type" => "structure"} = shape, shapes) when is_list(content) do
+    content
+    |> Enum.filter(fn xmlText() = text -> String.length(value(text)) > 0; _ -> true end)
+    |> Enum.at(0)
+    |> parse(shape, shapes)
   end
-
-  def name(_element) do
-    nil
-  end
-
-  def content(element) when Record.is_record(element, :xmlElement) do
-    xmlElement(element, :content)
-  end
-
-  def content(element) when Record.is_record(element, :xmlText) do
-    :erlang.list_to_binary(xmlText(element, :value))
-  end
-
-  defp dummy_names?(elements) do
-    elements
-    |> Enum.map(&__MODULE__.name/1)
-    |> Enum.filter(fn nil -> false; _ -> true end)
-    |> Enum.all?(fn name -> String.at(name, 0) >="a" and String.at(name, 0) <= "z" end)
-  end
-
-  def parse(%{body: xml}, %Operation{}) do
-    try do
-      {:ok, parse_response!(xml)}
-    catch
-      e -> {:error, e}
-    rescue
-      e -> {:error, e}
-    end
+  def parse(content, %{"type" => "list", "member" => %{"shape" => shape}}, shapes) do
+    content
+    |> Enum.filter(fn xmlText() -> false; _ -> true end)
+    |> Enum.map(fn xmlElement() = elem -> parse(elem, shape, shapes) end)
   end
 end

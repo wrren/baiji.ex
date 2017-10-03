@@ -33,9 +33,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateCreatedArtifactRequest",
+      output_shape:     "AssociateCreatedArtifactResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Associates a discovered resource ID from Application Discovery Service
@@ -54,9 +58,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "AssociateDiscoveredResourceRequest",
+      output_shape:     "AssociateDiscoveredResourceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a progress update stream which is an AWS resource used for access
@@ -78,9 +86,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateProgressUpdateStreamRequest",
+      output_shape:     "CreateProgressUpdateStreamResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a progress update stream, including all of its tasks, which was
@@ -123,9 +135,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteProgressUpdateStreamRequest",
+      output_shape:     "DeleteProgressUpdateStreamResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets the migration status of an application.
@@ -143,9 +159,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeApplicationStateRequest",
+      output_shape:     "DescribeApplicationStateResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Retrieves a list of all attributes associated with a specific migration
@@ -164,9 +184,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "DescribeMigrationTaskRequest",
+      output_shape:     "DescribeMigrationTaskResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disassociates a created artifact of an AWS resource with a migration task
@@ -198,9 +222,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateCreatedArtifactRequest",
+      output_shape:     "DisassociateCreatedArtifactResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Disassociate an Application Discovery Service (ADS) discovered resource
@@ -219,9 +247,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "DisassociateDiscoveredResourceRequest",
+      output_shape:     "DisassociateDiscoveredResourceResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Registers a new migration task which represents a server, database, etc.,
@@ -244,9 +276,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "ImportMigrationTaskRequest",
+      output_shape:     "ImportMigrationTaskResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists the created artifacts attached to a given migration task in an update
@@ -275,9 +311,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListCreatedArtifactsRequest",
+      output_shape:     "ListCreatedArtifactsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists discovered resources associated with the given `MigrationTask`.
@@ -295,9 +335,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListDiscoveredResourcesRequest",
+      output_shape:     "ListDiscoveredResourcesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists all, or filtered by resource name, migration tasks associated with
@@ -325,9 +369,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListMigrationTasksRequest",
+      output_shape:     "ListMigrationTasksResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Lists progress update streams associated with the user account making this
@@ -346,9 +394,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListProgressUpdateStreamsRequest",
+      output_shape:     "ListProgressUpdateStreamsResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets the migration state of an application. For a given application
@@ -369,9 +421,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "NotifyApplicationStateRequest",
+      output_shape:     "NotifyApplicationStateResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Notifies Migration Hub of the current status, progress, or other detail
@@ -401,9 +457,13 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "NotifyMigrationTaskStateRequest",
+      output_shape:     "NotifyMigrationTaskStateResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Provides identifying details of the resource being migrated so that it can
@@ -436,8 +496,19 @@ defmodule Baiji.MigrationHub do
       endpoint_prefix:  "mgh",
       type:             :json,
       version:          "2017-05-31",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutResourceAttributesRequest",
+      output_shape:     "PutResourceAttributesResult",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"UpdateDateTime" => %{"type" => "timestamp"}, "DiscoveredResourceList" => %{"member" => %{"shape" => "DiscoveredResource"}, "type" => "list"}, "PutResourceAttributesRequest" => %{"members" => %{"DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}, "ResourceAttributeList" => %{"shape" => "ResourceAttributeList"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName", "ResourceAttributeList"], "type" => "structure"}, "DryRun" => %{"type" => "boolean"}, "NotifyMigrationTaskStateResult" => %{"members" => %{}, "type" => "structure"}, "CreateProgressUpdateStreamResult" => %{"members" => %{}, "type" => "structure"}, "CreatedArtifact" => %{"members" => %{"Description" => %{"shape" => "CreatedArtifactDescription"}, "Name" => %{"shape" => "CreatedArtifactName"}}, "required" => ["Name"], "type" => "structure"}, "ResourceAttributeValue" => %{"max" => 256, "min" => 1, "type" => "string"}, "ErrorMessage" => %{"type" => "string"}, "AssociateCreatedArtifactRequest" => %{"members" => %{"CreatedArtifact" => %{"shape" => "CreatedArtifact"}, "DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName", "CreatedArtifact"], "type" => "structure"}, "LatestResourceAttributeList" => %{"max" => 100, "member" => %{"shape" => "ResourceAttribute"}, "min" => 0, "type" => "list"}, "DeleteProgressUpdateStreamRequest" => %{"members" => %{"DryRun" => %{"shape" => "DryRun"}, "ProgressUpdateStreamName" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStreamName"], "type" => "structure"}, "AccessDeniedException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "DescribeApplicationStateResult" => %{"members" => %{"ApplicationStatus" => %{"shape" => "ApplicationStatus"}, "LastUpdatedTime" => %{"shape" => "UpdateDateTime"}}, "type" => "structure"}, "ListDiscoveredResourcesRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResultsResources"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "NextToken" => %{"shape" => "Token"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName"], "type" => "structure"}, "AssociateDiscoveredResourceResult" => %{"members" => %{}, "type" => "structure"}, "DescribeMigrationTaskResult" => %{"members" => %{"MigrationTask" => %{"shape" => "MigrationTask"}}, "type" => "structure"}, "ResourceAttributeType" => %{"enum" => ["IPV4_ADDRESS", "IPV6_ADDRESS", "MAC_ADDRESS", "FQDN", "VM_MANAGER_ID", "VM_MANAGED_OBJECT_REFERENCE", "VM_NAME", "VM_PATH", "BIOS_ID", "MOTHERBOARD_SERIAL_NUMBER", "LABEL"], "type" => "string"}, "ProgressPercent" => %{"box" => true, "max" => 100, "min" => 0, "type" => "integer"}, "ServiceUnavailableException" => %{"exception" => true, "fault" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "ListMigrationTasksRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "Token"}, "ResourceName" => %{"shape" => "ResourceName"}}, "type" => "structure"}, "DiscoveredResource" => %{"members" => %{"ConfigurationId" => %{"shape" => "ConfigurationId"}, "Description" => %{"shape" => "DiscoveredResourceDescription"}}, "required" => ["ConfigurationId"], "type" => "structure"}, "Token" => %{"type" => "string"}, "DisassociateCreatedArtifactRequest" => %{"members" => %{"CreatedArtifactName" => %{"shape" => "CreatedArtifactName"}, "DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName", "CreatedArtifactName"], "type" => "structure"}, "DisassociateCreatedArtifactResult" => %{"members" => %{}, "type" => "structure"}, "MigrationTaskSummary" => %{"members" => %{"MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressPercent" => %{"shape" => "ProgressPercent"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}, "Status" => %{"shape" => "Status"}, "StatusDetail" => %{"shape" => "StatusDetail"}, "UpdateDateTime" => %{"shape" => "UpdateDateTime"}}, "type" => "structure"}, "NotifyApplicationStateResult" => %{"members" => %{}, "type" => "structure"}, "NextUpdateSeconds" => %{"min" => 0, "type" => "integer"}, "DiscoveredResourceDescription" => %{"max" => 500, "min" => 0, "type" => "string"}, "DescribeApplicationStateRequest" => %{"members" => %{"ApplicationId" => %{"shape" => "ApplicationId"}}, "required" => ["ApplicationId"], "type" => "structure"}, "ImportMigrationTaskRequest" => %{"members" => %{"DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName"], "type" => "structure"}, "ProgressUpdateStreamSummary" => %{"members" => %{"ProgressUpdateStreamName" => %{"shape" => "ProgressUpdateStream"}}, "type" => "structure"}, "AssociateDiscoveredResourceRequest" => %{"members" => %{"DiscoveredResource" => %{"shape" => "DiscoveredResource"}, "DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName", "DiscoveredResource"], "type" => "structure"}, "NotifyMigrationTaskStateRequest" => %{"members" => %{"DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "NextUpdateSeconds" => %{"shape" => "NextUpdateSeconds"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}, "Task" => %{"shape" => "Task"}, "UpdateDateTime" => %{"shape" => "UpdateDateTime"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName", "Task", "UpdateDateTime", "NextUpdateSeconds"], "type" => "structure"}, "MaxResults" => %{"box" => true, "max" => 100, "min" => 1, "type" => "integer"}, "AssociateCreatedArtifactResult" => %{"members" => %{}, "type" => "structure"}, "ProgressUpdateStream" => %{"max" => 50, "min" => 1, "pattern" => "[^/:|\\000-\\037]+", "type" => "string"}, "UnauthorizedOperation" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "PutResourceAttributesResult" => %{"members" => %{}, "type" => "structure"}, "ConfigurationId" => %{"min" => 1, "type" => "string"}, "MigrationTaskSummaryList" => %{"member" => %{"shape" => "MigrationTaskSummary"}, "type" => "list"}, "ApplicationStatus" => %{"enum" => ["NOT_STARTED", "IN_PROGRESS", "COMPLETED"], "type" => "string"}, "ProgressUpdateStreamSummaryList" => %{"member" => %{"shape" => "ProgressUpdateStreamSummary"}, "type" => "list"}, "ListCreatedArtifactsResult" => %{"members" => %{"CreatedArtifactList" => %{"shape" => "CreatedArtifactList"}, "NextToken" => %{"shape" => "Token"}}, "type" => "structure"}, "Task" => %{"members" => %{"ProgressPercent" => %{"shape" => "ProgressPercent"}, "Status" => %{"shape" => "Status"}, "StatusDetail" => %{"shape" => "StatusDetail"}}, "required" => ["Status"], "type" => "structure"}, "ListProgressUpdateStreamsResult" => %{"members" => %{"NextToken" => %{"shape" => "Token"}, "ProgressUpdateStreamSummaryList" => %{"shape" => "ProgressUpdateStreamSummaryList"}}, "type" => "structure"}, "MaxResultsCreatedArtifacts" => %{"box" => true, "max" => 10, "min" => 1, "type" => "integer"}, "ImportMigrationTaskResult" => %{"members" => %{}, "type" => "structure"}, "InternalServerError" => %{"exception" => true, "fault" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "Status" => %{"enum" => ["NOT_STARTED", "IN_PROGRESS", "FAILED", "COMPLETED"], "type" => "string"}, "CreatedArtifactList" => %{"member" => %{"shape" => "CreatedArtifact"}, "type" => "list"}, "ResourceNotFoundException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "NotifyApplicationStateRequest" => %{"members" => %{"ApplicationId" => %{"shape" => "ApplicationId"}, "DryRun" => %{"shape" => "DryRun"}, "Status" => %{"shape" => "ApplicationStatus"}}, "required" => ["ApplicationId", "Status"], "type" => "structure"}, "DisassociateDiscoveredResourceResult" => %{"members" => %{}, "type" => "structure"}, "DryRunOperation" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "MaxResultsResources" => %{"box" => true, "max" => 10, "min" => 1, "type" => "integer"}, "PolicyErrorException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}, "StatusDetail" => %{"max" => 500, "min" => 0, "type" => "string"}, "ListCreatedArtifactsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResultsCreatedArtifacts"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "NextToken" => %{"shape" => "Token"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName"], "type" => "structure"}, "ResourceAttributeList" => %{"max" => 100, "member" => %{"shape" => "ResourceAttribute"}, "min" => 1, "type" => "list"}, "DescribeMigrationTaskRequest" => %{"members" => %{"MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName"], "type" => "structure"}, "CreatedArtifactDescription" => %{"max" => 500, "min" => 0, "type" => "string"}, "MigrationTaskName" => %{"max" => 256, "min" => 1, "pattern" => "[^:|]+", "type" => "string"}, "ListDiscoveredResourcesResult" => %{"members" => %{"DiscoveredResourceList" => %{"shape" => "DiscoveredResourceList"}, "NextToken" => %{"shape" => "Token"}}, "type" => "structure"}, "DeleteProgressUpdateStreamResult" => %{"members" => %{}, "type" => "structure"}, "ListMigrationTasksResult" => %{"members" => %{"MigrationTaskSummaryList" => %{"shape" => "MigrationTaskSummaryList"}, "NextToken" => %{"shape" => "Token"}}, "type" => "structure"}, "ApplicationId" => %{"max" => 1600, "min" => 1, "type" => "string"}, "ResourceAttribute" => %{"members" => %{"Type" => %{"shape" => "ResourceAttributeType"}, "Value" => %{"shape" => "ResourceAttributeValue"}}, "required" => ["Type", "Value"], "type" => "structure"}, "CreateProgressUpdateStreamRequest" => %{"members" => %{"DryRun" => %{"shape" => "DryRun"}, "ProgressUpdateStreamName" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStreamName"], "type" => "structure"}, "ListProgressUpdateStreamsRequest" => %{"members" => %{"MaxResults" => %{"shape" => "MaxResults"}, "NextToken" => %{"shape" => "Token"}}, "type" => "structure"}, "ResourceName" => %{"max" => 1600, "min" => 1, "type" => "string"}, "MigrationTask" => %{"members" => %{"MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}, "ResourceAttributeList" => %{"shape" => "LatestResourceAttributeList"}, "Task" => %{"shape" => "Task"}, "UpdateDateTime" => %{"shape" => "UpdateDateTime"}}, "type" => "structure"}, "CreatedArtifactName" => %{"max" => 1600, "min" => 1, "pattern" => "arn:[a-z-]+:[a-z0-9-]+:(?:[a-z0-9-]+|):(?:[0-9]{12}|):.*", "type" => "string"}, "DisassociateDiscoveredResourceRequest" => %{"members" => %{"ConfigurationId" => %{"shape" => "ConfigurationId"}, "DryRun" => %{"shape" => "DryRun"}, "MigrationTaskName" => %{"shape" => "MigrationTaskName"}, "ProgressUpdateStream" => %{"shape" => "ProgressUpdateStream"}}, "required" => ["ProgressUpdateStream", "MigrationTaskName", "ConfigurationId"], "type" => "structure"}, "InvalidInputException" => %{"exception" => true, "members" => %{"Message" => %{"shape" => "ErrorMessage"}}, "type" => "structure"}}
+  end
 end

@@ -15,8 +15,11 @@ defmodule Baiji.Operation do
             version:            nil,          # API Version String
             assigns:            [],           # Variables assigned to the operation by intermediate stages
             halted:             false,        # Indicates whether the operation has been halted due to an error
-            errors:             [],            # Contains details of any errors that occurred while performing the operation
-            parser:             &Baiji.Response.parse/2
+            errors:             [],           # Contains details of any errors that occurred while performing the operation
+            parser:             nil,          # Parser to be used when decoding the API response body
+            input_shape:        nil,          # Name of the input shape for this operation
+            output_shape:       nil,          # Name of the output shape for this operation
+            shapes:             nil           # Function that returns a Shape map for operations under this endpoint
             
   @doc """
   Add a new key-value pair to the operation's assigns

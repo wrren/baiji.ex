@@ -98,9 +98,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "BatchGetRepositoriesInput",
+      output_shape:     "BatchGetRepositoriesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new branch in a repository and points the branch to a commit.
@@ -123,9 +127,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateBranchInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Creates a new, empty repository.
@@ -143,9 +151,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "CreateRepositoryInput",
+      output_shape:     "CreateRepositoryOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Deletes a repository. If a specified repository was already deleted, a null
@@ -170,9 +182,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "DeleteRepositoryInput",
+      output_shape:     "DeleteRepositoryOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns the base-64 encoded content of an individual blob within a
@@ -191,9 +207,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetBlobInput",
+      output_shape:     "GetBlobOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a repository branch, including its name and the
@@ -212,9 +232,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetBranchInput",
+      output_shape:     "GetBranchOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a commit, including commit message and committer
@@ -233,9 +257,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetCommitInput",
+      output_shape:     "GetCommitOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about the differences in a valid commit specifier (such
@@ -255,9 +283,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetDifferencesInput",
+      output_shape:     "GetDifferencesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Returns information about a repository.
@@ -284,9 +316,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRepositoryInput",
+      output_shape:     "GetRepositoryOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about triggers configured for a repository.
@@ -304,9 +340,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "GetRepositoryTriggersInput",
+      output_shape:     "GetRepositoryTriggersOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about one or more branches in a repository.
@@ -324,9 +364,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListBranchesInput",
+      output_shape:     "ListBranchesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Gets information about one or more repositories.
@@ -344,9 +388,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "ListRepositoriesInput",
+      output_shape:     "ListRepositoriesOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Replaces all triggers for a repository. This can be used to create or
@@ -365,9 +413,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "PutRepositoryTriggersInput",
+      output_shape:     "PutRepositoryTriggersOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Tests the functionality of repository triggers by sending information to
@@ -388,9 +440,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "TestRepositoryTriggersInput",
+      output_shape:     "TestRepositoryTriggersOutput",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets or changes the default branch name for the specified repository.
@@ -414,9 +470,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateDefaultBranchInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Sets or changes the comment or description for a repository.
@@ -443,9 +503,13 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRepositoryDescriptionInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
   @doc """
   Renames a repository. The repository name must be unique across the calling
@@ -469,8 +533,19 @@ defmodule Baiji.CodeCommit do
       endpoint_prefix:  "codecommit",
       type:             :json,
       version:          "2015-04-13",
-      method:           :post
+      method:           :post,
+      input_shape:      "UpdateRepositoryNameInput",
+      output_shape:     "",
+      shapes:           &__MODULE__.__shapes__/0
     }
   end
+
   
+
+  @doc """
+  Returns a map containing the input/output shapes for this endpoint
+  """
+  def __shapes__ do
+    %{"RepositoryTriggerExecutionFailureList" => %{"member" => %{"shape" => "RepositoryTriggerExecutionFailure"}, "type" => "list"}, "RepositoryTriggerEventEnum" => %{"enum" => ["all", "updateReference", "createReference", "deleteReference"], "type" => "string"}, "InvalidRepositoryTriggerDestinationArnException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "AdditionalData" => %{"type" => "string"}, "BranchName" => %{"max" => 100, "min" => 1, "type" => "string"}, "EncryptionKeyDisabledException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteRepositoryOutput" => %{"members" => %{"repositoryId" => %{"shape" => "RepositoryId"}}, "type" => "structure"}, "DifferenceList" => %{"member" => %{"shape" => "Difference"}, "type" => "list"}, "UpdateRepositoryDescriptionInput" => %{"members" => %{"repositoryDescription" => %{"shape" => "RepositoryDescription"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName"], "type" => "structure"}, "RepositoryNameIdPairList" => %{"member" => %{"shape" => "RepositoryNameIdPair"}, "type" => "list"}, "RepositoryTriggerNameRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UserInfo" => %{"members" => %{"date" => %{"shape" => "Date"}, "email" => %{"shape" => "Email"}, "name" => %{"shape" => "Name"}}, "type" => "structure"}, "GetBlobInput" => %{"members" => %{"blobId" => %{"shape" => "ObjectId"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName", "blobId"], "type" => "structure"}, "UpdateDefaultBranchInput" => %{"members" => %{"defaultBranchName" => %{"shape" => "BranchName"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName", "defaultBranchName"], "type" => "structure"}, "RepositoryNotFoundList" => %{"member" => %{"shape" => "RepositoryName"}, "type" => "list"}, "InvalidRepositoryNameException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "BatchGetRepositoriesInput" => %{"members" => %{"repositoryNames" => %{"shape" => "RepositoryNameList"}}, "required" => ["repositoryNames"], "type" => "structure"}, "ListRepositoriesInput" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "order" => %{"shape" => "OrderEnum"}, "sortBy" => %{"shape" => "SortByEnum"}}, "type" => "structure"}, "CreationDate" => %{"type" => "timestamp"}, "CloneUrlHttp" => %{"type" => "string"}, "MaximumRepositoryNamesExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryTriggerCustomData" => %{"type" => "string"}, "InvalidSortByException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidRepositoryTriggerNameException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Mode" => %{"type" => "string"}, "RepositoryTrigger" => %{"members" => %{"branches" => %{"shape" => "BranchNameList"}, "customData" => %{"shape" => "RepositoryTriggerCustomData"}, "destinationArn" => %{"shape" => "Arn"}, "events" => %{"shape" => "RepositoryTriggerEventList"}, "name" => %{"shape" => "RepositoryTriggerName"}}, "required" => ["name", "destinationArn", "events"], "type" => "structure"}, "OrderEnum" => %{"enum" => ["ascending", "descending"], "type" => "string"}, "RepositoryDescription" => %{"max" => 1000, "type" => "string"}, "InvalidBlobIdException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryNameExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "TestRepositoryTriggersOutput" => %{"members" => %{"failedExecutions" => %{"shape" => "RepositoryTriggerExecutionFailureList"}, "successfulExecutions" => %{"shape" => "RepositoryTriggerNameList"}}, "type" => "structure"}, "GetBranchInput" => %{"members" => %{"branchName" => %{"shape" => "BranchName"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "type" => "structure"}, "RepositoryNameIdPair" => %{"members" => %{"repositoryId" => %{"shape" => "RepositoryId"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "type" => "structure"}, "RepositoryNameRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidRepositoryTriggerBranchNameException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "AccountId" => %{"type" => "string"}, "CommitRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Name" => %{"type" => "string"}, "BlobIdRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Limit" => %{"box" => true, "type" => "integer"}, "ParentList" => %{"member" => %{"shape" => "ObjectId"}, "type" => "list"}, "RepositoryTriggerEventList" => %{"member" => %{"shape" => "RepositoryTriggerEventEnum"}, "type" => "list"}, "MaximumRepositoryTriggersExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryLimitExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "blob" => %{"type" => "blob"}, "InvalidRepositoryDescriptionException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CommitIdRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryDoesNotExistException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidRepositoryTriggerEventsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CreateRepositoryOutput" => %{"members" => %{"repositoryMetadata" => %{"shape" => "RepositoryMetadata"}}, "type" => "structure"}, "Path" => %{"type" => "string"}, "RepositoryTriggerBranchNameListRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Message" => %{"type" => "string"}, "Date" => %{"type" => "string"}, "Email" => %{"type" => "string"}, "GetCommitInput" => %{"members" => %{"commitId" => %{"shape" => "ObjectId"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName", "commitId"], "type" => "structure"}, "RepositoryTriggersConfigurationId" => %{"type" => "string"}, "BranchNameList" => %{"member" => %{"shape" => "BranchName"}, "type" => "list"}, "InvalidRepositoryTriggerRegionException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidCommitException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "GetRepositoryTriggersInput" => %{"members" => %{"repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName"], "type" => "structure"}, "RepositoryMetadata" => %{"members" => %{"Arn" => %{"shape" => "Arn"}, "accountId" => %{"shape" => "AccountId"}, "cloneUrlHttp" => %{"shape" => "CloneUrlHttp"}, "cloneUrlSsh" => %{"shape" => "CloneUrlSsh"}, "creationDate" => %{"shape" => "CreationDate"}, "defaultBranch" => %{"shape" => "BranchName"}, "lastModifiedDate" => %{"shape" => "LastModifiedDate"}, "repositoryDescription" => %{"shape" => "RepositoryDescription"}, "repositoryId" => %{"shape" => "RepositoryId"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "type" => "structure"}, "RepositoryTriggerExecutionFailureMessage" => %{"type" => "string"}, "CommitDoesNotExistException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "GetBranchOutput" => %{"members" => %{"branch" => %{"shape" => "BranchInfo"}}, "type" => "structure"}, "InvalidOrderException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CreateRepositoryInput" => %{"members" => %{"repositoryDescription" => %{"shape" => "RepositoryDescription"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName"], "type" => "structure"}, "BranchDoesNotExistException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "BlobMetadata" => %{"members" => %{"blobId" => %{"shape" => "ObjectId"}, "mode" => %{"shape" => "Mode"}, "path" => %{"shape" => "Path"}}, "type" => "structure"}, "InvalidCommitIdException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryTriggerDestinationArnRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "CommitName" => %{"type" => "string"}, "EncryptionIntegrityChecksFailedException" => %{"exception" => true, "fault" => true, "members" => %{}, "type" => "structure"}, "Arn" => %{"type" => "string"}, "InvalidMaxResultsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ChangeTypeEnum" => %{"enum" => ["A", "M", "D"], "type" => "string"}, "GetDifferencesOutput" => %{"members" => %{"NextToken" => %{"shape" => "NextToken"}, "differences" => %{"shape" => "DifferenceList"}}, "type" => "structure"}, "EncryptionKeyUnavailableException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "BlobIdDoesNotExistException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "Difference" => %{"members" => %{"afterBlob" => %{"shape" => "BlobMetadata"}, "beforeBlob" => %{"shape" => "BlobMetadata"}, "changeType" => %{"shape" => "ChangeTypeEnum"}}, "type" => "structure"}, "RepositoryName" => %{"max" => 100, "min" => 1, "pattern" => "[\\w\\.-]+", "type" => "string"}, "InvalidBranchNameException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryNamesRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "GetCommitOutput" => %{"members" => %{"commit" => %{"shape" => "Commit"}}, "required" => ["commit"], "type" => "structure"}, "RepositoryTriggerExecutionFailure" => %{"members" => %{"failureMessage" => %{"shape" => "RepositoryTriggerExecutionFailureMessage"}, "trigger" => %{"shape" => "RepositoryTriggerName"}}, "type" => "structure"}, "EncryptionKeyAccessDeniedException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "GetDifferencesInput" => %{"members" => %{"MaxResults" => %{"shape" => "Limit"}, "NextToken" => %{"shape" => "NextToken"}, "afterCommitSpecifier" => %{"shape" => "CommitName"}, "afterPath" => %{"shape" => "Path"}, "beforeCommitSpecifier" => %{"shape" => "CommitName"}, "beforePath" => %{"shape" => "Path"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName", "afterCommitSpecifier"], "type" => "structure"}, "GetRepositoryTriggersOutput" => %{"members" => %{"configurationId" => %{"shape" => "RepositoryTriggersConfigurationId"}, "triggers" => %{"shape" => "RepositoryTriggersList"}}, "type" => "structure"}, "CloneUrlSsh" => %{"type" => "string"}, "BranchInfo" => %{"members" => %{"branchName" => %{"shape" => "BranchName"}, "commitId" => %{"shape" => "CommitId"}}, "type" => "structure"}, "RepositoryTriggerName" => %{"type" => "string"}, "ListRepositoriesOutput" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "repositories" => %{"shape" => "RepositoryNameIdPairList"}}, "type" => "structure"}, "CreateBranchInput" => %{"members" => %{"branchName" => %{"shape" => "BranchName"}, "commitId" => %{"shape" => "CommitId"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName", "branchName", "commitId"], "type" => "structure"}, "InvalidContinuationTokenException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryId" => %{"type" => "string"}, "BranchNameExistsException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ObjectId" => %{"type" => "string"}, "PathDoesNotExistException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "GetRepositoryInput" => %{"members" => %{"repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName"], "type" => "structure"}, "SortByEnum" => %{"enum" => ["repositoryName", "lastModifiedDate"], "type" => "string"}, "RepositoryTriggersListRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "InvalidPathException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "PutRepositoryTriggersInput" => %{"members" => %{"repositoryName" => %{"shape" => "RepositoryName"}, "triggers" => %{"shape" => "RepositoryTriggersList"}}, "required" => ["repositoryName", "triggers"], "type" => "structure"}, "CommitId" => %{"type" => "string"}, "GetRepositoryOutput" => %{"members" => %{"repositoryMetadata" => %{"shape" => "RepositoryMetadata"}}, "type" => "structure"}, "InvalidRepositoryTriggerCustomDataException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "PutRepositoryTriggersOutput" => %{"members" => %{"configurationId" => %{"shape" => "RepositoryTriggersConfigurationId"}}, "type" => "structure"}, "RepositoryTriggerNameList" => %{"member" => %{"shape" => "RepositoryTriggerName"}, "type" => "list"}, "BatchGetRepositoriesOutput" => %{"members" => %{"repositories" => %{"shape" => "RepositoryMetadataList"}, "repositoriesNotFound" => %{"shape" => "RepositoryNotFoundList"}}, "type" => "structure"}, "RepositoryMetadataList" => %{"member" => %{"shape" => "RepositoryMetadata"}, "type" => "list"}, "BranchNameRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "UpdateRepositoryNameInput" => %{"members" => %{"newName" => %{"shape" => "RepositoryName"}, "oldName" => %{"shape" => "RepositoryName"}}, "required" => ["oldName", "newName"], "type" => "structure"}, "CommitIdDoesNotExistException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "ListBranchesInput" => %{"members" => %{"nextToken" => %{"shape" => "NextToken"}, "repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName"], "type" => "structure"}, "RepositoryNameList" => %{"member" => %{"shape" => "RepositoryName"}, "type" => "list"}, "RepositoryTriggerEventsListRequiredException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "EncryptionKeyNotFoundException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "RepositoryTriggersList" => %{"member" => %{"shape" => "RepositoryTrigger"}, "type" => "list"}, "GetBlobOutput" => %{"members" => %{"content" => %{"shape" => "blob"}}, "required" => ["content"], "type" => "structure"}, "MaximumBranchesExceededException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "DeleteRepositoryInput" => %{"members" => %{"repositoryName" => %{"shape" => "RepositoryName"}}, "required" => ["repositoryName"], "type" => "structure"}, "FileTooLargeException" => %{"exception" => true, "members" => %{}, "type" => "structure"}, "NextToken" => %{"type" => "string"}, "ListBranchesOutput" => %{"members" => %{"branches" => %{"shape" => "BranchNameList"}, "nextToken" => %{"shape" => "NextToken"}}, "type" => "structure"}, "LastModifiedDate" => %{"type" => "timestamp"}, "TestRepositoryTriggersInput" => %{"members" => %{"repositoryName" => %{"shape" => "RepositoryName"}, "triggers" => %{"shape" => "RepositoryTriggersList"}}, "required" => ["repositoryName", "triggers"], "type" => "structure"}, "Commit" => %{"members" => %{"additionalData" => %{"shape" => "AdditionalData"}, "author" => %{"shape" => "UserInfo"}, "committer" => %{"shape" => "UserInfo"}, "message" => %{"shape" => "Message"}, "parents" => %{"shape" => "ParentList"}, "treeId" => %{"shape" => "ObjectId"}}, "type" => "structure"}}
+  end
 end
