@@ -21,15 +21,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/tags",
-      input:          input,
-      options:        options,
-      action:         "AddTags",
+      service:          "es",
+      endpoint:         "/2015-01-01/tags",
+      input:            input,
+      options:          options,
+      action:           "AddTags",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :post
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :post
     }
   end
   
@@ -41,15 +42,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def create_elasticsearch_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/domain",
-      input:          input,
-      options:        options,
-      action:         "CreateElasticsearchDomain",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/domain",
+      input:            input,
+      options:          options,
+      action:           "CreateElasticsearchDomain",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :post
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :post
     }
   end
   
@@ -59,15 +61,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def delete_elasticsearch_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/domain/{DomainName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteElasticsearchDomain",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/domain/{DomainName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteElasticsearchDomain",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :delete
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :delete
     }
   end
   
@@ -77,15 +80,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def describe_elasticsearch_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/domain/{DomainName}",
-      input:          input,
-      options:        options,
-      action:         "DescribeElasticsearchDomain",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/domain/{DomainName}",
+      input:            input,
+      options:          options,
+      action:           "DescribeElasticsearchDomain",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -96,15 +100,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def describe_elasticsearch_domain_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/domain/{DomainName}/config",
-      input:          input,
-      options:        options,
-      action:         "DescribeElasticsearchDomainConfig",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/domain/{DomainName}/config",
+      input:            input,
+      options:          options,
+      action:           "DescribeElasticsearchDomainConfig",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -114,15 +119,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def describe_elasticsearch_domains(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/domain-info",
-      input:          input,
-      options:        options,
-      action:         "DescribeElasticsearchDomains",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/domain-info",
+      input:            input,
+      options:          options,
+      action:           "DescribeElasticsearchDomains",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :post
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :post
     }
   end
   
@@ -133,15 +139,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def describe_elasticsearch_instance_type_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/instanceTypeLimits/{ElasticsearchVersion}/{InstanceType}",
-      input:          input,
-      options:        options,
-      action:         "DescribeElasticsearchInstanceTypeLimits",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/instanceTypeLimits/{ElasticsearchVersion}/{InstanceType}",
+      input:            input,
+      options:          options,
+      action:           "DescribeElasticsearchInstanceTypeLimits",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -151,15 +158,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def list_domain_names(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/domain",
-      input:          input,
-      options:        options,
-      action:         "ListDomainNames",
+      service:          "es",
+      endpoint:         "/2015-01-01/domain",
+      input:            input,
+      options:          options,
+      action:           "ListDomainNames",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -169,15 +177,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def list_elasticsearch_instance_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/instanceTypes/{ElasticsearchVersion}",
-      input:          input,
-      options:        options,
-      action:         "ListElasticsearchInstanceTypes",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/instanceTypes/{ElasticsearchVersion}",
+      input:            input,
+      options:          options,
+      action:           "ListElasticsearchInstanceTypes",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -186,15 +195,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def list_elasticsearch_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/versions",
-      input:          input,
-      options:        options,
-      action:         "ListElasticsearchVersions",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/versions",
+      input:            input,
+      options:          options,
+      action:           "ListElasticsearchVersions",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -203,15 +213,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def list_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/tags/",
-      input:          input,
-      options:        options,
-      action:         "ListTags",
+      service:          "es",
+      endpoint:         "/2015-01-01/tags/",
+      input:            input,
+      options:          options,
+      action:           "ListTags",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :get
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :get
     }
   end
   
@@ -220,15 +231,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/tags-removal",
-      input:          input,
-      options:        options,
-      action:         "RemoveTags",
+      service:          "es",
+      endpoint:         "/2015-01-01/tags-removal",
+      input:            input,
+      options:          options,
+      action:           "RemoveTags",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :post
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :post
     }
   end
   
@@ -238,15 +250,16 @@ defmodule Baiji.ElasticsearchService do
   """
   def update_elasticsearch_domain_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "es",
-      endpoint:       "/2015-01-01/es/domain/{DomainName}/config",
-      input:          input,
-      options:        options,
-      action:         "UpdateElasticsearchDomainConfig",
+      service:          "es",
+      endpoint:         "/2015-01-01/es/domain/{DomainName}/config",
+      input:            input,
+      options:          options,
+      action:           "UpdateElasticsearchDomainConfig",
       
-      type:           :rest_json,
-      version:        "2015-01-01",
-      method:         :post
+      endpoint_prefix:  "es",
+      type:             :rest_json,
+      version:          "2015-01-01",
+      method:           :post
     }
   end
   

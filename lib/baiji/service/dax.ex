@@ -15,17 +15,18 @@ defmodule Baiji.DAX do
   """
   def create_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCluster",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCluster",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -35,17 +36,18 @@ defmodule Baiji.DAX do
   """
   def create_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateParameterGroup",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateParameterGroup",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -54,17 +56,18 @@ defmodule Baiji.DAX do
   """
   def create_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSubnetGroup",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSubnetGroup",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -78,17 +81,18 @@ defmodule Baiji.DAX do
   """
   def decrease_replication_factor(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DecreaseReplicationFactor",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DecreaseReplicationFactor",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -100,17 +104,18 @@ defmodule Baiji.DAX do
   """
   def delete_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCluster",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCluster",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -120,17 +125,18 @@ defmodule Baiji.DAX do
   """
   def delete_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteParameterGroup",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteParameterGroup",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -144,17 +150,18 @@ defmodule Baiji.DAX do
   """
   def delete_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSubnetGroup",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSubnetGroup",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -179,17 +186,18 @@ defmodule Baiji.DAX do
   """
   def describe_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusters",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusters",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -199,17 +207,18 @@ defmodule Baiji.DAX do
   """
   def describe_default_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDefaultParameters",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDefaultParameters",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -223,17 +232,18 @@ defmodule Baiji.DAX do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvents",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvents",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -243,17 +253,18 @@ defmodule Baiji.DAX do
   """
   def describe_parameter_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeParameterGroups",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeParameterGroups",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -262,17 +273,18 @@ defmodule Baiji.DAX do
   """
   def describe_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeParameters",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeParameters",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -282,17 +294,18 @@ defmodule Baiji.DAX do
   """
   def describe_subnet_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSubnetGroups",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSubnetGroups",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -301,17 +314,18 @@ defmodule Baiji.DAX do
   """
   def increase_replication_factor(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "IncreaseReplicationFactor",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "IncreaseReplicationFactor",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -321,17 +335,18 @@ defmodule Baiji.DAX do
   """
   def list_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTags",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTags",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -341,17 +356,18 @@ defmodule Baiji.DAX do
   """
   def reboot_node(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebootNode",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebootNode",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -361,17 +377,18 @@ defmodule Baiji.DAX do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TagResource",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TagResource",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -381,17 +398,18 @@ defmodule Baiji.DAX do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UntagResource",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UntagResource",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -402,17 +420,18 @@ defmodule Baiji.DAX do
   """
   def update_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateCluster",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateCluster",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -423,17 +442,18 @@ defmodule Baiji.DAX do
   """
   def update_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateParameterGroup",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateParameterGroup",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   
@@ -442,17 +462,18 @@ defmodule Baiji.DAX do
   """
   def update_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dax",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateSubnetGroup",
+      service:          "dax",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateSubnetGroup",
       
-      target_prefix:  "AmazonDAXV3",
+      target_prefix:    "AmazonDAXV3",
       
-      type:           :json,
-      version:        "2017-04-19",
-      method:         :post
+      endpoint_prefix:  "dax",
+      type:             :json,
+      version:          "2017-04-19",
+      method:           :post
     }
   end
   

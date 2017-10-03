@@ -11,15 +11,16 @@ defmodule Baiji.MobileAnalytics do
   """
   def put_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mobileanalytics",
-      endpoint:       "/2014-06-05/events",
-      input:          input,
-      options:        options,
-      action:         "PutEvents",
+      service:          "mobileanalytics",
+      endpoint:         "/2014-06-05/events",
+      input:            input,
+      options:          options,
+      action:           "PutEvents",
       
-      type:           :rest_json,
-      version:        "2014-06-05",
-      method:         :post
+      endpoint_prefix:  "mobileanalytics",
+      type:             :rest_json,
+      version:          "2014-06-05",
+      method:           :post
     }
   end
   

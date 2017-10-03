@@ -37,15 +37,16 @@ defmodule Baiji.Redshift do
   """
   def enable_snapshot_copy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EnableSnapshotCopy",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EnableSnapshotCopy",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -59,15 +60,16 @@ defmodule Baiji.Redshift do
   """
   def revoke_cluster_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RevokeClusterSecurityGroupIngress",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RevokeClusterSecurityGroupIngress",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -94,15 +96,16 @@ defmodule Baiji.Redshift do
   """
   def delete_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCluster",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCluster",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -116,15 +119,16 @@ defmodule Baiji.Redshift do
   """
   def create_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateClusterSnapshot",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateClusterSnapshot",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -139,15 +143,16 @@ defmodule Baiji.Redshift do
   """
   def describe_snapshot_copy_grants(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSnapshotCopyGrants",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSnapshotCopyGrants",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -161,15 +166,16 @@ defmodule Baiji.Redshift do
   """
   def authorize_snapshot_access(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AuthorizeSnapshotAccess",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AuthorizeSnapshotAccess",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -190,15 +196,16 @@ defmodule Baiji.Redshift do
   """
   def describe_hsm_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeHsmConfigurations",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeHsmConfigurations",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -207,15 +214,16 @@ defmodule Baiji.Redshift do
   """
   def delete_hsm_client_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteHsmClientCertificate",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteHsmClientCertificate",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -231,15 +239,16 @@ defmodule Baiji.Redshift do
   """
   def describe_resize(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeResize",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeResize",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -249,15 +258,16 @@ defmodule Baiji.Redshift do
   """
   def enable_logging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EnableLogging",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EnableLogging",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -270,15 +280,16 @@ defmodule Baiji.Redshift do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvents",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvents",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -293,15 +304,16 @@ defmodule Baiji.Redshift do
   """
   def describe_default_cluster_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDefaultClusterParameters",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDefaultClusterParameters",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -310,15 +322,16 @@ defmodule Baiji.Redshift do
   """
   def rotate_encryption_key(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RotateEncryptionKey",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RotateEncryptionKey",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -335,15 +348,16 @@ defmodule Baiji.Redshift do
   """
   def delete_cluster_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteClusterSecurityGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteClusterSecurityGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -356,15 +370,16 @@ defmodule Baiji.Redshift do
   """
   def reset_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResetClusterParameterGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResetClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -380,15 +395,16 @@ defmodule Baiji.Redshift do
   """
   def reboot_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebootCluster",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebootCluster",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -414,15 +430,16 @@ defmodule Baiji.Redshift do
   """
   def describe_cluster_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusterSecurityGroups",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusterSecurityGroups",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -442,15 +459,16 @@ defmodule Baiji.Redshift do
   """
   def describe_reserved_node_offerings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReservedNodeOfferings",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReservedNodeOfferings",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -459,15 +477,16 @@ defmodule Baiji.Redshift do
   """
   def delete_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteEventSubscription",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteEventSubscription",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -488,15 +507,16 @@ defmodule Baiji.Redshift do
   """
   def modify_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyCluster",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyCluster",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -524,15 +544,16 @@ defmodule Baiji.Redshift do
   """
   def describe_cluster_parameter_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusterParameterGroups",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusterParameterGroups",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -564,15 +585,16 @@ defmodule Baiji.Redshift do
   """
   def create_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateEventSubscription",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateEventSubscription",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -583,15 +605,16 @@ defmodule Baiji.Redshift do
   """
   def modify_cluster_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyClusterSubnetGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyClusterSubnetGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -600,15 +623,16 @@ defmodule Baiji.Redshift do
   """
   def delete_hsm_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteHsmConfiguration",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteHsmConfiguration",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -618,15 +642,16 @@ defmodule Baiji.Redshift do
   """
   def describe_logging_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLoggingStatus",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLoggingStatus",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -636,15 +661,16 @@ defmodule Baiji.Redshift do
   """
   def modify_snapshot_copy_retention_period(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifySnapshotCopyRetentionPeriod",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifySnapshotCopyRetentionPeriod",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -653,15 +679,16 @@ defmodule Baiji.Redshift do
   """
   def delete_cluster_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteClusterSubnetGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteClusterSubnetGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -682,15 +709,16 @@ defmodule Baiji.Redshift do
   """
   def describe_hsm_client_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeHsmClientCertificates",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeHsmClientCertificates",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -720,15 +748,16 @@ defmodule Baiji.Redshift do
   """
   def authorize_cluster_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AuthorizeClusterSecurityGroupIngress",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AuthorizeClusterSecurityGroupIngress",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -751,15 +780,16 @@ defmodule Baiji.Redshift do
   """
   def restore_from_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreFromClusterSnapshot",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreFromClusterSnapshot",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -777,15 +807,16 @@ defmodule Baiji.Redshift do
   """
   def describe_orderable_cluster_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOrderableClusterOptions",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOrderableClusterOptions",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -806,15 +837,16 @@ defmodule Baiji.Redshift do
   """
   def copy_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyClusterSnapshot",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopyClusterSnapshot",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -833,15 +865,16 @@ defmodule Baiji.Redshift do
   """
   def purchase_reserved_node_offering(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PurchaseReservedNodeOffering",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PurchaseReservedNodeOffering",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -856,15 +889,16 @@ defmodule Baiji.Redshift do
   """
   def create_cluster_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateClusterSecurityGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateClusterSecurityGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -880,15 +914,16 @@ defmodule Baiji.Redshift do
   """
   def delete_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteClusterSnapshot",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteClusterSnapshot",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -908,15 +943,16 @@ defmodule Baiji.Redshift do
   """
   def create_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateClusterParameterGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -926,15 +962,16 @@ defmodule Baiji.Redshift do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTags",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTags",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -949,15 +986,16 @@ defmodule Baiji.Redshift do
   """
   def describe_table_restore_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTableRestoreStatus",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTableRestoreStatus",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -982,15 +1020,16 @@ defmodule Baiji.Redshift do
   """
   def describe_cluster_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusterSnapshots",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusterSnapshots",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1006,15 +1045,16 @@ defmodule Baiji.Redshift do
   """
   def create_snapshot_copy_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSnapshotCopyGrant",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSnapshotCopyGrant",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1026,15 +1066,16 @@ defmodule Baiji.Redshift do
   """
   def describe_event_categories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventCategories",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventCategories",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1056,15 +1097,16 @@ defmodule Baiji.Redshift do
   """
   def describe_cluster_subnet_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusterSubnetGroups",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusterSubnetGroups",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1078,15 +1120,16 @@ defmodule Baiji.Redshift do
   """
   def delete_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteClusterParameterGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1118,15 +1161,16 @@ defmodule Baiji.Redshift do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTags",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTags",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1138,15 +1182,16 @@ defmodule Baiji.Redshift do
   """
   def modify_cluster_iam_roles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyClusterIamRoles",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyClusterIamRoles",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1160,15 +1205,16 @@ defmodule Baiji.Redshift do
   """
   def modify_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyClusterParameterGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1190,15 +1236,16 @@ defmodule Baiji.Redshift do
   """
   def restore_table_from_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreTableFromClusterSnapshot",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreTableFromClusterSnapshot",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1230,15 +1277,16 @@ defmodule Baiji.Redshift do
   """
   def get_cluster_credentials(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetClusterCredentials",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetClusterCredentials",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1254,15 +1302,16 @@ defmodule Baiji.Redshift do
   """
   def create_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCluster",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCluster",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1271,15 +1320,16 @@ defmodule Baiji.Redshift do
   """
   def modify_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyEventSubscription",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyEventSubscription",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1294,15 +1344,16 @@ defmodule Baiji.Redshift do
   """
   def create_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateTags",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateTags",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1311,15 +1362,16 @@ defmodule Baiji.Redshift do
   """
   def describe_reserved_nodes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReservedNodes",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReservedNodes",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1341,15 +1393,16 @@ defmodule Baiji.Redshift do
   """
   def describe_cluster_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusterParameters",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusterParameters",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1360,15 +1413,16 @@ defmodule Baiji.Redshift do
   """
   def describe_event_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventSubscriptions",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventSubscriptions",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1382,15 +1436,16 @@ defmodule Baiji.Redshift do
   """
   def describe_cluster_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusterVersions",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusterVersions",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1408,15 +1463,16 @@ defmodule Baiji.Redshift do
   """
   def create_hsm_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateHsmConfiguration",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateHsmConfiguration",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1425,15 +1481,16 @@ defmodule Baiji.Redshift do
   """
   def delete_snapshot_copy_grant(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSnapshotCopyGrant",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSnapshotCopyGrant",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1448,15 +1505,16 @@ defmodule Baiji.Redshift do
   """
   def revoke_snapshot_access(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RevokeSnapshotAccess",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RevokeSnapshotAccess",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1480,15 +1538,16 @@ defmodule Baiji.Redshift do
   """
   def describe_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeClusters",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeClusters",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1503,15 +1562,16 @@ defmodule Baiji.Redshift do
   """
   def create_cluster_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateClusterSubnetGroup",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateClusterSubnetGroup",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1521,15 +1581,16 @@ defmodule Baiji.Redshift do
   """
   def disable_logging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisableLogging",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisableLogging",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1543,15 +1604,16 @@ defmodule Baiji.Redshift do
   """
   def disable_snapshot_copy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisableSnapshotCopy",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisableSnapshotCopy",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   
@@ -1570,15 +1632,16 @@ defmodule Baiji.Redshift do
   """
   def create_hsm_client_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "redshift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateHsmClientCertificate",
+      service:          "redshift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateHsmClientCertificate",
       
-      type:           :xml,
-      version:        "2012-12-01",
-      method:         :post
+      endpoint_prefix:  "redshift",
+      type:             :xml,
+      version:          "2012-12-01",
+      method:           :post
     }
   end
   

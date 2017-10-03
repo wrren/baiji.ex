@@ -130,17 +130,18 @@ defmodule Baiji.Organizations do
   """
   def describe_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAccount",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAccount",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -164,22 +165,23 @@ defmodule Baiji.Organizations do
   """
   def create_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
   @doc """
-  Disables an organizational control policy type in a root. A poicy of a
+  Disables an organizational control policy type in a root. A policy of a
   certain type can be attached to entities in a root only if that type is
   enabled in the root. After you perform this operation, you no longer can
   attach policies of the specified type to that root or to any OU or account
@@ -189,17 +191,18 @@ defmodule Baiji.Organizations do
   """
   def disable_policy_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisablePolicyType",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisablePolicyType",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -215,17 +218,18 @@ defmodule Baiji.Organizations do
   """
   def list_handshakes_for_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListHandshakesForAccount",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListHandshakesForAccount",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -236,17 +240,18 @@ defmodule Baiji.Organizations do
   """
   def list_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListPolicies",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListPolicies",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -283,17 +288,18 @@ defmodule Baiji.Organizations do
   """
   def enable_all_features(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EnableAllFeatures",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EnableAllFeatures",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -305,17 +311,18 @@ defmodule Baiji.Organizations do
   """
   def list_organizational_units_for_parent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListOrganizationalUnitsForParent",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListOrganizationalUnitsForParent",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -327,17 +334,18 @@ defmodule Baiji.Organizations do
   """
   def delete_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteOrganizationalUnit",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteOrganizationalUnit",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -355,17 +363,18 @@ defmodule Baiji.Organizations do
   """
   def list_handshakes_for_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListHandshakesForOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListHandshakesForOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -395,17 +404,18 @@ defmodule Baiji.Organizations do
   """
   def invite_account_to_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "InviteAccountToOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "InviteAccountToOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -418,17 +428,18 @@ defmodule Baiji.Organizations do
   """
   def enable_policy_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EnablePolicyType",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EnablePolicyType",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -459,17 +470,18 @@ defmodule Baiji.Organizations do
   """
   def accept_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AcceptHandshake",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AcceptHandshake",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -512,17 +524,18 @@ defmodule Baiji.Organizations do
   """
   def leave_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "LeaveOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "LeaveOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -540,17 +553,18 @@ defmodule Baiji.Organizations do
   """
   def decline_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeclineHandshake",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeclineHandshake",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -563,17 +577,18 @@ defmodule Baiji.Organizations do
   """
   def update_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateOrganizationalUnit",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateOrganizationalUnit",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -584,17 +599,18 @@ defmodule Baiji.Organizations do
   """
   def list_children(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListChildren",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListChildren",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -605,17 +621,18 @@ defmodule Baiji.Organizations do
   """
   def describe_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOrganizationalUnit",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOrganizationalUnit",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -633,17 +650,18 @@ defmodule Baiji.Organizations do
   """
   def cancel_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CancelHandshake",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CancelHandshake",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -654,17 +672,18 @@ defmodule Baiji.Organizations do
   """
   def describe_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -677,17 +696,18 @@ defmodule Baiji.Organizations do
   """
   def list_policies_for_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListPoliciesForTarget",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListPoliciesForTarget",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -699,17 +719,18 @@ defmodule Baiji.Organizations do
   """
   def describe_create_account_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCreateAccountStatus",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCreateAccountStatus",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -721,17 +742,18 @@ defmodule Baiji.Organizations do
   """
   def list_create_account_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListCreateAccountStatus",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListCreateAccountStatus",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -747,17 +769,18 @@ defmodule Baiji.Organizations do
   """
   def create_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreatePolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreatePolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -776,17 +799,18 @@ defmodule Baiji.Organizations do
   """
   def create_organizational_unit(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateOrganizationalUnit",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateOrganizationalUnit",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -811,17 +835,18 @@ defmodule Baiji.Organizations do
   """
   def detach_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DetachPolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DetachPolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -839,17 +864,18 @@ defmodule Baiji.Organizations do
   """
   def list_parents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListParents",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListParents",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -861,17 +887,18 @@ defmodule Baiji.Organizations do
   """
   def list_accounts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAccounts",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAccounts",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -882,17 +909,18 @@ defmodule Baiji.Organizations do
   """
   def list_roots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListRoots",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListRoots",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -904,17 +932,18 @@ defmodule Baiji.Organizations do
   """
   def move_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "MoveAccount",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "MoveAccount",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -925,17 +954,18 @@ defmodule Baiji.Organizations do
   """
   def delete_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -986,17 +1016,18 @@ defmodule Baiji.Organizations do
   """
   def attach_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AttachPolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AttachPolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1013,17 +1044,18 @@ defmodule Baiji.Organizations do
   """
   def describe_handshake(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeHandshake",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeHandshake",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1065,17 +1097,18 @@ defmodule Baiji.Organizations do
   """
   def remove_account_from_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveAccountFromOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveAccountFromOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1088,17 +1121,18 @@ defmodule Baiji.Organizations do
   """
   def delete_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeletePolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeletePolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1110,17 +1144,18 @@ defmodule Baiji.Organizations do
   """
   def describe_organization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOrganization",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOrganization",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1133,17 +1168,18 @@ defmodule Baiji.Organizations do
   """
   def update_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdatePolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdatePolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1155,17 +1191,18 @@ defmodule Baiji.Organizations do
   """
   def list_targets_for_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTargetsForPolicy",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTargetsForPolicy",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1179,17 +1216,18 @@ defmodule Baiji.Organizations do
   """
   def list_accounts_for_parent(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAccountsForParent",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAccountsForParent",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1244,17 +1282,18 @@ defmodule Baiji.Organizations do
   """
   def create_account(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "organizations",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateAccount",
+      service:          "organizations",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateAccount",
       
-      target_prefix:  "AWSOrganizationsV20161128",
+      target_prefix:    "AWSOrganizationsV20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "organizations",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   

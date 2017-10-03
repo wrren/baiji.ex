@@ -42,17 +42,18 @@ defmodule Baiji.Rekognition do
   """
   def compare_faces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CompareFaces",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CompareFaces",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -74,17 +75,18 @@ defmodule Baiji.Rekognition do
   """
   def create_collection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCollection",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCollection",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -97,17 +99,18 @@ defmodule Baiji.Rekognition do
   """
   def delete_collection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCollection",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCollection",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -120,17 +123,18 @@ defmodule Baiji.Rekognition do
   """
   def delete_faces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteFaces",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteFaces",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -157,17 +161,18 @@ defmodule Baiji.Rekognition do
   """
   def detect_faces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DetectFaces",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DetectFaces",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -222,17 +227,18 @@ defmodule Baiji.Rekognition do
   """
   def detect_labels(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DetectLabels",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DetectLabels",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -248,17 +254,18 @@ defmodule Baiji.Rekognition do
   """
   def detect_moderation_labels(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DetectModerationLabels",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DetectModerationLabels",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -273,17 +280,18 @@ defmodule Baiji.Rekognition do
   """
   def get_celebrity_info(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetCelebrityInfo",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetCelebrityInfo",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -322,17 +330,18 @@ defmodule Baiji.Rekognition do
   """
   def index_faces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "IndexFaces",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "IndexFaces",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -348,17 +357,18 @@ defmodule Baiji.Rekognition do
   """
   def list_collections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListCollections",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListCollections",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -373,17 +383,18 @@ defmodule Baiji.Rekognition do
   """
   def list_faces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListFaces",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListFaces",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -417,17 +428,18 @@ defmodule Baiji.Rekognition do
   """
   def recognize_celebrities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RecognizeCelebrities",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RecognizeCelebrities",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -454,17 +466,18 @@ defmodule Baiji.Rekognition do
   """
   def search_faces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SearchFaces",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SearchFaces",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   
@@ -497,17 +510,18 @@ defmodule Baiji.Rekognition do
   """
   def search_faces_by_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rekognition",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SearchFacesByImage",
+      service:          "rekognition",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SearchFacesByImage",
       
-      target_prefix:  "RekognitionService",
+      target_prefix:    "RekognitionService",
       
-      type:           :json,
-      version:        "2016-06-27",
-      method:         :post
+      endpoint_prefix:  "rekognition",
+      type:             :json,
+      version:          "2016-06-27",
+      method:           :post
     }
   end
   

@@ -29,15 +29,16 @@ defmodule Baiji.Batch do
   """
   def cancel_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/canceljob",
-      input:          input,
-      options:        options,
-      action:         "CancelJob",
+      service:          "batch",
+      endpoint:         "/v1/canceljob",
+      input:            input,
+      options:          options,
+      action:           "CancelJob",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -47,11 +48,11 @@ defmodule Baiji.Batch do
 
   In a managed compute environment, AWS Batch manages the compute resources
   within the environment, based on the compute resources that you specify.
-  Instances launched into a managed compute environment use the latest Amazon
-  ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand instances in
-  your managed compute environment, or you can use Amazon EC2 Spot instances
-  that only launch when the Spot bid price is below a specified percentage of
-  the On-Demand price.
+  Instances launched into a managed compute environment use a recent,
+  approved version of the Amazon ECS-optimized AMI. You can choose to use
+  Amazon EC2 On-Demand instances in your managed compute environment, or you
+  can use Amazon EC2 Spot instances that only launch when the Spot bid price
+  is below a specified percentage of the On-Demand price.
 
   In an unmanaged compute environment, you can manage your own compute
   resources. This provides more compute resource configuration options, such
@@ -70,15 +71,16 @@ defmodule Baiji.Batch do
   """
   def create_compute_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/createcomputeenvironment",
-      input:          input,
-      options:        options,
-      action:         "CreateComputeEnvironment",
+      service:          "batch",
+      endpoint:         "/v1/createcomputeenvironment",
+      input:            input,
+      options:          options,
+      action:           "CreateComputeEnvironment",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -95,15 +97,16 @@ defmodule Baiji.Batch do
   """
   def create_job_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/createjobqueue",
-      input:          input,
-      options:        options,
-      action:         "CreateJobQueue",
+      service:          "batch",
+      endpoint:         "/v1/createjobqueue",
+      input:            input,
+      options:          options,
+      action:           "CreateJobQueue",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -117,37 +120,39 @@ defmodule Baiji.Batch do
   """
   def delete_compute_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/deletecomputeenvironment",
-      input:          input,
-      options:        options,
-      action:         "DeleteComputeEnvironment",
+      service:          "batch",
+      endpoint:         "/v1/deletecomputeenvironment",
+      input:            input,
+      options:          options,
+      action:           "DeleteComputeEnvironment",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
   @doc """
   Deletes the specified job queue. You must first disable submissions for a
-  queue with the `UpdateJobQueue` operation and terminate any jobs that have
-  not completed with the `TerminateJob`.
+  queue with the `UpdateJobQueue` operation. All jobs in the queue are
+  terminated when you delete a job queue.
 
   It is not necessary to disassociate compute environments from a queue
   before submitting a `DeleteJobQueue` request.
   """
   def delete_job_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/deletejobqueue",
-      input:          input,
-      options:        options,
-      action:         "DeleteJobQueue",
+      service:          "batch",
+      endpoint:         "/v1/deletejobqueue",
+      input:            input,
+      options:          options,
+      action:           "DeleteJobQueue",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -156,15 +161,16 @@ defmodule Baiji.Batch do
   """
   def deregister_job_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/deregisterjobdefinition",
-      input:          input,
-      options:        options,
-      action:         "DeregisterJobDefinition",
+      service:          "batch",
+      endpoint:         "/v1/deregisterjobdefinition",
+      input:            input,
+      options:          options,
+      action:           "DeregisterJobDefinition",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -177,15 +183,16 @@ defmodule Baiji.Batch do
   """
   def describe_compute_environments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/describecomputeenvironments",
-      input:          input,
-      options:        options,
-      action:         "DescribeComputeEnvironments",
+      service:          "batch",
+      endpoint:         "/v1/describecomputeenvironments",
+      input:            input,
+      options:          options,
+      action:           "DescribeComputeEnvironments",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -195,15 +202,16 @@ defmodule Baiji.Batch do
   """
   def describe_job_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/describejobdefinitions",
-      input:          input,
-      options:        options,
-      action:         "DescribeJobDefinitions",
+      service:          "batch",
+      endpoint:         "/v1/describejobdefinitions",
+      input:            input,
+      options:          options,
+      action:           "DescribeJobDefinitions",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -212,15 +220,16 @@ defmodule Baiji.Batch do
   """
   def describe_job_queues(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/describejobqueues",
-      input:          input,
-      options:        options,
-      action:         "DescribeJobQueues",
+      service:          "batch",
+      endpoint:         "/v1/describejobqueues",
+      input:            input,
+      options:          options,
+      action:           "DescribeJobQueues",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -229,33 +238,36 @@ defmodule Baiji.Batch do
   """
   def describe_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/describejobs",
-      input:          input,
-      options:        options,
-      action:         "DescribeJobs",
+      service:          "batch",
+      endpoint:         "/v1/describejobs",
+      input:            input,
+      options:          options,
+      action:           "DescribeJobs",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
   @doc """
   Returns a list of task jobs for a specified job queue. You can filter the
-  results by job status with the `jobStatus` parameter.
+  results by job status with the `jobStatus` parameter. If you do not specify
+  a status, only `RUNNING` jobs are returned.
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/listjobs",
-      input:          input,
-      options:        options,
-      action:         "ListJobs",
+      service:          "batch",
+      endpoint:         "/v1/listjobs",
+      input:            input,
+      options:          options,
+      action:           "ListJobs",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -264,15 +276,16 @@ defmodule Baiji.Batch do
   """
   def register_job_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/registerjobdefinition",
-      input:          input,
-      options:        options,
-      action:         "RegisterJobDefinition",
+      service:          "batch",
+      endpoint:         "/v1/registerjobdefinition",
+      input:            input,
+      options:          options,
+      action:           "RegisterJobDefinition",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -282,15 +295,16 @@ defmodule Baiji.Batch do
   """
   def submit_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/submitjob",
-      input:          input,
-      options:        options,
-      action:         "SubmitJob",
+      service:          "batch",
+      endpoint:         "/v1/submitjob",
+      input:            input,
+      options:          options,
+      action:           "SubmitJob",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -302,15 +316,16 @@ defmodule Baiji.Batch do
   """
   def terminate_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/terminatejob",
-      input:          input,
-      options:        options,
-      action:         "TerminateJob",
+      service:          "batch",
+      endpoint:         "/v1/terminatejob",
+      input:            input,
+      options:          options,
+      action:           "TerminateJob",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -319,15 +334,16 @@ defmodule Baiji.Batch do
   """
   def update_compute_environment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/updatecomputeenvironment",
-      input:          input,
-      options:        options,
-      action:         "UpdateComputeEnvironment",
+      service:          "batch",
+      endpoint:         "/v1/updatecomputeenvironment",
+      input:            input,
+      options:          options,
+      action:           "UpdateComputeEnvironment",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   
@@ -336,15 +352,16 @@ defmodule Baiji.Batch do
   """
   def update_job_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "batch",
-      endpoint:       "/v1/updatejobqueue",
-      input:          input,
-      options:        options,
-      action:         "UpdateJobQueue",
+      service:          "batch",
+      endpoint:         "/v1/updatejobqueue",
+      input:            input,
+      options:          options,
+      action:           "UpdateJobQueue",
       
-      type:           :json,
-      version:        "2016-08-10",
-      method:         :post
+      endpoint_prefix:  "batch",
+      type:             :json,
+      version:          "2016-08-10",
+      method:           :post
     }
   end
   

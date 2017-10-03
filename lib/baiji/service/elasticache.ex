@@ -21,15 +21,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_reserved_cache_nodes_offerings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReservedCacheNodesOfferings",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReservedCacheNodesOfferings",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -45,15 +46,16 @@ defmodule Baiji.Elasticache do
   """
   def create_cache_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCacheSecurityGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCacheSecurityGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -63,15 +65,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_cache_subnet_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCacheSubnetGroups",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCacheSubnetGroups",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -81,15 +84,16 @@ defmodule Baiji.Elasticache do
   """
   def delete_cache_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCacheParameterGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCacheParameterGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -100,15 +104,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_cache_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCacheSecurityGroups",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCacheSecurityGroups",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -125,15 +130,16 @@ defmodule Baiji.Elasticache do
   """
   def modify_replication_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyReplicationGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyReplicationGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -148,15 +154,16 @@ defmodule Baiji.Elasticache do
   """
   def list_allowed_node_type_modifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAllowedNodeTypeModifications",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAllowedNodeTypeModifications",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -168,15 +175,16 @@ defmodule Baiji.Elasticache do
   """
   def create_cache_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCacheSubnetGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCacheSubnetGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -191,15 +199,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvents",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvents",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -208,15 +217,16 @@ defmodule Baiji.Elasticache do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromResource",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromResource",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -232,15 +242,16 @@ defmodule Baiji.Elasticache do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForResource",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForResource",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -275,15 +286,16 @@ defmodule Baiji.Elasticache do
   """
   def create_replication_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateReplicationGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateReplicationGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -310,15 +322,16 @@ defmodule Baiji.Elasticache do
   """
   def create_cache_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCacheParameterGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCacheParameterGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -348,15 +361,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_cache_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCacheClusters",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCacheClusters",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -367,15 +381,16 @@ defmodule Baiji.Elasticache do
   """
   def modify_cache_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyCacheParameterGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyCacheParameterGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -389,15 +404,16 @@ defmodule Baiji.Elasticache do
   """
   def create_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSnapshot",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSnapshot",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -411,15 +427,16 @@ defmodule Baiji.Elasticache do
   """
   def delete_cache_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCacheSubnetGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCacheSubnetGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -433,15 +450,16 @@ defmodule Baiji.Elasticache do
   """
   def delete_cache_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCacheSecurityGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCacheSecurityGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -452,15 +470,16 @@ defmodule Baiji.Elasticache do
   """
   def modify_cache_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyCacheCluster",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyCacheCluster",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -469,15 +488,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_cache_engine_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCacheEngineVersions",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCacheEngineVersions",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -488,15 +508,16 @@ defmodule Baiji.Elasticache do
   """
   def revoke_cache_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RevokeCacheSecurityGroupIngress",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RevokeCacheSecurityGroupIngress",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -582,15 +603,16 @@ defmodule Baiji.Elasticache do
   """
   def copy_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopySnapshot",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopySnapshot",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -608,15 +630,16 @@ defmodule Baiji.Elasticache do
   """
   def reboot_cache_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebootCacheCluster",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebootCacheCluster",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -637,15 +660,16 @@ defmodule Baiji.Elasticache do
   """
   def delete_replication_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteReplicationGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteReplicationGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -655,15 +679,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_reserved_cache_nodes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReservedCacheNodes",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReservedCacheNodes",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -672,15 +697,16 @@ defmodule Baiji.Elasticache do
   """
   def purchase_reserved_cache_nodes_offering(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PurchaseReservedCacheNodesOffering",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PurchaseReservedCacheNodesOffering",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -700,15 +726,16 @@ defmodule Baiji.Elasticache do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToResource",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToResource",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -732,15 +759,16 @@ defmodule Baiji.Elasticache do
   """
   def delete_cache_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCacheCluster",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCacheCluster",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -749,15 +777,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_cache_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCacheParameters",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCacheParameters",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -815,15 +844,16 @@ defmodule Baiji.Elasticache do
   """
   def test_failover(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TestFailover",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TestFailover",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -833,15 +863,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_engine_default_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEngineDefaultParameters",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEngineDefaultParameters",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -852,15 +883,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_cache_parameter_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCacheParameterGroups",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCacheParameterGroups",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -872,15 +904,16 @@ defmodule Baiji.Elasticache do
   """
   def reset_cache_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResetCacheParameterGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResetCacheParameterGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -895,15 +928,16 @@ defmodule Baiji.Elasticache do
   """
   def delete_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSnapshot",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSnapshot",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -919,15 +953,16 @@ defmodule Baiji.Elasticache do
   """
   def authorize_cache_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AuthorizeCacheSecurityGroupIngress",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AuthorizeCacheSecurityGroupIngress",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -943,15 +978,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSnapshots",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSnapshots",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -966,15 +1002,16 @@ defmodule Baiji.Elasticache do
   """
   def describe_replication_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReplicationGroups",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReplicationGroups",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -983,15 +1020,16 @@ defmodule Baiji.Elasticache do
   """
   def modify_cache_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyCacheSubnetGroup",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyCacheSubnetGroup",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   
@@ -1007,15 +1045,16 @@ defmodule Baiji.Elasticache do
   """
   def create_cache_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticache",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCacheCluster",
+      service:          "elasticache",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCacheCluster",
       
-      type:           :xml,
-      version:        "2015-02-02",
-      method:         :post
+      endpoint_prefix:  "elasticache",
+      type:             :xml,
+      version:          "2015-02-02",
+      method:           :post
     }
   end
   

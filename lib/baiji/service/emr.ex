@@ -16,17 +16,18 @@ defmodule Baiji.EMR do
   """
   def add_instance_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddInstanceFleet",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddInstanceFleet",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -35,17 +36,18 @@ defmodule Baiji.EMR do
   """
   def add_instance_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddInstanceGroups",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddInstanceGroups",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -78,17 +80,18 @@ defmodule Baiji.EMR do
   """
   def add_job_flow_steps(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddJobFlowSteps",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddJobFlowSteps",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -101,17 +104,18 @@ defmodule Baiji.EMR do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTags",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTags",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -125,17 +129,18 @@ defmodule Baiji.EMR do
   """
   def cancel_steps(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CancelSteps",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CancelSteps",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -145,17 +150,18 @@ defmodule Baiji.EMR do
   """
   def create_security_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSecurityConfiguration",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSecurityConfiguration",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -164,17 +170,18 @@ defmodule Baiji.EMR do
   """
   def delete_security_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSecurityConfiguration",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSecurityConfiguration",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -185,17 +192,18 @@ defmodule Baiji.EMR do
   """
   def describe_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCluster",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCluster",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -223,17 +231,18 @@ defmodule Baiji.EMR do
   """
   def describe_job_flows(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeJobFlows",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeJobFlows",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -243,17 +252,18 @@ defmodule Baiji.EMR do
   """
   def describe_security_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSecurityConfiguration",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSecurityConfiguration",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -262,17 +272,18 @@ defmodule Baiji.EMR do
   """
   def describe_step(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStep",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStep",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -281,17 +292,18 @@ defmodule Baiji.EMR do
   """
   def list_bootstrap_actions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListBootstrapActions",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListBootstrapActions",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -304,17 +316,18 @@ defmodule Baiji.EMR do
   """
   def list_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListClusters",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListClusters",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -328,17 +341,18 @@ defmodule Baiji.EMR do
   """
   def list_instance_fleets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListInstanceFleets",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListInstanceFleets",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -347,17 +361,18 @@ defmodule Baiji.EMR do
   """
   def list_instance_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListInstanceGroups",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListInstanceGroups",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -369,17 +384,18 @@ defmodule Baiji.EMR do
   """
   def list_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListInstances",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListInstances",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -391,17 +407,18 @@ defmodule Baiji.EMR do
   """
   def list_security_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListSecurityConfigurations",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListSecurityConfigurations",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -411,17 +428,18 @@ defmodule Baiji.EMR do
   """
   def list_steps(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListSteps",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListSteps",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -437,17 +455,18 @@ defmodule Baiji.EMR do
   """
   def modify_instance_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyInstanceFleet",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyInstanceFleet",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -459,17 +478,18 @@ defmodule Baiji.EMR do
   """
   def modify_instance_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyInstanceGroups",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyInstanceGroups",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -481,17 +501,18 @@ defmodule Baiji.EMR do
   """
   def put_auto_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutAutoScalingPolicy",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutAutoScalingPolicy",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -501,17 +522,18 @@ defmodule Baiji.EMR do
   """
   def remove_auto_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveAutoScalingPolicy",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveAutoScalingPolicy",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -526,17 +548,18 @@ defmodule Baiji.EMR do
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTags",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTags",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -577,17 +600,18 @@ defmodule Baiji.EMR do
   """
   def run_job_flow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RunJobFlow",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RunJobFlow",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -615,17 +639,18 @@ defmodule Baiji.EMR do
   """
   def set_termination_protection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetTerminationProtection",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetTerminationProtection",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -639,17 +664,18 @@ defmodule Baiji.EMR do
   """
   def set_visible_to_all_users(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetVisibleToAllUsers",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetVisibleToAllUsers",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   
@@ -667,17 +693,18 @@ defmodule Baiji.EMR do
   """
   def terminate_job_flows(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticmapreduce",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TerminateJobFlows",
+      service:          "elasticmapreduce",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TerminateJobFlows",
       
-      target_prefix:  "ElasticMapReduce",
+      target_prefix:    "ElasticMapReduce",
       
-      type:           :json,
-      version:        "2009-03-31",
-      method:         :post
+      endpoint_prefix:  "elasticmapreduce",
+      type:             :json,
+      version:          "2009-03-31",
+      method:           :post
     }
   end
   

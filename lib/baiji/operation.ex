@@ -6,6 +6,7 @@ defmodule Baiji.Operation do
             type:               :unknown,     # Action type (xml, json, rest-json, rest-xml, etc.)
             endpoint:           nil,          # API Endpoint to contact in order to execute the operation
             target_prefix:      nil,          # API Target name prefix
+            endpoint_prefix:    nil,          # API Endpoint Prefix
             method:             :unknown,     # HTTP Method
             access_key_id:      nil,          # AWS access key ID
             secret_access_key:  nil,          # AWS secret access key

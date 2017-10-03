@@ -156,15 +156,16 @@ defmodule Baiji.STS do
   """
   def assume_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssumeRole",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssumeRole",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   
@@ -252,15 +253,16 @@ defmodule Baiji.STS do
   """
   def assume_role_with_s_a_m_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssumeRoleWithSAML",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssumeRoleWithSAML",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   
@@ -371,15 +373,16 @@ defmodule Baiji.STS do
   """
   def assume_role_with_web_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssumeRoleWithWebIdentity",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssumeRoleWithWebIdentity",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   
@@ -423,15 +426,16 @@ defmodule Baiji.STS do
   """
   def decode_authorization_message(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DecodeAuthorizationMessage",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DecodeAuthorizationMessage",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   
@@ -441,15 +445,16 @@ defmodule Baiji.STS do
   """
   def get_caller_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetCallerIdentity",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetCallerIdentity",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   
@@ -544,15 +549,16 @@ defmodule Baiji.STS do
   """
   def get_federation_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetFederationToken",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetFederationToken",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   
@@ -611,15 +617,16 @@ defmodule Baiji.STS do
   """
   def get_session_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sts",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetSessionToken",
+      service:          "sts",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetSessionToken",
       
-      type:           :xml,
-      version:        "2011-06-15",
-      method:         :post
+      endpoint_prefix:  "sts",
+      type:             :xml,
+      version:          "2011-06-15",
+      method:           :post
     }
   end
   

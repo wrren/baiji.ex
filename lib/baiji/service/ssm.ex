@@ -24,17 +24,18 @@ defmodule Baiji.SSM do
   """
   def get_automation_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetAutomationExecution",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetAutomationExecution",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -44,17 +45,18 @@ defmodule Baiji.SSM do
   """
   def update_managed_instance_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateManagedInstanceRole",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateManagedInstanceRole",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -63,17 +65,18 @@ defmodule Baiji.SSM do
   """
   def describe_patch_baselines(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePatchBaselines",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePatchBaselines",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -82,17 +85,18 @@ defmodule Baiji.SSM do
   """
   def register_target_with_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterTargetWithMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterTargetWithMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -101,17 +105,18 @@ defmodule Baiji.SSM do
   """
   def update_document_default_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDocumentDefaultVersion",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDocumentDefaultVersion",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -121,17 +126,18 @@ defmodule Baiji.SSM do
   """
   def get_command_invocation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetCommandInvocation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetCommandInvocation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -140,17 +146,18 @@ defmodule Baiji.SSM do
   """
   def delete_parameter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteParameter",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteParameter",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -163,17 +170,18 @@ defmodule Baiji.SSM do
   """
   def list_command_invocations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListCommandInvocations",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListCommandInvocations",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -182,17 +190,18 @@ defmodule Baiji.SSM do
   """
   def get_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetPatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetPatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -203,17 +212,18 @@ defmodule Baiji.SSM do
   """
   def get_deployable_patch_snapshot_for_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDeployablePatchSnapshotForInstance",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDeployablePatchSnapshotForInstance",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -222,17 +232,18 @@ defmodule Baiji.SSM do
   """
   def describe_effective_instance_associations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEffectiveInstanceAssociations",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEffectiveInstanceAssociations",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -241,17 +252,18 @@ defmodule Baiji.SSM do
   """
   def deregister_target_from_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterTargetFromMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterTargetFromMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -260,17 +272,18 @@ defmodule Baiji.SSM do
   """
   def get_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDocument",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDocument",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -298,17 +311,18 @@ defmodule Baiji.SSM do
   """
   def update_maintenance_window_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateMaintenanceWindowTask",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateMaintenanceWindowTask",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -319,17 +333,18 @@ defmodule Baiji.SSM do
   """
   def describe_activations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeActivations",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeActivations",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -338,17 +353,18 @@ defmodule Baiji.SSM do
   """
   def get_inventory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetInventory",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetInventory",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -357,17 +373,18 @@ defmodule Baiji.SSM do
   """
   def describe_automation_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAutomationExecutions",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAutomationExecutions",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -376,17 +393,18 @@ defmodule Baiji.SSM do
   """
   def register_task_with_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterTaskWithMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterTaskWithMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -395,17 +413,18 @@ defmodule Baiji.SSM do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromResource",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromResource",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -414,17 +433,18 @@ defmodule Baiji.SSM do
   """
   def delete_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -433,17 +453,18 @@ defmodule Baiji.SSM do
   """
   def register_default_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterDefaultPatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterDefaultPatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -454,17 +475,18 @@ defmodule Baiji.SSM do
   """
   def get_maintenance_window_execution_task_invocation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetMaintenanceWindowExecutionTaskInvocation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetMaintenanceWindowExecutionTaskInvocation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -473,17 +495,18 @@ defmodule Baiji.SSM do
   """
   def list_document_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDocumentVersions",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDocumentVersions",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -492,17 +515,18 @@ defmodule Baiji.SSM do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForResource",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForResource",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -517,17 +541,18 @@ defmodule Baiji.SSM do
   """
   def describe_instance_information(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstanceInformation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstanceInformation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -538,17 +563,18 @@ defmodule Baiji.SSM do
   """
   def list_resource_compliance_summaries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListResourceComplianceSummaries",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListResourceComplianceSummaries",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -573,17 +599,18 @@ defmodule Baiji.SSM do
   """
   def update_maintenance_window_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateMaintenanceWindowTarget",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateMaintenanceWindowTarget",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -592,17 +619,18 @@ defmodule Baiji.SSM do
   """
   def get_parameter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetParameter",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetParameter",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -615,17 +643,18 @@ defmodule Baiji.SSM do
   """
   def put_compliance_items(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutComplianceItems",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutComplianceItems",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -635,17 +664,18 @@ defmodule Baiji.SSM do
   """
   def describe_instance_patches(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstancePatches",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstancePatches",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -655,17 +685,18 @@ defmodule Baiji.SSM do
   """
   def update_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateAssociation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateAssociation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -674,17 +705,18 @@ defmodule Baiji.SSM do
   """
   def get_parameter_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetParameterHistory",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetParameterHistory",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -693,17 +725,18 @@ defmodule Baiji.SSM do
   """
   def describe_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDocument",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDocument",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -712,17 +745,18 @@ defmodule Baiji.SSM do
   """
   def update_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDocument",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDocument",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -731,17 +765,18 @@ defmodule Baiji.SSM do
   """
   def describe_available_patches(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAvailablePatches",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAvailablePatches",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -752,17 +787,18 @@ defmodule Baiji.SSM do
   """
   def get_default_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDefaultPatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDefaultPatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -774,17 +810,18 @@ defmodule Baiji.SSM do
   """
   def delete_activation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteActivation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteActivation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -798,17 +835,18 @@ defmodule Baiji.SSM do
   """
   def delete_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDocument",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDocument",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -820,17 +858,18 @@ defmodule Baiji.SSM do
   """
   def describe_document_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDocumentPermission",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDocumentPermission",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -839,17 +878,18 @@ defmodule Baiji.SSM do
   """
   def list_association_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAssociationVersions",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAssociationVersions",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -859,17 +899,18 @@ defmodule Baiji.SSM do
   """
   def list_associations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAssociations",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAssociations",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -878,17 +919,18 @@ defmodule Baiji.SSM do
   """
   def put_parameter(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutParameter",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutParameter",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -897,17 +939,18 @@ defmodule Baiji.SSM do
   """
   def list_commands(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListCommands",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListCommands",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -918,17 +961,18 @@ defmodule Baiji.SSM do
   """
   def cancel_command(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CancelCommand",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CancelCommand",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -939,17 +983,18 @@ defmodule Baiji.SSM do
   """
   def put_inventory(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutInventory",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutInventory",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -958,17 +1003,18 @@ defmodule Baiji.SSM do
   """
   def describe_patch_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePatchGroups",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePatchGroups",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -978,17 +1024,18 @@ defmodule Baiji.SSM do
   """
   def get_inventory_schema(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetInventorySchema",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetInventorySchema",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -997,17 +1044,18 @@ defmodule Baiji.SSM do
   """
   def get_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1017,17 +1065,18 @@ defmodule Baiji.SSM do
   """
   def get_patch_baseline_for_patch_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetPatchBaselineForPatchGroup",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetPatchBaselineForPatchGroup",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1037,17 +1086,18 @@ defmodule Baiji.SSM do
   """
   def update_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1056,17 +1106,18 @@ defmodule Baiji.SSM do
   """
   def delete_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeletePatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeletePatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1078,17 +1129,18 @@ defmodule Baiji.SSM do
   """
   def list_compliance_summaries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListComplianceSummaries",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListComplianceSummaries",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1097,17 +1149,18 @@ defmodule Baiji.SSM do
   """
   def list_documents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDocuments",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDocuments",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1117,17 +1170,18 @@ defmodule Baiji.SSM do
   """
   def update_association_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateAssociationStatus",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateAssociationStatus",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1137,17 +1191,18 @@ defmodule Baiji.SSM do
   """
   def describe_maintenance_window_execution_task_invocations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMaintenanceWindowExecutionTaskInvocations",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMaintenanceWindowExecutionTaskInvocations",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1157,17 +1212,18 @@ defmodule Baiji.SSM do
   """
   def delete_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteParameters",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteParameters",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1176,17 +1232,18 @@ defmodule Baiji.SSM do
   """
   def describe_maintenance_windows(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMaintenanceWindows",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMaintenanceWindows",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1203,17 +1260,18 @@ defmodule Baiji.SSM do
   """
   def create_association_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateAssociationBatch",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateAssociationBatch",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1222,17 +1280,18 @@ defmodule Baiji.SSM do
   """
   def describe_maintenance_window_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMaintenanceWindowTargets",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMaintenanceWindowTargets",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1242,17 +1301,18 @@ defmodule Baiji.SSM do
   """
   def get_maintenance_window_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetMaintenanceWindowExecution",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetMaintenanceWindowExecution",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1261,17 +1321,18 @@ defmodule Baiji.SSM do
   """
   def list_inventory_entries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListInventoryEntries",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListInventoryEntries",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1281,17 +1342,18 @@ defmodule Baiji.SSM do
   """
   def describe_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAssociation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAssociation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1312,17 +1374,18 @@ defmodule Baiji.SSM do
   """
   def create_resource_data_sync(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateResourceDataSync",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateResourceDataSync",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1351,17 +1414,18 @@ defmodule Baiji.SSM do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToResource",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToResource",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1376,17 +1440,18 @@ defmodule Baiji.SSM do
   """
   def delete_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteAssociation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteAssociation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1405,17 +1470,18 @@ defmodule Baiji.SSM do
   """
   def get_parameters_by_path(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetParametersByPath",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetParametersByPath",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1425,17 +1491,18 @@ defmodule Baiji.SSM do
   """
   def send_automation_signal(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SendAutomationSignal",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SendAutomationSignal",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1449,17 +1516,18 @@ defmodule Baiji.SSM do
   """
   def create_activation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateActivation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateActivation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1471,17 +1539,18 @@ defmodule Baiji.SSM do
   """
   def create_document(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDocument",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDocument",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1490,17 +1559,18 @@ defmodule Baiji.SSM do
   """
   def describe_maintenance_window_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMaintenanceWindowTasks",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMaintenanceWindowTasks",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1512,17 +1582,18 @@ defmodule Baiji.SSM do
   """
   def list_compliance_items(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListComplianceItems",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListComplianceItems",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1533,17 +1604,18 @@ defmodule Baiji.SSM do
   """
   def describe_effective_patches_for_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEffectivePatchesForPatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEffectivePatchesForPatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1552,17 +1624,18 @@ defmodule Baiji.SSM do
   """
   def describe_instance_patch_states(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstancePatchStates",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstancePatchStates",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1573,17 +1646,18 @@ defmodule Baiji.SSM do
   """
   def deregister_managed_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterManagedInstance",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterManagedInstance",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1593,17 +1667,18 @@ defmodule Baiji.SSM do
   """
   def describe_instance_patch_states_for_patch_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstancePatchStatesForPatchGroup",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstancePatchStatesForPatchGroup",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1612,17 +1687,18 @@ defmodule Baiji.SSM do
   """
   def describe_patch_group_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePatchGroupState",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePatchGroupState",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1631,17 +1707,18 @@ defmodule Baiji.SSM do
   """
   def deregister_patch_baseline_for_patch_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterPatchBaselineForPatchGroup",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterPatchBaselineForPatchGroup",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1651,17 +1728,18 @@ defmodule Baiji.SSM do
   """
   def get_maintenance_window_execution_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetMaintenanceWindowExecutionTask",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetMaintenanceWindowExecutionTask",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1680,17 +1758,18 @@ defmodule Baiji.SSM do
   """
   def list_resource_data_sync(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListResourceDataSync",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListResourceDataSync",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1699,17 +1778,18 @@ defmodule Baiji.SSM do
   """
   def send_command(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SendCommand",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SendCommand",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1719,17 +1799,18 @@ defmodule Baiji.SSM do
   """
   def update_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdatePatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdatePatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1746,17 +1827,18 @@ defmodule Baiji.SSM do
   """
   def create_association(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateAssociation",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateAssociation",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1765,17 +1847,18 @@ defmodule Baiji.SSM do
   """
   def create_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1792,17 +1875,18 @@ defmodule Baiji.SSM do
   """
   def describe_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeParameters",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeParameters",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1811,17 +1895,18 @@ defmodule Baiji.SSM do
   """
   def start_automation_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartAutomationExecution",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartAutomationExecution",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1830,17 +1915,18 @@ defmodule Baiji.SSM do
   """
   def deregister_task_from_maintenance_window(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterTaskFromMaintenanceWindow",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterTaskFromMaintenanceWindow",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1852,17 +1938,18 @@ defmodule Baiji.SSM do
   """
   def modify_document_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDocumentPermission",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDocumentPermission",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1873,17 +1960,18 @@ defmodule Baiji.SSM do
   """
   def describe_maintenance_window_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMaintenanceWindowExecutions",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMaintenanceWindowExecutions",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1892,17 +1980,18 @@ defmodule Baiji.SSM do
   """
   def register_patch_baseline_for_patch_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterPatchBaselineForPatchGroup",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterPatchBaselineForPatchGroup",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1911,17 +2000,18 @@ defmodule Baiji.SSM do
   """
   def get_maintenance_window_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetMaintenanceWindowTask",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetMaintenanceWindowTask",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1930,17 +2020,18 @@ defmodule Baiji.SSM do
   """
   def create_patch_baseline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreatePatchBaseline",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreatePatchBaseline",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1949,17 +2040,18 @@ defmodule Baiji.SSM do
   """
   def describe_instance_associations_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstanceAssociationsStatus",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstanceAssociationsStatus",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1968,17 +2060,18 @@ defmodule Baiji.SSM do
   """
   def get_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetParameters",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetParameters",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -1987,17 +2080,18 @@ defmodule Baiji.SSM do
   """
   def stop_automation_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopAutomationExecution",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopAutomationExecution",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -2009,17 +2103,18 @@ defmodule Baiji.SSM do
   """
   def delete_resource_data_sync(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteResourceDataSync",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteResourceDataSync",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   
@@ -2029,17 +2124,18 @@ defmodule Baiji.SSM do
   """
   def describe_maintenance_window_execution_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ssm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMaintenanceWindowExecutionTasks",
+      service:          "ssm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMaintenanceWindowExecutionTasks",
       
-      target_prefix:  "AmazonSSM",
+      target_prefix:    "AmazonSSM",
       
-      type:           :json,
-      version:        "2014-11-06",
-      method:         :post
+      endpoint_prefix:  "ssm",
+      type:             :json,
+      version:          "2014-11-06",
+      method:           :post
     }
   end
   

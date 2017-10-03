@@ -6,6 +6,7 @@ defmodule Baiji.Request.Sign do
   alias Baiji.{
     Core.Utilities,
     Request,
+    Operation,
     Request.Sign
   }
 
@@ -30,12 +31,12 @@ defmodule Baiji.Request.Sign do
   def v4(%Request{} = request, time) do   
     %Sign{request: request, time: time}
     |> add_date_header
+    |> add_security_token
     |> signed_headers
     |> canonical_request
     |> string_to_sign
     |> signing_key
     |> signature
-    |> add_security_token
     |> add_authorization_header
     |> Map.get(:request)
   end
@@ -123,8 +124,10 @@ defmodule Baiji.Request.Sign do
   Generate a signed headers string by extracting header names, converting them to lower-case and 
   joining them with semicolons.
   """
-  def signed_headers(%Sign{request: %Request{headers: headers}} = sign) do
-    %{sign | signed_headers: signed_headers(headers)}
+  def signed_headers(%Sign{request: %Request{headers: headers, operation: op}} = sign) do
+    signed = signed_headers(headers)
+    Operation.debug(op, "Signed Headers: #{signed}")
+    %{sign | signed_headers: signed}
   end
   def signed_headers(headers) when is_list(headers) do
     headers
@@ -150,13 +153,15 @@ defmodule Baiji.Request.Sign do
   Generate a string to sign
   """
   def string_to_sign(%Sign{canonical_request: req, time: time, request: %Request{operation: op}} = sign) do
-    %{sign | string_to_sign: string_to_sign(time, op.region, op.service, req)}
+    sts = string_to_sign(time, op.region, op.service, req)
+    Operation.debug(op, "String to Sign: #{inspect sts}")
+    %{sign | string_to_sign: sts}
   end
   def string_to_sign(time, region, service, canonical_request) do      
     Enum.join([
       "AWS4-HMAC-SHA256\n",
       Timex.format!(time, "{YYYY}{0M}{0D}T{h24}{m}{s}Z") <> "\n",
-      credential_scope(time, region, service),
+      credential_scope(time, region, service) <> "\n",
       Utilities.hexdigest(Utilities.sha256(canonical_request))
     ])
   end
@@ -169,7 +174,7 @@ defmodule Baiji.Request.Sign do
       Timex.format!(time, "{YYYY}{0M}{0D}"),
       region,
       service,
-      "aws4_request\n"
+      "aws4_request"
     ], "/")
   end
 

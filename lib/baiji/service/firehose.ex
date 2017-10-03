@@ -71,17 +71,18 @@ defmodule Baiji.Firehose do
   """
   def create_delivery_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDeliveryStream",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDeliveryStream",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -102,17 +103,18 @@ defmodule Baiji.Firehose do
   """
   def delete_delivery_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDeliveryStream",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDeliveryStream",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -124,17 +126,18 @@ defmodule Baiji.Firehose do
   """
   def describe_delivery_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDeliveryStream",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDeliveryStream",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -143,17 +146,18 @@ No Documentation Availabale
   """
   def get_kinesis_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetKinesisStream",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetKinesisStream",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -171,17 +175,18 @@ No Documentation Availabale
   """
   def list_delivery_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDeliveryStreams",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDeliveryStreams",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -224,17 +229,18 @@ No Documentation Availabale
   """
   def put_record(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutRecord",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutRecord",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -304,17 +310,18 @@ No Documentation Availabale
   """
   def put_record_batch(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutRecordBatch",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutRecordBatch",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   
@@ -356,17 +363,18 @@ No Documentation Availabale
   """
   def update_destination(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "firehose",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDestination",
+      service:          "firehose",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDestination",
       
-      target_prefix:  "Firehose_20150804",
+      target_prefix:    "Firehose_20150804",
       
-      type:           :json,
-      version:        "2015-08-04",
-      method:         :post
+      endpoint_prefix:  "firehose",
+      type:             :json,
+      version:          "2015-08-04",
+      method:           :post
     }
   end
   

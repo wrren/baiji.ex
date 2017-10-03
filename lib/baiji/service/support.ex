@@ -73,17 +73,18 @@ defmodule Baiji.Support do
   """
   def add_attachments_to_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddAttachmentsToSet",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddAttachmentsToSet",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -101,17 +102,18 @@ defmodule Baiji.Support do
   """
   def add_communication_to_case(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddCommunicationToCase",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddCommunicationToCase",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -169,17 +171,18 @@ defmodule Baiji.Support do
   """
   def create_case(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCase",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCase",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -192,17 +195,18 @@ defmodule Baiji.Support do
   """
   def describe_attachment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAttachment",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAttachment",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -227,17 +231,18 @@ defmodule Baiji.Support do
   """
   def describe_cases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCases",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCases",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -257,17 +262,18 @@ defmodule Baiji.Support do
   """
   def describe_communications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCommunications",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCommunications",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -288,17 +294,18 @@ defmodule Baiji.Support do
   """
   def describe_services(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeServices",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeServices",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -309,17 +316,18 @@ defmodule Baiji.Support do
   """
   def describe_severity_levels(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSeverityLevels",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSeverityLevels",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -337,17 +345,18 @@ defmodule Baiji.Support do
   """
   def describe_trusted_advisor_check_refresh_statuses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTrustedAdvisorCheckRefreshStatuses",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTrustedAdvisorCheckRefreshStatuses",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -378,17 +387,18 @@ defmodule Baiji.Support do
   """
   def describe_trusted_advisor_check_result(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTrustedAdvisorCheckResult",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTrustedAdvisorCheckResult",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -401,17 +411,18 @@ defmodule Baiji.Support do
   """
   def describe_trusted_advisor_check_summaries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTrustedAdvisorCheckSummaries",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTrustedAdvisorCheckSummaries",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -423,17 +434,18 @@ defmodule Baiji.Support do
   """
   def describe_trusted_advisor_checks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTrustedAdvisorChecks",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTrustedAdvisorChecks",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -461,17 +473,18 @@ defmodule Baiji.Support do
   """
   def refresh_trusted_advisor_check(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RefreshTrustedAdvisorCheck",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RefreshTrustedAdvisorCheck",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   
@@ -481,17 +494,18 @@ defmodule Baiji.Support do
   """
   def resolve_case(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "support",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResolveCase",
+      service:          "support",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResolveCase",
       
-      target_prefix:  "AWSSupport_20130415",
+      target_prefix:    "AWSSupport_20130415",
       
-      type:           :json,
-      version:        "2013-04-15",
-      method:         :post
+      endpoint_prefix:  "support",
+      type:             :json,
+      version:          "2013-04-15",
+      method:           :post
     }
   end
   

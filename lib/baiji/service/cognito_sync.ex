@@ -37,15 +37,16 @@ defmodule Baiji.CognitoSync do
   """
   def bulk_publish(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/bulkpublish",
-      input:          input,
-      options:        options,
-      action:         "BulkPublish",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/bulkpublish",
+      input:            input,
+      options:          options,
+      action:           "BulkPublish",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   
@@ -60,15 +61,16 @@ defmodule Baiji.CognitoSync do
   """
   def delete_dataset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteDataset",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteDataset",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :delete
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :delete
     }
   end
   
@@ -84,15 +86,16 @@ defmodule Baiji.CognitoSync do
   """
   def describe_dataset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}",
-      input:          input,
-      options:        options,
-      action:         "DescribeDataset",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}",
+      input:            input,
+      options:          options,
+      action:           "DescribeDataset",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -105,15 +108,16 @@ defmodule Baiji.CognitoSync do
   """
   def describe_identity_pool_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}",
-      input:          input,
-      options:        options,
-      action:         "DescribeIdentityPoolUsage",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}",
+      input:            input,
+      options:          options,
+      action:           "DescribeIdentityPoolUsage",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -126,15 +130,16 @@ defmodule Baiji.CognitoSync do
   """
   def describe_identity_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}",
-      input:          input,
-      options:        options,
-      action:         "DescribeIdentityUsage",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}",
+      input:            input,
+      options:          options,
+      action:           "DescribeIdentityUsage",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -146,15 +151,16 @@ defmodule Baiji.CognitoSync do
   """
   def get_bulk_publish_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/getBulkPublishDetails",
-      input:          input,
-      options:        options,
-      action:         "GetBulkPublishDetails",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/getBulkPublishDetails",
+      input:            input,
+      options:          options,
+      action:           "GetBulkPublishDetails",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   
@@ -167,15 +173,16 @@ defmodule Baiji.CognitoSync do
   """
   def get_cognito_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/events",
-      input:          input,
-      options:        options,
-      action:         "GetCognitoEvents",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/events",
+      input:            input,
+      options:          options,
+      action:           "GetCognitoEvents",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -187,15 +194,16 @@ defmodule Baiji.CognitoSync do
   """
   def get_identity_pool_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/configuration",
-      input:          input,
-      options:        options,
-      action:         "GetIdentityPoolConfiguration",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/configuration",
+      input:            input,
+      options:          options,
+      action:           "GetIdentityPoolConfiguration",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -210,15 +218,16 @@ defmodule Baiji.CognitoSync do
   """
   def list_datasets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets",
-      input:          input,
-      options:        options,
-      action:         "ListDatasets",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets",
+      input:            input,
+      options:          options,
+      action:           "ListDatasets",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -231,15 +240,16 @@ defmodule Baiji.CognitoSync do
   """
   def list_identity_pool_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools",
-      input:          input,
-      options:        options,
-      action:         "ListIdentityPoolUsage",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools",
+      input:            input,
+      options:          options,
+      action:           "ListIdentityPoolUsage",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -255,15 +265,16 @@ defmodule Baiji.CognitoSync do
   """
   def list_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/records",
-      input:          input,
-      options:        options,
-      action:         "ListRecords",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/records",
+      input:            input,
+      options:          options,
+      action:           "ListRecords",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :get
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :get
     }
   end
   
@@ -275,15 +286,16 @@ defmodule Baiji.CognitoSync do
   """
   def register_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identity/{IdentityId}/device",
-      input:          input,
-      options:        options,
-      action:         "RegisterDevice",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identity/{IdentityId}/device",
+      input:            input,
+      options:          options,
+      action:           "RegisterDevice",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   
@@ -298,15 +310,16 @@ defmodule Baiji.CognitoSync do
   """
   def set_cognito_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/events",
-      input:          input,
-      options:        options,
-      action:         "SetCognitoEvents",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/events",
+      input:            input,
+      options:          options,
+      action:           "SetCognitoEvents",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   
@@ -318,15 +331,16 @@ defmodule Baiji.CognitoSync do
   """
   def set_identity_pool_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/configuration",
-      input:          input,
-      options:        options,
-      action:         "SetIdentityPoolConfiguration",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/configuration",
+      input:            input,
+      options:          options,
+      action:           "SetIdentityPoolConfiguration",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   
@@ -339,15 +353,16 @@ defmodule Baiji.CognitoSync do
   """
   def subscribe_to_dataset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/subscriptions/{DeviceId}",
-      input:          input,
-      options:        options,
-      action:         "SubscribeToDataset",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/subscriptions/{DeviceId}",
+      input:            input,
+      options:          options,
+      action:           "SubscribeToDataset",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   
@@ -360,15 +375,16 @@ defmodule Baiji.CognitoSync do
   """
   def unsubscribe_from_dataset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/subscriptions/{DeviceId}",
-      input:          input,
-      options:        options,
-      action:         "UnsubscribeFromDataset",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}/subscriptions/{DeviceId}",
+      input:            input,
+      options:          options,
+      action:           "UnsubscribeFromDataset",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :delete
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :delete
     }
   end
   
@@ -394,15 +410,16 @@ defmodule Baiji.CognitoSync do
   """
   def update_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-sync",
-      endpoint:       "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}",
-      input:          input,
-      options:        options,
-      action:         "UpdateRecords",
+      service:          "cognito-sync",
+      endpoint:         "/identitypools/{IdentityPoolId}/identities/{IdentityId}/datasets/{DatasetName}",
+      input:            input,
+      options:          options,
+      action:           "UpdateRecords",
       
-      type:           :json,
-      version:        "2014-06-30",
-      method:         :post
+      endpoint_prefix:  "cognito-sync",
+      type:             :json,
+      version:          "2014-06-30",
+      method:           :post
     }
   end
   

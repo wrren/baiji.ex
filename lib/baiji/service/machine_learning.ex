@@ -10,17 +10,18 @@ defmodule Baiji.MachineLearning do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTags",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTags",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -42,17 +43,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_batch_prediction(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateBatchPrediction",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateBatchPrediction",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -76,17 +78,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_data_source_from_r_d_s(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDataSourceFromRDS",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDataSourceFromRDS",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -133,17 +136,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_data_source_from_redshift(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDataSourceFromRedshift",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDataSourceFromRedshift",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -182,17 +186,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_data_source_from_s3(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDataSourceFromS3",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDataSourceFromS3",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -217,17 +222,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_evaluation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateEvaluation",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateEvaluation",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -253,17 +259,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_m_l_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateMLModel",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateMLModel",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -274,17 +281,18 @@ defmodule Baiji.MachineLearning do
   """
   def create_realtime_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateRealtimeEndpoint",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateRealtimeEndpoint",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -300,17 +308,18 @@ defmodule Baiji.MachineLearning do
   """
   def delete_batch_prediction(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteBatchPrediction",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteBatchPrediction",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -326,17 +335,18 @@ defmodule Baiji.MachineLearning do
   """
   def delete_data_source(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDataSource",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDataSource",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -354,17 +364,18 @@ defmodule Baiji.MachineLearning do
   """
   def delete_evaluation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteEvaluation",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteEvaluation",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -378,17 +389,18 @@ defmodule Baiji.MachineLearning do
   """
   def delete_m_l_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteMLModel",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteMLModel",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -397,17 +409,18 @@ defmodule Baiji.MachineLearning do
   """
   def delete_realtime_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteRealtimeEndpoint",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteRealtimeEndpoint",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -419,17 +432,18 @@ defmodule Baiji.MachineLearning do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTags",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTags",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -439,17 +453,18 @@ defmodule Baiji.MachineLearning do
   """
   def describe_batch_predictions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeBatchPredictions",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeBatchPredictions",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -459,17 +474,18 @@ defmodule Baiji.MachineLearning do
   """
   def describe_data_sources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDataSources",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDataSources",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -479,17 +495,18 @@ defmodule Baiji.MachineLearning do
   """
   def describe_evaluations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvaluations",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvaluations",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -498,17 +515,18 @@ defmodule Baiji.MachineLearning do
   """
   def describe_m_l_models(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMLModels",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMLModels",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -517,17 +535,18 @@ defmodule Baiji.MachineLearning do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTags",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTags",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -537,17 +556,18 @@ defmodule Baiji.MachineLearning do
   """
   def get_batch_prediction(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetBatchPrediction",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetBatchPrediction",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -561,17 +581,18 @@ defmodule Baiji.MachineLearning do
   """
   def get_data_source(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDataSource",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDataSource",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -581,17 +602,18 @@ defmodule Baiji.MachineLearning do
   """
   def get_evaluation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetEvaluation",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetEvaluation",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -603,17 +625,18 @@ defmodule Baiji.MachineLearning do
   """
   def get_m_l_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetMLModel",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetMLModel",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -628,17 +651,18 @@ defmodule Baiji.MachineLearning do
   """
   def predict(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "Predict",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "Predict",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -650,17 +674,18 @@ defmodule Baiji.MachineLearning do
   """
   def update_batch_prediction(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateBatchPrediction",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateBatchPrediction",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -672,17 +697,18 @@ defmodule Baiji.MachineLearning do
   """
   def update_data_source(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDataSource",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDataSource",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -694,17 +720,18 @@ defmodule Baiji.MachineLearning do
   """
   def update_evaluation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateEvaluation",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateEvaluation",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   
@@ -716,17 +743,18 @@ defmodule Baiji.MachineLearning do
   """
   def update_m_l_model(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "machinelearning",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateMLModel",
+      service:          "machinelearning",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateMLModel",
       
-      target_prefix:  "AmazonML_20141212",
+      target_prefix:    "AmazonML_20141212",
       
-      type:           :json,
-      version:        "2014-12-12",
-      method:         :post
+      endpoint_prefix:  "machinelearning",
+      type:             :json,
+      version:          "2014-12-12",
+      method:           :post
     }
   end
   

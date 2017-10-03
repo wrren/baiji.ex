@@ -15,17 +15,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def describe_resource_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeResourceServer",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeResourceServer",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -34,17 +35,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_identity_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteIdentityProvider",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteIdentityProvider",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -55,17 +57,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_update_device_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminUpdateDeviceStatus",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminUpdateDeviceStatus",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -74,17 +77,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def change_password(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ChangePassword",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ChangePassword",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -95,17 +99,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_user_global_sign_out(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminUserGlobalSignOut",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminUserGlobalSignOut",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -116,17 +121,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_remove_user_from_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminRemoveUserFromGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminRemoveUserFromGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -136,17 +142,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def describe_user_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeUserPool",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeUserPool",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -156,17 +163,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def confirm_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ConfirmDevice",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ConfirmDevice",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -175,17 +183,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def respond_to_auth_challenge(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RespondToAuthChallenge",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RespondToAuthChallenge",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -194,17 +203,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def stop_user_import_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopUserImportJob",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopUserImportJob",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -213,17 +223,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_identity_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateIdentityProvider",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateIdentityProvider",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -232,17 +243,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_user_pools(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListUserPools",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListUserPools",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -251,17 +263,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_user_pool_clients(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListUserPoolClients",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListUserPoolClients",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -270,17 +283,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_device_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDeviceStatus",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDeviceStatus",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -291,17 +305,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_set_user_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminSetUserSettings",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminSetUserSettings",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -312,17 +327,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_initiate_auth(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminInitiateAuth",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminInitiateAuth",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -331,17 +347,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -350,17 +367,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_user_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateUserPool",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateUserPool",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -369,17 +387,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_user_attribute_verification_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetUserAttributeVerificationCode",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetUserAttributeVerificationCode",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -390,17 +409,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_list_groups_for_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminListGroupsForUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminListGroupsForUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -418,17 +438,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_update_user_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminUpdateUserAttributes",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminUpdateUserAttributes",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -439,17 +460,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_add_user_to_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminAddUserToGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminAddUserToGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -458,17 +480,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_resource_servers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListResourceServers",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListResourceServers",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -477,17 +500,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_identity_providers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListIdentityProviders",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListIdentityProviders",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -528,17 +552,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_disable_provider_for_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminDisableProviderForUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminDisableProviderForUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -549,17 +574,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_delete_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminDeleteUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminDeleteUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -570,17 +596,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_forget_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminForgetDevice",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminForgetDevice",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -592,17 +619,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_get_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminGetUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminGetUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -614,17 +642,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_delete_user_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminDeleteUserAttributes",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminDeleteUserAttributes",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -634,17 +663,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def resend_confirmation_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResendConfirmationCode",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResendConfirmationCode",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -654,17 +684,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_c_s_v_header(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetCSVHeader",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetCSVHeader",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -675,17 +706,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -694,17 +726,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_user_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteUserAttributes",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteUserAttributes",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -720,17 +753,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_create_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminCreateUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminCreateUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -739,17 +773,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_user_pool_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteUserPoolClient",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteUserPoolClient",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -758,17 +793,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDevice",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDevice",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -777,17 +813,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_user_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateUserAttributes",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateUserAttributes",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -796,17 +833,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_user_import_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListUserImportJobs",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListUserImportJobs",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -816,17 +854,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_user_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateUserPool",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateUserPool",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -835,17 +874,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_user_import_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateUserImportJob",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateUserImportJob",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -854,17 +894,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_devices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDevices",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDevices",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -873,17 +914,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_user_pool_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateUserPoolClient",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateUserPoolClient",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -894,17 +936,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_respond_to_auth_challenge(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminRespondToAuthChallenge",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminRespondToAuthChallenge",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -926,17 +969,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def set_u_i_customization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetUICustomization",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetUICustomization",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -947,17 +991,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -968,17 +1013,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_list_devices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminListDevices",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminListDevices",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -987,17 +1033,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def start_user_import_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartUserImportJob",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartUserImportJob",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1006,17 +1053,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_resource_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteResourceServer",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteResourceServer",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1025,17 +1073,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def initiate_auth(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "InitiateAuth",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "InitiateAuth",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1044,17 +1093,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1063,17 +1113,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_user_pool_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateUserPoolDomain",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateUserPoolDomain",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1084,17 +1135,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_enable_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminEnableUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminEnableUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1103,17 +1155,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def forget_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ForgetDevice",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ForgetDevice",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1122,17 +1175,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_identity_provider_by_identifier(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetIdentityProviderByIdentifier",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetIdentityProviderByIdentifier",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1141,17 +1195,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_users(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListUsers",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListUsers",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1160,17 +1215,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def add_custom_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddCustomAttributes",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddCustomAttributes",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1179,17 +1235,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_user_pool_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteUserPoolDomain",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteUserPoolDomain",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1200,17 +1257,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListGroups",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListGroups",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1220,17 +1278,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def describe_user_pool_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeUserPoolClient",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeUserPoolClient",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1239,17 +1298,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_identity_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateIdentityProvider",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateIdentityProvider",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1258,17 +1318,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def confirm_forgot_password(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ConfirmForgotPassword",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ConfirmForgotPassword",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1290,17 +1351,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_reset_user_password(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminResetUserPassword",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminResetUserPassword",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1311,17 +1373,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def list_users_in_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListUsersInGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListUsersInGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1330,17 +1393,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def describe_identity_provider(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeIdentityProvider",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeIdentityProvider",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1371,17 +1435,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_link_provider_for_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminLinkProviderForUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminLinkProviderForUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1390,17 +1455,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_resource_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateResourceServer",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateResourceServer",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1411,17 +1477,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def set_user_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetUserSettings",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetUserSettings",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1431,17 +1498,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_resource_server(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateResourceServer",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateResourceServer",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1451,17 +1519,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_user_pool_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateUserPoolClient",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateUserPoolClient",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1470,17 +1539,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def global_sign_out(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GlobalSignOut",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GlobalSignOut",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1490,17 +1560,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def confirm_sign_up(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ConfirmSignUp",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ConfirmSignUp",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1512,17 +1583,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_confirm_sign_up(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminConfirmSignUp",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminConfirmSignUp",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1531,17 +1603,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def describe_user_pool_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeUserPoolDomain",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeUserPoolDomain",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1550,17 +1623,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def describe_user_import_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeUserImportJob",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeUserImportJob",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1571,17 +1645,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def update_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1591,17 +1666,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def sign_up(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SignUp",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SignUp",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1610,17 +1686,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def delete_user_pool(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteUserPool",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteUserPool",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1631,17 +1708,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def create_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateGroup",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateGroup",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1650,17 +1728,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def verify_user_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "VerifyUserAttribute",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "VerifyUserAttribute",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1677,17 +1756,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def forgot_password(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ForgotPassword",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ForgotPassword",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1698,17 +1778,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_disable_user(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminDisableUser",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminDisableUser",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1719,17 +1800,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def admin_get_device(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AdminGetDevice",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AdminGetDevice",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   
@@ -1742,17 +1824,18 @@ defmodule Baiji.CognitoIdentityProvider do
   """
   def get_u_i_customization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cognito-idp",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetUICustomization",
+      service:          "cognito-idp",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetUICustomization",
       
-      target_prefix:  "AWSCognitoIdentityProviderService",
+      target_prefix:    "AWSCognitoIdentityProviderService",
       
-      type:           :json,
-      version:        "2016-04-18",
-      method:         :post
+      endpoint_prefix:  "cognito-idp",
+      type:             :json,
+      version:          "2016-04-18",
+      method:           :post
     }
   end
   

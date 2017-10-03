@@ -11,17 +11,18 @@ defmodule Baiji.Route53Domains do
   """
   def check_domain_availability(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CheckDomainAvailability",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CheckDomainAvailability",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -33,17 +34,18 @@ defmodule Baiji.Route53Domains do
   """
   def delete_tags_for_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTagsForDomain",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTagsForDomain",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -53,17 +55,18 @@ defmodule Baiji.Route53Domains do
   """
   def disable_domain_auto_renew(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisableDomainAutoRenew",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisableDomainAutoRenew",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -78,17 +81,18 @@ defmodule Baiji.Route53Domains do
   """
   def disable_domain_transfer_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisableDomainTransferLock",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisableDomainTransferLock",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -107,17 +111,18 @@ defmodule Baiji.Route53Domains do
   """
   def enable_domain_auto_renew(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EnableDomainAutoRenew",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EnableDomainAutoRenew",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -130,17 +135,18 @@ defmodule Baiji.Route53Domains do
   """
   def enable_domain_transfer_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EnableDomainTransferLock",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EnableDomainTransferLock",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -155,17 +161,18 @@ defmodule Baiji.Route53Domains do
   """
   def get_contact_reachability_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetContactReachabilityStatus",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetContactReachabilityStatus",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -176,17 +183,18 @@ defmodule Baiji.Route53Domains do
   """
   def get_domain_detail(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDomainDetail",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDomainDetail",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -197,17 +205,18 @@ defmodule Baiji.Route53Domains do
   """
   def get_domain_suggestions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDomainSuggestions",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDomainSuggestions",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -217,17 +226,18 @@ defmodule Baiji.Route53Domains do
   """
   def get_operation_detail(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetOperationDetail",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetOperationDetail",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -237,17 +247,18 @@ defmodule Baiji.Route53Domains do
   """
   def list_domains(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDomains",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDomains",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -257,17 +268,18 @@ defmodule Baiji.Route53Domains do
   """
   def list_operations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListOperations",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListOperations",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -280,17 +292,18 @@ defmodule Baiji.Route53Domains do
   """
   def list_tags_for_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForDomain",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForDomain",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -326,17 +339,18 @@ defmodule Baiji.Route53Domains do
   """
   def register_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterDomain",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterDomain",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -353,17 +367,18 @@ defmodule Baiji.Route53Domains do
   """
   def renew_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RenewDomain",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RenewDomain",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -375,17 +390,18 @@ defmodule Baiji.Route53Domains do
   """
   def resend_contact_reachability_email(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResendContactReachabilityEmail",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResendContactReachabilityEmail",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -395,17 +411,18 @@ defmodule Baiji.Route53Domains do
   """
   def retrieve_domain_auth_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RetrieveDomainAuthCode",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RetrieveDomainAuthCode",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -440,17 +457,18 @@ defmodule Baiji.Route53Domains do
   """
   def transfer_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TransferDomain",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TransferDomain",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -466,17 +484,18 @@ defmodule Baiji.Route53Domains do
   """
   def update_domain_contact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDomainContact",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDomainContact",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -496,17 +515,18 @@ defmodule Baiji.Route53Domains do
   """
   def update_domain_contact_privacy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDomainContactPrivacy",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDomainContactPrivacy",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -522,17 +542,18 @@ defmodule Baiji.Route53Domains do
   """
   def update_domain_nameservers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateDomainNameservers",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateDomainNameservers",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -544,17 +565,18 @@ defmodule Baiji.Route53Domains do
   """
   def update_tags_for_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateTagsForDomain",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateTagsForDomain",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   
@@ -564,17 +586,18 @@ defmodule Baiji.Route53Domains do
   """
   def view_billing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "route53domains",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ViewBilling",
+      service:          "route53domains",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ViewBilling",
       
-      target_prefix:  "Route53Domains_v20140515",
+      target_prefix:    "Route53Domains_v20140515",
       
-      type:           :json,
-      version:        "2014-05-15",
-      method:         :post
+      endpoint_prefix:  "route53domains",
+      type:             :json,
+      version:          "2014-05-15",
+      method:           :post
     }
   end
   

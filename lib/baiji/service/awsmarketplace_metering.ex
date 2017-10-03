@@ -43,17 +43,18 @@ defmodule Baiji.AwsmarketplaceMetering do
   """
   def batch_meter_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "meteringmarketplace",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchMeterUsage",
+      service:          "meteringmarketplace",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchMeterUsage",
       
-      target_prefix:  "AWSMPMeteringService",
+      target_prefix:    "AWSMPMeteringService",
       
-      type:           :json,
-      version:        "2016-01-14",
-      method:         :post
+      endpoint_prefix:  "metering.marketplace",
+      type:             :json,
+      version:          "2016-01-14",
+      method:           :post
     }
   end
   
@@ -66,17 +67,18 @@ defmodule Baiji.AwsmarketplaceMetering do
   """
   def meter_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "meteringmarketplace",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "MeterUsage",
+      service:          "meteringmarketplace",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "MeterUsage",
       
-      target_prefix:  "AWSMPMeteringService",
+      target_prefix:    "AWSMPMeteringService",
       
-      type:           :json,
-      version:        "2016-01-14",
-      method:         :post
+      endpoint_prefix:  "metering.marketplace",
+      type:             :json,
+      version:          "2016-01-14",
+      method:           :post
     }
   end
   
@@ -89,17 +91,18 @@ defmodule Baiji.AwsmarketplaceMetering do
   """
   def resolve_customer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "meteringmarketplace",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResolveCustomer",
+      service:          "meteringmarketplace",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResolveCustomer",
       
-      target_prefix:  "AWSMPMeteringService",
+      target_prefix:    "AWSMPMeteringService",
       
-      type:           :json,
-      version:        "2016-01-14",
-      method:         :post
+      endpoint_prefix:  "metering.marketplace",
+      type:             :json,
+      version:          "2016-01-14",
+      method:           :post
     }
   end
   

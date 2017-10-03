@@ -47,15 +47,16 @@ defmodule Baiji.Simpledb do
   """
   def batch_delete_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchDeleteAttributes",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchDeleteAttributes",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -107,15 +108,16 @@ defmodule Baiji.Simpledb do
   """
   def batch_put_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchPutAttributes",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchPutAttributes",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -134,15 +136,16 @@ defmodule Baiji.Simpledb do
   """
   def create_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDomain",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDomain",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -162,15 +165,16 @@ defmodule Baiji.Simpledb do
   """
   def delete_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteAttributes",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteAttributes",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -185,15 +189,16 @@ defmodule Baiji.Simpledb do
   """
   def delete_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDomain",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDomain",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -204,15 +209,16 @@ defmodule Baiji.Simpledb do
   """
   def domain_metadata(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DomainMetadata",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DomainMetadata",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -230,15 +236,16 @@ defmodule Baiji.Simpledb do
   """
   def get_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetAttributes",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetAttributes",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -253,15 +260,16 @@ defmodule Baiji.Simpledb do
   """
   def list_domains(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDomains",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDomains",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -303,15 +311,16 @@ defmodule Baiji.Simpledb do
   """
   def put_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutAttributes",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutAttributes",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   
@@ -332,15 +341,16 @@ defmodule Baiji.Simpledb do
   """
   def select(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "sdb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "Select",
+      service:          "sdb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "Select",
       
-      type:           :xml,
-      version:        "2009-04-15",
-      method:         :post
+      endpoint_prefix:  "sdb",
+      type:             :xml,
+      version:          "2009-04-15",
+      method:           :post
     }
   end
   

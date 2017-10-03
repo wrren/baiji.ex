@@ -28,7 +28,7 @@ defmodule Baiji.Request do
   @doc """
   Generate a Request struct
   """
-  def new(%Operation{input: %{}, method: method} = op) do
+  def new(%Operation{input: input, method: method} = op) when map_size(input) == 0 do
     %Request{operation: op, url: url(op), body: "", headers: [], method: method}
   end
   def new(%Operation{input: input, method: method} = op) do
@@ -46,7 +46,7 @@ defmodule Baiji.Request do
   Determine the host to which the request should be sent based on the operation parameters
   """
   def host(%Operation{region: "local"}), do: "localhost"
-  def host(%Operation{region: region, service: service}), do: "#{service}.#{region}.amazonaws.com"
+  def host(%Operation{region: region, endpoint_prefix: endpoint_prefix}), do: "#{endpoint_prefix}.#{region}.amazonaws.com"
 
   @doc """
   Generate a Query string for the given operation
@@ -112,7 +112,8 @@ defmodule Baiji.Request do
     case HTTPoison.request(method, url, body, headers) do
       {:ok, %{status_code: code} = response} when code >= 200 and code <= 300 ->
         {:ok, response}      
-      {:ok, %{status_code: code}} ->
+      {:ok, %{status_code: code, body: body}} ->
+        Operation.error(op, "Got Body: #{body}")
         {:error, "Request returned status code #{code}"}
       {:error, message} ->
         {:error, message}

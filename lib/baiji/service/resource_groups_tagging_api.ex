@@ -59,17 +59,18 @@ defmodule Baiji.ResourceGroupsTaggingApi do
   """
   def get_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "resourcegroupstaggingapi",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetResources",
+      service:          "resourcegroupstaggingapi",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetResources",
       
-      target_prefix:  "ResourceGroupsTaggingAPI_20170126",
+      target_prefix:    "ResourceGroupsTaggingAPI_20170126",
       
-      type:           :json,
-      version:        "2017-01-26",
-      method:         :post
+      endpoint_prefix:  "tagging",
+      type:             :json,
+      version:          "2017-01-26",
+      method:           :post
     }
   end
   
@@ -78,17 +79,18 @@ defmodule Baiji.ResourceGroupsTaggingApi do
   """
   def get_tag_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "resourcegroupstaggingapi",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetTagKeys",
+      service:          "resourcegroupstaggingapi",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetTagKeys",
       
-      target_prefix:  "ResourceGroupsTaggingAPI_20170126",
+      target_prefix:    "ResourceGroupsTaggingAPI_20170126",
       
-      type:           :json,
-      version:        "2017-01-26",
-      method:         :post
+      endpoint_prefix:  "tagging",
+      type:             :json,
+      version:          "2017-01-26",
+      method:           :post
     }
   end
   
@@ -98,17 +100,18 @@ defmodule Baiji.ResourceGroupsTaggingApi do
   """
   def get_tag_values(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "resourcegroupstaggingapi",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetTagValues",
+      service:          "resourcegroupstaggingapi",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetTagValues",
       
-      target_prefix:  "ResourceGroupsTaggingAPI_20170126",
+      target_prefix:    "ResourceGroupsTaggingAPI_20170126",
       
-      type:           :json,
-      version:        "2017-01-26",
-      method:         :post
+      endpoint_prefix:  "tagging",
+      type:             :json,
+      version:          "2017-01-26",
+      method:           :post
     }
   end
   
@@ -137,17 +140,18 @@ defmodule Baiji.ResourceGroupsTaggingApi do
   """
   def tag_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "resourcegroupstaggingapi",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TagResources",
+      service:          "resourcegroupstaggingapi",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TagResources",
       
-      target_prefix:  "ResourceGroupsTaggingAPI_20170126",
+      target_prefix:    "ResourceGroupsTaggingAPI_20170126",
       
-      type:           :json,
-      version:        "2017-01-26",
-      method:         :post
+      endpoint_prefix:  "tagging",
+      type:             :json,
+      version:          "2017-01-26",
+      method:           :post
     }
   end
   
@@ -171,17 +175,18 @@ defmodule Baiji.ResourceGroupsTaggingApi do
   """
   def untag_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "resourcegroupstaggingapi",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UntagResources",
+      service:          "resourcegroupstaggingapi",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UntagResources",
       
-      target_prefix:  "ResourceGroupsTaggingAPI_20170126",
+      target_prefix:    "ResourceGroupsTaggingAPI_20170126",
       
-      type:           :json,
-      version:        "2017-01-26",
-      method:         :post
+      endpoint_prefix:  "tagging",
+      type:             :json,
+      version:          "2017-01-26",
+      method:           :post
     }
   end
   

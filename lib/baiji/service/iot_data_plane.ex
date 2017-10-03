@@ -19,15 +19,16 @@ defmodule Baiji.IotDataPlane do
   """
   def delete_thing_shadow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot-data",
-      endpoint:       "/things/{thingName}/shadow",
-      input:          input,
-      options:        options,
-      action:         "DeleteThingShadow",
+      service:          "iot-data",
+      endpoint:         "/things/{thingName}/shadow",
+      input:            input,
+      options:          options,
+      action:           "DeleteThingShadow",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "data.iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -40,15 +41,16 @@ defmodule Baiji.IotDataPlane do
   """
   def get_thing_shadow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot-data",
-      endpoint:       "/things/{thingName}/shadow",
-      input:          input,
-      options:        options,
-      action:         "GetThingShadow",
+      service:          "iot-data",
+      endpoint:         "/things/{thingName}/shadow",
+      input:            input,
+      options:          options,
+      action:           "GetThingShadow",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "data.iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -61,15 +63,16 @@ defmodule Baiji.IotDataPlane do
   """
   def publish(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot-data",
-      endpoint:       "/topics/{topic}",
-      input:          input,
-      options:        options,
-      action:         "Publish",
+      service:          "iot-data",
+      endpoint:         "/topics/{topic}",
+      input:            input,
+      options:          options,
+      action:           "Publish",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "data.iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -82,15 +85,16 @@ defmodule Baiji.IotDataPlane do
   """
   def update_thing_shadow(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot-data",
-      endpoint:       "/things/{thingName}/shadow",
-      input:          input,
-      options:        options,
-      action:         "UpdateThingShadow",
+      service:          "iot-data",
+      endpoint:         "/things/{thingName}/shadow",
+      input:            input,
+      options:          options,
+      action:           "UpdateThingShadow",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "data.iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   

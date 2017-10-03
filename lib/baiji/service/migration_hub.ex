@@ -22,17 +22,18 @@ defmodule Baiji.MigrationHub do
   """
   def associate_created_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssociateCreatedArtifact",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssociateCreatedArtifact",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -42,17 +43,18 @@ defmodule Baiji.MigrationHub do
   """
   def associate_discovered_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssociateDiscoveredResource",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssociateDiscoveredResource",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -65,17 +67,18 @@ defmodule Baiji.MigrationHub do
   """
   def create_progress_update_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateProgressUpdateStream",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateProgressUpdateStream",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -109,17 +112,18 @@ defmodule Baiji.MigrationHub do
   """
   def delete_progress_update_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteProgressUpdateStream",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteProgressUpdateStream",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -128,17 +132,18 @@ defmodule Baiji.MigrationHub do
   """
   def describe_application_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeApplicationState",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeApplicationState",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -148,17 +153,18 @@ defmodule Baiji.MigrationHub do
   """
   def describe_migration_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMigrationTask",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMigrationTask",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -181,17 +187,18 @@ defmodule Baiji.MigrationHub do
   """
   def disassociate_created_artifact(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisassociateCreatedArtifact",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisassociateCreatedArtifact",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -201,17 +208,18 @@ defmodule Baiji.MigrationHub do
   """
   def disassociate_discovered_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisassociateDiscoveredResource",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisassociateDiscoveredResource",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -225,17 +233,18 @@ defmodule Baiji.MigrationHub do
   """
   def import_migration_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ImportMigrationTask",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ImportMigrationTask",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -255,17 +264,18 @@ defmodule Baiji.MigrationHub do
   """
   def list_created_artifacts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListCreatedArtifacts",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListCreatedArtifacts",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -274,17 +284,18 @@ defmodule Baiji.MigrationHub do
   """
   def list_discovered_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDiscoveredResources",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDiscoveredResources",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -303,17 +314,18 @@ defmodule Baiji.MigrationHub do
   """
   def list_migration_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListMigrationTasks",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListMigrationTasks",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -323,17 +335,18 @@ defmodule Baiji.MigrationHub do
   """
   def list_progress_update_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListProgressUpdateStreams",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListProgressUpdateStreams",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -345,17 +358,18 @@ defmodule Baiji.MigrationHub do
   """
   def notify_application_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "NotifyApplicationState",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "NotifyApplicationState",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -376,17 +390,18 @@ defmodule Baiji.MigrationHub do
   """
   def notify_migration_task_state(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "NotifyMigrationTaskState",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "NotifyMigrationTaskState",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   
@@ -410,17 +425,18 @@ defmodule Baiji.MigrationHub do
   """
   def put_resource_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "mgh",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutResourceAttributes",
+      service:          "mgh",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutResourceAttributes",
       
-      target_prefix:  "AWSMigrationHub",
+      target_prefix:    "AWSMigrationHub",
       
-      type:           :json,
-      version:        "2017-05-31",
-      method:         :post
+      endpoint_prefix:  "mgh",
+      type:             :json,
+      version:          "2017-05-31",
+      method:           :post
     }
   end
   

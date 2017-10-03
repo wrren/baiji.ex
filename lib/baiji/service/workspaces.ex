@@ -11,17 +11,18 @@ defmodule Baiji.Workspaces do
   """
   def create_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateTags",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateTags",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -35,17 +36,18 @@ defmodule Baiji.Workspaces do
   """
   def create_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -54,17 +56,18 @@ defmodule Baiji.Workspaces do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTags",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTags",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -73,17 +76,18 @@ defmodule Baiji.Workspaces do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTags",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTags",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -101,17 +105,18 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspace_bundles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeWorkspaceBundles",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeWorkspaceBundles",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -127,17 +132,18 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspace_directories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeWorkspaceDirectories",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeWorkspaceDirectories",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -154,17 +160,18 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -173,17 +180,18 @@ defmodule Baiji.Workspaces do
   """
   def describe_workspaces_connection_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeWorkspacesConnectionStatus",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeWorkspacesConnectionStatus",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -193,17 +201,18 @@ defmodule Baiji.Workspaces do
   """
   def modify_workspace_properties(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyWorkspaceProperties",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyWorkspaceProperties",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -220,17 +229,18 @@ defmodule Baiji.Workspaces do
   """
   def reboot_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebootWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebootWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -260,17 +270,18 @@ defmodule Baiji.Workspaces do
   """
   def rebuild_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebuildWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebuildWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -280,17 +291,18 @@ defmodule Baiji.Workspaces do
   """
   def start_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -300,17 +312,18 @@ defmodule Baiji.Workspaces do
   """
   def stop_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   
@@ -331,17 +344,18 @@ defmodule Baiji.Workspaces do
   """
   def terminate_workspaces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "workspaces",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TerminateWorkspaces",
+      service:          "workspaces",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TerminateWorkspaces",
       
-      target_prefix:  "WorkspacesService",
+      target_prefix:    "WorkspacesService",
       
-      type:           :json,
-      version:        "2015-04-08",
-      method:         :post
+      endpoint_prefix:  "workspaces",
+      type:             :json,
+      version:          "2015-04-08",
+      method:           :post
     }
   end
   

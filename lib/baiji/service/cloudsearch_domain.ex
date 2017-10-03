@@ -38,15 +38,16 @@ defmodule Baiji.CloudsearchDomain do
   """
   def search(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudsearchdomain",
-      endpoint:       "/2013-01-01/search?format=sdk&pretty=true",
-      input:          input,
-      options:        options,
-      action:         "Search",
+      service:          "cloudsearchdomain",
+      endpoint:         "/2013-01-01/search?format=sdk&pretty=true",
+      input:            input,
+      options:          options,
+      action:           "Search",
       
-      type:           :json,
-      version:        "2013-01-01",
-      method:         :get
+      endpoint_prefix:  "cloudsearchdomain",
+      type:             :json,
+      version:          "2013-01-01",
+      method:           :get
     }
   end
   
@@ -72,15 +73,16 @@ defmodule Baiji.CloudsearchDomain do
   """
   def suggest(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudsearchdomain",
-      endpoint:       "/2013-01-01/suggest?format=sdk&pretty=true",
-      input:          input,
-      options:        options,
-      action:         "Suggest",
+      service:          "cloudsearchdomain",
+      endpoint:         "/2013-01-01/suggest?format=sdk&pretty=true",
+      input:            input,
+      options:          options,
+      action:           "Suggest",
       
-      type:           :json,
-      version:        "2013-01-01",
-      method:         :get
+      endpoint_prefix:  "cloudsearchdomain",
+      type:             :json,
+      version:          "2013-01-01",
+      method:           :get
     }
   end
   
@@ -113,15 +115,16 @@ defmodule Baiji.CloudsearchDomain do
   """
   def upload_documents(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudsearchdomain",
-      endpoint:       "/2013-01-01/documents/batch?format=sdk",
-      input:          input,
-      options:        options,
-      action:         "UploadDocuments",
+      service:          "cloudsearchdomain",
+      endpoint:         "/2013-01-01/documents/batch?format=sdk",
+      input:            input,
+      options:          options,
+      action:           "UploadDocuments",
       
-      type:           :json,
-      version:        "2013-01-01",
-      method:         :post
+      endpoint_prefix:  "cloudsearchdomain",
+      type:             :json,
+      version:          "2013-01-01",
+      method:           :post
     }
   end
   

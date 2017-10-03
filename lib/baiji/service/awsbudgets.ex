@@ -8,17 +8,18 @@ defmodule Baiji.AWSBudgets do
   """
   def create_budget(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateBudget",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateBudget",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -27,17 +28,18 @@ defmodule Baiji.AWSBudgets do
   """
   def create_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateNotification",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateNotification",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -46,17 +48,18 @@ defmodule Baiji.AWSBudgets do
   """
   def create_subscriber(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSubscriber",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSubscriber",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -65,17 +68,18 @@ defmodule Baiji.AWSBudgets do
   """
   def delete_budget(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteBudget",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteBudget",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -84,17 +88,18 @@ defmodule Baiji.AWSBudgets do
   """
   def delete_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteNotification",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteNotification",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -103,17 +108,18 @@ defmodule Baiji.AWSBudgets do
   """
   def delete_subscriber(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSubscriber",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSubscriber",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -122,17 +128,18 @@ defmodule Baiji.AWSBudgets do
   """
   def describe_budget(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeBudget",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeBudget",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -141,17 +148,18 @@ defmodule Baiji.AWSBudgets do
   """
   def describe_budgets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeBudgets",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeBudgets",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -160,17 +168,18 @@ defmodule Baiji.AWSBudgets do
   """
   def describe_notifications_for_budget(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeNotificationsForBudget",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeNotificationsForBudget",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -179,17 +188,18 @@ defmodule Baiji.AWSBudgets do
   """
   def describe_subscribers_for_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSubscribersForNotification",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSubscribersForNotification",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -198,17 +208,18 @@ defmodule Baiji.AWSBudgets do
   """
   def update_budget(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateBudget",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateBudget",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -217,17 +228,18 @@ defmodule Baiji.AWSBudgets do
   """
   def update_notification(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateNotification",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateNotification",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   
@@ -236,17 +248,18 @@ defmodule Baiji.AWSBudgets do
   """
   def update_subscriber(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "budgets",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateSubscriber",
+      service:          "budgets",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateSubscriber",
       
-      target_prefix:  "AWSBudgetServiceGateway",
+      target_prefix:    "AWSBudgetServiceGateway",
       
-      type:           :json,
-      version:        "2016-10-20",
-      method:         :post
+      endpoint_prefix:  "budgets",
+      type:             :json,
+      version:          "2016-10-20",
+      method:           :post
     }
   end
   

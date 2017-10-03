@@ -11,15 +11,16 @@ defmodule Baiji.XRay do
   """
   def batch_get_traces(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "xray",
-      endpoint:       "/Traces",
-      input:          input,
-      options:        options,
-      action:         "BatchGetTraces",
+      service:          "xray",
+      endpoint:         "/Traces",
+      input:            input,
+      options:          options,
+      action:           "BatchGetTraces",
       
-      type:           :rest_json,
-      version:        "2016-04-12",
-      method:         :post
+      endpoint_prefix:  "xray",
+      type:             :rest_json,
+      version:          "2016-04-12",
+      method:           :post
     }
   end
   
@@ -32,15 +33,16 @@ defmodule Baiji.XRay do
   """
   def get_service_graph(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "xray",
-      endpoint:       "/ServiceGraph",
-      input:          input,
-      options:        options,
-      action:         "GetServiceGraph",
+      service:          "xray",
+      endpoint:         "/ServiceGraph",
+      input:            input,
+      options:          options,
+      action:           "GetServiceGraph",
       
-      type:           :rest_json,
-      version:        "2016-04-12",
-      method:         :post
+      endpoint_prefix:  "xray",
+      type:             :rest_json,
+      version:          "2016-04-12",
+      method:           :post
     }
   end
   
@@ -49,15 +51,16 @@ defmodule Baiji.XRay do
   """
   def get_trace_graph(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "xray",
-      endpoint:       "/TraceGraph",
-      input:          input,
-      options:        options,
-      action:         "GetTraceGraph",
+      service:          "xray",
+      endpoint:         "/TraceGraph",
+      input:            input,
+      options:          options,
+      action:           "GetTraceGraph",
       
-      type:           :rest_json,
-      version:        "2016-04-12",
-      method:         :post
+      endpoint_prefix:  "xray",
+      type:             :rest_json,
+      version:          "2016-04-12",
+      method:           :post
     }
   end
   
@@ -85,15 +88,16 @@ defmodule Baiji.XRay do
   """
   def get_trace_summaries(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "xray",
-      endpoint:       "/TraceSummaries",
-      input:          input,
-      options:        options,
-      action:         "GetTraceSummaries",
+      service:          "xray",
+      endpoint:         "/TraceSummaries",
+      input:            input,
+      options:          options,
+      action:           "GetTraceSummaries",
       
-      type:           :rest_json,
-      version:        "2016-04-12",
-      method:         :post
+      endpoint_prefix:  "xray",
+      type:             :rest_json,
+      version:          "2016-04-12",
+      method:           :post
     }
   end
   
@@ -102,15 +106,16 @@ defmodule Baiji.XRay do
   """
   def put_telemetry_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "xray",
-      endpoint:       "/TelemetryRecords",
-      input:          input,
-      options:        options,
-      action:         "PutTelemetryRecords",
+      service:          "xray",
+      endpoint:         "/TelemetryRecords",
+      input:            input,
+      options:          options,
+      action:           "PutTelemetryRecords",
       
-      type:           :rest_json,
-      version:        "2016-04-12",
-      method:         :post
+      endpoint_prefix:  "xray",
+      type:             :rest_json,
+      version:          "2016-04-12",
+      method:           :post
     }
   end
   
@@ -168,15 +173,16 @@ defmodule Baiji.XRay do
   """
   def put_trace_segments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "xray",
-      endpoint:       "/TraceSegments",
-      input:          input,
-      options:        options,
-      action:         "PutTraceSegments",
+      service:          "xray",
+      endpoint:         "/TraceSegments",
+      input:            input,
+      options:          options,
+      action:           "PutTraceSegments",
       
-      type:           :rest_json,
-      version:        "2016-04-12",
-      method:         :post
+      endpoint_prefix:  "xray",
+      type:             :rest_json,
+      version:          "2016-04-12",
+      method:           :post
     }
   end
   

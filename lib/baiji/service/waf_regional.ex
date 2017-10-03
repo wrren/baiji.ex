@@ -18,17 +18,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_sql_injection_match_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListSqlInjectionMatchSets",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListSqlInjectionMatchSets",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -52,17 +53,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_i_p_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteIPSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteIPSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -71,17 +73,18 @@ defmodule Baiji.WAFRegional do
   """
   def associate_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssociateWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssociateWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -91,17 +94,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_rate_based_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetRateBasedRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetRateBasedRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -110,17 +114,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_rate_based_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListRateBasedRules",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListRateBasedRules",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -147,17 +152,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_xss_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteXssMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteXssMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -170,17 +176,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_rate_based_rule_managed_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetRateBasedRuleManagedKeys",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetRateBasedRuleManagedKeys",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -190,17 +197,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -226,17 +234,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_size_constraint_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSizeConstraintSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSizeConstraintSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -261,17 +270,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -317,17 +327,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -337,17 +348,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_sql_injection_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetSqlInjectionMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetSqlInjectionMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -379,17 +391,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_size_constraint_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSizeConstraintSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSizeConstraintSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -463,17 +476,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_rate_based_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateRateBasedRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateRateBasedRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -482,17 +496,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_web_a_c_ls(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListWebACLs",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListWebACLs",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -501,17 +516,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_size_constraint_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListSizeConstraintSets",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListSizeConstraintSets",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -520,17 +536,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListRules",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListRules",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -551,17 +568,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_change_token_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetChangeTokenStatus",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetChangeTokenStatus",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -621,17 +639,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -640,17 +659,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_i_p_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListIPSets",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListIPSets",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -672,17 +692,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -691,17 +712,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_size_constraint_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetSizeConstraintSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetSizeConstraintSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -748,17 +770,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -807,17 +830,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_rate_based_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateRateBasedRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateRateBasedRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -861,17 +885,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_xss_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateXssMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateXssMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -902,17 +927,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_sql_injection_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateSqlInjectionMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateSqlInjectionMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -944,17 +970,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_byte_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateByteMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateByteMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1000,17 +1027,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_sql_injection_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateSqlInjectionMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateSqlInjectionMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1040,17 +1068,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_xss_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateXssMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateXssMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1059,17 +1088,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_web_a_c_l_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetWebACLForResource",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetWebACLForResource",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1117,17 +1147,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_byte_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateByteMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateByteMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1136,17 +1167,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_xss_match_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListXssMatchSets",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListXssMatchSets",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1187,17 +1219,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1250,17 +1283,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_size_constraint_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateSizeConstraintSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateSizeConstraintSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1269,17 +1303,18 @@ defmodule Baiji.WAFRegional do
   """
   def disassociate_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisassociateWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisassociateWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1305,17 +1340,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_byte_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteByteMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteByteMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1324,17 +1360,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_byte_match_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListByteMatchSets",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListByteMatchSets",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1395,17 +1432,18 @@ defmodule Baiji.WAFRegional do
   """
   def update_i_p_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateIPSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateIPSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1414,17 +1452,18 @@ defmodule Baiji.WAFRegional do
   """
   def list_resources_for_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListResourcesForWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListResourcesForWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1433,17 +1472,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_xss_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetXssMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetXssMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1452,17 +1492,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_i_p_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetIPSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetIPSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1489,17 +1530,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_sql_injection_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteSqlInjectionMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteSqlInjectionMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1508,17 +1550,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_byte_match_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetByteMatchSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetByteMatchSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1538,17 +1581,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_sampled_requests(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetSampledRequests",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetSampledRequests",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1557,17 +1601,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_web_a_c_l(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetWebACL",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetWebACL",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1590,17 +1635,18 @@ defmodule Baiji.WAFRegional do
   """
   def get_change_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetChangeToken",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetChangeToken",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1631,17 +1677,18 @@ defmodule Baiji.WAFRegional do
   """
   def create_i_p_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateIPSet",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateIPSet",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   
@@ -1667,17 +1714,18 @@ defmodule Baiji.WAFRegional do
   """
   def delete_rate_based_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "waf-regional",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteRateBasedRule",
+      service:          "waf-regional",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteRateBasedRule",
       
-      target_prefix:  "AWSWAF_Regional_20161128",
+      target_prefix:    "AWSWAF_Regional_20161128",
       
-      type:           :json,
-      version:        "2016-11-28",
-      method:         :post
+      endpoint_prefix:  "waf-regional",
+      type:             :json,
+      version:          "2016-11-28",
+      method:           :post
     }
   end
   

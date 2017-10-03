@@ -21,7 +21,6 @@ defmodule Baiji.Config do
     |> region(config)
   end
 
-
   @doc """
   Merge the debug configuration setting from the given Keyword List into
   the Operation configuration
@@ -40,7 +39,7 @@ defmodule Baiji.Config do
   key, the output value will default to us-east-1
   """
   def region(%Operation{region: nil} = op, _), do: op
-  def region(%Operation{} = op, config) do
-    %{op | region: Keyword.get(config, :region, @default_region)}
+  def region(%Operation{options: opts} = op, config) do
+    %{op | region: Keyword.get(config, :region, Keyword.get(opts, :region, @default_region))}
   end
 end

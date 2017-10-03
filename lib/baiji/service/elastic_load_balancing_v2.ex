@@ -70,15 +70,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTags",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTags",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -102,15 +103,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateListener",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateListener",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -142,15 +144,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateLoadBalancer",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateLoadBalancer",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -171,15 +174,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateRule",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateRule",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -205,15 +209,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def create_target_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateTargetGroup",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateTargetGroup",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -225,15 +230,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteListener",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteListener",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -252,15 +258,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteLoadBalancer",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteLoadBalancer",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -269,15 +276,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteRule",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteRule",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -289,15 +297,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def delete_target_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTargetGroup",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTargetGroup",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -308,15 +317,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def deregister_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterTargets",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterTargets",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -332,15 +342,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_account_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAccountLimits",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAccountLimits",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -351,15 +362,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_listeners(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeListeners",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeListeners",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -369,15 +381,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_load_balancer_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLoadBalancerAttributes",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLoadBalancerAttributes",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -390,15 +403,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLoadBalancers",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLoadBalancers",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -408,15 +422,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeRules",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeRules",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -429,15 +444,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_s_s_l_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSSLPolicies",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSSLPolicies",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -448,15 +464,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTags",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTags",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -465,15 +482,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_target_group_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTargetGroupAttributes",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTargetGroupAttributes",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -490,15 +508,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_target_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTargetGroups",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTargetGroups",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -507,15 +526,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def describe_target_health(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTargetHealth",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTargetHealth",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -529,15 +549,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_listener(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyListener",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyListener",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -551,15 +572,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_load_balancer_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyLoadBalancerAttributes",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyLoadBalancerAttributes",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -572,15 +594,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyRule",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyRule",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -592,15 +615,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_target_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyTargetGroup",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyTargetGroup",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -609,15 +633,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def modify_target_group_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyTargetGroupAttributes",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyTargetGroupAttributes",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -640,15 +665,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def register_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterTargets",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterTargets",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -660,15 +686,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTags",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTags",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -680,15 +707,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_ip_address_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetIpAddressType",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetIpAddressType",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -701,15 +729,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_rule_priorities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetRulePriorities",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetRulePriorities",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -722,15 +751,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetSecurityGroups",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetSecurityGroups",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   
@@ -743,15 +773,16 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   """
   def set_subnets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticloadbalancingv2",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetSubnets",
+      service:          "elasticloadbalancingv2",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetSubnets",
       
-      type:           :xml,
-      version:        "2015-12-01",
-      method:         :post
+      endpoint_prefix:  "elasticloadbalancing",
+      type:             :xml,
+      version:          "2015-12-01",
+      method:           :post
     }
   end
   

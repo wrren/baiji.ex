@@ -18,17 +18,18 @@ defmodule Baiji.Snowball do
   """
   def cancel_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CancelCluster",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CancelCluster",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -40,17 +41,18 @@ defmodule Baiji.Snowball do
   """
   def cancel_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CancelJob",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CancelJob",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -62,17 +64,18 @@ defmodule Baiji.Snowball do
   """
   def create_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateAddress",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateAddress",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -83,17 +86,18 @@ defmodule Baiji.Snowball do
   """
   def create_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateCluster",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateCluster",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -106,17 +110,18 @@ defmodule Baiji.Snowball do
   """
   def create_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateJob",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateJob",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -126,17 +131,18 @@ defmodule Baiji.Snowball do
   """
   def describe_address(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAddress",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAddress",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -147,17 +153,18 @@ defmodule Baiji.Snowball do
   """
   def describe_addresses(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAddresses",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAddresses",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -167,17 +174,18 @@ defmodule Baiji.Snowball do
   """
   def describe_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCluster",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCluster",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -187,17 +195,18 @@ defmodule Baiji.Snowball do
   """
   def describe_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeJob",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeJob",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -223,17 +232,18 @@ defmodule Baiji.Snowball do
   """
   def get_job_manifest(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetJobManifest",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetJobManifest",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -254,17 +264,18 @@ defmodule Baiji.Snowball do
   """
   def get_job_unlock_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetJobUnlockCode",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetJobUnlockCode",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -278,17 +289,18 @@ defmodule Baiji.Snowball do
   """
   def get_snowball_usage(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetSnowballUsage",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetSnowballUsage",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -299,17 +311,18 @@ defmodule Baiji.Snowball do
   """
   def list_cluster_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListClusterJobs",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListClusterJobs",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -320,17 +333,18 @@ defmodule Baiji.Snowball do
   """
   def list_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListClusters",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListClusters",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -343,17 +357,18 @@ defmodule Baiji.Snowball do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListJobs",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListJobs",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -365,17 +380,18 @@ defmodule Baiji.Snowball do
   """
   def update_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateCluster",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateCluster",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   
@@ -387,17 +403,18 @@ defmodule Baiji.Snowball do
   """
   def update_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "snowball",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateJob",
+      service:          "snowball",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateJob",
       
-      target_prefix:  "AWSIESnowballJobManagementService",
+      target_prefix:    "AWSIESnowballJobManagementService",
       
-      type:           :json,
-      version:        "2016-06-30",
-      method:         :post
+      endpoint_prefix:  "snowball",
+      type:             :json,
+      version:          "2016-06-30",
+      method:           :post
     }
   end
   

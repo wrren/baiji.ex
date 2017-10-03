@@ -12,17 +12,18 @@ defmodule Baiji.CloudHSM do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToResource",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToResource",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -32,17 +33,18 @@ defmodule Baiji.CloudHSM do
   """
   def create_hapg(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateHapg",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateHapg",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -63,17 +65,18 @@ defmodule Baiji.CloudHSM do
   """
   def create_hsm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateHsm",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateHsm",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -82,17 +85,18 @@ defmodule Baiji.CloudHSM do
   """
   def create_luna_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateLunaClient",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateLunaClient",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -101,17 +105,18 @@ defmodule Baiji.CloudHSM do
   """
   def delete_hapg(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteHapg",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteHapg",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -121,17 +126,18 @@ defmodule Baiji.CloudHSM do
   """
   def delete_hsm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteHsm",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteHsm",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -140,17 +146,18 @@ defmodule Baiji.CloudHSM do
   """
   def delete_luna_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteLunaClient",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteLunaClient",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -159,17 +166,18 @@ defmodule Baiji.CloudHSM do
   """
   def describe_hapg(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeHapg",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeHapg",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -179,17 +187,18 @@ defmodule Baiji.CloudHSM do
   """
   def describe_hsm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeHsm",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeHsm",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -198,17 +207,18 @@ defmodule Baiji.CloudHSM do
   """
   def describe_luna_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLunaClient",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLunaClient",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -218,17 +228,18 @@ defmodule Baiji.CloudHSM do
   """
   def get_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetConfig",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetConfig",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -237,17 +248,18 @@ defmodule Baiji.CloudHSM do
   """
   def list_available_zones(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAvailableZones",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAvailableZones",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -261,17 +273,18 @@ defmodule Baiji.CloudHSM do
   """
   def list_hapgs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListHapgs",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListHapgs",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -286,17 +299,18 @@ defmodule Baiji.CloudHSM do
   """
   def list_hsms(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListHsms",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListHsms",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -310,17 +324,18 @@ defmodule Baiji.CloudHSM do
   """
   def list_luna_clients(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListLunaClients",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListLunaClients",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -329,17 +344,18 @@ defmodule Baiji.CloudHSM do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForResource",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForResource",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -348,17 +364,18 @@ defmodule Baiji.CloudHSM do
   """
   def modify_hapg(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyHapg",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyHapg",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -375,17 +392,18 @@ defmodule Baiji.CloudHSM do
   """
   def modify_hsm(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyHsm",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyHsm",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -397,17 +415,18 @@ defmodule Baiji.CloudHSM do
   """
   def modify_luna_client(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyLunaClient",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyLunaClient",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   
@@ -419,17 +438,18 @@ defmodule Baiji.CloudHSM do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudhsm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromResource",
+      service:          "cloudhsm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromResource",
       
-      target_prefix:  "CloudHsmFrontendService",
+      target_prefix:    "CloudHsmFrontendService",
       
-      type:           :json,
-      version:        "2014-05-30",
-      method:         :post
+      endpoint_prefix:  "cloudhsm",
+      type:             :json,
+      version:          "2014-05-30",
+      method:           :post
     }
   end
   

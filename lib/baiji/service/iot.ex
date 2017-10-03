@@ -22,15 +22,16 @@ defmodule Baiji.Iot do
   """
   def list_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates",
-      input:          input,
-      options:        options,
-      action:         "ListCertificates",
+      service:          "iot",
+      endpoint:         "/certificates",
+      input:            input,
+      options:          options,
+      action:           "ListCertificates",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -39,15 +40,16 @@ defmodule Baiji.Iot do
   """
   def list_thing_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/thing-types",
-      input:          input,
-      options:        options,
-      action:         "ListThingTypes",
+      service:          "iot",
+      endpoint:         "/thing-types",
+      input:            input,
+      options:          options,
+      action:           "ListThingTypes",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -56,15 +58,16 @@ defmodule Baiji.Iot do
   """
   def list_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies",
-      input:          input,
-      options:        options,
-      action:         "ListPolicies",
+      service:          "iot",
+      endpoint:         "/policies",
+      input:            input,
+      options:          options,
+      action:           "ListPolicies",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -73,15 +76,16 @@ defmodule Baiji.Iot do
   """
   def describe_thing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}",
-      input:          input,
-      options:        options,
-      action:         "DescribeThing",
+      service:          "iot",
+      endpoint:         "/things/{thingName}",
+      input:            input,
+      options:          options,
+      action:           "DescribeThing",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -90,15 +94,16 @@ defmodule Baiji.Iot do
   """
   def list_thing_principals(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}/principals",
-      input:          input,
-      options:        options,
-      action:         "ListThingPrincipals",
+      service:          "iot",
+      endpoint:         "/things/{thingName}/principals",
+      input:            input,
+      options:          options,
+      action:           "ListThingPrincipals",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -107,15 +112,16 @@ defmodule Baiji.Iot do
   """
   def describe_thing_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/thing-types/{thingTypeName}",
-      input:          input,
-      options:        options,
-      action:         "DescribeThingType",
+      service:          "iot",
+      endpoint:         "/thing-types/{thingTypeName}",
+      input:            input,
+      options:          options,
+      action:           "DescribeThingType",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -124,15 +130,16 @@ defmodule Baiji.Iot do
   """
   def delete_c_a_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/cacertificate/{caCertificateId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteCACertificate",
+      service:          "iot",
+      endpoint:         "/cacertificate/{caCertificateId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteCACertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -141,15 +148,16 @@ defmodule Baiji.Iot do
   """
   def get_registration_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/registrationcode",
-      input:          input,
-      options:        options,
-      action:         "GetRegistrationCode",
+      service:          "iot",
+      endpoint:         "/registrationcode",
+      input:            input,
+      options:          options,
+      action:           "GetRegistrationCode",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -159,15 +167,16 @@ defmodule Baiji.Iot do
   """
   def list_policy_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}/version",
-      input:          input,
-      options:        options,
-      action:         "ListPolicyVersions",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}/version",
+      input:            input,
+      options:          options,
+      action:           "ListPolicyVersions",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -177,15 +186,16 @@ defmodule Baiji.Iot do
   """
   def deprecate_thing_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/thing-types/{thingTypeName}/deprecate",
-      input:          input,
-      options:        options,
-      action:         "DeprecateThingType",
+      service:          "iot",
+      endpoint:         "/thing-types/{thingTypeName}/deprecate",
+      input:            input,
+      options:          options,
+      action:           "DeprecateThingType",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -197,15 +207,16 @@ defmodule Baiji.Iot do
   """
   def delete_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}/version/{policyVersionId}",
-      input:          input,
-      options:        options,
-      action:         "DeletePolicyVersion",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}/version/{policyVersionId}",
+      input:            input,
+      options:          options,
+      action:           "DeletePolicyVersion",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -214,15 +225,16 @@ defmodule Baiji.Iot do
   """
   def describe_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "DescribeCertificate",
+      service:          "iot",
+      endpoint:         "/certificates/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "DescribeCertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -231,15 +243,16 @@ defmodule Baiji.Iot do
   """
   def enable_topic_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules/{ruleName}/enable",
-      input:          input,
-      options:        options,
-      action:         "EnableTopicRule",
+      service:          "iot",
+      endpoint:         "/rules/{ruleName}/enable",
+      input:            input,
+      options:          options,
+      action:           "EnableTopicRule",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -251,15 +264,16 @@ defmodule Baiji.Iot do
   """
   def replace_topic_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules/{ruleName}",
-      input:          input,
-      options:        options,
-      action:         "ReplaceTopicRule",
+      service:          "iot",
+      endpoint:         "/rules/{ruleName}",
+      input:            input,
+      options:          options,
+      action:           "ReplaceTopicRule",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -276,15 +290,16 @@ defmodule Baiji.Iot do
   """
   def update_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "UpdateCertificate",
+      service:          "iot",
+      endpoint:         "/certificates/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "UpdateCertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :put
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :put
     }
   end
   
@@ -296,15 +311,16 @@ defmodule Baiji.Iot do
   """
   def set_default_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}/version/{policyVersionId}",
-      input:          input,
-      options:        options,
-      action:         "SetDefaultPolicyVersion",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}/version/{policyVersionId}",
+      input:            input,
+      options:          options,
+      action:           "SetDefaultPolicyVersion",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -319,15 +335,16 @@ defmodule Baiji.Iot do
   """
   def register_c_a_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/cacertificate",
-      input:          input,
-      options:        options,
-      action:         "RegisterCACertificate",
+      service:          "iot",
+      endpoint:         "/cacertificate",
+      input:            input,
+      options:          options,
+      action:           "RegisterCACertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -338,15 +355,16 @@ defmodule Baiji.Iot do
   """
   def create_topic_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules/{ruleName}",
-      input:          input,
-      options:        options,
-      action:         "CreateTopicRule",
+      service:          "iot",
+      endpoint:         "/rules/{ruleName}",
+      input:            input,
+      options:          options,
+      action:           "CreateTopicRule",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -355,15 +373,16 @@ defmodule Baiji.Iot do
   """
   def detach_principal_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/principal-policies/{policyName}",
-      input:          input,
-      options:        options,
-      action:         "DetachPrincipalPolicy",
+      service:          "iot",
+      endpoint:         "/principal-policies/{policyName}",
+      input:            input,
+      options:          options,
+      action:           "DetachPrincipalPolicy",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -372,15 +391,16 @@ defmodule Baiji.Iot do
   """
   def create_thing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}",
-      input:          input,
-      options:        options,
-      action:         "CreateThing",
+      service:          "iot",
+      endpoint:         "/things/{thingName}",
+      input:            input,
+      options:          options,
+      action:           "CreateThing",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -389,15 +409,16 @@ defmodule Baiji.Iot do
   """
   def describe_c_a_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/cacertificate/{caCertificateId}",
-      input:          input,
-      options:        options,
-      action:         "DescribeCACertificate",
+      service:          "iot",
+      endpoint:         "/cacertificate/{caCertificateId}",
+      input:            input,
+      options:          options,
+      action:           "DescribeCACertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -406,15 +427,16 @@ defmodule Baiji.Iot do
   """
   def delete_thing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteThing",
+      service:          "iot",
+      endpoint:         "/things/{thingName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteThing",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -423,15 +445,16 @@ defmodule Baiji.Iot do
   """
   def disable_topic_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules/{ruleName}/disable",
-      input:          input,
-      options:        options,
-      action:         "DisableTopicRule",
+      service:          "iot",
+      endpoint:         "/rules/{ruleName}/disable",
+      input:            input,
+      options:          options,
+      action:           "DisableTopicRule",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -444,15 +467,16 @@ defmodule Baiji.Iot do
   """
   def create_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}",
-      input:          input,
-      options:        options,
-      action:         "CreatePolicy",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}",
+      input:            input,
+      options:          options,
+      action:           "CreatePolicy",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -464,15 +488,16 @@ defmodule Baiji.Iot do
   """
   def list_c_a_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/cacertificates",
-      input:          input,
-      options:        options,
-      action:         "ListCACertificates",
+      service:          "iot",
+      endpoint:         "/cacertificates",
+      input:            input,
+      options:          options,
+      action:           "ListCACertificates",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -481,15 +506,16 @@ defmodule Baiji.Iot do
   """
   def list_policy_principals(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policy-principals",
-      input:          input,
-      options:        options,
-      action:         "ListPolicyPrincipals",
+      service:          "iot",
+      endpoint:         "/policy-principals",
+      input:            input,
+      options:          options,
+      action:           "ListPolicyPrincipals",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -498,15 +524,16 @@ defmodule Baiji.Iot do
   """
   def list_topic_rules(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules",
-      input:          input,
-      options:        options,
-      action:         "ListTopicRules",
+      service:          "iot",
+      endpoint:         "/rules",
+      input:            input,
+      options:          options,
+      action:           "ListTopicRules",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -515,15 +542,16 @@ defmodule Baiji.Iot do
   """
   def get_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}/version/{policyVersionId}",
-      input:          input,
-      options:        options,
-      action:         "GetPolicyVersion",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}/version/{policyVersionId}",
+      input:            input,
+      options:          options,
+      action:           "GetPolicyVersion",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -532,15 +560,16 @@ defmodule Baiji.Iot do
   """
   def delete_registration_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/registrationcode",
-      input:          input,
-      options:        options,
-      action:         "DeleteRegistrationCode",
+      service:          "iot",
+      endpoint:         "/registrationcode",
+      input:            input,
+      options:          options,
+      action:           "DeleteRegistrationCode",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -549,15 +578,16 @@ defmodule Baiji.Iot do
   """
   def list_outgoing_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates-out-going",
-      input:          input,
-      options:        options,
-      action:         "ListOutgoingCertificates",
+      service:          "iot",
+      endpoint:         "/certificates-out-going",
+      input:            input,
+      options:          options,
+      action:           "ListOutgoingCertificates",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -571,15 +601,16 @@ defmodule Baiji.Iot do
   """
   def delete_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteCertificate",
+      service:          "iot",
+      endpoint:         "/certificates/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteCertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -588,15 +619,16 @@ defmodule Baiji.Iot do
   """
   def list_principal_things(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/principals/things",
-      input:          input,
-      options:        options,
-      action:         "ListPrincipalThings",
+      service:          "iot",
+      endpoint:         "/principals/things",
+      input:            input,
+      options:          options,
+      action:           "ListPrincipalThings",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -605,15 +637,16 @@ defmodule Baiji.Iot do
   """
   def update_c_a_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/cacertificate/{caCertificateId}",
-      input:          input,
-      options:        options,
-      action:         "UpdateCACertificate",
+      service:          "iot",
+      endpoint:         "/cacertificate/{caCertificateId}",
+      input:            input,
+      options:          options,
+      action:           "UpdateCACertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :put
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :put
     }
   end
   
@@ -622,15 +655,16 @@ defmodule Baiji.Iot do
   """
   def delete_topic_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules/{ruleName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteTopicRule",
+      service:          "iot",
+      endpoint:         "/rules/{ruleName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteTopicRule",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -639,15 +673,16 @@ defmodule Baiji.Iot do
   """
   def get_logging_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/loggingOptions",
-      input:          input,
-      options:        options,
-      action:         "GetLoggingOptions",
+      service:          "iot",
+      endpoint:         "/loggingOptions",
+      input:            input,
+      options:          options,
+      action:           "GetLoggingOptions",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -658,15 +693,16 @@ defmodule Baiji.Iot do
   """
   def register_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificate/register",
-      input:          input,
-      options:        options,
-      action:         "RegisterCertificate",
+      service:          "iot",
+      endpoint:         "/certificate/register",
+      input:            input,
+      options:          options,
+      action:           "RegisterCertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -676,15 +712,16 @@ defmodule Baiji.Iot do
   """
   def attach_principal_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/principal-policies/{policyName}",
-      input:          input,
-      options:        options,
-      action:         "AttachPrincipalPolicy",
+      service:          "iot",
+      endpoint:         "/principal-policies/{policyName}",
+      input:            input,
+      options:          options,
+      action:           "AttachPrincipalPolicy",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :put
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :put
     }
   end
   
@@ -702,15 +739,16 @@ defmodule Baiji.Iot do
   """
   def cancel_certificate_transfer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/cancel-certificate-transfer/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "CancelCertificateTransfer",
+      service:          "iot",
+      endpoint:         "/cancel-certificate-transfer/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "CancelCertificateTransfer",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -719,15 +757,16 @@ defmodule Baiji.Iot do
   """
   def detach_thing_principal(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}/principals",
-      input:          input,
-      options:        options,
-      action:         "DetachThingPrincipal",
+      service:          "iot",
+      endpoint:         "/things/{thingName}/principals",
+      input:            input,
+      options:          options,
+      action:           "DetachThingPrincipal",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -736,15 +775,16 @@ defmodule Baiji.Iot do
   """
   def set_logging_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/loggingOptions",
-      input:          input,
-      options:        options,
-      action:         "SetLoggingOptions",
+      service:          "iot",
+      endpoint:         "/loggingOptions",
+      input:            input,
+      options:          options,
+      action:           "SetLoggingOptions",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -764,15 +804,16 @@ defmodule Baiji.Iot do
   """
   def transfer_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/transfer-certificate/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "TransferCertificate",
+      service:          "iot",
+      endpoint:         "/transfer-certificate/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "TransferCertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -785,15 +826,16 @@ defmodule Baiji.Iot do
   """
   def delete_thing_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/thing-types/{thingTypeName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteThingType",
+      service:          "iot",
+      endpoint:         "/thing-types/{thingTypeName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteThingType",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -806,15 +848,16 @@ defmodule Baiji.Iot do
   """
   def accept_certificate_transfer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/accept-certificate-transfer/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "AcceptCertificateTransfer",
+      service:          "iot",
+      endpoint:         "/accept-certificate-transfer/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "AcceptCertificateTransfer",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -823,15 +866,16 @@ defmodule Baiji.Iot do
   """
   def create_thing_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/thing-types/{thingTypeName}",
-      input:          input,
-      options:        options,
-      action:         "CreateThingType",
+      service:          "iot",
+      endpoint:         "/thing-types/{thingTypeName}",
+      input:            input,
+      options:          options,
+      action:           "CreateThingType",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -840,15 +884,16 @@ defmodule Baiji.Iot do
   """
   def update_thing(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}",
-      input:          input,
-      options:        options,
-      action:         "UpdateThing",
+      service:          "iot",
+      endpoint:         "/things/{thingName}",
+      input:            input,
+      options:          options,
+      action:           "UpdateThing",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -868,15 +913,16 @@ defmodule Baiji.Iot do
   """
   def delete_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}",
-      input:          input,
-      options:        options,
-      action:         "DeletePolicy",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}",
+      input:            input,
+      options:          options,
+      action:           "DeletePolicy",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :delete
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :delete
     }
   end
   
@@ -885,15 +931,16 @@ defmodule Baiji.Iot do
   """
   def list_certificates_by_c_a(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates-by-ca/{caCertificateId}",
-      input:          input,
-      options:        options,
-      action:         "ListCertificatesByCA",
+      service:          "iot",
+      endpoint:         "/certificates-by-ca/{caCertificateId}",
+      input:            input,
+      options:          options,
+      action:           "ListCertificatesByCA",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -903,15 +950,16 @@ defmodule Baiji.Iot do
   """
   def get_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}",
-      input:          input,
-      options:        options,
-      action:         "GetPolicy",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}",
+      input:            input,
+      options:          options,
+      action:           "GetPolicy",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -929,15 +977,16 @@ defmodule Baiji.Iot do
   """
   def reject_certificate_transfer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/reject-certificate-transfer/{certificateId}",
-      input:          input,
-      options:        options,
-      action:         "RejectCertificateTransfer",
+      service:          "iot",
+      endpoint:         "/reject-certificate-transfer/{certificateId}",
+      input:            input,
+      options:          options,
+      action:           "RejectCertificateTransfer",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :patch
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :patch
     }
   end
   
@@ -946,15 +995,16 @@ defmodule Baiji.Iot do
   """
   def attach_thing_principal(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things/{thingName}/principals",
-      input:          input,
-      options:        options,
-      action:         "AttachThingPrincipal",
+      service:          "iot",
+      endpoint:         "/things/{thingName}/principals",
+      input:            input,
+      options:          options,
+      action:           "AttachThingPrincipal",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :put
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :put
     }
   end
   
@@ -970,15 +1020,16 @@ defmodule Baiji.Iot do
   """
   def create_policy_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/policies/{policyName}/version",
-      input:          input,
-      options:        options,
-      action:         "CreatePolicyVersion",
+      service:          "iot",
+      endpoint:         "/policies/{policyName}/version",
+      input:            input,
+      options:          options,
+      action:           "CreatePolicyVersion",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -989,15 +1040,16 @@ defmodule Baiji.Iot do
   """
   def list_principal_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/principal-policies",
-      input:          input,
-      options:        options,
-      action:         "ListPrincipalPolicies",
+      service:          "iot",
+      endpoint:         "/principal-policies",
+      input:            input,
+      options:          options,
+      action:           "ListPrincipalPolicies",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -1006,15 +1058,16 @@ defmodule Baiji.Iot do
   """
   def describe_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/endpoint",
-      input:          input,
-      options:        options,
-      action:         "DescribeEndpoint",
+      service:          "iot",
+      endpoint:         "/endpoint",
+      input:            input,
+      options:          options,
+      action:           "DescribeEndpoint",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -1027,15 +1080,16 @@ defmodule Baiji.Iot do
   """
   def create_keys_and_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/keys-and-certificate",
-      input:          input,
-      options:        options,
-      action:         "CreateKeysAndCertificate",
+      service:          "iot",
+      endpoint:         "/keys-and-certificate",
+      input:            input,
+      options:          options,
+      action:           "CreateKeysAndCertificate",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   
@@ -1044,15 +1098,16 @@ defmodule Baiji.Iot do
   """
   def get_topic_rule(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/rules/{ruleName}",
-      input:          input,
-      options:        options,
-      action:         "GetTopicRule",
+      service:          "iot",
+      endpoint:         "/rules/{ruleName}",
+      input:            input,
+      options:          options,
+      action:           "GetTopicRule",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -1064,15 +1119,16 @@ defmodule Baiji.Iot do
   """
   def list_things(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/things",
-      input:          input,
-      options:        options,
-      action:         "ListThings",
+      service:          "iot",
+      endpoint:         "/things",
+      input:            input,
+      options:          options,
+      action:           "ListThings",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :get
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :get
     }
   end
   
@@ -1125,15 +1181,16 @@ defmodule Baiji.Iot do
   """
   def create_certificate_from_csr(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "iot",
-      endpoint:       "/certificates",
-      input:          input,
-      options:        options,
-      action:         "CreateCertificateFromCsr",
+      service:          "iot",
+      endpoint:         "/certificates",
+      input:            input,
+      options:          options,
+      action:           "CreateCertificateFromCsr",
       
-      type:           :rest_json,
-      version:        "2015-05-28",
-      method:         :post
+      endpoint_prefix:  "iot",
+      type:             :rest_json,
+      version:          "2015-05-28",
+      method:           :post
     }
   end
   

@@ -58,17 +58,18 @@ defmodule Baiji.SWF do
   """
   def count_closed_workflow_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CountClosedWorkflowExecutions",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CountClosedWorkflowExecutions",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -112,17 +113,18 @@ defmodule Baiji.SWF do
   """
   def count_open_workflow_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CountOpenWorkflowExecutions",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CountOpenWorkflowExecutions",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -157,17 +159,18 @@ defmodule Baiji.SWF do
   """
   def count_pending_activity_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CountPendingActivityTasks",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CountPendingActivityTasks",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -202,17 +205,18 @@ defmodule Baiji.SWF do
   """
   def count_pending_decision_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CountPendingDecisionTasks",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CountPendingDecisionTasks",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -255,17 +259,18 @@ defmodule Baiji.SWF do
   """
   def deprecate_activity_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeprecateActivityType",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeprecateActivityType",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -304,17 +309,18 @@ defmodule Baiji.SWF do
   """
   def deprecate_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeprecateDomain",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeprecateDomain",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -357,17 +363,18 @@ defmodule Baiji.SWF do
   """
   def deprecate_workflow_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeprecateWorkflowType",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeprecateWorkflowType",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -406,17 +413,18 @@ defmodule Baiji.SWF do
   """
   def describe_activity_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeActivityType",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeActivityType",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -448,17 +456,18 @@ defmodule Baiji.SWF do
   """
   def describe_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDomain",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDomain",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -493,17 +502,18 @@ defmodule Baiji.SWF do
   """
   def describe_workflow_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeWorkflowExecution",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeWorkflowExecution",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -542,17 +552,18 @@ defmodule Baiji.SWF do
   """
   def describe_workflow_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeWorkflowType",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeWorkflowType",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -588,17 +599,18 @@ defmodule Baiji.SWF do
   """
   def get_workflow_execution_history(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetWorkflowExecutionHistory",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetWorkflowExecutionHistory",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -633,17 +645,18 @@ defmodule Baiji.SWF do
   """
   def list_activity_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListActivityTypes",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListActivityTypes",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -689,17 +702,18 @@ defmodule Baiji.SWF do
   """
   def list_closed_workflow_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListClosedWorkflowExecutions",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListClosedWorkflowExecutions",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -737,17 +751,18 @@ defmodule Baiji.SWF do
   """
   def list_domains(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListDomains",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListDomains",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -793,17 +808,18 @@ defmodule Baiji.SWF do
   """
   def list_open_workflow_executions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListOpenWorkflowExecutions",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListOpenWorkflowExecutions",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -836,17 +852,18 @@ defmodule Baiji.SWF do
   """
   def list_workflow_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListWorkflowTypes",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListWorkflowTypes",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -890,17 +907,18 @@ defmodule Baiji.SWF do
   """
   def poll_for_activity_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PollForActivityTask",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PollForActivityTask",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -954,17 +972,18 @@ defmodule Baiji.SWF do
   """
   def poll_for_decision_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PollForDecisionTask",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PollForDecisionTask",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1024,17 +1043,18 @@ defmodule Baiji.SWF do
   """
   def record_activity_task_heartbeat(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RecordActivityTaskHeartbeat",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RecordActivityTaskHeartbeat",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1077,17 +1097,18 @@ defmodule Baiji.SWF do
   """
   def register_activity_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterActivityType",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterActivityType",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1119,17 +1140,18 @@ defmodule Baiji.SWF do
   """
   def register_domain(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterDomain",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterDomain",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1175,17 +1197,18 @@ defmodule Baiji.SWF do
   """
   def register_workflow_type(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterWorkflowType",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterWorkflowType",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1228,17 +1251,18 @@ defmodule Baiji.SWF do
   """
   def request_cancel_workflow_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RequestCancelWorkflowExecution",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RequestCancelWorkflowExecution",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1285,17 +1309,18 @@ defmodule Baiji.SWF do
   """
   def respond_activity_task_canceled(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RespondActivityTaskCanceled",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RespondActivityTaskCanceled",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1342,17 +1367,18 @@ defmodule Baiji.SWF do
   """
   def respond_activity_task_completed(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RespondActivityTaskCompleted",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RespondActivityTaskCompleted",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1393,17 +1419,18 @@ defmodule Baiji.SWF do
   """
   def respond_activity_task_failed(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RespondActivityTaskFailed",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RespondActivityTaskFailed",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1430,17 +1457,18 @@ defmodule Baiji.SWF do
   """
   def respond_decision_task_completed(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RespondDecisionTaskCompleted",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RespondDecisionTaskCompleted",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1481,17 +1509,18 @@ defmodule Baiji.SWF do
   """
   def signal_workflow_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SignalWorkflowExecution",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SignalWorkflowExecution",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1543,17 +1572,18 @@ defmodule Baiji.SWF do
   """
   def start_workflow_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartWorkflowExecution",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartWorkflowExecution",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   
@@ -1599,17 +1629,18 @@ defmodule Baiji.SWF do
   """
   def terminate_workflow_execution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "swf",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TerminateWorkflowExecution",
+      service:          "swf",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TerminateWorkflowExecution",
       
-      target_prefix:  "SimpleWorkflowService",
+      target_prefix:    "SimpleWorkflowService",
       
-      type:           :json,
-      version:        "2012-01-25",
-      method:         :post
+      endpoint_prefix:  "swf",
+      type:             :json,
+      version:          "2012-01-25",
+      method:           :post
     }
   end
   

@@ -52,15 +52,16 @@ defmodule Baiji.Glacier do
   """
   def delete_vault_access_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/access-policy",
-      input:          input,
-      options:        options,
-      action:         "DeleteVaultAccessPolicy",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/access-policy",
+      input:            input,
+      options:          options,
+      action:           "DeleteVaultAccessPolicy",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :delete
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :delete
     }
   end
   
@@ -109,15 +110,16 @@ defmodule Baiji.Glacier do
   """
   def upload_archive(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/archives",
-      input:          input,
-      options:        options,
-      action:         "UploadArchive",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/archives",
+      input:            input,
+      options:          options,
+      action:           "UploadArchive",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -141,15 +143,16 @@ defmodule Baiji.Glacier do
   """
   def complete_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/lock-policy/{lockId}",
-      input:          input,
-      options:        options,
-      action:         "CompleteVaultLock",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy/{lockId}",
+      input:            input,
+      options:          options,
+      action:           "CompleteVaultLock",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -198,15 +201,16 @@ defmodule Baiji.Glacier do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/jobs",
-      input:          input,
-      options:        options,
-      action:         "ListJobs",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/jobs",
+      input:            input,
+      options:          options,
+      action:           "ListJobs",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -241,15 +245,16 @@ defmodule Baiji.Glacier do
   """
   def create_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}",
-      input:          input,
-      options:        options,
-      action:         "CreateVault",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}",
+      input:            input,
+      options:          options,
+      action:           "CreateVault",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :put
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :put
     }
   end
   
@@ -276,15 +281,16 @@ defmodule Baiji.Glacier do
   """
   def abort_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/lock-policy",
-      input:          input,
-      options:        options,
-      action:         "AbortVaultLock",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy",
+      input:            input,
+      options:          options,
+      action:           "AbortVaultLock",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :delete
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :delete
     }
   end
   
@@ -317,15 +323,16 @@ defmodule Baiji.Glacier do
   """
   def list_vaults(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults",
-      input:          input,
-      options:        options,
-      action:         "ListVaults",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults",
+      input:            input,
+      options:          options,
+      action:           "ListVaults",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -341,15 +348,16 @@ defmodule Baiji.Glacier do
   """
   def set_vault_access_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/access-policy",
-      input:          input,
-      options:        options,
-      action:         "SetVaultAccessPolicy",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/access-policy",
+      input:            input,
+      options:          options,
+      action:           "SetVaultAccessPolicy",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :put
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :put
     }
   end
   
@@ -382,15 +390,16 @@ defmodule Baiji.Glacier do
   """
   def get_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/lock-policy",
-      input:          input,
-      options:        options,
-      action:         "GetVaultLock",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy",
+      input:            input,
+      options:          options,
+      action:           "GetVaultLock",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -423,15 +432,16 @@ defmodule Baiji.Glacier do
   """
   def describe_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}",
-      input:          input,
-      options:        options,
-      action:         "DescribeVault",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}",
+      input:            input,
+      options:          options,
+      action:           "DescribeVault",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -440,15 +450,16 @@ defmodule Baiji.Glacier do
   """
   def purchase_provisioned_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/provisioned-capacity",
-      input:          input,
-      options:        options,
-      action:         "PurchaseProvisionedCapacity",
+      service:          "glacier",
+      endpoint:         "/{accountId}/provisioned-capacity",
+      input:            input,
+      options:          options,
+      action:           "PurchaseProvisionedCapacity",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -460,15 +471,16 @@ defmodule Baiji.Glacier do
   """
   def list_tags_for_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/tags",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForVault",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/tags",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForVault",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -483,15 +495,16 @@ defmodule Baiji.Glacier do
   """
   def add_tags_to_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/tags?operation=add",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToVault",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/tags?operation=add",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToVault",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -547,15 +560,16 @@ defmodule Baiji.Glacier do
   """
   def complete_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
-      input:          input,
-      options:        options,
-      action:         "CompleteMultipartUpload",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      input:            input,
+      options:          options,
+      action:           "CompleteMultipartUpload",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -572,15 +586,16 @@ defmodule Baiji.Glacier do
   """
   def set_data_retrieval_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/policies/data-retrieval",
-      input:          input,
-      options:        options,
-      action:         "SetDataRetrievalPolicy",
+      service:          "glacier",
+      endpoint:         "/{accountId}/policies/data-retrieval",
+      input:            input,
+      options:          options,
+      action:           "SetDataRetrievalPolicy",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :put
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :put
     }
   end
   
@@ -615,15 +630,16 @@ defmodule Baiji.Glacier do
   """
   def delete_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteVault",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteVault",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :delete
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :delete
     }
   end
   
@@ -655,15 +671,16 @@ defmodule Baiji.Glacier do
   """
   def abort_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
-      input:          input,
-      options:        options,
-      action:         "AbortMultipartUpload",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      input:            input,
+      options:          options,
+      action:           "AbortMultipartUpload",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :delete
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :delete
     }
   end
   
@@ -696,15 +713,16 @@ defmodule Baiji.Glacier do
   """
   def describe_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/jobs/{jobId}",
-      input:          input,
-      options:        options,
-      action:         "DescribeJob",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/jobs/{jobId}",
+      input:            input,
+      options:          options,
+      action:           "DescribeJob",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -741,15 +759,16 @@ defmodule Baiji.Glacier do
   """
   def delete_archive(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/archives/{archiveId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteArchive",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/archives/{archiveId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteArchive",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :delete
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :delete
     }
   end
   
@@ -776,15 +795,16 @@ defmodule Baiji.Glacier do
   """
   def delete_vault_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/notification-configuration",
-      input:          input,
-      options:        options,
-      action:         "DeleteVaultNotifications",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/notification-configuration",
+      input:            input,
+      options:          options,
+      action:           "DeleteVaultNotifications",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :delete
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :delete
     }
   end
   
@@ -800,15 +820,16 @@ defmodule Baiji.Glacier do
   """
   def get_vault_access_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/access-policy",
-      input:          input,
-      options:        options,
-      action:         "GetVaultAccessPolicy",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/access-policy",
+      input:            input,
+      options:          options,
+      action:           "GetVaultAccessPolicy",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -965,15 +986,16 @@ defmodule Baiji.Glacier do
   """
   def initiate_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/jobs",
-      input:          input,
-      options:        options,
-      action:         "InitiateJob",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/jobs",
+      input:            input,
+      options:          options,
+      action:           "InitiateJob",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -983,15 +1005,16 @@ defmodule Baiji.Glacier do
   """
   def list_provisioned_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/provisioned-capacity",
-      input:          input,
-      options:        options,
-      action:         "ListProvisionedCapacity",
+      service:          "glacier",
+      endpoint:         "/{accountId}/provisioned-capacity",
+      input:            input,
+      options:          options,
+      action:           "ListProvisionedCapacity",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -1004,15 +1027,16 @@ defmodule Baiji.Glacier do
   """
   def remove_tags_from_vault(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/tags?operation=remove",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromVault",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/tags?operation=remove",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromVault",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -1069,15 +1093,16 @@ defmodule Baiji.Glacier do
   """
   def get_job_output(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/jobs/{jobId}/output",
-      input:          input,
-      options:        options,
-      action:         "GetJobOutput",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/jobs/{jobId}/output",
+      input:            input,
+      options:          options,
+      action:           "GetJobOutput",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -1123,15 +1148,16 @@ defmodule Baiji.Glacier do
   """
   def set_vault_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/notification-configuration",
-      input:          input,
-      options:        options,
-      action:         "SetVaultNotifications",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/notification-configuration",
+      input:            input,
+      options:          options,
+      action:           "SetVaultNotifications",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :put
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :put
     }
   end
   
@@ -1172,15 +1198,16 @@ defmodule Baiji.Glacier do
   """
   def initiate_vault_lock(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/lock-policy",
-      input:          input,
-      options:        options,
-      action:         "InitiateVaultLock",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/lock-policy",
+      input:            input,
+      options:          options,
+      action:           "InitiateVaultLock",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -1210,15 +1237,16 @@ defmodule Baiji.Glacier do
   """
   def get_vault_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/notification-configuration",
-      input:          input,
-      options:        options,
-      action:         "GetVaultNotifications",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/notification-configuration",
+      input:            input,
+      options:          options,
+      action:           "GetVaultNotifications",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -1230,15 +1258,16 @@ defmodule Baiji.Glacier do
   """
   def get_data_retrieval_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/policies/data-retrieval",
-      input:          input,
-      options:        options,
-      action:         "GetDataRetrievalPolicy",
+      service:          "glacier",
+      endpoint:         "/{accountId}/policies/data-retrieval",
+      input:            input,
+      options:          options,
+      action:           "GetDataRetrievalPolicy",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -1285,15 +1314,16 @@ defmodule Baiji.Glacier do
   """
   def initiate_multipart_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/multipart-uploads",
-      input:          input,
-      options:        options,
-      action:         "InitiateMultipartUpload",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads",
+      input:            input,
+      options:          options,
+      action:           "InitiateMultipartUpload",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :post
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :post
     }
   end
   
@@ -1335,15 +1365,16 @@ defmodule Baiji.Glacier do
   """
   def list_multipart_uploads(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/multipart-uploads",
-      input:          input,
-      options:        options,
-      action:         "ListMultipartUploads",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads",
+      input:            input,
+      options:          options,
+      action:           "ListMultipartUploads",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -1380,15 +1411,16 @@ defmodule Baiji.Glacier do
   """
   def list_parts(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
-      input:          input,
-      options:        options,
-      action:         "ListParts",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      input:            input,
+      options:          options,
+      action:           "ListParts",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :get
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :get
     }
   end
   
@@ -1445,15 +1477,16 @@ defmodule Baiji.Glacier do
   """
   def upload_multipart_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "glacier",
-      endpoint:       "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
-      input:          input,
-      options:        options,
-      action:         "UploadMultipartPart",
+      service:          "glacier",
+      endpoint:         "/{accountId}/vaults/{vaultName}/multipart-uploads/{uploadId}",
+      input:            input,
+      options:          options,
+      action:           "UploadMultipartPart",
       
-      type:           :rest_json,
-      version:        "2012-06-01",
-      method:         :put
+      endpoint_prefix:  "glacier",
+      type:             :rest_json,
+      version:          "2012-06-01",
+      method:           :put
     }
   end
   

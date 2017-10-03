@@ -62,17 +62,18 @@ defmodule Baiji.AWSHealth do
   """
   def describe_affected_entities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "health",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAffectedEntities",
+      service:          "health",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAffectedEntities",
       
-      target_prefix:  "AWSHealth_20160804",
+      target_prefix:    "AWSHealth_20160804",
       
-      type:           :json,
-      version:        "2016-08-04",
-      method:         :post
+      endpoint_prefix:  "health",
+      type:             :json,
+      version:          "2016-08-04",
+      method:           :post
     }
   end
   
@@ -83,17 +84,18 @@ defmodule Baiji.AWSHealth do
   """
   def describe_entity_aggregates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "health",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEntityAggregates",
+      service:          "health",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEntityAggregates",
       
-      target_prefix:  "AWSHealth_20160804",
+      target_prefix:    "AWSHealth_20160804",
       
-      type:           :json,
-      version:        "2016-08-04",
-      method:         :post
+      endpoint_prefix:  "health",
+      type:             :json,
+      version:          "2016-08-04",
+      method:           :post
     }
   end
   
@@ -104,17 +106,18 @@ defmodule Baiji.AWSHealth do
   """
   def describe_event_aggregates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "health",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventAggregates",
+      service:          "health",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventAggregates",
       
-      target_prefix:  "AWSHealth_20160804",
+      target_prefix:    "AWSHealth_20160804",
       
-      type:           :json,
-      version:        "2016-08-04",
-      method:         :post
+      endpoint_prefix:  "health",
+      type:             :json,
+      version:          "2016-08-04",
+      method:           :post
     }
   end
   
@@ -131,17 +134,18 @@ defmodule Baiji.AWSHealth do
   """
   def describe_event_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "health",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventDetails",
+      service:          "health",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventDetails",
       
-      target_prefix:  "AWSHealth_20160804",
+      target_prefix:    "AWSHealth_20160804",
       
-      type:           :json,
-      version:        "2016-08-04",
-      method:         :post
+      endpoint_prefix:  "health",
+      type:             :json,
+      version:          "2016-08-04",
+      method:           :post
     }
   end
   
@@ -152,17 +156,18 @@ defmodule Baiji.AWSHealth do
   """
   def describe_event_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "health",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventTypes",
+      service:          "health",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventTypes",
       
-      target_prefix:  "AWSHealth_20160804",
+      target_prefix:    "AWSHealth_20160804",
       
-      type:           :json,
-      version:        "2016-08-04",
-      method:         :post
+      endpoint_prefix:  "health",
+      type:             :json,
+      version:          "2016-08-04",
+      method:           :post
     }
   end
   
@@ -178,17 +183,18 @@ defmodule Baiji.AWSHealth do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "health",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvents",
+      service:          "health",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvents",
       
-      target_prefix:  "AWSHealth_20160804",
+      target_prefix:    "AWSHealth_20160804",
       
-      type:           :json,
-      version:        "2016-08-04",
-      method:         :post
+      endpoint_prefix:  "health",
+      type:             :json,
+      version:          "2016-08-04",
+      method:           :post
     }
   end
   

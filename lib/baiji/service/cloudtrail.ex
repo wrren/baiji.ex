@@ -36,17 +36,18 @@ defmodule Baiji.CloudTrail do
   """
   def add_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTags",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTags",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -57,17 +58,18 @@ defmodule Baiji.CloudTrail do
   """
   def create_trail(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateTrail",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateTrail",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -79,17 +81,18 @@ defmodule Baiji.CloudTrail do
   """
   def delete_trail(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTrail",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTrail",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -99,17 +102,18 @@ defmodule Baiji.CloudTrail do
   """
   def describe_trails(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTrails",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTrails",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -132,17 +136,18 @@ defmodule Baiji.CloudTrail do
   """
   def get_event_selectors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetEventSelectors",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetEventSelectors",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -155,17 +160,18 @@ defmodule Baiji.CloudTrail do
   """
   def get_trail_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetTrailStatus",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetTrailStatus",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -183,17 +189,18 @@ defmodule Baiji.CloudTrail do
   """
   def list_public_keys(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListPublicKeys",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListPublicKeys",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -202,17 +209,18 @@ defmodule Baiji.CloudTrail do
   """
   def list_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTags",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTags",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -249,17 +257,18 @@ defmodule Baiji.CloudTrail do
   """
   def lookup_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "LookupEvents",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "LookupEvents",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -299,17 +308,18 @@ defmodule Baiji.CloudTrail do
   """
   def put_event_selectors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutEventSelectors",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutEventSelectors",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -318,17 +328,18 @@ defmodule Baiji.CloudTrail do
   """
   def remove_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTags",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTags",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -341,17 +352,18 @@ defmodule Baiji.CloudTrail do
   """
   def start_logging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartLogging",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartLogging",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -367,17 +379,18 @@ defmodule Baiji.CloudTrail do
   """
   def stop_logging(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopLogging",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopLogging",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   
@@ -391,17 +404,18 @@ defmodule Baiji.CloudTrail do
   """
   def update_trail(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudtrail",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateTrail",
+      service:          "cloudtrail",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateTrail",
       
-      target_prefix:  "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
+      target_prefix:    "com.amazonaws.cloudtrail.v20131101.CloudTrail_20131101",
       
-      type:           :json,
-      version:        "2013-11-01",
-      method:         :post
+      endpoint_prefix:  "cloudtrail",
+      type:             :json,
+      version:          "2013-11-01",
+      method:           :post
     }
   end
   

@@ -36,15 +36,16 @@ defmodule Baiji.Cloudformation do
   """
   def cancel_update_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CancelUpdateStack",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CancelUpdateStack",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -59,15 +60,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStacks",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStacks",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -81,15 +83,16 @@ defmodule Baiji.Cloudformation do
   """
   def signal_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SignalResource",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SignalResource",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -98,15 +101,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_set_operation_results(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStackSetOperationResults",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStackSetOperationResults",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -121,15 +125,16 @@ defmodule Baiji.Cloudformation do
   """
   def update_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateStackSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateStackSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -140,15 +145,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStackInstances",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStackInstances",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -157,15 +163,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_set_operations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStackSetOperations",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStackSetOperations",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -182,15 +189,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_imports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListImports",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListImports",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -202,15 +210,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackResource",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackResource",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -233,15 +242,16 @@ defmodule Baiji.Cloudformation do
   """
   def continue_update_rollback(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ContinueUpdateRollback",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ContinueUpdateRollback",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -251,15 +261,16 @@ defmodule Baiji.Cloudformation do
   """
   def get_stack_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetStackPolicy",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetStackPolicy",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -268,15 +279,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_set_operation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackSetOperation",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackSetOperation",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -289,15 +301,16 @@ defmodule Baiji.Cloudformation do
   """
   def delete_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteChangeSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteChangeSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -308,15 +321,16 @@ defmodule Baiji.Cloudformation do
   """
   def delete_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteStack",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteStack",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -327,15 +341,16 @@ defmodule Baiji.Cloudformation do
   """
   def create_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateStack",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateStack",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -346,15 +361,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_change_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListChangeSets",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListChangeSets",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -367,15 +383,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeChangeSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeChangeSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -385,15 +402,16 @@ defmodule Baiji.Cloudformation do
   """
   def stop_stack_set_operation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopStackSetOperation",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopStackSetOperation",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -405,15 +423,16 @@ defmodule Baiji.Cloudformation do
   """
   def validate_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ValidateTemplate",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ValidateTemplate",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -425,15 +444,16 @@ defmodule Baiji.Cloudformation do
   """
   def create_stack_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateStackInstances",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateStackInstances",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -451,15 +471,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackEvents",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackEvents",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -469,15 +490,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStackSets",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStackSets",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -506,15 +528,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackResources",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackResources",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -525,15 +548,16 @@ defmodule Baiji.Cloudformation do
   """
   def estimate_template_cost(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "EstimateTemplateCost",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "EstimateTemplateCost",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -550,15 +574,16 @@ defmodule Baiji.Cloudformation do
   """
   def get_template(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetTemplate",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetTemplate",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -567,15 +592,16 @@ defmodule Baiji.Cloudformation do
   """
   def create_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateStackSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateStackSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -588,15 +614,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackInstance",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackInstance",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -605,15 +632,16 @@ defmodule Baiji.Cloudformation do
   """
   def set_stack_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetStackPolicy",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetStackPolicy",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -626,15 +654,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStacks",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStacks",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -643,15 +672,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -669,15 +699,16 @@ defmodule Baiji.Cloudformation do
   """
   def update_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateStack",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateStack",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -694,15 +725,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_exports(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListExports",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListExports",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -712,15 +744,16 @@ defmodule Baiji.Cloudformation do
   """
   def delete_stack_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteStackInstances",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteStackInstances",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -740,15 +773,16 @@ defmodule Baiji.Cloudformation do
   """
   def execute_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ExecuteChangeSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ExecuteChangeSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -760,15 +794,16 @@ defmodule Baiji.Cloudformation do
   """
   def list_stack_resources(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStackResources",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStackResources",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -779,15 +814,16 @@ defmodule Baiji.Cloudformation do
   """
   def delete_stack_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteStackSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteStackSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -807,15 +843,16 @@ defmodule Baiji.Cloudformation do
   """
   def get_template_summary(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetTemplateSummary",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetTemplateSummary",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -825,15 +862,16 @@ defmodule Baiji.Cloudformation do
   """
   def describe_account_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAccountLimits",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAccountLimits",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   
@@ -862,15 +900,16 @@ defmodule Baiji.Cloudformation do
   """
   def create_change_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudformation",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateChangeSet",
+      service:          "cloudformation",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateChangeSet",
       
-      type:           :xml,
-      version:        "2010-05-15",
-      method:         :post
+      endpoint_prefix:  "cloudformation",
+      type:             :xml,
+      version:          "2010-05-15",
+      method:           :post
     }
   end
   

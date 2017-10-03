@@ -61,15 +61,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBParameters",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBParameters",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -78,15 +79,16 @@ defmodule Baiji.RDS do
   """
   def modify_option_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyOptionGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyOptionGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -95,15 +97,16 @@ defmodule Baiji.RDS do
   """
   def describe_option_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOptionGroups",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOptionGroups",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -128,15 +131,16 @@ defmodule Baiji.RDS do
   """
   def restore_d_b_cluster_to_point_in_time(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreDBClusterToPointInTime",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreDBClusterToPointInTime",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -150,15 +154,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_subnet_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBSubnetGroups",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBSubnetGroups",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -179,15 +184,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_snapshot_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBSnapshotAttributes",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBSnapshotAttributes",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -197,15 +203,16 @@ defmodule Baiji.RDS do
   """
   def describe_reserved_d_b_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReservedDBInstances",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReservedDBInstances",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -215,15 +222,16 @@ defmodule Baiji.RDS do
   """
   def add_source_identifier_to_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddSourceIdentifierToSubscription",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddSourceIdentifierToSubscription",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -232,15 +240,16 @@ defmodule Baiji.RDS do
   """
   def delete_option_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteOptionGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteOptionGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -259,15 +268,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -276,15 +286,16 @@ defmodule Baiji.RDS do
   """
   def describe_reserved_d_b_instances_offerings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReservedDBInstancesOfferings",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReservedDBInstancesOfferings",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -293,15 +304,16 @@ defmodule Baiji.RDS do
   """
   def create_option_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateOptionGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateOptionGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -310,15 +322,16 @@ defmodule Baiji.RDS do
   """
   def copy_d_b_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyDBParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopyDBParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -333,15 +346,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_cluster_parameter_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBClusterParameterGroups",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBClusterParameterGroups",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -350,15 +364,16 @@ defmodule Baiji.RDS do
   """
   def promote_read_replica_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PromoteReadReplicaDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PromoteReadReplicaDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -371,15 +386,16 @@ defmodule Baiji.RDS do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvents",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvents",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -391,15 +407,16 @@ defmodule Baiji.RDS do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromResource",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromResource",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -415,15 +432,16 @@ defmodule Baiji.RDS do
   """
   def promote_read_replica(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PromoteReadReplica",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PromoteReadReplica",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -435,15 +453,16 @@ defmodule Baiji.RDS do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForResource",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForResource",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -454,15 +473,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBSecurityGroups",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBSecurityGroups",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -476,15 +496,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -493,15 +514,16 @@ defmodule Baiji.RDS do
   """
   def delete_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteEventSubscription",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteEventSubscription",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -513,15 +535,16 @@ defmodule Baiji.RDS do
   """
   def revoke_d_b_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RevokeDBSecurityGroupIngress",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RevokeDBSecurityGroupIngress",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -531,15 +554,16 @@ defmodule Baiji.RDS do
   """
   def remove_source_identifier_from_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveSourceIdentifierFromSubscription",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveSourceIdentifierFromSubscription",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -574,15 +598,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBClusterParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -594,15 +619,16 @@ defmodule Baiji.RDS do
   """
   def add_role_to_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddRoleToDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddRoleToDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -627,15 +653,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_snapshot_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBSnapshotAttribute",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBSnapshotAttribute",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -644,15 +671,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_engine_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBEngineVersions",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBEngineVersions",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -666,15 +694,16 @@ defmodule Baiji.RDS do
   """
   def describe_engine_default_cluster_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEngineDefaultClusterParameters",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEngineDefaultClusterParameters",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -703,15 +732,16 @@ defmodule Baiji.RDS do
   """
   def create_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateEventSubscription",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateEventSubscription",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -720,15 +750,16 @@ defmodule Baiji.RDS do
   """
   def download_d_b_log_file_portion(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DownloadDBLogFilePortion",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DownloadDBLogFilePortion",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -745,15 +776,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBClusterSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBClusterSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -764,15 +796,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_parameter_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBParameterGroups",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBParameterGroups",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -797,15 +830,16 @@ defmodule Baiji.RDS do
   """
   def reboot_d_b_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebootDBInstance",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebootDBInstance",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -814,15 +848,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBInstance",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBInstance",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -836,15 +871,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_cluster_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBClusterSnapshots",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBClusterSnapshots",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -858,15 +894,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -878,15 +915,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBClusterSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBClusterSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -902,15 +940,16 @@ defmodule Baiji.RDS do
   """
   def restore_d_b_cluster_from_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreDBClusterFromSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreDBClusterFromSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -924,15 +963,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_cluster_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBClusterParameters",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBClusterParameters",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -944,15 +984,16 @@ defmodule Baiji.RDS do
   """
   def start_d_b_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartDBInstance",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartDBInstance",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -965,15 +1006,16 @@ defmodule Baiji.RDS do
   """
   def restore_d_b_cluster_from_s3(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreDBClusterFromS3",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreDBClusterFromS3",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -984,15 +1026,16 @@ defmodule Baiji.RDS do
   """
   def describe_source_regions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSourceRegions",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSourceRegions",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1013,15 +1056,16 @@ defmodule Baiji.RDS do
   """
   def copy_d_b_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyDBSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopyDBSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1045,15 +1089,16 @@ defmodule Baiji.RDS do
   """
   def failover_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "FailoverDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "FailoverDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1076,15 +1121,16 @@ defmodule Baiji.RDS do
   """
   def reset_d_b_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResetDBClusterParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResetDBClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1094,15 +1140,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1111,15 +1158,16 @@ defmodule Baiji.RDS do
   """
   def describe_orderable_d_b_instance_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOrderableDBInstanceOptions",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOrderableDBInstanceOptions",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1135,15 +1183,16 @@ defmodule Baiji.RDS do
   """
   def reset_d_b_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResetDBParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResetDBParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1153,15 +1202,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBInstances",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBInstances",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1170,15 +1220,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_log_files(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBLogFiles",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBLogFiles",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1188,15 +1239,16 @@ defmodule Baiji.RDS do
   """
   def apply_pending_maintenance_action(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ApplyPendingMaintenanceAction",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ApplyPendingMaintenanceAction",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1235,15 +1287,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBClusterParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1253,15 +1306,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBSubnetGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBSubnetGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1341,15 +1395,16 @@ defmodule Baiji.RDS do
   """
   def copy_d_b_cluster_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyDBClusterSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopyDBClusterSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1359,15 +1414,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBSecurityGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBSecurityGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1387,15 +1443,16 @@ defmodule Baiji.RDS do
   """
   def restore_d_b_instance_to_point_in_time(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreDBInstanceToPointInTime",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreDBInstanceToPointInTime",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1409,15 +1466,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBClusters",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBClusters",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1430,15 +1488,16 @@ defmodule Baiji.RDS do
   """
   def describe_event_categories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventCategories",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventCategories",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1463,15 +1522,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_instance_read_replica(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBInstanceReadReplica",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBInstanceReadReplica",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1485,15 +1545,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_security_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBSecurityGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBSecurityGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1520,15 +1581,16 @@ defmodule Baiji.RDS do
   """
   def restore_d_b_instance_from_d_b_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RestoreDBInstanceFromDBSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RestoreDBInstanceFromDBSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1543,15 +1605,16 @@ defmodule Baiji.RDS do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToResource",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToResource",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1561,15 +1624,16 @@ defmodule Baiji.RDS do
   """
   def describe_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCertificates",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCertificates",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1586,15 +1650,16 @@ defmodule Baiji.RDS do
   """
   def modify_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyEventSubscription",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyEventSubscription",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1620,15 +1685,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_cluster_snapshot_attribute(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBClusterSnapshotAttribute",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBClusterSnapshotAttribute",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1638,15 +1704,16 @@ defmodule Baiji.RDS do
   """
   def describe_engine_default_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEngineDefaultParameters",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEngineDefaultParameters",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1681,15 +1748,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBInstance",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBInstance",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1703,15 +1771,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1722,15 +1791,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBInstance",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBInstance",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1742,15 +1812,16 @@ defmodule Baiji.RDS do
   """
   def remove_role_from_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveRoleFromDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveRoleFromDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1759,15 +1830,16 @@ defmodule Baiji.RDS do
   """
   def purchase_reserved_d_b_instances_offering(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PurchaseReservedDBInstancesOffering",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PurchaseReservedDBInstancesOffering",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1788,15 +1860,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_cluster_snapshot_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBClusterSnapshotAttributes",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBClusterSnapshotAttributes",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1810,15 +1883,16 @@ defmodule Baiji.RDS do
   """
   def describe_event_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventSubscriptions",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventSubscriptions",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1848,15 +1922,16 @@ defmodule Baiji.RDS do
   """
   def modify_d_b_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyDBParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyDBParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1865,15 +1940,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_snapshot(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBSnapshot",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBSnapshot",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1905,15 +1981,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1922,15 +1999,16 @@ defmodule Baiji.RDS do
   """
   def copy_d_b_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyDBClusterParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopyDBClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1939,15 +2017,16 @@ defmodule Baiji.RDS do
   """
   def copy_option_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CopyOptionGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CopyOptionGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1957,15 +2036,16 @@ defmodule Baiji.RDS do
   """
   def create_d_b_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDBSubnetGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDBSubnetGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -1979,15 +2059,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_cluster_parameter_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBClusterParameterGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBClusterParameterGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2000,15 +2081,16 @@ defmodule Baiji.RDS do
   """
   def stop_d_b_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopDBInstance",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopDBInstance",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2022,15 +2104,16 @@ defmodule Baiji.RDS do
   """
   def describe_account_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAccountAttributes",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAccountAttributes",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2044,15 +2127,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBSubnetGroup",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBSubnetGroup",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2062,15 +2146,16 @@ defmodule Baiji.RDS do
   """
   def describe_d_b_snapshots(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDBSnapshots",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDBSnapshots",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2080,15 +2165,16 @@ defmodule Baiji.RDS do
   """
   def describe_pending_maintenance_actions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePendingMaintenanceActions",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePendingMaintenanceActions",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2097,15 +2183,16 @@ defmodule Baiji.RDS do
   """
   def describe_option_group_options(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOptionGroupOptions",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOptionGroupOptions",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2121,15 +2208,16 @@ defmodule Baiji.RDS do
   """
   def delete_d_b_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteDBCluster",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteDBCluster",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   
@@ -2153,15 +2241,16 @@ defmodule Baiji.RDS do
   """
   def authorize_d_b_security_group_ingress(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "rds",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AuthorizeDBSecurityGroupIngress",
+      service:          "rds",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AuthorizeDBSecurityGroupIngress",
       
-      type:           :xml,
-      version:        "2014-10-31",
-      method:         :post
+      endpoint_prefix:  "rds",
+      type:             :xml,
+      version:          "2014-10-31",
+      method:           :post
     }
   end
   

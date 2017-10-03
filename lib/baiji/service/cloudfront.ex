@@ -19,15 +19,16 @@ defmodule Baiji.CloudFront do
   """
   def create_cloud_front_origin_access_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/origin-access-identity/cloudfront",
-      input:          input,
-      options:        options,
-      action:         "CreateCloudFrontOriginAccessIdentity",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/origin-access-identity/cloudfront",
+      input:            input,
+      options:          options,
+      action:           "CreateCloudFrontOriginAccessIdentity",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -37,15 +38,16 @@ defmodule Baiji.CloudFront do
   """
   def create_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution",
-      input:          input,
-      options:        options,
-      action:         "CreateDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution",
+      input:            input,
+      options:          options,
+      action:           "CreateDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -54,15 +56,16 @@ defmodule Baiji.CloudFront do
   """
   def create_distribution_with_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution?WithTags",
-      input:          input,
-      options:        options,
-      action:         "CreateDistributionWithTags",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution?WithTags",
+      input:            input,
+      options:          options,
+      action:           "CreateDistributionWithTags",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -71,15 +74,16 @@ defmodule Baiji.CloudFront do
   """
   def create_invalidation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{DistributionId}/invalidation",
-      input:          input,
-      options:        options,
-      action:         "CreateInvalidation",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{DistributionId}/invalidation",
+      input:            input,
+      options:          options,
+      action:           "CreateInvalidation",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -118,15 +122,16 @@ defmodule Baiji.CloudFront do
   """
   def create_streaming_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution",
-      input:          input,
-      options:        options,
-      action:         "CreateStreamingDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution",
+      input:            input,
+      options:          options,
+      action:           "CreateStreamingDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -135,15 +140,16 @@ defmodule Baiji.CloudFront do
   """
   def create_streaming_distribution_with_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution?WithTags",
-      input:          input,
-      options:        options,
-      action:         "CreateStreamingDistributionWithTags",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution?WithTags",
+      input:            input,
+      options:          options,
+      action:           "CreateStreamingDistributionWithTags",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -152,15 +158,16 @@ defmodule Baiji.CloudFront do
   """
   def delete_cloud_front_origin_access_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/origin-access-identity/cloudfront/{Id}",
-      input:          input,
-      options:        options,
-      action:         "DeleteCloudFrontOriginAccessIdentity",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/origin-access-identity/cloudfront/{Id}",
+      input:            input,
+      options:          options,
+      action:           "DeleteCloudFrontOriginAccessIdentity",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :delete
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :delete
     }
   end
   
@@ -169,15 +176,16 @@ defmodule Baiji.CloudFront do
   """
   def delete_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{Id}",
-      input:          input,
-      options:        options,
-      action:         "DeleteDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{Id}",
+      input:            input,
+      options:          options,
+      action:           "DeleteDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :delete
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :delete
     }
   end
   
@@ -225,15 +233,16 @@ defmodule Baiji.CloudFront do
   """
   def delete_streaming_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution/{Id}",
-      input:          input,
-      options:        options,
-      action:         "DeleteStreamingDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution/{Id}",
+      input:            input,
+      options:          options,
+      action:           "DeleteStreamingDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :delete
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :delete
     }
   end
   
@@ -242,15 +251,16 @@ defmodule Baiji.CloudFront do
   """
   def get_cloud_front_origin_access_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/origin-access-identity/cloudfront/{Id}",
-      input:          input,
-      options:        options,
-      action:         "GetCloudFrontOriginAccessIdentity",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/origin-access-identity/cloudfront/{Id}",
+      input:            input,
+      options:          options,
+      action:           "GetCloudFrontOriginAccessIdentity",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -259,15 +269,16 @@ defmodule Baiji.CloudFront do
   """
   def get_cloud_front_origin_access_identity_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/origin-access-identity/cloudfront/{Id}/config",
-      input:          input,
-      options:        options,
-      action:         "GetCloudFrontOriginAccessIdentityConfig",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/origin-access-identity/cloudfront/{Id}/config",
+      input:            input,
+      options:          options,
+      action:           "GetCloudFrontOriginAccessIdentityConfig",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -276,15 +287,16 @@ defmodule Baiji.CloudFront do
   """
   def get_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{Id}",
-      input:          input,
-      options:        options,
-      action:         "GetDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{Id}",
+      input:            input,
+      options:          options,
+      action:           "GetDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -293,15 +305,16 @@ defmodule Baiji.CloudFront do
   """
   def get_distribution_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{Id}/config",
-      input:          input,
-      options:        options,
-      action:         "GetDistributionConfig",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{Id}/config",
+      input:            input,
+      options:          options,
+      action:           "GetDistributionConfig",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -310,15 +323,16 @@ defmodule Baiji.CloudFront do
   """
   def get_invalidation(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{DistributionId}/invalidation/{Id}",
-      input:          input,
-      options:        options,
-      action:         "GetInvalidation",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{DistributionId}/invalidation/{Id}",
+      input:            input,
+      options:          options,
+      action:           "GetInvalidation",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -328,15 +342,16 @@ defmodule Baiji.CloudFront do
   """
   def get_streaming_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution/{Id}",
-      input:          input,
-      options:        options,
-      action:         "GetStreamingDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution/{Id}",
+      input:            input,
+      options:          options,
+      action:           "GetStreamingDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -345,15 +360,16 @@ defmodule Baiji.CloudFront do
   """
   def get_streaming_distribution_config(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution/{Id}/config",
-      input:          input,
-      options:        options,
-      action:         "GetStreamingDistributionConfig",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution/{Id}/config",
+      input:            input,
+      options:          options,
+      action:           "GetStreamingDistributionConfig",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -362,15 +378,16 @@ defmodule Baiji.CloudFront do
   """
   def list_cloud_front_origin_access_identities(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/origin-access-identity/cloudfront",
-      input:          input,
-      options:        options,
-      action:         "ListCloudFrontOriginAccessIdentities",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/origin-access-identity/cloudfront",
+      input:            input,
+      options:          options,
+      action:           "ListCloudFrontOriginAccessIdentities",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -379,15 +396,16 @@ defmodule Baiji.CloudFront do
   """
   def list_distributions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution",
-      input:          input,
-      options:        options,
-      action:         "ListDistributions",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution",
+      input:            input,
+      options:          options,
+      action:           "ListDistributions",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -397,15 +415,16 @@ defmodule Baiji.CloudFront do
   """
   def list_distributions_by_web_a_c_l_id(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distributionsByWebACLId/{WebACLId}",
-      input:          input,
-      options:        options,
-      action:         "ListDistributionsByWebACLId",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distributionsByWebACLId/{WebACLId}",
+      input:            input,
+      options:          options,
+      action:           "ListDistributionsByWebACLId",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -414,15 +433,16 @@ defmodule Baiji.CloudFront do
   """
   def list_invalidations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{DistributionId}/invalidation",
-      input:          input,
-      options:        options,
-      action:         "ListInvalidations",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{DistributionId}/invalidation",
+      input:            input,
+      options:          options,
+      action:           "ListInvalidations",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -431,15 +451,16 @@ defmodule Baiji.CloudFront do
   """
   def list_streaming_distributions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution",
-      input:          input,
-      options:        options,
-      action:         "ListStreamingDistributions",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution",
+      input:            input,
+      options:          options,
+      action:           "ListStreamingDistributions",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -448,15 +469,16 @@ defmodule Baiji.CloudFront do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/tagging",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForResource",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/tagging",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForResource",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :get
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :get
     }
   end
   
@@ -465,15 +487,16 @@ defmodule Baiji.CloudFront do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/tagging?Operation=Tag",
-      input:          input,
-      options:        options,
-      action:         "TagResource",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/tagging?Operation=Tag",
+      input:            input,
+      options:          options,
+      action:           "TagResource",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -482,15 +505,16 @@ defmodule Baiji.CloudFront do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/tagging?Operation=Untag",
-      input:          input,
-      options:        options,
-      action:         "UntagResource",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/tagging?Operation=Untag",
+      input:            input,
+      options:          options,
+      action:           "UntagResource",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :post
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :post
     }
   end
   
@@ -499,15 +523,16 @@ defmodule Baiji.CloudFront do
   """
   def update_cloud_front_origin_access_identity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/origin-access-identity/cloudfront/{Id}/config",
-      input:          input,
-      options:        options,
-      action:         "UpdateCloudFrontOriginAccessIdentity",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/origin-access-identity/cloudfront/{Id}/config",
+      input:            input,
+      options:          options,
+      action:           "UpdateCloudFrontOriginAccessIdentity",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :put
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :put
     }
   end
   
@@ -574,15 +599,16 @@ defmodule Baiji.CloudFront do
   """
   def update_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/distribution/{Id}/config",
-      input:          input,
-      options:        options,
-      action:         "UpdateDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/distribution/{Id}/config",
+      input:            input,
+      options:          options,
+      action:           "UpdateDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :put
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :put
     }
   end
   
@@ -591,15 +617,16 @@ defmodule Baiji.CloudFront do
   """
   def update_streaming_distribution(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cloudfront",
-      endpoint:       "/2017-03-25/streaming-distribution/{Id}/config",
-      input:          input,
-      options:        options,
-      action:         "UpdateStreamingDistribution",
+      service:          "cloudfront",
+      endpoint:         "/2017-03-25/streaming-distribution/{Id}/config",
+      input:            input,
+      options:          options,
+      action:           "UpdateStreamingDistribution",
       
-      type:           :rest_xml,
-      version:        "2017-03-25",
-      method:         :put
+      endpoint_prefix:  "cloudfront",
+      type:             :rest_xml,
+      version:          "2017-03-25",
+      method:           :put
     }
   end
   

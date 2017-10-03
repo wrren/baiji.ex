@@ -21,17 +21,18 @@ defmodule Baiji.ECR do
   """
   def batch_check_layer_availability(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchCheckLayerAvailability",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchCheckLayerAvailability",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -48,17 +49,18 @@ defmodule Baiji.ECR do
   """
   def batch_delete_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchDeleteImage",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchDeleteImage",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -68,17 +70,18 @@ defmodule Baiji.ECR do
   """
   def batch_get_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchGetImage",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchGetImage",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -95,17 +98,18 @@ defmodule Baiji.ECR do
   """
   def complete_layer_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CompleteLayerUpload",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CompleteLayerUpload",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -114,17 +118,18 @@ defmodule Baiji.ECR do
   """
   def create_repository(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateRepository",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateRepository",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -134,17 +139,18 @@ defmodule Baiji.ECR do
   """
   def delete_repository(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteRepository",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteRepository",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -153,17 +159,18 @@ defmodule Baiji.ECR do
   """
   def delete_repository_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteRepositoryPolicy",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteRepositoryPolicy",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -180,17 +187,18 @@ defmodule Baiji.ECR do
   """
   def describe_images(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeImages",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeImages",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -199,17 +207,18 @@ defmodule Baiji.ECR do
   """
   def describe_repositories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeRepositories",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeRepositories",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -226,17 +235,18 @@ defmodule Baiji.ECR do
   """
   def get_authorization_token(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetAuthorizationToken",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetAuthorizationToken",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -253,17 +263,18 @@ defmodule Baiji.ECR do
   """
   def get_download_url_for_layer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetDownloadUrlForLayer",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetDownloadUrlForLayer",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -272,17 +283,18 @@ defmodule Baiji.ECR do
   """
   def get_repository_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetRepositoryPolicy",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetRepositoryPolicy",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -297,17 +309,18 @@ defmodule Baiji.ECR do
   """
   def initiate_layer_upload(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "InitiateLayerUpload",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "InitiateLayerUpload",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -323,17 +336,18 @@ defmodule Baiji.ECR do
   """
   def list_images(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListImages",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListImages",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -348,17 +362,18 @@ defmodule Baiji.ECR do
   """
   def put_image(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutImage",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutImage",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -368,17 +383,18 @@ defmodule Baiji.ECR do
   """
   def set_repository_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetRepositoryPolicy",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetRepositoryPolicy",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   
@@ -393,17 +409,18 @@ defmodule Baiji.ECR do
   """
   def upload_layer_part(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "ecr",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UploadLayerPart",
+      service:          "ecr",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UploadLayerPart",
       
-      target_prefix:  "AmazonEC2ContainerRegistry_V20150921",
+      target_prefix:    "AmazonEC2ContainerRegistry_V20150921",
       
-      type:           :json,
-      version:        "2015-09-21",
-      method:         :post
+      endpoint_prefix:  "ecr",
+      type:             :json,
+      version:          "2015-09-21",
+      method:           :post
     }
   end
   

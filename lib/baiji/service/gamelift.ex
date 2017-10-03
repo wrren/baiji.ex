@@ -335,17 +335,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_game_session_queues(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeGameSessionQueues",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeGameSessionQueues",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -380,17 +381,18 @@ defmodule Baiji.Gamelift do
   """
   def stop_game_session_placement(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopGameSessionPlacement",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopGameSessionPlacement",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -419,17 +421,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_matchmaking_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteMatchmakingConfiguration",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteMatchmakingConfiguration",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -441,17 +444,18 @@ defmodule Baiji.Gamelift do
   """
   def request_upload_credentials(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RequestUploadCredentials",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RequestUploadCredentials",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -494,17 +498,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_game_session_details(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeGameSessionDetails",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeGameSessionDetails",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -582,17 +587,18 @@ defmodule Baiji.Gamelift do
   """
   def put_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutScalingPolicy",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutScalingPolicy",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -622,17 +628,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAlias",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAlias",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -656,17 +663,18 @@ defmodule Baiji.Gamelift do
   """
   def update_game_session_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateGameSessionQueue",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateGameSessionQueue",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -730,17 +738,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_e_c2_instance_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEC2InstanceLimits",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEC2InstanceLimits",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -765,17 +774,18 @@ defmodule Baiji.Gamelift do
   """
   def get_instance_access(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetInstanceAccess",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetInstanceAccess",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -805,17 +815,18 @@ defmodule Baiji.Gamelift do
   """
   def validate_matchmaking_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ValidateMatchmakingRuleSet",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ValidateMatchmakingRuleSet",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -849,17 +860,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_matchmaking_configurations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMatchmakingConfigurations",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMatchmakingConfigurations",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -893,17 +905,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_vpc_peering_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteVpcPeeringConnection",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteVpcPeeringConnection",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -926,17 +939,18 @@ defmodule Baiji.Gamelift do
   """
   def stop_matchmaking(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopMatchmaking",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopMatchmaking",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -985,17 +999,18 @@ defmodule Baiji.Gamelift do
   """
   def create_vpc_peering_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateVpcPeeringConnection",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateVpcPeeringConnection",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1060,17 +1075,18 @@ defmodule Baiji.Gamelift do
   """
   def create_game_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateGameSession",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateGameSession",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1119,17 +1135,18 @@ defmodule Baiji.Gamelift do
   """
   def create_matchmaking_rule_set(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateMatchmakingRuleSet",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateMatchmakingRuleSet",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1168,17 +1185,18 @@ defmodule Baiji.Gamelift do
   """
   def update_game_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateGameSession",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateGameSession",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1222,17 +1240,18 @@ defmodule Baiji.Gamelift do
   """
   def create_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateAlias",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateAlias",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1270,17 +1289,18 @@ defmodule Baiji.Gamelift do
   """
   def create_player_sessions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreatePlayerSessions",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreatePlayerSessions",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1303,17 +1323,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_game_session_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteGameSessionQueue",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteGameSessionQueue",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1378,17 +1399,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_fleet_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeFleetAttributes",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeFleetAttributes",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1466,17 +1488,18 @@ defmodule Baiji.Gamelift do
   """
   def search_game_sessions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SearchGameSessions",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SearchGameSessions",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1546,17 +1569,18 @@ defmodule Baiji.Gamelift do
   """
   def update_fleet_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateFleetCapacity",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateFleetCapacity",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1630,17 +1654,18 @@ defmodule Baiji.Gamelift do
   """
   def start_game_session_placement(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartGameSessionPlacement",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartGameSessionPlacement",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1697,17 +1722,18 @@ defmodule Baiji.Gamelift do
   """
   def update_fleet_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateFleetAttributes",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateFleetAttributes",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1734,17 +1760,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteAlias",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteAlias",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1773,17 +1800,18 @@ defmodule Baiji.Gamelift do
   """
   def update_matchmaking_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateMatchmakingConfiguration",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateMatchmakingConfiguration",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1811,17 +1839,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_build(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteBuild",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteBuild",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1879,17 +1908,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_scaling_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteScalingPolicy",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteScalingPolicy",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1922,17 +1952,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_matchmaking(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMatchmaking",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMatchmaking",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -1960,17 +1991,18 @@ defmodule Baiji.Gamelift do
   """
   def update_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateAlias",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateAlias",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2003,17 +2035,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_vpc_peering_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeVpcPeeringConnections",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeVpcPeeringConnections",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2096,17 +2129,18 @@ defmodule Baiji.Gamelift do
   """
   def start_matchmaking(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartMatchmaking",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartMatchmaking",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2167,17 +2201,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_scaling_policies(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeScalingPolicies",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeScalingPolicies",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2243,17 +2278,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_fleet_capacity(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeFleetCapacity",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeFleetCapacity",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2278,17 +2314,18 @@ defmodule Baiji.Gamelift do
   """
   def resolve_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResolveAlias",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResolveAlias",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2345,17 +2382,18 @@ defmodule Baiji.Gamelift do
   """
   def create_matchmaking_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateMatchmakingConfiguration",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateMatchmakingConfiguration",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2386,17 +2424,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_matchmaking_rule_sets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMatchmakingRuleSets",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMatchmakingRuleSets",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2447,17 +2486,18 @@ defmodule Baiji.Gamelift do
   """
   def create_game_session_queue(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateGameSessionQueue",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateGameSessionQueue",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2486,17 +2526,18 @@ defmodule Baiji.Gamelift do
   """
   def list_aliases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListAliases",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListAliases",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2567,17 +2608,18 @@ defmodule Baiji.Gamelift do
   """
   def update_runtime_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateRuntimeConfiguration",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateRuntimeConfiguration",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2604,17 +2646,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_vpc_peering_authorization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteVpcPeeringAuthorization",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteVpcPeeringAuthorization",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2640,17 +2683,18 @@ defmodule Baiji.Gamelift do
   """
   def update_build(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateBuild",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateBuild",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2693,17 +2737,18 @@ defmodule Baiji.Gamelift do
   """
   def accept_match(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AcceptMatch",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AcceptMatch",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2748,17 +2793,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_game_sessions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeGameSessions",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeGameSessions",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2798,17 +2844,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_player_sessions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePlayerSessions",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePlayerSessions",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2914,17 +2961,18 @@ defmodule Baiji.Gamelift do
   """
   def create_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateFleet",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateFleet",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -2984,17 +3032,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_fleet_port_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeFleetPortSettings",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeFleetPortSettings",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3029,17 +3078,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_game_session_placement(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeGameSessionPlacement",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeGameSessionPlacement",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3104,17 +3154,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_fleet_utilization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeFleetUtilization",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeFleetUtilization",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3171,17 +3222,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_runtime_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeRuntimeConfiguration",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeRuntimeConfiguration",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3240,17 +3292,18 @@ defmodule Baiji.Gamelift do
   """
   def delete_fleet(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteFleet",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteFleet",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3310,17 +3363,18 @@ defmodule Baiji.Gamelift do
   """
   def update_fleet_port_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateFleetPortSettings",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateFleetPortSettings",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3348,17 +3402,18 @@ defmodule Baiji.Gamelift do
   """
   def list_builds(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListBuilds",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListBuilds",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3385,17 +3440,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_vpc_peering_authorizations(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeVpcPeeringAuthorizations",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeVpcPeeringAuthorizations",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3438,17 +3494,18 @@ defmodule Baiji.Gamelift do
   """
   def create_build(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateBuild",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateBuild",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3464,17 +3521,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstances",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstances",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3498,17 +3556,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_build(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeBuild",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeBuild",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3549,17 +3608,18 @@ defmodule Baiji.Gamelift do
   """
   def get_game_session_log_url(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetGameSessionLogUrl",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetGameSessionLogUrl",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3618,17 +3678,18 @@ defmodule Baiji.Gamelift do
   """
   def list_fleets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListFleets",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListFleets",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3681,17 +3742,18 @@ defmodule Baiji.Gamelift do
   """
   def create_vpc_peering_authorization(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateVpcPeeringAuthorization",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateVpcPeeringAuthorization",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3728,17 +3790,18 @@ defmodule Baiji.Gamelift do
   """
   def create_player_session(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreatePlayerSession",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreatePlayerSession",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   
@@ -3796,17 +3859,18 @@ defmodule Baiji.Gamelift do
   """
   def describe_fleet_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "gamelift",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeFleetEvents",
+      service:          "gamelift",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeFleetEvents",
       
-      target_prefix:  "GameLift",
+      target_prefix:    "GameLift",
       
-      type:           :json,
-      version:        "2015-10-01",
-      method:         :post
+      endpoint_prefix:  "gamelift",
+      type:             :json,
+      version:          "2015-10-01",
+      method:           :post
     }
   end
   

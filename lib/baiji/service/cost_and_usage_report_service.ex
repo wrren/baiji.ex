@@ -8,17 +8,18 @@ defmodule Baiji.CostAndUsageReportService do
   """
   def delete_report_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cur",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteReportDefinition",
+      service:          "cur",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteReportDefinition",
       
-      target_prefix:  "AWSOrigamiServiceGatewayService",
+      target_prefix:    "AWSOrigamiServiceGatewayService",
       
-      type:           :json,
-      version:        "2017-01-06",
-      method:         :post
+      endpoint_prefix:  "cur",
+      type:             :json,
+      version:          "2017-01-06",
+      method:           :post
     }
   end
   
@@ -27,17 +28,18 @@ defmodule Baiji.CostAndUsageReportService do
   """
   def describe_report_definitions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cur",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReportDefinitions",
+      service:          "cur",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReportDefinitions",
       
-      target_prefix:  "AWSOrigamiServiceGatewayService",
+      target_prefix:    "AWSOrigamiServiceGatewayService",
       
-      type:           :json,
-      version:        "2017-01-06",
-      method:         :post
+      endpoint_prefix:  "cur",
+      type:             :json,
+      version:          "2017-01-06",
+      method:           :post
     }
   end
   
@@ -46,17 +48,18 @@ defmodule Baiji.CostAndUsageReportService do
   """
   def put_report_definition(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "cur",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutReportDefinition",
+      service:          "cur",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutReportDefinition",
       
-      target_prefix:  "AWSOrigamiServiceGatewayService",
+      target_prefix:    "AWSOrigamiServiceGatewayService",
       
-      type:           :json,
-      version:        "2017-01-06",
-      method:         :post
+      endpoint_prefix:  "cur",
+      type:             :json,
+      version:          "2017-01-06",
+      method:           :post
     }
   end
   

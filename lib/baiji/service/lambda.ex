@@ -33,15 +33,16 @@ defmodule Baiji.Lambda do
   """
   def add_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/policy",
-      input:          input,
-      options:        options,
-      action:         "AddPermission",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/policy",
+      input:            input,
+      options:          options,
+      action:           "AddPermission",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -55,15 +56,16 @@ defmodule Baiji.Lambda do
   """
   def create_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/aliases",
-      input:          input,
-      options:        options,
-      action:         "CreateAlias",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/aliases",
+      input:            input,
+      options:          options,
+      action:           "CreateAlias",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -98,15 +100,16 @@ defmodule Baiji.Lambda do
   """
   def create_event_source_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/event-source-mappings/",
-      input:          input,
-      options:        options,
-      action:         "CreateEventSourceMapping",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/event-source-mappings/",
+      input:            input,
+      options:          options,
+      action:           "CreateEventSourceMapping",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -125,15 +128,16 @@ defmodule Baiji.Lambda do
   """
   def create_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions",
-      input:          input,
-      options:        options,
-      action:         "CreateFunction",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions",
+      input:            input,
+      options:          options,
+      action:           "CreateFunction",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -146,15 +150,16 @@ defmodule Baiji.Lambda do
   """
   def delete_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/aliases/{Name}",
-      input:          input,
-      options:        options,
-      action:         "DeleteAlias",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/aliases/{Name}",
+      input:            input,
+      options:          options,
+      action:           "DeleteAlias",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :delete
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :delete
     }
   end
   
@@ -167,15 +172,16 @@ defmodule Baiji.Lambda do
   """
   def delete_event_source_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/event-source-mappings/{UUID}",
-      input:          input,
-      options:        options,
-      action:         "DeleteEventSourceMapping",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/event-source-mappings/{UUID}",
+      input:            input,
+      options:          options,
+      action:           "DeleteEventSourceMapping",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :delete
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :delete
     }
   end
   
@@ -197,15 +203,16 @@ defmodule Baiji.Lambda do
   """
   def delete_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteFunction",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteFunction",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :delete
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :delete
     }
   end
   
@@ -221,15 +228,16 @@ defmodule Baiji.Lambda do
   """
   def get_account_settings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2016-08-19/account-settings/",
-      input:          input,
-      options:        options,
-      action:         "GetAccountSettings",
+      service:          "lambda",
+      endpoint:         "/2016-08-19/account-settings/",
+      input:            input,
+      options:          options,
+      action:           "GetAccountSettings",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -243,15 +251,16 @@ defmodule Baiji.Lambda do
   """
   def get_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/aliases/{Name}",
-      input:          input,
-      options:        options,
-      action:         "GetAlias",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/aliases/{Name}",
+      input:            input,
+      options:          options,
+      action:           "GetAlias",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -264,15 +273,16 @@ defmodule Baiji.Lambda do
   """
   def get_event_source_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/event-source-mappings/{UUID}",
-      input:          input,
-      options:        options,
-      action:         "GetEventSourceMapping",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/event-source-mappings/{UUID}",
+      input:            input,
+      options:          options,
+      action:           "GetEventSourceMapping",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -294,15 +304,16 @@ defmodule Baiji.Lambda do
   """
   def get_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}",
-      input:          input,
-      options:        options,
-      action:         "GetFunction",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}",
+      input:            input,
+      options:          options,
+      action:           "GetFunction",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -324,15 +335,16 @@ defmodule Baiji.Lambda do
   """
   def get_function_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/configuration",
-      input:          input,
-      options:        options,
-      action:         "GetFunctionConfiguration",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/configuration",
+      input:            input,
+      options:          options,
+      action:           "GetFunctionConfiguration",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -349,15 +361,16 @@ defmodule Baiji.Lambda do
   """
   def get_policy(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/policy",
-      input:          input,
-      options:        options,
-      action:         "GetPolicy",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/policy",
+      input:            input,
+      options:          options,
+      action:           "GetPolicy",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -380,15 +393,16 @@ defmodule Baiji.Lambda do
   """
   def invoke(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/invocations",
-      input:          input,
-      options:        options,
-      action:         "Invoke",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/invocations",
+      input:            input,
+      options:          options,
+      action:           "Invoke",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -405,15 +419,16 @@ defmodule Baiji.Lambda do
   """
   def invoke_async(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2014-11-13/functions/{FunctionName}/invoke-async/",
-      input:          input,
-      options:        options,
-      action:         "InvokeAsync",
+      service:          "lambda",
+      endpoint:         "/2014-11-13/functions/{FunctionName}/invoke-async/",
+      input:            input,
+      options:          options,
+      action:           "InvokeAsync",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -428,15 +443,16 @@ defmodule Baiji.Lambda do
   """
   def list_aliases(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/aliases",
-      input:          input,
-      options:        options,
-      action:         "ListAliases",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/aliases",
+      input:            input,
+      options:          options,
+      action:           "ListAliases",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -458,15 +474,16 @@ defmodule Baiji.Lambda do
   """
   def list_event_source_mappings(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/event-source-mappings/",
-      input:          input,
-      options:        options,
-      action:         "ListEventSourceMappings",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/event-source-mappings/",
+      input:            input,
+      options:          options,
+      action:           "ListEventSourceMappings",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -484,15 +501,16 @@ defmodule Baiji.Lambda do
   """
   def list_functions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/",
-      input:          input,
-      options:        options,
-      action:         "ListFunctions",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/",
+      input:            input,
+      options:          options,
+      action:           "ListFunctions",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -502,15 +520,16 @@ defmodule Baiji.Lambda do
   """
   def list_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2017-03-31/tags/{ARN}",
-      input:          input,
-      options:        options,
-      action:         "ListTags",
+      service:          "lambda",
+      endpoint:         "/2017-03-31/tags/{ARN}",
+      input:            input,
+      options:          options,
+      action:           "ListTags",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -521,15 +540,16 @@ defmodule Baiji.Lambda do
   """
   def list_versions_by_function(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/versions",
-      input:          input,
-      options:        options,
-      action:         "ListVersionsByFunction",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/versions",
+      input:            input,
+      options:          options,
+      action:           "ListVersionsByFunction",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :get
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :get
     }
   end
   
@@ -543,15 +563,16 @@ defmodule Baiji.Lambda do
   """
   def publish_version(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/versions",
-      input:          input,
-      options:        options,
-      action:         "PublishVersion",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/versions",
+      input:            input,
+      options:          options,
+      action:           "PublishVersion",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -573,15 +594,16 @@ defmodule Baiji.Lambda do
   """
   def remove_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/policy/{StatementId}",
-      input:          input,
-      options:        options,
-      action:         "RemovePermission",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/policy/{StatementId}",
+      input:            input,
+      options:          options,
+      action:           "RemovePermission",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :delete
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :delete
     }
   end
   
@@ -593,15 +615,16 @@ defmodule Baiji.Lambda do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2017-03-31/tags/{ARN}",
-      input:          input,
-      options:        options,
-      action:         "TagResource",
+      service:          "lambda",
+      endpoint:         "/2017-03-31/tags/{ARN}",
+      input:            input,
+      options:          options,
+      action:           "TagResource",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :post
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :post
     }
   end
   
@@ -611,15 +634,16 @@ defmodule Baiji.Lambda do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2017-03-31/tags/{ARN}",
-      input:          input,
-      options:        options,
-      action:         "UntagResource",
+      service:          "lambda",
+      endpoint:         "/2017-03-31/tags/{ARN}",
+      input:            input,
+      options:          options,
+      action:           "UntagResource",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :delete
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :delete
     }
   end
   
@@ -633,15 +657,16 @@ defmodule Baiji.Lambda do
   """
   def update_alias(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/aliases/{Name}",
-      input:          input,
-      options:        options,
-      action:         "UpdateAlias",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/aliases/{Name}",
+      input:            input,
+      options:          options,
+      action:           "UpdateAlias",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :put
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :put
     }
   end
   
@@ -667,15 +692,16 @@ defmodule Baiji.Lambda do
   """
   def update_event_source_mapping(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/event-source-mappings/{UUID}",
-      input:          input,
-      options:        options,
-      action:         "UpdateEventSourceMapping",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/event-source-mappings/{UUID}",
+      input:            input,
+      options:          options,
+      action:           "UpdateEventSourceMapping",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :put
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :put
     }
   end
   
@@ -694,15 +720,16 @@ defmodule Baiji.Lambda do
   """
   def update_function_code(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/code",
-      input:          input,
-      options:        options,
-      action:         "UpdateFunctionCode",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/code",
+      input:            input,
+      options:          options,
+      action:           "UpdateFunctionCode",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :put
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :put
     }
   end
   
@@ -722,15 +749,16 @@ defmodule Baiji.Lambda do
   """
   def update_function_configuration(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "lambda",
-      endpoint:       "/2015-03-31/functions/{FunctionName}/configuration",
-      input:          input,
-      options:        options,
-      action:         "UpdateFunctionConfiguration",
+      service:          "lambda",
+      endpoint:         "/2015-03-31/functions/{FunctionName}/configuration",
+      input:            input,
+      options:          options,
+      action:           "UpdateFunctionConfiguration",
       
-      type:           :rest_json,
-      version:        "2015-03-31",
-      method:         :put
+      endpoint_prefix:  "lambda",
+      type:             :rest_json,
+      version:          "2015-03-31",
+      method:           :put
     }
   end
   

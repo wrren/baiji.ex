@@ -17,15 +17,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def cancel_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/jobs/{Id}",
-      input:          input,
-      options:        options,
-      action:         "CancelJob",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/jobs/{Id}",
+      input:            input,
+      options:          options,
+      action:           "CancelJob",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :delete
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :delete
     }
   end
   
@@ -41,15 +42,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def create_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/jobs",
-      input:          input,
-      options:        options,
-      action:         "CreateJob",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/jobs",
+      input:            input,
+      options:          options,
+      action:           "CreateJob",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :post
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :post
     }
   end
   
@@ -59,15 +61,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def create_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines",
-      input:          input,
-      options:        options,
-      action:         "CreatePipeline",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines",
+      input:            input,
+      options:          options,
+      action:           "CreatePipeline",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :post
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :post
     }
   end
   
@@ -92,15 +95,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def create_preset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/presets",
-      input:          input,
-      options:        options,
-      action:         "CreatePreset",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/presets",
+      input:            input,
+      options:          options,
+      action:           "CreatePreset",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :post
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :post
     }
   end
   
@@ -113,15 +117,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def delete_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines/{Id}",
-      input:          input,
-      options:        options,
-      action:         "DeletePipeline",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines/{Id}",
+      input:            input,
+      options:          options,
+      action:           "DeletePipeline",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :delete
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :delete
     }
   end
   
@@ -136,15 +141,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def delete_preset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/presets/{Id}",
-      input:          input,
-      options:        options,
-      action:         "DeletePreset",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/presets/{Id}",
+      input:            input,
+      options:          options,
+      action:           "DeletePreset",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :delete
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :delete
     }
   end
   
@@ -158,15 +164,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def list_jobs_by_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/jobsByPipeline/{PipelineId}",
-      input:          input,
-      options:        options,
-      action:         "ListJobsByPipeline",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/jobsByPipeline/{PipelineId}",
+      input:            input,
+      options:          options,
+      action:           "ListJobsByPipeline",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -177,15 +184,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def list_jobs_by_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/jobsByStatus/{Status}",
-      input:          input,
-      options:        options,
-      action:         "ListJobsByStatus",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/jobsByStatus/{Status}",
+      input:            input,
+      options:          options,
+      action:           "ListJobsByStatus",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -195,15 +203,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def list_pipelines(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines",
-      input:          input,
-      options:        options,
-      action:         "ListPipelines",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines",
+      input:            input,
+      options:          options,
+      action:           "ListPipelines",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -213,15 +222,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def list_presets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/presets",
-      input:          input,
-      options:        options,
-      action:         "ListPresets",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/presets",
+      input:            input,
+      options:          options,
+      action:           "ListPresets",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -230,15 +240,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def read_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/jobs/{Id}",
-      input:          input,
-      options:        options,
-      action:         "ReadJob",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/jobs/{Id}",
+      input:            input,
+      options:          options,
+      action:           "ReadJob",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -247,15 +258,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def read_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines/{Id}",
-      input:          input,
-      options:        options,
-      action:         "ReadPipeline",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines/{Id}",
+      input:            input,
+      options:          options,
+      action:           "ReadPipeline",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -264,15 +276,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def read_preset(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/presets/{Id}",
-      input:          input,
-      options:        options,
-      action:         "ReadPreset",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/presets/{Id}",
+      input:            input,
+      options:          options,
+      action:           "ReadPreset",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :get
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :get
     }
   end
   
@@ -287,15 +300,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def test_role(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/roleTests",
-      input:          input,
-      options:        options,
-      action:         "TestRole",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/roleTests",
+      input:            input,
+      options:          options,
+      action:           "TestRole",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :post
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :post
     }
   end
   
@@ -311,15 +325,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def update_pipeline(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines/{Id}",
-      input:          input,
-      options:        options,
-      action:         "UpdatePipeline",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines/{Id}",
+      input:            input,
+      options:          options,
+      action:           "UpdatePipeline",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :put
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :put
     }
   end
   
@@ -332,15 +347,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def update_pipeline_notifications(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines/{Id}/notifications",
-      input:          input,
-      options:        options,
-      action:         "UpdatePipelineNotifications",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines/{Id}/notifications",
+      input:            input,
+      options:          options,
+      action:           "UpdatePipelineNotifications",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :post
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :post
     }
   end
   
@@ -356,15 +372,16 @@ defmodule Baiji.ElasticTranscoder do
   """
   def update_pipeline_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elastictranscoder",
-      endpoint:       "/2012-09-25/pipelines/{Id}/status",
-      input:          input,
-      options:        options,
-      action:         "UpdatePipelineStatus",
+      service:          "elastictranscoder",
+      endpoint:         "/2012-09-25/pipelines/{Id}/status",
+      input:            input,
+      options:          options,
+      action:           "UpdatePipelineStatus",
       
-      type:           :rest_json,
-      version:        "2012-09-25",
-      method:         :post
+      endpoint_prefix:  "elastictranscoder",
+      type:             :rest_json,
+      version:          "2012-09-25",
+      method:           :post
     }
   end
   

@@ -63,15 +63,16 @@ defmodule Baiji.EFS do
   """
   def create_file_system(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/file-systems",
-      input:          input,
-      options:        options,
-      action:         "CreateFileSystem",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/file-systems",
+      input:            input,
+      options:          options,
+      action:           "CreateFileSystem",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :post
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :post
     }
   end
   
@@ -186,15 +187,16 @@ defmodule Baiji.EFS do
   """
   def create_mount_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/mount-targets",
-      input:          input,
-      options:        options,
-      action:         "CreateMountTarget",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/mount-targets",
+      input:            input,
+      options:          options,
+      action:           "CreateMountTarget",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :post
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :post
     }
   end
   
@@ -210,15 +212,16 @@ defmodule Baiji.EFS do
   """
   def create_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/create-tags/{FileSystemId}",
-      input:          input,
-      options:        options,
-      action:         "CreateTags",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/create-tags/{FileSystemId}",
+      input:            input,
+      options:          options,
+      action:           "CreateTags",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :post
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :post
     }
   end
   
@@ -243,15 +246,16 @@ defmodule Baiji.EFS do
   """
   def delete_file_system(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/file-systems/{FileSystemId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteFileSystem",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/file-systems/{FileSystemId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteFileSystem",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :delete
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :delete
     }
   end
   
@@ -286,15 +290,16 @@ defmodule Baiji.EFS do
   """
   def delete_mount_target(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/mount-targets/{MountTargetId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteMountTarget",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/mount-targets/{MountTargetId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteMountTarget",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :delete
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :delete
     }
   end
   
@@ -311,15 +316,16 @@ defmodule Baiji.EFS do
   """
   def delete_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/delete-tags/{FileSystemId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteTags",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/delete-tags/{FileSystemId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteTags",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :post
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :post
     }
   end
   
@@ -354,15 +360,16 @@ defmodule Baiji.EFS do
   """
   def describe_file_systems(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/file-systems",
-      input:          input,
-      options:        options,
-      action:         "DescribeFileSystems",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/file-systems",
+      input:            input,
+      options:          options,
+      action:           "DescribeFileSystems",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :get
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :get
     }
   end
   
@@ -383,15 +390,16 @@ defmodule Baiji.EFS do
   """
   def describe_mount_target_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/mount-targets/{MountTargetId}/security-groups",
-      input:          input,
-      options:        options,
-      action:         "DescribeMountTargetSecurityGroups",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/mount-targets/{MountTargetId}/security-groups",
+      input:            input,
+      options:          options,
+      action:           "DescribeMountTargetSecurityGroups",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :get
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :get
     }
   end
   
@@ -408,15 +416,16 @@ defmodule Baiji.EFS do
   """
   def describe_mount_targets(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/mount-targets",
-      input:          input,
-      options:        options,
-      action:         "DescribeMountTargets",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/mount-targets",
+      input:            input,
+      options:          options,
+      action:           "DescribeMountTargets",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :get
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :get
     }
   end
   
@@ -431,15 +440,16 @@ defmodule Baiji.EFS do
   """
   def describe_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/tags/{FileSystemId}/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTags",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/tags/{FileSystemId}/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTags",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :get
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :get
     }
   end
   
@@ -465,15 +475,16 @@ defmodule Baiji.EFS do
   """
   def modify_mount_target_security_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "elasticfilesystem",
-      endpoint:       "/2015-02-01/mount-targets/{MountTargetId}/security-groups",
-      input:          input,
-      options:        options,
-      action:         "ModifyMountTargetSecurityGroups",
+      service:          "elasticfilesystem",
+      endpoint:         "/2015-02-01/mount-targets/{MountTargetId}/security-groups",
+      input:            input,
+      options:          options,
+      action:           "ModifyMountTargetSecurityGroups",
       
-      type:           :rest_json,
-      version:        "2015-02-01",
-      method:         :put
+      endpoint_prefix:  "elasticfilesystem",
+      type:             :rest_json,
+      version:          "2015-02-01",
+      method:           :put
     }
   end
   

@@ -16,15 +16,16 @@ defmodule Baiji.ImportExport do
   """
   def cancel_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "importexport",
-      endpoint:       "/?Operation=CancelJob",
-      input:          input,
-      options:        options,
-      action:         "CancelJob",
+      service:          "importexport",
+      endpoint:         "/?Operation=CancelJob",
+      input:            input,
+      options:          options,
+      action:           "CancelJob",
       
-      type:           :xml,
-      version:        "2010-06-01",
-      method:         :post
+      endpoint_prefix:  "importexport",
+      type:             :xml,
+      version:          "2010-06-01",
+      method:           :post
     }
   end
   
@@ -37,15 +38,16 @@ defmodule Baiji.ImportExport do
   """
   def create_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "importexport",
-      endpoint:       "/?Operation=CreateJob",
-      input:          input,
-      options:        options,
-      action:         "CreateJob",
+      service:          "importexport",
+      endpoint:         "/?Operation=CreateJob",
+      input:            input,
+      options:          options,
+      action:           "CreateJob",
       
-      type:           :xml,
-      version:        "2010-06-01",
-      method:         :post
+      endpoint_prefix:  "importexport",
+      type:             :xml,
+      version:          "2010-06-01",
+      method:           :post
     }
   end
   
@@ -55,15 +57,16 @@ defmodule Baiji.ImportExport do
   """
   def get_shipping_label(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "importexport",
-      endpoint:       "/?Operation=GetShippingLabel",
-      input:          input,
-      options:        options,
-      action:         "GetShippingLabel",
+      service:          "importexport",
+      endpoint:         "/?Operation=GetShippingLabel",
+      input:            input,
+      options:          options,
+      action:           "GetShippingLabel",
       
-      type:           :xml,
-      version:        "2010-06-01",
-      method:         :post
+      endpoint_prefix:  "importexport",
+      type:             :xml,
+      version:          "2010-06-01",
+      method:           :post
     }
   end
   
@@ -75,15 +78,16 @@ defmodule Baiji.ImportExport do
   """
   def get_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "importexport",
-      endpoint:       "/?Operation=GetStatus",
-      input:          input,
-      options:        options,
-      action:         "GetStatus",
+      service:          "importexport",
+      endpoint:         "/?Operation=GetStatus",
+      input:            input,
+      options:          options,
+      action:           "GetStatus",
       
-      type:           :xml,
-      version:        "2010-06-01",
-      method:         :post
+      endpoint_prefix:  "importexport",
+      type:             :xml,
+      version:          "2010-06-01",
+      method:           :post
     }
   end
   
@@ -96,15 +100,16 @@ defmodule Baiji.ImportExport do
   """
   def list_jobs(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "importexport",
-      endpoint:       "/?Operation=ListJobs",
-      input:          input,
-      options:        options,
-      action:         "ListJobs",
+      service:          "importexport",
+      endpoint:         "/?Operation=ListJobs",
+      input:            input,
+      options:          options,
+      action:           "ListJobs",
       
-      type:           :xml,
-      version:        "2010-06-01",
-      method:         :post
+      endpoint_prefix:  "importexport",
+      type:             :xml,
+      version:          "2010-06-01",
+      method:           :post
     }
   end
   
@@ -117,15 +122,16 @@ defmodule Baiji.ImportExport do
   """
   def update_job(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "importexport",
-      endpoint:       "/?Operation=UpdateJob",
-      input:          input,
-      options:        options,
-      action:         "UpdateJob",
+      service:          "importexport",
+      endpoint:         "/?Operation=UpdateJob",
+      input:            input,
+      options:          options,
+      action:           "UpdateJob",
       
-      type:           :xml,
-      version:        "2010-06-01",
-      method:         :post
+      endpoint_prefix:  "importexport",
+      type:             :xml,
+      version:          "2010-06-01",
+      method:           :post
     }
   end
   

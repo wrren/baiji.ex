@@ -25,17 +25,18 @@ defmodule Baiji.MarketplaceEntitlementService do
   """
   def get_entitlements(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "entitlement.marketplace",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetEntitlements",
+      service:          "entitlement.marketplace",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetEntitlements",
       
-      target_prefix:  "AWSMPEntitlementService",
+      target_prefix:    "AWSMPEntitlementService",
       
-      type:           :json,
-      version:        "2017-01-11",
-      method:         :post
+      endpoint_prefix:  "entitlement.marketplace",
+      type:             :json,
+      version:          "2017-01-11",
+      method:           :post
     }
   end
   

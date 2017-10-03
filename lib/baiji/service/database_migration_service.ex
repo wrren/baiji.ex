@@ -20,17 +20,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_refresh_schemas_status(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeRefreshSchemasStatus",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeRefreshSchemasStatus",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -41,17 +42,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def stop_replication_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopReplicationTask",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopReplicationTask",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -60,17 +62,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def modify_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyEndpoint",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyEndpoint",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -79,17 +82,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def modify_replication_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyReplicationSubnetGroup",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyReplicationSubnetGroup",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -98,17 +102,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_endpoint_types(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEndpointTypes",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEndpointTypes",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -117,17 +122,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def test_connection(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TestConnection",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TestConnection",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -136,17 +142,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def reload_tables(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ReloadTables",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ReloadTables",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -156,17 +163,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_table_statistics(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTableStatistics",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTableStatistics",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -178,17 +186,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_events(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEvents",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEvents",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -197,17 +206,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def remove_tags_from_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromResource",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromResource",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -216,17 +226,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def list_tags_for_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForResource",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForResource",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -240,17 +251,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def delete_replication_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteReplicationInstance",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteReplicationInstance",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -259,17 +271,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def delete_replication_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteReplicationSubnetGroup",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteReplicationSubnetGroup",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -278,17 +291,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def delete_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteEventSubscription",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteEventSubscription",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -299,17 +313,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_schemas(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeSchemas",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeSchemas",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -318,17 +333,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def import_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ImportCertificate",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ImportCertificate",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -355,17 +371,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def create_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateEventSubscription",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateEventSubscription",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -374,17 +391,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def create_replication_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateReplicationInstance",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateReplicationInstance",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -394,17 +412,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_endpoints(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEndpoints",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEndpoints",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -413,17 +432,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def delete_replication_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteReplicationTask",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteReplicationTask",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -432,17 +452,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def create_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateEndpoint",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateEndpoint",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -452,17 +473,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_orderable_replication_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeOrderableReplicationInstances",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeOrderableReplicationInstances",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -475,17 +497,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def start_replication_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartReplicationTask",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartReplicationTask",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -501,17 +524,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def modify_replication_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyReplicationTask",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyReplicationTask",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -522,17 +546,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_connections(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeConnections",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeConnections",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -541,17 +566,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def create_replication_subnet_group(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateReplicationSubnetGroup",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateReplicationSubnetGroup",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -560,17 +586,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def delete_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCertificate",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCertificate",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -579,17 +606,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def create_replication_task(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateReplicationTask",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateReplicationTask",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -604,17 +632,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def modify_replication_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyReplicationInstance",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyReplicationInstance",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -627,17 +656,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_event_categories(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventCategories",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventCategories",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -649,17 +679,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def add_tags_to_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToResource",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToResource",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -669,17 +700,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_replication_tasks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReplicationTasks",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReplicationTasks",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -688,17 +720,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCertificates",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCertificates",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -707,17 +740,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def modify_event_subscription(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ModifyEventSubscription",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ModifyEventSubscription",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -726,17 +760,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_replication_subnet_groups(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReplicationSubnetGroups",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReplicationSubnetGroups",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -750,17 +785,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_event_subscriptions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEventSubscriptions",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEventSubscriptions",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -771,17 +807,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def refresh_schemas(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RefreshSchemas",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RefreshSchemas",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -795,17 +832,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_account_attributes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAccountAttributes",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAccountAttributes",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -815,17 +853,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def describe_replication_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeReplicationInstances",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeReplicationInstances",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   
@@ -839,17 +878,18 @@ defmodule Baiji.DatabaseMigrationService do
   """
   def delete_endpoint(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dms",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteEndpoint",
+      service:          "dms",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteEndpoint",
       
-      target_prefix:  "AmazonDMSv20160101",
+      target_prefix:    "AmazonDMSv20160101",
       
-      type:           :json,
-      version:        "2016-01-01",
-      method:         :post
+      endpoint_prefix:  "dms",
+      type:             :json,
+      version:          "2016-01-01",
+      method:           :post
     }
   end
   

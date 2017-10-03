@@ -97,17 +97,18 @@ defmodule Baiji.Opsworks do
   """
   def update_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateVolume",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateVolume",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -124,17 +125,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_layers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLayers",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLayers",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -149,17 +151,18 @@ defmodule Baiji.Opsworks do
   """
   def register_rds_db_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterRdsDbInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterRdsDbInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -178,17 +181,18 @@ defmodule Baiji.Opsworks do
   """
   def delete_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -220,17 +224,18 @@ defmodule Baiji.Opsworks do
   """
   def register_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -247,17 +252,18 @@ defmodule Baiji.Opsworks do
   """
   def reboot_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RebootInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RebootInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -281,17 +287,18 @@ defmodule Baiji.Opsworks do
   """
   def assign_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssignInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssignInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -308,17 +315,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_service_errors(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeServiceErrors",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeServiceErrors",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -333,17 +341,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_stacks(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStacks",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStacks",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -364,17 +373,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_ecs_clusters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeEcsClusters",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeEcsClusters",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -386,17 +396,18 @@ defmodule Baiji.Opsworks do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TagResource",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TagResource",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -410,17 +421,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_user_profiles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeUserProfiles",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeUserProfiles",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -437,17 +449,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_volumes(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeVolumes",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeVolumes",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -459,17 +472,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_agent_versions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeAgentVersions",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeAgentVersions",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -487,17 +501,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_elastic_ips(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeElasticIps",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeElasticIps",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -513,17 +528,18 @@ defmodule Baiji.Opsworks do
   """
   def create_app(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateApp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateApp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -537,17 +553,18 @@ defmodule Baiji.Opsworks do
   """
   def update_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateUserProfile",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateUserProfile",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -562,17 +579,18 @@ defmodule Baiji.Opsworks do
   """
   def update_app(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateApp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateApp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -588,17 +606,18 @@ defmodule Baiji.Opsworks do
   """
   def get_hostname_suggestion(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetHostnameSuggestion",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetHostnameSuggestion",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -615,17 +634,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_load_based_auto_scaling(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLoadBasedAutoScaling",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLoadBasedAutoScaling",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -640,17 +660,18 @@ defmodule Baiji.Opsworks do
   """
   def update_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -665,17 +686,18 @@ defmodule Baiji.Opsworks do
   """
   def stop_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopStack",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopStack",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -699,17 +721,18 @@ defmodule Baiji.Opsworks do
   """
   def attach_elastic_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AttachElasticLoadBalancer",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AttachElasticLoadBalancer",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -718,17 +741,18 @@ defmodule Baiji.Opsworks do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UntagResource",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UntagResource",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -743,17 +767,18 @@ defmodule Baiji.Opsworks do
   """
   def update_rds_db_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateRdsDbInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateRdsDbInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -770,17 +795,18 @@ defmodule Baiji.Opsworks do
   """
   def unassign_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UnassignVolume",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UnassignVolume",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -800,17 +826,18 @@ defmodule Baiji.Opsworks do
   """
   def assign_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssignVolume",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssignVolume",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -827,17 +854,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_elastic_load_balancers(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeElasticLoadBalancers",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeElasticLoadBalancers",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -852,17 +880,18 @@ defmodule Baiji.Opsworks do
   """
   def detach_elastic_load_balancer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DetachElasticLoadBalancer",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DetachElasticLoadBalancer",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -880,17 +909,18 @@ defmodule Baiji.Opsworks do
   """
   def delete_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteStack",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteStack",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -904,17 +934,18 @@ defmodule Baiji.Opsworks do
   """
   def delete_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteUserProfile",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteUserProfile",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -932,17 +963,18 @@ defmodule Baiji.Opsworks do
   """
   def create_deployment(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateDeployment",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateDeployment",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -957,17 +989,18 @@ defmodule Baiji.Opsworks do
   """
   def create_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateStack",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateStack",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -983,17 +1016,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_stack_summary(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackSummary",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackSummary",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1005,17 +1039,18 @@ defmodule Baiji.Opsworks do
   """
   def grant_access(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GrantAccess",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GrantAccess",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1032,17 +1067,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_apps(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeApps",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeApps",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1059,17 +1095,18 @@ defmodule Baiji.Opsworks do
   """
   def deregister_elastic_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterElasticIp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterElasticIp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1083,17 +1120,18 @@ defmodule Baiji.Opsworks do
   """
   def update_my_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateMyUserProfile",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateMyUserProfile",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1108,17 +1146,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_stack_provisioning_parameters(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStackProvisioningParameters",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStackProvisioningParameters",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1137,17 +1176,18 @@ defmodule Baiji.Opsworks do
   """
   def register_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterVolume",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterVolume",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1165,17 +1205,18 @@ defmodule Baiji.Opsworks do
   """
   def delete_layer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteLayer",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteLayer",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1192,17 +1233,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_deployments(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeDeployments",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeDeployments",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1219,17 +1261,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_time_based_auto_scaling(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTimeBasedAutoScaling",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTimeBasedAutoScaling",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1246,17 +1289,18 @@ defmodule Baiji.Opsworks do
   """
   def deregister_volume(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterVolume",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterVolume",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1273,17 +1317,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_commands(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCommands",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCommands",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1301,17 +1346,18 @@ defmodule Baiji.Opsworks do
   """
   def unassign_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UnassignInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UnassignInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1330,17 +1376,18 @@ defmodule Baiji.Opsworks do
   """
   def register_elastic_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterElasticIp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterElasticIp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1358,17 +1405,18 @@ defmodule Baiji.Opsworks do
   """
   def register_ecs_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RegisterEcsCluster",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RegisterEcsCluster",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1384,17 +1432,18 @@ defmodule Baiji.Opsworks do
   """
   def clone_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CloneStack",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CloneStack",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1411,17 +1460,18 @@ defmodule Baiji.Opsworks do
   """
   def update_elastic_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateElasticIp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateElasticIp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1438,17 +1488,18 @@ defmodule Baiji.Opsworks do
   """
   def create_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1464,17 +1515,18 @@ defmodule Baiji.Opsworks do
   """
   def set_permission(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetPermission",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetPermission",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1489,17 +1541,18 @@ defmodule Baiji.Opsworks do
   """
   def update_layer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateLayer",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateLayer",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1513,17 +1566,18 @@ defmodule Baiji.Opsworks do
   """
   def create_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateUserProfile",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateUserProfile",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1540,17 +1594,18 @@ defmodule Baiji.Opsworks do
   """
   def disassociate_elastic_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DisassociateElasticIp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DisassociateElasticIp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1565,17 +1620,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_permissions(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribePermissions",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribePermissions",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1594,17 +1650,18 @@ defmodule Baiji.Opsworks do
   """
   def stop_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StopInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StopInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1619,17 +1676,18 @@ defmodule Baiji.Opsworks do
   """
   def start_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartStack",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartStack",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1643,17 +1701,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_my_user_profile(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeMyUserProfile",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeMyUserProfile",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1668,17 +1727,18 @@ defmodule Baiji.Opsworks do
   """
   def deregister_rds_db_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterRdsDbInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterRdsDbInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1693,17 +1753,18 @@ defmodule Baiji.Opsworks do
   """
   def update_stack(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateStack",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateStack",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1720,17 +1781,18 @@ defmodule Baiji.Opsworks do
   """
   def set_time_based_auto_scaling(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetTimeBasedAutoScaling",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetTimeBasedAutoScaling",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1753,17 +1815,18 @@ defmodule Baiji.Opsworks do
   """
   def create_layer(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateLayer",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateLayer",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1780,17 +1843,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_raid_arrays(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeRaidArrays",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeRaidArrays",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1808,17 +1872,18 @@ defmodule Baiji.Opsworks do
   """
   def associate_elastic_ip(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AssociateElasticIp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AssociateElasticIp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1835,17 +1900,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeInstances",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeInstances",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1863,17 +1929,18 @@ defmodule Baiji.Opsworks do
   """
   def deregister_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1890,17 +1957,18 @@ defmodule Baiji.Opsworks do
   """
   def deregister_ecs_cluster(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeregisterEcsCluster",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeregisterEcsCluster",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1915,17 +1983,18 @@ defmodule Baiji.Opsworks do
   """
   def delete_app(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteApp",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteApp",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1942,17 +2011,18 @@ defmodule Baiji.Opsworks do
   """
   def describe_rds_db_instances(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeRdsDbInstances",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeRdsDbInstances",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1969,17 +2039,18 @@ defmodule Baiji.Opsworks do
   """
   def start_instance(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "StartInstance",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "StartInstance",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -1988,17 +2059,18 @@ defmodule Baiji.Opsworks do
   """
   def list_tags(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTags",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTags",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   
@@ -2020,17 +2092,18 @@ defmodule Baiji.Opsworks do
   """
   def set_load_based_auto_scaling(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "opsworks",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "SetLoadBasedAutoScaling",
+      service:          "opsworks",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "SetLoadBasedAutoScaling",
       
-      target_prefix:  "OpsWorks_20130218",
+      target_prefix:    "OpsWorks_20130218",
       
-      type:           :json,
-      version:        "2013-02-18",
-      method:         :post
+      endpoint_prefix:  "opsworks",
+      type:             :json,
+      version:          "2013-02-18",
+      method:           :post
     }
   end
   

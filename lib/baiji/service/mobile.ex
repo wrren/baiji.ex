@@ -11,15 +11,16 @@ defmodule Baiji.Mobile do
   """
   def create_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/projects",
-      input:          input,
-      options:        options,
-      action:         "CreateProject",
+      service:          "MobileHub",
+      endpoint:         "/projects",
+      input:            input,
+      options:          options,
+      action:           "CreateProject",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :post
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :post
     }
   end
   
@@ -28,15 +29,16 @@ defmodule Baiji.Mobile do
   """
   def delete_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/projects/{projectId}",
-      input:          input,
-      options:        options,
-      action:         "DeleteProject",
+      service:          "MobileHub",
+      endpoint:         "/projects/{projectId}",
+      input:            input,
+      options:          options,
+      action:           "DeleteProject",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :delete
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :delete
     }
   end
   
@@ -45,15 +47,16 @@ defmodule Baiji.Mobile do
   """
   def describe_bundle(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/bundles/{bundleId}",
-      input:          input,
-      options:        options,
-      action:         "DescribeBundle",
+      service:          "MobileHub",
+      endpoint:         "/bundles/{bundleId}",
+      input:            input,
+      options:          options,
+      action:           "DescribeBundle",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :get
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :get
     }
   end
   
@@ -62,15 +65,16 @@ defmodule Baiji.Mobile do
   """
   def describe_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/project",
-      input:          input,
-      options:        options,
-      action:         "DescribeProject",
+      service:          "MobileHub",
+      endpoint:         "/project",
+      input:            input,
+      options:          options,
+      action:           "DescribeProject",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :get
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :get
     }
   end
   
@@ -81,15 +85,16 @@ defmodule Baiji.Mobile do
   """
   def export_bundle(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/bundles/{bundleId}",
-      input:          input,
-      options:        options,
-      action:         "ExportBundle",
+      service:          "MobileHub",
+      endpoint:         "/bundles/{bundleId}",
+      input:            input,
+      options:          options,
+      action:           "ExportBundle",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :post
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :post
     }
   end
   
@@ -101,15 +106,16 @@ defmodule Baiji.Mobile do
   """
   def export_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/exports/{projectId}",
-      input:          input,
-      options:        options,
-      action:         "ExportProject",
+      service:          "MobileHub",
+      endpoint:         "/exports/{projectId}",
+      input:            input,
+      options:          options,
+      action:           "ExportProject",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :post
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :post
     }
   end
   
@@ -118,15 +124,16 @@ defmodule Baiji.Mobile do
   """
   def list_bundles(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/bundles",
-      input:          input,
-      options:        options,
-      action:         "ListBundles",
+      service:          "MobileHub",
+      endpoint:         "/bundles",
+      input:            input,
+      options:          options,
+      action:           "ListBundles",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :get
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :get
     }
   end
   
@@ -135,15 +142,16 @@ defmodule Baiji.Mobile do
   """
   def list_projects(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/projects",
-      input:          input,
-      options:        options,
-      action:         "ListProjects",
+      service:          "MobileHub",
+      endpoint:         "/projects",
+      input:            input,
+      options:          options,
+      action:           "ListProjects",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :get
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :get
     }
   end
   
@@ -152,15 +160,16 @@ defmodule Baiji.Mobile do
   """
   def update_project(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "MobileHub",
-      endpoint:       "/update",
-      input:          input,
-      options:        options,
-      action:         "UpdateProject",
+      service:          "MobileHub",
+      endpoint:         "/update",
+      input:            input,
+      options:          options,
+      action:           "UpdateProject",
       
-      type:           :json,
-      version:        "2017-07-01",
-      method:         :post
+      endpoint_prefix:  "mobile",
+      type:             :json,
+      version:          "2017-07-01",
+      method:           :post
     }
   end
   

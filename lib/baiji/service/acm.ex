@@ -32,17 +32,18 @@ defmodule Baiji.ACM do
   """
   def add_tags_to_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "AddTagsToCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "AddTagsToCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -61,17 +62,18 @@ defmodule Baiji.ACM do
   """
   def delete_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -80,17 +82,18 @@ defmodule Baiji.ACM do
   """
   def describe_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -109,17 +112,18 @@ defmodule Baiji.ACM do
   """
   def get_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -158,17 +162,18 @@ defmodule Baiji.ACM do
   """
   def import_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ImportCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ImportCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -179,17 +184,18 @@ defmodule Baiji.ACM do
   """
   def list_certificates(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListCertificates",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListCertificates",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -201,17 +207,18 @@ defmodule Baiji.ACM do
   """
   def list_tags_for_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsForCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsForCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -228,17 +235,18 @@ defmodule Baiji.ACM do
   """
   def remove_tags_from_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RemoveTagsFromCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RemoveTagsFromCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -254,17 +262,18 @@ defmodule Baiji.ACM do
   """
   def request_certificate(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "RequestCertificate",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "RequestCertificate",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   
@@ -284,17 +293,18 @@ defmodule Baiji.ACM do
   """
   def resend_validation_email(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "acm",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ResendValidationEmail",
+      service:          "acm",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ResendValidationEmail",
       
-      target_prefix:  "CertificateManager",
+      target_prefix:    "CertificateManager",
       
-      type:           :json,
-      version:        "2015-12-08",
-      method:         :post
+      endpoint_prefix:  "acm",
+      type:             :json,
+      version:          "2015-12-08",
+      method:           :post
     }
   end
   

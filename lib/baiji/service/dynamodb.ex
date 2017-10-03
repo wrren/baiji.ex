@@ -84,17 +84,18 @@ defmodule Baiji.DynamoDB do
   """
   def batch_get_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchGetItem",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchGetItem",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -177,17 +178,18 @@ defmodule Baiji.DynamoDB do
   """
   def batch_write_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "BatchWriteItem",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "BatchWriteItem",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -213,17 +215,18 @@ defmodule Baiji.DynamoDB do
   """
   def create_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "CreateTable",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "CreateTable",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -245,17 +248,18 @@ defmodule Baiji.DynamoDB do
   """
   def delete_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteItem",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteItem",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -283,17 +287,18 @@ defmodule Baiji.DynamoDB do
   """
   def delete_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DeleteTable",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DeleteTable",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -363,17 +368,18 @@ defmodule Baiji.DynamoDB do
   """
   def describe_limits(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeLimits",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeLimits",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -392,17 +398,18 @@ defmodule Baiji.DynamoDB do
   """
   def describe_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTable",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTable",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -412,17 +419,18 @@ defmodule Baiji.DynamoDB do
   """
   def describe_time_to_live(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeTimeToLive",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeTimeToLive",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -438,17 +446,18 @@ defmodule Baiji.DynamoDB do
   """
   def get_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetItem",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetItem",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -459,17 +468,18 @@ defmodule Baiji.DynamoDB do
   """
   def list_tables(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTables",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTables",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -483,17 +493,18 @@ defmodule Baiji.DynamoDB do
   """
   def list_tags_of_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListTagsOfResource",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListTagsOfResource",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -558,17 +569,18 @@ defmodule Baiji.DynamoDB do
   """
   def put_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "PutItem",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "PutItem",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -630,17 +642,18 @@ defmodule Baiji.DynamoDB do
   """
   def query(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "Query",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "Query",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -678,17 +691,18 @@ defmodule Baiji.DynamoDB do
   """
   def scan(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "Scan",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "Scan",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -704,17 +718,18 @@ defmodule Baiji.DynamoDB do
   """
   def tag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "TagResource",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "TagResource",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -728,17 +743,18 @@ defmodule Baiji.DynamoDB do
   """
   def untag_resource(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UntagResource",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UntagResource",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -754,17 +770,18 @@ defmodule Baiji.DynamoDB do
   """
   def update_item(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateItem",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateItem",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -791,17 +808,18 @@ defmodule Baiji.DynamoDB do
   """
   def update_table(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateTable",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateTable",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -839,17 +857,18 @@ defmodule Baiji.DynamoDB do
   """
   def update_time_to_live(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "UpdateTimeToLive",
+      service:          "dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "UpdateTimeToLive",
       
-      target_prefix:  "DynamoDB_20120810",
+      target_prefix:    "DynamoDB_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   

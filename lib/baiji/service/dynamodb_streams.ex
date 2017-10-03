@@ -26,17 +26,18 @@ defmodule Baiji.DynamodbStreams do
   """
   def describe_stream(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "streams.dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "DescribeStream",
+      service:          "streams.dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "DescribeStream",
       
-      target_prefix:  "DynamoDBStreams_20120810",
+      target_prefix:    "DynamoDBStreams_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "streams.dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -57,17 +58,18 @@ defmodule Baiji.DynamodbStreams do
   """
   def get_records(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "streams.dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetRecords",
+      service:          "streams.dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetRecords",
       
-      target_prefix:  "DynamoDBStreams_20120810",
+      target_prefix:    "DynamoDBStreams_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "streams.dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -84,17 +86,18 @@ defmodule Baiji.DynamodbStreams do
   """
   def get_shard_iterator(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "streams.dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "GetShardIterator",
+      service:          "streams.dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "GetShardIterator",
       
-      target_prefix:  "DynamoDBStreams_20120810",
+      target_prefix:    "DynamoDBStreams_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "streams.dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   
@@ -109,17 +112,18 @@ defmodule Baiji.DynamodbStreams do
   """
   def list_streams(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "streams.dynamodb",
-      endpoint:       "/",
-      input:          input,
-      options:        options,
-      action:         "ListStreams",
+      service:          "streams.dynamodb",
+      endpoint:         "/",
+      input:            input,
+      options:          options,
+      action:           "ListStreams",
       
-      target_prefix:  "DynamoDBStreams_20120810",
+      target_prefix:    "DynamoDBStreams_20120810",
       
-      type:           :json,
-      version:        "2012-08-10",
-      method:         :post
+      endpoint_prefix:  "streams.dynamodb",
+      type:             :json,
+      version:          "2012-08-10",
+      method:           :post
     }
   end
   

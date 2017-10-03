@@ -20,15 +20,16 @@ defmodule Baiji.Polly do
   """
   def delete_lexicon(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "polly",
-      endpoint:       "/v1/lexicons/{LexiconName}",
-      input:          input,
-      options:        options,
-      action:         "DeleteLexicon",
+      service:          "polly",
+      endpoint:         "/v1/lexicons/{LexiconName}",
+      input:            input,
+      options:          options,
+      action:           "DeleteLexicon",
       
-      type:           :rest_json,
-      version:        "2016-06-10",
-      method:         :delete
+      endpoint_prefix:  "polly",
+      type:             :rest_json,
+      version:          "2016-06-10",
+      method:           :delete
     }
   end
   
@@ -56,15 +57,16 @@ defmodule Baiji.Polly do
   """
   def describe_voices(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "polly",
-      endpoint:       "/v1/voices",
-      input:          input,
-      options:        options,
-      action:         "DescribeVoices",
+      service:          "polly",
+      endpoint:         "/v1/voices",
+      input:            input,
+      options:          options,
+      action:           "DescribeVoices",
       
-      type:           :rest_json,
-      version:        "2016-06-10",
-      method:         :get
+      endpoint_prefix:  "polly",
+      type:             :rest_json,
+      version:          "2016-06-10",
+      method:           :get
     }
   end
   
@@ -75,15 +77,16 @@ defmodule Baiji.Polly do
   """
   def get_lexicon(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "polly",
-      endpoint:       "/v1/lexicons/{LexiconName}",
-      input:          input,
-      options:        options,
-      action:         "GetLexicon",
+      service:          "polly",
+      endpoint:         "/v1/lexicons/{LexiconName}",
+      input:            input,
+      options:          options,
+      action:           "GetLexicon",
       
-      type:           :rest_json,
-      version:        "2016-06-10",
-      method:         :get
+      endpoint_prefix:  "polly",
+      type:             :rest_json,
+      version:          "2016-06-10",
+      method:           :get
     }
   end
   
@@ -94,15 +97,16 @@ defmodule Baiji.Polly do
   """
   def list_lexicons(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "polly",
-      endpoint:       "/v1/lexicons",
-      input:          input,
-      options:        options,
-      action:         "ListLexicons",
+      service:          "polly",
+      endpoint:         "/v1/lexicons",
+      input:            input,
+      options:          options,
+      action:           "ListLexicons",
       
-      type:           :rest_json,
-      version:        "2016-06-10",
-      method:         :get
+      endpoint_prefix:  "polly",
+      type:             :rest_json,
+      version:          "2016-06-10",
+      method:           :get
     }
   end
   
@@ -117,15 +121,16 @@ defmodule Baiji.Polly do
   """
   def put_lexicon(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "polly",
-      endpoint:       "/v1/lexicons/{LexiconName}",
-      input:          input,
-      options:        options,
-      action:         "PutLexicon",
+      service:          "polly",
+      endpoint:         "/v1/lexicons/{LexiconName}",
+      input:            input,
+      options:          options,
+      action:           "PutLexicon",
       
-      type:           :rest_json,
-      version:        "2016-06-10",
-      method:         :put
+      endpoint_prefix:  "polly",
+      type:             :rest_json,
+      version:          "2016-06-10",
+      method:           :put
     }
   end
   
@@ -139,15 +144,16 @@ defmodule Baiji.Polly do
   """
   def synthesize_speech(input \\ %{}, options \\ []) do
     %Baiji.Operation{
-      service:        "polly",
-      endpoint:       "/v1/speech",
-      input:          input,
-      options:        options,
-      action:         "SynthesizeSpeech",
+      service:          "polly",
+      endpoint:         "/v1/speech",
+      input:            input,
+      options:          options,
+      action:           "SynthesizeSpeech",
       
-      type:           :rest_json,
-      version:        "2016-06-10",
-      method:         :post
+      endpoint_prefix:  "polly",
+      type:             :rest_json,
+      version:          "2016-06-10",
+      method:           :post
     }
   end
   
