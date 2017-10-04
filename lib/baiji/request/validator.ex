@@ -14,22 +14,75 @@ defmodule Baiji.Request.Validator do
   Check the validity of an Operation
   """
   def validate!(%Operation{input_shape: nil}), do: true
-  def validate!(%Operation{input_shape: shape, endpoint: %Endpoint{shapes: shapes}} = op) do
+  def validate!(%Operation{input: input, input_shape: shape, endpoint: %Endpoint{shapes: shapes}} = op) do
+    validate!(input, shapes[shape], shapes, [])
     op
-    |> check_required_fields!(shapes[shape], shapes)
+  end
+
+  @doc """
+  Validate that the form of the given input value conforms to the required shape specified
+  """
+  def validate!(input, %{"enum" => enum}, _shapes, keys) when is_binary(input) do
+    if not Enum.any?(enum, fn value -> value == input end) do
+      raise Error, message: "The value for #{format_keys(keys)} must be one of #{Enum.join(enum, ", ")}"
+    end
+  end
+  def validate!(input, %{"type" => "integer", "min" => min, "max" => max}, shapes, keys) when is_integer(input) do
+    validate!(input, %{"type" => "integer", "min" => min}, shapes, keys)
+    validate!(input, %{"type" => "integer", "max" => max}, shapes, keys)
+  end
+  def validate!(input, %{"type" => "integer", "min" => min}, _shapes, keys) when is_integer(input) and input < min do
+    raise Error, message: "The value for #{format_keys(keys)} must be greater than #{min}"
+  end
+  def validate!(input, %{"type" => "integer", "max" => max}, _shapes, keys) when is_integer(input) and input > max do
+    raise Error, message: "The value for #{format_keys(keys)} must be less than #{max}"
+  end
+  def validate!(true,   %{"type" => "boolean"}, _shapes, _keys), do: :ok
+  def validate!(false,  %{"type" => "boolean"}, _shapes, _keys), do: :ok
+  def validate!(_,      %{"type" => "boolean"}, _shapes, keys) do
+    raise Error, message: "The value for #{format_keys(keys)} must be a boolean"    
+  end
+
+  def validate!(input, %{"type" => "list"}, _shapes, keys) when not is_list(input) do
+    raise Error, message: "The value for #{format_keys(keys)} must be a list"    
+  end
+  def validate!(input, %{"type" => "list", "member" => %{"shape" => shape, "locationName" => key}}, shapes, keys) do
+    input
+    |> Enum.each(fn member ->
+      validate!(member, shapes[shape], shapes, [key | keys])
+    end) 
+  end
+  
+  def validate!(input, %{"type" => "structure", "members" => members} = shape, shapes, keys) do
+    check_required_fields!(input, shape, shapes, keys)
+    members
+    |> Enum.each(fn({_, %{"shape" => member_shape, "locationName" => location}}) ->
+      if Map.has_key?(input, location) do
+        validate!(input[location], shapes[member_shape], shapes, [location | keys])
+      end
+    end)
   end
   
   @doc """
   Check whether all required fields in the given input are present
   """
-  def check_required_fields!(%Operation{input: input}, %{"required" => required}, _shapes) do
+  def check_required_fields!(input, %{"required" => required, "members" => members}, _shapes, keys) do
     required
-    |> Enum.each(fn req ->
-      if not Map.has_key?(input, req) do
-        raise Error, message: "The required key #{req} is missing from the input"
+    |> Enum.each(fn key ->
+      %{"locationName" => location} = members[key]
+      if not Map.has_key?(input, location) do
+        raise Error, message: "The required key #{format_keys([location | keys])} is missing from the input"
       end
     end)
-    input
   end
-  def check_required_fields!(op, %{}, _shapes), do: op
+  def check_required_fields!(input, %{}, _shapes), do: input
+
+  #
+  # Given a hierarchical key list, format the hierarchy to make it more readable
+  #
+  defp format_keys(keys) when is_list(keys) do
+    keys
+    |> :lists.reverse
+    |> Enum.join(" > ")
+  end
 end
