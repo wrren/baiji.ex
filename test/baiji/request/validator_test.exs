@@ -19,4 +19,9 @@ defmodule Baiji.Request.ValidatorTest do
       |> Validator.validate!
     end)
   end
+
+  test "passes any input shape for a function that has no inputs" do
+    Baiji.EC2.describe_instances
+    |> Validator.validate!
+  end
 end

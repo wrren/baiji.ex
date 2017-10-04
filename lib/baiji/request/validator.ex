@@ -75,7 +75,7 @@ defmodule Baiji.Request.Validator do
       end
     end)
   end
-  def check_required_fields!(input, %{}, _shapes), do: input
+  def check_required_fields!(_input, %{}, _shapes, _keys), do: :ok
 
   #
   # Given a hierarchical key list, format the hierarchy to make it more readable
