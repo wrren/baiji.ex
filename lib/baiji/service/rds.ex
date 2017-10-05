@@ -68,6 +68,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBParametersMessage",
       output_shape:     "DBParameterGroupDetails",
+      output_wrapper:   "DescribeDBParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -84,6 +85,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyOptionGroupMessage",
       output_shape:     "ModifyOptionGroupResult",
+      output_wrapper:   "ModifyOptionGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -100,6 +102,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeOptionGroupsMessage",
       output_shape:     "OptionGroups",
+      output_wrapper:   "DescribeOptionGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -132,6 +135,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RestoreDBClusterToPointInTimeMessage",
       output_shape:     "RestoreDBClusterToPointInTimeResult",
+      output_wrapper:   "RestoreDBClusterToPointInTimeResult",
       endpoint:         __spec__()
     }
   end
@@ -153,6 +157,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBSubnetGroupsMessage",
       output_shape:     "DBSubnetGroupMessage",
+      output_wrapper:   "DescribeDBSubnetGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -181,6 +186,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBSnapshotAttributesMessage",
       output_shape:     "DescribeDBSnapshotAttributesResult",
+      output_wrapper:   "DescribeDBSnapshotAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -198,6 +204,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeReservedDBInstancesMessage",
       output_shape:     "ReservedDBInstanceMessage",
+      output_wrapper:   "DescribeReservedDBInstancesResult",
       endpoint:         __spec__()
     }
   end
@@ -215,6 +222,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "AddSourceIdentifierToSubscriptionMessage",
       output_shape:     "AddSourceIdentifierToSubscriptionResult",
+      output_wrapper:   "AddSourceIdentifierToSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -257,6 +265,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBClusterMessage",
       output_shape:     "CreateDBClusterResult",
+      output_wrapper:   "CreateDBClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -273,6 +282,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeReservedDBInstancesOfferingsMessage",
       output_shape:     "ReservedDBInstancesOfferingMessage",
+      output_wrapper:   "DescribeReservedDBInstancesOfferingsResult",
       endpoint:         __spec__()
     }
   end
@@ -289,6 +299,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateOptionGroupMessage",
       output_shape:     "CreateOptionGroupResult",
+      output_wrapper:   "CreateOptionGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -305,6 +316,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CopyDBParameterGroupMessage",
       output_shape:     "CopyDBParameterGroupResult",
+      output_wrapper:   "CopyDBParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -327,6 +339,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBClusterParameterGroupsMessage",
       output_shape:     "DBClusterParameterGroupsMessage",
+      output_wrapper:   "DescribeDBClusterParameterGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -343,6 +356,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "PromoteReadReplicaDBClusterMessage",
       output_shape:     "PromoteReadReplicaDBClusterResult",
+      output_wrapper:   "PromoteReadReplicaDBClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -363,6 +377,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeEventsMessage",
       output_shape:     "EventsMessage",
+      output_wrapper:   "DescribeEventsResult",
       endpoint:         __spec__()
     }
   end
@@ -405,6 +420,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "PromoteReadReplicaMessage",
       output_shape:     "PromoteReadReplicaResult",
+      output_wrapper:   "PromoteReadReplicaResult",
       endpoint:         __spec__()
     }
   end
@@ -424,6 +440,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ListTagsForResourceMessage",
       output_shape:     "TagListMessage",
+      output_wrapper:   "ListTagsForResourceResult",
       endpoint:         __spec__()
     }
   end
@@ -442,6 +459,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBSecurityGroupsMessage",
       output_shape:     "DBSecurityGroupMessage",
+      output_wrapper:   "DescribeDBSecurityGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -463,6 +481,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DeleteDBSnapshotMessage",
       output_shape:     "DeleteDBSnapshotResult",
+      output_wrapper:   "DeleteDBSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -479,6 +498,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DeleteEventSubscriptionMessage",
       output_shape:     "DeleteEventSubscriptionResult",
+      output_wrapper:   "DeleteEventSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -498,6 +518,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RevokeDBSecurityGroupIngressMessage",
       output_shape:     "RevokeDBSecurityGroupIngressResult",
+      output_wrapper:   "RevokeDBSecurityGroupIngressResult",
       endpoint:         __spec__()
     }
   end
@@ -515,6 +536,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RemoveSourceIdentifierFromSubscriptionMessage",
       output_shape:     "RemoveSourceIdentifierFromSubscriptionResult",
+      output_wrapper:   "RemoveSourceIdentifierFromSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -557,6 +579,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBClusterParameterGroupMessage",
       output_shape:     "DBClusterParameterGroupNameMessage",
+      output_wrapper:   "ModifyDBClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -608,6 +631,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBSnapshotAttributeMessage",
       output_shape:     "ModifyDBSnapshotAttributeResult",
+      output_wrapper:   "ModifyDBSnapshotAttributeResult",
       endpoint:         __spec__()
     }
   end
@@ -624,6 +648,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBEngineVersionsMessage",
       output_shape:     "DBEngineVersionMessage",
+      output_wrapper:   "DescribeDBEngineVersionsResult",
       endpoint:         __spec__()
     }
   end
@@ -645,6 +670,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeEngineDefaultClusterParametersMessage",
       output_shape:     "DescribeEngineDefaultClusterParametersResult",
+      output_wrapper:   "DescribeEngineDefaultClusterParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -681,6 +707,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateEventSubscriptionMessage",
       output_shape:     "CreateEventSubscriptionResult",
+      output_wrapper:   "CreateEventSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -697,6 +724,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DownloadDBLogFilePortionMessage",
       output_shape:     "DownloadDBLogFilePortionDetails",
+      output_wrapper:   "DownloadDBLogFilePortionResult",
       endpoint:         __spec__()
     }
   end
@@ -721,6 +749,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DeleteDBClusterSnapshotMessage",
       output_shape:     "DeleteDBClusterSnapshotResult",
+      output_wrapper:   "DeleteDBClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -739,6 +768,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBParameterGroupsMessage",
       output_shape:     "DBParameterGroupsMessage",
+      output_wrapper:   "DescribeDBParameterGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -771,6 +801,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RebootDBInstanceMessage",
       output_shape:     "RebootDBInstanceResult",
+      output_wrapper:   "RebootDBInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -787,6 +818,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBInstanceMessage",
       output_shape:     "CreateDBInstanceResult",
+      output_wrapper:   "CreateDBInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -808,6 +840,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBClusterSnapshotsMessage",
       output_shape:     "DBClusterSnapshotMessage",
+      output_wrapper:   "DescribeDBClusterSnapshotsResult",
       endpoint:         __spec__()
     }
   end
@@ -829,6 +862,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBSnapshotMessage",
       output_shape:     "ModifyDBSnapshotResult",
+      output_wrapper:   "ModifyDBSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -848,6 +882,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBClusterSnapshotMessage",
       output_shape:     "CreateDBClusterSnapshotResult",
+      output_wrapper:   "CreateDBClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -871,6 +906,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RestoreDBClusterFromSnapshotMessage",
       output_shape:     "RestoreDBClusterFromSnapshotResult",
+      output_wrapper:   "RestoreDBClusterFromSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -892,6 +928,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBClusterParametersMessage",
       output_shape:     "DBClusterParameterGroupDetails",
+      output_wrapper:   "DescribeDBClusterParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -911,6 +948,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "StartDBInstanceMessage",
       output_shape:     "StartDBInstanceResult",
+      output_wrapper:   "StartDBInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -931,6 +969,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RestoreDBClusterFromS3Message",
       output_shape:     "RestoreDBClusterFromS3Result",
+      output_wrapper:   "RestoreDBClusterFromS3Result",
       endpoint:         __spec__()
     }
   end
@@ -949,6 +988,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeSourceRegionsMessage",
       output_shape:     "SourceRegionMessage",
+      output_wrapper:   "DescribeSourceRegionsResult",
       endpoint:         __spec__()
     }
   end
@@ -977,6 +1017,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CopyDBSnapshotMessage",
       output_shape:     "CopyDBSnapshotResult",
+      output_wrapper:   "CopyDBSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -1008,6 +1049,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "FailoverDBClusterMessage",
       output_shape:     "FailoverDBClusterResult",
+      output_wrapper:   "FailoverDBClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -1038,6 +1080,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ResetDBClusterParameterGroupMessage",
       output_shape:     "DBClusterParameterGroupNameMessage",
+      output_wrapper:   "ResetDBClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1071,6 +1114,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeOrderableDBInstanceOptionsMessage",
       output_shape:     "OrderableDBInstanceOptionsMessage",
+      output_wrapper:   "DescribeOrderableDBInstanceOptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -1094,6 +1138,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ResetDBParameterGroupMessage",
       output_shape:     "DBParameterGroupNameMessage",
+      output_wrapper:   "ResetDBParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1111,6 +1156,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBInstancesMessage",
       output_shape:     "DBInstanceMessage",
+      output_wrapper:   "DescribeDBInstancesResult",
       endpoint:         __spec__()
     }
   end
@@ -1127,6 +1173,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBLogFilesMessage",
       output_shape:     "DescribeDBLogFilesResponse",
+      output_wrapper:   "DescribeDBLogFilesResult",
       endpoint:         __spec__()
     }
   end
@@ -1144,6 +1191,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ApplyPendingMaintenanceActionMessage",
       output_shape:     "ApplyPendingMaintenanceActionResult",
+      output_wrapper:   "ApplyPendingMaintenanceActionResult",
       endpoint:         __spec__()
     }
   end
@@ -1190,6 +1238,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBClusterParameterGroupMessage",
       output_shape:     "CreateDBClusterParameterGroupResult",
+      output_wrapper:   "CreateDBClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1207,6 +1256,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBSubnetGroupMessage",
       output_shape:     "ModifyDBSubnetGroupResult",
+      output_wrapper:   "ModifyDBSubnetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1294,6 +1344,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CopyDBClusterSnapshotMessage",
       output_shape:     "CopyDBClusterSnapshotResult",
+      output_wrapper:   "CopyDBClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -1311,6 +1362,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBSecurityGroupMessage",
       output_shape:     "CreateDBSecurityGroupResult",
+      output_wrapper:   "CreateDBSecurityGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1338,6 +1390,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RestoreDBInstanceToPointInTimeMessage",
       output_shape:     "RestoreDBInstanceToPointInTimeResult",
+      output_wrapper:   "RestoreDBInstanceToPointInTimeResult",
       endpoint:         __spec__()
     }
   end
@@ -1359,6 +1412,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBClustersMessage",
       output_shape:     "DBClusterMessage",
+      output_wrapper:   "DescribeDBClustersResult",
       endpoint:         __spec__()
     }
   end
@@ -1379,6 +1433,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeEventCategoriesMessage",
       output_shape:     "EventCategoriesMessage",
+      output_wrapper:   "DescribeEventCategoriesResult",
       endpoint:         __spec__()
     }
   end
@@ -1411,6 +1466,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBInstanceReadReplicaMessage",
       output_shape:     "CreateDBInstanceReadReplicaResult",
+      output_wrapper:   "CreateDBInstanceReadReplicaResult",
       endpoint:         __spec__()
     }
   end
@@ -1466,6 +1522,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "RestoreDBInstanceFromDBSnapshotMessage",
       output_shape:     "RestoreDBInstanceFromDBSnapshotResult",
+      output_wrapper:   "RestoreDBInstanceFromDBSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -1505,6 +1562,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeCertificatesMessage",
       output_shape:     "CertificateMessage",
+      output_wrapper:   "DescribeCertificatesResult",
       endpoint:         __spec__()
     }
   end
@@ -1529,6 +1587,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyEventSubscriptionMessage",
       output_shape:     "ModifyEventSubscriptionResult",
+      output_wrapper:   "ModifyEventSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -1562,6 +1621,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBClusterSnapshotAttributeMessage",
       output_shape:     "ModifyDBClusterSnapshotAttributeResult",
+      output_wrapper:   "ModifyDBClusterSnapshotAttributeResult",
       endpoint:         __spec__()
     }
   end
@@ -1579,6 +1639,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeEngineDefaultParametersMessage",
       output_shape:     "DescribeEngineDefaultParametersResult",
+      output_wrapper:   "DescribeEngineDefaultParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -1621,6 +1682,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DeleteDBInstanceMessage",
       output_shape:     "DeleteDBInstanceResult",
+      output_wrapper:   "DeleteDBInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -1642,6 +1704,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBClusterMessage",
       output_shape:     "ModifyDBClusterResult",
+      output_wrapper:   "ModifyDBClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -1660,6 +1723,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBInstanceMessage",
       output_shape:     "ModifyDBInstanceResult",
+      output_wrapper:   "ModifyDBInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -1695,6 +1759,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "PurchaseReservedDBInstancesOfferingMessage",
       output_shape:     "PurchaseReservedDBInstancesOfferingResult",
+      output_wrapper:   "PurchaseReservedDBInstancesOfferingResult",
       endpoint:         __spec__()
     }
   end
@@ -1723,6 +1788,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBClusterSnapshotAttributesMessage",
       output_shape:     "DescribeDBClusterSnapshotAttributesResult",
+      output_wrapper:   "DescribeDBClusterSnapshotAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -1744,6 +1810,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeEventSubscriptionsMessage",
       output_shape:     "EventSubscriptionsMessage",
+      output_wrapper:   "DescribeEventSubscriptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -1781,6 +1848,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "ModifyDBParameterGroupMessage",
       output_shape:     "DBParameterGroupNameMessage",
+      output_wrapper:   "ModifyDBParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1797,6 +1865,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBSnapshotMessage",
       output_shape:     "CreateDBSnapshotResult",
+      output_wrapper:   "CreateDBSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -1836,6 +1905,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBParameterGroupMessage",
       output_shape:     "CreateDBParameterGroupResult",
+      output_wrapper:   "CreateDBParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1852,6 +1922,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CopyDBClusterParameterGroupMessage",
       output_shape:     "CopyDBClusterParameterGroupResult",
+      output_wrapper:   "CopyDBClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1868,6 +1939,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CopyOptionGroupMessage",
       output_shape:     "CopyOptionGroupResult",
+      output_wrapper:   "CopyOptionGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1885,6 +1957,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "CreateDBSubnetGroupMessage",
       output_shape:     "CreateDBSubnetGroupResult",
+      output_wrapper:   "CreateDBSubnetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1926,6 +1999,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "StopDBInstanceMessage",
       output_shape:     "StopDBInstanceResult",
+      output_wrapper:   "StopDBInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -1947,6 +2021,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeAccountAttributesMessage",
       output_shape:     "AccountAttributesMessage",
+      output_wrapper:   "DescribeAccountAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -1985,6 +2060,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeDBSnapshotsMessage",
       output_shape:     "DBSnapshotMessage",
+      output_wrapper:   "DescribeDBSnapshotsResult",
       endpoint:         __spec__()
     }
   end
@@ -2002,6 +2078,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribePendingMaintenanceActionsMessage",
       output_shape:     "PendingMaintenanceActionsMessage",
+      output_wrapper:   "DescribePendingMaintenanceActionsResult",
       endpoint:         __spec__()
     }
   end
@@ -2018,6 +2095,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DescribeOptionGroupOptionsMessage",
       output_shape:     "OptionGroupOptionsMessage",
+      output_wrapper:   "DescribeOptionGroupOptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -2041,6 +2119,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "DeleteDBClusterMessage",
       output_shape:     "DeleteDBClusterResult",
+      output_wrapper:   "DeleteDBClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -2072,6 +2151,7 @@ defmodule Baiji.RDS do
       method:           :post,
       input_shape:      "AuthorizeDBSecurityGroupIngressMessage",
       output_shape:     "AuthorizeDBSecurityGroupIngressResult",
+      output_wrapper:   "AuthorizeDBSecurityGroupIngressResult",
       endpoint:         __spec__()
     }
   end
@@ -2083,7 +2163,6 @@ defmodule Baiji.RDS do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "rds",
-      target_prefix:    nil,
       endpoint_prefix:  "rds",
       type:             :xml,
       version:          "2014-10-31",

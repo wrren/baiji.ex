@@ -206,6 +206,7 @@ defmodule Baiji.Simpledb do
       method:           :post,
       input_shape:      "DomainMetadataRequest",
       output_shape:     "DomainMetadataResult",
+      output_wrapper:   "DomainMetadataResult",
       endpoint:         __spec__()
     }
   end
@@ -231,6 +232,7 @@ defmodule Baiji.Simpledb do
       method:           :post,
       input_shape:      "GetAttributesRequest",
       output_shape:     "GetAttributesResult",
+      output_wrapper:   "GetAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -253,6 +255,7 @@ defmodule Baiji.Simpledb do
       method:           :post,
       input_shape:      "ListDomainsRequest",
       output_shape:     "ListDomainsResult",
+      output_wrapper:   "ListDomainsResult",
       endpoint:         __spec__()
     }
   end
@@ -330,6 +333,7 @@ defmodule Baiji.Simpledb do
       method:           :post,
       input_shape:      "SelectRequest",
       output_shape:     "SelectResult",
+      output_wrapper:   "SelectResult",
       endpoint:         __spec__()
     }
   end
@@ -341,7 +345,6 @@ defmodule Baiji.Simpledb do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "sdb",
-      target_prefix:    nil,
       endpoint_prefix:  "sdb",
       type:             :xml,
       version:          "2009-04-15",

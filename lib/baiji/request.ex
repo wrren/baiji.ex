@@ -96,21 +96,13 @@ defmodule Baiji.Request do
   @doc """
   Add a content-type header based on the operation's protocol
   """
-  def add_content_type_header(%Request{headers: headers, operation: %Operation{endpoint: %Endpoint{type: :ec2}}} = req) do
-    %{req | headers: [{"Content-Type", "application/x-www-form-urlencoded; charset=utf-8"} | headers]}
-  end
-  def add_content_type_header(%Request{headers: headers, operation: %Operation{endpoint: %Endpoint{type: :xml}}} = req) do
-    %{req | headers: [{"Content-Type", "application/x-www-form-urlencoded; charset=utf-8"} | headers]}
-  end  
-  def add_content_type_header(%Request{headers: headers, operation: %Operation{endpoint: %Endpoint{type: :rest_xml}}} = req) do
-    %{req | headers: [{"Content-Type", "application/x-www-form-urlencoded; charset=utf-8"} | headers]}
-  end
   def add_content_type_header(%Request{headers: headers, operation: %Operation{endpoint: %Endpoint{type: :json}}} = req) do
     %{req | headers: [{"Content-Type", "application/x-amz-json-1.1"} | headers]}
   end
   def add_content_type_header(%Request{headers: headers, operation: %Operation{endpoint: %Endpoint{type: :rest_json}}} = req) do
     %{req | headers: [{"Content-Type", "application/x-amz-json-1.1"} | headers]}
   end
+  def add_content_type_header(req), do: req
 
   @doc """
   Add an X-Amz-Target header to the given request based on its target-prefix and action name
@@ -137,7 +129,7 @@ defmodule Baiji.Request do
         {:ok, response}      
       {:ok, %{status_code: code, body: body}} ->
         Operation.error(op, "Got Body: #{body}")
-        {:error, "Request returned status code #{code}"}
+        {:error, "Request returned status code #{code}: #{body}"}
       {:error, message} ->
         {:error, message}
     end

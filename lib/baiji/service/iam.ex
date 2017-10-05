@@ -100,6 +100,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetRolePolicyRequest",
       output_shape:     "GetRolePolicyResponse",
+      output_wrapper:   "GetRolePolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -144,6 +145,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "SimulatePrincipalPolicyRequest",
       output_shape:     "SimulatePolicyResponse",
+      output_wrapper:   "SimulatePrincipalPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -177,6 +179,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetUserPolicyRequest",
       output_shape:     "GetUserPolicyResponse",
+      output_wrapper:   "GetUserPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -197,6 +200,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetInstanceProfileRequest",
       output_shape:     "GetInstanceProfileResponse",
+      output_wrapper:   "GetInstanceProfileResult",
       endpoint:         __spec__()
     }
   end
@@ -241,6 +245,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListAttachedUserPoliciesRequest",
       output_shape:     "ListAttachedUserPoliciesResponse",
+      output_wrapper:   "ListAttachedUserPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -326,6 +331,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListRolesRequest",
       output_shape:     "ListRolesResponse",
+      output_wrapper:   "ListRolesResult",
       endpoint:         __spec__()
     }
   end
@@ -356,6 +362,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListPoliciesRequest",
       output_shape:     "ListPoliciesResponse",
+      output_wrapper:   "ListPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -377,6 +384,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "",
       output_shape:     "GetAccountSummaryResponse",
+      output_wrapper:   "GetAccountSummaryResult",
       endpoint:         __spec__()
     }
   end
@@ -416,6 +424,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListOpenIDConnectProvidersRequest",
       output_shape:     "ListOpenIDConnectProvidersResponse",
+      output_wrapper:   "ListOpenIDConnectProvidersResult",
       endpoint:         __spec__()
     }
   end
@@ -449,6 +458,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetContextKeysForPrincipalPolicyRequest",
       output_shape:     "GetContextKeysForPolicyResponse",
+      output_wrapper:   "GetContextKeysForPrincipalPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -477,6 +487,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListAttachedRolePoliciesRequest",
       output_shape:     "ListAttachedRolePoliciesResponse",
+      output_wrapper:   "ListAttachedRolePoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -505,6 +516,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListRolePoliciesRequest",
       output_shape:     "ListRolePoliciesResponse",
+      output_wrapper:   "ListRolePoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -523,6 +535,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListGroupsForUserRequest",
       output_shape:     "ListGroupsForUserResponse",
+      output_wrapper:   "ListGroupsForUserResult",
       endpoint:         __spec__()
     }
   end
@@ -581,6 +594,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetOpenIDConnectProviderRequest",
       output_shape:     "GetOpenIDConnectProviderResponse",
+      output_wrapper:   "GetOpenIDConnectProviderResult",
       endpoint:         __spec__()
     }
   end
@@ -604,6 +618,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListPolicyVersionsRequest",
       output_shape:     "ListPolicyVersionsResponse",
+      output_wrapper:   "ListPolicyVersionsResult",
       endpoint:         __spec__()
     }
   end
@@ -624,6 +639,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetUserRequest",
       output_shape:     "GetUserResponse",
+      output_wrapper:   "GetUserResult",
       endpoint:         __spec__()
     }
   end
@@ -640,6 +656,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "UpdateRoleDescriptionRequest",
       output_shape:     "UpdateRoleDescriptionResponse",
+      output_wrapper:   "UpdateRoleDescriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -714,6 +731,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateSAMLProviderRequest",
       output_shape:     "CreateSAMLProviderResponse",
+      output_wrapper:   "CreateSAMLProviderResult",
       endpoint:         __spec__()
     }
   end
@@ -842,6 +860,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateOpenIDConnectProviderRequest",
       output_shape:     "CreateOpenIDConnectProviderResponse",
+      output_wrapper:   "CreateOpenIDConnectProviderResult",
       endpoint:         __spec__()
     }
   end
@@ -943,6 +962,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListSSHPublicKeysRequest",
       output_shape:     "ListSSHPublicKeysResponse",
+      output_wrapper:   "ListSSHPublicKeysResult",
       endpoint:         __spec__()
     }
   end
@@ -1045,6 +1065,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "",
       output_shape:     "GenerateCredentialReportResponse",
+      output_wrapper:   "GenerateCredentialReportResult",
       endpoint:         __spec__()
     }
   end
@@ -1128,6 +1149,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ResetServiceSpecificCredentialRequest",
       output_shape:     "ResetServiceSpecificCredentialResponse",
+      output_wrapper:   "ResetServiceSpecificCredentialResult",
       endpoint:         __spec__()
     }
   end
@@ -1175,6 +1197,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "UpdateSAMLProviderRequest",
       output_shape:     "UpdateSAMLProviderResponse",
+      output_wrapper:   "UpdateSAMLProviderResult",
       endpoint:         __spec__()
     }
   end
@@ -1196,6 +1219,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateUserRequest",
       output_shape:     "CreateUserResponse",
+      output_wrapper:   "CreateUserResult",
       endpoint:         __spec__()
     }
   end
@@ -1218,6 +1242,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetSAMLProviderRequest",
       output_shape:     "GetSAMLProviderResponse",
+      output_wrapper:   "GetSAMLProviderResult",
       endpoint:         __spec__()
     }
   end
@@ -1268,6 +1293,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreatePolicyRequest",
       output_shape:     "CreatePolicyResponse",
+      output_wrapper:   "CreatePolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -1289,6 +1315,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListInstanceProfilesRequest",
       output_shape:     "ListInstanceProfilesResponse",
+      output_wrapper:   "ListInstanceProfilesResult",
       endpoint:         __spec__()
     }
   end
@@ -1387,6 +1414,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListMFADevicesRequest",
       output_shape:     "ListMFADevicesResponse",
+      output_wrapper:   "ListMFADevicesResult",
       endpoint:         __spec__()
     }
   end
@@ -1404,6 +1432,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetGroupRequest",
       output_shape:     "GetGroupResponse",
+      output_wrapper:   "GetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1422,6 +1451,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetLoginProfileRequest",
       output_shape:     "GetLoginProfileResponse",
+      output_wrapper:   "GetLoginProfileResult",
       endpoint:         __spec__()
     }
   end
@@ -1440,6 +1470,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "",
       output_shape:     "GetAccountPasswordPolicyResponse",
+      output_wrapper:   "GetAccountPasswordPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -1463,6 +1494,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListServiceSpecificCredentialsRequest",
       output_shape:     "ListServiceSpecificCredentialsResponse",
+      output_wrapper:   "ListServiceSpecificCredentialsResult",
       endpoint:         __spec__()
     }
   end
@@ -1492,6 +1524,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateServiceLinkedRoleRequest",
       output_shape:     "CreateServiceLinkedRoleResponse",
+      output_wrapper:   "CreateServiceLinkedRoleResult",
       endpoint:         __spec__()
     }
   end
@@ -1516,6 +1549,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListEntitiesForPolicyRequest",
       output_shape:     "ListEntitiesForPolicyResponse",
+      output_wrapper:   "ListEntitiesForPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -1557,6 +1591,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetPolicyVersionRequest",
       output_shape:     "GetPolicyVersionResponse",
+      output_wrapper:   "GetPolicyVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -1589,6 +1624,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateServiceSpecificCredentialRequest",
       output_shape:     "CreateServiceSpecificCredentialResponse",
+      output_wrapper:   "CreateServiceSpecificCredentialResult",
       endpoint:         __spec__()
     }
   end
@@ -1644,6 +1680,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "SimulateCustomPolicyRequest",
       output_shape:     "SimulatePolicyResponse",
+      output_wrapper:   "SimulateCustomPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -1687,6 +1724,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListVirtualMFADevicesRequest",
       output_shape:     "ListVirtualMFADevicesResponse",
+      output_wrapper:   "ListVirtualMFADevicesResult",
       endpoint:         __spec__()
     }
   end
@@ -1797,6 +1835,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListServerCertificatesRequest",
       output_shape:     "ListServerCertificatesResponse",
+      output_wrapper:   "ListServerCertificatesResult",
       endpoint:         __spec__()
     }
   end
@@ -1818,6 +1857,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListSAMLProvidersRequest",
       output_shape:     "ListSAMLProvidersResponse",
+      output_wrapper:   "ListSAMLProvidersResult",
       endpoint:         __spec__()
     }
   end
@@ -1902,6 +1942,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "UploadSSHPublicKeyRequest",
       output_shape:     "UploadSSHPublicKeyResponse",
+      output_wrapper:   "UploadSSHPublicKeyResult",
       endpoint:         __spec__()
     }
   end
@@ -1951,6 +1992,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "UploadServerCertificateRequest",
       output_shape:     "UploadServerCertificateResponse",
+      output_wrapper:   "UploadServerCertificateResult",
       endpoint:         __spec__()
     }
   end
@@ -1979,6 +2021,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetRoleRequest",
       output_shape:     "GetRoleResponse",
+      output_wrapper:   "GetRoleResult",
       endpoint:         __spec__()
     }
   end
@@ -1999,6 +2042,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListUsersRequest",
       output_shape:     "ListUsersResponse",
+      output_wrapper:   "ListUsersResult",
       endpoint:         __spec__()
     }
   end
@@ -2038,6 +2082,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListGroupsRequest",
       output_shape:     "ListGroupsResponse",
+      output_wrapper:   "ListGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -2057,6 +2102,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "",
       output_shape:     "GetCredentialReportResponse",
+      output_wrapper:   "GetCredentialReportResult",
       endpoint:         __spec__()
     }
   end
@@ -2113,6 +2159,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateRoleRequest",
       output_shape:     "CreateRoleResponse",
+      output_wrapper:   "CreateRoleResult",
       endpoint:         __spec__()
     }
   end
@@ -2189,6 +2236,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetAccountAuthorizationDetailsRequest",
       output_shape:     "GetAccountAuthorizationDetailsResponse",
+      output_wrapper:   "GetAccountAuthorizationDetailsResult",
       endpoint:         __spec__()
     }
   end
@@ -2222,6 +2270,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetGroupPolicyRequest",
       output_shape:     "GetGroupPolicyResponse",
+      output_wrapper:   "GetGroupPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -2249,6 +2298,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListUserPoliciesRequest",
       output_shape:     "ListUserPoliciesResponse",
+      output_wrapper:   "ListUserPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -2298,6 +2348,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateInstanceProfileRequest",
       output_shape:     "CreateInstanceProfileResponse",
+      output_wrapper:   "CreateInstanceProfileResult",
       endpoint:         __spec__()
     }
   end
@@ -2375,6 +2426,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListGroupPoliciesRequest",
       output_shape:     "ListGroupPoliciesResponse",
+      output_wrapper:   "ListGroupPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -2398,6 +2450,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetSSHPublicKeyRequest",
       output_shape:     "GetSSHPublicKeyResponse",
+      output_wrapper:   "GetSSHPublicKeyResult",
       endpoint:         __spec__()
     }
   end
@@ -2445,6 +2498,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetContextKeysForCustomPolicyRequest",
       output_shape:     "GetContextKeysForPolicyResponse",
+      output_wrapper:   "GetContextKeysForCustomPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -2464,6 +2518,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetAccessKeyLastUsedRequest",
       output_shape:     "GetAccessKeyLastUsedResponse",
+      output_wrapper:   "GetAccessKeyLastUsedResult",
       endpoint:         __spec__()
     }
   end
@@ -2484,6 +2539,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListAccountAliasesRequest",
       output_shape:     "ListAccountAliasesResponse",
+      output_wrapper:   "ListAccountAliasesResult",
       endpoint:         __spec__()
     }
   end
@@ -2519,6 +2575,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateAccessKeyRequest",
       output_shape:     "CreateAccessKeyResponse",
+      output_wrapper:   "CreateAccessKeyResult",
       endpoint:         __spec__()
     }
   end
@@ -2617,6 +2674,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListAttachedGroupPoliciesRequest",
       output_shape:     "ListAttachedGroupPoliciesResponse",
+      output_wrapper:   "ListAttachedGroupPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -2648,6 +2706,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetPolicyRequest",
       output_shape:     "GetPolicyResponse",
+      output_wrapper:   "GetPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -2669,6 +2728,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateGroupRequest",
       output_shape:     "CreateGroupResponse",
+      output_wrapper:   "CreateGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -2718,6 +2778,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreatePolicyVersionRequest",
       output_shape:     "CreatePolicyVersionResponse",
+      output_wrapper:   "CreatePolicyVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -2857,6 +2918,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListAccessKeysRequest",
       output_shape:     "ListAccessKeysResponse",
+      output_wrapper:   "ListAccessKeysResult",
       endpoint:         __spec__()
     }
   end
@@ -2878,6 +2940,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListInstanceProfilesForRoleRequest",
       output_shape:     "ListInstanceProfilesForRoleResponse",
+      output_wrapper:   "ListInstanceProfilesForRoleResult",
       endpoint:         __spec__()
     }
   end
@@ -2938,6 +3001,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateVirtualMFADeviceRequest",
       output_shape:     "CreateVirtualMFADeviceResponse",
+      output_wrapper:   "CreateVirtualMFADeviceResult",
       endpoint:         __spec__()
     }
   end
@@ -2982,6 +3046,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "GetServerCertificateRequest",
       output_shape:     "GetServerCertificateResponse",
+      output_wrapper:   "GetServerCertificateResult",
       endpoint:         __spec__()
     }
   end
@@ -3009,6 +3074,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "ListSigningCertificatesRequest",
       output_shape:     "ListSigningCertificatesResponse",
+      output_wrapper:   "ListSigningCertificatesResult",
       endpoint:         __spec__()
     }
   end
@@ -3046,6 +3112,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "UploadSigningCertificateRequest",
       output_shape:     "UploadSigningCertificateResponse",
+      output_wrapper:   "UploadSigningCertificateResult",
       endpoint:         __spec__()
     }
   end
@@ -3089,6 +3156,7 @@ defmodule Baiji.IAM do
       method:           :post,
       input_shape:      "CreateLoginProfileRequest",
       output_shape:     "CreateLoginProfileResponse",
+      output_wrapper:   "CreateLoginProfileResult",
       endpoint:         __spec__()
     }
   end
@@ -3100,7 +3168,6 @@ defmodule Baiji.IAM do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "iam",
-      target_prefix:    nil,
       endpoint_prefix:  "iam",
       type:             :xml,
       version:          "2010-05-08",

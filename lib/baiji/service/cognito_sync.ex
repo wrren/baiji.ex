@@ -396,7 +396,6 @@ defmodule Baiji.CognitoSync do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "cognito-sync",
-      target_prefix:    nil,
       endpoint_prefix:  "cognito-sync",
       type:             :json,
       version:          "2014-06-30",

@@ -129,7 +129,6 @@ defmodule Baiji.CloudsearchDomain do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "cloudsearchdomain",
-      target_prefix:    nil,
       endpoint_prefix:  "cloudsearchdomain",
       type:             :json,
       version:          "2013-01-01",

@@ -65,6 +65,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStacksInput",
       output_shape:     "DescribeStacksOutput",
+      output_wrapper:   "DescribeStacksResult",
       endpoint:         __spec__()
     }
   end
@@ -102,6 +103,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListStackSetOperationResultsInput",
       output_shape:     "ListStackSetOperationResultsOutput",
+      output_wrapper:   "ListStackSetOperationResultsResult",
       endpoint:         __spec__()
     }
   end
@@ -124,6 +126,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "UpdateStackSetInput",
       output_shape:     "UpdateStackSetOutput",
+      output_wrapper:   "UpdateStackSetResult",
       endpoint:         __spec__()
     }
   end
@@ -142,6 +145,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListStackInstancesInput",
       output_shape:     "ListStackInstancesOutput",
+      output_wrapper:   "ListStackInstancesResult",
       endpoint:         __spec__()
     }
   end
@@ -158,6 +162,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListStackSetOperationsInput",
       output_shape:     "ListStackSetOperationsOutput",
+      output_wrapper:   "ListStackSetOperationsResult",
       endpoint:         __spec__()
     }
   end
@@ -182,6 +187,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListImportsInput",
       output_shape:     "ListImportsOutput",
+      output_wrapper:   "ListImportsResult",
       endpoint:         __spec__()
     }
   end
@@ -201,6 +207,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStackResourceInput",
       output_shape:     "DescribeStackResourceOutput",
+      output_wrapper:   "DescribeStackResourceResult",
       endpoint:         __spec__()
     }
   end
@@ -231,6 +238,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ContinueUpdateRollbackInput",
       output_shape:     "ContinueUpdateRollbackOutput",
+      output_wrapper:   "ContinueUpdateRollbackResult",
       endpoint:         __spec__()
     }
   end
@@ -248,6 +256,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "GetStackPolicyInput",
       output_shape:     "GetStackPolicyOutput",
+      output_wrapper:   "GetStackPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -264,6 +273,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStackSetOperationInput",
       output_shape:     "DescribeStackSetOperationOutput",
+      output_wrapper:   "DescribeStackSetOperationResult",
       endpoint:         __spec__()
     }
   end
@@ -284,6 +294,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DeleteChangeSetInput",
       output_shape:     "DeleteChangeSetOutput",
+      output_wrapper:   "DeleteChangeSetResult",
       endpoint:         __spec__()
     }
   end
@@ -320,6 +331,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "CreateStackInput",
       output_shape:     "CreateStackOutput",
+      output_wrapper:   "CreateStackResult",
       endpoint:         __spec__()
     }
   end
@@ -338,6 +350,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListChangeSetsInput",
       output_shape:     "ListChangeSetsOutput",
+      output_wrapper:   "ListChangeSetsResult",
       endpoint:         __spec__()
     }
   end
@@ -358,6 +371,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeChangeSetInput",
       output_shape:     "DescribeChangeSetOutput",
+      output_wrapper:   "DescribeChangeSetResult",
       endpoint:         __spec__()
     }
   end
@@ -375,6 +389,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "StopStackSetOperationInput",
       output_shape:     "StopStackSetOperationOutput",
+      output_wrapper:   "StopStackSetOperationResult",
       endpoint:         __spec__()
     }
   end
@@ -394,6 +409,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ValidateTemplateInput",
       output_shape:     "ValidateTemplateOutput",
+      output_wrapper:   "ValidateTemplateResult",
       endpoint:         __spec__()
     }
   end
@@ -413,6 +429,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "CreateStackInstancesInput",
       output_shape:     "CreateStackInstancesOutput",
+      output_wrapper:   "CreateStackInstancesResult",
       endpoint:         __spec__()
     }
   end
@@ -438,6 +455,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStackEventsInput",
       output_shape:     "DescribeStackEventsOutput",
+      output_wrapper:   "DescribeStackEventsResult",
       endpoint:         __spec__()
     }
   end
@@ -455,6 +473,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListStackSetsInput",
       output_shape:     "ListStackSetsOutput",
+      output_wrapper:   "ListStackSetsResult",
       endpoint:         __spec__()
     }
   end
@@ -491,6 +510,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStackResourcesInput",
       output_shape:     "DescribeStackResourcesOutput",
+      output_wrapper:   "DescribeStackResourcesResult",
       endpoint:         __spec__()
     }
   end
@@ -509,6 +529,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "EstimateTemplateCostInput",
       output_shape:     "EstimateTemplateCostOutput",
+      output_wrapper:   "EstimateTemplateCostResult",
       endpoint:         __spec__()
     }
   end
@@ -533,6 +554,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "GetTemplateInput",
       output_shape:     "GetTemplateOutput",
+      output_wrapper:   "GetTemplateResult",
       endpoint:         __spec__()
     }
   end
@@ -549,6 +571,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "CreateStackSetInput",
       output_shape:     "CreateStackSetOutput",
+      output_wrapper:   "CreateStackSetResult",
       endpoint:         __spec__()
     }
   end
@@ -569,6 +592,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStackInstanceInput",
       output_shape:     "DescribeStackInstanceOutput",
+      output_wrapper:   "DescribeStackInstanceResult",
       endpoint:         __spec__()
     }
   end
@@ -605,6 +629,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListStacksInput",
       output_shape:     "ListStacksOutput",
+      output_wrapper:   "ListStacksResult",
       endpoint:         __spec__()
     }
   end
@@ -621,6 +646,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeStackSetInput",
       output_shape:     "DescribeStackSetOutput",
+      output_wrapper:   "DescribeStackSetResult",
       endpoint:         __spec__()
     }
   end
@@ -646,6 +672,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "UpdateStackInput",
       output_shape:     "UpdateStackOutput",
+      output_wrapper:   "UpdateStackResult",
       endpoint:         __spec__()
     }
   end
@@ -670,6 +697,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListExportsInput",
       output_shape:     "ListExportsOutput",
+      output_wrapper:   "ListExportsResult",
       endpoint:         __spec__()
     }
   end
@@ -687,6 +715,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DeleteStackInstancesInput",
       output_shape:     "DeleteStackInstancesOutput",
+      output_wrapper:   "DeleteStackInstancesResult",
       endpoint:         __spec__()
     }
   end
@@ -714,6 +743,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ExecuteChangeSetInput",
       output_shape:     "ExecuteChangeSetOutput",
+      output_wrapper:   "ExecuteChangeSetResult",
       endpoint:         __spec__()
     }
   end
@@ -733,6 +763,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "ListStackResourcesInput",
       output_shape:     "ListStackResourcesOutput",
+      output_wrapper:   "ListStackResourcesResult",
       endpoint:         __spec__()
     }
   end
@@ -751,6 +782,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DeleteStackSetInput",
       output_shape:     "DeleteStackSetOutput",
+      output_wrapper:   "DeleteStackSetResult",
       endpoint:         __spec__()
     }
   end
@@ -778,6 +810,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "GetTemplateSummaryInput",
       output_shape:     "GetTemplateSummaryOutput",
+      output_wrapper:   "GetTemplateSummaryResult",
       endpoint:         __spec__()
     }
   end
@@ -795,6 +828,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "DescribeAccountLimitsInput",
       output_shape:     "DescribeAccountLimitsOutput",
+      output_wrapper:   "DescribeAccountLimitsResult",
       endpoint:         __spec__()
     }
   end
@@ -831,6 +865,7 @@ defmodule Baiji.Cloudformation do
       method:           :post,
       input_shape:      "CreateChangeSetInput",
       output_shape:     "CreateChangeSetOutput",
+      output_wrapper:   "CreateChangeSetResult",
       endpoint:         __spec__()
     }
   end
@@ -842,7 +877,6 @@ defmodule Baiji.Cloudformation do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "cloudformation",
-      target_prefix:    nil,
       endpoint_prefix:  "cloudformation",
       type:             :xml,
       version:          "2010-05-15",

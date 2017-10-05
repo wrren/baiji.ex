@@ -473,7 +473,6 @@ defmodule Baiji.EFS do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "elasticfilesystem",
-      target_prefix:    nil,
       endpoint_prefix:  "elasticfilesystem",
       type:             :rest_json,
       version:          "2015-02-01",

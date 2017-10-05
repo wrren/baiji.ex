@@ -34,7 +34,6 @@ defmodule Baiji.Request.SignTest do
     headers = Sign.canonicalize_headers(context[:request].headers)
 
     assert headers == Enum.join([
-      "content-type:application/x-www-form-urlencoded; charset=utf-8\n",
       "host:ec2.us-east-1.amazonaws.com\n"
     ])
   end

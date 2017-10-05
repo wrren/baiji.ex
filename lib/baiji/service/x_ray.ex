@@ -181,7 +181,6 @@ defmodule Baiji.XRay do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "xray",
-      target_prefix:    nil,
       endpoint_prefix:  "xray",
       type:             :rest_json,
       version:          "2016-04-12",

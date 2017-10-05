@@ -7,6 +7,7 @@ defmodule Baiji.Response.Parser.XML do
     Endpoint,
     Operation
   }
+  require Logger
 
   Record.defrecord :xmlElement, Record.extract(:xmlElement, from_lib: "xmerl/include/xmerl.hrl")
   Record.defrecord :xmlText,    Record.extract(:xmlText, from_lib: "xmerl/include/xmerl.hrl")
@@ -18,17 +19,42 @@ defmodule Baiji.Response.Parser.XML do
   end
 
   @doc """
+  If the result we're trying to parse is contained in a wrapper element, descend through the element tree until
+  we've found one with a matching name and return it
+  """
+  def descend_to_wrapper(element, nil), do: element
+  def descend_to_wrapper(xmlElement(name: name, content: content) = element, wrapper) do
+    if Atom.to_string(name) == wrapper do
+      element
+    end
+    case descend_to_wrapper(content, wrapper) do
+      nil     -> element
+      result  -> result
+    end
+  end
+  def descend_to_wrapper(xml, wrapper) when is_list(xml) do
+    Enum.find(xml, fn element -> descend_to_wrapper(element, wrapper) != nil end)
+  end
+  def descend_to_wrapper(_, _) do
+    nil
+  end
+
+  @doc """
   Parse the XML output of an API call and generate a response in the form of a map
   """
-  def parse(response, %Operation{endpoint: %Endpoint{shapes: shapes}, output_shape: shape}) do
-    {xml, _} = :xmerl_scan.string(:erlang.binary_to_list(response), [space: :normalize])
+  def parse(response, %Operation{endpoint: %Endpoint{shapes: shapes}, output_shape: shape, output_wrapper: wrapper}) do
+    {xml, _}        = :xmerl_scan.string(:erlang.binary_to_list(response), [space: :normalize])
     try do
-      {:ok, parse(xml, shape, shapes)}
+      {:ok, parse(descend_to_wrapper(xml, wrapper), shape, shapes)}
     catch
-      _ -> {:error, "The response format could not be correctly parsed"}
+      e -> {:error, "The response format could not be correctly parsed: #{inspect e}"}
     rescue
-      _ -> {:error, "The response format could not be correctly parsed"}
+      e -> {:error, "The response format could not be correctly parsed: #{inspect e}"}
     end
+  end
+  def parse!(response, %Operation{endpoint: %Endpoint{shapes: shapes}, output_shape: shape, output_wrapper: wrapper}) do
+    {xml, _}        = :xmerl_scan.string(:erlang.binary_to_list(response), [space: :normalize])
+    parse(descend_to_wrapper(xml, wrapper), shape, shapes)
   end
 
   def parse(xml, shape_name, shapes) when is_binary(shape_name) do
@@ -38,6 +64,18 @@ defmodule Baiji.Response.Parser.XML do
   def parse(xmlElement(content: content), "String", shapes),        do: parse(content, "String", shapes)
   def parse(xmlElement(content: content), "Boolean", shapes),       do: parse(content, "Boolean", shapes)
   def parse(xmlElement(content: content), "Integer", shapes),       do: parse(content, "Integer", shapes)
+  def parse(xmlElement(name: :member, content: content), %{"type" => "string"} = shape, shapes) do
+    parse(content, shape, shapes)
+  end
+  def parse(xmlElement(name: :member, content: content), %{"type" => "boolean"} = shape, shapes) do
+    parse(content, shape, shapes)
+  end 
+  def parse(xmlElement(name: :member, content: content), %{"type" => "integer"} = shape, shapes) do
+    parse(content, shape, shapes)
+  end 
+  def parse(xmlElement(name: :member, content: content), %{"type" => "timestamp"} = shape, shapes) do
+    parse(content, shape, shapes)
+  end 
   def parse(xmlText() = text, "String", _shapes),                   do: value(text)
   def parse(xmlText() = text, "Boolean", _shapes),                  do: value(text) |> String.to_existing_atom
   def parse(xmlText() = text, "Integer", _shapes),                  do: value(text) |> String.to_integer
@@ -56,7 +94,8 @@ defmodule Baiji.Response.Parser.XML do
   def parse(xmlElement(content: content), %{"type" => "structure", "members" => members}, shapes) do
     members
     |> Map.to_list
-    |> Enum.map(fn {_, %{"shape" => shape, "locationName" => location}} ->
+    |> Enum.map(fn {name, %{"shape" => shape} = val} ->
+      location = Map.get(val, "locationName", name)
       case Enum.find(content, fn xmlElement(name: name) -> name == String.to_atom(location); _ -> false end) do
         xmlElement(content: c) ->
           {location, parse(c, shape, shapes)}

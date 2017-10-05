@@ -1431,7 +1431,6 @@ defmodule Baiji.Glacier do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "glacier",
-      target_prefix:    nil,
       endpoint_prefix:  "glacier",
       type:             :rest_json,
       version:          "2012-06-01",

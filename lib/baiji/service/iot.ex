@@ -1087,7 +1087,6 @@ defmodule Baiji.Iot do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "iot",
-      target_prefix:    nil,
       endpoint_prefix:  "iot",
       type:             :rest_json,
       version:          "2015-05-28",

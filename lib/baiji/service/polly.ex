@@ -152,7 +152,6 @@ defmodule Baiji.Polly do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "polly",
-      target_prefix:    nil,
       endpoint_prefix:  "polly",
       type:             :rest_json,
       version:          "2016-06-10",

@@ -27,6 +27,23 @@ defmodule Baiji.Request.Validator do
       raise Error, message: "The value for #{format_keys(keys)} must be one of #{Enum.join(enum, ", ")}"
     end
   end
+  def validate!(input, %{"type" => "string"}, _, keys) when not is_binary(input) do
+    raise Error, message: "The value for #{format_keys(keys)} must be a string"
+  end
+  def validate!(input, %{"type" => "string", "min" => _, "max" => _} = shape, shapes, keys) when is_binary(input) do
+    validate!(input, Map.delete(shape, "max"), shapes, keys)
+    validate!(input, Map.delete(shape, "min"), shapes, keys)    
+  end
+  def validate!(input, %{"type" => "string", "min" => min}, _, keys) when is_binary(input) do
+    if String.length(input) < min do
+      raise Error, message: "The value for #{format_keys(keys)} must be a string at least #{min} characters long"
+    end
+  end
+  def validate!(input, %{"type" => "string", "max" => max}, _, keys) when is_binary(input) do
+    if String.length(input) > max do
+      raise Error, message: "The value for #{format_keys(keys)} must be a string at most #{max} characters long"
+    end   
+  end
   def validate!(input, %{"type" => "integer", "min" => min, "max" => max}, shapes, keys) when is_integer(input) do
     validate!(input, %{"type" => "integer", "min" => min}, shapes, keys)
     validate!(input, %{"type" => "integer", "max" => max}, shapes, keys)
@@ -52,17 +69,17 @@ defmodule Baiji.Request.Validator do
       validate!(member, shapes[shape], shapes, [key | keys])
     end) 
   end
-  
   def validate!(input, %{"type" => "structure", "members" => members} = shape, shapes, keys) do
     check_required_fields!(input, shape, shapes, keys)
     members
-    |> Enum.each(fn({_, %{"shape" => member_shape, "locationName" => location}}) ->
+    |> Enum.each(fn({name, %{"shape" => member_shape} = val}) ->
+      location = Map.get(val, "locationName", name)
       if Map.has_key?(input, location) do
         validate!(input[location], shapes[member_shape], shapes, [location | keys])
-      end
+      end;
     end)
   end
-  
+
   @doc """
   Check whether all required fields in the given input are present
   """

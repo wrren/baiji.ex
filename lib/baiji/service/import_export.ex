@@ -23,6 +23,7 @@ defmodule Baiji.ImportExport do
       method:           :post,
       input_shape:      "CancelJobInput",
       output_shape:     "CancelJobOutput",
+      output_wrapper:   "CancelJobResult",
       endpoint:         __spec__()
     }
   end
@@ -43,6 +44,7 @@ defmodule Baiji.ImportExport do
       method:           :post,
       input_shape:      "CreateJobInput",
       output_shape:     "CreateJobOutput",
+      output_wrapper:   "CreateJobResult",
       endpoint:         __spec__()
     }
   end
@@ -60,6 +62,7 @@ defmodule Baiji.ImportExport do
       method:           :post,
       input_shape:      "GetShippingLabelInput",
       output_shape:     "GetShippingLabelOutput",
+      output_wrapper:   "GetShippingLabelResult",
       endpoint:         __spec__()
     }
   end
@@ -79,6 +82,7 @@ defmodule Baiji.ImportExport do
       method:           :post,
       input_shape:      "GetStatusInput",
       output_shape:     "GetStatusOutput",
+      output_wrapper:   "GetStatusResult",
       endpoint:         __spec__()
     }
   end
@@ -99,6 +103,7 @@ defmodule Baiji.ImportExport do
       method:           :post,
       input_shape:      "ListJobsInput",
       output_shape:     "ListJobsOutput",
+      output_wrapper:   "ListJobsResult",
       endpoint:         __spec__()
     }
   end
@@ -119,6 +124,7 @@ defmodule Baiji.ImportExport do
       method:           :post,
       input_shape:      "UpdateJobInput",
       output_shape:     "UpdateJobOutput",
+      output_wrapper:   "UpdateJobResult",
       endpoint:         __spec__()
     }
   end
@@ -130,7 +136,6 @@ defmodule Baiji.ImportExport do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "importexport",
-      target_prefix:    nil,
       endpoint_prefix:  "importexport",
       type:             :xml,
       version:          "2010-06-01",

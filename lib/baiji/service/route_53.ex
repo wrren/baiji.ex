@@ -1500,7 +1500,6 @@ defmodule Baiji.Route53 do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "route53",
-      target_prefix:    nil,
       endpoint_prefix:  "route53",
       type:             :rest_xml,
       version:          "2013-04-01",

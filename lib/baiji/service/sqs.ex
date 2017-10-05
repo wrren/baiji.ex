@@ -173,6 +173,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "ChangeMessageVisibilityBatchRequest",
       output_shape:     "ChangeMessageVisibilityBatchResult",
+      output_wrapper:   "ChangeMessageVisibilityBatchResult",
       endpoint:         __spec__()
     }
   end
@@ -232,6 +233,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "CreateQueueRequest",
       output_shape:     "CreateQueueResult",
+      output_wrapper:   "CreateQueueResult",
       endpoint:         __spec__()
     }
   end
@@ -302,6 +304,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "DeleteMessageBatchRequest",
       output_shape:     "DeleteMessageBatchResult",
+      output_wrapper:   "DeleteMessageBatchResult",
       endpoint:         __spec__()
     }
   end
@@ -361,6 +364,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "GetQueueAttributesRequest",
       output_shape:     "GetQueueAttributesResult",
+      output_wrapper:   "GetQueueAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -386,6 +390,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "GetQueueUrlRequest",
       output_shape:     "GetQueueUrlResult",
+      output_wrapper:   "GetQueueUrlResult",
       endpoint:         __spec__()
     }
   end
@@ -408,6 +413,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "ListDeadLetterSourceQueuesRequest",
       output_shape:     "ListDeadLetterSourceQueuesResult",
+      output_wrapper:   "ListDeadLetterSourceQueuesResult",
       endpoint:         __spec__()
     }
   end
@@ -427,6 +433,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "ListQueuesRequest",
       output_shape:     "ListQueuesResult",
+      output_wrapper:   "ListQueuesResult",
       endpoint:         __spec__()
     }
   end
@@ -521,6 +528,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "ReceiveMessageRequest",
       output_shape:     "ReceiveMessageResult",
+      output_wrapper:   "ReceiveMessageResult",
       endpoint:         __spec__()
     }
   end
@@ -566,6 +574,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "SendMessageRequest",
       output_shape:     "SendMessageResult",
+      output_wrapper:   "SendMessageResult",
       endpoint:         __spec__()
     }
   end
@@ -616,6 +625,7 @@ defmodule Baiji.SQS do
       method:           :post,
       input_shape:      "SendMessageBatchRequest",
       output_shape:     "SendMessageBatchResult",
+      output_wrapper:   "SendMessageBatchResult",
       endpoint:         __spec__()
     }
   end
@@ -652,7 +662,6 @@ defmodule Baiji.SQS do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "sqs",
-      target_prefix:    nil,
       endpoint_prefix:  "sqs",
       type:             :xml,
       version:          "2012-11-05",

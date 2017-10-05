@@ -358,7 +358,6 @@ defmodule Baiji.ElasticTranscoder do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "elastictranscoder",
-      target_prefix:    nil,
       endpoint_prefix:  "elastictranscoder",
       type:             :rest_json,
       version:          "2012-09-25",

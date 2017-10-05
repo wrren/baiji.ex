@@ -14,6 +14,7 @@ defmodule Baiji.Operation do
             parser:             nil,          # Parser to be used when decoding the API response body
             input_shape:        nil,          # Name of the input shape for this operation
             output_shape:       nil,          # Name of the output shape for this operation
+            output_wrapper:     nil,          # Wrapper element for the result
             endpoint:           nil           # Endpoint struct
             
   @doc """

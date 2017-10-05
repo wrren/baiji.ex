@@ -1074,7 +1074,6 @@ defmodule Baiji.Greengrass do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "greengrass",
-      target_prefix:    nil,
       endpoint_prefix:  "greengrass",
       type:             :json,
       version:          "2017-06-07",

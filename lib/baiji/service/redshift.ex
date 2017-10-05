@@ -44,6 +44,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "EnableSnapshotCopyMessage",
       output_shape:     "EnableSnapshotCopyResult",
+      output_wrapper:   "EnableSnapshotCopyResult",
       endpoint:         __spec__()
     }
   end
@@ -65,6 +66,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "RevokeClusterSecurityGroupIngressMessage",
       output_shape:     "RevokeClusterSecurityGroupIngressResult",
+      output_wrapper:   "RevokeClusterSecurityGroupIngressResult",
       endpoint:         __spec__()
     }
   end
@@ -99,6 +101,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DeleteClusterMessage",
       output_shape:     "DeleteClusterResult",
+      output_wrapper:   "DeleteClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -120,6 +123,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateClusterSnapshotMessage",
       output_shape:     "CreateClusterSnapshotResult",
+      output_wrapper:   "CreateClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -142,6 +146,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeSnapshotCopyGrantsMessage",
       output_shape:     "SnapshotCopyGrantMessage",
+      output_wrapper:   "DescribeSnapshotCopyGrantsResult",
       endpoint:         __spec__()
     }
   end
@@ -163,6 +168,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "AuthorizeSnapshotAccessMessage",
       output_shape:     "AuthorizeSnapshotAccessResult",
+      output_wrapper:   "AuthorizeSnapshotAccessResult",
       endpoint:         __spec__()
     }
   end
@@ -191,6 +197,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeHsmConfigurationsMessage",
       output_shape:     "HsmConfigurationMessage",
+      output_wrapper:   "DescribeHsmConfigurationsResult",
       endpoint:         __spec__()
     }
   end
@@ -230,6 +237,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeResizeMessage",
       output_shape:     "ResizeProgressMessage",
+      output_wrapper:   "DescribeResizeResult",
       endpoint:         __spec__()
     }
   end
@@ -247,6 +255,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "EnableLoggingMessage",
       output_shape:     "LoggingStatus",
+      output_wrapper:   "EnableLoggingResult",
       endpoint:         __spec__()
     }
   end
@@ -267,6 +276,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeEventsMessage",
       output_shape:     "EventsMessage",
+      output_wrapper:   "DescribeEventsResult",
       endpoint:         __spec__()
     }
   end
@@ -289,6 +299,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeDefaultClusterParametersMessage",
       output_shape:     "DescribeDefaultClusterParametersResult",
+      output_wrapper:   "DescribeDefaultClusterParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -305,6 +316,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "RotateEncryptionKeyMessage",
       output_shape:     "RotateEncryptionKeyResult",
+      output_wrapper:   "RotateEncryptionKeyResult",
       endpoint:         __spec__()
     }
   end
@@ -349,6 +361,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ResetClusterParameterGroupMessage",
       output_shape:     "ClusterParameterGroupNameMessage",
+      output_wrapper:   "ResetClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -372,6 +385,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "RebootClusterMessage",
       output_shape:     "RebootClusterResult",
+      output_wrapper:   "RebootClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -405,6 +419,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClusterSecurityGroupsMessage",
       output_shape:     "ClusterSecurityGroupMessage",
+      output_wrapper:   "DescribeClusterSecurityGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -432,6 +447,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeReservedNodeOfferingsMessage",
       output_shape:     "ReservedNodeOfferingsMessage",
+      output_wrapper:   "DescribeReservedNodeOfferingsResult",
       endpoint:         __spec__()
     }
   end
@@ -476,6 +492,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ModifyClusterMessage",
       output_shape:     "ModifyClusterResult",
+      output_wrapper:   "ModifyClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -511,6 +528,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClusterParameterGroupsMessage",
       output_shape:     "ClusterParameterGroupsMessage",
+      output_wrapper:   "DescribeClusterParameterGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -550,6 +568,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateEventSubscriptionMessage",
       output_shape:     "CreateEventSubscriptionResult",
+      output_wrapper:   "CreateEventSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -568,6 +587,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ModifyClusterSubnetGroupMessage",
       output_shape:     "ModifyClusterSubnetGroupResult",
+      output_wrapper:   "ModifyClusterSubnetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -601,6 +621,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeLoggingStatusMessage",
       output_shape:     "LoggingStatus",
+      output_wrapper:   "DescribeLoggingStatusResult",
       endpoint:         __spec__()
     }
   end
@@ -618,6 +639,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ModifySnapshotCopyRetentionPeriodMessage",
       output_shape:     "ModifySnapshotCopyRetentionPeriodResult",
+      output_wrapper:   "ModifySnapshotCopyRetentionPeriodResult",
       endpoint:         __spec__()
     }
   end
@@ -662,6 +684,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeHsmClientCertificatesMessage",
       output_shape:     "HsmClientCertificateMessage",
+      output_wrapper:   "DescribeHsmClientCertificatesResult",
       endpoint:         __spec__()
     }
   end
@@ -699,6 +722,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "AuthorizeClusterSecurityGroupIngressMessage",
       output_shape:     "AuthorizeClusterSecurityGroupIngressResult",
+      output_wrapper:   "AuthorizeClusterSecurityGroupIngressResult",
       endpoint:         __spec__()
     }
   end
@@ -729,6 +753,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "RestoreFromClusterSnapshotMessage",
       output_shape:     "RestoreFromClusterSnapshotResult",
+      output_wrapper:   "RestoreFromClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -754,6 +779,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeOrderableClusterOptionsMessage",
       output_shape:     "OrderableClusterOptionsMessage",
+      output_wrapper:   "DescribeOrderableClusterOptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -782,6 +808,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CopyClusterSnapshotMessage",
       output_shape:     "CopyClusterSnapshotResult",
+      output_wrapper:   "CopyClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -808,6 +835,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "PurchaseReservedNodeOfferingMessage",
       output_shape:     "PurchaseReservedNodeOfferingResult",
+      output_wrapper:   "PurchaseReservedNodeOfferingResult",
       endpoint:         __spec__()
     }
   end
@@ -830,6 +858,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateClusterSecurityGroupMessage",
       output_shape:     "CreateClusterSecurityGroupResult",
+      output_wrapper:   "CreateClusterSecurityGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -853,6 +882,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DeleteClusterSnapshotMessage",
       output_shape:     "DeleteClusterSnapshotResult",
+      output_wrapper:   "DeleteClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -880,6 +910,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateClusterParameterGroupMessage",
       output_shape:     "CreateClusterParameterGroupResult",
+      output_wrapper:   "CreateClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -919,6 +950,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeTableRestoreStatusMessage",
       output_shape:     "TableRestoreStatusMessage",
+      output_wrapper:   "DescribeTableRestoreStatusResult",
       endpoint:         __spec__()
     }
   end
@@ -951,6 +983,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClusterSnapshotsMessage",
       output_shape:     "SnapshotMessage",
+      output_wrapper:   "DescribeClusterSnapshotsResult",
       endpoint:         __spec__()
     }
   end
@@ -974,6 +1007,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateSnapshotCopyGrantMessage",
       output_shape:     "CreateSnapshotCopyGrantResult",
+      output_wrapper:   "CreateSnapshotCopyGrantResult",
       endpoint:         __spec__()
     }
   end
@@ -993,6 +1027,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeEventCategoriesMessage",
       output_shape:     "EventCategoriesMessage",
+      output_wrapper:   "DescribeEventCategoriesResult",
       endpoint:         __spec__()
     }
   end
@@ -1022,6 +1057,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClusterSubnetGroupsMessage",
       output_shape:     "ClusterSubnetGroupMessage",
+      output_wrapper:   "DescribeClusterSubnetGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -1082,6 +1118,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeTagsMessage",
       output_shape:     "TaggedResourceListMessage",
+      output_wrapper:   "DescribeTagsResult",
       endpoint:         __spec__()
     }
   end
@@ -1101,6 +1138,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ModifyClusterIamRolesMessage",
       output_shape:     "ModifyClusterIamRolesResult",
+      output_wrapper:   "ModifyClusterIamRolesResult",
       endpoint:         __spec__()
     }
   end
@@ -1122,6 +1160,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ModifyClusterParameterGroupMessage",
       output_shape:     "ClusterParameterGroupNameMessage",
+      output_wrapper:   "ModifyClusterParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1151,6 +1190,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "RestoreTableFromClusterSnapshotMessage",
       output_shape:     "RestoreTableFromClusterSnapshotResult",
+      output_wrapper:   "RestoreTableFromClusterSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -1190,6 +1230,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "GetClusterCredentialsMessage",
       output_shape:     "ClusterCredentials",
+      output_wrapper:   "GetClusterCredentialsResult",
       endpoint:         __spec__()
     }
   end
@@ -1213,6 +1254,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateClusterMessage",
       output_shape:     "CreateClusterResult",
+      output_wrapper:   "CreateClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -1229,6 +1271,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "ModifyEventSubscriptionMessage",
       output_shape:     "ModifyEventSubscriptionResult",
+      output_wrapper:   "ModifyEventSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -1267,6 +1310,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeReservedNodesMessage",
       output_shape:     "ReservedNodesMessage",
+      output_wrapper:   "DescribeReservedNodesResult",
       endpoint:         __spec__()
     }
   end
@@ -1296,6 +1340,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClusterParametersMessage",
       output_shape:     "ClusterParameterGroupDetails",
+      output_wrapper:   "DescribeClusterParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -1314,6 +1359,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeEventSubscriptionsMessage",
       output_shape:     "EventSubscriptionsMessage",
+      output_wrapper:   "DescribeEventSubscriptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -1335,6 +1381,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClusterVersionsMessage",
       output_shape:     "ClusterVersionsMessage",
+      output_wrapper:   "DescribeClusterVersionsResult",
       endpoint:         __spec__()
     }
   end
@@ -1360,6 +1407,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateHsmConfigurationMessage",
       output_shape:     "CreateHsmConfigurationResult",
+      output_wrapper:   "CreateHsmConfigurationResult",
       endpoint:         __spec__()
     }
   end
@@ -1398,6 +1446,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "RevokeSnapshotAccessMessage",
       output_shape:     "RevokeSnapshotAccessResult",
+      output_wrapper:   "RevokeSnapshotAccessResult",
       endpoint:         __spec__()
     }
   end
@@ -1429,6 +1478,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DescribeClustersMessage",
       output_shape:     "ClustersMessage",
+      output_wrapper:   "DescribeClustersResult",
       endpoint:         __spec__()
     }
   end
@@ -1451,6 +1501,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateClusterSubnetGroupMessage",
       output_shape:     "CreateClusterSubnetGroupResult",
+      output_wrapper:   "CreateClusterSubnetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -1468,6 +1519,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DisableLoggingMessage",
       output_shape:     "LoggingStatus",
+      output_wrapper:   "DisableLoggingResult",
       endpoint:         __spec__()
     }
   end
@@ -1489,6 +1541,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "DisableSnapshotCopyMessage",
       output_shape:     "DisableSnapshotCopyResult",
+      output_wrapper:   "DisableSnapshotCopyResult",
       endpoint:         __spec__()
     }
   end
@@ -1515,6 +1568,7 @@ defmodule Baiji.Redshift do
       method:           :post,
       input_shape:      "CreateHsmClientCertificateMessage",
       output_shape:     "CreateHsmClientCertificateResult",
+      output_wrapper:   "CreateHsmClientCertificateResult",
       endpoint:         __spec__()
     }
   end
@@ -1526,7 +1580,6 @@ defmodule Baiji.Redshift do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "redshift",
-      target_prefix:    nil,
       endpoint_prefix:  "redshift",
       type:             :xml,
       version:          "2012-12-01",

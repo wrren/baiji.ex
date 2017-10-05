@@ -97,7 +97,6 @@ defmodule Baiji.IotDataPlane do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "iot-data",
-      target_prefix:    nil,
       endpoint_prefix:  "data.iot",
       type:             :rest_json,
       version:          "2015-05-28",

@@ -1067,7 +1067,6 @@ defmodule Baiji.Clouddirectory do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "clouddirectory",
-      target_prefix:    nil,
       endpoint_prefix:  "clouddirectory",
       type:             :rest_json,
       version:          "2016-05-10",

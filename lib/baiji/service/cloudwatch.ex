@@ -49,6 +49,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "DeleteDashboardsInput",
       output_shape:     "DeleteDashboardsOutput",
+      output_wrapper:   "DeleteDashboardsResult",
       endpoint:         __spec__()
     }
   end
@@ -69,6 +70,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "DescribeAlarmHistoryInput",
       output_shape:     "DescribeAlarmHistoryOutput",
+      output_wrapper:   "DescribeAlarmHistoryResult",
       endpoint:         __spec__()
     }
   end
@@ -87,6 +89,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "DescribeAlarmsInput",
       output_shape:     "DescribeAlarmsOutput",
+      output_wrapper:   "DescribeAlarmsResult",
       endpoint:         __spec__()
     }
   end
@@ -104,6 +107,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "DescribeAlarmsForMetricInput",
       output_shape:     "DescribeAlarmsForMetricOutput",
+      output_wrapper:   "DescribeAlarmsForMetricResult",
       endpoint:         __spec__()
     }
   end
@@ -157,6 +161,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "GetDashboardInput",
       output_shape:     "GetDashboardOutput",
+      output_wrapper:   "GetDashboardResult",
       endpoint:         __spec__()
     }
   end
@@ -226,6 +231,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "GetMetricStatisticsInput",
       output_shape:     "GetMetricStatisticsOutput",
+      output_wrapper:   "GetMetricStatisticsResult",
       endpoint:         __spec__()
     }
   end
@@ -244,6 +250,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "ListDashboardsInput",
       output_shape:     "ListDashboardsOutput",
+      output_wrapper:   "ListDashboardsResult",
       endpoint:         __spec__()
     }
   end
@@ -268,6 +275,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "ListMetricsInput",
       output_shape:     "ListMetricsOutput",
+      output_wrapper:   "ListMetricsResult",
       endpoint:         __spec__()
     }
   end
@@ -304,6 +312,7 @@ defmodule Baiji.CloudWatch do
       method:           :post,
       input_shape:      "PutDashboardInput",
       output_shape:     "PutDashboardOutput",
+      output_wrapper:   "PutDashboardResult",
       endpoint:         __spec__()
     }
   end
@@ -445,7 +454,6 @@ defmodule Baiji.CloudWatch do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "monitoring",
-      target_prefix:    nil,
       endpoint_prefix:  "monitoring",
       type:             :xml,
       version:          "2010-08-01",

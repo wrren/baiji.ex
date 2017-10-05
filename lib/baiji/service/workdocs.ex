@@ -725,7 +725,6 @@ defmodule Baiji.Workdocs do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "workdocs",
-      target_prefix:    nil,
       endpoint_prefix:  "workdocs",
       type:             :json,
       version:          "2016-05-01",

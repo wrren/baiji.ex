@@ -866,7 +866,6 @@ defmodule Baiji.LexModelBuildingService do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "lex-models",
-      target_prefix:    nil,
       endpoint_prefix:  "models.lex",
       type:             :json,
       version:          "2017-04-19",

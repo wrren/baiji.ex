@@ -35,6 +35,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "ListPlatformVersionsRequest",
       output_shape:     "ListPlatformVersionsResult",
+      output_wrapper:   "ListPlatformVersionsResult",
       endpoint:         __spec__()
     }
   end
@@ -53,6 +54,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "",
       output_shape:     "CreateStorageLocationResultMessage",
+      output_wrapper:   "CreateStorageLocationResult",
       endpoint:         __spec__()
     }
   end
@@ -97,6 +99,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "CreateConfigurationTemplateMessage",
       output_shape:     "ConfigurationSettingsDescription",
+      output_wrapper:   "CreateConfigurationTemplateResult",
       endpoint:         __spec__()
     }
   end
@@ -153,6 +156,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeEnvironmentManagedActionsRequest",
       output_shape:     "DescribeEnvironmentManagedActionsResult",
+      output_wrapper:   "DescribeEnvironmentManagedActionsResult",
       endpoint:         __spec__()
     }
   end
@@ -175,6 +179,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "UpdateApplicationMessage",
       output_shape:     "ApplicationDescriptionMessage",
+      output_wrapper:   "UpdateApplicationResult",
       endpoint:         __spec__()
     }
   end
@@ -197,6 +202,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeEventsMessage",
       output_shape:     "EventDescriptionsMessage",
+      output_wrapper:   "DescribeEventsResult",
       endpoint:         __spec__()
     }
   end
@@ -223,6 +229,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "UpdateConfigurationTemplateMessage",
       output_shape:     "ConfigurationSettingsDescription",
+      output_wrapper:   "UpdateConfigurationTemplateResult",
       endpoint:         __spec__()
     }
   end
@@ -239,6 +246,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DeletePlatformVersionRequest",
       output_shape:     "DeletePlatformVersionResult",
+      output_wrapper:   "DeletePlatformVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -256,6 +264,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "CreateApplicationMessage",
       output_shape:     "ApplicationDescriptionMessage",
+      output_wrapper:   "CreateApplicationResult",
       endpoint:         __spec__()
     }
   end
@@ -286,6 +295,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeConfigurationSettingsMessage",
       output_shape:     "ConfigurationSettingsDescriptions",
+      output_wrapper:   "DescribeConfigurationSettingsResult",
       endpoint:         __spec__()
     }
   end
@@ -335,6 +345,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "TerminateEnvironmentMessage",
       output_shape:     "EnvironmentDescription",
+      output_wrapper:   "TerminateEnvironmentResult",
       endpoint:         __spec__()
     }
   end
@@ -357,6 +368,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "RetrieveEnvironmentInfoMessage",
       output_shape:     "RetrieveEnvironmentInfoResultMessage",
+      output_wrapper:   "RetrieveEnvironmentInfoResult",
       endpoint:         __spec__()
     }
   end
@@ -373,6 +385,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeEnvironmentManagedActionHistoryRequest",
       output_shape:     "DescribeEnvironmentManagedActionHistoryResult",
+      output_wrapper:   "DescribeEnvironmentManagedActionHistoryResult",
       endpoint:         __spec__()
     }
   end
@@ -389,6 +402,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "UpdateApplicationResourceLifecycleMessage",
       output_shape:     "ApplicationResourceLifecycleDescriptionMessage",
+      output_wrapper:   "UpdateApplicationResourceLifecycleResult",
       endpoint:         __spec__()
     }
   end
@@ -407,6 +421,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeInstancesHealthRequest",
       output_shape:     "DescribeInstancesHealthResult",
+      output_wrapper:   "DescribeInstancesHealthResult",
       endpoint:         __spec__()
     }
   end
@@ -467,6 +482,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeEnvironmentsMessage",
       output_shape:     "EnvironmentDescriptionsMessage",
+      output_wrapper:   "DescribeEnvironmentsResult",
       endpoint:         __spec__()
     }
   end
@@ -483,6 +499,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "CreatePlatformVersionRequest",
       output_shape:     "CreatePlatformVersionResult",
+      output_wrapper:   "CreatePlatformVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -510,6 +527,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "UpdateEnvironmentMessage",
       output_shape:     "EnvironmentDescription",
+      output_wrapper:   "UpdateEnvironmentResult",
       endpoint:         __spec__()
     }
   end
@@ -547,6 +565,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "ValidateConfigurationSettingsMessage",
       output_shape:     "ConfigurationSettingsValidationMessages",
+      output_wrapper:   "ValidateConfigurationSettingsResult",
       endpoint:         __spec__()
     }
   end
@@ -563,6 +582,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "CheckDNSAvailabilityMessage",
       output_shape:     "CheckDNSAvailabilityResultMessage",
+      output_wrapper:   "CheckDNSAvailabilityResult",
       endpoint:         __spec__()
     }
   end
@@ -580,6 +600,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "",
       output_shape:     "ListAvailableSolutionStacksResultMessage",
+      output_wrapper:   "ListAvailableSolutionStacksResult",
       endpoint:         __spec__()
     }
   end
@@ -600,6 +621,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeConfigurationOptionsMessage",
       output_shape:     "ConfigurationOptionsDescription",
+      output_wrapper:   "DescribeConfigurationOptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -623,6 +645,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "ComposeEnvironmentsMessage",
       output_shape:     "EnvironmentDescriptionsMessage",
+      output_wrapper:   "ComposeEnvironmentsResult",
       endpoint:         __spec__()
     }
   end
@@ -659,6 +682,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "CreateApplicationVersionMessage",
       output_shape:     "ApplicationVersionDescriptionMessage",
+      output_wrapper:   "CreateApplicationVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -675,6 +699,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeApplicationsMessage",
       output_shape:     "ApplicationDescriptionsMessage",
+      output_wrapper:   "DescribeApplicationsResult",
       endpoint:         __spec__()
     }
   end
@@ -691,6 +716,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeEnvironmentResourcesMessage",
       output_shape:     "EnvironmentResourceDescriptionsMessage",
+      output_wrapper:   "DescribeEnvironmentResourcesResult",
       endpoint:         __spec__()
     }
   end
@@ -708,6 +734,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "CreateEnvironmentMessage",
       output_shape:     "EnvironmentDescription",
+      output_wrapper:   "CreateEnvironmentResult",
       endpoint:         __spec__()
     }
   end
@@ -724,6 +751,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeApplicationVersionsMessage",
       output_shape:     "ApplicationVersionDescriptionsMessage",
+      output_wrapper:   "DescribeApplicationVersionsResult",
       endpoint:         __spec__()
     }
   end
@@ -742,6 +770,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribeEnvironmentHealthRequest",
       output_shape:     "DescribeEnvironmentHealthResult",
+      output_wrapper:   "DescribeEnvironmentHealthResult",
       endpoint:         __spec__()
     }
   end
@@ -763,6 +792,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "UpdateApplicationVersionMessage",
       output_shape:     "ApplicationVersionDescriptionMessage",
+      output_wrapper:   "UpdateApplicationVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -797,6 +827,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "DescribePlatformVersionRequest",
       output_shape:     "DescribePlatformVersionResult",
+      output_wrapper:   "DescribePlatformVersionResult",
       endpoint:         __spec__()
     }
   end
@@ -837,6 +868,7 @@ defmodule Baiji.ElasticBeanstalk do
       method:           :post,
       input_shape:      "ApplyEnvironmentManagedActionRequest",
       output_shape:     "ApplyEnvironmentManagedActionResult",
+      output_wrapper:   "ApplyEnvironmentManagedActionResult",
       endpoint:         __spec__()
     }
   end
@@ -848,7 +880,6 @@ defmodule Baiji.ElasticBeanstalk do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "elasticbeanstalk",
-      target_prefix:    nil,
       endpoint_prefix:  "elasticbeanstalk",
       type:             :xml,
       version:          "2010-12-01",

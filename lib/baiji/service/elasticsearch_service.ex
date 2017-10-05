@@ -244,7 +244,6 @@ defmodule Baiji.ElasticsearchService do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "es",
-      target_prefix:    nil,
       endpoint_prefix:  "es",
       type:             :rest_json,
       version:          "2015-01-01",

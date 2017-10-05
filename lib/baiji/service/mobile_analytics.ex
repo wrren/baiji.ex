@@ -29,7 +29,6 @@ defmodule Baiji.MobileAnalytics do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "mobileanalytics",
-      target_prefix:    nil,
       endpoint_prefix:  "mobileanalytics",
       type:             :rest_json,
       version:          "2014-06-05",

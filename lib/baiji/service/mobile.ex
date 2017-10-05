@@ -162,7 +162,6 @@ defmodule Baiji.Mobile do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "MobileHub",
-      target_prefix:    nil,
       endpoint_prefix:  "mobile",
       type:             :json,
       version:          "2017-07-01",

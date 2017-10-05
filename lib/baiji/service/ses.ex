@@ -36,6 +36,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteReceiptRuleSetRequest",
       output_shape:     "DeleteReceiptRuleSetResponse",
+      output_wrapper:   "DeleteReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -119,6 +120,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SendRawEmailRequest",
       output_shape:     "SendRawEmailResponse",
+      output_wrapper:   "SendRawEmailResult",
       endpoint:         __spec__()
     }
   end
@@ -142,6 +144,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DescribeActiveReceiptRuleSetRequest",
       output_shape:     "DescribeActiveReceiptRuleSetResponse",
+      output_wrapper:   "DescribeActiveReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -163,6 +166,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetReceiptRulePositionRequest",
       output_shape:     "SetReceiptRulePositionResponse",
+      output_wrapper:   "SetReceiptRulePositionResult",
       endpoint:         __spec__()
     }
   end
@@ -185,6 +189,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DescribeConfigurationSetRequest",
       output_shape:     "DescribeConfigurationSetResponse",
+      output_wrapper:   "DescribeConfigurationSetResult",
       endpoint:         __spec__()
     }
   end
@@ -207,6 +212,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "CreateReceiptRuleRequest",
       output_shape:     "CreateReceiptRuleResponse",
+      output_wrapper:   "CreateReceiptRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -229,6 +235,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "CreateConfigurationSetRequest",
       output_shape:     "CreateConfigurationSetResponse",
+      output_wrapper:   "CreateConfigurationSetResult",
       endpoint:         __spec__()
     }
   end
@@ -251,6 +258,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DescribeReceiptRuleSetRequest",
       output_shape:     "DescribeReceiptRuleSetResponse",
+      output_wrapper:   "DescribeReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -272,6 +280,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteReceiptRuleRequest",
       output_shape:     "DeleteReceiptRuleResponse",
+      output_wrapper:   "DeleteReceiptRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -294,6 +303,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "ListReceiptFiltersRequest",
       output_shape:     "ListReceiptFiltersResponse",
+      output_wrapper:   "ListReceiptFiltersResult",
       endpoint:         __spec__()
     }
   end
@@ -322,6 +332,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "CreateConfigurationSetEventDestinationRequest",
       output_shape:     "CreateConfigurationSetEventDestinationResponse",
+      output_wrapper:   "CreateConfigurationSetEventDestinationResult",
       endpoint:         __spec__()
     }
   end
@@ -351,6 +362,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "UpdateConfigurationSetEventDestinationRequest",
       output_shape:     "UpdateConfigurationSetEventDestinationResponse",
+      output_wrapper:   "UpdateConfigurationSetEventDestinationResult",
       endpoint:         __spec__()
     }
   end
@@ -373,6 +385,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "CreateReceiptFilterRequest",
       output_shape:     "CreateReceiptFilterResponse",
+      output_wrapper:   "CreateReceiptFilterResult",
       endpoint:         __spec__()
     }
   end
@@ -402,6 +415,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetIdentityNotificationTopicRequest",
       output_shape:     "SetIdentityNotificationTopicResponse",
+      output_wrapper:   "SetIdentityNotificationTopicResult",
       endpoint:         __spec__()
     }
   end
@@ -424,6 +438,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteConfigurationSetRequest",
       output_shape:     "DeleteConfigurationSetResponse",
+      output_wrapper:   "DeleteConfigurationSetResult",
       endpoint:         __spec__()
     }
   end
@@ -446,6 +461,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DescribeReceiptRuleRequest",
       output_shape:     "DescribeReceiptRuleResponse",
+      output_wrapper:   "DescribeReceiptRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -474,6 +490,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteIdentityPolicyRequest",
       output_shape:     "DeleteIdentityPolicyResponse",
+      output_wrapper:   "DeleteIdentityPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -497,6 +514,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "",
       output_shape:     "ListVerifiedEmailAddressesResponse",
+      output_wrapper:   "ListVerifiedEmailAddressesResult",
       endpoint:         __spec__()
     }
   end
@@ -516,6 +534,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "ListIdentitiesRequest",
       output_shape:     "ListIdentitiesResponse",
+      output_wrapper:   "ListIdentitiesResult",
       endpoint:         __spec__()
     }
   end
@@ -540,6 +559,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "GetIdentityNotificationAttributesRequest",
       output_shape:     "GetIdentityNotificationAttributesResponse",
+      output_wrapper:   "GetIdentityNotificationAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -558,6 +578,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "",
       output_shape:     "GetSendQuotaResponse",
+      output_wrapper:   "GetSendQuotaResult",
       endpoint:         __spec__()
     }
   end
@@ -587,6 +608,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "ListIdentityPoliciesRequest",
       output_shape:     "ListIdentityPoliciesResponse",
+      output_wrapper:   "ListIdentityPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -607,6 +629,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "GetIdentityMailFromDomainAttributesRequest",
       output_shape:     "GetIdentityMailFromDomainAttributesResponse",
+      output_wrapper:   "GetIdentityMailFromDomainAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -630,6 +653,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "CloneReceiptRuleSetRequest",
       output_shape:     "CloneReceiptRuleSetResponse",
+      output_wrapper:   "CloneReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -652,6 +676,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteReceiptFilterRequest",
       output_shape:     "DeleteReceiptFilterResponse",
+      output_wrapper:   "DeleteReceiptFilterResult",
       endpoint:         __spec__()
     }
   end
@@ -676,6 +701,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetIdentityHeadersInNotificationsEnabledRequest",
       output_shape:     "SetIdentityHeadersInNotificationsEnabledResponse",
+      output_wrapper:   "SetIdentityHeadersInNotificationsEnabledResult",
       endpoint:         __spec__()
     }
   end
@@ -697,6 +723,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "",
       output_shape:     "GetSendStatisticsResponse",
+      output_wrapper:   "GetSendStatisticsResult",
       endpoint:         __spec__()
     }
   end
@@ -722,6 +749,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetIdentityMailFromDomainRequest",
       output_shape:     "SetIdentityMailFromDomainResponse",
+      output_wrapper:   "SetIdentityMailFromDomainResult",
       endpoint:         __spec__()
     }
   end
@@ -753,6 +781,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "VerifyDomainDkimRequest",
       output_shape:     "VerifyDomainDkimResponse",
+      output_wrapper:   "VerifyDomainDkimResult",
       endpoint:         __spec__()
     }
   end
@@ -776,6 +805,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "ListConfigurationSetsRequest",
       output_shape:     "ListConfigurationSetsResponse",
+      output_wrapper:   "ListConfigurationSetsResult",
       endpoint:         __spec__()
     }
   end
@@ -797,6 +827,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "UpdateReceiptRuleRequest",
       output_shape:     "UpdateReceiptRuleResponse",
+      output_wrapper:   "UpdateReceiptRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -843,6 +874,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteConfigurationSetEventDestinationRequest",
       output_shape:     "DeleteConfigurationSetEventDestinationResponse",
+      output_wrapper:   "DeleteConfigurationSetEventDestinationResult",
       endpoint:         __spec__()
     }
   end
@@ -872,6 +904,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "GetIdentityPoliciesRequest",
       output_shape:     "GetIdentityPoliciesResponse",
+      output_wrapper:   "GetIdentityPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -911,6 +944,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "GetIdentityDkimAttributesRequest",
       output_shape:     "GetIdentityDkimAttributesResponse",
+      output_wrapper:   "GetIdentityDkimAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -939,6 +973,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetIdentityFeedbackForwardingEnabledRequest",
       output_shape:     "SetIdentityFeedbackForwardingEnabledResponse",
+      output_wrapper:   "SetIdentityFeedbackForwardingEnabledResult",
       endpoint:         __spec__()
     }
   end
@@ -988,6 +1023,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SendEmailRequest",
       output_shape:     "SendEmailResponse",
+      output_wrapper:   "SendEmailResult",
       endpoint:         __spec__()
     }
   end
@@ -1015,6 +1051,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SendBounceRequest",
       output_shape:     "SendBounceResponse",
+      output_wrapper:   "SendBounceResult",
       endpoint:         __spec__()
     }
   end
@@ -1040,6 +1077,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetActiveReceiptRuleSetRequest",
       output_shape:     "SetActiveReceiptRuleSetResponse",
+      output_wrapper:   "SetActiveReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -1077,6 +1115,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "GetIdentityVerificationAttributesRequest",
       output_shape:     "GetIdentityVerificationAttributesResponse",
+      output_wrapper:   "GetIdentityVerificationAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -1118,6 +1157,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "DeleteIdentityRequest",
       output_shape:     "DeleteIdentityResponse",
+      output_wrapper:   "DeleteIdentityResult",
       endpoint:         __spec__()
     }
   end
@@ -1145,6 +1185,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "PutIdentityPolicyRequest",
       output_shape:     "PutIdentityPolicyResponse",
+      output_wrapper:   "PutIdentityPolicyResult",
       endpoint:         __spec__()
     }
   end
@@ -1163,6 +1204,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "VerifyDomainIdentityRequest",
       output_shape:     "VerifyDomainIdentityResponse",
+      output_wrapper:   "VerifyDomainIdentityResult",
       endpoint:         __spec__()
     }
   end
@@ -1189,6 +1231,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "ReorderReceiptRuleSetRequest",
       output_shape:     "ReorderReceiptRuleSetResponse",
+      output_wrapper:   "ReorderReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -1211,6 +1254,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "CreateReceiptRuleSetRequest",
       output_shape:     "CreateReceiptRuleSetResponse",
+      output_wrapper:   "CreateReceiptRuleSetResult",
       endpoint:         __spec__()
     }
   end
@@ -1245,6 +1289,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "SetIdentityDkimEnabledRequest",
       output_shape:     "SetIdentityDkimEnabledResponse",
+      output_wrapper:   "SetIdentityDkimEnabledResult",
       endpoint:         __spec__()
     }
   end
@@ -1264,6 +1309,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "VerifyEmailIdentityRequest",
       output_shape:     "VerifyEmailIdentityResponse",
+      output_wrapper:   "VerifyEmailIdentityResult",
       endpoint:         __spec__()
     }
   end
@@ -1289,6 +1335,7 @@ defmodule Baiji.SES do
       method:           :post,
       input_shape:      "ListReceiptRuleSetsRequest",
       output_shape:     "ListReceiptRuleSetsResponse",
+      output_wrapper:   "ListReceiptRuleSetsResult",
       endpoint:         __spec__()
     }
   end
@@ -1300,7 +1347,6 @@ defmodule Baiji.SES do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "email",
-      target_prefix:    nil,
       endpoint_prefix:  "email",
       type:             :xml,
       version:          "2010-12-01",

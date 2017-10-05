@@ -53,6 +53,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "CheckIfPhoneNumberIsOptedOutInput",
       output_shape:     "CheckIfPhoneNumberIsOptedOutResponse",
+      output_wrapper:   "CheckIfPhoneNumberIsOptedOutResult",
       endpoint:         __spec__()
     }
   end
@@ -73,6 +74,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ConfirmSubscriptionInput",
       output_shape:     "ConfirmSubscriptionResponse",
+      output_wrapper:   "ConfirmSubscriptionResult",
       endpoint:         __spec__()
     }
   end
@@ -123,6 +125,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "CreatePlatformApplicationInput",
       output_shape:     "CreatePlatformApplicationResponse",
+      output_wrapper:   "CreatePlatformApplicationResult",
       endpoint:         __spec__()
     }
   end
@@ -154,6 +157,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "CreatePlatformEndpointInput",
       output_shape:     "CreateEndpointResponse",
+      output_wrapper:   "CreatePlatformEndpointResult",
       endpoint:         __spec__()
     }
   end
@@ -174,6 +178,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "CreateTopicInput",
       output_shape:     "CreateTopicResponse",
+      output_wrapper:   "CreateTopicResult",
       endpoint:         __spec__()
     }
   end
@@ -253,6 +258,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "GetEndpointAttributesInput",
       output_shape:     "GetEndpointAttributesResponse",
+      output_wrapper:   "GetEndpointAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -272,6 +278,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "GetPlatformApplicationAttributesInput",
       output_shape:     "GetPlatformApplicationAttributesResponse",
+      output_wrapper:   "GetPlatformApplicationAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -290,6 +297,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "GetSMSAttributesInput",
       output_shape:     "GetSMSAttributesResponse",
+      output_wrapper:   "GetSMSAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -306,6 +314,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "GetSubscriptionAttributesInput",
       output_shape:     "GetSubscriptionAttributesResponse",
+      output_wrapper:   "GetSubscriptionAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -323,6 +332,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "GetTopicAttributesInput",
       output_shape:     "GetTopicAttributesResponse",
+      output_wrapper:   "GetTopicAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -348,6 +358,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ListEndpointsByPlatformApplicationInput",
       output_shape:     "ListEndpointsByPlatformApplicationResponse",
+      output_wrapper:   "ListEndpointsByPlatformApplicationResult",
       endpoint:         __spec__()
     }
   end
@@ -372,6 +383,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ListPhoneNumbersOptedOutInput",
       output_shape:     "ListPhoneNumbersOptedOutResponse",
+      output_wrapper:   "ListPhoneNumbersOptedOutResult",
       endpoint:         __spec__()
     }
   end
@@ -396,6 +408,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ListPlatformApplicationsInput",
       output_shape:     "ListPlatformApplicationsResponse",
+      output_wrapper:   "ListPlatformApplicationsResult",
       endpoint:         __spec__()
     }
   end
@@ -415,6 +428,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ListSubscriptionsInput",
       output_shape:     "ListSubscriptionsResponse",
+      output_wrapper:   "ListSubscriptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -434,6 +448,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ListSubscriptionsByTopicInput",
       output_shape:     "ListSubscriptionsByTopicResponse",
+      output_wrapper:   "ListSubscriptionsByTopicResult",
       endpoint:         __spec__()
     }
   end
@@ -453,6 +468,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "ListTopicsInput",
       output_shape:     "ListTopicsResponse",
+      output_wrapper:   "ListTopicsResult",
       endpoint:         __spec__()
     }
   end
@@ -472,6 +488,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "OptInPhoneNumberInput",
       output_shape:     "OptInPhoneNumberResponse",
+      output_wrapper:   "OptInPhoneNumberResult",
       endpoint:         __spec__()
     }
   end
@@ -501,6 +518,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "PublishInput",
       output_shape:     "PublishResponse",
+      output_wrapper:   "PublishResult",
       endpoint:         __spec__()
     }
   end
@@ -581,6 +599,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "SetSMSAttributesInput",
       output_shape:     "SetSMSAttributesResponse",
+      output_wrapper:   "SetSMSAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -633,6 +652,7 @@ defmodule Baiji.SNS do
       method:           :post,
       input_shape:      "SubscribeInput",
       output_shape:     "SubscribeResponse",
+      output_wrapper:   "SubscribeResult",
       endpoint:         __spec__()
     }
   end
@@ -666,7 +686,6 @@ defmodule Baiji.SNS do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "sns",
-      target_prefix:    nil,
       endpoint_prefix:  "sns",
       type:             :xml,
       version:          "2010-03-31",

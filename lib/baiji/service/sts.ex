@@ -163,6 +163,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "AssumeRoleRequest",
       output_shape:     "AssumeRoleResponse",
+      output_wrapper:   "AssumeRoleResult",
       endpoint:         __spec__()
     }
   end
@@ -258,6 +259,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "AssumeRoleWithSAMLRequest",
       output_shape:     "AssumeRoleWithSAMLResponse",
+      output_wrapper:   "AssumeRoleWithSAMLResult",
       endpoint:         __spec__()
     }
   end
@@ -376,6 +378,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "AssumeRoleWithWebIdentityRequest",
       output_shape:     "AssumeRoleWithWebIdentityResponse",
+      output_wrapper:   "AssumeRoleWithWebIdentityResult",
       endpoint:         __spec__()
     }
   end
@@ -427,6 +430,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "DecodeAuthorizationMessageRequest",
       output_shape:     "DecodeAuthorizationMessageResponse",
+      output_wrapper:   "DecodeAuthorizationMessageResult",
       endpoint:         __spec__()
     }
   end
@@ -444,6 +448,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "GetCallerIdentityRequest",
       output_shape:     "GetCallerIdentityResponse",
+      output_wrapper:   "GetCallerIdentityResult",
       endpoint:         __spec__()
     }
   end
@@ -546,6 +551,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "GetFederationTokenRequest",
       output_shape:     "GetFederationTokenResponse",
+      output_wrapper:   "GetFederationTokenResult",
       endpoint:         __spec__()
     }
   end
@@ -612,6 +618,7 @@ defmodule Baiji.STS do
       method:           :post,
       input_shape:      "GetSessionTokenRequest",
       output_shape:     "GetSessionTokenResponse",
+      output_wrapper:   "GetSessionTokenResult",
       endpoint:         __spec__()
     }
   end
@@ -623,7 +630,6 @@ defmodule Baiji.STS do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "sts",
-      target_prefix:    nil,
       endpoint_prefix:  "sts",
       type:             :xml,
       version:          "2011-06-15",

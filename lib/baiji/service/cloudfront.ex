@@ -583,7 +583,6 @@ defmodule Baiji.CloudFront do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "cloudfront",
-      target_prefix:    nil,
       endpoint_prefix:  "cloudfront",
       type:             :rest_xml,
       version:          "2017-03-25",

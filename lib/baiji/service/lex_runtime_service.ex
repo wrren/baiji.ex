@@ -156,7 +156,6 @@ defmodule Baiji.LexRuntimeService do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "runtime.lex",
-      target_prefix:    nil,
       endpoint_prefix:  "runtime.lex",
       type:             :json,
       version:          "2016-11-28",

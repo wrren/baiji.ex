@@ -29,6 +29,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "BuildSuggestersRequest",
       output_shape:     "BuildSuggestersResponse",
+      output_wrapper:   "BuildSuggestersResult",
       endpoint:         __spec__()
     }
   end
@@ -47,6 +48,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "CreateDomainRequest",
       output_shape:     "CreateDomainResponse",
+      output_wrapper:   "CreateDomainResult",
       endpoint:         __spec__()
     }
   end
@@ -67,6 +69,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DefineAnalysisSchemeRequest",
       output_shape:     "DefineAnalysisSchemeResponse",
+      output_wrapper:   "DefineAnalysisSchemeResult",
       endpoint:         __spec__()
     }
   end
@@ -87,6 +90,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DefineExpressionRequest",
       output_shape:     "DefineExpressionResponse",
+      output_wrapper:   "DefineExpressionResult",
       endpoint:         __spec__()
     }
   end
@@ -112,6 +116,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DefineIndexFieldRequest",
       output_shape:     "DefineIndexFieldResponse",
+      output_wrapper:   "DefineIndexFieldResult",
       endpoint:         __spec__()
     }
   end
@@ -134,6 +139,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DefineSuggesterRequest",
       output_shape:     "DefineSuggesterResponse",
+      output_wrapper:   "DefineSuggesterResult",
       endpoint:         __spec__()
     }
   end
@@ -152,6 +158,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DeleteAnalysisSchemeRequest",
       output_shape:     "DeleteAnalysisSchemeResponse",
+      output_wrapper:   "DeleteAnalysisSchemeResult",
       endpoint:         __spec__()
     }
   end
@@ -172,6 +179,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DeleteDomainRequest",
       output_shape:     "DeleteDomainResponse",
+      output_wrapper:   "DeleteDomainResult",
       endpoint:         __spec__()
     }
   end
@@ -191,6 +199,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DeleteExpressionRequest",
       output_shape:     "DeleteExpressionResponse",
+      output_wrapper:   "DeleteExpressionResult",
       endpoint:         __spec__()
     }
   end
@@ -210,6 +219,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DeleteIndexFieldRequest",
       output_shape:     "DeleteIndexFieldResponse",
+      output_wrapper:   "DeleteIndexFieldResult",
       endpoint:         __spec__()
     }
   end
@@ -228,6 +238,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DeleteSuggesterRequest",
       output_shape:     "DeleteSuggesterResponse",
+      output_wrapper:   "DeleteSuggesterResult",
       endpoint:         __spec__()
     }
   end
@@ -251,6 +262,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeAnalysisSchemesRequest",
       output_shape:     "DescribeAnalysisSchemesResponse",
+      output_wrapper:   "DescribeAnalysisSchemesResult",
       endpoint:         __spec__()
     }
   end
@@ -272,6 +284,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeAvailabilityOptionsRequest",
       output_shape:     "DescribeAvailabilityOptionsResponse",
+      output_wrapper:   "DescribeAvailabilityOptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -295,6 +308,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeDomainsRequest",
       output_shape:     "DescribeDomainsResponse",
+      output_wrapper:   "DescribeDomainsResult",
       endpoint:         __spec__()
     }
   end
@@ -317,6 +331,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeExpressionsRequest",
       output_shape:     "DescribeExpressionsResponse",
+      output_wrapper:   "DescribeExpressionsResult",
       endpoint:         __spec__()
     }
   end
@@ -339,6 +354,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeIndexFieldsRequest",
       output_shape:     "DescribeIndexFieldsResponse",
+      output_wrapper:   "DescribeIndexFieldsResult",
       endpoint:         __spec__()
     }
   end
@@ -359,6 +375,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeScalingParametersRequest",
       output_shape:     "DescribeScalingParametersResponse",
+      output_wrapper:   "DescribeScalingParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -381,6 +398,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeServiceAccessPoliciesRequest",
       output_shape:     "DescribeServiceAccessPoliciesResponse",
+      output_wrapper:   "DescribeServiceAccessPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -404,6 +422,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "DescribeSuggestersRequest",
       output_shape:     "DescribeSuggestersResponse",
+      output_wrapper:   "DescribeSuggestersResult",
       endpoint:         __spec__()
     }
   end
@@ -422,6 +441,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "IndexDocumentsRequest",
       output_shape:     "IndexDocumentsResponse",
+      output_wrapper:   "IndexDocumentsResult",
       endpoint:         __spec__()
     }
   end
@@ -438,6 +458,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "",
       output_shape:     "ListDomainNamesResponse",
+      output_wrapper:   "ListDomainNamesResult",
       endpoint:         __spec__()
     }
   end
@@ -460,6 +481,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "UpdateAvailabilityOptionsRequest",
       output_shape:     "UpdateAvailabilityOptionsResponse",
+      output_wrapper:   "UpdateAvailabilityOptionsResult",
       endpoint:         __spec__()
     }
   end
@@ -484,6 +506,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "UpdateScalingParametersRequest",
       output_shape:     "UpdateScalingParametersResponse",
+      output_wrapper:   "UpdateScalingParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -504,6 +527,7 @@ defmodule Baiji.Cloudsearch do
       method:           :post,
       input_shape:      "UpdateServiceAccessPoliciesRequest",
       output_shape:     "UpdateServiceAccessPoliciesResponse",
+      output_wrapper:   "UpdateServiceAccessPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -515,7 +539,6 @@ defmodule Baiji.Cloudsearch do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "cloudsearch",
-      target_prefix:    nil,
       endpoint_prefix:  "cloudsearch",
       type:             :xml,
       version:          "2013-01-01",

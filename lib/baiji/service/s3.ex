@@ -1246,7 +1246,6 @@ defmodule Baiji.S3 do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "s3",
-      target_prefix:    nil,
       endpoint_prefix:  "s3",
       type:             :rest_xml,
       version:          "2006-03-01",

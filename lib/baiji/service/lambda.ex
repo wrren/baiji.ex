@@ -713,7 +713,6 @@ defmodule Baiji.Lambda do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "lambda",
-      target_prefix:    nil,
       endpoint_prefix:  "lambda",
       type:             :rest_json,
       version:          "2015-03-31",

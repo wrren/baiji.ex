@@ -48,4 +48,49 @@ defmodule Baiji.Response.Parser.XMLTest do
       ]
     }}
   end
+
+  test "correctly parses AutoScaling XML response" do
+    response = Path.expand('../../../fixtures/autoscaling.xml', __DIR__)
+    |> File.read!
+
+    operation = Baiji.AutoScaling.describe_auto_scaling_groups
+
+    assert Baiji.Response.Parser.XML.parse(response, operation) == {:ok, %{
+      "AutoScalingGroups" => [%{
+        "AutoScalingGroupARN" => "arn:aws:autoscaling:us-east-1:123456789012:autoScalingGroup:12345678-1234-1234-1234-123456789012:autoScalingGroupName/my-asg",
+        "AutoScalingGroupName" => "my-asg",
+        "AvailabilityZones" => [
+          "us-east-1b", "us-east-1a"
+        ],
+        "CreatedTime" => ~N[2015-05-06 17:47:15.107],
+        "DefaultCooldown" => 300, 
+        "DesiredCapacity" => 2,
+        "EnabledMetrics" => [], 
+        "HealthCheckGracePeriod" => 300,
+        "HealthCheckType" => "ELB",
+        "Instances" => [%{
+          "AvailabilityZone"          => "us-east-1c",
+          "InstanceId"                => "i-12345678",
+          "LaunchConfigurationName"   => "my-lc",
+          "LifecycleState"            => "InService",
+          "ProtectedFromScaleIn"      => false}
+        ],
+        "LaunchConfigurationName" => "my-lc",
+        "LoadBalancerNames" => ["my-loadbalancer"], 
+        "MaxSize" => 10,
+        "MinSize" => 2, 
+        "NewInstancesProtectedFromScaleIn" => false,
+        "SuspendedProcesses" => [],
+        "Tags" => [%{
+          "Key" => "environment",
+          "PropagateAtLaunch" => true, 
+          "ResourceId" => "my-asg",
+          "ResourceType" => "auto-scaling-group", 
+          "Value" => "test"}
+        ],
+        "TerminationPolicies" => ["Default"],
+        "VPCZoneIdentifier" => "subnet-12345678,subnet-98765432"}
+      ]
+    }}
+  end
 end

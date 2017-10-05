@@ -1852,7 +1852,6 @@ No Documentation Availabale
   def __spec__ do
     %Baiji.Endpoint{
       service:          "apigateway",
-      target_prefix:    nil,
       endpoint_prefix:  "apigateway",
       type:             :rest_json,
       version:          "2015-07-09",

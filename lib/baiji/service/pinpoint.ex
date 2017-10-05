@@ -762,7 +762,6 @@ defmodule Baiji.Pinpoint do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "pinpoint",
-      target_prefix:    nil,
       endpoint_prefix:  "pinpoint",
       type:             :json,
       version:          "2016-12-01",

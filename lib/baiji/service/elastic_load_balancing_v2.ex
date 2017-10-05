@@ -77,6 +77,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "AddTagsInput",
       output_shape:     "AddTagsOutput",
+      output_wrapper:   "AddTagsResult",
       endpoint:         __spec__()
     }
   end
@@ -108,6 +109,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "CreateListenerInput",
       output_shape:     "CreateListenerOutput",
+      output_wrapper:   "CreateListenerResult",
       endpoint:         __spec__()
     }
   end
@@ -147,6 +149,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "CreateLoadBalancerInput",
       output_shape:     "CreateLoadBalancerOutput",
+      output_wrapper:   "CreateLoadBalancerResult",
       endpoint:         __spec__()
     }
   end
@@ -175,6 +178,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "CreateRuleInput",
       output_shape:     "CreateRuleOutput",
+      output_wrapper:   "CreateRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -208,6 +212,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "CreateTargetGroupInput",
       output_shape:     "CreateTargetGroupOutput",
+      output_wrapper:   "CreateTargetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -227,6 +232,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DeleteListenerInput",
       output_shape:     "DeleteListenerOutput",
+      output_wrapper:   "DeleteListenerResult",
       endpoint:         __spec__()
     }
   end
@@ -253,6 +259,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DeleteLoadBalancerInput",
       output_shape:     "DeleteLoadBalancerOutput",
+      output_wrapper:   "DeleteLoadBalancerResult",
       endpoint:         __spec__()
     }
   end
@@ -269,6 +276,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DeleteRuleInput",
       output_shape:     "DeleteRuleOutput",
+      output_wrapper:   "DeleteRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -288,6 +296,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DeleteTargetGroupInput",
       output_shape:     "DeleteTargetGroupOutput",
+      output_wrapper:   "DeleteTargetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -306,6 +315,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DeregisterTargetsInput",
       output_shape:     "DeregisterTargetsOutput",
+      output_wrapper:   "DeregisterTargetsResult",
       endpoint:         __spec__()
     }
   end
@@ -329,6 +339,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeAccountLimitsInput",
       output_shape:     "DescribeAccountLimitsOutput",
+      output_wrapper:   "DescribeAccountLimitsResult",
       endpoint:         __spec__()
     }
   end
@@ -347,6 +358,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeListenersInput",
       output_shape:     "DescribeListenersOutput",
+      output_wrapper:   "DescribeListenersResult",
       endpoint:         __spec__()
     }
   end
@@ -364,6 +376,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeLoadBalancerAttributesInput",
       output_shape:     "DescribeLoadBalancerAttributesOutput",
+      output_wrapper:   "DescribeLoadBalancerAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -384,6 +397,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeLoadBalancersInput",
       output_shape:     "DescribeLoadBalancersOutput",
+      output_wrapper:   "DescribeLoadBalancersResult",
       endpoint:         __spec__()
     }
   end
@@ -401,6 +415,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeRulesInput",
       output_shape:     "DescribeRulesOutput",
+      output_wrapper:   "DescribeRulesResult",
       endpoint:         __spec__()
     }
   end
@@ -421,6 +436,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeSSLPoliciesInput",
       output_shape:     "DescribeSSLPoliciesOutput",
+      output_wrapper:   "DescribeSSLPoliciesResult",
       endpoint:         __spec__()
     }
   end
@@ -439,6 +455,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeTagsInput",
       output_shape:     "DescribeTagsOutput",
+      output_wrapper:   "DescribeTagsResult",
       endpoint:         __spec__()
     }
   end
@@ -455,6 +472,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeTargetGroupAttributesInput",
       output_shape:     "DescribeTargetGroupAttributesOutput",
+      output_wrapper:   "DescribeTargetGroupAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -479,6 +497,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeTargetGroupsInput",
       output_shape:     "DescribeTargetGroupsOutput",
+      output_wrapper:   "DescribeTargetGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -495,6 +514,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "DescribeTargetHealthInput",
       output_shape:     "DescribeTargetHealthOutput",
+      output_wrapper:   "DescribeTargetHealthResult",
       endpoint:         __spec__()
     }
   end
@@ -516,6 +536,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "ModifyListenerInput",
       output_shape:     "ModifyListenerOutput",
+      output_wrapper:   "ModifyListenerResult",
       endpoint:         __spec__()
     }
   end
@@ -537,6 +558,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "ModifyLoadBalancerAttributesInput",
       output_shape:     "ModifyLoadBalancerAttributesOutput",
+      output_wrapper:   "ModifyLoadBalancerAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -557,6 +579,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "ModifyRuleInput",
       output_shape:     "ModifyRuleOutput",
+      output_wrapper:   "ModifyRuleResult",
       endpoint:         __spec__()
     }
   end
@@ -576,6 +599,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "ModifyTargetGroupInput",
       output_shape:     "ModifyTargetGroupOutput",
+      output_wrapper:   "ModifyTargetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -592,6 +616,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "ModifyTargetGroupAttributesInput",
       output_shape:     "ModifyTargetGroupAttributesOutput",
+      output_wrapper:   "ModifyTargetGroupAttributesResult",
       endpoint:         __spec__()
     }
   end
@@ -622,6 +647,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "RegisterTargetsInput",
       output_shape:     "RegisterTargetsOutput",
+      output_wrapper:   "RegisterTargetsResult",
       endpoint:         __spec__()
     }
   end
@@ -641,6 +667,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "RemoveTagsInput",
       output_shape:     "RemoveTagsOutput",
+      output_wrapper:   "RemoveTagsResult",
       endpoint:         __spec__()
     }
   end
@@ -660,6 +687,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "SetIpAddressTypeInput",
       output_shape:     "SetIpAddressTypeOutput",
+      output_wrapper:   "SetIpAddressTypeResult",
       endpoint:         __spec__()
     }
   end
@@ -680,6 +708,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "SetRulePrioritiesInput",
       output_shape:     "SetRulePrioritiesOutput",
+      output_wrapper:   "SetRulePrioritiesResult",
       endpoint:         __spec__()
     }
   end
@@ -700,6 +729,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "SetSecurityGroupsInput",
       output_shape:     "SetSecurityGroupsOutput",
+      output_wrapper:   "SetSecurityGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -720,6 +750,7 @@ defmodule Baiji.ElasticLoadBalancingv2 do
       method:           :post,
       input_shape:      "SetSubnetsInput",
       output_shape:     "SetSubnetsOutput",
+      output_wrapper:   "SetSubnetsResult",
       endpoint:         __spec__()
     }
   end
@@ -731,7 +762,6 @@ defmodule Baiji.ElasticLoadBalancingv2 do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "elasticloadbalancingv2",
-      target_prefix:    nil,
       endpoint_prefix:  "elasticloadbalancing",
       type:             :xml,
       version:          "2015-12-01",

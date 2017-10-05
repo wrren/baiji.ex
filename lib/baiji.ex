@@ -34,4 +34,16 @@ defmodule Baiji do
       e -> {:error, e.message}
     end
   end
+
+  @doc """
+  Perform an operation, raises an exception if the operation fails
+  """
+  def perform!(%Operation{} = operation, opts \\ []) do
+    case perform(operation, opts) do
+      {:ok, response} -> 
+        response
+      {:error, error} ->
+        raise error
+    end
+  end
 end

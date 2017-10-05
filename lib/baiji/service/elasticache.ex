@@ -28,6 +28,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeReservedCacheNodesOfferingsMessage",
       output_shape:     "ReservedCacheNodesOfferingMessage",
+      output_wrapper:   "DescribeReservedCacheNodesOfferingsResult",
       endpoint:         __spec__()
     }
   end
@@ -51,6 +52,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CreateCacheSecurityGroupMessage",
       output_shape:     "CreateCacheSecurityGroupResult",
+      output_wrapper:   "CreateCacheSecurityGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -68,6 +70,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeCacheSubnetGroupsMessage",
       output_shape:     "CacheSubnetGroupMessage",
+      output_wrapper:   "DescribeCacheSubnetGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -103,6 +106,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeCacheSecurityGroupsMessage",
       output_shape:     "CacheSecurityGroupMessage",
+      output_wrapper:   "DescribeCacheSecurityGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -127,6 +131,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ModifyReplicationGroupMessage",
       output_shape:     "ModifyReplicationGroupResult",
+      output_wrapper:   "ModifyReplicationGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -149,6 +154,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ListAllowedNodeTypeModificationsMessage",
       output_shape:     "AllowedNodeTypeModificationsMessage",
+      output_wrapper:   "ListAllowedNodeTypeModificationsResult",
       endpoint:         __spec__()
     }
   end
@@ -168,6 +174,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CreateCacheSubnetGroupMessage",
       output_shape:     "CreateCacheSubnetGroupResult",
+      output_wrapper:   "CreateCacheSubnetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -190,6 +197,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeEventsMessage",
       output_shape:     "EventsMessage",
+      output_wrapper:   "DescribeEventsResult",
       endpoint:         __spec__()
     }
   end
@@ -206,6 +214,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "RemoveTagsFromResourceMessage",
       output_shape:     "TagListMessage",
+      output_wrapper:   "RemoveTagsFromResourceResult",
       endpoint:         __spec__()
     }
   end
@@ -229,6 +238,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ListTagsForResourceMessage",
       output_shape:     "TagListMessage",
+      output_wrapper:   "ListTagsForResourceResult",
       endpoint:         __spec__()
     }
   end
@@ -271,6 +281,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CreateReplicationGroupMessage",
       output_shape:     "CreateReplicationGroupResult",
+      output_wrapper:   "CreateReplicationGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -305,6 +316,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CreateCacheParameterGroupMessage",
       output_shape:     "CreateCacheParameterGroupResult",
+      output_wrapper:   "CreateCacheParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -342,6 +354,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeCacheClustersMessage",
       output_shape:     "CacheClusterMessage",
+      output_wrapper:   "DescribeCacheClustersResult",
       endpoint:         __spec__()
     }
   end
@@ -360,6 +373,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ModifyCacheParameterGroupMessage",
       output_shape:     "CacheParameterGroupNameMessage",
+      output_wrapper:   "ModifyCacheParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -381,6 +395,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CreateSnapshotMessage",
       output_shape:     "CreateSnapshotResult",
+      output_wrapper:   "CreateSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -441,6 +456,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ModifyCacheClusterMessage",
       output_shape:     "ModifyCacheClusterResult",
+      output_wrapper:   "ModifyCacheClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -457,6 +473,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeCacheEngineVersionsMessage",
       output_shape:     "CacheEngineVersionMessage",
+      output_wrapper:   "DescribeCacheEngineVersionsResult",
       endpoint:         __spec__()
     }
   end
@@ -475,6 +492,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "RevokeCacheSecurityGroupIngressMessage",
       output_shape:     "RevokeCacheSecurityGroupIngressResult",
+      output_wrapper:   "RevokeCacheSecurityGroupIngressResult",
       endpoint:         __spec__()
     }
   end
@@ -568,6 +586,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CopySnapshotMessage",
       output_shape:     "CopySnapshotResult",
+      output_wrapper:   "CopySnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -593,6 +612,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "RebootCacheClusterMessage",
       output_shape:     "RebootCacheClusterResult",
+      output_wrapper:   "RebootCacheClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -621,6 +641,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DeleteReplicationGroupMessage",
       output_shape:     "DeleteReplicationGroupResult",
+      output_wrapper:   "DeleteReplicationGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -638,6 +659,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeReservedCacheNodesMessage",
       output_shape:     "ReservedCacheNodeMessage",
+      output_wrapper:   "DescribeReservedCacheNodesResult",
       endpoint:         __spec__()
     }
   end
@@ -654,6 +676,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "PurchaseReservedCacheNodesOfferingMessage",
       output_shape:     "PurchaseReservedCacheNodesOfferingResult",
+      output_wrapper:   "PurchaseReservedCacheNodesOfferingResult",
       endpoint:         __spec__()
     }
   end
@@ -681,6 +704,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "AddTagsToResourceMessage",
       output_shape:     "TagListMessage",
+      output_wrapper:   "AddTagsToResourceResult",
       endpoint:         __spec__()
     }
   end
@@ -712,6 +736,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DeleteCacheClusterMessage",
       output_shape:     "DeleteCacheClusterResult",
+      output_wrapper:   "DeleteCacheClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -728,6 +753,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeCacheParametersMessage",
       output_shape:     "CacheParameterGroupDetails",
+      output_wrapper:   "DescribeCacheParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -793,6 +819,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "TestFailoverMessage",
       output_shape:     "TestFailoverResult",
+      output_wrapper:   "TestFailoverResult",
       endpoint:         __spec__()
     }
   end
@@ -810,6 +837,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeEngineDefaultParametersMessage",
       output_shape:     "DescribeEngineDefaultParametersResult",
+      output_wrapper:   "DescribeEngineDefaultParametersResult",
       endpoint:         __spec__()
     }
   end
@@ -828,6 +856,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeCacheParameterGroupsMessage",
       output_shape:     "CacheParameterGroupsMessage",
+      output_wrapper:   "DescribeCacheParameterGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -847,6 +876,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ResetCacheParameterGroupMessage",
       output_shape:     "CacheParameterGroupNameMessage",
+      output_wrapper:   "ResetCacheParameterGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -869,6 +899,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DeleteSnapshotMessage",
       output_shape:     "DeleteSnapshotResult",
+      output_wrapper:   "DeleteSnapshotResult",
       endpoint:         __spec__()
     }
   end
@@ -892,6 +923,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "AuthorizeCacheSecurityGroupIngressMessage",
       output_shape:     "AuthorizeCacheSecurityGroupIngressResult",
+      output_wrapper:   "AuthorizeCacheSecurityGroupIngressResult",
       endpoint:         __spec__()
     }
   end
@@ -915,6 +947,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeSnapshotsMessage",
       output_shape:     "DescribeSnapshotsListMessage",
+      output_wrapper:   "DescribeSnapshotsResult",
       endpoint:         __spec__()
     }
   end
@@ -937,6 +970,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "DescribeReplicationGroupsMessage",
       output_shape:     "ReplicationGroupMessage",
+      output_wrapper:   "DescribeReplicationGroupsResult",
       endpoint:         __spec__()
     }
   end
@@ -953,6 +987,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "ModifyCacheSubnetGroupMessage",
       output_shape:     "ModifyCacheSubnetGroupResult",
+      output_wrapper:   "ModifyCacheSubnetGroupResult",
       endpoint:         __spec__()
     }
   end
@@ -976,6 +1011,7 @@ defmodule Baiji.Elasticache do
       method:           :post,
       input_shape:      "CreateCacheClusterMessage",
       output_shape:     "CreateCacheClusterResult",
+      output_wrapper:   "CreateCacheClusterResult",
       endpoint:         __spec__()
     }
   end
@@ -987,7 +1023,6 @@ defmodule Baiji.Elasticache do
   def __spec__ do
     %Baiji.Endpoint{
       service:          "elasticache",
-      target_prefix:    nil,
       endpoint_prefix:  "elasticache",
       type:             :xml,
       version:          "2015-02-02",
