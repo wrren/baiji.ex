@@ -74,24 +74,39 @@ defmodule Baiji.Request do
   @doc """
   Generate a Query string for the given operation
   """
-  def query(%Operation{action: action, endpoint: %Endpoint{version: version}}) do
+  def query(%Operation{action: action, endpoint: %{version: version, type: type}}) when type == :xml or type == :json or type == :ec2 do
     "?Action=#{action}&Version=#{version}"
   end
+  def query(_), do: ""
+
+  def path(%Operation{endpoint: %{type: type}} = op) when type == :rest_xml or type == :rest_json do
+
+  end
+  def path(%Operation{path: path}), do: path
 
   @doc """
   Determine the full URL to which the request should be sent
   """
-  def url(%Operation{path: path} = op), do: "https://#{host(op)}#{path}#{query(op)}"
+  def url(%Operation{path: path} = op), do: "https://#{host(op)}#{path(op)}#{query(op)}"
 
   @doc """
   Add the appropriate headers to the given request on the operation type, version and host
   """
   def add_headers(request) do
     request
+    |> add_version_and_action_headers
     |> add_content_type_header
     |> add_target_header
     |> add_host_header
   end
+
+  @doc """
+  Add Version and Action headers to the request based on the endpoint type
+  """
+  def add_version_and_action_headers(%Request{operation: %{action: action, endpoint: %{type: type, version: version}}} = req) when type == :rest_json or type == :rest_xml do
+    %{req | headers: [{"Action", action}, {"Version", version} | req.headers]}
+  end
+  def add_version_and_action_headers(req), do: req
 
   @doc """
   Add a content-type header based on the operation's protocol
