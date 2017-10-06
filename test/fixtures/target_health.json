@@ -1,0 +1,1 @@
+{"TargetHealthDescriptions":[{"TargetHealth":{"State":"healthy"},"Target":{"Port":80,"Id":"i-0f76fade"},"HealthCheckPort":"80"},{"TargetHealth":{"State":"healthy"},"Target":{"Port":80,"Id":"i-0f76fade"},"HealthCheckPort":"80"}]}
