@@ -10,7 +10,10 @@ defmodule Baiji.Request.REST.Encoder do
   Encode an Operation's input into a REST URI based on the expected input shape
   described in the Operation
   """
-  def encode(%Operation{path: path, input: input, input_shape: shape, endpoint: %{shapes: shapes}}) do
+  def encode(%Operation{path: path, input: %{}}) do
+    path
+  end
+  def encode(%Operation{path: path, input: input, input_shape: input_shape, endpoint: %{shapes: shapes}}) do
     
   end
 end

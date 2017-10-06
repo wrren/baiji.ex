@@ -63,7 +63,9 @@ defmodule Baiji.Request.Sign do
   @doc """
   Generate a string that contains information about the request in canonical format
   """
-  def canonical_request(%Sign{request: %Request{url: url, method: method, headers: headers, body: body}} = sign) do
+  def canonical_request(%Sign{request: %Request{url: url, method: method, headers: headers, body: body, operation: op}} = sign) do
+    canonical_request = canonical_request(url, method, headers, body)
+    Operation.debug(op, "Canonical Request: #{inspect canonical_request}")
     %{sign | canonical_request: canonical_request(url, method, headers, body)}    
   end
   def canonical_request(url, method, headers, body) do
@@ -95,7 +97,6 @@ defmodule Baiji.Request.Sign do
     |> Enum.map(fn component ->
       component
       |> String.split("=")
-      |> Enum.map(&URI.encode/1)
       |> Enum.join("=")
     end)
     |> Enum.join("&")

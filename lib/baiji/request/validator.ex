@@ -44,6 +44,7 @@ defmodule Baiji.Request.Validator do
       raise Error, message: "The value for #{format_keys(keys)} must be a string at most #{max} characters long"
     end   
   end
+  def validate!(input, %{"type" => "string"}, _, _) when is_binary(input), do: :ok
   def validate!(input, %{"type" => "integer", "min" => min, "max" => max}, shapes, keys) when is_integer(input) do
     validate!(input, %{"type" => "integer", "min" => min}, shapes, keys)
     validate!(input, %{"type" => "integer", "max" => max}, shapes, keys)
@@ -86,7 +87,7 @@ defmodule Baiji.Request.Validator do
   def check_required_fields!(input, %{"required" => required, "members" => members}, _shapes, keys) do
     required
     |> Enum.each(fn key ->
-      %{"locationName" => location} = members[key]
+      location = Map.get(members[key], "locationName", key)
       if not Map.has_key?(input, location) do
         raise Error, message: "The required key #{format_keys([location | keys])} is missing from the input"
       end

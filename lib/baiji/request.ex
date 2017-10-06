@@ -74,8 +74,8 @@ defmodule Baiji.Request do
   @doc """
   Generate a Query string for the given operation
   """
-  def query(%Operation{action: action, endpoint: %{version: version, type: type}}) when type == :xml or type == :json or type == :ec2 do
-    "?Action=#{action}&Version=#{version}"
+  def query(%Operation{endpoint: %{type: type}} = op) when type == :xml or type == :json or type == :ec2 do
+    Request.Query.Encoder.encode(op)
   end
   def query(_), do: ""
 
