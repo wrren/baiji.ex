@@ -2,13 +2,13 @@ defmodule Baiji do
   @moduledoc """
   Baiji provides an interface for interacting with the AWS API. Baiji is 
   typically used by invoking a service function to generate an operation which 
-  is then passed to Baiji.run to make the request.
+  is then passed to Baiji.perform to make the request.
 
   ## Examples
 
     iex> Baiji.EC2.describe_instances
-    ...> |> Baiji.run
-    {:ok, %{reservations: ...}}
+    ...> |> Baiji.perform
+    {:ok, %{"reservationSet": ...}}
   """
   alias Baiji.{
     Operation,

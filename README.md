@@ -37,10 +37,10 @@ config :ex_aws,
 iex> Baiji.EC2.describe_instances
 ...> |> Baiji.perform
 
-%{"reservationSet" => [
+{:ok, %{"reservationSet" => [
   %{"reservationId" => ...}
   ...
-]}
+]}}
 
 ```
 
