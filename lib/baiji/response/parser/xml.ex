@@ -101,7 +101,7 @@ defmodule Baiji.Response.Parser.XML do
     |> Enum.at(0)
     |> parse(shape, shapes)
   end
-  def parse(xmlElement(content: content) = element, %{"type" => "structure", "members" => members}, shapes) do
+  def parse(xmlElement(content: content), %{"type" => "structure", "members" => members}, shapes) do
     members
     |> Map.to_list
     |> Enum.map(fn {name, %{"shape" => shape} = val} ->

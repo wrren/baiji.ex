@@ -80,14 +80,14 @@ defmodule Baiji.Request do
   def query(_), do: ""
 
   def path(%Operation{endpoint: %{type: type}} = op) when type == :rest_xml or type == :rest_json do
-
+    Request.REST.Encoder.encode(op)
   end
   def path(%Operation{path: path}), do: path
 
   @doc """
   Determine the full URL to which the request should be sent
   """
-  def url(%Operation{path: path} = op), do: "https://#{host(op)}#{path(op)}#{query(op)}"
+  def url(%Operation{} = op), do: "https://#{host(op)}#{path(op)}#{query(op)}"
 
   @doc """
   Add the appropriate headers to the given request on the operation type, version and host
