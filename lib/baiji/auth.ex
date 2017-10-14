@@ -15,6 +15,7 @@ defmodule Baiji.Auth do
     |> populate_access_key_id
     |> populate_secret_access_key
     |> populate_security_token
+    |> verify
   end
 
   @doc """
@@ -33,9 +34,11 @@ defmodule Baiji.Auth do
     end)
   end
   def populate(%Operation{} = op, {:system, env_var}, key) do
+    Operation.debug(op, "Populating #{key} from environment variable #{env_var}...")
     Map.put(op, key, System.get_env(env_var))
   end
   def populate(%Operation{} = op, :instance_role, key) do
+    Operation.debug(op, "Populating #{key} from instance role...")    
     Baiji.Auth.InstanceMetadata.populate(op, key)
   end
 
@@ -62,6 +65,21 @@ defmodule Baiji.Auth do
   def populate_security_token(%Operation{} = op) do
     populate(op, Application.get_env(:baiji, :security_token, []), :security_token)
   end
+
+  @doc """
+  Verify that an Operation struct contains the required credentials
+  """
+  def verify(%Operation{access_key_id: nil}) do
+    raise """
+    An AWS Access Key ID could not be retrieved from any of the configured locations.
+    """
+  end
+  def verify(%Operation{secret_access_key: nil}) do
+    raise """
+    An AWS Secret Access Key could not be retrieved from any of the configured locations.
+    """
+  end
+  def verify(op), do: op
 
   defmacro __using__(_) do
     quote do
