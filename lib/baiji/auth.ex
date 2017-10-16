@@ -29,13 +29,13 @@ defmodule Baiji.Auth do
         nil -> {:cont, populate(op, method, key)}
         val -> 
           Operation.debug(op, "Got #{val} for #{key}")
-          {:halt, op}
+          {:halt, Map.put(op, key, String.trim(Map.get(op, key)))}
       end
     end)
   end
   def populate(%Operation{} = op, {:system, env_var}, key) do
     Operation.debug(op, "Populating #{key} from environment variable #{env_var}...")
-    Map.put(op, key, String.trim(System.get_env(env_var)))
+    Map.put(op, key, System.get_env(env_var))
   end
   def populate(%Operation{} = op, :instance_role, key) do
     Operation.debug(op, "Populating #{key} from instance role...")    
@@ -81,8 +81,9 @@ defmodule Baiji.Auth do
   end
   def verify(%Operation{access_key_id: access_key_id, secret_access_key: secret_access_key} = op) do
     Operation.debug(op, "Got Access Key ID #{inspect access_key_id}, Secret Access Key ending in #{String.slice(secret_access_key, -10..-1)}")
-  end
 
+  end
+  
   defmacro __using__(_) do
     quote do
       @behaviour Baiji.Auth
