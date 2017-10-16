@@ -79,8 +79,10 @@ defmodule Baiji.Auth do
     An AWS Secret Access Key could not be retrieved from any of the configured locations.
     """
   end
-  def verify(op), do: op
-
+  def verify(%Operation{access_key_id: access_key_id, secret_access_key: secret_access_key} = op) do
+    Operation.debug(op, "Got Access Key ID #{inspect access_key_id}, Secret Access Key ending in #{String.slice(secret_access_key, -10..-1)}")
+  end
+  
   defmacro __using__(_) do
     quote do
       @behaviour Baiji.Auth
