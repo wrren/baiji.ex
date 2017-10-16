@@ -26,12 +26,14 @@ defmodule Baiji.Auth do
     methods
     |> Enum.reduce_while(op, fn(method, op) ->
       case Map.get(op, key) do
-        nil -> {:cont, populate(op, method, key)}
+        nil -> 
+          {:cont, populate(op, method, key)}
         val -> 
           Operation.debug(op, "Got #{val} for #{key}")
-          {:halt, Map.put(op, key, String.trim(Map.get(op, key)))}
+          {:halt, op}
       end
     end)
+    |> trim(key)
   end
   def populate(%Operation{} = op, {:system, env_var}, key) do
     Operation.debug(op, "Populating #{key} from environment variable #{env_var}...")
@@ -80,8 +82,17 @@ defmodule Baiji.Auth do
     """
   end
   def verify(%Operation{access_key_id: access_key_id, secret_access_key: secret_access_key} = op) do
-    Operation.debug(op, "Got Access Key ID #{inspect access_key_id}, Secret Access Key ending in #{String.slice(secret_access_key, -10..-1)}")
+    Operation.debug(op, "Got Access Key ID #{access_key_id}, Secret Access Key ending in #{String.slice(secret_access_key, -10..-1)}")    
+  end
 
+  #
+  # Trim a credential if it's been set
+  #
+  defp trim(%Operation{} = op, key) when is_atom(key) do
+    case Map.get(op, key) do
+      nil -> op
+      val -> Map.put(op, key, String.trim(val))
+    end
   end
   
   defmacro __using__(_) do
