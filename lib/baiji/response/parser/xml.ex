@@ -82,19 +82,23 @@ defmodule Baiji.Response.Parser.XML do
   def parse(xmlText() = text, %{"type" => "string"}, _shapes),      do: value(text)
   def parse(xmlText() = text, %{"type" => "boolean"}, _shapes),     do: value(text) |> String.to_existing_atom
   def parse(xmlText() = text, %{"type" => "integer"}, _shapes),     do: value(text) |> String.to_integer
+  def parse(xmlText() = text, %{"type" => "long"}, _shapes),        do: value(text) |> String.to_integer
   def parse(xmlText() = text, %{"type" => "timestamp"}, _shapes),   do: value(text) |> NaiveDateTime.from_iso8601!
   def parse([xmlText() = text], %{"type" => "string"}, _shapes),    do: value(text)
   def parse([xmlText() = text], %{"type" => "boolean"}, _shapes),   do: value(text) |> String.to_existing_atom
   def parse([xmlText() = text], %{"type" => "integer"}, _shapes),   do: value(text) |> String.to_integer
+  def parse([xmlText() = text], %{"type" => "long"}, _shapes),      do: value(text) |> String.to_integer
   def parse([xmlText() = text], %{"type" => "timestamp"}, _shapes), do: value(text) |> NaiveDateTime.from_iso8601!
   def parse([], %{"type" => "string"},    _shapes),                 do: nil
   def parse([], %{"type" => "boolean"},   _shapes),                 do: nil
   def parse([], %{"type" => "integer"},   _shapes),                 do: nil
+  def parse([], %{"type" => "long"},   _shapes),                    do: nil
   def parse([], %{"type" => "timestamp"}, _shapes),                 do: nil
-  def parse(nil, %{"type" => "string"},    _shapes),                 do: nil
-  def parse(nil, %{"type" => "boolean"},   _shapes),                 do: nil
-  def parse(nil, %{"type" => "integer"},   _shapes),                 do: nil
-  def parse(nil, %{"type" => "timestamp"}, _shapes),                 do: nil
+  def parse(nil, %{"type" => "string"},    _shapes),                do: nil
+  def parse(nil, %{"type" => "boolean"},   _shapes),                do: nil
+  def parse(nil, %{"type" => "integer"},   _shapes),                do: nil
+  def parse(nil, %{"type" => "long"},   _shapes),                   do: nil
+  def parse(nil, %{"type" => "timestamp"}, _shapes),                do: nil
   def parse(xmlElement(content: content), %{"type" => type} = shape, shapes) when type != "structure" and type != "list" do
     content
     |> trim

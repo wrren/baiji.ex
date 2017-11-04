@@ -18,7 +18,7 @@ defmodule Baiji.Response do
     parser.(response, op)
   end
   def parse(%{body: body}, %Operation{endpoint: %Endpoint{type: type}} = op) when type == :xml or type == :rest_xml or type == :ec2 do
-    Baiji.Response.Parser.XML.parse(body, op)
+    {:ok, Baiji.Response.Parser.XML.parse!(body, op)}
   end
   def parse(%{body: body}, %Operation{endpoint: %Endpoint{type: type}}) when type == :json or type == :rest_json do
     Poison.decode(body)

@@ -41,11 +41,14 @@ defmodule Baiji do
   Perform an operation, raises an exception if the operation fails
   """
   def perform!(%Operation{} = operation, opts \\ []) do
-    case perform(operation, opts) do
-      {:ok, response} -> 
-        response
-      {:error, error} ->
-        raise error
-    end
+    operation = %{operation | options: Keyword.merge(operation.options, opts)}
+    
+    operation
+    |> Config.merge
+    |> Operation.debug("Populating Authentication Parameters...")
+    |> Auth.populate
+    |> Operation.debug("Making Request...")
+    |> Request.make
+    |> Response.parse(operation)
   end
 end
