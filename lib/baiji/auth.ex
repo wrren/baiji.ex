@@ -1,5 +1,6 @@
 defmodule Baiji.Auth do
   alias Baiji.Operation
+  @default_role_session_name "Baiji (Elixir)"
 
   #
   # Callback for auth providers. Populates the authentication
@@ -10,13 +11,40 @@ defmodule Baiji.Auth do
   @doc """
   Populate the authorization credentials of the given operation
   """
-  def populate(%Operation{} = op) do
-    op
-    |> populate_access_key_id
-    |> populate_secret_access_key
-    |> populate_security_token
-    |> verify
+  def populate(%Operation{options: opts} = op) do
+    if opts[:assume_role] do
+      op
+      |> assume_role(opts[:assume_role])
+      |> verify
+    else
+      op
+      |> populate_access_key_id
+      |> populate_secret_access_key
+      |> populate_security_token
+      |> verify
+    end
   end
+
+  @doc """
+  Attempt to assume the role specified in the operation's options. The role can be defined either
+  as an ARN, or a tuple containing the role ARN and a session name. If no session name is provided, 
+  the default session name "Baiji (Elixir)" will be used instead.
+  """
+  def assume_role(%Operation{options: opts} = op, {role_arn, role_session_name}) do
+    Baiji.STS.assume_role(%{"RoleArn" => role_arn, "RoleSessionName" => role_session_name})
+    |> Baiji.perform(Keyword.delete(opts, :assume_role))
+    |> assume_role(op)
+  end
+  def assume_role(%Operation{} = op, role_arn) when is_binary(role_arn) do
+    assume_role(op, {role_arn, @default_role_session_name})
+  end
+  def assume_role({:ok, %{"Credentials" => creds}}, %Operation{} = op) do
+    op
+    |> Map.put(:access_key_id,      Map.get(creds, "AccessKeyId"))
+    |> Map.put(:secret_access_key,  Map.get(creds, "SecretAccessKey"))
+    |> Map.put(:security_token,     Map.get(creds, "SessionToken"))
+  end
+  def assume_role({:error, _}, op), do: op
 
   @doc """
   Try successive auth population methods until one of them successfully populates
@@ -46,27 +74,33 @@ defmodule Baiji.Auth do
 
   @doc """
   Attempt to populate the access_key_id field of the given operation using
-  the methods defined in the application config
+  the methods defined in the application config. If the operation already has
+  an access key ID, nothing will be done.
   """
-  def populate_access_key_id(%Operation{} = op) do
+  def populate_access_key_id(%Operation{access_key_id: nil} = op) do
     populate(op, Application.get_env(:baiji, :access_key_id, []), :access_key_id)
   end
+  def populate_access_key_id(op), do: op
 
   @doc """
   Attempt to populate the secret_access_key field of the given operation using
-  the methods defined in the application config
+  the methods defined in the application config. If the operation already has
+  a secret access key, nothing will be done.
   """
-  def populate_secret_access_key(%Operation{} = op) do
+  def populate_secret_access_key(%Operation{secret_access_key: nil} = op) do
     populate(op, Application.get_env(:baiji, :secret_access_key, []), :secret_access_key)
   end
+  def populate_secret_access_key(op), do: op
 
   @doc """
   Attempt to populate the security_token field of the given operation using
-  the methods defined in the application config
+  the methods defined in the application config. If the operation already has
+  a security token, nothing will be done.
   """
-  def populate_security_token(%Operation{} = op) do
+  def populate_security_token(%Operation{security_token: nil} = op) do
     populate(op, Application.get_env(:baiji, :security_token, []), :security_token)
   end
+  def populate_security_token(op), do: op
 
   @doc """
   Verify that an Operation struct contains the required credentials

@@ -21,6 +21,7 @@ defmodule Baiji do
   @doc """
   Perform an operation
   """
+  @spec perform(%Operation{}, keyword()) :: {:ok, map()} | {:error, any()}
   def perform(%Operation{} = operation, opts \\ []) do
     try do
       operation = %{operation | options: Keyword.merge(operation.options, opts)}
