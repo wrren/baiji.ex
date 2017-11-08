@@ -69,10 +69,16 @@ defmodule Baiji.Response.Parser.XML do
   def parse(xmlElement(name: :member, content: content), %{"type" => "string"} = shape, shapes) do
     parse(content, shape, shapes)
   end
+  def parse(xmlElement(name: :member, content: content), %{"type" => "blob"} = shape, shapes) do
+    parse(content, shape, shapes)
+  end
   def parse(xmlElement(name: :member, content: content), %{"type" => "boolean"} = shape, shapes) do
     parse(content, shape, shapes)
   end 
   def parse(xmlElement(name: :member, content: content), %{"type" => "integer"} = shape, shapes) do
+    parse(content, shape, shapes)
+  end 
+  def parse(xmlElement(name: :member, content: content), %{"type" => "long"} = shape, shapes) do
     parse(content, shape, shapes)
   end 
   def parse(xmlElement(name: :member, content: content), %{"type" => "timestamp"} = shape, shapes) do
@@ -80,21 +86,25 @@ defmodule Baiji.Response.Parser.XML do
   end
   
   def parse(xmlText() = text, %{"type" => "string"}, _shapes),      do: value(text)
+  def parse(xmlText() = text, %{"type" => "blob"}, _shapes),        do: value(text)
   def parse(xmlText() = text, %{"type" => "boolean"}, _shapes),     do: value(text) |> String.to_existing_atom
   def parse(xmlText() = text, %{"type" => "integer"}, _shapes),     do: value(text) |> String.to_integer
   def parse(xmlText() = text, %{"type" => "long"}, _shapes),        do: value(text) |> String.to_integer
   def parse(xmlText() = text, %{"type" => "timestamp"}, _shapes),   do: value(text) |> NaiveDateTime.from_iso8601!
   def parse([xmlText() = text], %{"type" => "string"}, _shapes),    do: value(text)
+  def parse([xmlText() = text], %{"type" => "blob"}, _shapes),      do: value(text)
   def parse([xmlText() = text], %{"type" => "boolean"}, _shapes),   do: value(text) |> String.to_existing_atom
   def parse([xmlText() = text], %{"type" => "integer"}, _shapes),   do: value(text) |> String.to_integer
   def parse([xmlText() = text], %{"type" => "long"}, _shapes),      do: value(text) |> String.to_integer
   def parse([xmlText() = text], %{"type" => "timestamp"}, _shapes), do: value(text) |> NaiveDateTime.from_iso8601!
   def parse([], %{"type" => "string"},    _shapes),                 do: nil
+  def parse([], %{"type" => "blob"},    _shapes),                   do: nil
   def parse([], %{"type" => "boolean"},   _shapes),                 do: nil
   def parse([], %{"type" => "integer"},   _shapes),                 do: nil
   def parse([], %{"type" => "long"},   _shapes),                    do: nil
   def parse([], %{"type" => "timestamp"}, _shapes),                 do: nil
   def parse(nil, %{"type" => "string"},    _shapes),                do: nil
+  def parse(nil, %{"type" => "blob"},    _shapes),                  do: nil
   def parse(nil, %{"type" => "boolean"},   _shapes),                do: nil
   def parse(nil, %{"type" => "integer"},   _shapes),                do: nil
   def parse(nil, %{"type" => "long"},   _shapes),                   do: nil

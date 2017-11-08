@@ -11,6 +11,17 @@ defmodule Baiji.Request.Validator do
   }
 
   @doc """
+  Check whether the inputs to the given operation are valid, based on the operation's shape
+  """
+  def valid?(%Operation{} = op) do
+    try do
+      validate!(op)
+    rescue
+      e -> false
+    end
+  end
+
+  @doc """
   Check the validity of an Operation
   """
   def validate!(%Operation{input_shape: nil}), do: true
@@ -43,6 +54,11 @@ defmodule Baiji.Request.Validator do
     if String.length(input) > max do
       raise Error, message: "The value for #{format_keys(keys)} must be a string at most #{max} characters long"
     end   
+  end
+  def validate!(input, %{"type" => "string", "pattern" => pattern}, _, keys) when is_binary(input) do
+    if not Regex.match?(Regex.compile!(pattern), input) do
+      raise Error, message: "The value for #{format_keys(keys)} does not match the validation regex: #{pattern}"
+    end
   end
   def validate!(input, %{"type" => "string"}, _, _) when is_binary(input), do: :ok
   def validate!(input, %{"type" => "integer", "min" => min, "max" => max}, shapes, keys) when is_integer(input) do

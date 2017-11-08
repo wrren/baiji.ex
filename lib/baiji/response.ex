@@ -17,7 +17,8 @@ defmodule Baiji.Response do
   def parse({:ok, response}, %Operation{parser: parser} = op) do
     parser.(response, op)
   end
-  def parse(%{body: body}, %Operation{endpoint: %Endpoint{type: type}} = op) when type == :xml or type == :rest_xml or type == :ec2 do
+  def parse(%{body: body}, %Operation{endpoint: %Endpoint{type: type}} = op) when type == :xml 
+                                                                                or type == :rest_xml or type == :ec2 do
     {:ok, Baiji.Response.Parser.XML.parse!(body, op)}
   end
   def parse(%{body: body}, %Operation{endpoint: %Endpoint{type: type}}) when type == :json or type == :rest_json do

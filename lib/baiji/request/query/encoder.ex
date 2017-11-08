@@ -42,9 +42,17 @@ defmodule Baiji.Request.Query.Encoder do
     [{"Version", version} | components]
   end
 
-  def encode_input(query, input, %{"type" => "string"}, _shapes, keys),     do: [to_component(keys, input) | query]
+  def encode_input(query, input, %{"type" => "string"}, _shapes, keys),   do: [to_component(keys, input) | query]
   def encode_input(query, input, %{"type" => "integer"}, _shapes, keys),  do: [to_component(keys, input) | query]
+  def encode_input(query, input, %{"type" => "long"}, _shapes, keys),     do: [to_component(keys, input) | query]
   def encode_input(query, input, %{"type" => "boolean"}, _shapes, keys),  do: [to_component(keys, input) | query]
+  def encode_input(query, input, %{"type" => "list", "member" => %{"shape" => member_shape}, "flattened" => true}, shapes, keys) do
+    input
+    |> Enum.reduce({query, 1}, fn(member, {query, index}) ->
+      {encode_input(query, member, shapes[member_shape], shapes, [index | keys]), index + 1}
+    end)    
+    |> then(fn {query, _} -> query end)
+  end
   def encode_input(query, input, %{"type" => "list", "member" => %{"shape" => member_shape}}, shapes, keys) do
     input
     |> Enum.reduce({query, 1}, fn(member, {query, index}) ->

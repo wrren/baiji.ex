@@ -23,15 +23,7 @@ defmodule Baiji do
   """
   def perform(%Operation{} = operation, opts \\ []) do
     try do
-      operation = %{operation | options: Keyword.merge(operation.options, opts)}
-
-      operation
-      |> Config.merge
-      |> Operation.debug("Populating Authentication Parameters...")
-      |> Auth.populate
-      |> Operation.debug("Making Request...")
-      |> Request.make
-      |> Response.parse(operation)
+      perform!(operation, opts)
     rescue
       e -> {:error, e}
     end
