@@ -9,7 +9,7 @@ The package can be installed by adding `baiji` to your list of dependencies in `
 ```elixir
 def deps do
   [
-    {:baiji, "~> 0.6.4"}
+    {:baiji, "~> 0.6.10"}
   ]
 end
 ```
@@ -31,6 +31,27 @@ config :baiji,
   security_token: [{:system, "AWS_SECURITY_TOKEN"}]
 ```
 
+Additional options, such as debug mode, can be passed either as part of the application configuration 
+or when performing operations:
+
+```elixir
+config :baiji,
+  access_key_id: [{:system, "AWS_ACCESS_KEY_ID"}, :instance_role],
+  secret_access_key: [{:system, "AWS_SECRET_ACCESS_KEY"}, :instance_role],
+  security_token: [{:system, "AWS_SECURITY_TOKEN"}],
+  region: "us-east-2
+```
+
+```elixir
+iex> Baiji.EC2.describe_instances
+...> |> Baiji.perform(region: "us-east-2", debug: true)
+
+{:ok, %{"reservationSet" => [
+  %{"reservationId" => ...}
+  ...
+```
+
+
 ### Calling Services
 
 ```elixir
@@ -45,6 +66,36 @@ iex> Baiji.EC2.describe_instances
 ```
 
 All services return responses as maps and accept inputs in the same way. Experiment with services using IEx in order to understand what outputs look like.
+
+### Assuming IAM Roles
+
+You can assume another role using the STS `AssumeRole` endpoint using an additional option when performing operations:
+
+```elixir
+iex> Baiji.EC2.describe_instances
+...> |> Baiji.perform(assume_role: "arn:aws:iam::123456789012:role/example_role")
+
+{:ok, %{"reservationSet" => [
+  %{"reservationId" => ...}
+  ...
+]}}
+
+```
+
+You can also specify a role session name if you'd like to uniquely identify a session:
+
+```elixir
+iex> Baiji.EC2.describe_instances
+...> |> Baiji.perform(assume_role: {"arn:aws:iam::123456789012:role/example_role", "session_name")
+
+{:ok, %{"reservationSet" => [
+  %{"reservationId" => ...}
+  ...
+]}}
+
+```
+
+By default, the role session name will be set to `baiji`.
 
 ## License
 
