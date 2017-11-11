@@ -17,7 +17,7 @@ defmodule Baiji.Request.Validator do
     try do
       validate!(op)
     rescue
-      e -> false
+      _ -> false
     end
   end
 

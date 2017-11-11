@@ -12,7 +12,7 @@ defmodule Baiji.Request do
   defstruct operation:  nil,
             method:     nil,
             url:        nil,
-            body:       nil,
+            body:       "",
             headers:    []
 
   @doc """
@@ -37,20 +37,19 @@ defmodule Baiji.Request do
   @doc """
   Generate a Request struct
   """
-  def new(%Operation{input: input, method: method} = op) when map_size(input) == 0 do
+  def new(%Operation{method: method, endpoint: %Endpoint{type: type}} = op) when type in [:xml, :ec2, :rest_xml] do
     %Request{
       operation: op, 
       url: url(op), 
-      body: "", 
       headers: [], 
       method: method
     }
   end
-  def new(%Operation{input: input, method: method} = op) do
+  def new(%Operation{method: method, input: input} = op) do
     %Request{
       operation: op, 
       url: url(op), 
-      body: Poison.encode!(input), 
+      body: Poison.encode!(input),
       headers: [], 
       method: method
     }

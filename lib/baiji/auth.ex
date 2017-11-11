@@ -1,6 +1,6 @@
 defmodule Baiji.Auth do
   alias Baiji.Operation
-  @default_role_session_name "Baiji (Elixir)"
+  @default_role_session_name "baiji"
 
   #
   # Callback for auth providers. Populates the authentication
