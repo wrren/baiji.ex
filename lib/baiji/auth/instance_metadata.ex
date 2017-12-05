@@ -38,7 +38,7 @@ defmodule Baiji.Auth.InstanceMetadata do
   """
   def ec2_credentials(%Operation{} = op) do
     Operation.debug(op, "Getting EC2 Credentials...")
-    request(@ec2_metadata_url <> "/iam/security_credentials/")
+    request(@ec2_metadata_url <> "/iam/security-credentials/")
     |> then(fn role -> 
       request(@ec2_metadata_url <> "/iam/security-credentials/#{role}")
     end)
