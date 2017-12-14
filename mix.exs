@@ -4,7 +4,7 @@ defmodule Baiji.Mixfile do
   def project do
     [
       app: :baiji,
-      version: "0.6.11",
+      version: "0.6.12",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
@@ -16,7 +16,7 @@ defmodule Baiji.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger, :xmerl, :timex, :poison, :httpoison]
     ]
   end
 
