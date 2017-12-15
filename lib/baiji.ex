@@ -33,6 +33,11 @@ defmodule Baiji do
   Perform an operation, raises an exception if the operation fails
   """
   def perform!(%Operation{} = operation, opts \\ []) do
+    if opts[:delay] and is_integer(opts[:delay]) do
+      Operation.debug(operation, "Delaying request for #{opts[:delay]} milliseconds...")
+      :timer.sleep(opts[:delay])
+    end
+
     operation = %{operation | options: Keyword.merge(operation.options, opts)}
     
     operation

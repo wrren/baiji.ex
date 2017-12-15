@@ -4,7 +4,7 @@ defmodule Baiji.Mixfile do
   def project do
     [
       app: :baiji,
-      version: "0.6.12",
+      version: "0.6.13",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),

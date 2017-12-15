@@ -51,6 +51,17 @@ iex> Baiji.EC2.describe_instances
   ...
 ```
 
+When chaining together large numbers of API calls, particularly inside an AWS environment, it can be useful to throttle requests using a delay. The `delay` option
+will cause the calling process to sleep for the specified number of milliseconds before executing the request:
+
+```elixir
+iex> Baiji.EC2.describe_instances
+...> |> Baiji.perform(region: "us-east-2", delay: 300)
+
+{:ok, %{"reservationSet" => [
+  %{"reservationId" => ...}
+  ...
+```
 
 ### Calling Services
 
