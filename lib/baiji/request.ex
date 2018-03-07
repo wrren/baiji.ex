@@ -13,7 +13,8 @@ defmodule Baiji.Request do
             method:     nil,
             url:        nil,
             body:       "",
-            headers:    []
+            headers:    [],
+            options:    []
 
   @doc """
   Make a request based on the provided operation
@@ -37,21 +38,23 @@ defmodule Baiji.Request do
   @doc """
   Generate a Request struct
   """
-  def new(%Operation{method: method, endpoint: %Endpoint{type: type}} = op) when type in [:xml, :ec2, :rest_xml] do
+  def new(%Operation{method: method, endpoint: %Endpoint{type: type}, options: options} = op) when type in [:xml, :ec2, :rest_xml] do
     %Request{
       operation: op, 
       url: url(op), 
       headers: [], 
-      method: method
+      method: method,
+      options: Keyword.take(options, [:proxy, :proxy_auth, :timeout, :recv_timeout])
     }
   end
-  def new(%Operation{method: method, input: input} = op) do
+  def new(%Operation{method: method, input: input, options: options} = op) do
     %Request{
       operation: op, 
       url: url(op), 
       body: Poison.encode!(input),
       headers: [], 
-      method: method
+      method: method,
+      options: Keyword.take(options, [:proxy, :proxy_auth, :timeout, :recv_timeout])
     }
   end
   @doc """
@@ -136,9 +139,9 @@ defmodule Baiji.Request do
   @doc """
   Execute a Request and generate a Response struct
   """
-  def execute(%Request{url: url, method: method, headers: headers, body: body, operation: op}) do
-    Operation.debug(op, "Making #{method} request to #{url} with body #{body}...")
-    case HTTPoison.request(method, url, body, headers) do
+  def execute(%Request{url: url, method: method, headers: headers, body: body, operation: op, options: opts}) do
+    Operation.debug(op, "Making #{method} request to #{url} with body #{body} and opts #{inspect opts}...")
+    case HTTPoison.request(method, url, body, headers, opts) do
       {:ok, %{status_code: code} = response} when code >= 200 and code <= 300 ->
         {:ok, response}      
       {:ok, %{status_code: code, body: body}} ->

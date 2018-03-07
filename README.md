@@ -108,6 +108,18 @@ iex> Baiji.EC2.describe_instances
 
 By default, the role session name will be set to `baiji`.
 
+### Passing Options to HTTPoison
+
+In certain cases, it may be necessary to set `HTTPoison` request options in order to successfully perform operations. For example, in an AWS environment with a large number of assets, you may need to tweak the `:recv_timeout` value for a request so that it won't abort the operation before a response is received from the AWS API.
+
+The following `HTTPoison.request` options can be included as part of the options passed to `Baiji.perform`, they'll be extracted and used at the time of the request:
+
+* `:timeout` - timeout to establish a connection, in milliseconds. Default is 8000
+* `:recv_timeout` - timeout used when receiving a connection. Default is 5000
+* `:proxy` - a proxy to be used for the request; it can be a regular url or a {Host, Port} tuple
+* `:proxy_auth` - proxy authentication {User, Password} tuple
+
+
 ## License
 
 © 2015-2017 Warren Kenny. See LICENSE file for details.
